@@ -5210,3 +5210,6 @@ database or disk is full
 2023-07-07 14:12:23.4|Warn|Torznab|Jackett (TorrentGalaxy) HTTP request failed: [400:BadRequest] [GET] at [https://media.dancodes.online/jackett/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=tvsearch&cat=5030,5040,5000,2000&extended=1&apikey=(removed)&offset=0&limit=100]
 2023-07-07 14:12:23.4|Info|DownloadDecisionMaker|Processing 296 releases
 2023-07-07 14:12:24.3|Info|RssSyncService|RSS Sync Completed. Reports found: 296, Reports grabbed: 0
+2023-07-07 14:16:15.5|Info|ImportListSyncService|Starting Import List Sync
+2023-07-07 14:16:15.5|Info|ImportListSyncService|Processing 0 list items
+2023-07-07 14:16:15.5|Info|ImportListSyncService|Import List Sync Completed. Items found: 0, Series added: 0
