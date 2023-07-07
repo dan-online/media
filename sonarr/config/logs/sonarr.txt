@@ -5213,3 +5213,45 @@ database or disk is full
 2023-07-07 14:16:15.5|Info|ImportListSyncService|Starting Import List Sync
 2023-07-07 14:16:15.5|Info|ImportListSyncService|Processing 0 list items
 2023-07-07 14:16:15.5|Info|ImportListSyncService|Import List Sync Completed. Items found: 0, Series added: 0
+2023-07-07 14:19:16.6|Error|EventAggregator|TaskManager failed while processing [CommandExecutedEvent]
+
+[v4.0.0.552] code = IoErr (10), message = System.Data.SQLite.SQLiteException (0x800007FF): disk I/O error
+disk I/O error
+   at System.Data.SQLite.SQLite3.Reset(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1075
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1094
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 734
+   at NzbDrone.Core.Datastore.SqlMapperExtensions.Query[T](IDatabase db, String sql, Object param) in ./Sonarr.Core/Datastore/Extensions/SqlMapperExtensions.cs:line 17
+   at NzbDrone.Core.Datastore.BasicRepository`1.Query(SqlBuilder builder) in ./Sonarr.Core/Datastore/BasicRepository.cs:line 72
+   at NzbDrone.Core.Jobs.TaskManager.Handle(CommandExecutedEvent message) in ./Sonarr.Core/Jobs/TaskManager.cs:line 211
+   at NzbDrone.Core.Messaging.Events.EventAggregator.PublishEvent[TEvent](TEvent event)
+
+2023-07-07 14:19:16.6|Error|CommandExecutor|Error occurred while executing task ProcessMonitoredDownloads
+
+[v4.0.0.552] code = IoErr (10), message = System.Data.SQLite.SQLiteException (0x800007FF): disk I/O error
+disk I/O error
+   at System.Data.SQLite.SQLite3.Reset(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2858
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 581
+   at NzbDrone.Core.Datastore.BasicRepository`1.UpdateFields(IDbConnection connection, IDbTransaction transaction, TModel model, List`1 propertiesToUpdate) in ./Sonarr.Core/Datastore/BasicRepository.cs:line 379
+   at NzbDrone.Core.Datastore.BasicRepository`1.SetFields(TModel model, Expression`1[] properties) in ./Sonarr.Core/Datastore/BasicRepository.cs:line 329
+   at NzbDrone.Core.Messaging.Commands.CommandQueueManager.Update(CommandModel command, CommandStatus status, String message) in ./Sonarr.Core/Messaging/Commands/CommandQueueManager.cs:line 258
+   at NzbDrone.Core.Messaging.Commands.CommandQueueManager.Fail(CommandModel command, String message, Exception e) in ./Sonarr.Core/Messaging/Commands/CommandQueueManager.cs:line 213
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommand[TCommand](TCommand command, CommandModel commandModel) in ./Sonarr.Core/Messaging/Commands/CommandExecutor.cs:line 116
+   at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid3[T0,T1,T2](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommands() in ./Sonarr.Core/Messaging/Commands/CommandExecutor.cs:line 42
+
+2023-07-07 14:21:15.6|Info|ImportListSyncService|Starting Import List Sync
+2023-07-07 14:21:15.6|Info|ImportListSyncService|Processing 0 list items
+2023-07-07 14:21:15.6|Info|ImportListSyncService|Import List Sync Completed. Items found: 0, Series added: 0
