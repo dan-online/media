@@ -3818,3 +3818,13 @@ FeedUrl: http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api
    at NzbDrone.Core.MediaFiles.MovieImport.ImportApprovedMovie.Import(List`1 decisions, Boolean newDownload, DownloadClientItem downloadClientItem, ImportMode importMode) in D:\a\1\s\src\NzbDrone.Core\MediaFiles\MovieImport\ImportApprovedMovie.cs:line 123
 
 
+2023-07-07 14:14:16.7|Warn|ImportApprovedMovie|Couldn't import movie /downloads/transmission/Minions.The.Rise.of.Gru.2022.2160p.WEB-DL.x265.10bit.HDR.DDP5.1.Atmos-NOGRP/Minions.The.Rise.of.Gru.2022.2160p.WEB-DL.x265.10bit.HDR.DDP5.1.Atmos-NOGRP.mkv
+
+[v4.4.4.7068] NzbDrone.Common.Disk.DestinationAlreadyExistsException: Destination /downloads/movies/Minions The Rise of Gru (2022)/Minions The Rise of Gru (2022) WEBDL-2160p.mkv already exists.
+   at NzbDrone.Common.Disk.DiskTransferService.ClearTargetPath(String sourcePath, String targetPath, Boolean overwrite) in D:\a\1\s\src\NzbDrone.Common\Disk\DiskTransferService.cs:line 403
+   at NzbDrone.Common.Disk.DiskTransferService.TransferFile(String sourcePath, String targetPath, TransferMode mode, Boolean overwrite) in D:\a\1\s\src\NzbDrone.Common\Disk\DiskTransferService.cs:line 296
+   at NzbDrone.Core.MediaFiles.MovieFileMovingService.TransferFile(MovieFile movieFile, Movie movie, String destinationFilePath, TransferMode mode) in D:\a\1\s\src\NzbDrone.Core\MediaFiles\MovieFileMovingService.cs:line 134
+   at NzbDrone.Core.MediaFiles.UpgradeMediaFileService.UpgradeMovieFile(MovieFile movieFile, LocalMovie localMovie, Boolean copyOnly) in D:\a\1\s\src\NzbDrone.Core\MediaFiles\UpgradeMediaFileService.cs:line 41
+   at NzbDrone.Core.MediaFiles.MovieImport.ImportApprovedMovie.Import(List`1 decisions, Boolean newDownload, DownloadClientItem downloadClientItem, ImportMode importMode) in D:\a\1\s\src\NzbDrone.Core\MediaFiles\MovieImport\ImportApprovedMovie.cs:line 123
+
+
