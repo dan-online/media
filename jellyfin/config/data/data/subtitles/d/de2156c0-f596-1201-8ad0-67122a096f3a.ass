@@ -1,0 +1,480 @@
+[Script Info]
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 3840
+PlayResY: 1608
+Timer: 100.0
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,sans-serif,142,&H00FFFFFF,&H00FFFFFF,&H000F0F0F,&H000F0F0F,0,0,0,0,100,100,0,0.00,1,4.73,3.94,2,20,20,20,0
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:25.90,0:00:27.28,Default,,0,0,0,,{\i1}Yes?{\i0}
+Dialogue: 0,0:00:28.36,0:00:29.99,Default,,0,0,0,,I'll be right there. Don't move.
+Dialogue: 0,0:00:45.90,0:00:50.03,Default,,0,0,0,,{\i1}Imagine a world{\i0}\N{\i1}where information can't be trusted.{\i0}
+Dialogue: 0,0:00:52.15,0:00:53.86,Default,,0,0,0,,{\i1}Not very hard, is it?{\i0}
+Dialogue: 0,0:00:55.48,0:00:56.94,Default,,0,0,0,,{\i1}News service says one thing,{\i0}
+Dialogue: 0,0:00:58.11,0:00:59.40,Default,,0,0,0,,{\i1}website says another.{\i0}
+Dialogue: 0,0:01:01.82,0:01:04.20,Default,,0,0,0,,{\i1}Society starts to fray.{\i0}
+Dialogue: 0,0:01:05.82,0:01:08.95,Default,,0,0,0,,{\i1}All we can turn to{\i0}\N{\i1}are the people we care about.{\i0}
+Dialogue: 0,0:01:10.36,0:01:13.40,Default,,0,0,0,,{\i1}But what if those people{\i0}\N{\i1}weren't who we thought they were?{\i0}
+Dialogue: 0,0:01:15.40,0:01:18.40,Default,,0,0,0,,{\i1}What if the ones closest to us,{\i0}
+Dialogue: 0,0:01:19.61,0:01:21.57,Default,,0,0,0,,{\i1}the ones we've trusted our whole lives...{\i0}
+Dialogue: 0,0:01:24.19,0:01:25.57,Default,,0,0,0,,{\i1}...were someone else entirely?{\i0}
+Dialogue: 0,0:01:29.57,0:01:31.90,Default,,0,0,0,,{\i1}What if they weren't even human?{\i0}
+Dialogue: 0,0:01:38.65,0:01:41.57,Default,,0,0,0,,Agent Prescod, respectfully...
+Dialogue: 0,0:01:43.02,0:01:45.19,Default,,0,0,0,,uh, what exactly are you talking about?
+Dialogue: 0,0:01:45.90,0:01:47.07,Default,,0,0,0,,Chaos.
+Dialogue: 0,0:01:48.57,0:01:50.07,Default,,0,0,0,,And that's only the beginning.
+Dialogue: 0,0:01:50.61,0:01:54.11,Default,,0,0,0,,Five global terrorist strikes\Nwithin the past year.
+Dialogue: 0,0:01:54.19,0:01:56.44,Default,,0,0,0,,Each one claimed by a different group.
+Dialogue: 0,0:01:56.52,0:01:58.15,Default,,0,0,0,,It's business as usual.
+Dialogue: 0,0:01:58.23,0:02:01.23,Default,,0,0,0,,That's precisely\Nwhat they want you to think.
+Dialogue: 0,0:02:01.32,0:02:06.20,Default,,0,0,0,,Argentina attacks Colombia,\NColombia attacks the Philippines.
+Dialogue: 0,0:02:06.27,0:02:09.52,Default,,0,0,0,,A violent chain reaction\Nconsuming the globe.
+Dialogue: 0,0:02:09.61,0:02:11.69,Default,,0,0,0,,Do you realize\Nthat the entire world is at war?
+Dialogue: 0,0:02:11.77,0:02:14.19,Default,,0,0,0,,Well, the atmosphere has been tense.
+Dialogue: 0,0:02:14.27,0:02:17.19,Default,,0,0,0,,There is an architect to that tension,\NAgent Ross.
+Dialogue: 0,0:02:17.27,0:02:19.23,Default,,0,0,0,,These attacks are escalating.
+Dialogue: 0,0:02:19.32,0:02:22.11,Default,,0,0,0,,If they hit the soil\Nof the major power... Oh.
+Dialogue: 0,0:02:22.19,0:02:25.94,Default,,0,0,0,,So you... You think the same people\Nare behind all of this?
+Dialogue: 0,0:02:26.73,0:02:27.94,Default,,0,0,0,,Not people...
+Dialogue: 0,0:02:30.23,0:02:31.23,Default,,0,0,0,,Skrulls.
+Dialogue: 0,0:02:33.94,0:02:36.36,Default,,0,0,0,,Come on, Ross, you know the stories.
+Dialogue: 0,0:02:37.02,0:02:38.65,Default,,0,0,0,,This didn't start yesterday.
+Dialogue: 0,0:02:38.73,0:02:41.44,Default,,0,0,0,,It started 30 years ago\Nwhen the Skrulls found Earth.
+Dialogue: 0,0:02:42.23,0:02:46.15,Default,,0,0,0,,Carol Danvers and Nick Fury\Npromised to find them a new planet.
+Dialogue: 0,0:02:46.23,0:02:48.19,Default,,0,0,0,,But now...
+Dialogue: 0,0:02:48.27,0:02:52.06,Default,,0,0,0,,now they don't want just any planet,\Nthey want ours.
+Dialogue: 0,0:02:53.07,0:02:54.49,Default,,0,0,0,,Look, can't you see it?
+Dialogue: 0,0:02:55.44,0:02:58.32,Default,,0,0,0,,All these groups, they're the same.
+Dialogue: 0,0:02:58.40,0:03:01.44,Default,,0,0,0,,Skrulls could be anybody,\Nanywhere, at any time.
+Dialogue: 0,0:03:01.52,0:03:04.90,Default,,0,0,0,,And there is only a tiny handful\Nknown to live on Earth.
+Dialogue: 0,0:03:04.98,0:03:07.73,Default,,0,0,0,,- That's barely enough to...\N- To what?
+Dialogue: 0,0:03:07.82,0:03:10.53,Default,,0,0,0,,You have no goddamn idea\Nwhat you're talking about, Ross!
+Dialogue: 0,0:03:11.61,0:03:13.90,Default,,0,0,0,,There could be thousands of them,\Ntens of thousands!
+Dialogue: 0,0:03:13.98,0:03:15.52,Default,,0,0,0,,And you would never know.
+Dialogue: 0,0:03:18.07,0:03:22.82,Default,,0,0,0,,Okay, Prescod, let's play a little game\Nof forest for the trees, shall we?
+Dialogue: 0,0:03:22.90,0:03:27.32,Default,,0,0,0,,Yes, Skrulls can shapeshift.\NYes, they're looking for a new home.
+Dialogue: 0,0:03:27.90,0:03:28.98,Default,,0,0,0,,But, as you say,
+Dialogue: 0,0:03:29.77,0:03:32.94,Default,,0,0,0,,the only Skrull contact\Nhas been through Nick Fury.
+Dialogue: 0,0:03:33.02,0:03:35.69,Default,,0,0,0,,That means they're our allies.
+Dialogue: 0,0:03:35.77,0:03:36.77,Default,,0,0,0,,Then where is Fury?
+Dialogue: 0,0:03:36.86,0:03:38.24,Default,,0,0,0,,He's on S.A.B.E.R.!
+Dialogue: 0,0:03:38.32,0:03:42.49,Default,,0,0,0,,God... And if I'm gonna bring him down\Nfor whatever the hell this is,
+Dialogue: 0,0:03:42.57,0:03:46.24,Default,,0,0,0,,I need to give him something\Nmore than just theories, I need evidence.
+Dialogue: 0,0:03:57.40,0:03:58.86,Default,,0,0,0,,All these other attacks,
+Dialogue: 0,0:04:00.11,0:04:03.44,Default,,0,0,0,,they would be nothing compared to this.
+Dialogue: 0,0:04:04.86,0:04:08.44,Default,,0,0,0,,This is the one\Nthat sets the world on fire.
+Dialogue: 0,0:04:27.65,0:04:31.44,Default,,0,0,0,,I stopped filing reports at the office.\NDon't know who I can trust anymore.
+Dialogue: 0,0:04:31.52,0:04:32.85,Default,,0,0,0,,Other than you...
+Dialogue: 0,0:04:32.94,0:04:36.23,Default,,0,0,0,,Hey, Prescod, look,\NI'm here to help. Okay?
+Dialogue: 0,0:04:36.32,0:04:41.70,Default,,0,0,0,,So... So let me take this\Nand I'll give the information to Fury.
+Dialogue: 0,0:04:41.77,0:04:42.90,Default,,0,0,0,,Okay?
+Dialogue: 0,0:04:42.98,0:04:44.40,Default,,0,0,0,,Yeah.
+Dialogue: 0,0:05:34.19,0:05:35.86,Default,,0,0,0,,I need an extract. Fast.
+Dialogue: 0,0:05:37.69,0:05:38.86,Default,,0,0,0,,{\i1}I need an extract.{\i0}
+Dialogue: 0,0:05:42.27,0:05:44.85,Default,,0,0,0,,Academica Metro Station,\Nsix blocks northeast.
+Dialogue: 0,0:07:12.40,0:07:13.40,Default,,0,0,0,,Ross.
+Dialogue: 0,0:07:15.90,0:07:16.98,Default,,0,0,0,,Show me your hands.
+Dialogue: 0,0:07:21.52,0:07:23.60,Default,,0,0,0,,- Talos.\N- It's me.
+Dialogue: 0,0:07:24.69,0:07:26.27,Default,,0,0,0,,What the hell are you doing here?
+Dialogue: 0,0:07:26.98,0:07:28.44,Default,,0,0,0,,I'm chasing him.
+Dialogue: 0,0:07:38.57,0:07:39.90,Default,,0,0,0,,He was one of you.
+Dialogue: 0,0:07:39.98,0:07:41.36,Default,,0,0,0,,No, he's...
+Dialogue: 0,0:07:42.52,0:07:44.10,Default,,0,0,0,,He... He's one of them.
+Dialogue: 0,0:11:19.69,0:11:20.90,Default,,0,0,0,,Welcome back to Earth.
+Dialogue: 0,0:11:33.73,0:11:34.90,Default,,0,0,0,,{\an8}He's upstairs.
+Dialogue: 0,0:11:48.48,0:11:49.48,Default,,0,0,0,,Is that from home?
+Dialogue: 0,0:11:51.02,0:11:52.31,Default,,0,0,0,,Santo Millika.
+Dialogue: 0,0:11:52.40,0:11:54.73,Default,,0,0,0,,That's a Skrull sky plant.
+Dialogue: 0,0:11:55.40,0:12:00.36,Default,,0,0,0,,Soren. She brought the seed with her\Nwherever she went.
+Dialogue: 0,0:12:00.44,0:12:05.27,Default,,0,0,0,,And it's changed since she planted it.\NIt's adapted to the planet.
+Dialogue: 0,0:12:05.36,0:12:09.07,Default,,0,0,0,,Yeah, well,\Nyou always believed that was possible.
+Dialogue: 0,0:12:09.15,0:12:11.19,Default,,0,0,0,,I still do.
+Dialogue: 0,0:12:18.48,0:12:20.19,Default,,0,0,0,,I am so sorry.
+Dialogue: 0,0:12:21.77,0:12:22.77,Default,,0,0,0,,Me, too.
+Dialogue: 0,0:12:24.27,0:12:25.69,Default,,0,0,0,,Soren loved you.
+Dialogue: 0,0:12:27.52,0:12:28.94,Default,,0,0,0,,But she worried, mate,
+Dialogue: 0,0:12:29.02,0:12:32.73,Default,,0,0,0,,that it would take something like this\Nto bring you back to Earth.
+Dialogue: 0,0:12:32.82,0:12:34.28,Default,,0,0,0,,And I guess she was right.
+Dialogue: 0,0:12:41.94,0:12:43.32,Default,,0,0,0,,Tell me about Gravik.
+Dialogue: 0,0:12:44.57,0:12:47.07,Default,,0,0,0,,Let's... Let's just\Ntalk about you first, yeah?
+Dialogue: 0,0:12:48.98,0:12:54.86,Default,,0,0,0,,We've been helping you for all these years\Nto ensure that you kept your promise.
+Dialogue: 0,0:12:55.52,0:13:00.02,Default,,0,0,0,,But after The Blip, you were different.
+Dialogue: 0,0:13:01.73,0:13:03.02,Default,,0,0,0,,And then you disappeared.
+Dialogue: 0,0:13:05.07,0:13:07.78,Default,,0,0,0,,Carol Danvers disappeared.
+Dialogue: 0,0:13:07.86,0:13:09.99,Default,,0,0,0,,And so did G'iah.
+Dialogue: 0,0:13:10.07,0:13:13.07,Default,,0,0,0,,Hold it. Your daughter?\NDisappeared too... Where?
+Dialogue: 0,0:13:13.15,0:13:14.28,Default,,0,0,0,,She was young.
+Dialogue: 0,0:13:15.48,0:13:17.77,Default,,0,0,0,,Angry that our people\Nstill don't have a home.
+Dialogue: 0,0:13:18.44,0:13:19.73,Default,,0,0,0,,Many of them are upset.
+Dialogue: 0,0:13:20.52,0:13:24.27,Default,,0,0,0,,I got kicked off the Council,\Npushed into exile.
+Dialogue: 0,0:13:25.32,0:13:26.40,Default,,0,0,0,,But, Gravik...
+Dialogue: 0,0:13:26.94,0:13:33.90,Default,,0,0,0,,Gravik, mate, he took your abandonment\Nthat much harder.
+Dialogue: 0,0:13:35.40,0:13:36.57,Default,,0,0,0,,Come on.
+Dialogue: 0,0:13:37.48,0:13:41.06,Default,,0,0,0,,Gravik is now the newest member\Nof the Skrull Council.
+Dialogue: 0,0:13:41.15,0:13:44.98,Default,,0,0,0,,He preys on the collective rage\Nof young, displaced Skrulls.
+Dialogue: 0,0:13:45.07,0:13:46.32,Default,,0,0,0,,Where is his ass?
+Dialogue: 0,0:13:46.40,0:13:47.98,Default,,0,0,0,,He's here. He's in Russia.
+Dialogue: 0,0:13:48.07,0:13:50.03,Default,,0,0,0,,Skrulls are immune to radioactivity
+Dialogue: 0,0:13:50.11,0:13:52.94,Default,,0,0,0,,and Russia has the most abandoned\Nnuclear plants on Earth.
+Dialogue: 0,0:13:53.02,0:13:57.31,Default,,0,0,0,,But here's the thing.\NThese plants, they're not on the books.
+Dialogue: 0,0:13:58.15,0:13:59.90,Default,,0,0,0,,And we don't know where he is.
+Dialogue: 0,0:13:59.98,0:14:02.11,Default,,0,0,0,,Well, what else do we know\Nabout his plans?
+Dialogue: 0,0:14:02.82,0:14:04.40,Default,,0,0,0,,Well, he's already made them.
+Dialogue: 0,0:14:05.19,0:14:08.40,Default,,0,0,0,,This is what Agent Ross's imposter\Nwas trying to cover up.
+Dialogue: 0,0:14:08.48,0:14:11.61,Default,,0,0,0,,Schematics for a dirty bomb\Nintercepted by Prescod.
+Dialogue: 0,0:14:11.69,0:14:15.23,Default,,0,0,0,,Prescod had been monitoring\Na new radical group called the AAR,
+Dialogue: 0,0:14:15.32,0:14:16.61,Default,,0,0,0,,Americans Against Russia,
+Dialogue: 0,0:14:16.69,0:14:20.36,Default,,0,0,0,,which he believed to be the next\NSkrull front for a terrorist attack.
+Dialogue: 0,0:14:20.44,0:14:23.90,Default,,0,0,0,,Gravik's trying to start a war between\NRussia and the United States?
+Dialogue: 0,0:14:23.98,0:14:25.15,Default,,0,0,0,,That was Prescod's theory.
+Dialogue: 0,0:14:25.23,0:14:27.15,Default,,0,0,0,,And he's gonna use this bomb to do it?
+Dialogue: 0,0:14:27.90,0:14:29.78,Default,,0,0,0,,Does he have the materials for that?
+Dialogue: 0,0:14:29.86,0:14:32.15,Default,,0,0,0,,A weapons cache in Kazakhstan,
+Dialogue: 0,0:14:32.23,0:14:34.65,Default,,0,0,0,,raided the same day\Nthat Prescod was killed.
+Dialogue: 0,0:14:35.32,0:14:37.32,Default,,0,0,0,,We brought you here for a reason.
+Dialogue: 0,0:14:37.40,0:14:39.32,Default,,0,0,0,,If he succeeds, um,
+Dialogue: 0,0:14:40.15,0:14:42.40,Default,,0,0,0,,your species will cease to exist.
+Dialogue: 0,0:14:48.07,0:14:49.11,Default,,0,0,0,,Shit.
+Dialogue: 0,0:14:49.94,0:14:51.32,Default,,0,0,0,,I'm going for a walk.
+Dialogue: 0,0:14:51.94,0:14:54.19,Default,,0,0,0,,You're going for a walk in Moscow\Nat night?
+Dialogue: 0,0:14:54.27,0:14:56.81,Default,,0,0,0,,Well, you're gonna stand out.
+Dialogue: 0,0:15:02.73,0:15:04.52,Default,,0,0,0,,We have a situation,\NMr. President.
+Dialogue: 0,0:15:04.61,0:15:06.44,Default,,0,0,0,,-Concerning?\N-Agent Fury.
+Dialogue: 0,0:15:06.52,0:15:08.44,Default,,0,0,0,,We've just received word\Nthat he's left S.A.B.E.R.
+Dialogue: 0,0:15:08.52,0:15:10.27,Default,,0,0,0,,What do you mean, "He left S.A.B.E.R.?"
+Dialogue: 0,0:15:10.86,0:15:14.24,Default,,0,0,0,,Well, I can try to think of\Na different word. Abandoned, departed...
+Dialogue: 0,0:15:14.32,0:15:17.53,Default,,0,0,0,,Agent Fury is building up the most\Ncomplex aerospace defense system
+Dialogue: 0,0:15:17.61,0:15:19.24,Default,,0,0,0,,in the history of mankind.
+Dialogue: 0,0:15:19.32,0:15:21.28,Default,,0,0,0,,- He can't just leave.\N- No, I agree, sir.
+Dialogue: 0,0:15:21.36,0:15:22.49,Default,,0,0,0,,And unfortunately,
+Dialogue: 0,0:15:22.57,0:15:26.20,Default,,0,0,0,,we also intercepted an encrypted message\Nfrom Agent Hill to Agent Fury.
+Dialogue: 0,0:15:26.27,0:15:30.06,Default,,0,0,0,,We haven't been able to decode it yet,\Nbut we know they're old friends.
+Dialogue: 0,0:15:30.15,0:15:34.07,Default,,0,0,0,,Given the fact that I could reach\Nneither Agent Hill nor Agent Fury,
+Dialogue: 0,0:15:35.44,0:15:36.90,Default,,0,0,0,,they're effectively AWOL.
+Dialogue: 0,0:15:37.69,0:15:38.77,Default,,0,0,0,,Deal with it.
+Dialogue: 0,0:15:38.86,0:15:39.94,Default,,0,0,0,,Yes, sir.
+Dialogue: 0,0:16:50.40,0:16:52.03,Default,,0,0,0,,WOMAN:This is so exciting.
+Dialogue: 0,0:16:52.11,0:16:54.32,Default,,0,0,0,,Let's see, large Black man, Moscow.
+Dialogue: 0,0:16:54.40,0:16:58.61,Default,,0,0,0,,Well, it could either be Nick Fury,\Nor the ghost of Paul Robeson.
+Dialogue: 0,0:16:58.69,0:17:00.40,Default,,0,0,0,,Okay, go ahead, take the hood off.
+Dialogue: 0,0:17:01.07,0:17:04.74,Default,,0,0,0,,Oh! Damn, and I was hoping for a command\Nperformance of {\i1}Ol' Man River.{\i0}
+Dialogue: 0,0:17:04.82,0:17:07.28,Default,,0,0,0,,Good to see you too, Sonya.
+Dialogue: 0,0:17:07.36,0:17:13.44,Default,,0,0,0,,So, did you just have me extraordinarily\Nrenditioned by a group of your thugs?
+Dialogue: 0,0:17:13.52,0:17:14.94,Default,,0,0,0,,Were you lot extraordinary?
+Dialogue: 0,0:17:15.61,0:17:16.61,Default,,0,0,0,,Oh!
+Dialogue: 0,0:17:16.69,0:17:19.19,Default,,0,0,0,,You usually only\Nscratch the surface of mediocrity.
+Dialogue: 0,0:17:19.27,0:17:22.19,Default,,0,0,0,,You must be finally\Nputting it all together. Well done.
+Dialogue: 0,0:17:22.27,0:17:24.23,Default,,0,0,0,,Okay. You can go. That's... That'll do.
+Dialogue: 0,0:17:25.94,0:17:28.32,Default,,0,0,0,,"Extraordinary," well, that's wonderful.
+Dialogue: 0,0:17:30.44,0:17:32.82,Default,,0,0,0,,It is so good to see you.
+Dialogue: 0,0:17:34.65,0:17:37.69,Default,,0,0,0,,You look amazing.
+Dialogue: 0,0:17:37.77,0:17:38.90,Default,,0,0,0,,Thanks.
+Dialogue: 0,0:17:40.19,0:17:42.32,Default,,0,0,0,,- Drink?\N-Love one.
+Dialogue: 0,0:17:43.27,0:17:46.65,Default,,0,0,0,,Do you have some sort of clock fetish\Nthat you've been
+Dialogue: 0,0:17:46.73,0:17:49.19,Default,,0,0,0,,keeping from me all these years?
+Dialogue: 0,0:17:49.27,0:17:52.44,Default,,0,0,0,,It was an old English spymaster\Nthat started the tradition.
+Dialogue: 0,0:17:52.52,0:17:55.23,Default,,0,0,0,,A clock goes up\Nwhen your time in circus is done.
+Dialogue: 0,0:17:56.07,0:17:59.11,Default,,0,0,0,,And I like to think I still have\Na few juggling acts left in me.
+Dialogue: 0,0:18:02.86,0:18:04.99,Default,,0,0,0,,Oh. Make yourself at home, Fury.
+Dialogue: 0,0:18:09.90,0:18:13.69,Default,,0,0,0,,I'm pretty sure you recollect\Nmy drink of choice as bourbon.
+Dialogue: 0,0:18:13.77,0:18:15.31,Default,,0,0,0,,I might have welcomed you home,
+Dialogue: 0,0:18:15.40,0:18:18.19,Default,,0,0,0,,but I still haven't forgiven you\Nfor destroying my expensive flat.
+Dialogue: 0,0:18:18.27,0:18:19.40,Default,,0,0,0,,You mean city.
+Dialogue: 0,0:18:19.48,0:18:21.27,Default,,0,0,0,,It's bottom shelf piss for you or nothing.
+Dialogue: 0,0:18:25.52,0:18:27.40,Default,,0,0,0,,So, what are you doing in Moscow?
+Dialogue: 0,0:18:28.02,0:18:32.06,Default,,0,0,0,,Same as you, trying to kill\Nthe Skrull rebellion in its crib.
+Dialogue: 0,0:18:32.15,0:18:34.90,Default,,0,0,0,,You know the rebel leader personally,\Ndon't you?
+Dialogue: 0,0:18:36.52,0:18:37.98,Default,,0,0,0,,I knew him.
+Dialogue: 0,0:18:38.07,0:18:40.65,Default,,0,0,0,,Is that why you came down\Nfrom your space station?
+Dialogue: 0,0:18:41.23,0:18:42.52,Default,,0,0,0,,You feel responsible?
+Dialogue: 0,0:18:47.82,0:18:50.74,Default,,0,0,0,,What do you know about a heist
+Dialogue: 0,0:18:50.82,0:18:54.45,Default,,0,0,0,,at a black market storage facility\Nin Kazakhstan?
+Dialogue: 0,0:18:54.52,0:18:56.85,Default,,0,0,0,,It happened couple days ago.
+Dialogue: 0,0:18:58.02,0:18:59.19,Default,,0,0,0,,Doesn't ring a bell.
+Dialogue: 0,0:19:01.77,0:19:05.73,Default,,0,0,0,,You know, I may not know\Nwhen a Skrull is pretending to be a human,
+Dialogue: 0,0:19:06.32,0:19:09.24,Default,,0,0,0,,but I sure as hell know\Nwhen a human is lying.
+Dialogue: 0,0:19:09.32,0:19:12.07,Default,,0,0,0,,You know damn well\Nwhat was in that storage vault.
+Dialogue: 0,0:19:12.15,0:19:13.94,Default,,0,0,0,,The fact that you don't know
+Dialogue: 0,0:19:14.02,0:19:17.23,Default,,0,0,0,,tells me all I need to know\Nabout this new, rather old Nick Fury.
+Dialogue: 0,0:19:18.36,0:19:20.65,Default,,0,0,0,,I think that Thanos's snap changed you.
+Dialogue: 0,0:19:20.73,0:19:23.48,Default,,0,0,0,,Taught you that no matter\Nhow hard you fight for what's right,
+Dialogue: 0,0:19:23.57,0:19:26.11,Default,,0,0,0,,there's always someone stronger\Nto undermine you.
+Dialogue: 0,0:19:27.27,0:19:30.10,Default,,0,0,0,,You seem to forget this "old Nick Fury"
+Dialogue: 0,0:19:30.19,0:19:33.40,Default,,0,0,0,,has 30 years\Nof hands-on experience with the Skrulls.
+Dialogue: 0,0:19:34.40,0:19:37.69,Default,,0,0,0,,I know the nature of this threat\Nway better than you ever will.
+Dialogue: 0,0:19:38.65,0:19:41.98,Default,,0,0,0,,Is that your idea of an offer\Nof some sort of collaboration between us?
+Dialogue: 0,0:19:42.07,0:19:44.53,Default,,0,0,0,,We used to work pretty well together\Nback in the day.
+Dialogue: 0,0:19:44.61,0:19:47.24,Default,,0,0,0,,Back then, you would've seen\Nmy rather mediocre bag men
+Dialogue: 0,0:19:47.32,0:19:48.45,Default,,0,0,0,,coming a mile away.
+Dialogue: 0,0:19:49.11,0:19:50.49,Default,,0,0,0,,The fact that you didn't see them
+Dialogue: 0,0:19:50.57,0:19:54.03,Default,,0,0,0,,means you haven't a hope in hell\Nof seeing Gravik and his rebels coming.
+Dialogue: 0,0:19:54.11,0:19:56.69,Default,,0,0,0,,Which makes you as a partner\Nrather pointless.
+Dialogue: 0,0:19:56.77,0:20:00.10,Default,,0,0,0,,I let your men take me\Nso I could get to you.
+Dialogue: 0,0:20:00.69,0:20:04.36,Default,,0,0,0,,I mean this as a friend, Fury,\Nbut go back to your space station.
+Dialogue: 0,0:20:05.02,0:20:07.73,Default,,0,0,0,,You're in no shape\Nfor this fight that lies before us.
+Dialogue: 0,0:20:08.77,0:20:11.27,Default,,0,0,0,,I'll have one of my thugs\Ndrop you back at the safe house.
+Dialogue: 0,0:20:11.36,0:20:13.82,Default,,0,0,0,,That's all right, I'll walk.
+Dialogue: 0,0:20:16.27,0:20:20.90,Default,,0,0,0,,If your memory jogs about\Nthat Kazakhstan thing,
+Dialogue: 0,0:20:21.98,0:20:23.06,Default,,0,0,0,,call a brother.
+Dialogue: 0,0:20:43.73,0:20:44.81,Default,,0,0,0,,What do you want?
+Dialogue: 0,0:20:46.32,0:20:47.74,Default,,0,0,0,,Home in my own skin.
+Dialogue: 0,0:21:12.98,0:21:14.36,Default,,0,0,0,,Take your natural form.
+Dialogue: 0,0:21:38.36,0:21:39.86,Default,,0,0,0,,Welcome to New Skrullos.
+Dialogue: 0,0:21:58.23,0:21:59.23,Default,,0,0,0,,What's your name?
+Dialogue: 0,0:22:01.98,0:22:02.98,Default,,0,0,0,,Beto.
+Dialogue: 0,0:22:04.27,0:22:06.44,Default,,0,0,0,,When's the last time you ate, Beto?
+Dialogue: 0,0:22:08.61,0:22:09.86,Default,,0,0,0,,I don't know.
+Dialogue: 0,0:22:18.40,0:22:19.98,Default,,0,0,0,,This can't be.
+Dialogue: 0,0:22:21.77,0:22:23.90,Default,,0,0,0,,We grow only Skrull produce here.
+Dialogue: 0,0:22:24.98,0:22:27.90,Default,,0,0,0,,Drink Skrull wine, wear Skrull skins.
+Dialogue: 0,0:22:27.98,0:22:32.40,Default,,0,0,0,,Whatever dangers you risked getting here,\Nknow, they're worth it.
+Dialogue: 0,0:22:42.19,0:22:43.36,Default,,0,0,0,,Thank you.
+Dialogue: 0,0:22:44.36,0:22:45.53,Default,,0,0,0,,You're very welcome.
+Dialogue: 0,0:23:38.82,0:23:40.49,Default,,0,0,0,,We're over 500 strong now.
+Dialogue: 0,0:23:41.07,0:23:42.95,Default,,0,0,0,,So, is everyone a part of...
+Dialogue: 0,0:23:43.02,0:23:45.73,Default,,0,0,0,,The resistance? No.\NGravik provides refuge.
+Dialogue: 0,0:23:46.32,0:23:49.65,Default,,0,0,0,,But if you do choose to be a warrior,\Nthere is one advantage.
+Dialogue: 0,0:23:49.73,0:23:51.27,Default,,0,0,0,,Oh, yeah? What's that?
+Dialogue: 0,0:23:51.36,0:23:52.53,Default,,0,0,0,,You get to leave.
+Dialogue: 0,0:23:53.15,0:23:54.98,Default,,0,0,0,,Everyone else stays in the compound.
+Dialogue: 0,0:23:55.90,0:23:59.57,Default,,0,0,0,,The warriors keep our human form,\Nthe longer we're attached to our shells,
+Dialogue: 0,0:23:59.65,0:24:03.32,Default,,0,0,0,,the less likely we can be identified\Nby humans and Skrulls alike.
+Dialogue: 0,0:24:07.40,0:24:10.03,Default,,0,0,0,,Wait here\Nand someone will get you a proper room.
+Dialogue: 0,0:24:10.11,0:24:12.82,Default,,0,0,0,,Prove your loyalty\Nand Gravik will reward you.
+Dialogue: 0,0:24:14.61,0:24:15.78,Default,,0,0,0,,What's behind there?
+Dialogue: 0,0:24:17.65,0:24:18.65,Default,,0,0,0,,Victory.
+Dialogue: 0,0:24:45.69,0:24:47.15,Default,,0,0,0,,What is your name?
+Dialogue: 0,0:24:47.23,0:24:48.52,Default,,0,0,0,,Warrior.
+Dialogue: 0,0:24:48.61,0:24:50.03,Default,,0,0,0,,What is your fight?
+Dialogue: 0,0:24:50.11,0:24:51.15,Default,,0,0,0,,Skrullos.
+Dialogue: 0,0:24:51.23,0:24:52.52,Default,,0,0,0,,What is your dream?
+Dialogue: 0,0:24:52.61,0:24:54.69,Default,,0,0,0,,Home in my own skin.
+Dialogue: 0,0:24:57.94,0:24:59.57,Default,,0,0,0,,Bring him his shell.
+Dialogue: 0,0:24:59.65,0:25:01.40,Default,,0,0,0,,No. No!
+Dialogue: 0,0:25:08.90,0:25:12.94,Default,,0,0,0,,Americans Against Russia,\Nyour dreams are about to come true.
+Dialogue: 0,0:25:13.52,0:25:14.73,Default,,0,0,0,,Take his face.
+Dialogue: 0,0:25:22.77,0:25:23.77,Default,,0,0,0,,No!
+Dialogue: 0,0:25:32.69,0:25:34.02,Default,,0,0,0,,Now take his mind.
+Dialogue: 0,0:25:52.27,0:25:55.31,Default,,0,0,0,,Skrulls have infiltrated\Nthe ranks of major world powers.
+Dialogue: 0,0:25:55.40,0:25:56.90,Default,,0,0,0,,{\i1}Where is the proof?{\i0}
+Dialogue: 0,0:25:56.98,0:25:58.90,Default,,0,0,0,,{\i1}How about the arrival of Agent Fury?{\i0}
+Dialogue: 0,0:25:58.98,0:26:02.31,Default,,0,0,0,,{\i1}For a man who sworn off Earth,{\i0}\N{\i1}he would not have returned without cause.{\i0}
+Dialogue: 0,0:26:02.40,0:26:03.69,Default,,0,0,0,,You got that right.
+Dialogue: 0,0:26:03.77,0:26:06.85,Default,,0,0,0,,{\i1}Gravik has something very big{\i0}\N{\i1}up his sleeve.{\i0}
+Dialogue: 0,0:26:06.94,0:26:09.57,Default,,0,0,0,,{\i1}But the immediate threat{\i0}\N{\i1}remains the bombs.{\i0}
+Dialogue: 0,0:26:09.65,0:26:13.28,Default,,0,0,0,,{\i1}Five specialists in Moscow{\i0}\N{\i1}are capable of building such an explosive.{\i0}
+Dialogue: 0,0:26:13.36,0:26:14.82,Default,,0,0,0,,{\i1}My money's on this one.{\i0}
+Dialogue: 0,0:26:15.48,0:26:17.94,Default,,0,0,0,,{\i1}Vasily Poprishchin.{\i0}\N{\i1}Former Chechnyan rebel,{\i0}
+Dialogue: 0,0:26:18.02,0:26:20.02,Default,,0,0,0,,{\i1}owns a high-end gallery{\i0}\N{\i1}in the city center,{\i0}
+Dialogue: 0,0:26:20.11,0:26:23.49,Default,,0,0,0,,{\i1}restores pigmented paintings{\i0}\N{\i1}and radioactivated bombs.{\i0}
+Dialogue: 0,0:26:23.57,0:26:25.28,Default,,0,0,0,,{\i1}Send in a raid now.{\i0}
+Dialogue: 0,0:26:25.36,0:26:26.65,Default,,0,0,0,,{\i1}If by "now" you mean,{\i0}
+Dialogue: 0,0:26:26.73,0:26:29.15,Default,,0,0,0,,{\i1}"Wait until a Skrull rebel{\i0}\N{\i1}picks up a device{\i0}
+Dialogue: 0,0:26:29.23,0:26:32.65,Default,,0,0,0,,{\i1}in order to follow them to their hideout,"{\i0}\N{\i1}then, yes, I totally agree.{\i0}
+Dialogue: 0,0:26:33.73,0:26:34.86,Default,,0,0,0,,She's cheeky.
+Dialogue: 0,0:26:34.94,0:26:37.32,Default,,0,0,0,,Yeah, 'till she sees\Nan ugly-ass Skrull like you.
+Dialogue: 0,0:26:37.40,0:26:38.90,Default,,0,0,0,,Then she goes into hunting mode.
+Dialogue: 0,0:26:38.98,0:26:41.77,Default,,0,0,0,,I'm considered good-looking\Namongst my kind.
+Dialogue: 0,0:26:41.86,0:26:44.53,Default,,0,0,0,,I know a bunch of good-looking Skrull.\NAnd you ain't one of them.
+Dialogue: 0,0:26:44.61,0:26:46.53,Default,,0,0,0,,All right, guys,\Nwhat is the play here?
+Dialogue: 0,0:26:46.61,0:26:49.11,Default,,0,0,0,,I say we visit this Rusky bomb builder.
+Dialogue: 0,0:26:49.19,0:26:50.94,Default,,0,0,0,,Sonya will already have agents there.
+Dialogue: 0,0:26:51.02,0:26:52.73,Default,,0,0,0,,Who we will incapacitate.
+Dialogue: 0,0:26:52.82,0:26:53.95,Default,,0,0,0,,Hold on, stop.
+Dialogue: 0,0:26:54.02,0:26:58.27,Default,,0,0,0,,You're talking about\Nattacking MI6 operatives?
+Dialogue: 0,0:26:58.36,0:27:00.32,Default,,0,0,0,,Talos,\Nlet me explain something to you.
+Dialogue: 0,0:27:00.40,0:27:03.03,Default,,0,0,0,,We're no longer\Nin "just a war" with Gravik.
+Dialogue: 0,0:27:03.11,0:27:07.57,Default,,0,0,0,,We are in a race with Sonya Falsworth,\Nwho celebrates a scorched-Earth policy,
+Dialogue: 0,0:27:07.65,0:27:10.03,Default,,0,0,0,,meaning, she will annihilate\Nany and everyone
+Dialogue: 0,0:27:10.11,0:27:12.53,Default,,0,0,0,,who's ever even heard the name "Gravik."
+Dialogue: 0,0:27:12.98,0:27:15.69,Default,,0,0,0,,You wanna save innocent Skrulls,\Nyou'll have to hurt some people.
+Dialogue: 0,0:27:15.77,0:27:16.77,Default,,0,0,0,,All right...
+Dialogue: 0,0:27:16.86,0:27:18.57,Default,,0,0,0,,Look, Gravik knows that...
+Dialogue: 0,0:27:19.40,0:27:20.53,Default,,0,0,0,,mercy's your weakness.
+Dialogue: 0,0:27:21.19,0:27:22.82,Default,,0,0,0,,Time for you to prove him wrong.
+Dialogue: 0,0:27:23.90,0:27:24.90,Default,,0,0,0,,Hmm?
+Dialogue: 0,0:27:25.82,0:27:26.82,Default,,0,0,0,,Yeah, okay.
+Dialogue: 0,0:27:48.98,0:27:50.27,Default,,0,0,0,,Fury's in town, G.
+Dialogue: 0,0:27:52.73,0:27:53.77,Default,,0,0,0,,Is he?
+Dialogue: 0,0:27:54.73,0:27:56.94,Default,,0,0,0,,Our man says it's nothing to worry about.
+Dialogue: 0,0:27:57.02,0:28:00.40,Default,,0,0,0,,He's washed up, walks with a limp,\Ncan barely see with the good eye.
+Dialogue: 0,0:28:01.27,0:28:03.73,Default,,0,0,0,,I see you've kept the circle tight\Non this one.
+Dialogue: 0,0:28:04.94,0:28:06.98,Default,,0,0,0,,We're the circle. No one else.
+Dialogue: 0,0:28:07.65,0:28:09.40,Default,,0,0,0,,Is that to protect me, or the cause?
+Dialogue: 0,0:28:15.07,0:28:17.82,Default,,0,0,0,,You are the cause.
+Dialogue: 0,0:28:17.90,0:28:19.11,Default,,0,0,0,,I'm not the cause.
+Dialogue: 0,0:28:20.61,0:28:22.03,Default,,0,0,0,,Cause is home.
+Dialogue: 0,0:28:22.69,0:28:23.69,Default,,0,0,0,,Yes, sir.
+Dialogue: 0,0:28:24.82,0:28:28.45,Default,,0,0,0,,We go tomorrow\Nand we don't stop until Earth is ours.
+Dialogue: 0,0:28:33.07,0:28:35.24,Default,,0,0,0,,-What about it?\N-This place is massive.
+Dialogue: 0,0:28:35.32,0:28:36.32,Default,,0,0,0,,You.
+Dialogue: 0,0:28:36.98,0:28:37.98,Default,,0,0,0,,Come with me.
+Dialogue: 0,0:28:45.98,0:28:47.19,Default,,0,0,0,,Zirksu will drive you.
+Dialogue: 0,0:28:47.86,0:28:49.69,Default,,0,0,0,,You take the cash to this address.
+Dialogue: 0,0:28:49.77,0:28:51.94,Default,,0,0,0,,You deal with Poprishchin and no one else.
+Dialogue: 0,0:28:52.02,0:28:53.35,Default,,0,0,0,,He'll give you two bags.
+Dialogue: 0,0:28:53.44,0:28:56.40,Default,,0,0,0,,You get 'em to the Moscow safe house\Nundisturbed and intact.
+Dialogue: 0,0:29:39.61,0:29:40.99,Default,,0,0,0,,Where's the bloody coffee?
+Dialogue: 0,0:29:46.61,0:29:48.11,Default,,0,0,0,,What's our MI6 status?
+Dialogue: 0,0:29:54.11,0:29:55.11,Default,,0,0,0,,All set.
+Dialogue: 0,0:30:08.94,0:30:10.32,Default,,0,0,0,,You Poprishchin?
+Dialogue: 0,0:30:17.19,0:30:19.57,Default,,0,0,0,,-Oh, shit.\N-I got it, mate.
+Dialogue: 0,0:30:23.11,0:30:25.53,Default,,0,0,0,,Not bad for a 136-year-old.
+Dialogue: 0,0:30:25.61,0:30:29.07,Default,,0,0,0,,Well, you know,\NI'm not even 40 in human years.
+Dialogue: 0,0:30:29.15,0:30:32.36,Default,,0,0,0,,I haven't even gone\Non my midlife crisis shopping spree yet.
+Dialogue: 0,0:30:33.11,0:30:34.11,Default,,0,0,0,,Hey.
+Dialogue: 0,0:30:34.82,0:30:36.45,Default,,0,0,0,,What'd you get for yours?
+Dialogue: 0,0:30:37.98,0:30:38.98,Default,,0,0,0,,The Avengers.
+Dialogue: 0,0:30:54.77,0:30:55.77,Default,,0,0,0,,{\an8}
+Dialogue: 0,0:30:58.40,0:31:01.48,Default,,0,0,0,,No, mate, we don't want\Nany of your shitty paintings.
+Dialogue: 0,0:31:02.23,0:31:03.77,Default,,0,0,0,,Then exactly what do you want?
+Dialogue: 0,0:31:04.77,0:31:06.19,Default,,0,0,0,,Some damn good answers.
+Dialogue: 0,0:31:18.27,0:31:20.60,Default,,0,0,0,,I've got eyes\Non a possible person of interest.
+Dialogue: 0,0:31:20.69,0:31:22.65,Default,,0,0,0,,Initiating foot pursuit.\NI'll keep you posted.
+Dialogue: 0,0:31:22.73,0:31:24.02,Default,,0,0,0,,Yeah, just keep me informed.
+Dialogue: 0,0:31:24.61,0:31:27.65,Default,,0,0,0,,I'm sorry, but you gentlemen\Nwill have to call at another time.
+Dialogue: 0,0:31:27.73,0:31:30.44,Default,,0,0,0,,- I'm late for an appointment.\N- Oh! Oh, who you meetin' with?
+Dialogue: 0,0:31:30.52,0:31:32.06,Default,,0,0,0,,My wife, Mister...
+Dialogue: 0,0:31:32.23,0:31:33.23,Default,,0,0,0,,Oh!
+Dialogue: 0,0:31:33.48,0:31:35.15,Default,,0,0,0,,Ooh! Damn, this is nice.
+Dialogue: 0,0:31:35.23,0:31:38.19,Default,,0,0,0,,That chair belonged to Louis XV.\NIt's priceless.
+Dialogue: 0,0:31:38.27,0:31:42.31,Default,,0,0,0,,Everything is priceless till it gets\Nblown to bits in a hail of bullets.
+Dialogue: 0,0:31:43.48,0:31:47.44,Default,,0,0,0,,Agent Keller, anything in our file\Nabout this one having a wife?
+Dialogue: 0,0:31:47.52,0:31:49.35,Default,,0,0,0,,Yeah, has an ex-wife,
+Dialogue: 0,0:31:49.44,0:31:51.57,Default,,0,0,0,,lives in Miami with a soccer player.
+Dialogue: 0,0:31:52.36,0:31:56.49,Default,,0,0,0,,Oh, so we gonna go ahead\Nand call that a lie.
+Dialogue: 0,0:31:56.57,0:31:58.40,Default,,0,0,0,,Everybody gets one.
+Dialogue: 0,0:31:58.48,0:32:00.69,Default,,0,0,0,,Nobody gets two.
+Dialogue: 0,0:32:01.69,0:32:04.11,Default,,0,0,0,,So, last chance.
+Dialogue: 0,0:32:04.57,0:32:06.65,Default,,0,0,0,,Who are you going to meet?
+Dialogue: 0,0:32:08.40,0:32:11.19,Default,,0,0,0,,Perhaps we'd all be more comfortable\Nin the gallery space
+Dialogue: 0,0:32:11.27,0:32:12.81,Default,,0,0,0,,where there is more natural light.
+Dialogue: 0,0:32:12.90,0:32:16.28,Default,,0,0,0,,You got any more of these comfortable-ass\NLouis XIV chairs in there?
+Dialogue: 0,0:32:16.36,0:32:17.44,Default,,0,0,0,,Mmm-mmm.
+Dialogue: 0,0:32:17.52,0:32:18.81,Default,,0,0,0,,How about a dirty bomb?
+Dialogue: 0,0:32:19.40,0:32:21.98,Default,,0,0,0,,Or you keep that in a crate\Nin here somewhere?
+Dialogue: 0,0:32:22.69,0:32:25.86,Default,,0,0,0,,I'm sorry, I do not know this term.\NDirty bomb?
+Dialogue: 0,0:32:25.94,0:32:28.94,Default,,0,0,0,,Boom, goes the dynamite! Lie number two.
+Dialogue: 0,0:32:29.40,0:32:34.61,Default,,0,0,0,,I just told you.\NEverybody gets one, nobody gets two.
+Dialogue: 0,0:32:35.44,0:32:36.73,Default,,0,0,0,,You going to shoot me?
+Dialogue: 0,0:32:36.82,0:32:39.40,Default,,0,0,0,,Maybe. Well, probably.
+Dialogue: 0,0:32:40.02,0:32:41.69,Default,,0,0,0,,But not right now.
+Dialogue: 0,0:32:42.94,0:32:44.15,Default,,0,0,0,,Where are the bombs?
+Dialogue: 0,0:32:47.23,0:32:48.69,Default,,0,0,0,,Your name's not Keller.
+Dialogue: 0,0:32:53.94,0:32:54.94,Default,,0,0,0,,Skrull.
+Dialogue: 0,0:32:55.02,0:32:56.27,Default,,0,0,0,,Your name is Talos.
+Dialogue: 0,0:32:59.94,0:33:01.07,Default,,0,0,0,,Talos?
+Dialogue: 0,0:33:02.15,0:33:03.23,Default,,0,0,0,,I got this.
+Dialogue: 0,0:33:03.32,0:33:04.40,Default,,0,0,0,,You sure?
+Dialogue: 0,0:33:10.69,0:33:12.07,Default,,0,0,0,,This is my fight!
+Dialogue: 0,0:33:12.15,0:33:13.82,Default,,0,0,0,,I said no!
+Dialogue: 0,0:33:28.07,0:33:29.90,Default,,0,0,0,,Tell me where the bombs are!
+Dialogue: 0,0:33:29.98,0:33:31.81,Default,,0,0,0,,You betray your own people.
+Dialogue: 0,0:33:50.90,0:33:51.90,Default,,0,0,0,,Come on.
+Dialogue: 0,0:33:55.44,0:33:56.69,Default,,0,0,0,,I said no.
+Dialogue: 0,0:35:20.40,0:35:21.44,Default,,0,0,0,,Where'd he go?
+Dialogue: 0,0:35:21.52,0:35:22.69,Default,,0,0,0,,She.
+Dialogue: 0,0:35:24.32,0:35:29.36,Default,,0,0,0,,Stop! Stop! Stop!
+Dialogue: 0,0:35:31.11,0:35:32.53,Default,,0,0,0,,Last warning!
+Dialogue: 0,0:35:39.15,0:35:41.48,Default,,0,0,0,,It's what you always say\Nbut there's always another.
+Dialogue: 0,0:35:44.23,0:35:45.36,Default,,0,0,0,,G'iah.
+Dialogue: 0,0:35:52.11,0:35:53.99,Default,,0,0,0,,- Give me the bombs.\N- No.
+Dialogue: 0,0:35:55.02,0:35:58.10,Default,,0,0,0,,I know you're angry. This isn't you.
+Dialogue: 0,0:35:58.19,0:36:00.65,Default,,0,0,0,,This is not\Nwhat your mother would've wanted.
+Dialogue: 0,0:36:00.73,0:36:02.65,Default,,0,0,0,,Mum doesn't know what she wants.
+Dialogue: 0,0:36:03.73,0:36:07.40,Default,,0,0,0,,Her last words, "Find G'iah."
+Dialogue: 0,0:36:10.02,0:36:11.23,Default,,0,0,0,,What?
+Dialogue: 0,0:36:13.82,0:36:14.86,Default,,0,0,0,,She's dead.
+Dialogue: 0,0:36:21.36,0:36:22.44,Default,,0,0,0,,How?
+Dialogue: 0,0:36:24.65,0:36:28.40,Default,,0,0,0,,Why don't you ask\Nthe people that you work for?
+Dialogue: 0,0:36:32.19,0:36:35.23,Default,,0,0,0,,Why don't you\Njust give me the bomb, please?
+Dialogue: 0,0:36:37.11,0:36:40.57,Default,,0,0,0,,G'iah, give me the bomb.
+Dialogue: 0,0:36:42.57,0:36:44.95,Default,,0,0,0,,- I can't.\N- Just hand it over.
+Dialogue: 0,0:36:45.02,0:36:46.15,Default,,0,0,0,,And you'll walk away.
+Dialogue: 0,0:36:47.19,0:36:50.27,Default,,0,0,0,,'Cause you know that I'll protect you.
+Dialogue: 0,0:36:50.36,0:36:53.94,Default,,0,0,0,,- You can't protect anyone.\N- G'iah, I know...
+Dialogue: 0,0:37:49.27,0:37:50.40,Default,,0,0,0,,{\an8}
+Dialogue: 0,0:37:57.27,0:37:58.27,Default,,0,0,0,,{\an8}
+Dialogue: 0,0:38:38.32,0:38:39.90,Default,,0,0,0,,Making friends\Nwith the locals?
+Dialogue: 0,0:38:41.27,0:38:47.23,Default,,0,0,0,,How do you think\Nwe kept the Cold War from going hot?
+Dialogue: 0,0:38:48.61,0:38:50.40,Default,,0,0,0,,Spooks like me buying shots.
+Dialogue: 0,0:38:50.48,0:38:51.86,Default,,0,0,0,,You can't say that.
+Dialogue: 0,0:38:51.94,0:38:54.11,Default,,0,0,0,,No. You can't say that.
+Dialogue: 0,0:38:57.27,0:38:58.27,Default,,0,0,0,,Mmm!
+Dialogue: 0,0:39:01.65,0:39:03.36,Default,,0,0,0,,It's good to have you back, Fury.
+Dialogue: 0,0:39:03.82,0:39:08.20,Default,,0,0,0,,Is that sincere\Nor you just covering your bases?
+Dialogue: 0,0:39:08.27,0:39:09.98,Default,,0,0,0,,You'll tell me why you abandoned Earth?
+Dialogue: 0,0:39:10.07,0:39:12.40,Default,,0,0,0,,Well, building out S.A.B.E.R.
+Dialogue: 0,0:39:12.48,0:39:15.56,Default,,0,0,0,,Traditionally, we tell the truth\Nduring our chess games.
+Dialogue: 0,0:39:15.65,0:39:18.90,Default,,0,0,0,,Maybe that has changed too, though,\NI don't know.
+Dialogue: 0,0:39:19.77,0:39:24.23,Default,,0,0,0,,Okay, let's just say\NI had a crisis of faith.
+Dialogue: 0,0:39:24.98,0:39:26.65,Default,,0,0,0,,So why'd you come back?
+Dialogue: 0,0:39:28.02,0:39:29.35,Default,,0,0,0,,It followed me up there,
+Dialogue: 0,0:39:30.36,0:39:33.28,Default,,0,0,0,,and I owe it to Talos.
+Dialogue: 0,0:39:33.36,0:39:35.69,Default,,0,0,0,,You sure you're not talking\Nabout someone else?
+Dialogue: 0,0:39:42.23,0:39:43.23,Default,,0,0,0,,You gonna move?
+Dialogue: 0,0:39:45.40,0:39:46.48,Default,,0,0,0,,I haven't decided.
+Dialogue: 0,0:39:48.02,0:39:49.77,Default,,0,0,0,,See, that's what I'm worried about.
+Dialogue: 0,0:39:50.52,0:39:52.73,Default,,0,0,0,,The Fury I knew\Nwas always three steps ahead.
+Dialogue: 0,0:39:54.86,0:39:58.44,Default,,0,0,0,,If I remember correctly, you called me.
+Dialogue: 0,0:39:58.94,0:40:00.61,Default,,0,0,0,,Upon Talos's request.
+Dialogue: 0,0:40:01.77,0:40:05.40,Default,,0,0,0,,Your lack of contact over the past\Nfew years sent a pretty clear message.
+Dialogue: 0,0:40:05.48,0:40:06.73,Default,,0,0,0,,Meaning?
+Dialogue: 0,0:40:13.44,0:40:15.48,Default,,0,0,0,,You're not ready for this, Fury.
+Dialogue: 0,0:40:17.02,0:40:18.90,Default,,0,0,0,,There's a very real threat out there.
+Dialogue: 0,0:40:18.98,0:40:22.27,Default,,0,0,0,,You were never the same after The Blip.
+Dialogue: 0,0:40:22.36,0:40:25.36,Default,,0,0,0,,You always told me there is no shame
+Dialogue: 0,0:40:25.44,0:40:28.65,Default,,0,0,0,,in walking away\Nwhen the steps are uncertain.
+Dialogue: 0,0:40:30.44,0:40:31.65,Default,,0,0,0,,So check your footing.
+Dialogue: 0,0:40:33.07,0:40:34.70,Default,,0,0,0,,Otherwise someone's gonna get hurt.
+Dialogue: 0,0:40:48.61,0:40:49.78,Default,,0,0,0,,Oh, no.
+Dialogue: 0,0:40:51.07,0:40:52.20,Default,,0,0,0,,Mother...
+Dialogue: 0,0:41:25.94,0:41:26.94,Default,,0,0,0,,Good work.
+Dialogue: 0,0:41:27.77,0:41:30.06,Default,,0,0,0,,I barely made it out.\NSomeone was waiting for me.
+Dialogue: 0,0:41:32.86,0:41:34.61,Default,,0,0,0,,Someone you can identify?
+Dialogue: 0,0:41:34.69,0:41:35.77,Default,,0,0,0,,No.
+Dialogue: 0,0:41:37.57,0:41:39.03,Default,,0,0,0,,Maybe we postpone the strike.
+Dialogue: 0,0:41:40.61,0:41:45.40,Default,,0,0,0,,To the contrary.\NThanks to you, we have the bait.
+Dialogue: 0,0:42:57.02,0:42:58.27,Default,,0,0,0,,Thanks for coming to see me.
+Dialogue: 0,0:42:58.36,0:43:01.36,Default,,0,0,0,,You don't see me because I'm not here.
+Dialogue: 0,0:43:02.11,0:43:03.90,Default,,0,0,0,,I understand. You're taking a risk.
+Dialogue: 0,0:43:04.27,0:43:05.40,Default,,0,0,0,,A risk?
+Dialogue: 0,0:43:06.07,0:43:10.07,Default,,0,0,0,,Is that what you explained to Mum,\Nthat following you could get her killed?
+Dialogue: 0,0:43:10.15,0:43:15.40,Default,,0,0,0,,Your mother died\Nwhile you were working for her killer.
+Dialogue: 0,0:43:16.07,0:43:19.24,Default,,0,0,0,,So do not take me down that road, G'iah.
+Dialogue: 0,0:43:19.32,0:43:22.61,Default,,0,0,0,,You have one chance to save yourself.
+Dialogue: 0,0:43:22.69,0:43:24.27,Default,,0,0,0,,And I think you know that.
+Dialogue: 0,0:43:25.32,0:43:27.03,Default,,0,0,0,,I think that's why you're here.
+Dialogue: 0,0:43:35.40,0:43:37.65,Default,,0,0,0,,The attack is planned for tomorrow.
+Dialogue: 0,0:43:37.73,0:43:38.86,Default,,0,0,0,,Unity Day.
+Dialogue: 0,0:43:40.48,0:43:43.98,Default,,0,0,0,,There are three bombs.\NAnd Gravik knows you'll be there.
+Dialogue: 0,0:43:44.73,0:43:46.52,Default,,0,0,0,,- How?\N- I don't know.
+Dialogue: 0,0:43:47.15,0:43:50.78,Default,,0,0,0,,There are so many operatives in the field.\NA hundred, at least.
+Dialogue: 0,0:43:51.57,0:43:52.70,Default,,0,0,0,,Fracking pods?
+Dialogue: 0,0:43:53.11,0:43:55.74,Default,,0,0,0,,Most of their identities are kept secret,\Neven from us.
+Dialogue: 0,0:44:01.02,0:44:05.90,Default,,0,0,0,,Your mum would be very proud of you,\Nyou know, for coming to see me.
+Dialogue: 0,0:44:12.36,0:44:16.44,Default,,0,0,0,,Tomorrow, there are three couriers,\Nincluding me.
+Dialogue: 0,0:44:16.52,0:44:19.10,Default,,0,0,0,,All the points\Nnear Vossoyedineniye Square.
+Dialogue: 0,0:44:20.07,0:44:22.20,Default,,0,0,0,,I'll mark each bag with infrared spray.
+Dialogue: 0,0:44:31.61,0:44:33.03,Default,,0,0,0,,G'iah's come back.
+Dialogue: 0,0:44:58.36,0:44:59.61,Default,,0,0,0,,I got eyes on her.
+Dialogue: 0,0:45:00.82,0:45:02.24,Default,,0,0,0,,{\i1}Two backpacks.{\i0}
+Dialogue: 0,0:45:03.98,0:45:05.02,Default,,0,0,0,,I got her.
+Dialogue: 0,0:45:05.11,0:45:07.49,Default,,0,0,0,,Remember we're tracking the bags,\Nnot the people.
+Dialogue: 0,0:45:08.15,0:45:10.53,Default,,0,0,0,,Lot of backpacks in Central Moscow.
+Dialogue: 0,0:45:10.61,0:45:13.78,Default,,0,0,0,,G'iah's painted ours with infrared spray.
+Dialogue: 0,0:45:14.82,0:45:16.11,Default,,0,0,0,,Infrared. Got it.
+Dialogue: 0,0:45:29.11,0:45:30.36,Default,,0,0,0,,We missed the pass.
+Dialogue: 0,0:45:38.65,0:45:40.53,Default,,0,0,0,,Got one carrier going northeast.
+Dialogue: 0,0:45:43.15,0:45:45.61,Default,,0,0,0,,The other one south. Let's move.
+Dialogue: 0,0:45:50.73,0:45:52.15,Default,,0,0,0,,Excuse me. Excuse me!
+Dialogue: 0,0:48:05.98,0:48:08.48,Default,,0,0,0,,It's empty. They're decoys.
+Dialogue: 0,0:48:52.90,0:48:53.94,Default,,0,0,0,,Hill!
+Dialogue: 0,0:49:32.02,0:49:34.85,Default,,0,0,0,,- Maria!\N- It was you.
+Dialogue: 0,0:49:35.69,0:49:36.69,Default,,0,0,0,,Not me.

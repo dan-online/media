@@ -1,0 +1,419 @@
+2023-07-05T15:17:17.117Z 4-sDWDup3:[Step S01] [2.00.21] Server relay initialising job
+2023-07-05T15:17:17.122Z 4-sDWDup3:Server: linux_x64_docker_true
+2023-07-05T15:17:17.123Z 4-sDWDup3:Server relay adding file to staged files
+2023-07-05T15:17:17.123Z 4-sDWDup3:Server relay sending job to Node relay: MyInternalNode
+2023-07-05T15:17:17.124Z 4-sDWDup3:Node[MyInternalNode]:[Step N01] [2.00.21] Node relay received job
+2023-07-05T15:17:17.124Z 4-sDWDup3:Node[MyInternalNode]:{"nodeName":"MyInternalNode","serverIP":"0.0.0.0","serverPort":"8266","handbrakePath":"","ffmpegPath":"","mkvpropeditPath":"","pathTranslators":[{"server":"","node":""}],"logLevel":"INFO","priority":-1,"platform_arch_isdocker":"linux_x64_docker_true","processPid":199,"nodeID":"_VxSJ6fLa"}
+2023-07-05T15:17:17.124Z 4-sDWDup3:Node[MyInternalNode]:Node relay sending job to worker:taut-tahr
+2023-07-05T15:17:17.125Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[Step W01] Received file, original: /media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv
+2023-07-05T15:17:17.125Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:{"workerType":"transcodecpu"}
+2023-07-05T15:17:17.125Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:{"ffmpegPath":"tdarr-ffmpeg"}
+2023-07-05T15:17:17.125Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:{"handbrakePath":"HandBrakeCLI"}
+2023-07-05T15:17:17.126Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:{"mkvpropeditPath":"mkvpropedit"}
+2023-07-05T15:17:17.126Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:{"gpuSelect":"-"}
+2023-07-05T15:17:17.126Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:{"allowGpuDoCpu":false}
+2023-07-05T15:17:17.126Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:{"thoroughHealthCheckCpuExtraInputArgs":""}
+2023-07-05T15:17:17.127Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:{"thoroughHealthCheckGpuExtraInputArgs":""}
+2023-07-05T15:17:17.127Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:{"thoroughHealthCheckCpuExtraArgs":""}
+2023-07-05T15:17:17.128Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:{"thoroughHealthCheckGpuExtraArgs":""}
+2023-07-05T15:17:17.128Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:{"logFullCliOutput":false}
+2023-07-05T15:17:17.129Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Path translating objects
+2023-07-05T15:17:17.129Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:{"librarySettings":{"_id":"9gM67-NoX","priority":0,"name":"Movies","folder":"/media/movies","foldersToIgnore":"","folderWatchScanInterval":30,"scannerThreadCount":2,"cache":"/temp","output":"","folderToFolderConversion":false,"folderToFolderConversionDeleteSource":false,"folderToFolderRecordHistory":true,"copyIfConditionsMet":false,"container":".mkv","containerFilter":"mkv,mp4,mov,m4v,mpg,mpeg,avi,flv,webm,wmv,vob,evo,iso,m2ts,ts","createdAt":1675837380368,"folderWatching":true,"useFsEvents":false,"scheduledScanFindNew":false,"processLibrary":true,"scanOnStart":true,"exifToolScan":true,"mediaInfoScan":true,"closedCaptionScan":false,"scanButtons":true,"scanFound":"","navItemSelected":"navSourceFolder","pluginIDs":[{"_id":"plugin1","id":"Tdarr_Plugin_MC93_MigzImageRemoval","checked":true,"source":"Community","priority":0,"InputsDB":{}},{"_id":"plugin2","id":"Tdarr_Plugin_lmg1_Reorder_Streams","checked":true,"source":"Community","priority":1,"InputsDB":{}},{"_id":"plugin3","id":"Tdarr_Plugin_MC93_Migz1FFMPEG_CPU","checked":false,"source":"Community","priority":2,"InputsDB":{}},{"_id":"plugin4","id":"Tdarr_Plugin_MC93_Migz1FFMPEG","checked":false,"source":"Community","priority":3,"InputsDB":{}},{"_id":"qCoq1y3ND","id":"Tdarr_Plugin_075a_FFMPEG_HEVC_Generic","checked":true,"source":"Community","priority":4,"InputsDB":{}},{"_id":"plugin5","id":"Tdarr_Plugin_a9he_New_file_size_check","checked":true,"source":"Community","priority":5,"InputsDB":{}}],"pluginCommunity":true,"handbrake":true,"ffmpeg":false,"handbrakescan":true,"ffmpegscan":false,"preset":"-Z \"Very Fast 1080p30\"","decisionMaker":{"settingsPlugin":true,"settingsVideo":false,"videoExcludeSwitch":true,"video_codec_names_exclude":[{"codec":"hevc","checked":false},{"codec":"h264","checked":true}],"video_size_range_include":{"min":0,"max":100000},"video_height_range_include":{"min":0,"max":3000},"video_width_range_include":{"min":0,"max":4000},"settingsAudio":false,"audioExcludeSwitch":true,"audio_codec_names_exclude":[{"codec":"mp3","checked":true},{"codec":"aac","checked":false}],"audio_size_range_include":{"min":0,"max":10}},"schedule":[{"_id":"Sun:00-01","checked":true},{"_id":"Sun:01-02","checked":true},{"_id":"Sun:02-03","checked":true},{"_id":"Sun:03-04","checked":true},{"_id":"Sun:04-05","checked":true},{"_id":"Sun:05-06","checked":true},{"_id":"Sun:06-07","checked":true},{"_id":"Sun:07-08","checked":true},{"_id":"Sun:08-09","checked":true},{"_id":"Sun:09-10","checked":true},{"_id":"Sun:10-11","checked":true},{"_id":"Sun:11-12","checked":true},{"_id":"Sun:12-13","checked":true},{"_id":"Sun:13-14","checked":true},{"_id":"Sun:14-15","checked":true},{"_id":"Sun:15-16","checked":true},{"_id":"Sun:16-17","checked":true},{"_id":"Sun:17-18","checked":true},{"_id":"Sun:18-19","checked":true},{"_id":"Sun:19-20","checked":true},{"_id":"Sun:20-21","checked":true},{"_id":"Sun:21-22","checked":true},{"_id":"Sun:22-23","checked":true},{"_id":"Sun:23-00","checked":true},{"_id":"Mon:00-01","checked":true},{"_id":"Mon:01-02","checked":true},{"_id":"Mon:02-03","checked":true},{"_id":"Mon:03-04","checked":true},{"_id":"Mon:04-05","checked":true},{"_id":"Mon:05-06","checked":true},{"_id":"Mon:06-07","checked":true},{"_id":"Mon:07-08","checked":true},{"_id":"Mon:08-09","checked":true},{"_id":"Mon:09-10","checked":true},{"_id":"Mon:10-11","checked":true},{"_id":"Mon:11-12","checked":true},{"_id":"Mon:12-13","checked":true},{"_id":"Mon:13-14","checked":true},{"_id":"Mon:14-15","checked":true},{"_id":"Mon:15-16","checked":true},{"_id":"Mon:16-17","checked":true},{"_id":"Mon:17-18","checked":true},{"_id":"Mon:18-19","checked":true},{"_id":"Mon:19-20","checked":true},{"_id":"Mon:20-21","checked":true},{"_id":"Mon:21-22","checked":true},{"_id":"Mon:22-23","checked":true},{"_id":"Mon:23-00","checked":true},{"_id":"Tue:00-01","checked":true},{"_id":"Tue:01-02","checked":true},{"_id":"Tue:02-03","checked":true},{"_id":"Tue:03-04","checked":true},{"_id":"Tue:04-05","checked":true},{"_id":"Tue:05-06","checked":true},{"_id":"Tue:06-07","checked":true},{"_id":"Tue:07-08","checked":true},{"_id":"Tue:08-09","checked":true},{"_id":"Tue:09-10","checked":true},{"_id":"Tue:10-11","checked":true},{"_id":"Tue:11-12","checked":true},{"_id":"Tue:12-13","checked":true},{"_id":"Tue:13-14","checked":true},{"_id":"Tue:14-15","checked":true},{"_id":"Tue:15-16","checked":true},{"_id":"Tue:16-17","checked":true},{"_id":"Tue:17-18","checked":true},{"_id":"Tue:18-19","checked":true},{"_id":"Tue:19-20","checked":true},{"_id":"Tue:20-21","checked":true},{"_id":"Tue:21-22","checked":true},{"_id":"Tue:22-23","checked":true},{"_id":"Tue:23-00","checked":true},{"_id":"Wed:00-01","checked":true},{"_id":"Wed:01-02","checked":true},{"_id":"Wed:02-03","checked":true},{"_id":"Wed:03-04","checked":true},{"_id":"Wed:04-05","checked":true},{"_id":"Wed:05-06","checked":true},{"_id":"Wed:06-07","checked":true},{"_id":"Wed:07-08","checked":true},{"_id":"Wed:08-09","checked":true},{"_id":"Wed:09-10","checked":true},{"_id":"Wed:10-11","checked":true},{"_id":"Wed:11-12","checked":true},{"_id":"Wed:12-13","checked":true},{"_id":"Wed:13-14","checked":true},{"_id":"Wed:14-15","checked":true},{"_id":"Wed:15-16","checked":true},{"_id":"Wed:16-17","checked":true},{"_id":"Wed:17-18","checked":true},{"_id":"Wed:18-19","checked":true},{"_id":"Wed:19-20","checked":true},{"_id":"Wed:20-21","checked":true},{"_id":"Wed:21-22","checked":true},{"_id":"Wed:22-23","checked":true},{"_id":"Wed:23-00","checked":true},{"_id":"Thur:00-01","checked":true},{"_id":"Thur:01-02","checked":true},{"_id":"Thur:02-03","checked":true},{"_id":"Thur:03-04","checked":true},{"_id":"Thur:04-05","checked":true},{"_id":"Thur:05-06","checked":true},{"_id":"Thur:06-07","checked":true},{"_id":"Thur:07-08","checked":true},{"_id":"Thur:08-09","checked":true},{"_id":"Thur:09-10","checked":true},{"_id":"Thur:10-11","checked":true},{"_id":"Thur:11-12","checked":true},{"_id":"Thur:12-13","checked":true},{"_id":"Thur:13-14","checked":true},{"_id":"Thur:14-15","checked":true},{"_id":"Thur:15-16","checked":true},{"_id":"Thur:16-17","checked":true},{"_id":"Thur:17-18","checked":true},{"_id":"Thur:18-19","checked":true},{"_id":"Thur:19-20","checked":true},{"_id":"Thur:20-21","checked":true},{"_id":"Thur:21-22","checked":true},{"_id":"Thur:22-23","checked":true},{"_id":"Thur:23-00","checked":true},{"_id":"Fri:00-01","checked":true},{"_id":"Fri:01-02","checked":true},{"_id":"Fri:02-03","checked":true},{"_id":"Fri:03-04","checked":true},{"_id":"Fri:04-05","checked":true},{"_id":"Fri:05-06","checked":true},{"_id":"Fri:06-07","checked":true},{"_id":"Fri:07-08","checked":true},{"_id":"Fri:08-09","checked":true},{"_id":"Fri:09-10","checked":true},{"_id":"Fri:10-11","checked":true},{"_id":"Fri:11-12","checked":true},{"_id":"Fri:12-13","checked":true},{"_id":"Fri:13-14","checked":true},{"_id":"Fri:14-15","checked":true},{"_id":"Fri:15-16","checked":true},{"_id":"Fri:16-17","checked":true},{"_id":"Fri:17-18","checked":true},{"_id":"Fri:18-19","checked":true},{"_id":"Fri:19-20","checked":true},{"_id":"Fri:20-21","checked":true},{"_id":"Fri:21-22","checked":true},{"_id":"Fri:22-23","checked":true},{"_id":"Fri:23-00","checked":true},{"_id":"Sat:00-01","checked":true},{"_id":"Sat:01-02","checked":true},{"_id":"Sat:02-03","checked":true},{"_id":"Sat:03-04","checked":true},{"_id":"Sat:04-05","checked":true},{"_id":"Sat:05-06","checked":true},{"_id":"Sat:06-07","checked":true},{"_id":"Sat:07-08","checked":true},{"_id":"Sat:08-09","checked":true},{"_id":"Sat:09-10","checked":true},{"_id":"Sat:10-11","checked":true},{"_id":"Sat:11-12","checked":true},{"_id":"Sat:12-13","checked":true},{"_id":"Sat:13-14","checked":true},{"_id":"Sat:14-15","checked":true},{"_id":"Sat:15-16","checked":true},{"_id":"Sat:16-17","checked":true},{"_id":"Sat:17-18","checked":true},{"_id":"Sat:18-19","checked":true},{"_id":"Sat:19-20","checked":true},{"_id":"Sat:20-21","checked":true},{"_id":"Sat:21-22","checked":true},{"_id":"Sat:22-23","checked":true},{"_id":"Sat:23-00","checked":true}],"totalHealthCheckCount":3,"totalTranscodeCount":1,"sizeDiff":0,"holdNewFiles":false,"holdFor":3600,"pluginStackOverview":true,"filterResolutionsSkip":"","filterCodecsSkip":"","processPluginsSequentially":true}}
+2023-07-05T15:17:17.129Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Fetching plugin data from server
+2023-07-05T15:17:17.130Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Scanning original library file
+2023-07-05T15:17:17.130Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:{
+2023-07-05T15:17:17.130Z   "exifToolScan": true,
+2023-07-05T15:17:17.130Z   "mediaInfoScan": false,
+2023-07-05T15:17:17.130Z   "closedCaptionScan": false
+2023-07-05T15:17:17.130Z }
+2023-07-05T15:17:17.130Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Updating file properties using mkvpropedit
+2023-07-05T15:17:17.130Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Updated file properties using mkvpropedit
+2023-07-05T15:17:17.131Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Requesting Tdarr Server to scan file
+2023-07-05T15:17:18.144Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Scan complete
+2023-07-05T15:17:18.146Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Original file scanned
+2023-07-05T15:17:18.148Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:fileVersionOriginalLogJSONString:{"lastCliCommand":"","lastPluginId":"","sourceFile":{"_id":"/media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv","footprintId":"_kP_4c6Uw","file":"/media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv","container":"mkv","scannerReads":{"ffProbeRead":"success","exiftoolRead":"success","mediaInfoRead":"not enabled","closedCaptionRead":"not enabled"},"createdAt":1688566636135,"lastPluginDetails":"none","bit_rate":8117758,"statSync":{"dev":2051,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":5904653,"size":6227556325,"blocks":12163248,"atimeMs":1688505877833.8547,"mtimeMs":1687016847168.5398,"ctimeMs":1687166131060.3977,"birthtimeMs":1687016568692.9185,"atime":"2023-07-04T21:24:37.834Z","mtime":"2023-06-17T15:47:27.169Z","ctime":"2023-06-19T09:15:31.060Z","birthtime":"2023-06-17T15:42:48.693Z"},"file_size":5939.0605211257935,"ffProbeData":{"streams":[{"index":0,"codec_name":"h264","codec_long_name":"H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10","profile":"High","codec_type":"video","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","width":1920,"height":1080,"coded_width":1920,"coded_height":1080,"closed_captions":0,"has_b_frames":0,"sample_aspect_ratio":"1:1","display_aspect_ratio":"16:9","pix_fmt":"yuv420p","level":40,"chroma_location":"left","field_order":"progressive","refs":1,"is_avc":"true","nal_length_size":"4","r_frame_rate":"24000/1001","avg_frame_rate":"24000/1001","time_base":"1/1000","start_pts":0,"start_time":"0.000000","bits_per_raw_sample":"8","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"BPS":"7982371","DURATION":"01:42:17.137000000","NUMBER_OF_FRAMES":"147144","NUMBER_OF_BYTES":"6123613670","_STATISTICS_WRITING_APP":"mkvmerge v67.0.0 ('Under Stars') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2023-04-21 05:15:24","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}},{"index":1,"codec_name":"aac","codec_long_name":"AAC (Advanced Audio Coding)","profile":"LC","codec_type":"audio","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":"44100","channels":2,"channel_layout":"stereo","bits_per_sample":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"jpn","BPS":"127999","DURATION":"01:42:17.218000000","NUMBER_OF_FRAMES":"264307","NUMBER_OF_BYTES":"98195145","_STATISTICS_WRITING_APP":"mkvmerge v67.0.0 ('Under Stars') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2023-04-21 05:15:24","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}},{"index":2,"codec_name":"ass","codec_long_name":"ASS (Advanced SSA) subtitle","codec_type":"subtitle","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","duration_ts":6137218,"duration":"6137.218000","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"fre","BPS":"129","DURATION":"01:36:38.550000000","NUMBER_OF_FRAMES":"1300","NUMBER_OF_BYTES":"94016","_STATISTICS_WRITING_APP":"mkvmerge v67.0.0 ('Under Stars') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2023-04-21 05:15:24","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}},{"index":3,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"trebucbd.ttf","mimetype":"application/x-truetype-font"}},{"index":4,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"trebucbi.ttf","mimetype":"application/x-truetype-font"}},{"index":5,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"trebucit.ttf","mimetype":"application/x-truetype-font"}},{"index":6,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"trebuc.ttf","mimetype":"application/x-truetype-font"}},{"index":7,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"arialbi.ttf","mimetype":"application/x-truetype-font"}},{"index":8,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"ariali.ttf","mimetype":"application/x-truetype-font"}},{"index":9,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"arialbd.ttf","mimetype":"application/x-truetype-font"}},{"index":10,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"arial.ttf","mimetype":"application/x-truetype-font"}},{"index":11,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"comicbd.ttf","mimetype":"application/x-truetype-font"}},{"index":12,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"comic.ttf","mimetype":"application/x-truetype-font"}},{"index":13,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"timesi.ttf","mimetype":"application/x-truetype-font"}},{"index":14,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"timesbd.ttf","mimetype":"application/x-truetype-font"}},{"index":15,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"timesbi.ttf","mimetype":"application/x-truetype-font"}},{"index":16,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"times.ttf","mimetype":"application/x-truetype-font"}},{"index":17,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"Rubik-Italic.ttf","mimetype":"application/x-truetype-font"}},{"index":18,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"Rubik-Regular.ttf","mimetype":"application/x-truetype-font"}},{"index":19,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"Rubik-BoldItalic.ttf","mimetype":"application/x-truetype-font"}},{"index":20,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"Rubik-Bold.ttf","mimetype":"application/x-truetype-font"}}],"format":{"filename":"/media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv","nb_streams":21,"nb_programs":0,"format_name":"matroska,webm","format_long_name":"Matroska / WebM","start_time":"0.000000","duration":"6137.218000","size":"6227556325","bit_rate":"8117758","probe_score":100,"tags":{"title":"To Every You I've Loved Before (2022) VOSTFR 1080p WEB x264 AAC -Tsundere-Raws (CR)","encoder":"Auto Multi Downloader v2.0.3-beta [Roselia]"}}},"meta":{"SourceFile":"/media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv","errors":[],"Duration":6137.218,"DefaultDuration":0.023219954,"ExifToolVersion":12.4,"FileName":"To Every You I've Loved Before (2022) WEBDL-1080p.mkv","Directory":"/media/movies/To Every You I've Loved Before (2022)","FileSize":"5.8 GiB","FileModifyDate":{"year":2023,"month":6,"day":17,"hour":15,"minute":47,"second":27,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:06:17 15:47:27+00:00"},"FileAccessDate":{"year":2023,"month":7,"day":4,"hour":21,"minute":24,"second":37,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:04 21:24:37+00:00"},"FileInodeChangeDate":{"year":2023,"month":6,"day":19,"hour":9,"minute":15,"second":31,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:06:19 09:15:31+00:00"},"FilePermissions":"-rw-rw-r--","FileType":"MKV","FileTypeExtension":"mkv","MIMEType":"video/x-matroska","EBMLVersion":1,"EBMLReadVersion":1,"DocType":"matroska","DocTypeVersion":4,"DocTypeReadVersion":2,"TimecodeScale":"1 ms","MuxingApp":"Auto Multi Downloader v2.0.3-beta [Roselia]","WritingApp":"Auto Multi Downloader v2.0.3-beta [Roselia]","Title":"To Every You I've Loved Before (2022) VOSTFR 1080p WEB x264 AAC -Tsundere-Raws (CR)","VideoCodecID":"V_MPEG4/ISO/AVC","VideoFrameRate":23.976,"ImageWidth":1920,"ImageHeight":1080,"DisplayWidth":1920,"DisplayHeight":1080,"AudioCodecID":"A_AAC","AudioSampleRate":44100,"AudioChannels":2,"TrackNumber":3,"TrackType":"Subtitle","CodecID":"S_TEXT/ASS","TrackLanguage":"fre","AttachedFileName":"Rubik-Bold.ttf","AttachedFileMIMEType":"application/x-truetype-font","AttachedFileData":"(Binary data 212840 bytes, use -b option to extract)","AttachedFileUID":"16710562318942599942","ImageSize":"1920x1080","Megapixels":2.1},"mediaInfo":{},"hasClosedCaptions":false,"DB":"9gM67-NoX","bumped":false,"HealthCheck":"","TranscodeDecisionMaker":"","holdUntil":0,"fileMedium":"video","video_codec_name":"h264","audio_codec_name":"","video_resolution":"1080p","lastHealthCheckDate":0,"lastTranscodeDate":0,"history":"","oldSize":0,"newSize":0,"videoStreamIndex":0,"duration":6137}}
+2023-07-05T15:17:18.150Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Source file to work on determined:/media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv
+2023-07-05T15:17:18.152Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[Step W02] [C1] Running pre-process file
+2023-07-05T15:17:18.170Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Checking files can be accessed
+2023-07-05T15:17:18.173Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Relevant paths can be accessed
+2023-07-05T15:17:18.176Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Source file: /media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv
+2023-07-05T15:17:19.182Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Cache folder: /temp
+2023-07-05T15:17:19.186Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[Step W03] [C1] Analysing file - running plugins
+2023-07-05T15:17:19.187Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:transcode task, scanning for extra file details before transcode
+2023-07-05T15:17:19.187Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Updating file properties using mkvpropedit
+2023-07-05T15:17:19.187Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Updated file properties using mkvpropedit
+2023-07-05T15:17:19.188Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Requesting Tdarr Server to scan file
+2023-07-05T15:17:20.191Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Scan complete
+2023-07-05T15:17:20.191Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Scan complete
+2023-07-05T15:17:20.192Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Updating Node relay: Processing
+2023-07-05T15:17:20.192Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[1/2] Checking file frame count
+2023-07-05T15:17:20.192Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[2/2] Frame count 0
+2023-07-05T15:17:20.193Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Transcode task, determining transcode settings
+2023-07-05T15:17:20.193Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Plugin stack selected
+2023-07-05T15:17:20.193Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Plugin: plugin1:  Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-05T15:17:20.194Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[1/5] Reading plugin
+2023-07-05T15:17:20.194Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[2/5] Plugin read finished
+2023-07-05T15:17:20.194Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[3/5] Installing dependencies
+2023-07-05T15:17:20.195Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[4/5] Running plugin
+2023-07-05T15:17:20.195Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:{"pluginInputs":{}}
+2023-07-05T15:17:20.195Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[5/5] Running plugin finished
+2023-07-05T15:17:20.196Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Plugin: plugin2:  Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-05T15:17:20.196Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[1/5] Reading plugin
+2023-07-05T15:17:20.196Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[2/5] Plugin read finished
+2023-07-05T15:17:20.197Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[3/5] Installing dependencies
+2023-07-05T15:17:20.197Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[4/5] Running plugin
+2023-07-05T15:17:20.197Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:{"pluginInputs":{}}
+2023-07-05T15:17:20.198Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[5/5] Running plugin finished
+2023-07-05T15:17:20.198Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Plugin: qCoq1y3ND:  Tdarr_Plugin_075a_FFMPEG_HEVC_Generic
+2023-07-05T15:17:20.198Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[1/5] Reading plugin
+2023-07-05T15:17:20.199Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[2/5] Plugin read finished
+2023-07-05T15:17:20.199Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[3/5] Installing dependencies
+2023-07-05T15:17:20.199Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[4/5] Running plugin
+2023-07-05T15:17:20.200Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:{"pluginInputs":{}}
+2023-07-05T15:17:20.200Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[5/5] Running plugin finished
+2023-07-05T15:17:20.201Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Worker config: {
+2023-07-05T15:17:20.201Z   "processFile": true,
+2023-07-05T15:17:20.201Z   "preset": ",-map 0:v -map 0:a -map 0:s? -map 0:d? -c copy -c:v:0 libx265 -max_muxing_queue_size 9999",
+2023-07-05T15:17:20.201Z   "container": ".mkv",
+2023-07-05T15:17:20.201Z   "handBrakeMode": false,
+2023-07-05T15:17:20.201Z   "FFmpegMode": true,
+2023-07-05T15:17:20.201Z   "reQueueAfter": true,
+2023-07-05T15:17:20.201Z   "infoLog": "☑File is a video! \n☒File is not hevc! \n",
+2023-07-05T15:17:20.201Z   "lastPluginDetails": {
+2023-07-05T15:17:20.201Z     "source": "Community",
+2023-07-05T15:17:20.201Z     "id": "Tdarr_Plugin_075a_FFMPEG_HEVC_Generic",
+2023-07-05T15:17:20.201Z     "number": "3/4"
+2023-07-05T15:17:20.201Z   },
+2023-07-05T15:17:20.201Z   "ffmpegMode": true,
+2023-07-05T15:17:20.201Z   "cliToUse": "ffmpeg"
+2023-07-05T15:17:20.201Z }
+2023-07-05T15:17:20.204Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Worker log: 
+2023-07-05T15:17:20.204Z Pre-processing - Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-05T15:17:20.204Z ☑File doesn't contain any unwanted image format streams.
+2023-07-05T15:17:20.204Z 
+2023-07-05T15:17:20.204Z Pre-processing - Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-05T15:17:20.204Z File has video in first stream
+2023-07-05T15:17:20.204Z  File meets conditions!
+2023-07-05T15:17:20.204Z 
+2023-07-05T15:17:20.204Z Pre-processing - Tdarr_Plugin_075a_FFMPEG_HEVC_Generic
+2023-07-05T15:17:20.204Z ☑File is a video! 
+2023-07-05T15:17:20.204Z ☒File is not hevc! 
+2023-07-05T15:17:20.204Z 
+2023-07-05T15:17:20.204Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Worker will process
+2023-07-05T15:17:20.205Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[Step W04] [C1] Preparing command
+2023-07-05T15:17:20.205Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Cache file stem: /temp
+2023-07-05T15:17:20.205Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Cache file path: /temp/To Every You I've Loved Before (2022) WEBDL-1080p-TdarrCacheFile-Lt0oGvH8c.mkv
+2023-07-05T15:17:20.205Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Create transcode args
+2023-07-05T15:17:20.206Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Args:  -i "/media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv" -map 0:v -map 0:a -map 0:s? -map 0:d? -c copy -c:v:0 libx265 -max_muxing_queue_size 9999 "/temp/To Every You I've Loved Before (2022) WEBDL-1080p-TdarrCacheFile-Lt0oGvH8c.mkv"
+2023-07-05T15:17:20.206Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Getting source file size
+2023-07-05T15:17:20.206Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Source file size: 5.799863790161908
+2023-07-05T15:17:20.207Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Performing safety check on worker config to see if old transcode args/container match new ones
+2023-07-05T15:17:20.207Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Safety check complete, all good
+2023-07-05T15:17:20.207Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[Step W05] [C1] Launching subworker
+2023-07-05T15:17:20.207Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Preparing to launch subworker
+2023-07-05T15:17:20.208Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Subworker launched
+2023-07-05T15:17:20.208Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[1/3] Sending command to subworker
+2023-07-05T15:17:20.208Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[2/3] tdarr-ffmpeg -i "/media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv" -map 0:v -map 0:a -map 0:s? -map 0:d? -c copy -c:v:0 libx265 -max_muxing_queue_size 9999 "/temp/To Every You I've Loved Before (2022) WEBDL-1080p-TdarrCacheFile-Lt0oGvH8c.mkv"
+2023-07-05T15:17:20.208Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[3/3] Command sent
+2023-07-05T15:17:20.209Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:To see live CLI output, enable 'Log full FFmpeg/HandBrake output' in the staging section on the Tdarr tab before the job starts. Note this could increase the job report size substantially.
+2023-07-05T15:17:20.209Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Subworker:Online
+2023-07-05T15:17:20.209Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Subworker:Receiving transcode settings
+2023-07-05T15:17:20.209Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Subworker:Running CLI
+2023-07-05T17:25:37.139Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Subworker:a.Thread closed, code: 0
+2023-07-05T17:25:37.144Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Subworker exit approved, killing subworker
+2023-07-05T17:25:37.145Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Subworker killed
+2023-07-05T17:25:37.145Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:b.Thread closed, code: 0
+2023-07-05T17:25:37.145Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:CLI code: 0
+2023-07-05T17:25:37.146Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Last 200 lines of CLI log:
+2023-07-05T17:25:37.146Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:frame=143735 fps= 19 q=28.5 size=  325888kB time=01:39:56.73 bitrate= 445.2kbits/s speed=0.79x    
+2023-07-05T17:25:37.146Z frame=143754 fps= 19 q=36.0 size=  325888kB time=01:39:57.47 bitrate= 445.1kbits/s speed=0.79x    
+2023-07-05T17:25:37.146Z frame=143773 fps= 19 q=36.0 size=  326400kB time=01:39:58.36 bitrate= 445.8kbits/s speed=0.79x    
+2023-07-05T17:25:37.146Z frame=143794 fps= 19 q=33.9 size=  326400kB time=01:39:59.10 bitrate= 445.7kbits/s speed=0.79x    
+2023-07-05T17:25:37.146Z frame=143810 fps= 19 q=35.9 size=  326400kB time=01:39:59.84 bitrate= 445.7kbits/s speed=0.79x    
+2023-07-05T17:25:37.146Z frame=143829 fps= 19 q=30.4 size=  326400kB time=01:40:00.56 bitrate= 445.6kbits/s speed=0.79x    
+2023-07-05T17:25:37.146Z frame=143847 fps= 19 q=33.9 size=  326400kB time=01:40:01.31 bitrate= 445.5kbits/s speed=0.79x    
+2023-07-05T17:25:37.146Z frame=143863 fps= 19 q=29.7 size=  326400kB time=01:40:02.00 bitrate= 445.5kbits/s speed=0.79x    
+2023-07-05T17:25:37.146Z frame=143882 fps= 19 q=35.9 size=  326656kB time=01:40:02.91 bitrate= 445.8kbits/s speed=0.79x    
+2023-07-05T17:25:37.146Z frame=143900 fps= 19 q=35.8 size=  326656kB time=01:40:03.65 bitrate= 445.7kbits/s speed=0.79x    
+2023-07-05T17:25:37.146Z frame=143918 fps= 19 q=35.9 size=  326656kB time=01:40:04.35 bitrate= 445.7kbits/s speed=0.79x    
+2023-07-05T17:25:37.146Z frame=143936 fps= 19 q=36.0 size=  326656kB time=01:40:05.09 bitrate= 445.6kbits/s speed=0.79x    
+2023-07-05T17:25:37.146Z frame=143953 fps= 19 q=27.1 size=  326656kB time=01:40:05.83 bitrate= 445.6kbits/s speed=0.791x    
+2023-07-05T17:25:37.146Z frame=143972 fps= 19 q=34.0 size=  326656kB time=01:40:06.55 bitrate= 445.5kbits/s speed=0.791x    
+2023-07-05T17:25:37.146Z frame=143990 fps= 19 q=27.3 size=  326656kB time=01:40:07.32 bitrate= 445.5kbits/s speed=0.791x    
+2023-07-05T17:25:37.146Z frame=144007 fps= 19 q=27.9 size=  326656kB time=01:40:08.02 bitrate= 445.4kbits/s speed=0.791x    
+2023-07-05T17:25:37.146Z frame=144025 fps= 19 q=35.9 size=  326912kB time=01:40:08.76 bitrate= 445.7kbits/s speed=0.791x    
+2023-07-05T17:25:37.146Z frame=144045 fps= 19 q=29.6 size=  326912kB time=01:40:09.66 bitrate= 445.6kbits/s speed=0.791x    
+2023-07-05T17:25:37.146Z frame=144062 fps= 19 q=35.8 size=  326912kB time=01:40:10.36 bitrate= 445.6kbits/s speed=0.791x    
+2023-07-05T17:25:37.146Z frame=144079 fps= 19 q=32.7 size=  326912kB time=01:40:11.10 bitrate= 445.5kbits/s speed=0.791x    
+2023-07-05T17:25:37.146Z frame=144095 fps= 19 q=27.0 size=  326912kB time=01:40:11.66 bitrate= 445.5kbits/s speed=0.791x    
+2023-07-05T17:25:37.146Z frame=144112 fps= 19 q=35.6 size=  326912kB time=01:40:12.36 bitrate= 445.4kbits/s speed=0.791x    
+2023-07-05T17:25:37.146Z frame=144129 fps= 19 q=36.0 size=  327424kB time=01:40:13.13 bitrate= 446.1kbits/s speed=0.791x    
+2023-07-05T17:25:37.146Z frame=144146 fps= 19 q=26.3 size=  327424kB time=01:40:13.84 bitrate= 446.0kbits/s speed=0.791x    
+2023-07-05T17:25:37.146Z frame=144163 fps= 19 q=34.0 size=  327424kB time=01:40:14.56 bitrate= 446.0kbits/s speed=0.791x    
+2023-07-05T17:25:37.146Z frame=144178 fps= 19 q=35.4 size=  327424kB time=01:40:15.12 bitrate= 445.9kbits/s speed=0.791x    
+2023-07-05T17:25:37.146Z frame=144184 fps= 19 q=36.0 size=  327424kB time=01:40:15.49 bitrate= 445.9kbits/s speed=0.791x    
+2023-07-05T17:25:37.146Z frame=144196 fps= 19 q=27.3 size=  327424kB time=01:40:15.86 bitrate= 445.9kbits/s speed=0.791x    
+2023-07-05T17:25:37.146Z frame=144216 fps= 19 q=36.0 size=  327424kB time=01:40:16.75 bitrate= 445.8kbits/s speed=0.791x    
+2023-07-05T17:25:37.146Z frame=144234 fps= 19 q=35.9 size=  327424kB time=01:40:17.49 bitrate= 445.7kbits/s speed=0.791x    
+2023-07-05T17:25:37.146Z frame=144251 fps= 19 q=36.0 size=  327424kB time=01:40:18.21 bitrate= 445.7kbits/s speed=0.791x    
+2023-07-05T17:25:37.146Z frame=144269 fps= 19 q=36.0 size=  327680kB time=01:40:18.93 bitrate= 446.0kbits/s speed=0.791x    
+2023-07-05T17:25:37.146Z frame=144290 fps= 19 q=33.8 size=  327680kB time=01:40:19.86 bitrate= 445.9kbits/s speed=0.791x    
+2023-07-05T17:25:37.146Z frame=144308 fps= 19 q=31.8 size=  327680kB time=01:40:20.55 bitrate= 445.9kbits/s speed=0.791x    
+2023-07-05T17:25:37.146Z frame=144326 fps= 19 q=28.3 size=  327680kB time=01:40:21.32 bitrate= 445.8kbits/s speed=0.791x    
+2023-07-05T17:25:37.146Z frame=144345 fps= 19 q=30.7 size=  327680kB time=01:40:22.18 bitrate= 445.7kbits/s speed=0.791x    
+2023-07-05T17:25:37.146Z frame=144363 fps= 19 q=33.2 size=  327680kB time=01:40:22.92 bitrate= 445.7kbits/s speed=0.791x    
+2023-07-05T17:25:37.146Z frame=144382 fps= 19 q=31.8 size=  327936kB time=01:40:23.67 bitrate= 446.0kbits/s speed=0.791x    
+2023-07-05T17:25:37.146Z frame=144400 fps= 19 q=36.0 size=  328192kB time=01:40:24.39 bitrate= 446.3kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144417 fps= 19 q=36.0 size=  328192kB time=01:40:25.13 bitrate= 446.2kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144433 fps= 19 q=30.4 size=  328192kB time=01:40:25.87 bitrate= 446.2kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144445 fps= 19 q=35.9 size=  328192kB time=01:40:26.38 bitrate= 446.1kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144468 fps= 19 q=33.9 size=  328192kB time=01:40:27.31 bitrate= 446.1kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144485 fps= 19 q=29.5 size=  328192kB time=01:40:28.01 bitrate= 446.0kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144501 fps= 19 q=36.0 size=  328192kB time=01:40:28.59 bitrate= 446.0kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144517 fps= 19 q=35.9 size=  328448kB time=01:40:29.31 bitrate= 446.3kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144532 fps= 19 q=35.9 size=  328448kB time=01:40:29.89 bitrate= 446.2kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144551 fps= 19 q=35.6 size=  328448kB time=01:40:30.75 bitrate= 446.2kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144568 fps= 19 q=36.0 size=  328448kB time=01:40:31.49 bitrate= 446.1kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144585 fps= 19 q=33.2 size=  328448kB time=01:40:32.21 bitrate= 446.0kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144601 fps= 19 q=33.9 size=  328448kB time=01:40:32.79 bitrate= 446.0kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144619 fps= 19 q=31.2 size=  328448kB time=01:40:33.54 bitrate= 445.9kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144639 fps= 19 q=35.9 size=  328704kB time=01:40:34.39 bitrate= 446.2kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144652 fps= 19 q=36.0 size=  328704kB time=01:40:34.95 bitrate= 446.2kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144669 fps= 19 q=35.8 size=  328704kB time=01:40:35.69 bitrate= 446.1kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144687 fps= 19 q=30.9 size=  328704kB time=01:40:36.39 bitrate= 446.1kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144703 fps= 19 q=35.8 size=  328704kB time=01:40:37.13 bitrate= 446.0kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144721 fps= 19 q=35.9 size=  328704kB time=01:40:37.88 bitrate= 446.0kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144738 fps= 19 q=35.8 size=  328704kB time=01:40:38.57 bitrate= 445.9kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144756 fps= 19 q=36.0 size=  328960kB time=01:40:39.32 bitrate= 446.2kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144773 fps= 19 q=36.0 size=  328960kB time=01:40:40.01 bitrate= 446.2kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144790 fps= 19 q=35.5 size=  328960kB time=01:40:40.76 bitrate= 446.1kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144804 fps= 19 q=35.9 size=  328960kB time=01:40:41.31 bitrate= 446.1kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144821 fps= 19 q=36.0 size=  328960kB time=01:40:42.03 bitrate= 446.0kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144836 fps= 19 q=28.0 size=  328960kB time=01:40:42.62 bitrate= 446.0kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144852 fps= 19 q=36.0 size=  328960kB time=01:40:43.33 bitrate= 445.9kbits/s speed=0.792x    
+2023-07-05T17:25:37.146Z frame=144868 fps= 19 q=35.9 size=  328960kB time=01:40:43.89 bitrate= 445.9kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=144883 fps= 19 q=35.8 size=  329216kB time=01:40:44.59 bitrate= 446.2kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=144899 fps= 19 q=28.2 size=  329216kB time=01:40:45.17 bitrate= 446.1kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=144917 fps= 19 q=33.9 size=  329216kB time=01:40:46.03 bitrate= 446.1kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=144931 fps= 19 q=29.2 size=  329216kB time=01:40:46.58 bitrate= 446.0kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=144945 fps= 19 q=35.9 size=  329216kB time=01:40:47.14 bitrate= 446.0kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=144965 fps= 19 q=35.9 size=  329216kB time=01:40:48.02 bitrate= 445.9kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=144981 fps= 19 q=29.1 size=  329216kB time=01:40:48.61 bitrate= 445.9kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=144997 fps= 19 q=35.9 size=  329216kB time=01:40:49.32 bitrate= 445.8kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=145014 fps= 19 q=36.0 size=  329728kB time=01:40:50.02 bitrate= 446.5kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=145031 fps= 19 q=28.7 size=  329728kB time=01:40:50.76 bitrate= 446.4kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=145047 fps= 19 q=29.0 size=  329728kB time=01:40:51.35 bitrate= 446.4kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=145062 fps= 19 q=32.3 size=  329728kB time=01:40:52.04 bitrate= 446.3kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=145080 fps= 19 q=36.0 size=  329728kB time=01:40:52.78 bitrate= 446.3kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=145094 fps= 19 q=29.0 size=  329728kB time=01:40:53.37 bitrate= 446.2kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=145109 fps= 19 q=36.0 size=  329728kB time=01:40:54.04 bitrate= 446.2kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=145125 fps= 19 q=27.8 size=  329728kB time=01:40:54.62 bitrate= 446.1kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=145136 fps= 19 q=36.0 size=  329984kB time=01:40:55.15 bitrate= 446.4kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=145149 fps= 19 q=36.0 size=  329984kB time=01:40:55.71 bitrate= 446.4kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=145167 fps= 19 q=32.8 size=  329984kB time=01:40:56.41 bitrate= 446.3kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=145184 fps= 19 q=36.0 size=  329984kB time=01:40:57.15 bitrate= 446.3kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=145197 fps= 19 q=32.3 size=  329984kB time=01:40:57.71 bitrate= 446.2kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=145220 fps= 19 q=29.0 size=  329984kB time=01:40:58.59 bitrate= 446.2kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=145239 fps= 19 q=36.0 size=  329984kB time=01:40:59.52 bitrate= 446.1kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=145257 fps= 19 q=36.0 size=  330496kB time=01:41:00.24 bitrate= 446.8kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=145274 fps= 19 q=29.0 size=  330496kB time=01:41:00.82 bitrate= 446.7kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=145289 fps= 19 q=35.8 size=  330496kB time=01:41:01.47 bitrate= 446.7kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=145305 fps= 19 q=32.2 size=  330496kB time=01:41:02.23 bitrate= 446.6kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=145318 fps= 19 q=35.9 size=  330496kB time=01:41:02.79 bitrate= 446.6kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=145333 fps= 19 q=33.1 size=  330496kB time=01:41:03.35 bitrate= 446.5kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=145346 fps= 19 q=33.9 size=  330496kB time=01:41:03.84 bitrate= 446.5kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=145365 fps= 19 q=33.4 size=  330496kB time=01:41:04.63 bitrate= 446.4kbits/s speed=0.793x    
+2023-07-05T17:25:37.146Z frame=145382 fps= 19 q=32.8 size=  331008kB time=01:41:05.35 bitrate= 447.1kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145395 fps= 19 q=33.9 size=  331008kB time=01:41:06.00 bitrate= 447.0kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145410 fps= 19 q=36.0 size=  331008kB time=01:41:06.60 bitrate= 447.0kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145428 fps= 19 q=35.8 size=  331008kB time=01:41:07.34 bitrate= 446.9kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145433 fps= 19 q=35.9 size=  331008kB time=01:41:07.53 bitrate= 446.9kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145445 fps= 19 q=35.9 size=  331008kB time=01:41:08.04 bitrate= 446.9kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145463 fps= 19 q=34.0 size=  331008kB time=01:41:08.78 bitrate= 446.8kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145481 fps= 19 q=34.0 size=  331008kB time=01:41:09.53 bitrate= 446.8kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145496 fps= 19 q=36.0 size=  331008kB time=01:41:10.25 bitrate= 446.7kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145513 fps= 19 q=29.8 size=  331520kB time=01:41:10.80 bitrate= 447.4kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145530 fps= 19 q=35.5 size=  331520kB time=01:41:11.55 bitrate= 447.3kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145545 fps= 19 q=32.9 size=  331520kB time=01:41:12.24 bitrate= 447.2kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145563 fps= 19 q=32.7 size=  331520kB time=01:41:12.99 bitrate= 447.2kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145579 fps= 19 q=35.7 size=  331520kB time=01:41:13.57 bitrate= 447.2kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145595 fps= 19 q=35.8 size=  331520kB time=01:41:14.24 bitrate= 447.1kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145612 fps= 19 q=33.1 size=  331520kB time=01:41:14.98 bitrate= 447.0kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145629 fps= 19 q=35.0 size=  332032kB time=01:41:15.73 bitrate= 447.7kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145645 fps= 19 q=33.3 size=  332032kB time=01:41:16.42 bitrate= 447.6kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145661 fps= 19 q=28.7 size=  332032kB time=01:41:17.00 bitrate= 447.6kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145681 fps= 19 q=32.2 size=  332032kB time=01:41:17.93 bitrate= 447.5kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145682 fps= 19 q=36.0 size=  332032kB time=01:41:17.93 bitrate= 447.5kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145695 fps= 19 q=35.9 size=  332032kB time=01:41:18.44 bitrate= 447.5kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145714 fps= 19 q=35.8 size=  332032kB time=01:41:19.21 bitrate= 447.4kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145726 fps= 19 q=35.9 size=  332032kB time=01:41:19.74 bitrate= 447.4kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145741 fps= 19 q=36.0 size=  332032kB time=01:41:20.44 bitrate= 447.3kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145757 fps= 19 q=36.0 size=  332032kB time=01:41:21.00 bitrate= 447.3kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145772 fps= 19 q=35.7 size=  332288kB time=01:41:21.74 bitrate= 447.6kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145791 fps= 19 q=29.9 size=  332288kB time=01:41:22.44 bitrate= 447.5kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145809 fps= 19 q=35.9 size=  332288kB time=01:41:23.18 bitrate= 447.5kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145826 fps= 19 q=35.7 size=  332288kB time=01:41:23.92 bitrate= 447.4kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145841 fps= 19 q=36.0 size=  332288kB time=01:41:24.62 bitrate= 447.4kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145862 fps= 19 q=33.9 size=  332288kB time=01:41:25.36 bitrate= 447.3kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145881 fps= 19 q=36.0 size=  332800kB time=01:41:26.24 bitrate= 447.9kbits/s speed=0.794x    
+2023-07-05T17:25:37.146Z frame=145900 fps= 19 q=34.0 size=  332800kB time=01:41:26.99 bitrate= 447.9kbits/s speed=0.795x    
+2023-07-05T17:25:37.146Z frame=145921 fps= 19 q=36.0 size=  332800kB time=01:41:27.92 bitrate= 447.8kbits/s speed=0.795x    
+2023-07-05T17:25:37.146Z frame=145934 fps= 19 q=36.0 size=  332800kB time=01:41:28.45 bitrate= 447.8kbits/s speed=0.795x    
+2023-07-05T17:25:37.146Z frame=145951 fps= 19 q=32.3 size=  332800kB time=01:41:29.19 bitrate= 447.7kbits/s speed=0.795x    
+2023-07-05T17:25:37.146Z frame=145971 fps= 19 q=35.9 size=  332800kB time=01:41:29.94 bitrate= 447.7kbits/s speed=0.795x    
+2023-07-05T17:25:37.146Z frame=145984 fps= 19 q=36.0 size=  332800kB time=01:41:30.47 bitrate= 447.6kbits/s speed=0.795x    
+2023-07-05T17:25:37.146Z frame=146000 fps= 19 q=35.9 size=  332800kB time=01:41:31.19 bitrate= 447.6kbits/s speed=0.795x    
+2023-07-05T17:25:37.146Z frame=146018 fps= 19 q=33.9 size=  333312kB time=01:41:31.93 bitrate= 448.2kbits/s speed=0.795x    
+2023-07-05T17:25:37.146Z frame=146036 fps= 19 q=29.7 size=  333312kB time=01:41:32.65 bitrate= 448.2kbits/s speed=0.795x    
+2023-07-05T17:25:37.146Z frame=146054 fps= 19 q=35.9 size=  333312kB time=01:41:33.37 bitrate= 448.1kbits/s speed=0.795x    
+2023-07-05T17:25:37.146Z frame=146071 fps= 19 q=29.8 size=  333312kB time=01:41:34.09 bitrate= 448.1kbits/s speed=0.795x    
+2023-07-05T17:25:37.146Z frame=146090 fps= 19 q=33.7 size=  333312kB time=01:41:35.00 bitrate= 448.0kbits/s speed=0.795x    
+2023-07-05T17:25:37.146Z frame=146109 fps= 19 q=33.0 size=  333312kB time=01:41:35.74 bitrate= 447.9kbits/s speed=0.795x    
+2023-07-05T17:25:37.146Z frame=146128 fps= 19 q=36.0 size=  333312kB time=01:41:36.46 bitrate= 447.9kbits/s speed=0.795x    
+2023-07-05T17:25:37.146Z frame=146146 fps= 19 q=36.0 size=  333312kB time=01:41:37.23 bitrate= 447.8kbits/s speed=0.795x    
+2023-07-05T17:25:37.146Z frame=146167 fps= 19 q=36.0 size=  333312kB time=01:41:38.09 bitrate= 447.8kbits/s speed=0.795x    
+2023-07-05T17:25:37.146Z frame=146182 fps= 19 q=31.4 size=  333312kB time=01:41:38.83 bitrate= 447.7kbits/s speed=0.795x    
+2023-07-05T17:25:37.146Z frame=146198 fps= 19 q=31.7 size=  333312kB time=01:41:39.41 bitrate= 447.7kbits/s speed=0.795x    
+2023-07-05T17:25:37.146Z frame=146219 fps= 19 q=36.0 size=  333312kB time=01:41:40.29 bitrate= 447.6kbits/s speed=0.795x    
+2023-07-05T17:25:37.146Z frame=146239 fps= 19 q=32.2 size=  333312kB time=01:41:41.20 bitrate= 447.5kbits/s speed=0.795x    
+2023-07-05T17:25:37.146Z frame=146257 fps= 19 q=34.0 size=  333568kB time=01:41:41.94 bitrate= 447.8kbits/s speed=0.795x    
+2023-07-05T17:25:37.146Z frame=146276 fps= 19 q=36.0 size=  333568kB time=01:41:42.64 bitrate= 447.8kbits/s speed=0.795x    
+2023-07-05T17:25:37.146Z frame=146297 fps= 19 q=36.0 size=  333568kB time=01:41:43.57 bitrate= 447.7kbits/s speed=0.795x    
+2023-07-05T17:25:37.146Z frame=146315 fps= 19 q=32.1 size=  333568kB time=01:41:44.29 bitrate= 447.7kbits/s speed=0.795x    
+2023-07-05T17:25:37.146Z frame=146337 fps= 19 q=31.7 size=  333568kB time=01:41:45.22 bitrate= 447.6kbits/s speed=0.796x    
+2023-07-05T17:25:37.146Z frame=146357 fps= 19 q=36.0 size=  333568kB time=01:41:46.10 bitrate= 447.5kbits/s speed=0.796x    
+2023-07-05T17:25:37.146Z frame=146374 fps= 19 q=33.9 size=  333824kB time=01:41:46.84 bitrate= 447.8kbits/s speed=0.796x    
+2023-07-05T17:25:37.146Z frame=146393 fps= 19 q=30.4 size=  333824kB time=01:41:47.58 bitrate= 447.8kbits/s speed=0.796x    
+2023-07-05T17:25:37.146Z frame=146410 fps= 19 q=33.9 size=  333824kB time=01:41:48.28 bitrate= 447.7kbits/s speed=0.796x    
+2023-07-05T17:25:37.146Z frame=146431 fps= 19 q=36.0 size=  333824kB time=01:41:49.21 bitrate= 447.6kbits/s speed=0.796x    
+2023-07-05T17:25:37.146Z frame=146438 fps= 19 q=36.0 size=  333824kB time=01:41:49.42 bitrate= 447.6kbits/s speed=0.796x    
+2023-07-05T17:25:37.146Z frame=146455 fps= 19 q=29.5 size=  333824kB time=01:41:50.12 bitrate= 447.6kbits/s speed=0.796x    
+2023-07-05T17:25:37.146Z frame=146471 fps= 19 q=36.0 size=  333824kB time=01:41:50.83 bitrate= 447.5kbits/s speed=0.796x    
+2023-07-05T17:25:37.146Z frame=146486 fps= 19 q=30.6 size=  333824kB time=01:41:51.42 bitrate= 447.5kbits/s speed=0.796x    
+2023-07-05T17:25:37.146Z frame=146506 fps= 19 q=35.9 size=  334080kB time=01:41:52.27 bitrate= 447.8kbits/s speed=0.796x    
+2023-07-05T17:25:37.146Z frame=146526 fps= 19 q=36.0 size=  334080kB time=01:41:53.09 bitrate= 447.7kbits/s speed=0.796x    
+2023-07-05T17:25:37.146Z frame=146543 fps= 19 q=36.0 size=  334080kB time=01:41:53.76 bitrate= 447.6kbits/s speed=0.796x    
+2023-07-05T17:25:37.146Z frame=146563 fps= 19 q=31.1 size=  334080kB time=01:41:54.67 bitrate= 447.6kbits/s speed=0.796x    
+2023-07-05T17:25:37.146Z frame=146581 fps= 19 q=36.0 size=  334080kB time=01:41:55.41 bitrate= 447.5kbits/s speed=0.796x    
+2023-07-05T17:25:37.146Z frame=146602 fps= 19 q=35.9 size=  334080kB time=01:41:56.29 bitrate= 447.5kbits/s speed=0.796x    
+2023-07-05T17:25:37.146Z frame=146621 fps= 19 q=34.0 size=  334080kB time=01:41:57.03 bitrate= 447.4kbits/s speed=0.796x    
+2023-07-05T17:25:37.146Z frame=146641 fps= 19 q=36.0 size=  334080kB time=01:41:57.96 bitrate= 447.3kbits/s speed=0.796x    
+2023-07-05T17:25:37.146Z frame=146660 fps= 19 q=36.0 size=  334080kB time=01:41:58.68 bitrate= 447.3kbits/s speed=0.796x    
+2023-07-05T17:25:37.146Z frame=146677 fps= 19 q=35.8 size=  334080kB time=01:41:59.40 bitrate= 447.2kbits/s speed=0.796x    
+2023-07-05T17:25:37.146Z frame=146684 fps= 19 q=32.6 size=  334080kB time=01:41:59.77 bitrate= 447.2kbits/s speed=0.796x    
+2023-07-05T17:25:37.146Z frame=146704 fps= 19 q=36.0 size=  334080kB time=01:42:00.47 bitrate= 447.2kbits/s speed=0.796x    
+2023-07-05T17:25:37.146Z frame=146726 fps= 19 q=34.0 size=  334080kB time=01:42:01.40 bitrate= 447.1kbits/s speed=0.796x    
+2023-07-05T17:25:37.146Z frame=146746 fps= 19 q=36.0 size=  334080kB time=01:42:02.28 bitrate= 447.0kbits/s speed=0.797x    
+2023-07-05T17:25:37.146Z frame=146765 fps= 19 q=36.0 size=  334336kB time=01:42:03.02 bitrate= 447.3kbits/s speed=0.797x    
+2023-07-05T17:25:37.146Z frame=146786 fps= 19 q=34.0 size=  334336kB time=01:42:03.95 bitrate= 447.2kbits/s speed=0.797x    
+2023-07-05T17:25:37.146Z frame=146807 fps= 19 q=34.0 size=  334336kB time=01:42:04.86 bitrate= 447.2kbits/s speed=0.797x    
+2023-07-05T17:25:37.146Z frame=146826 fps= 19 q=35.9 size=  334336kB time=01:42:05.60 bitrate= 447.1kbits/s speed=0.797x    
+2023-07-05T17:25:37.146Z frame=146845 fps= 19 q=32.7 size=  334336kB time=01:42:06.48 bitrate= 447.1kbits/s speed=0.797x    
+2023-07-05T17:25:37.146Z frame=146865 fps= 19 q=36.0 size=  334336kB time=01:42:07.23 bitrate= 447.0kbits/s speed=0.797x    
+2023-07-05T17:25:37.146Z frame=146887 fps= 19 q=34.0 size=  334592kB time=01:42:08.11 bitrate= 447.3kbits/s speed=0.797x    
+2023-07-05T17:25:37.146Z frame=146905 fps= 19 q=34.0 size=  334592kB time=01:42:08.88 bitrate= 447.2kbits/s speed=0.797x    
+2023-07-05T17:25:37.146Z frame=146922 fps= 19 q=32.4 size=  334592kB time=01:42:09.62 bitrate= 447.2kbits/s speed=0.797x    
+2023-07-05T17:25:37.146Z frame=146933 fps= 19 q=36.0 size=  334592kB time=01:42:10.11 bitrate= 447.1kbits/s speed=0.797x    
+2023-07-05T17:25:37.146Z frame=146948 fps= 19 q=35.9 size=  334592kB time=01:42:10.69 bitrate= 447.1kbits/s speed=0.797x    
+2023-07-05T17:25:37.146Z frame=146971 fps= 19 q=36.0 size=  334592kB time=01:42:11.62 bitrate= 447.0kbits/s speed=0.797x    
+2023-07-05T17:25:37.146Z frame=146991 fps= 19 q=34.0 size=  334592kB time=01:42:12.47 bitrate= 447.0kbits/s speed=0.797x    
+2023-07-05T17:25:37.146Z frame=147008 fps= 19 q=36.0 size=  334592kB time=01:42:13.22 bitrate= 446.9kbits/s speed=0.797x    
+2023-07-05T17:25:37.146Z frame=147023 fps= 19 q=36.0 size=  334592kB time=01:42:13.80 bitrate= 446.9kbits/s speed=0.797x    
+2023-07-05T17:25:37.146Z frame=147045 fps= 19 q=36.0 size=  334592kB time=01:42:14.87 bitrate= 446.8kbits/s speed=0.797x    
+2023-07-05T17:25:37.146Z frame=147067 fps= 19 q=36.0 size=  334592kB time=01:42:15.63 bitrate= 446.7kbits/s speed=0.797x    
+2023-07-05T17:25:37.146Z frame=147086 fps= 19 q=36.0 size=  334592kB time=01:42:16.49 bitrate= 446.7kbits/s speed=0.797x    
+2023-07-05T17:25:37.146Z frame=147103 fps= 19 q=36.0 size=  334592kB time=01:42:17.19 bitrate= 446.6kbits/s speed=0.797x    
+2023-07-05T17:25:37.146Z frame=147144 fps= 19 q=36.0 Lsize=  335106kB time=01:42:17.19 bitrate= 447.3kbits/s speed=0.797x    
+2023-07-05T17:25:37.146Z video:236214kB audio:95894kB subtitle:92kB other streams:0kB global headers:3kB muxing overhead: 0.874977%
+2023-07-05T17:25:37.146Z 
+2023-07-05T17:25:37.146Z x265 [info]: frame I:   1184, Avg QP:25.63  kb/s: 7076.32 
+2023-07-05T17:25:37.146Z x265 [info]: frame P:  38257, Avg QP:30.59  kb/s: 737.02  
+2023-07-05T17:25:37.146Z x265 [info]: frame B: 107703, Avg QP:35.13  kb/s: 90.13   
+2023-07-05T17:25:37.146Z x265 [info]: Weighted P-Frames: Y:1.5% UV:0.3%
+2023-07-05T17:25:37.146Z x265 [info]: consecutive B-frames: 7.7% 5.8% 8.6% 61.3% 16.5% 
+2023-07-05T17:25:37.146Z 
+2023-07-05T17:25:37.146Z encoded 147144 frames in 7696.91s (19.12 fps), 314.54 kb/s, Avg QP:33.87
+2023-07-05T17:25:37.146Z 
+2023-07-05T17:25:37.146Z 
+2023-07-05T17:25:37.148Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[Step W06] [C1] Worker [-success-]
+2023-07-05T17:25:37.149Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Worker success during processing
+2023-07-05T17:25:37.149Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Updating transcode stats
+2023-07-05T17:25:37.150Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Deleting non-latest cache file /media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv
+2023-07-05T17:25:37.150Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Scanning new file: /temp/To Every You I've Loved Before (2022) WEBDL-1080p-TdarrCacheFile-Lt0oGvH8c.mkv
+2023-07-05T17:25:37.150Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Updating file properties using mkvpropedit
+2023-07-05T17:25:38.156Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Updated file properties using mkvpropedit
+2023-07-05T17:25:38.159Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Requesting Tdarr Server to scan file
+2023-07-05T17:25:38.226Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Subworker exited null
+2023-07-05T17:25:39.230Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Scan complete
+2023-07-05T17:25:39.231Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:pluginCycleLogJSONString:{"nodeName":"MyInternalNode","workerID":"taut-tahr","pluginCycle":1,"outcome":"success","workerLog":"\nPre-processing - Tdarr_Plugin_MC93_MigzImageRemoval\n☑File doesn't contain any unwanted image format streams.\n\nPre-processing - Tdarr_Plugin_lmg1_Reorder_Streams\nFile has video in first stream\n File meets conditions!\n\nPre-processing - Tdarr_Plugin_075a_FFMPEG_HEVC_Generic\n☑File is a video! \n☒File is not hevc! \n","lastCliCommand":"tdarr-ffmpeg -i \"/media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv\" -map 0:v -map 0:a -map 0:s? -map 0:d? -c copy -c:v:0 libx265 -max_muxing_queue_size 9999 \"/temp/To Every You I've Loved Before (2022) WEBDL-1080p-TdarrCacheFile-Lt0oGvH8c.mkv\""}
+2023-07-05T17:25:39.231Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:fileVersionLogJSONString:{"lastCliCommand":"tdarr-ffmpeg -i \"/media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv\" -map 0:v -map 0:a -map 0:s? -map 0:d? -c copy -c:v:0 libx265 -max_muxing_queue_size 9999 \"/temp/To Every You I've Loved Before (2022) WEBDL-1080p-TdarrCacheFile-Lt0oGvH8c.mkv\"","lastPluginId":"Tdarr_Plugin_075a_FFMPEG_HEVC_Generic","sourceFile":{"_id":"/temp/To Every You I've Loved Before (2022) WEBDL-1080p-TdarrCacheFile-Lt0oGvH8c.mkv","footprintId":"_kP_4c6Uw","file":"/temp/To Every You I've Loved Before (2022) WEBDL-1080p-TdarrCacheFile-Lt0oGvH8c.mkv","container":"mkv","scannerReads":{"ffProbeRead":"success","exiftoolRead":"success","mediaInfoRead":"not enabled","closedCaptionRead":"not enabled"},"createdAt":1688574336530,"lastPluginDetails":"none","bit_rate":447301,"statSync":{"dev":2051,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":5918617,"size":343148313,"blocks":670224,"atimeMs":1688574335328.8835,"mtimeMs":1688574334716.8933,"ctimeMs":1688574334716.8933,"birthtimeMs":1688566637777.9597,"atime":"2023-07-05T16:25:35.329Z","mtime":"2023-07-05T16:25:34.717Z","ctime":"2023-07-05T16:25:34.717Z","birthtime":"2023-07-05T14:17:17.778Z"},"file_size":327.2517328262329,"ffProbeData":{"streams":[{"index":0,"codec_name":"hevc","codec_long_name":"H.265 / HEVC (High Efficiency Video Coding)","profile":"Main","codec_type":"video","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","width":1920,"height":1080,"coded_width":1920,"coded_height":1080,"closed_captions":0,"has_b_frames":2,"sample_aspect_ratio":"1:1","display_aspect_ratio":"16:9","pix_fmt":"yuv420p","level":120,"color_range":"tv","chroma_location":"left","field_order":"progressive","refs":1,"r_frame_rate":"24000/1001","avg_frame_rate":"24000/1001","time_base":"1/1000","start_pts":0,"start_time":"0.000000","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"BPS":"7982371","NUMBER_OF_FRAMES":"147144","NUMBER_OF_BYTES":"6123613670","_STATISTICS_WRITING_APP":"mkvmerge v67.0.0 ('Under Stars') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2023-04-21 05:15:24","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES","ENCODER":"Lavc60.3.100 libx265","DURATION":"01:42:17.131000000"}},{"index":1,"codec_name":"aac","codec_long_name":"AAC (Advanced Audio Coding)","profile":"LC","codec_type":"audio","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":"44100","channels":2,"channel_layout":"stereo","bits_per_sample":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"jpn","BPS":"127999","NUMBER_OF_FRAMES":"264307","NUMBER_OF_BYTES":"98195145","_STATISTICS_WRITING_APP":"mkvmerge v67.0.0 ('Under Stars') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2023-04-21 05:15:24","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES","DURATION":"01:42:17.218000000"}},{"index":2,"codec_name":"ass","codec_long_name":"ASS (Advanced SSA) subtitle","codec_type":"subtitle","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","duration_ts":6137218,"duration":"6137.218000","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"fre","BPS":"129","NUMBER_OF_FRAMES":"1300","NUMBER_OF_BYTES":"94016","_STATISTICS_WRITING_APP":"mkvmerge v67.0.0 ('Under Stars') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2023-04-21 05:15:24","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES","DURATION":"01:37:10.470000000"}}],"format":{"filename":"/temp/To Every You I've Loved Before (2022) WEBDL-1080p-TdarrCacheFile-Lt0oGvH8c.mkv","nb_streams":3,"nb_programs":0,"format_name":"matroska,webm","format_long_name":"Matroska / WebM","start_time":"0.000000","duration":"6137.218000","size":"343148313","bit_rate":"447301","probe_score":100,"tags":{"title":"To Every You I've Loved Before (2022) VOSTFR 1080p WEB x264 AAC -Tsundere-Raws (CR)","ENCODER":"Lavf60.3.100"}}},"meta":{"SourceFile":"/temp/To Every You I've Loved Before (2022) WEBDL-1080p-TdarrCacheFile-Lt0oGvH8c.mkv","errors":[],"Duration":6137.218,"ExifToolVersion":12.4,"FileName":"To Every You I've Loved Before (2022) WEBDL-1080p-TdarrCacheFile-Lt0oGvH8c.mkv","Directory":"/temp","FileSize":"327 MiB","FileModifyDate":{"year":2023,"month":7,"day":5,"hour":16,"minute":25,"second":34,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:05 16:25:34+00:00"},"FileAccessDate":{"year":2023,"month":7,"day":5,"hour":16,"minute":25,"second":35,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:05 16:25:35+00:00"},"FileInodeChangeDate":{"year":2023,"month":7,"day":5,"hour":16,"minute":25,"second":34,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:05 16:25:34+00:00"},"FilePermissions":"-rw-rw-r--","FileType":"MKV","FileTypeExtension":"mkv","MIMEType":"video/x-matroska","EBMLVersion":1,"EBMLReadVersion":1,"DocType":"matroska","DocTypeVersion":4,"DocTypeReadVersion":2,"TimecodeScale":"1 ms","Title":"To Every You I've Loved Before (2022) VOSTFR 1080p WEB x264 AAC -Tsundere-Raws (CR)","MuxingApp":"Lavf60.3.100","WritingApp":"Lavf60.3.100","VideoFrameRate":23.976,"ImageWidth":1920,"ImageHeight":1080,"VideoScanType":"Unknown (2)","AudioChannels":2,"AudioSampleRate":44100,"AudioBitsPerSample":32,"TrackNumber":3,"TrackLanguage":"fre","CodecID":"S_TEXT/ASS","TrackType":"Subtitle","TagName":"DURATION","TagString":"01:37:10.470000000","ImageSize":"1920x1080","Megapixels":2.1},"mediaInfo":{},"hasClosedCaptions":false,"DB":"9gM67-NoX","bumped":false,"HealthCheck":"","TranscodeDecisionMaker":"","holdUntil":0,"fileMedium":"video","video_codec_name":"hevc","audio_codec_name":"","video_resolution":"1080p","lastHealthCheckDate":0,"lastTranscodeDate":0,"history":"","oldSize":0,"newSize":0,"videoStreamIndex":0,"duration":6137}}
+2023-07-05T17:25:39.232Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Transcodes during this job so far: 1
+2023-07-05T17:25:39.232Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[Step W02] [C2] Running pre-process file
+2023-07-05T17:25:39.233Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Checking files can be accessed
+2023-07-05T17:25:39.233Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Relevant paths can be accessed
+2023-07-05T17:25:39.234Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Source file: /temp/To Every You I've Loved Before (2022) WEBDL-1080p-TdarrCacheFile-Lt0oGvH8c.mkv
+2023-07-05T17:25:39.234Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Cache folder: /temp
+2023-07-05T17:25:39.235Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[Step W03] [C2] Analysing file - running plugins
+2023-07-05T17:25:39.235Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:New cache file has already been scanned, no need to scan again
+2023-07-05T17:25:39.235Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Updating Node relay: Processing
+2023-07-05T17:25:39.236Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[1/2] Checking file frame count
+2023-07-05T17:25:39.236Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[2/2] Frame count 0
+2023-07-05T17:25:39.237Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Transcode task, determining transcode settings
+2023-07-05T17:25:39.238Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Plugin stack selected
+2023-07-05T17:25:39.238Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Plugin: plugin1:  Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-05T17:25:39.239Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[1/5] Reading plugin
+2023-07-05T17:25:39.239Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[2/5] Plugin read finished
+2023-07-05T17:25:39.240Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[3/5] Installing dependencies
+2023-07-05T17:25:39.240Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[4/5] Running plugin
+2023-07-05T17:25:39.241Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:{"pluginInputs":{}}
+2023-07-05T17:25:39.241Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[5/5] Running plugin finished
+2023-07-05T17:25:39.241Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Plugin: plugin2:  Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-05T17:25:39.242Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[1/5] Reading plugin
+2023-07-05T17:25:39.242Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[2/5] Plugin read finished
+2023-07-05T17:25:39.243Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[3/5] Installing dependencies
+2023-07-05T17:25:39.244Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[4/5] Running plugin
+2023-07-05T17:25:39.244Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:{"pluginInputs":{}}
+2023-07-05T17:25:39.245Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[5/5] Running plugin finished
+2023-07-05T17:25:39.246Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Plugin: qCoq1y3ND:  Tdarr_Plugin_075a_FFMPEG_HEVC_Generic
+2023-07-05T17:25:39.246Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[1/5] Reading plugin
+2023-07-05T17:25:39.247Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[2/5] Plugin read finished
+2023-07-05T17:25:39.247Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[3/5] Installing dependencies
+2023-07-05T17:25:39.248Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[4/5] Running plugin
+2023-07-05T17:25:39.249Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:{"pluginInputs":{}}
+2023-07-05T17:25:39.250Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[5/5] Running plugin finished
+2023-07-05T17:25:39.250Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Plugin: plugin5:  Tdarr_Plugin_a9he_New_file_size_check
+2023-07-05T17:25:39.251Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[1/5] Reading plugin
+2023-07-05T17:25:39.251Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[2/5] Plugin read finished
+2023-07-05T17:25:39.252Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[3/5] Installing dependencies
+2023-07-05T17:25:39.253Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[4/5] Running plugin
+2023-07-05T17:25:39.253Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:{"pluginInputs":{"upperBound":110,"lowerBound":40}}
+2023-07-05T17:25:39.255Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Error Error: New file size not within limits. New file has size 327.252 MB which is 5% of original file size:  5939.061 MB. lowerBound is 40%
+2023-07-05T17:25:39.256Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Worker config: {
+2023-07-05T17:25:39.256Z   "processFile": false,
+2023-07-05T17:25:39.256Z   "preset": "",
+2023-07-05T17:25:39.256Z   "container": "",
+2023-07-05T17:25:39.256Z   "handBrakeMode": false,
+2023-07-05T17:25:39.256Z   "FFmpegMode": false,
+2023-07-05T17:25:39.256Z   "reQueueAfter": false,
+2023-07-05T17:25:39.256Z   "infoLog": "☑File is a video! \n☑File is already in hevc! \n",
+2023-07-05T17:25:39.256Z   "handbrakeMode": "",
+2023-07-05T17:25:39.256Z   "ffmpegMode": "",
+2023-07-05T17:25:39.256Z   "error": true
+2023-07-05T17:25:39.256Z }
+2023-07-05T17:25:39.256Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Worker log: 
+2023-07-05T17:25:39.256Z Pre-processing - Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-05T17:25:39.256Z ☑File doesn't contain any unwanted image format streams.
+2023-07-05T17:25:39.256Z 
+2023-07-05T17:25:39.256Z Pre-processing - Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-05T17:25:39.256Z File has video in first stream
+2023-07-05T17:25:39.256Z  File meets conditions!
+2023-07-05T17:25:39.256Z 
+2023-07-05T17:25:39.256Z Pre-processing - Tdarr_Plugin_075a_FFMPEG_HEVC_Generic
+2023-07-05T17:25:39.256Z ☑File is a video! 
+2023-07-05T17:25:39.256Z ☑File is already in hevc! 
+2023-07-05T17:25:39.256Z 
+2023-07-05T17:25:39.256Z Pre-processing - Tdarr_Plugin_a9he_New_file_size_check☒Plugin error! Error: New file size not within limits. New file has size 327.252 MB which is 5% of original file size:  5939.061 MB. lowerBound is 40% 
+2023-07-05T17:25:39.256Z 
+2023-07-05T17:25:39.257Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Worker config [-error-]:
+2023-07-05T17:25:39.257Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:[Step W10] Worker processing end
+2023-07-05T17:25:39.257Z 4-sDWDup3:Node[MyInternalNode]:Worker[taut-tahr]:Successfully updated server with verdict: transcodeError

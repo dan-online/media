@@ -1,0 +1,75 @@
+/videos/9267411f-b40a-ca50-ed45-007dc94930c3/hls1/main/136.ts
+
+{"Protocol":0,"Id":"9267411fb40aca50ed45007dc94930c3","Path":"/data/tvshows/Top Gear/Season 22/Top Gear - S22E07 - Episode 7 HDTV-1080p.mkv","EncoderPath":null,"EncoderProtocol":null,"Type":0,"Container":"mov,mp4,m4a,3gp,3g2,mj2","Size":870538132,"Name":"Top Gear - S22E07 - Episode 7 HDTV-1080p","IsRemote":false,"ETag":"ee4962bc4ea51abb36e275f475317bc3","RunTimeTicks":36921750000,"ReadAtNativeFramerate":false,"IgnoreDts":false,"IgnoreIndex":false,"GenPtsInput":false,"SupportsTranscoding":true,"SupportsDirectStream":true,"SupportsDirectPlay":true,"IsInfiniteStream":false,"RequiresOpening":false,"OpenToken":null,"RequiresClosing":false,"LiveStreamId":null,"BufferMs":null,"RequiresLooping":false,"SupportsProbing":true,"VideoType":0,"IsoType":null,"Video3DFormat":null,"MediaStreams":[{"Codec":"subrip","CodecTag":null,"Language":"eng","ColorRange":null,"ColorSpace":null,"ColorTransfer":null,"ColorPrimaries":null,"DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/1000","CodecTimeBase":null,"Title":null,"VideoRange":null,"VideoRangeType":null,"VideoDoViTitle":null,"LocalizedUndefined":"Undefined","LocalizedDefault":"Default","LocalizedForced":"Forced","LocalizedExternal":"External","DisplayTitle":"English - SUBRIP - External","NalLengthSize":null,"IsInterlaced":false,"IsAVC":null,"ChannelLayout":null,"BitRate":null,"BitDepth":null,"RefFrames":null,"PacketLength":null,"Channels":null,"SampleRate":null,"IsDefault":false,"IsForced":false,"Height":null,"Width":null,"AverageFrameRate":null,"RealFrameRate":null,"Profile":null,"Type":2,"AspectRatio":null,"Index":0,"Score":null,"IsExternal":true,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":true,"SupportsExternalStream":true,"Path":"/data/tvshows/Top Gear/Season 22/Top Gear - S22E07 - Episode 7 HDTV-1080p.en.srt","PixelFormat":null,"Level":0,"IsAnamorphic":null},{"Codec":"hevc","CodecTag":"hev1","Language":"und","ColorRange":null,"ColorSpace":null,"ColorTransfer":null,"ColorPrimaries":null,"DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/12800","CodecTimeBase":null,"Title":null,"VideoRange":"SDR","VideoRangeType":"SDR","VideoDoViTitle":null,"LocalizedUndefined":null,"LocalizedDefault":null,"LocalizedForced":null,"LocalizedExternal":null,"DisplayTitle":"1080p HEVC SDR","NalLengthSize":null,"IsInterlaced":false,"IsAVC":null,"ChannelLayout":null,"BitRate":1753143,"BitDepth":8,"RefFrames":1,"PacketLength":null,"Channels":null,"SampleRate":null,"IsDefault":true,"IsForced":false,"Height":1080,"Width":1920,"AverageFrameRate":25,"RealFrameRate":25,"Profile":"Main","Type":1,"AspectRatio":"16:9","Index":1,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Path":null,"PixelFormat":"yuv420p","Level":120,"IsAnamorphic":null},{"Codec":"aac","CodecTag":"mp4a","Language":"eng","ColorRange":null,"ColorSpace":null,"ColorTransfer":null,"ColorPrimaries":null,"DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/44100","CodecTimeBase":null,"Title":null,"VideoRange":null,"VideoRangeType":null,"VideoDoViTitle":null,"LocalizedUndefined":null,"LocalizedDefault":null,"LocalizedForced":null,"LocalizedExternal":null,"DisplayTitle":"English - AAC - Stereo - Default","NalLengthSize":null,"IsInterlaced":false,"IsAVC":null,"ChannelLayout":"stereo","BitRate":128001,"BitDepth":null,"RefFrames":null,"PacketLength":null,"Channels":2,"SampleRate":44100,"IsDefault":true,"IsForced":false,"Height":null,"Width":null,"AverageFrameRate":null,"RealFrameRate":null,"Profile":"LC","Type":0,"AspectRatio":null,"Index":2,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Path":null,"PixelFormat":null,"Level":0,"IsAnamorphic":null}],"MediaAttachments":[],"Formats":[],"Bitrate":1886233,"Timestamp":null,"RequiredHttpHeaders":{},"TranscodingUrl":null,"TranscodingSubProtocol":null,"TranscodingContainer":null,"AnalyzeDurationMs":null,"DefaultAudioStreamIndex":null,"DefaultSubtitleStreamIndex":null}
+
+/usr/lib/jellyfin-ffmpeg/ffmpeg -analyzeduration 200M -ss 00:06:48.000 -f mov,mp4,m4a,3gp,3g2,mj2 -autorotate 0 -i file:"/data/tvshows/Top Gear/Season 22/Top Gear - S22E07 - Episode 7 HDTV-1080p.mkv" -map_metadata -1 -map_chapters -1 -threads 0 -map 0:0 -map 0:1 -map -0:s -codec:v:0 libx264 -preset veryfast -crf 23 -maxrate 4382858 -bufsize 8765716 -x264opts:0 subme=0:me_range=4:rc_lookahead=10:me=dia:no_chroma_me:8x8dct=0:partitions=none -force_key_frames:0 "expr:gte(t,408+n_forced*3)" -sc_threshold:v:0 0 -vf "setparams=color_primaries=bt709:color_trc=bt709:colorspace=bt709,scale=trunc(min(max(iw\,ih*a)\,min(1920\,1080*a))/2)*2:trunc(min(max(iw/a\,ih)\,min(1920/a\,1080))/2)*2,format=yuv420p" -start_at_zero -codec:a:0 copy -copyts -avoid_negative_ts disabled -max_muxing_queue_size 2048 -f hls -max_delay 5000000 -hls_time 3 -hls_segment_type mpegts -start_number 136 -hls_segment_filename "/data/transcodes/86a549e2a78b0c511cf4065bc2413396%d.ts" -hls_playlist_type vod -hls_list_size 0 -y "/data/transcodes/86a549e2a78b0c511cf4065bc2413396.m3u8"
+
+
+ffmpeg version 5.1.3-Jellyfin Copyright (c) 2000-2022 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.3.0-1ubuntu1~22.04.1)
+  configuration: --prefix=/usr/lib/jellyfin-ffmpeg --target-os=linux --extra-libs=-lfftw3f --extra-version=Jellyfin --disable-doc --disable-ffplay --disable-ptx-compression --disable-static --disable-libxcb --disable-sdl2 --disable-xlib --enable-lto --enable-gpl --enable-version3 --enable-shared --enable-gmp --enable-gnutls --enable-chromaprint --enable-libdrm --enable-libass --enable-libfreetype --enable-libfribidi --enable-libfontconfig --enable-libbluray --enable-libmp3lame --enable-libopus --enable-libtheora --enable-libvorbis --enable-libopenmpt --enable-libdav1d --enable-libwebp --enable-libvpx --enable-libx264 --enable-libx265 --enable-libzvbi --enable-libzimg --enable-libfdk-aac --arch=amd64 --enable-libsvtav1 --enable-libshaderc --enable-libplacebo --enable-vulkan --enable-opencl --enable-vaapi --enable-amf --enable-libmfx --enable-ffnvcodec --enable-cuda --enable-cuda-llvm --enable-cuvid --enable-nvdec --enable-nvenc
+  libavutil      57. 28.100 / 57. 28.100
+  libavcodec     59. 37.100 / 59. 37.100
+  libavformat    59. 27.100 / 59. 27.100
+  libavdevice    59.  7.100 / 59.  7.100
+  libavfilter     8. 44.100 /  8. 44.100
+  libswscale      6.  7.100 /  6.  7.100
+  libswresample   4.  7.100 /  4.  7.100
+  libpostproc    56.  6.100 / 56.  6.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'file:/data/tvshows/Top Gear/Season 22/Top Gear - S22E07 - Episode 7 HDTV-1080p.mkv':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2mp41
+    encoder         : Lavf58.29.100
+  Duration: 01:01:32.18, start: 0.000000, bitrate: 1886 kb/s
+  Stream #0:0[0x1](und): Video: hevc (Main) (hev1 / 0x31766568), yuv420p(tv, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 1753 kb/s, 25 fps, 25 tbr, 12800 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (hevc (native) -> h264 (libx264))
+  Stream #0:1 -> #0:1 (copy)
+Press [q] to stop, [?] for help
+[libx264 @ 0x55a395c67640] using SAR=1/1
+[libx264 @ 0x55a395c67640] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x55a395c67640] profile Main, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0x55a395c67640] 264 - core 163 r3060 5db6aa6 - H.264/MPEG-4 AVC codec - Copyleft 2003-2021 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x1:0 me=dia subme=0 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=4 chroma_me=0 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=0 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 vbv_maxrate=4382 vbv_bufsize=8765 crf_max=0.0 nal_hrd=none filler=0 ip_ratio=1.40 aq=1:1.00
+Output #0, hls, to '/data/transcodes/86a549e2a78b0c511cf4065bc2413396.m3u8':
+  Metadata:
+    encoder         : Lavf59.27.100
+  Stream #0:0: Video: h264, yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 25 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc59.37.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 4382000/0/0 buffer size: 8765000 vbv_delay: N/A
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+frame=    1 fps=0.6 q=0.0 size=N/A time=00:00:00.00 bitrate=N/A speed=   0x    
+frame=   17 fps=7.5 q=0.0 size=N/A time=00:00:00.65 bitrate=N/A speed=0.287x    
+frame=   42 fps= 15 q=28.0 size=N/A time=00:00:01.64 bitrate=N/A speed=0.595x    
+frame=   71 fps= 22 q=28.0 size=N/A time=00:00:02.80 bitrate=N/A speed=0.859x    
+frame=  118 fps= 31 q=28.0 size=N/A time=00:00:04.69 bitrate=N/A speed=1.24x    
+frame=  144 fps= 34 q=28.0 size=N/A time=00:00:05.73 bitrate=N/A speed=1.34x    
+
+[q] command received. Exiting.
+
+[hls @ 0x55a395a5e480] Opening '/data/transcodes/86a549e2a78b0c511cf4065bc2413396136.ts' for writing
+frame=  166 fps= 30 q=-1.0 Lsize=N/A time=00:00:06.59 bitrate=N/A speed=1.21x    
+video:2396kB audio:231kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+[libx264 @ 0x55a395c67640] frame I:1     Avg QP:22.02  size: 33444
+[libx264 @ 0x55a395c67640] frame P:79    Avg QP:20.97  size: 24843
+[libx264 @ 0x55a395c67640] frame B:86    Avg QP:23.16  size:  5314
+[libx264 @ 0x55a395c67640] consecutive B-frames: 26.5% 10.8%  7.2% 55.4%
+[libx264 @ 0x55a395c67640] mb I  I16..4: 68.2%  0.0% 31.8%
+[libx264 @ 0x55a395c67640] mb P  I16..4: 38.1%  0.0%  0.0%  P16..4: 29.6%  0.0%  0.0%  0.0%  0.0%    skip:32.3%
+[libx264 @ 0x55a395c67640] mb B  I16..4:  2.7%  0.0%  0.0%  B16..8: 12.2%  0.0%  0.0%  direct: 4.9%  skip:80.3%  L0:38.1% L1:51.6% BI:10.3%
+[libx264 @ 0x55a395c67640] coded y,uvDC,uvAC intra: 13.8% 34.3% 4.9% inter: 5.6% 14.2% 0.5%
+[libx264 @ 0x55a395c67640] i16 v,h,dc,p: 34% 29% 12% 26%
+[libx264 @ 0x55a395c67640] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 25% 29% 23%  8%  4%  2%  4%  2%  3%
+[libx264 @ 0x55a395c67640] i8c dc,h,v,p: 38% 30% 22% 10%
+[libx264 @ 0x55a395c67640] Weighted P-Frames: Y:2.5% UV:1.3%
+[libx264 @ 0x55a395c67640] kb/s:2955.45

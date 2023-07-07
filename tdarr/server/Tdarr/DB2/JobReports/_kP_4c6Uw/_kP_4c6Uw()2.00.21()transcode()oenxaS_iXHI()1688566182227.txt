@@ -1,0 +1,506 @@
+2023-07-05T15:09:44.587Z oenxaS_iXHI:[Step S01] [2.00.21] Server relay initialising job
+2023-07-05T15:09:44.587Z oenxaS_iXHI:Server: linux_x64_docker_true
+2023-07-05T15:09:44.587Z oenxaS_iXHI:Server relay adding file to staged files
+2023-07-05T15:09:44.588Z oenxaS_iXHI:Server relay sending job to Node relay: MyInternalNode
+2023-07-05T15:09:44.588Z oenxaS_iXHI:Node[MyInternalNode]:[Step N01] [2.00.21] Node relay received job
+2023-07-05T15:09:44.588Z oenxaS_iXHI:Node[MyInternalNode]:{"nodeName":"MyInternalNode","serverIP":"0.0.0.0","serverPort":"8266","handbrakePath":"","ffmpegPath":"","mkvpropeditPath":"","pathTranslators":[{"server":"","node":""}],"logLevel":"INFO","priority":-1,"platform_arch_isdocker":"linux_x64_docker_true","processPid":199,"nodeID":"_VxSJ6fLa"}
+2023-07-05T15:09:44.588Z oenxaS_iXHI:Node[MyInternalNode]:Node relay sending job to worker:that-tegus
+2023-07-05T15:09:44.588Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[Step W01] Received file, original: /media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv
+2023-07-05T15:09:44.589Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:{"workerType":"transcodecpu"}
+2023-07-05T15:09:44.589Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:{"ffmpegPath":"tdarr-ffmpeg"}
+2023-07-05T15:09:44.589Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:{"handbrakePath":"HandBrakeCLI"}
+2023-07-05T15:09:44.589Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:{"mkvpropeditPath":"mkvpropedit"}
+2023-07-05T15:09:44.589Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:{"gpuSelect":"-"}
+2023-07-05T15:09:44.589Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:{"allowGpuDoCpu":false}
+2023-07-05T15:09:44.590Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:{"thoroughHealthCheckCpuExtraInputArgs":""}
+2023-07-05T15:09:44.590Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:{"thoroughHealthCheckGpuExtraInputArgs":""}
+2023-07-05T15:09:44.591Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:{"thoroughHealthCheckCpuExtraArgs":""}
+2023-07-05T15:09:44.591Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:{"thoroughHealthCheckGpuExtraArgs":""}
+2023-07-05T15:09:44.591Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:{"logFullCliOutput":false}
+2023-07-05T15:09:44.591Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Path translating objects
+2023-07-05T15:09:44.591Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:{"librarySettings":{"_id":"9gM67-NoX","priority":0,"name":"Movies","folder":"/media/movies","foldersToIgnore":"","folderWatchScanInterval":30,"scannerThreadCount":2,"cache":"/temp","output":"","folderToFolderConversion":false,"folderToFolderConversionDeleteSource":false,"folderToFolderRecordHistory":true,"copyIfConditionsMet":false,"container":".mkv","containerFilter":"mkv,mp4,mov,m4v,mpg,mpeg,avi,flv,webm,wmv,vob,evo,iso,m2ts,ts","createdAt":1675837380368,"folderWatching":true,"useFsEvents":false,"scheduledScanFindNew":false,"processLibrary":true,"scanOnStart":true,"exifToolScan":true,"mediaInfoScan":true,"closedCaptionScan":false,"scanButtons":true,"scanFound":"","navItemSelected":"navSourceFolder","pluginIDs":[{"_id":"plugin1","id":"Tdarr_Plugin_MC93_MigzImageRemoval","checked":true,"source":"Community","priority":0,"InputsDB":{}},{"_id":"plugin2","id":"Tdarr_Plugin_lmg1_Reorder_Streams","checked":true,"source":"Community","priority":1,"InputsDB":{}},{"_id":"plugin3","id":"Tdarr_Plugin_MC93_Migz1FFMPEG_CPU","checked":false,"source":"Community","priority":2,"InputsDB":{}},{"_id":"plugin4","id":"Tdarr_Plugin_MC93_Migz1FFMPEG","checked":false,"source":"Community","priority":3,"InputsDB":{}},{"_id":"uw4sMvHE9","id":"Tdarr_Plugin_s7x8_winsome_h265","checked":true,"source":"Community","priority":4,"InputsDB":{}},{"_id":"plugin5","id":"Tdarr_Plugin_a9he_New_file_size_check","checked":true,"source":"Community","priority":5,"InputsDB":{}}],"pluginCommunity":true,"handbrake":true,"ffmpeg":false,"handbrakescan":true,"ffmpegscan":false,"preset":"-Z \"Very Fast 1080p30\"","decisionMaker":{"settingsPlugin":true,"settingsVideo":false,"videoExcludeSwitch":true,"video_codec_names_exclude":[{"codec":"hevc","checked":false},{"codec":"h264","checked":true}],"video_size_range_include":{"min":0,"max":100000},"video_height_range_include":{"min":0,"max":3000},"video_width_range_include":{"min":0,"max":4000},"settingsAudio":false,"audioExcludeSwitch":true,"audio_codec_names_exclude":[{"codec":"mp3","checked":true},{"codec":"aac","checked":false}],"audio_size_range_include":{"min":0,"max":10}},"schedule":[{"_id":"Sun:00-01","checked":true},{"_id":"Sun:01-02","checked":true},{"_id":"Sun:02-03","checked":true},{"_id":"Sun:03-04","checked":true},{"_id":"Sun:04-05","checked":true},{"_id":"Sun:05-06","checked":true},{"_id":"Sun:06-07","checked":true},{"_id":"Sun:07-08","checked":true},{"_id":"Sun:08-09","checked":true},{"_id":"Sun:09-10","checked":true},{"_id":"Sun:10-11","checked":true},{"_id":"Sun:11-12","checked":true},{"_id":"Sun:12-13","checked":true},{"_id":"Sun:13-14","checked":true},{"_id":"Sun:14-15","checked":true},{"_id":"Sun:15-16","checked":true},{"_id":"Sun:16-17","checked":true},{"_id":"Sun:17-18","checked":true},{"_id":"Sun:18-19","checked":true},{"_id":"Sun:19-20","checked":true},{"_id":"Sun:20-21","checked":true},{"_id":"Sun:21-22","checked":true},{"_id":"Sun:22-23","checked":true},{"_id":"Sun:23-00","checked":true},{"_id":"Mon:00-01","checked":true},{"_id":"Mon:01-02","checked":true},{"_id":"Mon:02-03","checked":true},{"_id":"Mon:03-04","checked":true},{"_id":"Mon:04-05","checked":true},{"_id":"Mon:05-06","checked":true},{"_id":"Mon:06-07","checked":true},{"_id":"Mon:07-08","checked":true},{"_id":"Mon:08-09","checked":true},{"_id":"Mon:09-10","checked":true},{"_id":"Mon:10-11","checked":true},{"_id":"Mon:11-12","checked":true},{"_id":"Mon:12-13","checked":true},{"_id":"Mon:13-14","checked":true},{"_id":"Mon:14-15","checked":true},{"_id":"Mon:15-16","checked":true},{"_id":"Mon:16-17","checked":true},{"_id":"Mon:17-18","checked":true},{"_id":"Mon:18-19","checked":true},{"_id":"Mon:19-20","checked":true},{"_id":"Mon:20-21","checked":true},{"_id":"Mon:21-22","checked":true},{"_id":"Mon:22-23","checked":true},{"_id":"Mon:23-00","checked":true},{"_id":"Tue:00-01","checked":true},{"_id":"Tue:01-02","checked":true},{"_id":"Tue:02-03","checked":true},{"_id":"Tue:03-04","checked":true},{"_id":"Tue:04-05","checked":true},{"_id":"Tue:05-06","checked":true},{"_id":"Tue:06-07","checked":true},{"_id":"Tue:07-08","checked":true},{"_id":"Tue:08-09","checked":true},{"_id":"Tue:09-10","checked":true},{"_id":"Tue:10-11","checked":true},{"_id":"Tue:11-12","checked":true},{"_id":"Tue:12-13","checked":true},{"_id":"Tue:13-14","checked":true},{"_id":"Tue:14-15","checked":true},{"_id":"Tue:15-16","checked":true},{"_id":"Tue:16-17","checked":true},{"_id":"Tue:17-18","checked":true},{"_id":"Tue:18-19","checked":true},{"_id":"Tue:19-20","checked":true},{"_id":"Tue:20-21","checked":true},{"_id":"Tue:21-22","checked":true},{"_id":"Tue:22-23","checked":true},{"_id":"Tue:23-00","checked":true},{"_id":"Wed:00-01","checked":true},{"_id":"Wed:01-02","checked":true},{"_id":"Wed:02-03","checked":true},{"_id":"Wed:03-04","checked":true},{"_id":"Wed:04-05","checked":true},{"_id":"Wed:05-06","checked":true},{"_id":"Wed:06-07","checked":true},{"_id":"Wed:07-08","checked":true},{"_id":"Wed:08-09","checked":true},{"_id":"Wed:09-10","checked":true},{"_id":"Wed:10-11","checked":true},{"_id":"Wed:11-12","checked":true},{"_id":"Wed:12-13","checked":true},{"_id":"Wed:13-14","checked":true},{"_id":"Wed:14-15","checked":true},{"_id":"Wed:15-16","checked":true},{"_id":"Wed:16-17","checked":true},{"_id":"Wed:17-18","checked":true},{"_id":"Wed:18-19","checked":true},{"_id":"Wed:19-20","checked":true},{"_id":"Wed:20-21","checked":true},{"_id":"Wed:21-22","checked":true},{"_id":"Wed:22-23","checked":true},{"_id":"Wed:23-00","checked":true},{"_id":"Thur:00-01","checked":true},{"_id":"Thur:01-02","checked":true},{"_id":"Thur:02-03","checked":true},{"_id":"Thur:03-04","checked":true},{"_id":"Thur:04-05","checked":true},{"_id":"Thur:05-06","checked":true},{"_id":"Thur:06-07","checked":true},{"_id":"Thur:07-08","checked":true},{"_id":"Thur:08-09","checked":true},{"_id":"Thur:09-10","checked":true},{"_id":"Thur:10-11","checked":true},{"_id":"Thur:11-12","checked":true},{"_id":"Thur:12-13","checked":true},{"_id":"Thur:13-14","checked":true},{"_id":"Thur:14-15","checked":true},{"_id":"Thur:15-16","checked":true},{"_id":"Thur:16-17","checked":true},{"_id":"Thur:17-18","checked":true},{"_id":"Thur:18-19","checked":true},{"_id":"Thur:19-20","checked":true},{"_id":"Thur:20-21","checked":true},{"_id":"Thur:21-22","checked":true},{"_id":"Thur:22-23","checked":true},{"_id":"Thur:23-00","checked":true},{"_id":"Fri:00-01","checked":true},{"_id":"Fri:01-02","checked":true},{"_id":"Fri:02-03","checked":true},{"_id":"Fri:03-04","checked":true},{"_id":"Fri:04-05","checked":true},{"_id":"Fri:05-06","checked":true},{"_id":"Fri:06-07","checked":true},{"_id":"Fri:07-08","checked":true},{"_id":"Fri:08-09","checked":true},{"_id":"Fri:09-10","checked":true},{"_id":"Fri:10-11","checked":true},{"_id":"Fri:11-12","checked":true},{"_id":"Fri:12-13","checked":true},{"_id":"Fri:13-14","checked":true},{"_id":"Fri:14-15","checked":true},{"_id":"Fri:15-16","checked":true},{"_id":"Fri:16-17","checked":true},{"_id":"Fri:17-18","checked":true},{"_id":"Fri:18-19","checked":true},{"_id":"Fri:19-20","checked":true},{"_id":"Fri:20-21","checked":true},{"_id":"Fri:21-22","checked":true},{"_id":"Fri:22-23","checked":true},{"_id":"Fri:23-00","checked":true},{"_id":"Sat:00-01","checked":true},{"_id":"Sat:01-02","checked":true},{"_id":"Sat:02-03","checked":true},{"_id":"Sat:03-04","checked":true},{"_id":"Sat:04-05","checked":true},{"_id":"Sat:05-06","checked":true},{"_id":"Sat:06-07","checked":true},{"_id":"Sat:07-08","checked":true},{"_id":"Sat:08-09","checked":true},{"_id":"Sat:09-10","checked":true},{"_id":"Sat:10-11","checked":true},{"_id":"Sat:11-12","checked":true},{"_id":"Sat:12-13","checked":true},{"_id":"Sat:13-14","checked":true},{"_id":"Sat:14-15","checked":true},{"_id":"Sat:15-16","checked":true},{"_id":"Sat:16-17","checked":true},{"_id":"Sat:17-18","checked":true},{"_id":"Sat:18-19","checked":true},{"_id":"Sat:19-20","checked":true},{"_id":"Sat:20-21","checked":true},{"_id":"Sat:21-22","checked":true},{"_id":"Sat:22-23","checked":true},{"_id":"Sat:23-00","checked":true}],"totalHealthCheckCount":2,"totalTranscodeCount":1,"sizeDiff":0,"holdNewFiles":false,"holdFor":3600,"pluginStackOverview":true,"filterResolutionsSkip":"","filterCodecsSkip":"","processPluginsSequentially":true}}
+2023-07-05T15:09:44.592Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Fetching plugin data from server
+2023-07-05T15:09:44.592Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Scanning original library file
+2023-07-05T15:09:44.592Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:{
+2023-07-05T15:09:44.592Z   "exifToolScan": true,
+2023-07-05T15:09:44.592Z   "mediaInfoScan": false,
+2023-07-05T15:09:44.592Z   "closedCaptionScan": false
+2023-07-05T15:09:44.592Z }
+2023-07-05T15:09:44.592Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Updating file properties using mkvpropedit
+2023-07-05T15:09:44.592Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Updated file properties using mkvpropedit
+2023-07-05T15:09:44.592Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Requesting Tdarr Server to scan file
+2023-07-05T15:09:45.595Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Scan complete
+2023-07-05T15:09:45.596Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Original file scanned
+2023-07-05T15:09:45.598Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:fileVersionOriginalLogJSONString:{"lastCliCommand":"","lastPluginId":"","sourceFile":{"_id":"/media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv","footprintId":"_kP_4c6Uw","file":"/media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv","container":"mkv","scannerReads":{"ffProbeRead":"success","exiftoolRead":"success","mediaInfoRead":"not enabled","closedCaptionRead":"not enabled"},"createdAt":1688566183433,"lastPluginDetails":"none","bit_rate":8117758,"statSync":{"dev":2051,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":5904653,"size":6227556325,"blocks":12163248,"atimeMs":1688505877833.8547,"mtimeMs":1687016847168.5398,"ctimeMs":1687166131060.3977,"birthtimeMs":1687016568692.9185,"atime":"2023-07-04T21:24:37.834Z","mtime":"2023-06-17T15:47:27.169Z","ctime":"2023-06-19T09:15:31.060Z","birthtime":"2023-06-17T15:42:48.693Z"},"file_size":5939.0605211257935,"ffProbeData":{"streams":[{"index":0,"codec_name":"h264","codec_long_name":"H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10","profile":"High","codec_type":"video","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","width":1920,"height":1080,"coded_width":1920,"coded_height":1080,"closed_captions":0,"has_b_frames":0,"sample_aspect_ratio":"1:1","display_aspect_ratio":"16:9","pix_fmt":"yuv420p","level":40,"chroma_location":"left","field_order":"progressive","refs":1,"is_avc":"true","nal_length_size":"4","r_frame_rate":"24000/1001","avg_frame_rate":"24000/1001","time_base":"1/1000","start_pts":0,"start_time":"0.000000","bits_per_raw_sample":"8","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"BPS":"7982371","DURATION":"01:42:17.137000000","NUMBER_OF_FRAMES":"147144","NUMBER_OF_BYTES":"6123613670","_STATISTICS_WRITING_APP":"mkvmerge v67.0.0 ('Under Stars') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2023-04-21 05:15:24","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}},{"index":1,"codec_name":"aac","codec_long_name":"AAC (Advanced Audio Coding)","profile":"LC","codec_type":"audio","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":"44100","channels":2,"channel_layout":"stereo","bits_per_sample":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"jpn","BPS":"127999","DURATION":"01:42:17.218000000","NUMBER_OF_FRAMES":"264307","NUMBER_OF_BYTES":"98195145","_STATISTICS_WRITING_APP":"mkvmerge v67.0.0 ('Under Stars') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2023-04-21 05:15:24","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}},{"index":2,"codec_name":"ass","codec_long_name":"ASS (Advanced SSA) subtitle","codec_type":"subtitle","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","duration_ts":6137218,"duration":"6137.218000","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"fre","BPS":"129","DURATION":"01:36:38.550000000","NUMBER_OF_FRAMES":"1300","NUMBER_OF_BYTES":"94016","_STATISTICS_WRITING_APP":"mkvmerge v67.0.0 ('Under Stars') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2023-04-21 05:15:24","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}},{"index":3,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"trebucbd.ttf","mimetype":"application/x-truetype-font"}},{"index":4,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"trebucbi.ttf","mimetype":"application/x-truetype-font"}},{"index":5,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"trebucit.ttf","mimetype":"application/x-truetype-font"}},{"index":6,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"trebuc.ttf","mimetype":"application/x-truetype-font"}},{"index":7,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"arialbi.ttf","mimetype":"application/x-truetype-font"}},{"index":8,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"ariali.ttf","mimetype":"application/x-truetype-font"}},{"index":9,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"arialbd.ttf","mimetype":"application/x-truetype-font"}},{"index":10,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"arial.ttf","mimetype":"application/x-truetype-font"}},{"index":11,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"comicbd.ttf","mimetype":"application/x-truetype-font"}},{"index":12,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"comic.ttf","mimetype":"application/x-truetype-font"}},{"index":13,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"timesi.ttf","mimetype":"application/x-truetype-font"}},{"index":14,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"timesbd.ttf","mimetype":"application/x-truetype-font"}},{"index":15,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"timesbi.ttf","mimetype":"application/x-truetype-font"}},{"index":16,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"times.ttf","mimetype":"application/x-truetype-font"}},{"index":17,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"Rubik-Italic.ttf","mimetype":"application/x-truetype-font"}},{"index":18,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"Rubik-Regular.ttf","mimetype":"application/x-truetype-font"}},{"index":19,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"Rubik-BoldItalic.ttf","mimetype":"application/x-truetype-font"}},{"index":20,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":552349620,"duration":"6137.218000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"Rubik-Bold.ttf","mimetype":"application/x-truetype-font"}}],"format":{"filename":"/media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv","nb_streams":21,"nb_programs":0,"format_name":"matroska,webm","format_long_name":"Matroska / WebM","start_time":"0.000000","duration":"6137.218000","size":"6227556325","bit_rate":"8117758","probe_score":100,"tags":{"title":"To Every You I've Loved Before (2022) VOSTFR 1080p WEB x264 AAC -Tsundere-Raws (CR)","encoder":"Auto Multi Downloader v2.0.3-beta [Roselia]"}}},"meta":{"SourceFile":"/media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv","errors":[],"Duration":6137.218,"DefaultDuration":0.023219954,"ExifToolVersion":12.4,"FileName":"To Every You I've Loved Before (2022) WEBDL-1080p.mkv","Directory":"/media/movies/To Every You I've Loved Before (2022)","FileSize":"5.8 GiB","FileModifyDate":{"year":2023,"month":6,"day":17,"hour":15,"minute":47,"second":27,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:06:17 15:47:27+00:00"},"FileAccessDate":{"year":2023,"month":7,"day":4,"hour":21,"minute":24,"second":37,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:04 21:24:37+00:00"},"FileInodeChangeDate":{"year":2023,"month":6,"day":19,"hour":9,"minute":15,"second":31,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:06:19 09:15:31+00:00"},"FilePermissions":"-rw-rw-r--","FileType":"MKV","FileTypeExtension":"mkv","MIMEType":"video/x-matroska","EBMLVersion":1,"EBMLReadVersion":1,"DocType":"matroska","DocTypeVersion":4,"DocTypeReadVersion":2,"TimecodeScale":"1 ms","MuxingApp":"Auto Multi Downloader v2.0.3-beta [Roselia]","WritingApp":"Auto Multi Downloader v2.0.3-beta [Roselia]","Title":"To Every You I've Loved Before (2022) VOSTFR 1080p WEB x264 AAC -Tsundere-Raws (CR)","VideoCodecID":"V_MPEG4/ISO/AVC","VideoFrameRate":23.976,"ImageWidth":1920,"ImageHeight":1080,"DisplayWidth":1920,"DisplayHeight":1080,"AudioCodecID":"A_AAC","AudioSampleRate":44100,"AudioChannels":2,"TrackNumber":3,"TrackType":"Subtitle","CodecID":"S_TEXT/ASS","TrackLanguage":"fre","AttachedFileName":"Rubik-Bold.ttf","AttachedFileMIMEType":"application/x-truetype-font","AttachedFileData":"(Binary data 212840 bytes, use -b option to extract)","AttachedFileUID":"16710562318942599942","ImageSize":"1920x1080","Megapixels":2.1},"mediaInfo":{},"hasClosedCaptions":false,"DB":"9gM67-NoX","bumped":false,"HealthCheck":"","TranscodeDecisionMaker":"","holdUntil":0,"fileMedium":"video","video_codec_name":"h264","audio_codec_name":"","video_resolution":"1080p","lastHealthCheckDate":0,"lastTranscodeDate":0,"history":"","oldSize":0,"newSize":0,"videoStreamIndex":0,"duration":6137}}
+2023-07-05T15:09:45.598Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Source file to work on determined:/media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv
+2023-07-05T15:09:45.599Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[Step W02] [C1] Running pre-process file
+2023-07-05T15:09:45.599Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Checking files can be accessed
+2023-07-05T15:09:45.599Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Relevant paths can be accessed
+2023-07-05T15:09:45.600Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Source file: /media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv
+2023-07-05T15:09:45.600Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Cache folder: /temp
+2023-07-05T15:09:45.600Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[Step W03] [C1] Analysing file - running plugins
+2023-07-05T15:09:45.601Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:transcode task, scanning for extra file details before transcode
+2023-07-05T15:09:45.601Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Updating file properties using mkvpropedit
+2023-07-05T15:09:45.601Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Updated file properties using mkvpropedit
+2023-07-05T15:09:45.602Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Requesting Tdarr Server to scan file
+2023-07-05T15:09:47.613Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Scan complete
+2023-07-05T15:09:47.614Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Scan complete
+2023-07-05T15:09:47.615Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Updating Node relay: Processing
+2023-07-05T15:09:47.615Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[1/2] Checking file frame count
+2023-07-05T15:09:47.615Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[2/2] Frame count 0
+2023-07-05T15:09:47.615Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Transcode task, determining transcode settings
+2023-07-05T15:09:47.616Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Plugin stack selected
+2023-07-05T15:09:47.616Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Plugin: plugin1:  Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-05T15:09:47.616Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[1/5] Reading plugin
+2023-07-05T15:09:47.617Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[2/5] Plugin read finished
+2023-07-05T15:09:47.617Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[3/5] Installing dependencies
+2023-07-05T15:09:47.617Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[4/5] Running plugin
+2023-07-05T15:09:47.617Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:{"pluginInputs":{}}
+2023-07-05T15:09:47.618Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[5/5] Running plugin finished
+2023-07-05T15:09:47.618Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Plugin: plugin2:  Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-05T15:09:47.619Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[1/5] Reading plugin
+2023-07-05T15:09:47.619Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[2/5] Plugin read finished
+2023-07-05T15:09:47.619Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[3/5] Installing dependencies
+2023-07-05T15:09:47.619Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[4/5] Running plugin
+2023-07-05T15:09:47.620Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:{"pluginInputs":{}}
+2023-07-05T15:09:47.620Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[5/5] Running plugin finished
+2023-07-05T15:09:47.620Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Plugin: uw4sMvHE9:  Tdarr_Plugin_s7x8_winsome_h265
+2023-07-05T15:09:47.621Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[1/5] Reading plugin
+2023-07-05T15:09:47.621Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[2/5] Plugin read finished
+2023-07-05T15:09:47.621Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[3/5] Installing dependencies
+2023-07-05T15:09:47.621Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[4/5] Running plugin
+2023-07-05T15:09:47.621Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:{"pluginInputs":{}}
+2023-07-05T15:09:47.622Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[5/5] Running plugin finished
+2023-07-05T15:09:47.622Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Worker config: {
+2023-07-05T15:09:47.622Z   "processFile": true,
+2023-07-05T15:09:47.622Z   "preset": "-Z \"H.265 MKV 2160p60\" --all-audio --all-subtitles",
+2023-07-05T15:09:47.622Z   "container": ".mkv",
+2023-07-05T15:09:47.622Z   "handBrakeMode": true,
+2023-07-05T15:09:47.622Z   "FFmpegMode": false,
+2023-07-05T15:09:47.622Z   "reQueueAfter": true,
+2023-07-05T15:09:47.622Z   "infoLog": "☒File isn't in hevc! \n",
+2023-07-05T15:09:47.622Z   "lastPluginDetails": {
+2023-07-05T15:09:47.622Z     "source": "Community",
+2023-07-05T15:09:47.622Z     "id": "Tdarr_Plugin_s7x8_winsome_h265",
+2023-07-05T15:09:47.622Z     "number": "3/4"
+2023-07-05T15:09:47.622Z   },
+2023-07-05T15:09:47.622Z   "handbrakeMode": true,
+2023-07-05T15:09:47.622Z   "cliToUse": "handbrake"
+2023-07-05T15:09:47.622Z }
+2023-07-05T15:09:47.622Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Worker log: 
+2023-07-05T15:09:47.622Z Pre-processing - Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-05T15:09:47.622Z ☑File doesn't contain any unwanted image format streams.
+2023-07-05T15:09:47.622Z 
+2023-07-05T15:09:47.622Z Pre-processing - Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-05T15:09:47.622Z File has video in first stream
+2023-07-05T15:09:47.622Z  File meets conditions!
+2023-07-05T15:09:47.622Z 
+2023-07-05T15:09:47.622Z Pre-processing - Tdarr_Plugin_s7x8_winsome_h265
+2023-07-05T15:09:47.622Z ☒File isn't in hevc! 
+2023-07-05T15:09:47.622Z 
+2023-07-05T15:09:47.623Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Worker will process
+2023-07-05T15:09:47.623Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[Step W04] [C1] Preparing command
+2023-07-05T15:09:47.623Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Cache file stem: /temp
+2023-07-05T15:09:47.623Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Cache file path: /temp/To Every You I've Loved Before (2022) WEBDL-1080p-TdarrCacheFile-Ay-dUHR5P.mkv
+2023-07-05T15:09:47.624Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Create transcode args
+2023-07-05T15:09:47.624Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Args:  -i "/media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv" -o "/temp/To Every You I've Loved Before (2022) WEBDL-1080p-TdarrCacheFile-Ay-dUHR5P.mkv" -Z "H.265 MKV 2160p60" --all-audio --all-subtitles
+2023-07-05T15:09:47.624Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Getting source file size
+2023-07-05T15:09:47.624Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Source file size: 5.799863790161908
+2023-07-05T15:09:47.625Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Performing safety check on worker config to see if old transcode args/container match new ones
+2023-07-05T15:09:47.625Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Safety check complete, all good
+2023-07-05T15:09:47.625Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[Step W05] [C1] Launching subworker
+2023-07-05T15:09:47.625Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Preparing to launch subworker
+2023-07-05T15:09:47.626Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Subworker launched
+2023-07-05T15:09:47.626Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[1/3] Sending command to subworker
+2023-07-05T15:09:47.626Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[2/3] HandBrakeCLI -i "/media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv" -o "/temp/To Every You I've Loved Before (2022) WEBDL-1080p-TdarrCacheFile-Ay-dUHR5P.mkv" -Z "H.265 MKV 2160p60" --all-audio --all-subtitles
+2023-07-05T15:09:47.626Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[3/3] Command sent
+2023-07-05T15:09:47.627Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:To see live CLI output, enable 'Log full FFmpeg/HandBrake output' in the staging section on the Tdarr tab before the job starts. Note this could increase the job report size substantially.
+2023-07-05T15:09:47.627Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Subworker:Online
+2023-07-05T15:09:47.627Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Subworker:Receiving transcode settings
+2023-07-05T15:09:47.628Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Subworker:Running CLI
+2023-07-05T15:09:47.628Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Subworker:a.Thread closed, code: 2
+2023-07-05T15:09:47.628Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Subworker exit approved, killing subworker
+2023-07-05T15:09:47.629Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Subworker killed
+2023-07-05T15:09:47.629Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:b.Thread closed, code: 2
+2023-07-05T15:09:47.629Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:CLI code: 2
+2023-07-05T15:09:47.629Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Last 200 lines of CLI log:
+2023-07-05T15:09:47.629Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[15:09:45] Compile-time hardening features are enabled
+2023-07-05T15:09:47.629Z 
+2023-07-05T15:09:47.629Z [15:09:45] qsv: not available on this system
+2023-07-05T15:09:47.629Z 
+2023-07-05T15:09:47.629Z Cannot load libnvidia-encode.so.1
+2023-07-05T15:09:47.629Z 
+2023-07-05T15:09:47.629Z [15:09:45] hb_init: starting libhb thread
+2023-07-05T15:09:47.629Z [15:09:45] thread 7f362c083700 started ("libhb")
+2023-07-05T15:09:47.629Z 
+2023-07-05T15:09:47.629Z HandBrake 1.6.1 (2023061300) - Linux x86_64 - https://handbrake.fr
+2023-07-05T15:09:47.629Z 4 CPUs detected
+2023-07-05T15:09:47.629Z Invalid preset H.265 MKV 2160p60
+2023-07-05T15:09:47.629Z Valid presets are:
+2023-07-05T15:09:47.629Z     General/
+2023-07-05T15:09:47.629Z         Very Fast 2160p60 4K AV1
+2023-07-05T15:09:47.629Z             AV1 video (up to 2160p60) and AAC stereo audio, in an MP4
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         Very Fast 2160p60 4K HEVC
+2023-07-05T15:09:47.629Z             H.265 video (up to 2160p60) and AAC stereo audio, in an MP4
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         Very Fast 1080p30
+2023-07-05T15:09:47.629Z             Small H.264 video (up to 1080p30) and AAC stereo audio, in
+2023-07-05T15:09:47.629Z             an MP4 container.
+2023-07-05T15:09:47.629Z         Very Fast 720p30
+2023-07-05T15:09:47.629Z             Small H.264 video (up to 720p30) and AAC stereo audio, in an
+2023-07-05T15:09:47.629Z             MP4 container.
+2023-07-05T15:09:47.629Z         Very Fast 576p25
+2023-07-05T15:09:47.629Z             Small H.264 video (up to 576p25) and AAC stereo audio, in an
+2023-07-05T15:09:47.629Z             MP4 container.
+2023-07-05T15:09:47.629Z         Very Fast 480p30
+2023-07-05T15:09:47.629Z             Small H.264 video (up to 480p30) and AAC stereo audio, in an
+2023-07-05T15:09:47.629Z             MP4 container.
+2023-07-05T15:09:47.629Z         Fast 2160p60 4K AV1
+2023-07-05T15:09:47.629Z             AV1 video (up to 2160p60) and AAC stereo audio, in an MP4
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         Fast 2160p60 4K HEVC
+2023-07-05T15:09:47.629Z             H.265 video (up to 2160p60) and AAC stereo audio, in an MP4
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         Fast 1080p30
+2023-07-05T15:09:47.629Z             H.264 video (up to 1080p30) and AAC stereo audio, in an MP4
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         Fast 720p30
+2023-07-05T15:09:47.629Z             H.264 video (up to 720p30) and AAC stereo audio, in an MP4
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         Fast 576p25
+2023-07-05T15:09:47.629Z             H.264 video (up to 576p25) and AAC stereo audio, in an MP4
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         Fast 480p30
+2023-07-05T15:09:47.629Z             H.264 video (up to 480p30) and AAC stereo audio, in an MP4
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         HQ 2160p60 4K AV1 Surround
+2023-07-05T15:09:47.629Z             High quality AV1 video (up to 2160p60), AAC stereo audio,
+2023-07-05T15:09:47.629Z             and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         HQ 2160p60 4K HEVC Surround
+2023-07-05T15:09:47.629Z             High quality H.265 video (up to 2160p60), AAC stereo audio,
+2023-07-05T15:09:47.629Z             and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         HQ 1080p30 Surround
+2023-07-05T15:09:47.629Z             High quality H.264 video (up to 1080p30), AAC stereo audio,
+2023-07-05T15:09:47.629Z             and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         HQ 720p30 Surround
+2023-07-05T15:09:47.629Z             High quality H.264 video (up to 720p30), AAC stereo audio,
+2023-07-05T15:09:47.629Z             and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z 
+2023-07-05T15:09:47.629Z         HQ 576p25 Surround
+2023-07-05T15:09:47.629Z             High quality H.264 video (up to 576p25), AAC stereo audio,
+2023-07-05T15:09:47.629Z             and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         HQ 480p30 Surround
+2023-07-05T15:09:47.629Z             High quality H.264 video (up to 480p30), AAC stereo audio,
+2023-07-05T15:09:47.629Z             and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         Super HQ 2160p60 4K AV1 Surround
+2023-07-05T15:09:47.629Z             Super high quality AV1 video (up to 2160p60), AAC stereo
+2023-07-05T15:09:47.629Z             audio, and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         Super HQ 2160p60 4K HEVC Surround
+2023-07-05T15:09:47.629Z             Super high quality H.265 video (up to 2160p60), AAC stereo
+2023-07-05T15:09:47.629Z             audio, and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         Super HQ 1080p30 Surround
+2023-07-05T15:09:47.629Z             Super high quality H.264 video (up to 1080p30), AAC stereo
+2023-07-05T15:09:47.629Z             audio, and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         Super HQ 720p30 Surround
+2023-07-05T15:09:47.629Z             Super high quality H.264 video (up to 720p30), AAC stereo
+2023-07-05T15:09:47.629Z             audio, and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         Super HQ 576p25 Surround
+2023-07-05T15:09:47.629Z             Super high quality H.264 video (up to 576p25), AAC stereo
+2023-07-05T15:09:47.629Z             audio, and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         Super HQ 480p30 Surround
+2023-07-05T15:09:47.629Z             Super high quality H.264 video (up to 480p30), AAC stereo
+2023-07-05T15:09:47.629Z             audio, and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T15:09:47.629Z         
+2023-07-05T15:09:47.629Z     container.
+2023-07-05T15:09:47.629Z     Web/
+2023-07-05T15:09:47.629Z         Creator 2160p60 4K
+2023-07-05T15:09:47.629Z             High quality video for publishing via online services such
+2023-07-05T15:09:47.629Z             as Vimeo and YouTube. H.264 video (up to 2160p60) and high
+2023-07-05T15:09:47.629Z             bit rate AAC stereo audio in an MP4 container.
+2023-07-05T15:09:47.629Z         Creator 1440p60 2.5K
+2023-07-05T15:09:47.629Z             High quality video for publishing via online services such
+2023-07-05T15:09:47.629Z             as Vimeo and YouTube. H.264 video (up to 1440p60) and high
+2023-07-05T15:09:47.629Z             bit rate AAC stereo audio in an MP4 container.
+2023-07-05T15:09:47.629Z         Creator 1080p60
+2023-07-05T15:09:47.629Z             High quality video for publishing via online services such
+2023-07-05T15:09:47.629Z             as Vimeo and YouTube. H.264 video (up to 1080p60) and high
+2023-07-05T15:09:47.629Z             bit rate AAC stereo audio in an MP4 container.
+2023-07-05T15:09:47.629Z         Creator 720p60
+2023-07-05T15:09:47.629Z             High quality video for publishing via online services such
+2023-07-05T15:09:47.629Z             as Vimeo and YouTube. H.264 video (up to 720p60) and high
+2023-07-05T15:09:47.629Z             bit rate AAC stereo audio in an MP4 container.
+2023-07-05T15:09:47.629Z         Email 25 MB 3 Minutes 720p30
+2023-07-05T15:09:47.629Z             Up to 3 minutes of video in 25 MB or less, for sharing via
+2023-07-05T15:09:47.629Z             email services such as Gmail. H.264 video (up to 720p30) and
+2023-07-05T15:09:47.629Z             AAC stereo audio, in an MP4 container.
+2023-07-05T15:09:47.629Z         Email 25 MB 5 Minutes 480p30
+2023-07-05T15:09:47.629Z             Up to 5 minutes of video in 25 MB or less, for sharing via
+2023-07-05T15:09:47.629Z             email services such as Gmail. H.264 video (up to 480p30) and
+2023-07-05T15:09:47.629Z             AAC stereo audio, in an MP4 container.
+2023-07-05T15:09:47.629Z         Email 25 MB 10 Minutes 288p30
+2023-07-05T15:09:47.629Z         
+2023-07-05T15:09:47.629Z     Up to 10 minutes of video in 25 MB or less, for sharing via
+2023-07-05T15:09:47.629Z             email services such as Gmail. H.264 video (up to 288p30) and
+2023-07-05T15:09:47.629Z             AAC stereo audio, in an MP4 container.
+2023-07-05T15:09:47.629Z         Social 100 MB 5 Minutes 1080p30
+2023-07-05T15:09:47.629Z             Up to 5 minutes of video in 100 MB or less, for sharing via
+2023-07-05T15:09:47.629Z             online social communities such as Discord. H.264 video (up
+2023-07-05T15:09:47.629Z             to 1080p30) and AAC stereo audio, in an MP4 container.
+2023-07-05T15:09:47.629Z         Social 50 MB 5 Minutes 720p30
+2023-07-05T15:09:47.629Z             Up to 5 minutes of video in 50 MB or less, for sharing via
+2023-07-05T15:09:47.629Z             online social communities such as Discord. H.264 video (up
+2023-07-05T15:09:47.629Z             to 720p30) and AAC stereo audio, in an MP4 container.
+2023-07-05T15:09:47.629Z         Social 50 MB 10 Minutes 480p30
+2023-07-05T15:09:47.629Z             Up to 10 minutes of video in 50 MB or less, for sharing via
+2023-07-05T15:09:47.629Z             online social communities such as Discord. H.264 video (up
+2023-07-05T15:09:47.629Z             to 480p30) and AAC stereo audio, in an MP4 container.
+2023-07-05T15:09:47.629Z         Social 8 MB 3 Minutes 360p30
+2023-07-05T15:09:47.629Z             Up to 3 minutes of video in 8 MB or less, for sharing via
+2023-07-05T15:09:47.629Z             online social communities such as Discord. H.264 video (up
+2023-07-05T15:09:47.629Z     
+2023-07-05T15:09:47.629Z         to 360p30) and AAC stereo audio, in an MP4 container.
+2023-07-05T15:09:47.629Z     Devices/
+2023-07-05T15:09:47.629Z         Amazon Fire 2160p60 4K HEVC Surround
+2023-07-05T15:09:47.629Z             H.265 video (up to 2160p60), AAC stereo audio, and Dolby
+2023-07-05T15:09:47.629Z             Digital (AC-3) audio, in an MP4 container. Compatible with
+2023-07-05T15:09:47.629Z             Amazon Fire TV 3rd Generation and later; Fire TV Stick 4K;
+2023-07-05T15:09:47.629Z             Fire TV Cube.
+2023-07-05T15:09:47.629Z         Amazon Fire 1080p30 Surround
+2023-07-05T15:09:47.629Z             H.264 video (up to 1080p30), AAC stereo audio, and Dolby
+2023-07-05T15:09:47.629Z             Digital (AC-3) audio, in an MP4 container. Compatible with
+2023-07-05T15:09:47.629Z             Amazon Fire TV 1st Generation and later; Fire TV Stick 1st
+2023-07-05T15:09:47.629Z             Generation and later; Fire HD 10 7th Generation (2017); Fire
+2023-07-05T15:09:47.629Z             HDX 4th Generation (2014).
+2023-07-05T15:09:47.629Z         Amazon Fire 720p30
+2023-07-05T15:09:47.629Z             H.264 video (up to 720p30) and AAC stereo audio, in an MP4
+2023-07-05T15:09:47.629Z             container. Compatible with Amazon Fire HD 4th Generation
+2023-07-05T15:09:47.629Z             (2014) and later; Kindle Fire HDX 3rd Generation (2013);
+2023-07-05T15:09:47.629Z             Kindle Fire HD 2nd Generation (2012) and later.
+2023-07-05T15:09:47.629Z 
+2023-07-05T15:09:47.629Z         Android 1080p30
+2023-07-05T15:09:47.629Z             H.264 video (up to 1080p30) and AAC stereo audio, in an MP4
+2023-07-05T15:09:47.629Z             container. Compatible with Android devices.
+2023-07-05T15:09:47.629Z         Android 720p30
+2023-07-05T15:09:47.629Z             H.264 video (up to 720p30) and AAC stereo audio, in an MP4
+2023-07-05T15:09:47.629Z             container. Compatible with Android devices.
+2023-07-05T15:09:47.629Z         Android 576p25
+2023-07-05T15:09:47.629Z             H.264 video (up to 576p25) and AAC stereo audio, in an MP4
+2023-07-05T15:09:47.629Z             container. Compatible with Android devices.
+2023-07-05T15:09:47.629Z         Android 480p30
+2023-07-05T15:09:47.629Z             H.264 video (up to 480p30) and AAC stereo audio, in an MP4
+2023-07-05T15:09:47.629Z             container. Compatible with Android devices.
+2023-07-05T15:09:47.629Z         Apple 2160p60 4K HEVC Surround
+2023-07-05T15:09:47.629Z             
+2023-07-05T15:09:47.629Z H.265 video (up to 2160p60), AAC stereo audio, and Dolby
+2023-07-05T15:09:47.629Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T15:09:47.629Z             Compatible with Apple iPhone 7 and later; Apple TV 4K.
+2023-07-05T15:09:47.629Z         Apple 1080p60 Surround
+2023-07-05T15:09:47.629Z             H.264 video (up to 1080p60), AAC stereo audio, and Dolby
+2023-07-05T15:09:47.629Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T15:09:47.629Z             Compatible with Apple iPad 5th and 6th Generation; iPad mini
+2023-07-05T15:09:47.629Z             2, 3, and 4; iPad Air 1st Generation and Air 2; iPad Pro
+2023-07-05T15:09:47.629Z             1st, 2nd, and 3rd Generation; Apple TV 4th Generation and
+2023-07-05T15:09:47.629Z             later.
+2023-07-05T15:09:47.629Z         Apple 1080p30 Surround
+2023-07-05T15:09:47.629Z             H.264 video (up to 1080p30), AAC stereo audio, and Dolby
+2023-07-05T15:09:47.629Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T15:09:47.629Z             Compatible with Apple iPhone 5, 5s, SE, 6, 6 Plus, 6s, 6s
+2023-07-05T15:09:47.629Z             Plus, and later; iPod touch 6th Generation; iPad 3rd, 4th
+2023-07-05T15:09:47.629Z             Generation and later; iPad mini 1st Generation and later;
+2023-07-05T15:09:47.629Z             Apple TV 3rd, 4th Generation and later.
+2023-07-05T15:09:47.629Z         Apple 720p30 Surround
+2023-07-05T15:09:47.629Z             H.264 video (up to 720p30), AAC stereo audio, and Dolby
+2023-07-05T15:09:47.629Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T15:09:47.629Z             Compatible with Apple iPhone 4, 4S, and later; iPod touch
+2023-07-05T15:09:47.629Z             4th, 5th Generation and later; iPad 1st Generation, iPad 2,
+2023-07-05T15:09:47.629Z             and later; Apple TV 2nd Generation and later.
+2023-07-05T15:09:47.629Z         Apple 540p30 Surround
+2023-07-05T15:09:47.629Z             H.264 video (up to 540p30), AAC stereo audio, and Dolby
+2023-07-05T15:09:47.629Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T15:09:47.629Z             Compatible with Apple iPhone 1st Generation, 3G, 3GS, and
+2023-07-05T15:09:47.629Z             later; iPod touch 1st, 2nd, 3rd Generation and later; iPod
+2023-07-05T15:09:47.629Z             Classic; Apple TV 1st Generation and later.
+2023-07-05T15:09:47.629Z         Chromecast 2160p60 4K HEVC Surround
+2023-07-05T15:09:47.629Z             H.265 video (up to 2160p60), AAC stereo audio, and Dolby
+2023-07-05T15:09:47.629Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T15:09:47.629Z             Compatible with Google Chromecast Ultra.
+2023-07-05T15:09:47.629Z         Chromecast 1080p60 Surround
+2023-07-05T15:09:47.629Z             H.264 video (up to 1080p60), AAC stereo audio, and Dolby
+2023-07-05T15:09:47.629Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T15:09:47.629Z             Compatible with Google Chromecast 3rd Generation.
+2023-07-05T15:09:47.629Z         Chromecast 1080p30 Surround
+2023-07-05T15:09:47.629Z             H.264 video (up to 1080p30), AAC stereo audio, and Dolby
+2023-07-05T15:09:47.629Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T15:09:47.629Z             Compatible with Google Chromecast 1st, 2nd Generation and
+2023-07-05T15:09:47.629Z             later.
+2023-07-05T15:09:47.629Z         Playstation 2160p60 4K Surround
+2023-07-05T15:09:47.629Z             H.264 video (up to 2160p60), AAC stereo audio, and Dolby
+2023-07-05T15:09:47.629Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T15:09:47.629Z             Compatible with Playstation 4 Pro.
+2023-07-05T15:09:47.629Z         Playstation 1080p30 Surround
+2023-07-05T15:09:47.629Z             H.264 video (up to 1080p30), AAC stereo audio, and Dolby
+2023-07-05T15:09:47.629Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T15:09:47.629Z             Compatible with Playstation 3 and 4.
+2023-07-05T15:09:47.629Z         Playstation 720p30
+2023-07-05T15:09:47.629Z             H.264 video (up to 720p30) and AAC stereo audio, in an MP4
+2023-07-05T15:09:47.629Z             container. Compatible with Playstation Vita TV.
+2023-07-05T15:09:47.629Z         Playstation 540p30
+2023-07-05T15:09:47.629Z             H.264 video (up to 540p30) and AAC stereo audio, in an MP4
+2023-07-05T15:09:47.629Z             container. Compatible with Playstation Vita.
+2023-07-05T15:09:47.629Z         Roku 2160p60 4K HEVC Surround
+2023-07-05T15:09:47.629Z             H.265 video (up to 2160p60), AAC stereo audio, and surround
+2023-07-05T15:09:47.629Z             audio, in an MKV container. Compatible with Roku 4,
+2023-07-05T15:09:47.629Z             Streaming Stick+, Premiere+, and Ultra.
+2023-07-05T15:09:47.629Z         Roku 1080p30 Surround
+2023-07-05T15:09:47.629Z             H.264 video (up to 1080p30), AAC stereo audio, and Dolby
+2023-07-05T15:09:47.629Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T15:09:47.629Z             Compatible with Roku 1080p models.
+2023-07-05T15:09:47.629Z         Roku 720p30 Surround
+2023-07-05T15:09:47.629Z             H.264 video (up to 720p30), AAC stereo audio, and Dolby
+2023-07-05T15:09:47.629Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T15:09:47.629Z             Compatible with Roku 720p models.
+2023-07-05T15:09:47.629Z         Roku 576p25
+2023-07-05T15:09:47.629Z             H.264 video (up to 576p25) and AAC stereo audio, in an MP4
+2023-07-05T15:09:47.629Z             container. Compatible with Roku standard definition models.
+2023-07-05T15:09:47.629Z         Roku 480p30
+2023-07-05T15:09:47.629Z 
+2023-07-05T15:09:47.629Z             H.264 video (up to 480p30) and AAC stereo audio, in an MP4
+2023-07-05T15:09:47.629Z             container. Compatible with Roku standard definition models.
+2023-07-05T15:09:47.629Z         Xbox 1080p30 Surround
+2023-07-05T15:09:47.629Z             H.264 video (up to 1080p30), AAC stereo audio, and Dolby
+2023-07-05T15:09:47.629Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T15:09:47.629Z             Compatible with Xbox One.
+2023-07-05T15:09:47.629Z     Matroska/
+2023-07-05T15:09:47.629Z         AV1 MKV 2160p60 4K
+2023-07-05T15:09:47.629Z             AV1 video (up to 2160p60) and Opus stereo audio, in an MKV
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         H.265 MKV 2160p60 4K
+2023-07-05T15:09:47.629Z             H.265 video (up to 2160p60) and AAC stereo audio, in an MKV
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         H.265 MKV 1080p30
+2023-07-05T15:09:47.629Z             H.265 video (up to 1080p30) and AAC stereo audio, in an MKV
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         H.265 MKV 720p30
+2023-07-05T15:09:47.629Z             H.265 video (up to 720p30) and AAC stereo audio, in an MKV
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         H.265 MKV 576p25
+2023-07-05T15:09:47.629Z             H.265 video (up to 576p25) and AAC stereo audio, in an MKV
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         H.265 MKV 480p30
+2023-07-05T15:09:47.629Z             H.265 video (up to 480p30) and AAC stereo audio, in an MKV
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         H.264 MKV 2160p60 4K
+2023-07-05T15:09:47.629Z             H.264 video (up to 2160p60) and AAC stereo audio, in an MKV
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         H.264 MKV 1080p30
+2023-07-05T15:09:47.629Z             H.264 video (up to 1080p30) and AAC stereo audio, in an MKV
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         H.264 MKV 720p30
+2023-07-05T15:09:47.629Z             H.264 video (up to 720p30) and AAC stereo audio, in an MKV
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         H.264 MKV 576p25
+2023-07-05T15:09:47.629Z             H.264 video (up to 576p25) and AAC stereo audio, in an MKV
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         H.264 MKV 480p30
+2023-07-05T15:09:47.629Z             H.264 video (up to 480p30) and AAC stereo audio, in an MKV
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         VP9 MKV 2160p60 4K
+2023-07-05T15:09:47.629Z             VP9 video (up to 2160p60) and Opus stereo audio, in an MKV
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         VP9 MKV 1080p30
+2023-07-05T15:09:47.629Z             VP9 video (up to 1080p30) and Opus stereo audio, in an MKV
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         VP9 MKV 720p30
+2023-07-05T15:09:47.629Z             VP9 video (up to 720p30) and Opus stereo audio, in an MKV
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         VP9 MKV 576p25
+2023-07-05T15:09:47.629Z             VP9 video (up to 576p25) and Opus stereo audio, in an MKV
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z         VP9 MKV 480p30
+2023-07-05T15:09:47.629Z             VP9 video (up to 480p30) and Opus stereo audio, in an MKV
+2023-07-05T15:09:47.629Z             container.
+2023-07-05T15:09:47.629Z     Hardware/
+2023-07-05T15:09:47.629Z         AV1 QSV 2160p 4K
+2023-07-05T15:09:47.629Z             Intel Quick Sync Video hardware accelerated AV1 video (up to
+2023-07-05T15:09:47.629Z             2160p) and AAC stereo audio, in an MP4 container.
+2023-07-05T15:09:47.629Z         H.265 NVENC 2160p 4K
+2023-07-05T15:09:47.629Z             Nvidia NVENC hardware accelerated H.265 video (up to 2160p)
+2023-07-05T15:09:47.629Z             and AAC stereo audio, in an MP4 container.
+2023-07-05T15:09:47.629Z 
+2023-07-05T15:09:47.629Z         H.265 NVENC 1080p
+2023-07-05T15:09:47.629Z             Nvidia NVENC hardware accelerated H.265 video (up to 1080p)
+2023-07-05T15:09:47.629Z             and AAC stereo audio, in an MP4 container.
+2023-07-05T15:09:47.629Z         H.265 QSV 2160p 4K
+2023-07-05T15:09:47.629Z             Intel Quick Sync Video hardware accelerated H.265 video (up
+2023-07-05T15:09:47.629Z             to 2160p) and AAC stereo audio, in an MP4 container.
+2023-07-05T15:09:47.629Z         H.265 QSV 1080p
+2023-07-05T15:09:47.629Z             Intel Quick Sync Video hardware accelerated H.265 video (up
+2023-07-05T15:09:47.629Z             to 1080p) and AAC stereo audio, in an MP4 container.
+2023-07-05T15:09:47.629Z         H.265 VCN 2160p 4K
+2023-07-05T15:09:47.629Z             AMD VCN hardware accelerated H.265 video (up to 2160p) and
+2023-07-05T15:09:47.629Z             AAC stereo audio, in an MP4 container.
+2023-07-05T15:09:47.629Z         H.265 VCN 1080p
+2023-07-05T15:09:47.629Z             AMD VCN hardware accelerated H.265 video (up to 1080p) and
+2023-07-05T15:09:47.629Z             AAC stereo audio, in an MP4 container.
+2023-07-05T15:09:47.629Z         H.265 MF 2160p 4K
+2023-07-05T15:09:47.629Z             Hardware accelerated H.265 video (up to 2160p) and AAC
+2023-07-05T15:09:47.629Z             stereo audio, in an MP4 container for ARM based platforms
+2023-07-05T15:09:47.629Z             using Media Foundation
+2023-07-05T15:09:47.629Z         H.265 MF 1080p
+2023-07-05T15:09:47.629Z             Hardware accelerated H.265 video (up to 1080p) and AAC
+2023-07-05T15:09:47.629Z             stereo audio, in an MP4 container for ARM based platforms
+2023-07-05T15:09:47.629Z             using Media Foundation
+2023-07-05T15:09:47.629Z     Production/
+2023-07-05T15:09:47.629Z         Production Max
+2023-07-05T15:09:47.629Z             Maximum bit rate, constant frame rate H.264 video and high
+2023-07-05T15:09:47.629Z             bit rate AAC stereo audio in an MP4 container. For
+2023-07-05T15:09:47.629Z             professional use as an intermediate format for video
+2023-07-05T15:09:47.629Z             editing. Creates gigantic files.
+2023-07-05T15:09:47.629Z         Production Standard
+2023-07-05T15:09:47.629Z             High bit rate, constant frame rate H.264 video and high bit
+2023-07-05T15:09:47.629Z             rate AAC stereo audio in an MP4 container. For professional
+2023-07-05T15:09:47.629Z             use as an intermediate format for video editing. Creates
+2023-07-05T15:09:47.629Z             very large files.
+2023-07-05T15:09:47.629Z         Production Proxy 1080p
+2023-07-05T15:09:47.629Z             Intra-only, constant frame rate H.264 video (up to 1080p)
+2023-07-05T15:09:47.629Z             and high bit rate AAC stereo audio in an MP4 container. For
+2023-07-05T15:09:47.629Z             professional use as a low resolution proxy format for video
+2023-07-05T15:09:47.629Z             editing.
+2023-07-05T15:09:47.629Z         Production Proxy 540p
+2023-07-05T15:09:47.629Z             Intra-only, constant frame rate H.264 video (up to 540p) and
+2023-07-05T15:09:47.629Z             high bit rate AAC stereo audio in an MP4 container. For
+2023-07-05T15:09:47.629Z             professional use as a low resolution proxy format for video
+2023-07-05T15:09:47.629Z             editing.
+2023-07-05T15:09:47.629Z     CLI Defaults/
+2023-07-05T15:09:47.629Z         CLI Default
+2023-07-05T15:09:47.629Z 
+2023-07-05T15:09:47.629Z HandBrake has exited.
+2023-07-05T15:09:47.629Z 
+2023-07-05T15:09:47.629Z 
+2023-07-05T15:09:47.629Z 
+2023-07-05T15:09:47.629Z 
+2023-07-05T15:09:47.630Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[-error-]
+2023-07-05T15:09:47.630Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[Step W07] [C1] Worker [-error-]
+2023-07-05T15:09:47.631Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Error encountered when processing /media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv
+2023-07-05T15:09:47.631Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Checking new cache file
+2023-07-05T15:09:47.631Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+2023-07-05T15:09:47.631Z /temp/To Every You I've Loved Before (2022) WEBDL-1080p-TdarrCacheFile-Ay-dUHR5P.mkv
+2023-07-05T15:09:47.633Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:pluginCycleLogJSONString:{"nodeName":"MyInternalNode","workerID":"that-tegus","pluginCycle":1,"outcome":"error","workerLog":"\nPre-processing - Tdarr_Plugin_MC93_MigzImageRemoval\n☑File doesn't contain any unwanted image format streams.\n\nPre-processing - Tdarr_Plugin_lmg1_Reorder_Streams\nFile has video in first stream\n File meets conditions!\n\nPre-processing - Tdarr_Plugin_s7x8_winsome_h265\n☒File isn't in hevc! \n","lastCliCommand":"HandBrakeCLI -i \"/media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv\" -o \"/temp/To Every You I've Loved Before (2022) WEBDL-1080p-TdarrCacheFile-Ay-dUHR5P.mkv\" -Z \"H.265 MKV 2160p60\" --all-audio --all-subtitles"}
+2023-07-05T15:09:47.633Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Updating transcode stats
+2023-07-05T15:09:47.633Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[Step W09] [-error-] Job end
+2023-07-05T15:09:47.634Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Transcoding error encountered. Check sections above.
+2023-07-05T15:09:47.634Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:[Step W10] Worker processing end
+2023-07-05T15:09:47.634Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Subworker exited null
+2023-07-05T15:09:47.635Z oenxaS_iXHI:Node[MyInternalNode]:Worker[that-tegus]:Successfully updated server with verdict: transcodeError

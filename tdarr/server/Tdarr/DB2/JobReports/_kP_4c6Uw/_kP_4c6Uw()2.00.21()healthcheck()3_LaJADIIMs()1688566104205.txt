@@ -1,0 +1,235 @@
+2023-07-05T15:08:26.910Z 3_LaJADIIMs:[Step S01] [2.00.21] Server relay initialising job
+2023-07-05T15:08:26.911Z 3_LaJADIIMs:Server: linux_x64_docker_true
+2023-07-05T15:08:26.911Z 3_LaJADIIMs:Server relay adding file to staged files
+2023-07-05T15:08:26.911Z 3_LaJADIIMs:Server relay sending job to Node relay: MyInternalNode
+2023-07-05T15:08:26.912Z 3_LaJADIIMs:Node[MyInternalNode]:[Step N01] [2.00.21] Node relay received job
+2023-07-05T15:08:26.912Z 3_LaJADIIMs:Node[MyInternalNode]:{"nodeName":"MyInternalNode","serverIP":"0.0.0.0","serverPort":"8266","handbrakePath":"","ffmpegPath":"","mkvpropeditPath":"","pathTranslators":[{"server":"","node":""}],"logLevel":"INFO","priority":-1,"platform_arch_isdocker":"linux_x64_docker_true","processPid":199,"nodeID":"_VxSJ6fLa"}
+2023-07-05T15:08:26.912Z 3_LaJADIIMs:Node[MyInternalNode]:Node relay sending job to worker:kindly-koi
+2023-07-05T15:08:26.912Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:[Step W01] Received file, original: /media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv
+2023-07-05T15:08:26.913Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:{"workerType":"healthcheckcpu"}
+2023-07-05T15:08:26.913Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:{"ffmpegPath":"tdarr-ffmpeg"}
+2023-07-05T15:08:26.914Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:{"handbrakePath":"HandBrakeCLI"}
+2023-07-05T15:08:26.914Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:{"mkvpropeditPath":"mkvpropedit"}
+2023-07-05T15:08:26.915Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:{"gpuSelect":"-"}
+2023-07-05T15:08:26.915Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:{"allowGpuDoCpu":false}
+2023-07-05T15:08:26.915Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:{"thoroughHealthCheckCpuExtraInputArgs":""}
+2023-07-05T15:08:26.916Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:{"thoroughHealthCheckGpuExtraInputArgs":""}
+2023-07-05T15:08:26.916Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:{"thoroughHealthCheckCpuExtraArgs":""}
+2023-07-05T15:08:26.916Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:{"thoroughHealthCheckGpuExtraArgs":""}
+2023-07-05T15:08:26.917Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:{"logFullCliOutput":false}
+2023-07-05T15:08:26.917Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Path translating objects
+2023-07-05T15:08:26.917Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:{"librarySettings":{"_id":"9gM67-NoX","priority":0,"name":"Movies","folder":"/media/movies","foldersToIgnore":"","folderWatchScanInterval":30,"scannerThreadCount":2,"cache":"/temp","output":"","folderToFolderConversion":false,"folderToFolderConversionDeleteSource":false,"folderToFolderRecordHistory":true,"copyIfConditionsMet":false,"container":".mkv","containerFilter":"mkv,mp4,mov,m4v,mpg,mpeg,avi,flv,webm,wmv,vob,evo,iso,m2ts,ts","createdAt":1675837380368,"folderWatching":true,"useFsEvents":false,"scheduledScanFindNew":false,"processLibrary":true,"scanOnStart":true,"exifToolScan":true,"mediaInfoScan":true,"closedCaptionScan":false,"scanButtons":true,"scanFound":"","navItemSelected":"navSourceFolder","pluginIDs":[{"_id":"plugin1","id":"Tdarr_Plugin_MC93_MigzImageRemoval","checked":true,"source":"Community","priority":0,"InputsDB":{}},{"_id":"plugin2","id":"Tdarr_Plugin_lmg1_Reorder_Streams","checked":true,"source":"Community","priority":1,"InputsDB":{}},{"_id":"plugin3","id":"Tdarr_Plugin_MC93_Migz1FFMPEG_CPU","checked":false,"source":"Community","priority":2,"InputsDB":{}},{"_id":"plugin4","id":"Tdarr_Plugin_MC93_Migz1FFMPEG","checked":false,"source":"Community","priority":3,"InputsDB":{}},{"_id":"uw4sMvHE9","id":"Tdarr_Plugin_s7x8_winsome_h265","checked":true,"source":"Community","priority":4,"InputsDB":{}},{"_id":"plugin5","id":"Tdarr_Plugin_a9he_New_file_size_check","checked":true,"source":"Community","priority":5,"InputsDB":{}}],"pluginCommunity":true,"handbrake":true,"ffmpeg":false,"handbrakescan":true,"ffmpegscan":false,"preset":"-Z \"Very Fast 1080p30\"","decisionMaker":{"settingsPlugin":true,"settingsVideo":false,"videoExcludeSwitch":true,"video_codec_names_exclude":[{"codec":"hevc","checked":false},{"codec":"h264","checked":true}],"video_size_range_include":{"min":0,"max":100000},"video_height_range_include":{"min":0,"max":3000},"video_width_range_include":{"min":0,"max":4000},"settingsAudio":false,"audioExcludeSwitch":true,"audio_codec_names_exclude":[{"codec":"mp3","checked":true},{"codec":"aac","checked":false}],"audio_size_range_include":{"min":0,"max":10}},"schedule":[{"_id":"Sun:00-01","checked":true},{"_id":"Sun:01-02","checked":true},{"_id":"Sun:02-03","checked":true},{"_id":"Sun:03-04","checked":true},{"_id":"Sun:04-05","checked":true},{"_id":"Sun:05-06","checked":true},{"_id":"Sun:06-07","checked":true},{"_id":"Sun:07-08","checked":true},{"_id":"Sun:08-09","checked":true},{"_id":"Sun:09-10","checked":true},{"_id":"Sun:10-11","checked":true},{"_id":"Sun:11-12","checked":true},{"_id":"Sun:12-13","checked":true},{"_id":"Sun:13-14","checked":true},{"_id":"Sun:14-15","checked":true},{"_id":"Sun:15-16","checked":true},{"_id":"Sun:16-17","checked":true},{"_id":"Sun:17-18","checked":true},{"_id":"Sun:18-19","checked":true},{"_id":"Sun:19-20","checked":true},{"_id":"Sun:20-21","checked":true},{"_id":"Sun:21-22","checked":true},{"_id":"Sun:22-23","checked":true},{"_id":"Sun:23-00","checked":true},{"_id":"Mon:00-01","checked":true},{"_id":"Mon:01-02","checked":true},{"_id":"Mon:02-03","checked":true},{"_id":"Mon:03-04","checked":true},{"_id":"Mon:04-05","checked":true},{"_id":"Mon:05-06","checked":true},{"_id":"Mon:06-07","checked":true},{"_id":"Mon:07-08","checked":true},{"_id":"Mon:08-09","checked":true},{"_id":"Mon:09-10","checked":true},{"_id":"Mon:10-11","checked":true},{"_id":"Mon:11-12","checked":true},{"_id":"Mon:12-13","checked":true},{"_id":"Mon:13-14","checked":true},{"_id":"Mon:14-15","checked":true},{"_id":"Mon:15-16","checked":true},{"_id":"Mon:16-17","checked":true},{"_id":"Mon:17-18","checked":true},{"_id":"Mon:18-19","checked":true},{"_id":"Mon:19-20","checked":true},{"_id":"Mon:20-21","checked":true},{"_id":"Mon:21-22","checked":true},{"_id":"Mon:22-23","checked":true},{"_id":"Mon:23-00","checked":true},{"_id":"Tue:00-01","checked":true},{"_id":"Tue:01-02","checked":true},{"_id":"Tue:02-03","checked":true},{"_id":"Tue:03-04","checked":true},{"_id":"Tue:04-05","checked":true},{"_id":"Tue:05-06","checked":true},{"_id":"Tue:06-07","checked":true},{"_id":"Tue:07-08","checked":true},{"_id":"Tue:08-09","checked":true},{"_id":"Tue:09-10","checked":true},{"_id":"Tue:10-11","checked":true},{"_id":"Tue:11-12","checked":true},{"_id":"Tue:12-13","checked":true},{"_id":"Tue:13-14","checked":true},{"_id":"Tue:14-15","checked":true},{"_id":"Tue:15-16","checked":true},{"_id":"Tue:16-17","checked":true},{"_id":"Tue:17-18","checked":true},{"_id":"Tue:18-19","checked":true},{"_id":"Tue:19-20","checked":true},{"_id":"Tue:20-21","checked":true},{"_id":"Tue:21-22","checked":true},{"_id":"Tue:22-23","checked":true},{"_id":"Tue:23-00","checked":true},{"_id":"Wed:00-01","checked":true},{"_id":"Wed:01-02","checked":true},{"_id":"Wed:02-03","checked":true},{"_id":"Wed:03-04","checked":true},{"_id":"Wed:04-05","checked":true},{"_id":"Wed:05-06","checked":true},{"_id":"Wed:06-07","checked":true},{"_id":"Wed:07-08","checked":true},{"_id":"Wed:08-09","checked":true},{"_id":"Wed:09-10","checked":true},{"_id":"Wed:10-11","checked":true},{"_id":"Wed:11-12","checked":true},{"_id":"Wed:12-13","checked":true},{"_id":"Wed:13-14","checked":true},{"_id":"Wed:14-15","checked":true},{"_id":"Wed:15-16","checked":true},{"_id":"Wed:16-17","checked":true},{"_id":"Wed:17-18","checked":true},{"_id":"Wed:18-19","checked":true},{"_id":"Wed:19-20","checked":true},{"_id":"Wed:20-21","checked":true},{"_id":"Wed:21-22","checked":true},{"_id":"Wed:22-23","checked":true},{"_id":"Wed:23-00","checked":true},{"_id":"Thur:00-01","checked":true},{"_id":"Thur:01-02","checked":true},{"_id":"Thur:02-03","checked":true},{"_id":"Thur:03-04","checked":true},{"_id":"Thur:04-05","checked":true},{"_id":"Thur:05-06","checked":true},{"_id":"Thur:06-07","checked":true},{"_id":"Thur:07-08","checked":true},{"_id":"Thur:08-09","checked":true},{"_id":"Thur:09-10","checked":true},{"_id":"Thur:10-11","checked":true},{"_id":"Thur:11-12","checked":true},{"_id":"Thur:12-13","checked":true},{"_id":"Thur:13-14","checked":true},{"_id":"Thur:14-15","checked":true},{"_id":"Thur:15-16","checked":true},{"_id":"Thur:16-17","checked":true},{"_id":"Thur:17-18","checked":true},{"_id":"Thur:18-19","checked":true},{"_id":"Thur:19-20","checked":true},{"_id":"Thur:20-21","checked":true},{"_id":"Thur:21-22","checked":true},{"_id":"Thur:22-23","checked":true},{"_id":"Thur:23-00","checked":true},{"_id":"Fri:00-01","checked":true},{"_id":"Fri:01-02","checked":true},{"_id":"Fri:02-03","checked":true},{"_id":"Fri:03-04","checked":true},{"_id":"Fri:04-05","checked":true},{"_id":"Fri:05-06","checked":true},{"_id":"Fri:06-07","checked":true},{"_id":"Fri:07-08","checked":true},{"_id":"Fri:08-09","checked":true},{"_id":"Fri:09-10","checked":true},{"_id":"Fri:10-11","checked":true},{"_id":"Fri:11-12","checked":true},{"_id":"Fri:12-13","checked":true},{"_id":"Fri:13-14","checked":true},{"_id":"Fri:14-15","checked":true},{"_id":"Fri:15-16","checked":true},{"_id":"Fri:16-17","checked":true},{"_id":"Fri:17-18","checked":true},{"_id":"Fri:18-19","checked":true},{"_id":"Fri:19-20","checked":true},{"_id":"Fri:20-21","checked":true},{"_id":"Fri:21-22","checked":true},{"_id":"Fri:22-23","checked":true},{"_id":"Fri:23-00","checked":true},{"_id":"Sat:00-01","checked":true},{"_id":"Sat:01-02","checked":true},{"_id":"Sat:02-03","checked":true},{"_id":"Sat:03-04","checked":true},{"_id":"Sat:04-05","checked":true},{"_id":"Sat:05-06","checked":true},{"_id":"Sat:06-07","checked":true},{"_id":"Sat:07-08","checked":true},{"_id":"Sat:08-09","checked":true},{"_id":"Sat:09-10","checked":true},{"_id":"Sat:10-11","checked":true},{"_id":"Sat:11-12","checked":true},{"_id":"Sat:12-13","checked":true},{"_id":"Sat:13-14","checked":true},{"_id":"Sat:14-15","checked":true},{"_id":"Sat:15-16","checked":true},{"_id":"Sat:16-17","checked":true},{"_id":"Sat:17-18","checked":true},{"_id":"Sat:18-19","checked":true},{"_id":"Sat:19-20","checked":true},{"_id":"Sat:20-21","checked":true},{"_id":"Sat:21-22","checked":true},{"_id":"Sat:22-23","checked":true},{"_id":"Sat:23-00","checked":true}],"totalHealthCheckCount":0,"totalTranscodeCount":0,"sizeDiff":0,"holdNewFiles":false,"holdFor":3600,"pluginStackOverview":true,"filterResolutionsSkip":"","filterCodecsSkip":"","processPluginsSequentially":true}}
+2023-07-05T15:08:26.918Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Scanning original library file
+2023-07-05T15:08:26.918Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:{
+2023-07-05T15:08:26.918Z   "exifToolScan": true,
+2023-07-05T15:08:26.918Z   "mediaInfoScan": false,
+2023-07-05T15:08:26.918Z   "closedCaptionScan": false
+2023-07-05T15:08:26.918Z }
+2023-07-05T15:08:26.918Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Requesting Tdarr Server to scan file
+2023-07-05T15:08:28.002Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Scan complete
+2023-07-05T15:08:28.007Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Original file scanned
+2023-07-05T15:08:28.008Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Source file to work on determined:/media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv
+2023-07-05T15:08:28.008Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:[Step W02] [C1] Running pre-process file
+2023-07-05T15:08:28.009Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Checking files can be accessed
+2023-07-05T15:08:28.009Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Relevant paths can be accessed
+2023-07-05T15:08:28.010Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Source file: /media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv
+2023-07-05T15:08:28.010Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:[Step W03] [C1] Analysing file - running plugins
+2023-07-05T15:08:28.011Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Handbrake healthcheck task, no need to scan for extra file details
+2023-07-05T15:08:28.011Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Updating Node relay: Processing
+2023-07-05T15:08:28.021Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:[1/2] Checking file frame count
+2023-07-05T15:08:28.021Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:[2/2] Frame count 0
+2023-07-05T15:08:28.022Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Determining healthcheck command
+2023-07-05T15:08:28.022Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:[Step W04] [C1] Preparing command
+2023-07-05T15:08:28.023Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Cache file stem: /temp
+2023-07-05T15:08:28.023Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Cache file path: /temp/To Every You I've Loved Before (2022) WEBDL-1080p-TdarrCacheFile-UV8hxq80J.mp4
+2023-07-05T15:08:28.024Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Create transcode args
+2023-07-05T15:08:28.024Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Args:  -i "/media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv" -o "/temp/To Every You I've Loved Before (2022) WEBDL-1080p-TdarrCacheFile-UV8hxq80J.mp4" --scan
+2023-07-05T15:08:28.025Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Getting source file size
+2023-07-05T15:08:28.025Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Source file size: 5.799863790161908
+2023-07-05T15:08:28.025Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Performing safety check on worker config to see if old transcode args/container match new ones
+2023-07-05T15:08:28.026Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Safety check complete, all good
+2023-07-05T15:08:28.026Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:[Step W05] [C1] Launching subworker
+2023-07-05T15:08:28.027Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Preparing to launch subworker
+2023-07-05T15:08:28.027Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Subworker launched
+2023-07-05T15:08:28.027Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:[1/3] Sending command to subworker
+2023-07-05T15:08:28.028Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:[2/3] HandBrakeCLI -i "/media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv" -o "/temp/To Every You I've Loved Before (2022) WEBDL-1080p-TdarrCacheFile-UV8hxq80J.mp4" --scan
+2023-07-05T15:08:28.028Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:[3/3] Command sent
+2023-07-05T15:08:28.033Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:To see live CLI output, enable 'Log full FFmpeg/HandBrake output' in the staging section on the Tdarr tab before the job starts. Note this could increase the job report size substantially.
+2023-07-05T15:08:28.033Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Subworker:Online
+2023-07-05T15:08:28.034Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Subworker:Receiving transcode settings
+2023-07-05T15:08:28.040Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Subworker:Running CLI
+2023-07-05T15:08:29.047Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Subworker:a.Thread closed, code: 0
+2023-07-05T15:08:29.047Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Subworker exit approved, killing subworker
+2023-07-05T15:08:29.047Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Subworker killed
+2023-07-05T15:08:29.048Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:b.Thread closed, code: 0
+2023-07-05T15:08:29.048Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:CLI code: 0
+2023-07-05T15:08:29.048Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Last 200 lines of CLI log:
+2023-07-05T15:08:29.049Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:[15:08:25] Compile-time hardening features are enabled
+2023-07-05T15:08:29.049Z 
+2023-07-05T15:08:29.049Z [15:08:25] qsv: not available on this system
+2023-07-05T15:08:29.049Z 
+2023-07-05T15:08:29.049Z Cannot load libnvidia-encode.so.1
+2023-07-05T15:08:29.049Z 
+2023-07-05T15:08:29.049Z [15:08:25] hb_init: starting libhb thread
+2023-07-05T15:08:29.049Z 
+2023-07-05T15:08:29.049Z [15:08:25] thread 7fcb2f414700 started ("libhb")
+2023-07-05T15:08:29.049Z HandBrake 1.6.1 (2023061300) - Linux x86_64 - https://handbrake.fr
+2023-07-05T15:08:29.049Z 4 CPUs detected
+2023-07-05T15:08:29.049Z 
+2023-07-05T15:08:29.049Z Opening /media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv...
+2023-07-05T15:08:29.049Z [15:08:25] CPU: 
+2023-07-05T15:08:29.049Z [15:08:25]  - logical processor count: 4
+2023-07-05T15:08:29.049Z [15:08:25] Intel Quick Sync Video support: no
+2023-07-05T15:08:29.049Z [15:08:25] hb_scan: path=/media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv, title_index=1
+2023-07-05T15:08:29.049Z 
+2023-07-05T15:08:29.049Z udfread ERROR: ECMA 167 Volume Recognition failed
+2023-07-05T15:08:29.049Z disc.c:333: failed opening UDF image /media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv
+2023-07-05T15:08:29.049Z 
+2023-07-05T15:08:29.049Z disc.c:437: error opening file BDMV/index.bdmv
+2023-07-05T15:08:29.049Z disc.c:437: error opening file BDMV/BACKUP/index.bdmv
+2023-07-05T15:08:29.049Z [15:08:25] bd: not a bd - trying as a stream/file instead
+2023-07-05T15:08:29.049Z 
+2023-07-05T15:08:29.049Z libdvdread: DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.IFO failed
+2023-07-05T15:08:29.049Z libdvdnav: vm: vm: failed to read VIDEO_TS.IFO
+2023-07-05T15:08:29.049Z [15:08:25] dvd: not a dvd - trying as a stream/file instead
+2023-07-05T15:08:29.049Z 
+2023-07-05T15:08:29.049Z Input #0, matroska,webm, from '/media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv':
+2023-07-05T15:08:29.049Z   Metadata:
+2023-07-05T15:08:29.049Z     title           : To Every You I've Loved Before (2022) VOSTFR 1080p WEB x264 AAC -Tsundere-Raws (CR)
+2023-07-05T15:08:29.049Z     encoder         : Auto Multi Downloader v2.0.3-beta [Roselia]
+2023-07-05T15:08:29.049Z   Duration: 01:42:17.22, start: 0.000000, bitrate: 8117 kb/s
+2023-07-05T15:08:29.049Z   Stream #0:0: Video: h264 (High), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 23.98 fps, 23.98 tbr, 1k tbn (default)
+2023-07-05T15:08:29.049Z     Metadata:
+2023-07-05T15:08:29.049Z       BPS             : 7982371
+2023-07-05T15:08:29.049Z       DURATION        : 01:42:17.137000000
+2023-07-05T15:08:29.049Z       NUMBER_OF_FRAMES: 147144
+2023-07-05T15:08:29.049Z       NUMBER_OF_BYTES : 6123613670
+2023-07-05T15:08:29.049Z       _STATISTICS_WRITING_APP: mkvmerge v67.0.0 ('Under Stars') 64-bit
+2023-07-05T15:08:29.049Z       _STATISTICS_WRITING_DATE_UTC: 2023-04-21 05:15:24
+2023-07-05T15:08:29.049Z       _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+2023-07-05T15:08:29.049Z   Stream #0:1(jpn): Audio: aac (LC), 44100 Hz, stereo, fltp (default)
+2023-07-05T15:08:29.049Z     Metadata:
+2023-07-05T15:08:29.049Z       BPS             : 127999
+2023-07-05T15:08:29.049Z       DURATION        : 01:42:17.218000000
+2023-07-05T15:08:29.049Z       NUMBER_OF_FRAMES: 264307
+2023-07-05T15:08:29.049Z       NUMBER_OF_BYTES : 98195145
+2023-07-05T15:08:29.049Z       _STATISTICS_WRITING_APP: mkvmerge v67.0.0 ('Under Stars') 64-bit
+2023-07-05T15:08:29.049Z       _STATISTICS_WRITING_DATE_UTC: 2023-04-21 05:15:24
+2023-07-05T15:08:29.049Z       _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+2023-07-05T15:08:29.049Z   Stream #0:2(fre): Subtitle: ass (default)
+2023-07-05T15:08:29.049Z     Metadata:
+2023-07-05T15:08:29.049Z       BPS             : 129
+2023-07-05T15:08:29.049Z       DURATION        : 01:36:38.550000000
+2023-07-05T15:08:29.049Z       NUMBER_OF_FRAMES: 1300
+2023-07-05T15:08:29.049Z       NUMBER_OF_BYTES : 94016
+2023-07-05T15:08:29.049Z       _STATISTICS_WRITING_APP: mkvmerge v67.0.0 ('Under Stars') 64-bit
+2023-07-05T15:08:29.049Z       _STATISTICS_WRITING_DATE_UTC: 2023-04-21 05:15:24
+2023-07-05T15:08:29.049Z       _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+2023-07-05T15:08:29.049Z   Stream #0:3: Attachment: ttf
+2023-07-05T15:08:29.049Z     Metadata:
+2023-07-05T15:08:29.049Z       filename        : trebucbd.ttf
+2023-07-05T15:08:29.049Z       mimetype        : application/x-truetype-font
+2023-07-05T15:08:29.049Z   Stream #0:4: Attachment: ttf
+2023-07-05T15:08:29.049Z     Metadata:
+2023-07-05T15:08:29.049Z       filename        : trebucbi.ttf
+2023-07-05T15:08:29.049Z       mimetype        : application/x-truetype-font
+2023-07-05T15:08:29.049Z   Stream #0:5: Attachment: ttf
+2023-07-05T15:08:29.049Z     Metadata:
+2023-07-05T15:08:29.049Z       filename        : trebucit.ttf
+2023-07-05T15:08:29.049Z       mimetype        : application/x-truetype-font
+2023-07-05T15:08:29.049Z   Stream #0:6: Attachment: ttf
+2023-07-05T15:08:29.049Z     Metadata:
+2023-07-05T15:08:29.049Z       filename        : trebuc.ttf
+2023-07-05T15:08:29.049Z       mimetype        : application/x-truetype-font
+2023-07-05T15:08:29.049Z   Stream #0:7: Attachment: ttf
+2023-07-05T15:08:29.049Z     Metadata:
+2023-07-05T15:08:29.049Z       filename        : arialbi.ttf
+2023-07-05T15:08:29.049Z       mimetype        : application/x-truetype-font
+2023-07-05T15:08:29.049Z   Stream #0:8: Attachment: ttf
+2023-07-05T15:08:29.049Z     Metadata:
+2023-07-05T15:08:29.049Z       filename        : ariali.ttf
+2023-07-05T15:08:29.049Z       mimetype        : application/x-truetype-font
+2023-07-05T15:08:29.049Z   Stream #0:9: Attachment: ttf
+2023-07-05T15:08:29.049Z     Metadata:
+2023-07-05T15:08:29.049Z       filename        : arialbd.ttf
+2023-07-05T15:08:29.049Z       mimetype        : application/x-truetype-font
+2023-07-05T15:08:29.049Z   Stream #0:10: Attachment: ttf
+2023-07-05T15:08:29.049Z     Metadata:
+2023-07-05T15:08:29.049Z       filename        : arial.ttf
+2023-07-05T15:08:29.049Z       mimetype        : application/x-truetype-font
+2023-07-05T15:08:29.049Z   Stream #0:11: Attachment: ttf
+2023-07-05T15:08:29.049Z     Metadata:
+2023-07-05T15:08:29.049Z       filename        : comicbd.ttf
+2023-07-05T15:08:29.049Z       mimetype        : application/x-truetype-font
+2023-07-05T15:08:29.049Z   Stream #0:12: Attachment: ttf
+2023-07-05T15:08:29.049Z     Metadata:
+2023-07-05T15:08:29.049Z       filename        : comic.ttf
+2023-07-05T15:08:29.049Z       mimetype        : application/x-truetype-font
+2023-07-05T15:08:29.049Z   Stream #0:13: Attachment: ttf
+2023-07-05T15:08:29.049Z     Metadata:
+2023-07-05T15:08:29.049Z       filename        : timesi.ttf
+2023-07-05T15:08:29.049Z       mimetype        : application/x-truetype-font
+2023-07-05T15:08:29.049Z   Stream #0:14: Attachment: ttf
+2023-07-05T15:08:29.049Z     Metadata:
+2023-07-05T15:08:29.049Z       filename        : timesbd.ttf
+2023-07-05T15:08:29.049Z       mimetype        : application/x-truetype-font
+2023-07-05T15:08:29.049Z   Stream #0:15: Attachment: ttf
+2023-07-05T15:08:29.049Z     Metadata:
+2023-07-05T15:08:29.049Z       filename        : timesbi.ttf
+2023-07-05T15:08:29.049Z       mimetype        : application/x-truetype-font
+2023-07-05T15:08:29.049Z   Stream #0:16: Attachment: ttf
+2023-07-05T15:08:29.049Z     Metadata:
+2023-07-05T15:08:29.049Z       filename        : times.ttf
+2023-07-05T15:08:29.049Z       mimetype        : application/x-truetype-font
+2023-07-05T15:08:29.049Z   Stream #0:17: Attachment: ttf
+2023-07-05T15:08:29.049Z     Metadata:
+2023-07-05T15:08:29.049Z       filename        : Rubik-Italic.ttf
+2023-07-05T15:08:29.049Z       mimetype        : application/x-truetype-font
+2023-07-05T15:08:29.049Z   Stream #0:18: Attachment: ttf
+2023-07-05T15:08:29.049Z     Metadata:
+2023-07-05T15:08:29.049Z       filename        : Rubik-Regular.ttf
+2023-07-05T15:08:29.049Z       mimetype        : application/x-truetype-font
+2023-07-05T15:08:29.049Z   Stream #0:19: Attachment: ttf
+2023-07-05T15:08:29.049Z     Metadata:
+2023-07-05T15:08:29.049Z       filename        : Rubik-BoldItalic.ttf
+2023-07-05T15:08:29.049Z       mimetype        : application/x-truetype-font
+2023-07-05T15:08:29.049Z   Stream #0:20: Attachment: ttf
+2023-07-05T15:08:29.049Z     Metadata:
+2023-07-05T15:08:29.049Z       filename        : Rubik-Bold.ttf
+2023-07-05T15:08:29.049Z       mimetype        : application/x-truetype-font
+2023-07-05T15:08:29.049Z 
+2023-07-05T15:08:29.049Z [15:08:26] scan: decoding previews for title 1
+2023-07-05T15:08:29.049Z 
+2023-07-05T15:08:29.049Z [15:08:26] scan: audio 0x1: aac, rate=44100Hz, bitrate=1 日本語 (AAC LC) (2.0 ch)
+2023-07-05T15:08:29.049Z 
+2023-07-05T15:08:29.049Z Scanning title 1 of 1, preview 2, 20.00 %
+2023-07-05T15:08:29.049Z Scanning title 1 of 1, preview 7, 70.00 %
+2023-07-05T15:08:29.049Z [15:08:26] scan: 10 previews, 1920x1080, 23.976 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1, color profile: 1-1-1, chroma location: left
+2023-07-05T15:08:29.049Z 
+2023-07-05T15:08:29.049Z [15:08:26] libhb: scan thread found 1 valid title(s)
+2023-07-05T15:08:29.049Z 
+2023-07-05T15:08:29.049Z + title 1:
+2023-07-05T15:08:29.049Z   + stream: /media/movies/To Every You I've Loved Before (2022)/To Every You I've Loved Before (2022) WEBDL-1080p.mkv
+2023-07-05T15:08:29.049Z   + duration: 01:42:17
+2023-07-05T15:08:29.049Z   + size: 1920x1080, pixel aspect: 1/1, display aspect: 1.78, 23.976 fps
+2023-07-05T15:08:29.049Z   + autocrop: 0/0/0/0
+2023-07-05T15:08:29.049Z   + chapters:
+2023-07-05T15:08:29.049Z     + 1: duration 01:42:17
+2023-07-05T15:08:29.049Z   + audio tracks:
+2023-07-05T15:08:29.049Z     + 1, 日本語 (AAC LC) (2.0 ch) (iso639-2: jpn)
+2023-07-05T15:08:29.049Z   + subtitle tracks:
+2023-07-05T15:08:29.049Z     + 1, Francais [SSA]
+2023-07-05T15:08:29.049Z 
+2023-07-05T15:08:29.049Z HandBrake has exited.
+2023-07-05T15:08:29.049Z 
+2023-07-05T15:08:29.049Z libdvdread: Encrypted DVD support unavailable.
+2023-07-05T15:08:29.049Z libdvdread: Can't open file VIDEO_TS.IFO.
+2023-07-05T15:08:29.049Z 
+2023-07-05T15:08:29.049Z 
+2023-07-05T15:08:29.049Z 
+2023-07-05T15:08:29.050Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:[Step W06] [C1] Worker [-success-]
+2023-07-05T15:08:29.050Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Worker success during processing
+2023-07-05T15:08:29.059Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Updating healthcheck stats
+2023-07-05T15:08:29.060Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:[Step W10] Worker processing end
+2023-07-05T15:08:29.061Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Subworker exited null
+2023-07-05T15:08:29.061Z 3_LaJADIIMs:Node[MyInternalNode]:Worker[kindly-koi]:Successfully updated server with verdict: healthcheckSuccess

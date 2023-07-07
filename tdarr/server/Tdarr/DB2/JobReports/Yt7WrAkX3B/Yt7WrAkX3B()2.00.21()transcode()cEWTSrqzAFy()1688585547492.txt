@@ -1,0 +1,516 @@
+2023-07-05T20:32:30.377Z cEWTSrqzAFy:[Step S01] [2.00.21] Server relay initialising job
+2023-07-05T20:32:30.377Z cEWTSrqzAFy:Server: linux_x64_docker_true
+2023-07-05T20:32:30.378Z cEWTSrqzAFy:Server relay adding file to staged files
+2023-07-05T20:32:30.378Z cEWTSrqzAFy:Server relay sending job to Node relay: MyInternalNode
+2023-07-05T20:32:30.378Z cEWTSrqzAFy:Node[MyInternalNode]:[Step N01] [2.00.21] Node relay received job
+2023-07-05T20:32:30.379Z cEWTSrqzAFy:Node[MyInternalNode]:{"nodeName":"MyInternalNode","serverIP":"0.0.0.0","serverPort":"8266","handbrakePath":"","ffmpegPath":"","mkvpropeditPath":"","pathTranslators":[{"server":"","node":""}],"logLevel":"INFO","priority":-1,"platform_arch_isdocker":"linux_x64_docker_true","processPid":199,"nodeID":"_VxSJ6fLa"}
+2023-07-05T20:32:30.379Z cEWTSrqzAFy:Node[MyInternalNode]:Node relay sending job to worker:same-snipe
+2023-07-05T20:32:30.379Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[Step W01] Received file, original: /media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv
+2023-07-05T20:32:30.380Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:{"workerType":"transcodecpu"}
+2023-07-05T20:32:30.380Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:{"ffmpegPath":"tdarr-ffmpeg"}
+2023-07-05T20:32:30.382Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:{"handbrakePath":"HandBrakeCLI"}
+2023-07-05T20:32:30.382Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:{"mkvpropeditPath":"mkvpropedit"}
+2023-07-05T20:32:30.382Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:{"gpuSelect":"-"}
+2023-07-05T20:32:30.383Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:{"allowGpuDoCpu":false}
+2023-07-05T20:32:30.383Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:{"thoroughHealthCheckCpuExtraInputArgs":""}
+2023-07-05T20:32:30.383Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:{"thoroughHealthCheckGpuExtraInputArgs":""}
+2023-07-05T20:32:30.384Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:{"thoroughHealthCheckCpuExtraArgs":""}
+2023-07-05T20:32:30.384Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:{"thoroughHealthCheckGpuExtraArgs":""}
+2023-07-05T20:32:30.384Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:{"logFullCliOutput":false}
+2023-07-05T20:32:30.384Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Path translating objects
+2023-07-05T20:32:30.385Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:{"librarySettings":{"_id":"4BaCjCxnf","priority":1,"name":"TV","folder":"/media/tvshows","foldersToIgnore":"","folderWatchScanInterval":30,"scannerThreadCount":2,"cache":"/temp","output":"","folderToFolderConversion":false,"folderToFolderConversionDeleteSource":false,"folderToFolderRecordHistory":true,"copyIfConditionsMet":false,"container":".mkv","containerFilter":"mkv,mp4,mov,m4v,mpg,mpeg,avi,flv,webm,wmv,vob,evo,iso,m2ts,ts","createdAt":1675837380368,"folderWatching":true,"useFsEvents":false,"scheduledScanFindNew":false,"processLibrary":true,"scanOnStart":true,"exifToolScan":true,"mediaInfoScan":true,"closedCaptionScan":false,"scanButtons":true,"scanFound":"","navItemSelected":"navSourceFolder","pluginIDs":[{"_id":"plugin1","id":"Tdarr_Plugin_MC93_MigzImageRemoval","checked":true,"source":"Community","priority":0,"InputsDB":{},"Stage":"Pre-processing","Name":"Migz-Remove image formats from file","Type":"Video","Operation":"Transcode","Description":"Identify any unwanted image formats in the file and remove those streams. MJPEG, PNG & GIF \n\n","Version":"1.4","Tags":"pre-processing,ffmpeg,video only","Inputs":[],"source_id":"Community::Tdarr_Plugin_MC93_MigzImageRemoval","Link":"Read error"},{"_id":"plugin2","id":"Tdarr_Plugin_lmg1_Reorder_Streams","checked":true,"source":"Community","priority":1,"InputsDB":{},"Stage":"Pre-processing","Name":"Tdarr_Plugin_lmg1_Reorder_Streams ","Type":"Video","Operation":"Transcode","Description":"[Contains built-in filter] This plugin will move the video stream to the front so Tdarr will recognize the codec correctly.\n\n","Version":"1.00","Tags":"pre-processing,ffmpeg","Inputs":[],"source_id":"Community::Tdarr_Plugin_lmg1_Reorder_Streams","Link":"Read error"},{"_id":"1hAfv9lAl","id":"Tdarr_Plugin_00td_filter_by_codec","checked":true,"source":"Community","priority":2,"InputsDB":{"codecsToNotProcess":"h264"},"Stage":"Pre-processing","Name":"Filter by codec","Type":"Video","Operation":"Filter","Description":"Only allow specified codecs to be processed \n\n","Version":"1.00","Tags":"filter","Inputs":[{"name":"codecsToProcess","type":"string","defaultValue":"","inputUI":{"type":"text"},"tooltip":"Enter a comma separated list of codecs to be processed. Leave blank if using codecsToNotProcess"},{"name":"codecsToNotProcess","type":"string","defaultValue":"","inputUI":{"type":"text"},"tooltip":"Enter a comma separated list of codecs to be not be processed. Leave blank if using codecsToProcess"}],"source_id":"Community::Tdarr_Plugin_00td_filter_by_codec","Link":"Read error"},{"_id":"Pbuyde_00","id":"Tdarr_Plugin_00td_action_handbrake_basic_options","checked":true,"source":"Community","priority":3,"InputsDB":{"videoEncoder":"x264","handbrakePreset":"H.264 MKV 2160p60"},"Stage":"Pre-processing","Name":"HandBrake basic options","Type":"Video","Operation":"Transcode","Description":"\n  Set basic HandBrake transcode options. This action has no built-in filter so be sure to set a codec filter\n  to prevent a transcoding loop.\n  ","Version":"1.00","Tags":"action","Inputs":[{"name":"handbrakePreset","type":"string","defaultValue":"Very Fast 1080p30","inputUI":{"type":"dropdown","options":["Very Fast 1080p30","Very Fast 720p30","Very Fast 576p25","Very Fast 480p30","Fast 1080p30","Fast 720p30","Fast 576p25","Fast 480p30","HQ 1080p30 Surround","HQ 720p30 Surround","HQ 576p25 Surround","HQ 480p30 Surround\"","Super HQ 1080p30 Surround","Super HQ 720p30 Surround","Super HQ 576p25 Surround","Super HQ 480p30 Surround","Gmail Large 3 Minutes 720p30","Gmail Medium 5 Minutes 480p30","Gmail Small 10 Minutes 288p30","Vimeo YouTube HQ 2160p60 4K","Vimeo YouTube HQ 1440p60 2.5K","Vimeo YouTube HQ 1080p60","Vimeo YouTube HQ 720p60","Vimeo YouTube 720p30","Android 1080p30","Android 720p30","Android 576p25","Android 480p30","Apple 2160p60 4K HEVC Surround","Apple 1080p60 Surround","Apple 1080p30 Surround","Apple 720p30 Surround","Apple 540p30 Surround","Apple 240p30","Chromecast 2160p60 4K HEVC Surround","Chromecast 1080p60 Surround","Chromecast 1080p30 Surround","Amazon Fire 2160p60 4K HEVC Surround","Amazon Fire 1080p30 Surround","Amazon Fire 720p30","Playstation 1080p30 Surround","Playstation 720p30","Playstation 540p30","Roku 2160p60 4K HEVC Surround","Roku 1080p30 Surround","Roku 720p30 Surround","Roku 576p25","Roku 480p30","Windows Mobile 1080p30","Windows Mobile 720p30","Windows Mobile 540p30","Windows Mobile 480p30","Xbox 1080p30 Surround","Xbox Legacy 1080p30 Surround","H.265 MKV 2160p60","H.265 MKV 1080p30","H.265 MKV 720p30","H.265 MKV 576p25","H.265 MKV 480p30","H.264 MKV 2160p60","H.264 MKV 1080p30","H.264 MKV 720p30","H.264 MKV 576p25","H.264 MKV 480p30","VP9 MKV 2160p60","VP9 MKV 1080p30","VP9 MKV 720p30","VP9 MKV 576p25","VP9 MKV 480p30","VP8 MKV 1080p30","VP8 MKV 720p30","VP8 MKV 576p25","VP8 MKV 480p30","Production Max","Production Standard","Production Proxy 1080p","Production Proxy 540p"]},"tooltip":"Enter the desired HandBrake preset"},{"name":"videoEncoder","type":"string","defaultValue":"x265","inputUI":{"type":"dropdown","options":["x264","x264_10bit","qsv_h264","nvenc_h264","x265","x265_10bit","x265_12bit","qsv_h265","nvenc_h265","mpeg4","mpeg2","VP8","VP9","theora"]},"tooltip":"Enter the desired video encoder"},{"name":"keepSubtitles","type":"boolean","defaultValue":true,"inputUI":{"type":"dropdown","options":["true","false"]},"tooltip":"Specify whether to keep subs or not"},{"name":"container","type":"string","defaultValue":"mkv","inputUI":{"type":"text"},"tooltip":"Enter the desired container"}],"source_id":"Community::Tdarr_Plugin_00td_action_handbrake_basic_options","Link":"Read error"},{"_id":"plugin3","id":"Tdarr_Plugin_MC93_Migz1FFMPEG_CPU","checked":false,"source":"Community","priority":4,"InputsDB":{},"Stage":"Pre-processing","Name":"Migz-Transcode Using CPU & FFMPEG","Type":"Video","Operation":"Transcode","Description":"Files not in H265 will be transcoded into H265 using CPU with ffmpeg.\n                Settings are dependant on file bitrate\n                Working by the logic that H265 can support the same ammount of data at half the bitrate of H264.\n                This plugin will  skip any files that are in the VP9 codec.","Version":"1.9","Tags":"pre-processing,ffmpeg,video only,configurable,h265","Inputs":[{"name":"container","type":"string","defaultValue":"mkv","inputUI":{"type":"text"},"tooltip":"Specify output container of file. Use 'original' wihout quotes to keep original container.\n                  \\n Ensure that all stream types you may have are supported by your chosen container.\n                  \\n mkv is recommended.\n                    \\nExample:\\n\n                    mkv\n\n                    \\nExample:\\n\n                    mp4\n                                        \n                    \\nExample:\\n\n                    original"},{"name":"bitrate_cutoff","type":"string","defaultValue":"","inputUI":{"type":"text"},"tooltip":"Specify bitrate cutoff, files with a current bitrate lower then this will not be transcoded.\n                  \\n Rate is in kbps.\n                  \\n Leave empty to disable.\n                    \\nExample:\\n\n                    6000\n\n                    \\nExample:\\n\n                    4000"},{"name":"enable_10bit","type":"boolean","defaultValue":false,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Specify if output file should be 10bit. Default is false.\n                    \\nExample:\\n\n                    true\n\n                    \\nExample:\\n\n                    false"},{"name":"force_conform","type":"boolean","defaultValue":false,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Make the file conform to output containers requirements.\n                \\n Drop hdmv_pgs_subtitle/eia_608/subrip/timed_id3 for MP4.\n                \\n Drop data streams/mov_text/eia_608/timed_id3 for MKV.\n                \\n Default is false.\n                    \\nExample:\\n\n                    true\n\n                    \\nExample:\\n\n                    false"}],"source_id":"Community::Tdarr_Plugin_MC93_Migz1FFMPEG_CPU","Link":"Read error"},{"_id":"plugin4","id":"Tdarr_Plugin_MC93_Migz1FFMPEG","checked":false,"source":"Community","priority":5,"InputsDB":{},"Stage":"Pre-processing","Name":"Migz-Transcode Using Nvidia GPU & FFMPEG","Type":"Video","Operation":"Transcode","Description":"Files not in H265 will be transcoded into H265 using Nvidia GPU with ffmpeg.\n                  Settings are dependant on file bitrate\n                  Working by the logic that H265 can support the same ammount of data at half the bitrate of H264.\n                  NVDEC & NVENC compatable GPU required.\n                  This plugin will skip any files that are in the VP9 codec.","Version":"3.1","Tags":"pre-processing,ffmpeg,video only,nvenc h265,configurable","Inputs":[{"name":"container","type":"string","defaultValue":"mkv","inputUI":{"type":"text"},"tooltip":"Specify output container of file. Use 'original' wihout quotes to keep original container.\n                \\n Ensure that all stream types you may have are supported by your chosen container.\n                \\n mkv is recommended.\n                    \\nExample:\\n\n                    mkv\n\n                    \\nExample:\\n\n                    mp4\n                    \n                    \\nExample:\\n\n                    original"},{"name":"bitrate_cutoff","type":"string","defaultValue":"","inputUI":{"type":"text"},"tooltip":"Specify bitrate cutoff, files with a current bitrate lower then this will not be transcoded.\n               \\n Rate is in kbps.\n               \\n Leave empty to disable.\n                    \\nExample:\\n\n                    6000\n\n                    \\nExample:\\n\n                    4000"},{"name":"enable_10bit","type":"boolean","defaultValue":false,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Specify if output file should be 10bit. Default is false.\n                    \\nExample:\\n\n                    true\n\n                    \\nExample:\\n\n                    false"},{"name":"enable_bframes","type":"boolean","defaultValue":false,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Specify if b frames should be used.\n                 \\n Using B frames should decrease file sizes but are only supported on newer GPUs.\n                 \\n Default is false.\n                    \\nExample:\\n\n                    true\n\n                    \\nExample:\\n\n                    false"},{"name":"force_conform","type":"boolean","defaultValue":false,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Make the file conform to output containers requirements.\n                \\n Drop hdmv_pgs_subtitle/eia_608/subrip/timed_id3 for MP4.\n                \\n Drop data streams/mov_text/eia_608/timed_id3 for MKV.\n                \\n Default is false.\n                    \\nExample:\\n\n                    true\n\n                    \\nExample:\\n\n                    false"}],"source_id":"Community::Tdarr_Plugin_MC93_Migz1FFMPEG","Link":"Read error"},{"_id":"plugin5","id":"Tdarr_Plugin_a9he_New_file_size_check","checked":true,"source":"Community","priority":6,"InputsDB":{},"Stage":"Pre-processing","Name":"New file size check","Type":"Video","Operation":"Transcode","Description":"Give an error if new file is not within the specified upper and lower bound limits \n\n","Version":"1.00","Tags":"","Inputs":[{"name":"upperBound","type":"number","defaultValue":110,"inputUI":{"type":"text"},"tooltip":"Enter the upper bound % size for the new file. For example, if '110' is entered, \n        then if the new file size is 11% larger than the original, an error will be given."},{"name":"lowerBound","type":"number","defaultValue":40,"inputUI":{"type":"text"},"tooltip":"Enter the lower bound % size for the new file. For example, if '90' is entered, \n        then if the new file size is less than 90% of the original, an error will be given."}],"source_id":"Community::Tdarr_Plugin_a9he_New_file_size_check","Link":"Read error"}],"pluginCommunity":true,"handbrake":true,"ffmpeg":false,"handbrakescan":true,"ffmpegscan":false,"preset":"-Z \"Very Fast 1080p30\"","decisionMaker":{"settingsPlugin":true,"settingsVideo":false,"videoExcludeSwitch":true,"video_codec_names_exclude":[{"codec":"hevc","checked":false},{"codec":"h264","checked":true}],"video_size_range_include":{"min":0,"max":100000},"video_height_range_include":{"min":0,"max":3000},"video_width_range_include":{"min":0,"max":4000},"settingsAudio":false,"audioExcludeSwitch":true,"audio_codec_names_exclude":[{"codec":"mp3","checked":true},{"codec":"aac","checked":false}],"audio_size_range_include":{"min":0,"max":10}},"schedule":[{"_id":"Sun:00-01","checked":true},{"_id":"Sun:01-02","checked":true},{"_id":"Sun:02-03","checked":true},{"_id":"Sun:03-04","checked":true},{"_id":"Sun:04-05","checked":true},{"_id":"Sun:05-06","checked":true},{"_id":"Sun:06-07","checked":true},{"_id":"Sun:07-08","checked":true},{"_id":"Sun:08-09","checked":true},{"_id":"Sun:09-10","checked":true},{"_id":"Sun:10-11","checked":true},{"_id":"Sun:11-12","checked":true},{"_id":"Sun:12-13","checked":true},{"_id":"Sun:13-14","checked":true},{"_id":"Sun:14-15","checked":true},{"_id":"Sun:15-16","checked":true},{"_id":"Sun:16-17","checked":true},{"_id":"Sun:17-18","checked":true},{"_id":"Sun:18-19","checked":true},{"_id":"Sun:19-20","checked":true},{"_id":"Sun:20-21","checked":true},{"_id":"Sun:21-22","checked":true},{"_id":"Sun:22-23","checked":true},{"_id":"Sun:23-00","checked":true},{"_id":"Mon:00-01","checked":true},{"_id":"Mon:01-02","checked":true},{"_id":"Mon:02-03","checked":true},{"_id":"Mon:03-04","checked":true},{"_id":"Mon:04-05","checked":true},{"_id":"Mon:05-06","checked":true},{"_id":"Mon:06-07","checked":true},{"_id":"Mon:07-08","checked":true},{"_id":"Mon:08-09","checked":true},{"_id":"Mon:09-10","checked":true},{"_id":"Mon:10-11","checked":true},{"_id":"Mon:11-12","checked":true},{"_id":"Mon:12-13","checked":true},{"_id":"Mon:13-14","checked":true},{"_id":"Mon:14-15","checked":true},{"_id":"Mon:15-16","checked":true},{"_id":"Mon:16-17","checked":true},{"_id":"Mon:17-18","checked":true},{"_id":"Mon:18-19","checked":true},{"_id":"Mon:19-20","checked":true},{"_id":"Mon:20-21","checked":true},{"_id":"Mon:21-22","checked":true},{"_id":"Mon:22-23","checked":true},{"_id":"Mon:23-00","checked":true},{"_id":"Tue:00-01","checked":true},{"_id":"Tue:01-02","checked":true},{"_id":"Tue:02-03","checked":true},{"_id":"Tue:03-04","checked":true},{"_id":"Tue:04-05","checked":true},{"_id":"Tue:05-06","checked":true},{"_id":"Tue:06-07","checked":true},{"_id":"Tue:07-08","checked":true},{"_id":"Tue:08-09","checked":true},{"_id":"Tue:09-10","checked":true},{"_id":"Tue:10-11","checked":true},{"_id":"Tue:11-12","checked":true},{"_id":"Tue:12-13","checked":true},{"_id":"Tue:13-14","checked":true},{"_id":"Tue:14-15","checked":true},{"_id":"Tue:15-16","checked":true},{"_id":"Tue:16-17","checked":true},{"_id":"Tue:17-18","checked":true},{"_id":"Tue:18-19","checked":true},{"_id":"Tue:19-20","checked":true},{"_id":"Tue:20-21","checked":true},{"_id":"Tue:21-22","checked":true},{"_id":"Tue:22-23","checked":true},{"_id":"Tue:23-00","checked":true},{"_id":"Wed:00-01","checked":true},{"_id":"Wed:01-02","checked":true},{"_id":"Wed:02-03","checked":true},{"_id":"Wed:03-04","checked":true},{"_id":"Wed:04-05","checked":true},{"_id":"Wed:05-06","checked":true},{"_id":"Wed:06-07","checked":true},{"_id":"Wed:07-08","checked":true},{"_id":"Wed:08-09","checked":true},{"_id":"Wed:09-10","checked":true},{"_id":"Wed:10-11","checked":true},{"_id":"Wed:11-12","checked":true},{"_id":"Wed:12-13","checked":true},{"_id":"Wed:13-14","checked":true},{"_id":"Wed:14-15","checked":true},{"_id":"Wed:15-16","checked":true},{"_id":"Wed:16-17","checked":true},{"_id":"Wed:17-18","checked":true},{"_id":"Wed:18-19","checked":true},{"_id":"Wed:19-20","checked":true},{"_id":"Wed:20-21","checked":true},{"_id":"Wed:21-22","checked":true},{"_id":"Wed:22-23","checked":true},{"_id":"Wed:23-00","checked":true},{"_id":"Thur:00-01","checked":true},{"_id":"Thur:01-02","checked":true},{"_id":"Thur:02-03","checked":true},{"_id":"Thur:03-04","checked":true},{"_id":"Thur:04-05","checked":true},{"_id":"Thur:05-06","checked":true},{"_id":"Thur:06-07","checked":true},{"_id":"Thur:07-08","checked":true},{"_id":"Thur:08-09","checked":true},{"_id":"Thur:09-10","checked":true},{"_id":"Thur:10-11","checked":true},{"_id":"Thur:11-12","checked":true},{"_id":"Thur:12-13","checked":true},{"_id":"Thur:13-14","checked":true},{"_id":"Thur:14-15","checked":true},{"_id":"Thur:15-16","checked":true},{"_id":"Thur:16-17","checked":true},{"_id":"Thur:17-18","checked":true},{"_id":"Thur:18-19","checked":true},{"_id":"Thur:19-20","checked":true},{"_id":"Thur:20-21","checked":true},{"_id":"Thur:21-22","checked":true},{"_id":"Thur:22-23","checked":true},{"_id":"Thur:23-00","checked":true},{"_id":"Fri:00-01","checked":true},{"_id":"Fri:01-02","checked":true},{"_id":"Fri:02-03","checked":true},{"_id":"Fri:03-04","checked":true},{"_id":"Fri:04-05","checked":true},{"_id":"Fri:05-06","checked":true},{"_id":"Fri:06-07","checked":true},{"_id":"Fri:07-08","checked":true},{"_id":"Fri:08-09","checked":true},{"_id":"Fri:09-10","checked":true},{"_id":"Fri:10-11","checked":true},{"_id":"Fri:11-12","checked":true},{"_id":"Fri:12-13","checked":true},{"_id":"Fri:13-14","checked":true},{"_id":"Fri:14-15","checked":true},{"_id":"Fri:15-16","checked":true},{"_id":"Fri:16-17","checked":true},{"_id":"Fri:17-18","checked":true},{"_id":"Fri:18-19","checked":true},{"_id":"Fri:19-20","checked":true},{"_id":"Fri:20-21","checked":true},{"_id":"Fri:21-22","checked":true},{"_id":"Fri:22-23","checked":true},{"_id":"Fri:23-00","checked":true},{"_id":"Sat:00-01","checked":true},{"_id":"Sat:01-02","checked":true},{"_id":"Sat:02-03","checked":true},{"_id":"Sat:03-04","checked":true},{"_id":"Sat:04-05","checked":true},{"_id":"Sat:05-06","checked":true},{"_id":"Sat:06-07","checked":true},{"_id":"Sat:07-08","checked":true},{"_id":"Sat:08-09","checked":true},{"_id":"Sat:09-10","checked":true},{"_id":"Sat:10-11","checked":true},{"_id":"Sat:11-12","checked":true},{"_id":"Sat:12-13","checked":true},{"_id":"Sat:13-14","checked":true},{"_id":"Sat:14-15","checked":true},{"_id":"Sat:15-16","checked":true},{"_id":"Sat:16-17","checked":true},{"_id":"Sat:17-18","checked":true},{"_id":"Sat:18-19","checked":true},{"_id":"Sat:19-20","checked":true},{"_id":"Sat:20-21","checked":true},{"_id":"Sat:21-22","checked":true},{"_id":"Sat:22-23","checked":true},{"_id":"Sat:23-00","checked":true}],"totalHealthCheckCount":20,"totalTranscodeCount":0,"sizeDiff":0,"holdNewFiles":false,"holdFor":3600,"pluginStackOverview":true,"filterResolutionsSkip":"","filterCodecsSkip":"","processPluginsSequentially":true}}
+2023-07-05T20:32:30.385Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Fetching plugin data from server
+2023-07-05T20:32:30.386Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Scanning original library file
+2023-07-05T20:32:30.386Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:{
+2023-07-05T20:32:30.386Z   "exifToolScan": true,
+2023-07-05T20:32:30.386Z   "mediaInfoScan": false,
+2023-07-05T20:32:30.386Z   "closedCaptionScan": false
+2023-07-05T20:32:30.386Z }
+2023-07-05T20:32:30.386Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Updating file properties using mkvpropedit
+2023-07-05T20:32:30.386Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Updated file properties using mkvpropedit
+2023-07-05T20:32:30.387Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Requesting Tdarr Server to scan file
+2023-07-05T20:32:31.390Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Scan complete
+2023-07-05T20:32:31.391Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Original file scanned
+2023-07-05T20:32:31.391Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:fileVersionOriginalLogJSONString:{"lastCliCommand":"","lastPluginId":"","sourceFile":{"_id":"/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv","footprintId":"Yt7WrAkX3B","file":"/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv","container":"mkv","scannerReads":{"ffProbeRead":"success","exiftoolRead":"success","mediaInfoRead":"not enabled","closedCaptionRead":"not enabled"},"createdAt":1688585548687,"lastPluginDetails":"none","bit_rate":13815463,"statSync":{"dev":2051,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":5918436,"size":5470868432,"blocks":10685440,"atimeMs":1688548263330.694,"mtimeMs":1688548232699.178,"ctimeMs":1688548262886.7012,"birthtimeMs":1688547875292.7993,"atime":"2023-07-05T09:11:03.331Z","mtime":"2023-07-05T09:10:32.699Z","ctime":"2023-07-05T09:11:02.887Z","birthtime":"2023-07-05T09:04:35.293Z"},"file_size":5217.426712036133,"ffProbeData":{"streams":[{"index":0,"codec_name":"hevc","codec_long_name":"H.265 / HEVC (High Efficiency Video Coding)","profile":"Main","codec_type":"video","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","width":3840,"height":2160,"coded_width":3840,"coded_height":2160,"closed_captions":0,"has_b_frames":2,"sample_aspect_ratio":"1:1","display_aspect_ratio":"16:9","pix_fmt":"yuv420p","level":150,"color_range":"tv","color_space":"bt709","color_transfer":"bt709","color_primaries":"bt709","chroma_location":"left","refs":1,"r_frame_rate":"24/1","avg_frame_rate":"24/1","time_base":"1/1000","start_pts":0,"start_time":"0.000000","disposition":{"default":1,"dub":0,"original":1,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"BPS":"13045423","DURATION":"00:52:47.917000000","NUMBER_OF_FRAMES":"76030","NUMBER_OF_BYTES":"5165852502","_STATISTICS_WRITING_APP":"mkvmerge v77.0 ('Elemental') 64-bit","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}},{"index":1,"codec_name":"eac3","codec_long_name":"ATSC A/52B (AC-3, E-AC-3)","codec_type":"audio","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":"48000","channels":6,"channel_layout":"5.1(side)","bits_per_sample":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","bit_rate":"768000","disposition":{"default":1,"dub":0,"original":1,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"eng","BPS":"768000","DURATION":"00:52:47.968000000","NUMBER_OF_FRAMES":"98999","NUMBER_OF_BYTES":"304124928","_STATISTICS_WRITING_APP":"mkvmerge v77.0 ('Elemental') 64-bit","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}},{"index":2,"codec_name":"subrip","codec_long_name":"SubRip subtitle","codec_type":"subtitle","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","duration_ts":3167968,"duration":"3167.968000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"eng","BPS":"44","DURATION":"00:49:10.792000000","NUMBER_OF_FRAMES":"466","NUMBER_OF_BYTES":"16264","_STATISTICS_WRITING_APP":"mkvmerge v77.0 ('Elemental') 64-bit","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}},{"index":3,"codec_name":"subrip","codec_long_name":"SubRip subtitle","codec_type":"subtitle","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","duration_ts":3167968,"duration":"3167.968000","disposition":{"default":0,"dub":0,"original":1,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":1,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"eng","title":"SDH","BPS":"48","DURATION":"00:49:22.667000000","NUMBER_OF_FRAMES":"541","NUMBER_OF_BYTES":"18121","_STATISTICS_WRITING_APP":"mkvmerge v77.0 ('Elemental') 64-bit","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}}],"format":{"filename":"/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv","nb_streams":4,"nb_programs":0,"format_name":"matroska,webm","format_long_name":"Matroska / WebM","start_time":"0.000000","duration":"3167.968000","size":"5470868432","bit_rate":"13815463","probe_score":100,"tags":{"encoder":"libebml v1.4.4 + libmatroska v1.7.1"}}},"meta":{"SourceFile":"/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv","errors":[],"Duration":3167.968,"DefaultDuration":0.032,"ExifToolVersion":12.4,"FileName":"Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv","Directory":"/media/tvshows/Secret Invasion/Season 1","FileSize":"5.1 GiB","FileModifyDate":{"year":2023,"month":7,"day":5,"hour":9,"minute":10,"second":32,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:05 09:10:32+00:00"},"FileAccessDate":{"year":2023,"month":7,"day":5,"hour":9,"minute":11,"second":3,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:05 09:11:03+00:00"},"FileInodeChangeDate":{"year":2023,"month":7,"day":5,"hour":9,"minute":11,"second":2,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:05 09:11:02+00:00"},"FilePermissions":"-rw-rw-r--","FileType":"MKV","FileTypeExtension":"mkv","MIMEType":"video/x-matroska","EBMLVersion":1,"EBMLReadVersion":1,"DocType":"matroska","DocTypeVersion":4,"DocTypeReadVersion":2,"TimecodeScale":"1 ms","MuxingApp":"libebml v1.4.4 + libmatroska v1.7.1","WritingApp":"mkvmerge v77.0 ('Elemental') 64-bit","TrackLanguage":"und","VideoCodecID":"V_MPEGH/ISO/HEVC","VideoFrameRate":24,"ImageWidth":3840,"ImageHeight":2160,"DisplayWidth":3840,"DisplayHeight":2160,"AudioCodecID":"A_EAC3","AudioSampleRate":48000,"AudioChannels":6,"TrackNumber":4,"TrackType":"Subtitle","TrackDefault":"No","CodecID":"S_TEXT/UTF8","TrackName":"SDH","ChapterTimeStart":"0:50:12","ChapterString":"Credits","ChapterLanguage":"eng","ImageSize":"3840x2160","Megapixels":8.3},"mediaInfo":{},"hasClosedCaptions":false,"DB":"4BaCjCxnf","bumped":false,"HealthCheck":"","TranscodeDecisionMaker":"","holdUntil":0,"fileMedium":"video","video_codec_name":"hevc","audio_codec_name":"","video_resolution":"4KUHD","lastHealthCheckDate":0,"lastTranscodeDate":0,"history":"","oldSize":0,"newSize":0,"videoStreamIndex":0,"duration":3167}}
+2023-07-05T20:32:31.391Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Source file to work on determined:/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv
+2023-07-05T20:32:31.391Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[Step W02] [C1] Running pre-process file
+2023-07-05T20:32:31.392Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Checking files can be accessed
+2023-07-05T20:32:31.392Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Relevant paths can be accessed
+2023-07-05T20:32:31.392Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Source file: /media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv
+2023-07-05T20:32:31.392Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Cache folder: /temp
+2023-07-05T20:32:31.393Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[Step W03] [C1] Analysing file - running plugins
+2023-07-05T20:32:31.393Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:transcode task, scanning for extra file details before transcode
+2023-07-05T20:32:31.393Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Updating file properties using mkvpropedit
+2023-07-05T20:32:31.393Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Updated file properties using mkvpropedit
+2023-07-05T20:32:31.393Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Requesting Tdarr Server to scan file
+2023-07-05T20:32:32.403Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Scan complete
+2023-07-05T20:32:32.407Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Scan complete
+2023-07-05T20:32:32.407Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Updating Node relay: Processing
+2023-07-05T20:32:32.407Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[1/2] Checking file frame count
+2023-07-05T20:32:32.407Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[2/2] Frame count 0
+2023-07-05T20:32:32.408Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Transcode task, determining transcode settings
+2023-07-05T20:32:32.408Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Plugin stack selected
+2023-07-05T20:32:32.408Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Plugin: plugin1:  Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-05T20:32:32.408Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[1/5] Reading plugin
+2023-07-05T20:32:32.409Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[2/5] Plugin read finished
+2023-07-05T20:32:32.409Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[3/5] Installing dependencies
+2023-07-05T20:32:32.410Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[4/5] Running plugin
+2023-07-05T20:32:32.410Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:{"pluginInputs":{}}
+2023-07-05T20:32:32.411Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[5/5] Running plugin finished
+2023-07-05T20:32:32.411Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Plugin: plugin2:  Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-05T20:32:32.412Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[1/5] Reading plugin
+2023-07-05T20:32:32.412Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[2/5] Plugin read finished
+2023-07-05T20:32:32.412Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[3/5] Installing dependencies
+2023-07-05T20:32:32.413Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[4/5] Running plugin
+2023-07-05T20:32:32.413Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:{"pluginInputs":{}}
+2023-07-05T20:32:32.413Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[5/5] Running plugin finished
+2023-07-05T20:32:32.414Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Plugin: 1hAfv9lAl:  Tdarr_Plugin_00td_filter_by_codec
+2023-07-05T20:32:32.414Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[1/5] Reading plugin
+2023-07-05T20:32:32.414Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[2/5] Plugin read finished
+2023-07-05T20:32:32.415Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[3/5] Installing dependencies
+2023-07-05T20:32:32.415Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[4/5] Running plugin
+2023-07-05T20:32:32.415Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:{"pluginInputs":{"codecsToProcess":"","codecsToNotProcess":"h264"}}
+2023-07-05T20:32:32.416Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[5/5] Running plugin finished
+2023-07-05T20:32:32.416Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Plugin: Pbuyde_00:  Tdarr_Plugin_00td_action_handbrake_basic_options
+2023-07-05T20:32:32.417Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[1/5] Reading plugin
+2023-07-05T20:32:32.417Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[2/5] Plugin read finished
+2023-07-05T20:32:32.418Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[3/5] Installing dependencies
+2023-07-05T20:32:32.418Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[4/5] Running plugin
+2023-07-05T20:32:32.418Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:{"pluginInputs":{"handbrakePreset":"H.264 MKV 2160p60","videoEncoder":"x264","keepSubtitles":true,"container":"mkv"}}
+2023-07-05T20:32:32.419Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[5/5] Running plugin finished
+2023-07-05T20:32:32.419Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Worker config: {
+2023-07-05T20:32:32.419Z   "processFile": true,
+2023-07-05T20:32:32.419Z   "preset": "-Z \"H.264 MKV 2160p60\" -e x264 --all-subtitles",
+2023-07-05T20:32:32.419Z   "container": ".mkv",
+2023-07-05T20:32:32.419Z   "handBrakeMode": false,
+2023-07-05T20:32:32.419Z   "FFmpegMode": false,
+2023-07-05T20:32:32.419Z   "reQueueAfter": true,
+2023-07-05T20:32:32.419Z   "infoLog": "File is being transcoded using HandBrake \n",
+2023-07-05T20:32:32.419Z   "handbrakeMode": true,
+2023-07-05T20:32:32.419Z   "ffmpegMode": false,
+2023-07-05T20:32:32.419Z   "lastPluginDetails": {
+2023-07-05T20:32:32.419Z     "source": "Community",
+2023-07-05T20:32:32.419Z     "id": "Tdarr_Plugin_00td_action_handbrake_basic_options",
+2023-07-05T20:32:32.419Z     "number": "4/5"
+2023-07-05T20:32:32.419Z   },
+2023-07-05T20:32:32.419Z   "cliToUse": "handbrake"
+2023-07-05T20:32:32.419Z }
+2023-07-05T20:32:32.421Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Worker log: 
+2023-07-05T20:32:32.421Z Pre-processing - Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-05T20:32:32.421Z ☑File doesn't contain any unwanted image format streams.
+2023-07-05T20:32:32.421Z 
+2023-07-05T20:32:32.421Z Pre-processing - Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-05T20:32:32.421Z File has video in first stream
+2023-07-05T20:32:32.421Z  File meets conditions!
+2023-07-05T20:32:32.421Z 
+2023-07-05T20:32:32.421Z Pre-processing - Tdarr_Plugin_00td_filter_by_codec
+2023-07-05T20:32:32.421Z File is not in codecsToNotProcess. Moving to next plugin.
+2023-07-05T20:32:32.421Z Pre-processing - Tdarr_Plugin_00td_action_handbrake_basic_options
+2023-07-05T20:32:32.421Z File is being transcoded using HandBrake 
+2023-07-05T20:32:32.421Z 
+2023-07-05T20:32:32.421Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Worker will process
+2023-07-05T20:32:32.421Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[Step W04] [C1] Preparing command
+2023-07-05T20:32:32.422Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Cache file stem: /temp
+2023-07-05T20:32:32.422Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Cache file path: /temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-Q2g3eAEjs.mkv
+2023-07-05T20:32:32.422Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Create transcode args
+2023-07-05T20:32:32.423Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Args:  -i "/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv" -o "/temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-Q2g3eAEjs.mkv" -Z "H.264 MKV 2160p60" -e x264 --all-subtitles
+2023-07-05T20:32:32.424Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Getting source file size
+2023-07-05T20:32:32.424Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Source file size: 5.095143273472786
+2023-07-05T20:32:32.424Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Performing safety check on worker config to see if old transcode args/container match new ones
+2023-07-05T20:32:32.425Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Safety check complete, all good
+2023-07-05T20:32:32.425Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[Step W05] [C1] Launching subworker
+2023-07-05T20:32:32.426Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Preparing to launch subworker
+2023-07-05T20:32:32.426Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Subworker launched
+2023-07-05T20:32:32.427Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[1/3] Sending command to subworker
+2023-07-05T20:32:32.427Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[2/3] HandBrakeCLI -i "/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv" -o "/temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-Q2g3eAEjs.mkv" -Z "H.264 MKV 2160p60" -e x264 --all-subtitles
+2023-07-05T20:32:32.427Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[3/3] Command sent
+2023-07-05T20:32:32.427Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:To see live CLI output, enable 'Log full FFmpeg/HandBrake output' in the staging section on the Tdarr tab before the job starts. Note this could increase the job report size substantially.
+2023-07-05T20:32:32.428Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Subworker:Online
+2023-07-05T20:32:32.428Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Subworker:Receiving transcode settings
+2023-07-05T20:32:32.429Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Subworker:Running CLI
+2023-07-05T20:32:32.429Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Subworker:a.Thread closed, code: 2
+2023-07-05T20:32:32.431Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Subworker exit approved, killing subworker
+2023-07-05T20:32:32.432Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Subworker killed
+2023-07-05T20:32:32.433Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:b.Thread closed, code: 2
+2023-07-05T20:32:32.433Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:CLI code: 2
+2023-07-05T20:32:32.433Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Last 200 lines of CLI log:
+2023-07-05T20:32:32.434Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[20:32:30] Compile-time hardening features are enabled
+2023-07-05T20:32:32.434Z 
+2023-07-05T20:32:32.434Z [20:32:30] qsv: not available on this system
+2023-07-05T20:32:32.434Z 
+2023-07-05T20:32:32.434Z Cannot load libnvidia-encode.so.1
+2023-07-05T20:32:32.434Z 
+2023-07-05T20:32:32.434Z [20:32:30] hb_init: starting libhb thread
+2023-07-05T20:32:32.434Z 
+2023-07-05T20:32:32.434Z [20:32:30] thread 7f8702abb700 started ("libhb")
+2023-07-05T20:32:32.434Z HandBrake 1.6.1 (2023061300) - Linux x86_64 - https://handbrake.fr
+2023-07-05T20:32:32.434Z 4 CPUs detected
+2023-07-05T20:32:32.434Z Invalid preset H.264 MKV 2160p60
+2023-07-05T20:32:32.434Z Valid presets are:
+2023-07-05T20:32:32.434Z     General/
+2023-07-05T20:32:32.434Z         Very Fast 2160p60 4K AV1
+2023-07-05T20:32:32.434Z             AV1 video (up to 2160p60) and AAC stereo audio, in an MP4
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         Very Fast 2160p60 4K HEVC
+2023-07-05T20:32:32.434Z             H.265 video (up to 2160p60) and AAC stereo audio, in an MP4
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         Very Fast 1080p30
+2023-07-05T20:32:32.434Z             Small H.264 video (up to 1080p30) and AAC stereo audio, in
+2023-07-05T20:32:32.434Z             an MP4 container.
+2023-07-05T20:32:32.434Z         Very Fast 720p30
+2023-07-05T20:32:32.434Z             Small H.264 video (up to 720p30) and AAC stereo audio, in an
+2023-07-05T20:32:32.434Z             MP4 container.
+2023-07-05T20:32:32.434Z         Very Fast 576p25
+2023-07-05T20:32:32.434Z             Small H.264 video (up to 576p25) and AAC stereo audio, in an
+2023-07-05T20:32:32.434Z             MP4 container.
+2023-07-05T20:32:32.434Z         Very Fast 480p30
+2023-07-05T20:32:32.434Z             Small H.264 video (up to 480p30) and AAC stereo audio, in an
+2023-07-05T20:32:32.434Z             MP4 container.
+2023-07-05T20:32:32.434Z         Fast 2160p60 4K AV1
+2023-07-05T20:32:32.434Z             AV1 video (up to 2160p60) and AAC stereo audio, in an MP4
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         Fast 2160p60 4K HEVC
+2023-07-05T20:32:32.434Z             H.265 video (up to 2160p60) and AAC stereo audio, in an MP4
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         Fast 1080p30
+2023-07-05T20:32:32.434Z             H.264 video (up to 1080p30) and AAC stereo audio, in an MP4
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         Fast 720p30
+2023-07-05T20:32:32.434Z             H.264 video (up to 720p30) and AAC stereo audio, in an MP4
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         Fast 576p25
+2023-07-05T20:32:32.434Z             H.264 video (up to 576p25) and AAC stereo audio, in an MP4
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         Fast 480p30
+2023-07-05T20:32:32.434Z             H.264 video (up to 480p30) and AAC stereo audio, in an MP4
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         HQ 2160p60 4K AV1 Surround
+2023-07-05T20:32:32.434Z             High quality AV1 video (up to 2160p60), AAC stereo audio,
+2023-07-05T20:32:32.434Z             and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         HQ 2160p60 4K HEVC Surround
+2023-07-05T20:32:32.434Z             High quality H.265 video (up to 2160p60), AAC stereo audio,
+2023-07-05T20:32:32.434Z             and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         HQ 1080p30 Surround
+2023-07-05T20:32:32.434Z             High quality H.264 video (up to 1080p30), AAC stereo audio,
+2023-07-05T20:32:32.434Z             and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         HQ 720p30 Surround
+2023-07-05T20:32:32.434Z             High quality H.264 video (up to 720p30), AAC stereo audio,
+2023-07-05T20:32:32.434Z             and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         HQ 576p25 Surround
+2023-07-05T20:32:32.434Z             High quality H.264 video (up to 576p25), AAC stereo audio,
+2023-07-05T20:32:32.434Z             and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         HQ 480p30 Surround
+2023-07-05T20:32:32.434Z             High quality H.264 video (up to 480p30), AAC stereo audio,
+2023-07-05T20:32:32.434Z             and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         Super HQ 2160p60 4K AV1 Surround
+2023-07-05T20:32:32.434Z             Super high quality AV1 video (up to 2160p60), AAC stereo
+2023-07-05T20:32:32.434Z             audio, and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         Super HQ 2160p60 4K HEVC Surround
+2023-07-05T20:32:32.434Z             Super high quality H.265 video (up to 2160p60), AAC stereo
+2023-07-05T20:32:32.434Z             audio, and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         Super HQ 1080p30 Surround
+2023-07-05T20:32:32.434Z             Super high quality H.264 video (up to 1080p30), AAC stereo
+2023-07-05T20:32:32.434Z             audio, and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         Super HQ 720p30 Surround
+2023-07-05T20:32:32.434Z             Super high quality H.264 video (up to 720p30), AAC stereo
+2023-07-05T20:32:32.434Z             audio, and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         Super HQ 576p25 Surround
+2023-07-05T20:32:32.434Z             Super high quality H.264 video (up to 576p25), AAC stereo
+2023-07-05T20:32:32.434Z             audio, and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         Super HQ 480p30 Surround
+2023-07-05T20:32:32.434Z             Super high quality H.264 video (up to 480p30), AAC stereo
+2023-07-05T20:32:32.434Z             audio, and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z     Web/
+2023-07-05T20:32:32.434Z         Creator 2160p60 4K
+2023-07-05T20:32:32.434Z             High quality video for publishing via online services such
+2023-07-05T20:32:32.434Z             as Vimeo and YouTube. H.264 video (up to 2160p60) and high
+2023-07-05T20:32:32.434Z             bit rate AAC stereo audio in an MP4 container.
+2023-07-05T20:32:32.434Z         Creator 1440p60 2.5K
+2023-07-05T20:32:32.434Z             High quality video for publishing via online services such
+2023-07-05T20:32:32.434Z             as Vimeo and YouTube. H.264 video (up to 1440p60) and high
+2023-07-05T20:32:32.434Z             bit rate AAC stereo audio in an MP4 container.
+2023-07-05T20:32:32.434Z         Creator 1080p60
+2023-07-05T20:32:32.434Z             High quality video for publishing via online services such
+2023-07-05T20:32:32.434Z             as Vimeo and YouTube. H.264 video (up to 1080p60) and high
+2023-07-05T20:32:32.434Z             bit rate AAC stereo audio in an MP4 container.
+2023-07-05T20:32:32.434Z         Creator 720p60
+2023-07-05T20:32:32.434Z             High quality video for publishing via online services such
+2023-07-05T20:32:32.434Z             as Vimeo and YouTube. H.264 video (up to 720p60) and high
+2023-07-05T20:32:32.434Z             bit rate AAC stereo audio in an MP4 container.
+2023-07-05T20:32:32.434Z         Email 25 MB 3 Minutes 720p30
+2023-07-05T20:32:32.434Z             Up to 3 minutes of video in 25 MB or less, for sharing via
+2023-07-05T20:32:32.434Z             
+2023-07-05T20:32:32.434Z email services such as Gmail. H.264 video (up to 720p30) and
+2023-07-05T20:32:32.434Z             AAC stereo audio, in an MP4 container.
+2023-07-05T20:32:32.434Z         Email 25 MB 5 Minutes 480p30
+2023-07-05T20:32:32.434Z             Up to 5 minutes of video in 25 MB or less, for sharing via
+2023-07-05T20:32:32.434Z             email services such as Gmail. H.264 video (up to 480p30) and
+2023-07-05T20:32:32.434Z             AAC stereo audio, in an MP4 container.
+2023-07-05T20:32:32.434Z         Email 25 MB 10 Minutes 288p30
+2023-07-05T20:32:32.434Z             Up to 10 minutes of video in 25 MB or less, for sharing via
+2023-07-05T20:32:32.434Z             email services such as Gmail. H.264 video (up to 288p30) and
+2023-07-05T20:32:32.434Z             AAC stereo audio, in an MP4 container.
+2023-07-05T20:32:32.434Z         Social 100 MB 5 Minutes 1080p30
+2023-07-05T20:32:32.434Z             Up to 5 minutes of video in 100 MB or less, for sharing via
+2023-07-05T20:32:32.434Z             online social communities such as Discord. H.264 video (up
+2023-07-05T20:32:32.434Z             to 1080p30) and AAC stereo audio, in an MP4 container.
+2023-07-05T20:32:32.434Z         Social 50 MB 5 Minutes 720p30
+2023-07-05T20:32:32.434Z             Up to 5 minutes of video in 50 MB or less, for sharing via
+2023-07-05T20:32:32.434Z             online social communities such as Discord. H.264 video (up
+2023-07-05T20:32:32.434Z             to 720p30) and AAC stereo audio, in an MP4 container.
+2023-07-05T20:32:32.434Z         Social 50 MB 10 Minutes 480p30
+2023-07-05T20:32:32.434Z             Up to 10 minutes of video in 50 MB or less, for sharing via
+2023-07-05T20:32:32.434Z             online social communities such as Discord. H.264 video (up
+2023-07-05T20:32:32.434Z             to 480p30) and AAC stereo audio, in an MP4 container.
+2023-07-05T20:32:32.434Z         Social 8 MB 3 Minutes 360p30
+2023-07-05T20:32:32.434Z             Up to 3 minutes of video in 8 MB or less, for sharing via
+2023-07-05T20:32:32.434Z             online social communities such as Discord. H.264 video (up
+2023-07-05T20:32:32.434Z             to 360p30) and AAC stereo audio, in an MP4 container.
+2023-07-05T20:32:32.434Z     Devices/
+2023-07-05T20:32:32.434Z 
+2023-07-05T20:32:32.434Z         Amazon Fire 2160p60 4K HEVC Surround
+2023-07-05T20:32:32.434Z             H.265 video (up to 2160p60), AAC stereo audio, and Dolby
+2023-07-05T20:32:32.434Z             Digital (AC-3) audio, in an MP4 container. Compatible with
+2023-07-05T20:32:32.434Z             Amazon Fire TV 3rd Generation and later; Fire TV Stick 4K;
+2023-07-05T20:32:32.434Z             Fire TV Cube.
+2023-07-05T20:32:32.434Z         Amazon Fire 1080p30 Surround
+2023-07-05T20:32:32.434Z             H.264 video (up to 1080p30), AAC stereo audio, and Dolby
+2023-07-05T20:32:32.434Z             Digital (AC-3) audio, in an MP4 container. Compatible with
+2023-07-05T20:32:32.434Z             Amazon Fire TV 1st Generation and later; Fire TV Stick 1st
+2023-07-05T20:32:32.434Z             Generation and later; Fire HD 10 7th Generation (2017); Fire
+2023-07-05T20:32:32.434Z             HDX 4th Generation (2014).
+2023-07-05T20:32:32.434Z         Amazon Fire 720p30
+2023-07-05T20:32:32.434Z             H.264 video (up to 720p30) and AAC stereo audio, in an MP4
+2023-07-05T20:32:32.434Z             container. Compatible with Amazon Fire HD 4th Generation
+2023-07-05T20:32:32.434Z             (2014) and later; Kindle Fire HDX 3rd Generation (2013);
+2023-07-05T20:32:32.434Z             Kindle Fire HD 2nd Generation (2012) and later.
+2023-07-05T20:32:32.434Z         Android 1080p30
+2023-07-05T20:32:32.434Z             H.264 video (up to 1080p30) and AAC stereo audio, in an MP4
+2023-07-05T20:32:32.434Z             container. Compatible with Android devices.
+2023-07-05T20:32:32.434Z         Android 720p30
+2023-07-05T20:32:32.434Z             H.264 video (up to 720p30) and AAC stereo audio, in an MP4
+2023-07-05T20:32:32.434Z             container. Compatible with Android devices.
+2023-07-05T20:32:32.434Z         Android 576p25
+2023-07-05T20:32:32.434Z             H.264 video (up to 576p25) and AAC stereo audio, in an MP4
+2023-07-05T20:32:32.434Z             container. Compatible with Android devices.
+2023-07-05T20:32:32.434Z         Android 480p30
+2023-07-05T20:32:32.434Z 
+2023-07-05T20:32:32.434Z             H.264 video (up to 480p30) and AAC stereo audio, in an MP4
+2023-07-05T20:32:32.434Z             container. Compatible with Android devices.
+2023-07-05T20:32:32.434Z         Apple 2160p60 4K HEVC Surround
+2023-07-05T20:32:32.434Z             H.265 video (up to 2160p60), AAC stereo audio, and Dolby
+2023-07-05T20:32:32.434Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T20:32:32.434Z             Compatible with Apple iPhone 7 and later; Apple TV 4K.
+2023-07-05T20:32:32.434Z         Apple 1080p60 Surround
+2023-07-05T20:32:32.434Z             H.264 video (up to 1080p60), AAC stereo audio, and Dolby
+2023-07-05T20:32:32.434Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T20:32:32.434Z             Compatible with Apple iPad 5th and 6th Generation; iPad mini
+2023-07-05T20:32:32.434Z             2, 3, and 4; iPad Air 1st Generation and Air 2; iPad Pro
+2023-07-05T20:32:32.434Z             1st, 2nd, and 3rd Generation; Apple TV 4th Generation and
+2023-07-05T20:32:32.434Z             later.
+2023-07-05T20:32:32.434Z         Apple 1080p30 Surround
+2023-07-05T20:32:32.434Z             H.264 video (up to 1080p30), AAC stereo audio, and Dolby
+2023-07-05T20:32:32.434Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T20:32:32.434Z             Compatible with Apple iPhone 5, 5s, SE, 6, 6 Plus, 6s, 6s
+2023-07-05T20:32:32.434Z             Plus, and later; iPod touch 6th Generation; iPad 3rd, 4th
+2023-07-05T20:32:32.434Z             Generation and later; iPad mini 1st Generation and later;
+2023-07-05T20:32:32.434Z             Apple TV 3rd, 4th Generation and later.
+2023-07-05T20:32:32.434Z         Apple 720p30 Surround
+2023-07-05T20:32:32.434Z             H.264 video (up to 720p30), AAC stereo audio, and Dolby
+2023-07-05T20:32:32.434Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T20:32:32.434Z             Compatible with Apple iPhone 4, 4S, and later; iPod touch
+2023-07-05T20:32:32.434Z             4th, 5th Generation and later; iPad 1st Generation, iPad 2,
+2023-07-05T20:32:32.434Z             and later; Apple TV 2nd Generation and later.
+2023-07-05T20:32:32.434Z         Apple 540p30 Surround
+2023-07-05T20:32:32.434Z             H.264 video (up to 540p30), AAC stereo audio, and Dolby
+2023-07-05T20:32:32.434Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T20:32:32.434Z             Compatible with Apple iPhone 1st Generation, 3G, 3GS, and
+2023-07-05T20:32:32.434Z             later; iPod touch 1st, 2nd, 3rd Generation and later; iPod
+2023-07-05T20:32:32.434Z             Classic; Apple TV 1st Generation and later.
+2023-07-05T20:32:32.434Z         Chromecast 2160p60 4K HEVC Surround
+2023-07-05T20:32:32.434Z             H.265 video (up to 2160p60), AAC stereo audio, and Dolby
+2023-07-05T20:32:32.434Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T20:32:32.434Z             Compatible with Google Chromecast Ultra.
+2023-07-05T20:32:32.434Z         Chromecast 1080p60 Surround
+2023-07-05T20:32:32.434Z             H.264 video (up to 1080p60), AAC stereo audio, and Dolby
+2023-07-05T20:32:32.434Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T20:32:32.434Z             Compatible with Google Chromecast 3rd Generation.
+2023-07-05T20:32:32.434Z         Chromecast 1080p30 Surround
+2023-07-05T20:32:32.434Z             H.264 video (up to 1080p30), AAC stereo audio, and Dolby
+2023-07-05T20:32:32.434Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T20:32:32.434Z             Compatible with Google Chromecast 1st, 2nd Generation and
+2023-07-05T20:32:32.434Z             later.
+2023-07-05T20:32:32.434Z         Playstation 2160p60 4K Surround
+2023-07-05T20:32:32.434Z             H.264 video (up to 2160p60), AAC stereo audio, and Dolby
+2023-07-05T20:32:32.434Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T20:32:32.434Z             Compatible with Playstation 4 Pro.
+2023-07-05T20:32:32.434Z         Playstation 1080p30 Surround
+2023-07-05T20:32:32.434Z     
+2023-07-05T20:32:32.434Z         H.264 video (up to 1080p30), AAC stereo audio, and Dolby
+2023-07-05T20:32:32.434Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T20:32:32.434Z             Compatible with Playstation 3 and 4.
+2023-07-05T20:32:32.434Z         Playstation 720p30
+2023-07-05T20:32:32.434Z             H.264 video (up to 720p30) and AAC stereo audio, in an MP4
+2023-07-05T20:32:32.434Z             container. Compatible with Playstation Vita TV.
+2023-07-05T20:32:32.434Z         Playstation 540p30
+2023-07-05T20:32:32.434Z             H.264 video (up to 540p30) and AAC stereo audio, in an MP4
+2023-07-05T20:32:32.434Z             container. Compatible with Playstation Vita.
+2023-07-05T20:32:32.434Z         Roku 2160p60 4K HEVC Surround
+2023-07-05T20:32:32.434Z             H.265 video (up to 2160p60), AAC stereo audio, and surround
+2023-07-05T20:32:32.434Z             audio, in an MKV container. Compatible with Roku 4,
+2023-07-05T20:32:32.434Z             Streaming Stick+, Premiere+, and Ultra.
+2023-07-05T20:32:32.434Z         Roku 1080p30 Surround
+2023-07-05T20:32:32.434Z             H.264 video (up to 1080p30), AAC stereo audio, and Dolby
+2023-07-05T20:32:32.434Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T20:32:32.434Z             Compatible with Roku 1080p models.
+2023-07-05T20:32:32.434Z         Roku 720p30 Surround
+2023-07-05T20:32:32.434Z             H.264 video (up to 720p30), AAC stereo audio, and Dolby
+2023-07-05T20:32:32.434Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T20:32:32.434Z             Compatible with Roku 720p models.
+2023-07-05T20:32:32.434Z         Roku 576p25
+2023-07-05T20:32:32.434Z             H.264 video (up to 576p25) and AAC stereo audio, in an MP4
+2023-07-05T20:32:32.434Z             container. Compatible with Roku standard definition models.
+2023-07-05T20:32:32.434Z         Roku 480p30
+2023-07-05T20:32:32.434Z             H.264 video (up to 480p30) and AAC stereo audio, in an MP4
+2023-07-05T20:32:32.434Z             container. Compatible with Roku standard definition models.
+2023-07-05T20:32:32.434Z         Xbox 1080p30 Surround
+2023-07-05T20:32:32.434Z             H.264 video (up to 1080p30), AAC stereo audio, and Dolby
+2023-07-05T20:32:32.434Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T20:32:32.434Z             Compatible with Xbox One.
+2023-07-05T20:32:32.434Z     Matroska/
+2023-07-05T20:32:32.434Z         AV1 MKV 2160p60 4K
+2023-07-05T20:32:32.434Z             AV1 video (up to 2160p60) and Opus stereo audio, in an MKV
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         H.265 MKV 2160p60 4K
+2023-07-05T20:32:32.434Z             H.265 video (up to 2160p60) and AAC stereo audio, in an MKV
+2023-07-05T20:32:32.434Z 
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         H.265 MKV 1080p30
+2023-07-05T20:32:32.434Z             H.265 video (up to 1080p30) and AAC stereo audio, in an MKV
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         H.265 MKV 720p30
+2023-07-05T20:32:32.434Z             H.265 video (up to 720p30) and AAC stereo audio, in an MKV
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         H.265 MKV 576p25
+2023-07-05T20:32:32.434Z             H.265 video (up to 576p25) and AAC stereo audio, in an MKV
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         H.265 MKV 480p30
+2023-07-05T20:32:32.434Z             H.265 video (up to 480p30) and AAC stereo audio, in an MKV
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         H.264 MKV 2160p60 4K
+2023-07-05T20:32:32.434Z             H.264 video (up to 2160p60) and AAC stereo audio, in an MKV
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         H.264 MKV 1080p30
+2023-07-05T20:32:32.434Z             H.264 video (up to 1080p30) and AAC stereo audio, in an MKV
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         H.264 MKV 720p30
+2023-07-05T20:32:32.434Z             H.264 video (up to 720p30) and AAC stereo audio, in an MKV
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         H.264 MKV 576p25
+2023-07-05T20:32:32.434Z             H.264 video (up to 576p25) and AAC stereo audio, in an MKV
+2023-07-05T20:32:32.434Z             
+2023-07-05T20:32:32.434Z container.
+2023-07-05T20:32:32.434Z         H.264 MKV 480p30
+2023-07-05T20:32:32.434Z             H.264 video (up to 480p30) and AAC stereo audio, in an MKV
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         VP9 MKV 2160p60 4K
+2023-07-05T20:32:32.434Z             VP9 video (up to 2160p60) and Opus stereo audio, in an MKV
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         VP9 MKV 1080p30
+2023-07-05T20:32:32.434Z             VP9 video (up to 1080p30) and Opus stereo audio, in an MKV
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         VP9 MKV 720p30
+2023-07-05T20:32:32.434Z             VP9 video (up to 720p30) and Opus stereo audio, in an MKV
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         VP9 MKV 576p25
+2023-07-05T20:32:32.434Z             VP9 video (up to 576p25) and Opus stereo audio, in an MKV
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z         VP9 MKV 480p30
+2023-07-05T20:32:32.434Z             VP9 video (up to 480p30) and Opus stereo audio, in an MKV
+2023-07-05T20:32:32.434Z             container.
+2023-07-05T20:32:32.434Z     Hardware/
+2023-07-05T20:32:32.434Z         AV1 QSV 2160p 4K
+2023-07-05T20:32:32.434Z             
+2023-07-05T20:32:32.434Z Intel Quick Sync Video hardware accelerated AV1 video (up to
+2023-07-05T20:32:32.434Z             2160p) and AAC stereo audio, in an MP4 container.
+2023-07-05T20:32:32.434Z         H.265 NVENC 2160p 4K
+2023-07-05T20:32:32.434Z             Nvidia NVENC hardware accelerated H.265 video (up to 2160p)
+2023-07-05T20:32:32.434Z             and AAC stereo audio, in an MP4 container.
+2023-07-05T20:32:32.434Z         H.265 NVENC 1080p
+2023-07-05T20:32:32.434Z             Nvidia NVENC hardware accelerated H.265 video (up to 1080p)
+2023-07-05T20:32:32.434Z             and AAC stereo audio, in an MP4 container.
+2023-07-05T20:32:32.434Z         H.265 QSV 2160p 4K
+2023-07-05T20:32:32.434Z             Intel Quick Sync Video hardware accelerated H.265 video (up
+2023-07-05T20:32:32.434Z             to 2160p) and AAC stereo audio, in an MP4 container.
+2023-07-05T20:32:32.434Z         H.265 QSV 1080p
+2023-07-05T20:32:32.434Z             Intel Quick Sync Video hardware accelerated H.265 video (up
+2023-07-05T20:32:32.434Z             to 1080p) and AAC stereo audio, in an MP4 container.
+2023-07-05T20:32:32.434Z         H.265 VCN 2160p 4K
+2023-07-05T20:32:32.434Z             AMD VCN hardware accelerated H.265 video (up to 2160p) and
+2023-07-05T20:32:32.434Z             AAC stereo audio, in an MP4 container.
+2023-07-05T20:32:32.434Z         H.265 VCN 1080p
+2023-07-05T20:32:32.434Z             AMD VCN hardware accelerated H.265 video (up to 1080p) and
+2023-07-05T20:32:32.434Z             AAC stereo audio, in an MP4 container.
+2023-07-05T20:32:32.434Z         H.265 MF 2160p 4K
+2023-07-05T20:32:32.434Z             Hardware accelerated H.265 video (up to 2160p) and AAC
+2023-07-05T20:32:32.434Z             stereo audio, in an MP4 container for ARM based platforms
+2023-07-05T20:32:32.434Z             using Media Foundation
+2023-07-05T20:32:32.434Z         H.265 MF 1080p
+2023-07-05T20:32:32.434Z             Hardware accelerated H.265 video (up to 1080p) and AAC
+2023-07-05T20:32:32.434Z             stereo audio, in an MP4 container for ARM based platforms
+2023-07-05T20:32:32.434Z             using Media Foundation
+2023-07-05T20:32:32.434Z     Production/
+2023-07-05T20:32:32.434Z         Production Max
+2023-07-05T20:32:32.434Z 
+2023-07-05T20:32:32.434Z             Maximum bit rate, constant frame rate H.264 video and high
+2023-07-05T20:32:32.434Z             bit rate AAC stereo audio in an MP4 container. For
+2023-07-05T20:32:32.434Z             professional use as an intermediate format for video
+2023-07-05T20:32:32.434Z             editing. Creates gigantic files.
+2023-07-05T20:32:32.434Z         Production Standard
+2023-07-05T20:32:32.434Z             High bit rate, constant frame rate H.264 video and high bit
+2023-07-05T20:32:32.434Z             rate AAC stereo audio in an MP4 container. For professional
+2023-07-05T20:32:32.434Z             use as an intermediate format for video editing. Creates
+2023-07-05T20:32:32.434Z             very large files.
+2023-07-05T20:32:32.434Z         Production Proxy 1080p
+2023-07-05T20:32:32.434Z             Intra-only, constant frame rate H.264 video (up to 1080p)
+2023-07-05T20:32:32.434Z             and high bit rate AAC stereo audio in an MP4 container. For
+2023-07-05T20:32:32.434Z             professional use as a low resolution proxy format for video
+2023-07-05T20:32:32.434Z             editing.
+2023-07-05T20:32:32.434Z         Production Proxy 540p
+2023-07-05T20:32:32.434Z             Intra-only, constant frame rate H.264 video (up to 540p) and
+2023-07-05T20:32:32.434Z             high bit rate AAC stereo audio in an MP4 container. For
+2023-07-05T20:32:32.434Z             professional use as a low resolution proxy format for video
+2023-07-05T20:32:32.434Z             editing.
+2023-07-05T20:32:32.434Z     CLI Defaults/
+2023-07-05T20:32:32.434Z         CLI Default
+2023-07-05T20:32:32.434Z 
+2023-07-05T20:32:32.434Z HandBrake has exited.
+2023-07-05T20:32:32.434Z 
+2023-07-05T20:32:32.434Z 
+2023-07-05T20:32:32.434Z 
+2023-07-05T20:32:32.434Z 
+2023-07-05T20:32:32.435Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[-error-]
+2023-07-05T20:32:32.435Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[Step W07] [C1] Worker [-error-]
+2023-07-05T20:32:32.435Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Error encountered when processing /media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv
+2023-07-05T20:32:32.436Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Checking new cache file
+2023-07-05T20:32:32.436Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+2023-07-05T20:32:32.436Z /temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-Q2g3eAEjs.mkv
+2023-07-05T20:32:32.437Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:pluginCycleLogJSONString:{"nodeName":"MyInternalNode","workerID":"same-snipe","pluginCycle":1,"outcome":"error","workerLog":"\nPre-processing - Tdarr_Plugin_MC93_MigzImageRemoval\n☑File doesn't contain any unwanted image format streams.\n\nPre-processing - Tdarr_Plugin_lmg1_Reorder_Streams\nFile has video in first stream\n File meets conditions!\n\nPre-processing - Tdarr_Plugin_00td_filter_by_codec\nFile is not in codecsToNotProcess. Moving to next plugin.\nPre-processing - Tdarr_Plugin_00td_action_handbrake_basic_options\nFile is being transcoded using HandBrake \n","lastCliCommand":"HandBrakeCLI -i \"/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv\" -o \"/temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-Q2g3eAEjs.mkv\" -Z \"H.264 MKV 2160p60\" -e x264 --all-subtitles"}
+2023-07-05T20:32:32.437Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Updating transcode stats
+2023-07-05T20:32:32.437Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[Step W09] [-error-] Job end
+2023-07-05T20:32:32.438Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Transcoding error encountered. Check sections above.
+2023-07-05T20:32:32.438Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:[Step W10] Worker processing end
+2023-07-05T20:32:32.438Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Subworker exited null
+2023-07-05T20:32:32.439Z cEWTSrqzAFy:Node[MyInternalNode]:Worker[same-snipe]:Successfully updated server with verdict: transcodeError

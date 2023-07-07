@@ -1,0 +1,507 @@
+2023-07-05T14:56:31.227Z jREy-sVPm:[Step S01] [2.00.21] Server relay initialising job
+2023-07-05T14:56:31.228Z jREy-sVPm:Server: linux_x64_docker_true
+2023-07-05T14:56:31.228Z jREy-sVPm:Server relay adding file to staged files
+2023-07-05T14:56:31.229Z jREy-sVPm:Server relay sending job to Node relay: MyInternalNode
+2023-07-05T14:56:31.229Z jREy-sVPm:Node[MyInternalNode]:[Step N01] [2.00.21] Node relay received job
+2023-07-05T14:56:31.230Z jREy-sVPm:Node[MyInternalNode]:{"nodeName":"MyInternalNode","serverIP":"0.0.0.0","serverPort":"8266","handbrakePath":"","ffmpegPath":"","mkvpropeditPath":"","pathTranslators":[{"server":"","node":""}],"logLevel":"INFO","priority":-1,"platform_arch_isdocker":"linux_x64_docker_true","processPid":199,"nodeID":"_VxSJ6fLa"}
+2023-07-05T14:56:31.230Z jREy-sVPm:Node[MyInternalNode]:Node relay sending job to worker:sore-swan
+2023-07-05T14:56:31.230Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[Step W01] Received file, original: /media/movies/Everything Everywhere All at Once (2022)/Everything Everywhere All at Once (2022) Bluray-1080p.mp4
+2023-07-05T14:56:31.231Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:{"workerType":"transcodecpu"}
+2023-07-05T14:56:31.231Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:{"ffmpegPath":"tdarr-ffmpeg"}
+2023-07-05T14:56:31.232Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:{"handbrakePath":"HandBrakeCLI"}
+2023-07-05T14:56:31.232Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:{"mkvpropeditPath":"mkvpropedit"}
+2023-07-05T14:56:31.232Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:{"gpuSelect":"-"}
+2023-07-05T14:56:31.233Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:{"allowGpuDoCpu":false}
+2023-07-05T14:56:31.233Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:{"thoroughHealthCheckCpuExtraInputArgs":""}
+2023-07-05T14:56:31.234Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:{"thoroughHealthCheckGpuExtraInputArgs":""}
+2023-07-05T14:56:31.235Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:{"thoroughHealthCheckCpuExtraArgs":""}
+2023-07-05T14:56:31.235Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:{"thoroughHealthCheckGpuExtraArgs":""}
+2023-07-05T14:56:31.236Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:{"logFullCliOutput":false}
+2023-07-05T14:56:31.236Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Path translating objects
+2023-07-05T14:56:31.237Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:{"librarySettings":{"_id":"kAfqSPAXA","priority":0,"name":"Movies","folder":"/media/movies","foldersToIgnore":"","folderWatchScanInterval":30,"scannerThreadCount":2,"cache":"/temp","output":".","folderToFolderConversion":false,"folderToFolderConversionDeleteSource":false,"folderToFolderRecordHistory":true,"copyIfConditionsMet":false,"container":".mkv","containerFilter":"mkv,mp4,mov,m4v,mpg,mpeg,avi,flv,webm,wmv,vob,evo,iso,m2ts,ts","createdAt":1675837380368,"folderWatching":true,"useFsEvents":true,"scheduledScanFindNew":true,"processLibrary":true,"scanOnStart":true,"exifToolScan":true,"mediaInfoScan":true,"closedCaptionScan":true,"scanButtons":true,"scanFound":"Files found:0","navItemSelected":"navSourceFolder","pluginIDs":[{"_id":"plugin1","id":"Tdarr_Plugin_MC93_MigzImageRemoval","checked":true,"source":"Community","priority":0,"InputsDB":{},"Stage":"Pre-processing","Name":"Migz-Remove image formats from file","Type":"Video","Operation":"Transcode","Description":"Identify any unwanted image formats in the file and remove those streams. MJPEG, PNG & GIF \n\n","Version":"1.4","Tags":"pre-processing,ffmpeg,video only","Inputs":[],"source_id":"Community::Tdarr_Plugin_MC93_MigzImageRemoval","Link":"Read error"},{"_id":"plugin2","id":"Tdarr_Plugin_lmg1_Reorder_Streams","checked":true,"source":"Community","priority":1,"InputsDB":{},"Stage":"Pre-processing","Name":"Tdarr_Plugin_lmg1_Reorder_Streams ","Type":"Video","Operation":"Transcode","Description":"[Contains built-in filter] This plugin will move the video stream to the front so Tdarr will recognize the codec correctly.\n\n","Version":"1.00","Tags":"pre-processing,ffmpeg","Inputs":[],"source_id":"Community::Tdarr_Plugin_lmg1_Reorder_Streams","Link":"Read error"},{"_id":"ng8UTQJB-","id":"Tdarr_Plugin_MC93_Migz1FFMPEG_CPU","checked":false,"source":"Community","priority":2,"InputsDB":{},"Stage":"Pre-processing","Name":"Migz-Transcode Using CPU & FFMPEG","Type":"Video","Operation":"Transcode","Description":"Files not in H265 will be transcoded into H265 using CPU with ffmpeg.\n                Settings are dependant on file bitrate\n                Working by the logic that H265 can support the same ammount of data at half the bitrate of H264.\n                This plugin will  skip any files that are in the VP9 codec.","Version":"1.9","Tags":"pre-processing,ffmpeg,video only,configurable,h265","Inputs":[{"name":"container","type":"string","defaultValue":"mkv","inputUI":{"type":"text"},"tooltip":"Specify output container of file. Use 'original' wihout quotes to keep original container.\n                  \\n Ensure that all stream types you may have are supported by your chosen container.\n                  \\n mkv is recommended.\n                    \\nExample:\\n\n                    mkv\n\n                    \\nExample:\\n\n                    mp4\n                                        \n                    \\nExample:\\n\n                    original"},{"name":"bitrate_cutoff","type":"string","defaultValue":"","inputUI":{"type":"text"},"tooltip":"Specify bitrate cutoff, files with a current bitrate lower then this will not be transcoded.\n                  \\n Rate is in kbps.\n                  \\n Leave empty to disable.\n                    \\nExample:\\n\n                    6000\n\n                    \\nExample:\\n\n                    4000"},{"name":"enable_10bit","type":"boolean","defaultValue":false,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Specify if output file should be 10bit. Default is false.\n                    \\nExample:\\n\n                    true\n\n                    \\nExample:\\n\n                    false"},{"name":"force_conform","type":"boolean","defaultValue":false,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Make the file conform to output containers requirements.\n                \\n Drop hdmv_pgs_subtitle/eia_608/subrip/timed_id3 for MP4.\n                \\n Drop data streams/mov_text/eia_608/timed_id3 for MKV.\n                \\n Default is false.\n                    \\nExample:\\n\n                    true\n\n                    \\nExample:\\n\n                    false"}],"source_id":"Community::Tdarr_Plugin_MC93_Migz1FFMPEG_CPU","Link":"Read error"},{"_id":"t_N6lRAvA","id":"Tdarr_Plugin_00td_action_handbrake_basic_options","checked":true,"source":"Community","priority":3,"InputsDB":{"handbrakePreset":"H.265 MKV 2160p60"},"Stage":"Pre-processing","Name":"HandBrake basic options","Type":"Video","Operation":"Transcode","Description":"\n  Set basic HandBrake transcode options. This action has no built-in filter so be sure to set a codec filter\n  to prevent a transcoding loop.\n  ","Version":"1.00","Tags":"action","Inputs":[{"name":"handbrakePreset","type":"string","defaultValue":"Very Fast 1080p30","inputUI":{"type":"dropdown","options":["Very Fast 1080p30","Very Fast 720p30","Very Fast 576p25","Very Fast 480p30","Fast 1080p30","Fast 720p30","Fast 576p25","Fast 480p30","HQ 1080p30 Surround","HQ 720p30 Surround","HQ 576p25 Surround","HQ 480p30 Surround\"","Super HQ 1080p30 Surround","Super HQ 720p30 Surround","Super HQ 576p25 Surround","Super HQ 480p30 Surround","Gmail Large 3 Minutes 720p30","Gmail Medium 5 Minutes 480p30","Gmail Small 10 Minutes 288p30","Vimeo YouTube HQ 2160p60 4K","Vimeo YouTube HQ 1440p60 2.5K","Vimeo YouTube HQ 1080p60","Vimeo YouTube HQ 720p60","Vimeo YouTube 720p30","Android 1080p30","Android 720p30","Android 576p25","Android 480p30","Apple 2160p60 4K HEVC Surround","Apple 1080p60 Surround","Apple 1080p30 Surround","Apple 720p30 Surround","Apple 540p30 Surround","Apple 240p30","Chromecast 2160p60 4K HEVC Surround","Chromecast 1080p60 Surround","Chromecast 1080p30 Surround","Amazon Fire 2160p60 4K HEVC Surround","Amazon Fire 1080p30 Surround","Amazon Fire 720p30","Playstation 1080p30 Surround","Playstation 720p30","Playstation 540p30","Roku 2160p60 4K HEVC Surround","Roku 1080p30 Surround","Roku 720p30 Surround","Roku 576p25","Roku 480p30","Windows Mobile 1080p30","Windows Mobile 720p30","Windows Mobile 540p30","Windows Mobile 480p30","Xbox 1080p30 Surround","Xbox Legacy 1080p30 Surround","H.265 MKV 2160p60","H.265 MKV 1080p30","H.265 MKV 720p30","H.265 MKV 576p25","H.265 MKV 480p30","H.264 MKV 2160p60","H.264 MKV 1080p30","H.264 MKV 720p30","H.264 MKV 576p25","H.264 MKV 480p30","VP9 MKV 2160p60","VP9 MKV 1080p30","VP9 MKV 720p30","VP9 MKV 576p25","VP9 MKV 480p30","VP8 MKV 1080p30","VP8 MKV 720p30","VP8 MKV 576p25","VP8 MKV 480p30","Production Max","Production Standard","Production Proxy 1080p","Production Proxy 540p"]},"tooltip":"Enter the desired HandBrake preset"},{"name":"videoEncoder","type":"string","defaultValue":"x265","inputUI":{"type":"dropdown","options":["x264","x264_10bit","qsv_h264","nvenc_h264","x265","x265_10bit","x265_12bit","qsv_h265","nvenc_h265","mpeg4","mpeg2","VP8","VP9","theora"]},"tooltip":"Enter the desired video encoder"},{"name":"keepSubtitles","type":"boolean","defaultValue":true,"inputUI":{"type":"dropdown","options":["true","false"]},"tooltip":"Specify whether to keep subs or not"},{"name":"container","type":"string","defaultValue":"mkv","inputUI":{"type":"text"},"tooltip":"Enter the desired container"}],"source_id":"Community::Tdarr_Plugin_00td_action_handbrake_basic_options","Link":"Read error"},{"_id":"B6PSaV9Kd","id":"Tdarr_Plugin_s7x8_winsome_h265","checked":true,"source":"Community","priority":4,"InputsDB":{},"Name":"Winsome H265 ","Type":"Video","Operation":"Transcode","Description":"[Contains built-in filter] This plugin transcodes all videos to h265 (if not in h265 already) and remuxes if not in mkv. If the English language track is not in AC3,EAC3 or DTS then an AC3 track is added.\n\n\n","Version":"1.00","Link":"Read error","Stage":"Pre-processing","Tags":"pre-processing,handbrake,ffmpeg,h265","Inputs":[],"source_id":"Community::Tdarr_Plugin_s7x8_winsome_h265"},{"_id":"plugin5","id":"Tdarr_Plugin_a9he_New_file_size_check","checked":true,"source":"Community","priority":5,"InputsDB":{},"Stage":"Pre-processing","Name":"New file size check","Type":"Video","Operation":"Transcode","Description":"Give an error if new file is not within the specified upper and lower bound limits \n\n","Version":"1.00","Tags":"","Inputs":[{"name":"upperBound","type":"number","defaultValue":110,"inputUI":{"type":"text"},"tooltip":"Enter the upper bound % size for the new file. For example, if '110' is entered, \n        then if the new file size is 11% larger than the original, an error will be given."},{"name":"lowerBound","type":"number","defaultValue":40,"inputUI":{"type":"text"},"tooltip":"Enter the lower bound % size for the new file. For example, if '90' is entered, \n        then if the new file size is less than 90% of the original, an error will be given."}],"source_id":"Community::Tdarr_Plugin_a9he_New_file_size_check","Link":"Read error"}],"pluginCommunity":true,"handbrake":true,"ffmpeg":false,"handbrakescan":true,"ffmpegscan":false,"preset":"-Z \"H.265 MKV 2160p60\" -e x264 --all-subtitles --all-audio","decisionMaker":{"settingsPlugin":true,"settingsVideo":false,"videoExcludeSwitch":true,"video_codec_names_exclude":[{"codec":"hevc","checked":false},{"codec":"h264","checked":false}],"video_size_range_include":{"min":0,"max":100000},"video_height_range_include":{"min":0,"max":3000},"video_width_range_include":{"min":0,"max":4000},"settingsAudio":false,"audioExcludeSwitch":true,"audio_codec_names_exclude":[{"codec":"mp3","checked":true},{"codec":"aac","checked":false}],"audio_size_range_include":{"min":0,"max":10}},"schedule":[{"_id":"Sun:00-01","checked":true},{"_id":"Sun:01-02","checked":true},{"_id":"Sun:02-03","checked":true},{"_id":"Sun:03-04","checked":true},{"_id":"Sun:04-05","checked":true},{"_id":"Sun:05-06","checked":true},{"_id":"Sun:06-07","checked":true},{"_id":"Sun:07-08","checked":true},{"_id":"Sun:08-09","checked":true},{"_id":"Sun:09-10","checked":true},{"_id":"Sun:10-11","checked":true},{"_id":"Sun:11-12","checked":true},{"_id":"Sun:12-13","checked":true},{"_id":"Sun:13-14","checked":true},{"_id":"Sun:14-15","checked":true},{"_id":"Sun:15-16","checked":true},{"_id":"Sun:16-17","checked":true},{"_id":"Sun:17-18","checked":true},{"_id":"Sun:18-19","checked":true},{"_id":"Sun:19-20","checked":true},{"_id":"Sun:20-21","checked":true},{"_id":"Sun:21-22","checked":true},{"_id":"Sun:22-23","checked":true},{"_id":"Sun:23-00","checked":true},{"_id":"Mon:00-01","checked":true},{"_id":"Mon:01-02","checked":true},{"_id":"Mon:02-03","checked":true},{"_id":"Mon:03-04","checked":true},{"_id":"Mon:04-05","checked":true},{"_id":"Mon:05-06","checked":true},{"_id":"Mon:06-07","checked":true},{"_id":"Mon:07-08","checked":true},{"_id":"Mon:08-09","checked":true},{"_id":"Mon:09-10","checked":true},{"_id":"Mon:10-11","checked":true},{"_id":"Mon:11-12","checked":true},{"_id":"Mon:12-13","checked":true},{"_id":"Mon:13-14","checked":true},{"_id":"Mon:14-15","checked":true},{"_id":"Mon:15-16","checked":true},{"_id":"Mon:16-17","checked":true},{"_id":"Mon:17-18","checked":true},{"_id":"Mon:18-19","checked":true},{"_id":"Mon:19-20","checked":true},{"_id":"Mon:20-21","checked":true},{"_id":"Mon:21-22","checked":true},{"_id":"Mon:22-23","checked":true},{"_id":"Mon:23-00","checked":true},{"_id":"Tue:00-01","checked":true},{"_id":"Tue:01-02","checked":true},{"_id":"Tue:02-03","checked":true},{"_id":"Tue:03-04","checked":true},{"_id":"Tue:04-05","checked":true},{"_id":"Tue:05-06","checked":true},{"_id":"Tue:06-07","checked":true},{"_id":"Tue:07-08","checked":true},{"_id":"Tue:08-09","checked":true},{"_id":"Tue:09-10","checked":true},{"_id":"Tue:10-11","checked":true},{"_id":"Tue:11-12","checked":true},{"_id":"Tue:12-13","checked":true},{"_id":"Tue:13-14","checked":true},{"_id":"Tue:14-15","checked":true},{"_id":"Tue:15-16","checked":true},{"_id":"Tue:16-17","checked":true},{"_id":"Tue:17-18","checked":true},{"_id":"Tue:18-19","checked":true},{"_id":"Tue:19-20","checked":true},{"_id":"Tue:20-21","checked":true},{"_id":"Tue:21-22","checked":true},{"_id":"Tue:22-23","checked":true},{"_id":"Tue:23-00","checked":true},{"_id":"Wed:00-01","checked":true},{"_id":"Wed:01-02","checked":true},{"_id":"Wed:02-03","checked":true},{"_id":"Wed:03-04","checked":true},{"_id":"Wed:04-05","checked":true},{"_id":"Wed:05-06","checked":true},{"_id":"Wed:06-07","checked":true},{"_id":"Wed:07-08","checked":true},{"_id":"Wed:08-09","checked":true},{"_id":"Wed:09-10","checked":true},{"_id":"Wed:10-11","checked":true},{"_id":"Wed:11-12","checked":true},{"_id":"Wed:12-13","checked":true},{"_id":"Wed:13-14","checked":true},{"_id":"Wed:14-15","checked":true},{"_id":"Wed:15-16","checked":true},{"_id":"Wed:16-17","checked":true},{"_id":"Wed:17-18","checked":true},{"_id":"Wed:18-19","checked":true},{"_id":"Wed:19-20","checked":true},{"_id":"Wed:20-21","checked":true},{"_id":"Wed:21-22","checked":true},{"_id":"Wed:22-23","checked":true},{"_id":"Wed:23-00","checked":true},{"_id":"Thur:00-01","checked":true},{"_id":"Thur:01-02","checked":true},{"_id":"Thur:02-03","checked":true},{"_id":"Thur:03-04","checked":true},{"_id":"Thur:04-05","checked":true},{"_id":"Thur:05-06","checked":true},{"_id":"Thur:06-07","checked":true},{"_id":"Thur:07-08","checked":true},{"_id":"Thur:08-09","checked":true},{"_id":"Thur:09-10","checked":true},{"_id":"Thur:10-11","checked":true},{"_id":"Thur:11-12","checked":true},{"_id":"Thur:12-13","checked":true},{"_id":"Thur:13-14","checked":true},{"_id":"Thur:14-15","checked":true},{"_id":"Thur:15-16","checked":true},{"_id":"Thur:16-17","checked":true},{"_id":"Thur:17-18","checked":true},{"_id":"Thur:18-19","checked":true},{"_id":"Thur:19-20","checked":true},{"_id":"Thur:20-21","checked":true},{"_id":"Thur:21-22","checked":true},{"_id":"Thur:22-23","checked":true},{"_id":"Thur:23-00","checked":true},{"_id":"Fri:00-01","checked":true},{"_id":"Fri:01-02","checked":true},{"_id":"Fri:02-03","checked":true},{"_id":"Fri:03-04","checked":true},{"_id":"Fri:04-05","checked":true},{"_id":"Fri:05-06","checked":true},{"_id":"Fri:06-07","checked":true},{"_id":"Fri:07-08","checked":true},{"_id":"Fri:08-09","checked":true},{"_id":"Fri:09-10","checked":true},{"_id":"Fri:10-11","checked":true},{"_id":"Fri:11-12","checked":true},{"_id":"Fri:12-13","checked":true},{"_id":"Fri:13-14","checked":true},{"_id":"Fri:14-15","checked":true},{"_id":"Fri:15-16","checked":true},{"_id":"Fri:16-17","checked":true},{"_id":"Fri:17-18","checked":true},{"_id":"Fri:18-19","checked":true},{"_id":"Fri:19-20","checked":true},{"_id":"Fri:20-21","checked":true},{"_id":"Fri:21-22","checked":true},{"_id":"Fri:22-23","checked":true},{"_id":"Fri:23-00","checked":true},{"_id":"Sat:00-01","checked":true},{"_id":"Sat:01-02","checked":true},{"_id":"Sat:02-03","checked":true},{"_id":"Sat:03-04","checked":true},{"_id":"Sat:04-05","checked":true},{"_id":"Sat:05-06","checked":true},{"_id":"Sat:06-07","checked":true},{"_id":"Sat:07-08","checked":true},{"_id":"Sat:08-09","checked":true},{"_id":"Sat:09-10","checked":true},{"_id":"Sat:10-11","checked":true},{"_id":"Sat:11-12","checked":true},{"_id":"Sat:12-13","checked":true},{"_id":"Sat:13-14","checked":true},{"_id":"Sat:14-15","checked":true},{"_id":"Sat:15-16","checked":true},{"_id":"Sat:16-17","checked":true},{"_id":"Sat:17-18","checked":true},{"_id":"Sat:18-19","checked":true},{"_id":"Sat:19-20","checked":true},{"_id":"Sat:20-21","checked":true},{"_id":"Sat:21-22","checked":true},{"_id":"Sat:22-23","checked":true},{"_id":"Sat:23-00","checked":true}],"totalHealthCheckCount":8,"totalTranscodeCount":3,"sizeDiff":0,"holdNewFiles":false,"holdFor":3600,"pluginStackOverview":true,"filterResolutionsSkip":"","filterCodecsSkip":"","processPluginsSequentially":true}}
+2023-07-05T14:56:31.237Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Fetching plugin data from server
+2023-07-05T14:56:31.240Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Scanning original library file
+2023-07-05T14:56:31.240Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:{
+2023-07-05T14:56:31.240Z   "exifToolScan": true,
+2023-07-05T14:56:31.240Z   "mediaInfoScan": false,
+2023-07-05T14:56:31.240Z   "closedCaptionScan": false
+2023-07-05T14:56:31.240Z }
+2023-07-05T14:56:31.240Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Updating file properties using mkvpropedit
+2023-07-05T14:56:31.241Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Updated file properties using mkvpropedit
+2023-07-05T14:56:31.241Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Requesting Tdarr Server to scan file
+2023-07-05T14:56:32.244Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Scan complete
+2023-07-05T14:56:32.246Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Original file scanned
+2023-07-05T14:56:32.246Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:fileVersionOriginalLogJSONString:{"lastCliCommand":"","lastPluginId":"","sourceFile":{"_id":"/media/movies/Everything Everywhere All at Once (2022)/Everything Everywhere All at Once (2022) Bluray-1080p.mp4","footprintId":"tNeOJ77e5","file":"/media/movies/Everything Everywhere All at Once (2022)/Everything Everywhere All at Once (2022) Bluray-1080p.mp4","container":"mp4","scannerReads":{"ffProbeRead":"success","exiftoolRead":"success","mediaInfoRead":"not enabled","closedCaptionRead":"not enabled"},"createdAt":1688565390059,"lastPluginDetails":"none","bit_rate":2638634,"statSync":{"dev":2051,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":5904647,"size":2757173059,"blocks":5385128,"atimeMs":1688547516166.5122,"mtimeMs":1687016521585.6587,"ctimeMs":1687166131076.3975,"birthtimeMs":1687016386115.7864,"atime":"2023-07-05T08:58:36.167Z","mtime":"2023-06-17T15:42:01.586Z","ctime":"2023-06-19T09:15:31.076Z","birthtime":"2023-06-17T15:39:46.116Z"},"file_size":2629.445132255554,"ffProbeData":{"streams":[{"index":0,"codec_name":"h264","codec_long_name":"H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10","profile":"High","codec_type":"video","codec_tag_string":"avc1","codec_tag":"0x31637661","width":1920,"height":1036,"coded_width":1920,"coded_height":1036,"closed_captions":0,"has_b_frames":2,"sample_aspect_ratio":"1:1","display_aspect_ratio":"480:259","pix_fmt":"yuv420p","level":41,"color_range":"tv","color_space":"bt709","color_transfer":"bt709","color_primaries":"bt709","chroma_location":"left","refs":1,"is_avc":"true","nal_length_size":"4","r_frame_rate":"24000/1001","avg_frame_rate":"24000/1001","time_base":"1/24000","start_pts":0,"start_time":"0.000000","duration_ts":200625425,"duration":"8359.392708","bit_rate":"2249226","bits_per_raw_sample":"8","nb_frames":"200425","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"und","handler_name":"VideoHandler","vendor_id":"[0][0][0][0]"}},{"index":1,"codec_name":"aac","codec_long_name":"AAC (Advanced Audio Coding)","profile":"LC","codec_type":"audio","codec_tag_string":"mp4a","codec_tag":"0x6134706d","sample_fmt":"fltp","sample_rate":"48000","channels":6,"channel_layout":"5.1","bits_per_sample":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/48000","start_pts":0,"start_time":"0.000000","duration_ts":401250864,"duration":"8359.393000","bit_rate":"384002","nb_frames":"391849","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"und","handler_name":"SoundHandler","vendor_id":"[0][0][0][0]"}}],"format":{"filename":"/media/movies/Everything Everywhere All at Once (2022)/Everything Everywhere All at Once (2022) Bluray-1080p.mp4","nb_streams":2,"nb_programs":0,"format_name":"mov,mp4,m4a,3gp,3g2,mj2","format_long_name":"QuickTime / MOV","start_time":"0.000000","duration":"8359.394000","size":"2757173059","bit_rate":"2638634","probe_score":100,"tags":{"major_brand":"isom","minor_version":"512","compatible_brands":"isomiso2avc1mp41","encoder":"Lavf58.67.100"}}},"meta":{"SourceFile":"/media/movies/Everything Everywhere All at Once (2022)/Everything Everywhere All at Once (2022) Bluray-1080p.mp4","errors":[],"Duration":8359.394,"PreviewDuration":0,"SelectionDuration":0,"TrackDuration":8359.393,"MediaDuration":8359.39270833333,"ExifToolVersion":12.4,"FileName":"Everything Everywhere All at Once (2022) Bluray-1080p.mp4","Directory":"/media/movies/Everything Everywhere All at Once (2022)","FileSize":"2.6 GiB","FileModifyDate":{"year":2023,"month":6,"day":17,"hour":15,"minute":42,"second":1,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:06:17 15:42:01+00:00"},"FileAccessDate":{"year":2023,"month":7,"day":5,"hour":8,"minute":58,"second":36,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:05 08:58:36+00:00"},"FileInodeChangeDate":{"year":2023,"month":6,"day":19,"hour":9,"minute":15,"second":31,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:06:19 09:15:31+00:00"},"FilePermissions":"-rw-rw-r--","FileType":"MP4","FileTypeExtension":"mp4","MIMEType":"video/mp4","MajorBrand":"MP4 Base Media v1 [IS0 14496-12:2003]","MinorVersion":"0.2.0","CompatibleBrands":["isom","iso2","avc1","mp41"],"MovieHeaderVersion":0,"CreateDate":"0000:00:00 00:00:00","ModifyDate":"0000:00:00 00:00:00","TimeScale":1000,"PreferredRate":1,"PreferredVolume":"100.00%","PreviewTime":"0 s","PosterTime":"0 s","SelectionTime":"0 s","CurrentTime":"0 s","NextTrackID":3,"TrackHeaderVersion":0,"TrackCreateDate":"0000:00:00 00:00:00","TrackModifyDate":"0000:00:00 00:00:00","TrackID":1,"TrackLayer":0,"TrackVolume":"0.00%","ImageWidth":1920,"ImageHeight":1036,"GraphicsMode":"srcCopy","OpColor":"0 0 0","CompressorID":"avc1","SourceImageWidth":1920,"SourceImageHeight":1036,"XResolution":72,"YResolution":72,"BitDepth":24,"ColorRepresentation":"nclx 1 1 1","PixelAspectRatio":"1:1","BufferSize":3906250,"MaxBitrate":31250000,"AverageBitrate":2249226,"VideoFrameRate":23.976,"MatrixStructure":"1 0 0 0 1 0 0 0 1","MediaHeaderVersion":0,"MediaCreateDate":"0000:00:00 00:00:00","MediaModifyDate":"0000:00:00 00:00:00","MediaTimeScale":48000,"MediaLanguageCode":"und","HandlerDescription":"SoundHandler","Balance":0,"AudioFormat":"mp4a","AudioChannels":2,"AudioBitsPerSample":16,"AudioSampleRate":48000,"HandlerType":"Metadata","HandlerVendorID":"Apple","Encoder":"Lavf58.67.100","MediaDataSize":2751524392,"MediaDataOffset":5648667,"ImageSize":"1920x1036","Megapixels":2,"AvgBitrate":"2.63 Mbps","Rotation":0},"mediaInfo":{},"hasClosedCaptions":false,"DB":"kAfqSPAXA","bumped":false,"HealthCheck":"","TranscodeDecisionMaker":"","holdUntil":0,"fileMedium":"video","video_codec_name":"h264","audio_codec_name":"","video_resolution":"1080p","lastHealthCheckDate":0,"lastTranscodeDate":0,"history":"","oldSize":0,"newSize":0,"videoStreamIndex":0,"duration":8359}}
+2023-07-05T14:56:32.247Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Source file to work on determined:/media/movies/Everything Everywhere All at Once (2022)/Everything Everywhere All at Once (2022) Bluray-1080p.mp4
+2023-07-05T14:56:32.247Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[Step W02] [C1] Running pre-process file
+2023-07-05T14:56:32.248Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Checking files can be accessed
+2023-07-05T14:56:32.249Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Relevant paths can be accessed
+2023-07-05T14:56:32.249Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Source file: /media/movies/Everything Everywhere All at Once (2022)/Everything Everywhere All at Once (2022) Bluray-1080p.mp4
+2023-07-05T14:56:32.250Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Cache folder: /temp
+2023-07-05T14:56:32.252Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[Step W03] [C1] Analysing file - running plugins
+2023-07-05T14:56:32.253Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:transcode task, scanning for extra file details before transcode
+2023-07-05T14:56:32.254Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Updating file properties using mkvpropedit
+2023-07-05T14:56:32.255Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Updated file properties using mkvpropedit
+2023-07-05T14:56:32.256Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Requesting Tdarr Server to scan file
+2023-07-05T14:56:34.270Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Scan complete
+2023-07-05T14:56:34.271Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Scan complete
+2023-07-05T14:56:34.271Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Updating Node relay: Processing
+2023-07-05T14:56:34.271Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[1/2] Checking file frame count
+2023-07-05T14:56:34.272Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[2/2] Frame count 200425
+2023-07-05T14:56:34.272Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Transcode task, determining transcode settings
+2023-07-05T14:56:34.272Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Plugin stack selected
+2023-07-05T14:56:34.272Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Plugin: plugin1:  Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-05T14:56:34.273Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[1/5] Reading plugin
+2023-07-05T14:56:34.273Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[2/5] Plugin read finished
+2023-07-05T14:56:34.273Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[3/5] Installing dependencies
+2023-07-05T14:56:34.273Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[4/5] Running plugin
+2023-07-05T14:56:34.274Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:{"pluginInputs":{}}
+2023-07-05T14:56:34.274Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[5/5] Running plugin finished
+2023-07-05T14:56:34.274Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Plugin: plugin2:  Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-05T14:56:34.274Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[1/5] Reading plugin
+2023-07-05T14:56:34.275Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[2/5] Plugin read finished
+2023-07-05T14:56:34.275Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[3/5] Installing dependencies
+2023-07-05T14:56:34.275Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[4/5] Running plugin
+2023-07-05T14:56:34.276Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:{"pluginInputs":{}}
+2023-07-05T14:56:34.276Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[5/5] Running plugin finished
+2023-07-05T14:56:34.276Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Plugin: t_N6lRAvA:  Tdarr_Plugin_00td_action_handbrake_basic_options
+2023-07-05T14:56:34.276Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[1/5] Reading plugin
+2023-07-05T14:56:34.277Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[2/5] Plugin read finished
+2023-07-05T14:56:34.277Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[3/5] Installing dependencies
+2023-07-05T14:56:34.277Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[4/5] Running plugin
+2023-07-05T14:56:34.277Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:{"pluginInputs":{"handbrakePreset":"H.265 MKV 2160p60","videoEncoder":"x265","keepSubtitles":true,"container":"mkv"}}
+2023-07-05T14:56:34.277Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[5/5] Running plugin finished
+2023-07-05T14:56:34.278Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Worker config: {
+2023-07-05T14:56:34.278Z   "processFile": true,
+2023-07-05T14:56:34.278Z   "preset": "-Z \"H.265 MKV 2160p60\" -e x265 --all-subtitles",
+2023-07-05T14:56:34.278Z   "container": ".mkv",
+2023-07-05T14:56:34.278Z   "handBrakeMode": false,
+2023-07-05T14:56:34.278Z   "FFmpegMode": false,
+2023-07-05T14:56:34.278Z   "reQueueAfter": true,
+2023-07-05T14:56:34.278Z   "infoLog": "File is being transcoded using HandBrake \n",
+2023-07-05T14:56:34.278Z   "handbrakeMode": true,
+2023-07-05T14:56:34.278Z   "ffmpegMode": false,
+2023-07-05T14:56:34.278Z   "lastPluginDetails": {
+2023-07-05T14:56:34.278Z     "source": "Community",
+2023-07-05T14:56:34.278Z     "id": "Tdarr_Plugin_00td_action_handbrake_basic_options",
+2023-07-05T14:56:34.278Z     "number": "3/5"
+2023-07-05T14:56:34.278Z   },
+2023-07-05T14:56:34.278Z   "cliToUse": "handbrake"
+2023-07-05T14:56:34.278Z }
+2023-07-05T14:56:34.278Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Worker log: 
+2023-07-05T14:56:34.278Z Pre-processing - Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-05T14:56:34.278Z ☑File doesn't contain any unwanted image format streams.
+2023-07-05T14:56:34.278Z 
+2023-07-05T14:56:34.278Z Pre-processing - Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-05T14:56:34.278Z File has video in first stream
+2023-07-05T14:56:34.278Z  File meets conditions!
+2023-07-05T14:56:34.278Z 
+2023-07-05T14:56:34.278Z Pre-processing - Tdarr_Plugin_00td_action_handbrake_basic_options
+2023-07-05T14:56:34.278Z File is being transcoded using HandBrake 
+2023-07-05T14:56:34.278Z 
+2023-07-05T14:56:34.278Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Worker will process
+2023-07-05T14:56:34.278Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[Step W04] [C1] Preparing command
+2023-07-05T14:56:34.279Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Cache file stem: /temp
+2023-07-05T14:56:34.279Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Cache file path: /temp/Everything Everywhere All at Once (2022) Bluray-1080p-TdarrCacheFile-bDqNJy4KR.mkv
+2023-07-05T14:56:34.279Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Create transcode args
+2023-07-05T14:56:34.280Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Args:  -i "/media/movies/Everything Everywhere All at Once (2022)/Everything Everywhere All at Once (2022) Bluray-1080p.mp4" -o "/temp/Everything Everywhere All at Once (2022) Bluray-1080p-TdarrCacheFile-bDqNJy4KR.mkv" -Z "H.265 MKV 2160p60" -e x265 --all-subtitles
+2023-07-05T14:56:34.280Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Getting source file size
+2023-07-05T14:56:34.280Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Source file size: 2.5678175119683146
+2023-07-05T14:56:34.280Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Performing safety check on worker config to see if old transcode args/container match new ones
+2023-07-05T14:56:34.281Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Safety check complete, all good
+2023-07-05T14:56:34.281Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[Step W05] [C1] Launching subworker
+2023-07-05T14:56:34.281Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Preparing to launch subworker
+2023-07-05T14:56:34.282Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Subworker launched
+2023-07-05T14:56:34.282Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[1/3] Sending command to subworker
+2023-07-05T14:56:34.282Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[2/3] HandBrakeCLI -i "/media/movies/Everything Everywhere All at Once (2022)/Everything Everywhere All at Once (2022) Bluray-1080p.mp4" -o "/temp/Everything Everywhere All at Once (2022) Bluray-1080p-TdarrCacheFile-bDqNJy4KR.mkv" -Z "H.265 MKV 2160p60" -e x265 --all-subtitles
+2023-07-05T14:56:34.282Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[3/3] Command sent
+2023-07-05T14:56:34.283Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:To see live CLI output, enable 'Log full FFmpeg/HandBrake output' in the staging section on the Tdarr tab before the job starts. Note this could increase the job report size substantially.
+2023-07-05T14:56:34.283Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Subworker:Online
+2023-07-05T14:56:34.283Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Subworker:Receiving transcode settings
+2023-07-05T14:56:34.283Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Subworker:Running CLI
+2023-07-05T14:56:34.283Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Subworker:a.Thread closed, code: 2
+2023-07-05T14:56:34.284Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Subworker exit approved, killing subworker
+2023-07-05T14:56:34.284Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Subworker killed
+2023-07-05T14:56:34.284Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:b.Thread closed, code: 2
+2023-07-05T14:56:34.285Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:CLI code: 2
+2023-07-05T14:56:34.285Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Last 200 lines of CLI log:
+2023-07-05T14:56:34.285Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[14:56:31] Compile-time hardening features are enabled
+2023-07-05T14:56:34.285Z 
+2023-07-05T14:56:34.285Z [14:56:31] qsv: not available on this system
+2023-07-05T14:56:34.285Z 
+2023-07-05T14:56:34.285Z Cannot load libnvidia-encode.so.1
+2023-07-05T14:56:34.285Z 
+2023-07-05T14:56:34.285Z [14:56:31] hb_init: starting libhb thread
+2023-07-05T14:56:34.285Z [14:56:31] thread 7f4a3fb63700 started ("libhb")
+2023-07-05T14:56:34.285Z 
+2023-07-05T14:56:34.285Z HandBrake 1.6.1 (2023061300) - Linux x86_64 - https://handbrake.fr
+2023-07-05T14:56:34.285Z 4 CPUs detected
+2023-07-05T14:56:34.285Z Invalid preset H.265 MKV 2160p60
+2023-07-05T14:56:34.285Z Valid presets are:
+2023-07-05T14:56:34.285Z     General/
+2023-07-05T14:56:34.285Z         Very Fast 2160p60 4K AV1
+2023-07-05T14:56:34.285Z             AV1 video (up to 2160p60) and AAC stereo audio, in an MP4
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         Very Fast 2160p60 4K HEVC
+2023-07-05T14:56:34.285Z             H.265 video (up to 2160p60) and AAC stereo audio, in an MP4
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         Very Fast 1080p30
+2023-07-05T14:56:34.285Z             Small H.264 video (up to 1080p30) and AAC stereo audio, in
+2023-07-05T14:56:34.285Z             an MP4 container.
+2023-07-05T14:56:34.285Z         Very Fast 720p30
+2023-07-05T14:56:34.285Z             Small H.264 video (up to 720p30) and AAC stereo audio, in an
+2023-07-05T14:56:34.285Z             MP4 container.
+2023-07-05T14:56:34.285Z         Very Fast 576p25
+2023-07-05T14:56:34.285Z             Small H.264 video (up to 576p25) and AAC stereo audio, in an
+2023-07-05T14:56:34.285Z             MP4 container.
+2023-07-05T14:56:34.285Z         Very Fast 480p30
+2023-07-05T14:56:34.285Z             Small H.264 video (up to 480p30) and AAC stereo audio, in an
+2023-07-05T14:56:34.285Z             MP4 container.
+2023-07-05T14:56:34.285Z         Fast 2160p60 4K AV1
+2023-07-05T14:56:34.285Z             AV1 video (up to 2160p60) and AAC stereo audio, in an MP4
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         Fast 2160p60 4K HEVC
+2023-07-05T14:56:34.285Z             H.265 video (up to 2160p60) and AAC stereo audio, in an MP4
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         Fast 1080p30
+2023-07-05T14:56:34.285Z             H.264 video (up to 1080p30) and AAC stereo audio, in an MP4
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         Fast 720p30
+2023-07-05T14:56:34.285Z             H.264 video (up to 720p30) and AAC stereo audio, in an MP4
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         Fast 576p25
+2023-07-05T14:56:34.285Z             H.264 video (up to 576p25) and AAC stereo audio, in an MP4
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         Fast 480p30
+2023-07-05T14:56:34.285Z             H.264 video (up to 480p30) and AAC stereo audio, in an MP4
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         HQ 2160p60 4K AV1 Surround
+2023-07-05T14:56:34.285Z             High quality AV1 video (up to 2160p60), AAC stereo audio,
+2023-07-05T14:56:34.285Z             and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T14:56:34.285Z 
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         HQ 2160p60 4K HEVC Surround
+2023-07-05T14:56:34.285Z             High quality H.265 video (up to 2160p60), AAC stereo audio,
+2023-07-05T14:56:34.285Z             and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         HQ 1080p30 Surround
+2023-07-05T14:56:34.285Z             High quality H.264 video (up to 1080p30), AAC stereo audio,
+2023-07-05T14:56:34.285Z             and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         HQ 720p30 Surround
+2023-07-05T14:56:34.285Z             High quality H.264 video (up to 720p30), AAC stereo audio,
+2023-07-05T14:56:34.285Z             and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         HQ 576p25 Surround
+2023-07-05T14:56:34.285Z     
+2023-07-05T14:56:34.285Z         High quality H.264 video (up to 576p25), AAC stereo audio,
+2023-07-05T14:56:34.285Z             and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         HQ 480p30 Surround
+2023-07-05T14:56:34.285Z             High quality H.264 video (up to 480p30), AAC stereo audio,
+2023-07-05T14:56:34.285Z             and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         Super HQ 2160p60 4K AV1 Surround
+2023-07-05T14:56:34.285Z             Super high quality AV1 video (up to 2160p60), AAC stereo
+2023-07-05T14:56:34.285Z             audio, and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         Super HQ 2160p60 4K HEVC Surround
+2023-07-05T14:56:34.285Z             Super high quality H.265 video (up to 2160p60), AAC stereo
+2023-07-05T14:56:34.285Z             audio, and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         Super HQ 1080p30 Surround
+2023-07-05T14:56:34.285Z             Super high quality H.264 video (up to 1080p30), AAC stereo
+2023-07-05T14:56:34.285Z             audio, and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         Super HQ 720p30 Surround
+2023-07-05T14:56:34.285Z             Super high quality H.264 video (up to 720p30), AAC stereo
+2023-07-05T14:56:34.285Z             audio, and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         Super HQ 576p25 Surround
+2023-07-05T14:56:34.285Z             Super high quality H.264 video (up to 576p25), AAC stereo
+2023-07-05T14:56:34.285Z             audio, and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T14:56:34.285Z         
+2023-07-05T14:56:34.285Z     container.
+2023-07-05T14:56:34.285Z         Super HQ 480p30 Surround
+2023-07-05T14:56:34.285Z             Super high quality H.264 video (up to 480p30), AAC stereo
+2023-07-05T14:56:34.285Z             audio, and Dolby Digital (AC-3) surround audio, in an MP4
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z     Web/
+2023-07-05T14:56:34.285Z         Creator 2160p60 4K
+2023-07-05T14:56:34.285Z             High quality video for publishing via online services such
+2023-07-05T14:56:34.285Z             as Vimeo and YouTube. H.264 video (up to 2160p60) and high
+2023-07-05T14:56:34.285Z             bit rate AAC stereo audio in an MP4 container.
+2023-07-05T14:56:34.285Z         Creator 1440p60 2.5K
+2023-07-05T14:56:34.285Z             High quality video for publishing via online services such
+2023-07-05T14:56:34.285Z             as Vimeo and YouTube. H.264 video (up to 1440p60) and high
+2023-07-05T14:56:34.285Z             bit rate AAC stereo audio in an MP4 container.
+2023-07-05T14:56:34.285Z         Creator 1080p60
+2023-07-05T14:56:34.285Z             High quality video for publishing via online services such
+2023-07-05T14:56:34.285Z             as Vimeo and YouTube. H.264 video (up to 1080p60) and high
+2023-07-05T14:56:34.285Z             bit rate AAC stereo audio in an MP4 container.
+2023-07-05T14:56:34.285Z         Creator 720p60
+2023-07-05T14:56:34.285Z             High quality video for publishing via online services such
+2023-07-05T14:56:34.285Z             as Vimeo and YouTube. H.264 video (up to 720p60) and high
+2023-07-05T14:56:34.285Z             bit rate AAC stereo audio in an MP4 container.
+2023-07-05T14:56:34.285Z         Email 25 MB 3 Minutes 720p30
+2023-07-05T14:56:34.285Z             Up to 3 minutes of video in 25 MB or less, for sharing via
+2023-07-05T14:56:34.285Z             email services such as Gmail. H.264 video (up to 720p30) and
+2023-07-05T14:56:34.285Z             AAC stereo audio, in an MP4 container.
+2023-07-05T14:56:34.285Z         Email 25 MB 5 Minutes 480p30
+2023-07-05T14:56:34.285Z             Up to 5 minutes of video in 25 MB or less, for sharing via
+2023-07-05T14:56:34.285Z             email services such as Gmail. H.264 video (up to 480p30) and
+2023-07-05T14:56:34.285Z             AAC stereo audio, in an MP4 container.
+2023-07-05T14:56:34.285Z         Email 25 MB 10 Minutes 288p30
+2023-07-05T14:56:34.285Z             Up to 10 minutes of video in 25 MB or less, for sharing via
+2023-07-05T14:56:34.285Z             email services such as Gmail. H.264 video (up to 288p30) and
+2023-07-05T14:56:34.285Z             AAC stereo audio, in an MP4 container.
+2023-07-05T14:56:34.285Z         Social 100 MB 5 Minutes 1080p30
+2023-07-05T14:56:34.285Z             Up to 5 minutes of video in 100 MB or less, for sharing via
+2023-07-05T14:56:34.285Z             online social communities such as Discord. H.264 video (up
+2023-07-05T14:56:34.285Z             to 1080p30) and AAC stereo audio, in an MP4 container.
+2023-07-05T14:56:34.285Z         Social 50 MB 5 Minutes 720p30
+2023-07-05T14:56:34.285Z             Up to 5 minutes of video in 50 MB or less, for sharing via
+2023-07-05T14:56:34.285Z             online social communities such as Discord. H.264 video (up
+2023-07-05T14:56:34.285Z             to 720p30) and AAC stereo audio, in an MP4 container.
+2023-07-05T14:56:34.285Z         Social 50 MB 10 Minutes 480p30
+2023-07-05T14:56:34.285Z             Up to 10 minutes of video in 50 MB or less, for sharing via
+2023-07-05T14:56:34.285Z         
+2023-07-05T14:56:34.285Z     online social communities such as Discord. H.264 video (up
+2023-07-05T14:56:34.285Z             to 480p30) and AAC stereo audio, in an MP4 container.
+2023-07-05T14:56:34.285Z         Social 8 MB 3 Minutes 360p30
+2023-07-05T14:56:34.285Z             Up to 3 minutes of video in 8 MB or less, for sharing via
+2023-07-05T14:56:34.285Z             online social communities such as Discord. H.264 video (up
+2023-07-05T14:56:34.285Z             to 360p30) and AAC stereo audio, in an MP4 container.
+2023-07-05T14:56:34.285Z     Devices/
+2023-07-05T14:56:34.285Z         Amazon Fire 2160p60 4K HEVC Surround
+2023-07-05T14:56:34.285Z             H.265 video (up to 2160p60), AAC stereo audio, and Dolby
+2023-07-05T14:56:34.285Z             Digital (AC-3) audio, in an MP4 container. Compatible with
+2023-07-05T14:56:34.285Z             Amazon Fire TV 3rd Generation and later; Fire TV Stick 4K;
+2023-07-05T14:56:34.285Z             Fire TV Cube.
+2023-07-05T14:56:34.285Z         Amazon Fire 1080p30 Surround
+2023-07-05T14:56:34.285Z             H.264 video (up to 1080p30), AAC stereo audio, and Dolby
+2023-07-05T14:56:34.285Z             Digital (AC-3) audio, in an MP4 container. Compatible with
+2023-07-05T14:56:34.285Z             Amazon Fire TV 1st Generation and later; Fire TV Stick 1st
+2023-07-05T14:56:34.285Z             Generation and later; Fire HD 10 7th Generation (2017); Fire
+2023-07-05T14:56:34.285Z             HDX 4th Generation (2014).
+2023-07-05T14:56:34.285Z         Amazon Fire 720p30
+2023-07-05T14:56:34.285Z             H.264 video (up to 720p30) and AAC stereo audio, in an MP4
+2023-07-05T14:56:34.285Z             container. Compatible with Amazon Fire HD 4th Generation
+2023-07-05T14:56:34.285Z             (2014) and later; Kindle Fire HDX 3rd Generation (2013);
+2023-07-05T14:56:34.285Z             Kindle Fire HD 2nd Generation (2012) and later.
+2023-07-05T14:56:34.285Z         Android 1080p30
+2023-07-05T14:56:34.285Z             H.264 video (up to 1080p30) and AAC stereo audio, in an MP4
+2023-07-05T14:56:34.285Z             container. Compatible with Android devices.
+2023-07-05T14:56:34.285Z         Android 720p30
+2023-07-05T14:56:34.285Z             H.264 video (up to 720p30) and AAC stereo audio, in an MP4
+2023-07-05T14:56:34.285Z             container. Compatible with Android devices.
+2023-07-05T14:56:34.285Z         Android 576p25
+2023-07-05T14:56:34.285Z             H.264 video (up to 576p25) and AAC stereo audio, in an MP4
+2023-07-05T14:56:34.285Z             container. Compatible with Android devices.
+2023-07-05T14:56:34.285Z         Android 480p30
+2023-07-05T14:56:34.285Z             H.264 video (up to 480p30) and AAC stereo audio, in an MP4
+2023-07-05T14:56:34.285Z             container. Compatible with Android devices.
+2023-07-05T14:56:34.285Z         Apple 2160p60 4K HEVC Surround
+2023-07-05T14:56:34.285Z             H.265 video (up to 2160p60), AAC stereo audio, and Dolby
+2023-07-05T14:56:34.285Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T14:56:34.285Z             Compatible with Apple iPhone 7 and later; Apple TV 4K.
+2023-07-05T14:56:34.285Z         Apple 1080p60 Surround
+2023-07-05T14:56:34.285Z             H.264 video (up to 1080p60), AAC stereo audio, and Dolby
+2023-07-05T14:56:34.285Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T14:56:34.285Z             Compatible with Apple iPad 5th and 6th Generation; iPad mini
+2023-07-05T14:56:34.285Z             2, 3, and 4; iPad Air 1st Generation and Air 2; iPad Pro
+2023-07-05T14:56:34.285Z             1st, 2nd, and 3rd Generation; Apple TV 4th Generation and
+2023-07-05T14:56:34.285Z             
+2023-07-05T14:56:34.285Z later.
+2023-07-05T14:56:34.285Z         Apple 1080p30 Surround
+2023-07-05T14:56:34.285Z             H.264 video (up to 1080p30), AAC stereo audio, and Dolby
+2023-07-05T14:56:34.285Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T14:56:34.285Z             Compatible with Apple iPhone 5, 5s, SE, 6, 6 Plus, 6s, 6s
+2023-07-05T14:56:34.285Z             Plus, and later; iPod touch 6th Generation; iPad 3rd, 4th
+2023-07-05T14:56:34.285Z             Generation and later; iPad mini 1st Generation and later;
+2023-07-05T14:56:34.285Z             Apple TV 3rd, 4th Generation and later.
+2023-07-05T14:56:34.285Z         Apple 720p30 Surround
+2023-07-05T14:56:34.285Z             H.264 video (up to 720p30), AAC stereo audio, and Dolby
+2023-07-05T14:56:34.285Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T14:56:34.285Z             Compatible with Apple iPhone 4, 4S, and later; iPod touch
+2023-07-05T14:56:34.285Z             4th, 5th Generation and later; iPad 1st Generation, iPad 2,
+2023-07-05T14:56:34.285Z             and later; Apple TV 2nd Generation and later.
+2023-07-05T14:56:34.285Z         Apple 540p30 Surround
+2023-07-05T14:56:34.285Z             H.264 video (up to 540p30), AAC stereo audio, and Dolby
+2023-07-05T14:56:34.285Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T14:56:34.285Z             Compatible with Apple iPhone 1st Generation, 3G, 3GS, and
+2023-07-05T14:56:34.285Z             later; iPod touch 1st, 2nd, 3rd Generation and later; iPod
+2023-07-05T14:56:34.285Z             Classic; Apple TV 1st Generation and later.
+2023-07-05T14:56:34.285Z         Chromecast 2160p60 4K HEVC Surround
+2023-07-05T14:56:34.285Z             H.265 video (up to 2160p60), AAC stereo audio, and Dolby
+2023-07-05T14:56:34.285Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T14:56:34.285Z             Compatible with Google Chromecast Ultra.
+2023-07-05T14:56:34.285Z         Chromecast 1080p60 Surround
+2023-07-05T14:56:34.285Z             H.264 video (up to 1080p60), AAC stereo audio, and Dolby
+2023-07-05T14:56:34.285Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T14:56:34.285Z             Compatible with Google Chromecast 3rd Generation.
+2023-07-05T14:56:34.285Z         Chromecast 1080p30 Surround
+2023-07-05T14:56:34.285Z             H.264 video (up to 1080p30), AAC stereo audio, and Dolby
+2023-07-05T14:56:34.285Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T14:56:34.285Z             Compatible with Google Chromecast 1st, 2nd Generation and
+2023-07-05T14:56:34.285Z             later.
+2023-07-05T14:56:34.285Z         Playstation 2160p60 4K Surround
+2023-07-05T14:56:34.285Z             H.264 video (up to 2160p60), AAC stereo audio, and Dolby
+2023-07-05T14:56:34.285Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T14:56:34.285Z             Compatible with Playstation 4 Pro.
+2023-07-05T14:56:34.285Z         Playstation 1080p30 Surround
+2023-07-05T14:56:34.285Z             H.264 video (up to 1080p30), AAC stereo audio, and Dolby
+2023-07-05T14:56:34.285Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T14:56:34.285Z         
+2023-07-05T14:56:34.285Z     Compatible with Playstation 3 and 4.
+2023-07-05T14:56:34.285Z         Playstation 720p30
+2023-07-05T14:56:34.285Z             H.264 video (up to 720p30) and AAC stereo audio, in an MP4
+2023-07-05T14:56:34.285Z             container. Compatible with Playstation Vita TV.
+2023-07-05T14:56:34.285Z         Playstation 540p30
+2023-07-05T14:56:34.285Z             H.264 video (up to 540p30) and AAC stereo audio, in an MP4
+2023-07-05T14:56:34.285Z             container. Compatible with Playstation Vita.
+2023-07-05T14:56:34.285Z         Roku 2160p60 4K HEVC Surround
+2023-07-05T14:56:34.285Z             H.265 video (up to 2160p60), AAC stereo audio, and surround
+2023-07-05T14:56:34.285Z             audio, in an MKV container. Compatible with Roku 4,
+2023-07-05T14:56:34.285Z             Streaming Stick+, Premiere+, and Ultra.
+2023-07-05T14:56:34.285Z         Roku 1080p30 Surround
+2023-07-05T14:56:34.285Z             H.264 video (up to 1080p30), AAC stereo audio, and Dolby
+2023-07-05T14:56:34.285Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T14:56:34.285Z             Compatible with Roku 1080p models.
+2023-07-05T14:56:34.285Z         Roku 720p30 Surround
+2023-07-05T14:56:34.285Z             H.264 video (up to 720p30), AAC stereo audio, and Dolby
+2023-07-05T14:56:34.285Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T14:56:34.285Z             Compatible with Roku 720p models.
+2023-07-05T14:56:34.285Z         Roku 576p25
+2023-07-05T14:56:34.285Z             H.264 video (up to 576p25) and AAC stereo audio, in an MP4
+2023-07-05T14:56:34.285Z             container. Compatible with Roku standard definition models.
+2023-07-05T14:56:34.285Z         Roku 480p30
+2023-07-05T14:56:34.285Z             H.264 video (up to 480p30) and AAC stereo audio, in an MP4
+2023-07-05T14:56:34.285Z             container. Compatible with Roku standard definition models.
+2023-07-05T14:56:34.285Z         Xbox 1080p30 Surround
+2023-07-05T14:56:34.285Z             H.264 video (up to 1080p30), AAC stereo audio, and Dolby
+2023-07-05T14:56:34.285Z             Digital (AC-3) surround audio, in an MP4 container.
+2023-07-05T14:56:34.285Z             Compatible with Xbox One.
+2023-07-05T14:56:34.285Z     Matroska/
+2023-07-05T14:56:34.285Z         AV1 MKV 2160p60 4K
+2023-07-05T14:56:34.285Z             AV1 video (up to 2160p60) and Opus stereo audio, in an MKV
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         H.265 MKV 2160p60 4K
+2023-07-05T14:56:34.285Z             H.265 video (up to 2160p60) and AAC stereo audio, in an MKV
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         H.265 MKV 1080p30
+2023-07-05T14:56:34.285Z             H.265 video (up to 1080p30) and AAC stereo audio, in an MKV
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         H.265 MKV 720p30
+2023-07-05T14:56:34.285Z             H.265 video (up to 720p30) and AAC stereo audio, in an MKV
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         H.265 MKV 576p25
+2023-07-05T14:56:34.285Z             H.265 video (up to 576p25) and AAC stereo audio, in an MKV
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         H.265 MKV 480p30
+2023-07-05T14:56:34.285Z             H.265 video (up to 480p30) and AAC stereo audio, in an MKV
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         H.264 MKV 2160p60 4K
+2023-07-05T14:56:34.285Z             H.264 video (up to 2160p60) and AAC stereo audio, in an MKV
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         H.264 MKV 1080p30
+2023-07-05T14:56:34.285Z 
+2023-07-05T14:56:34.285Z             H.264 video (up to 1080p30) and AAC stereo audio, in an MKV
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         H.264 MKV 720p30
+2023-07-05T14:56:34.285Z             H.264 video (up to 720p30) and AAC stereo audio, in an MKV
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         H.264 MKV 576p25
+2023-07-05T14:56:34.285Z             H.264 video (up to 576p25) and AAC stereo audio, in an MKV
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         H.264 MKV 480p30
+2023-07-05T14:56:34.285Z             H.264 video (up to 480p30) and AAC stereo audio, in an MKV
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         VP9 MKV 2160p60 4K
+2023-07-05T14:56:34.285Z             VP9 video (up to 2160p60) and Opus stereo audio, in an MKV
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         VP9 MKV 1080p30
+2023-07-05T14:56:34.285Z             VP9 video (up to 1080p30) and Opus stereo audio, in an MKV
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         VP9 MKV 720p30
+2023-07-05T14:56:34.285Z             VP9 video (up to 720p30) and Opus stereo audio, in an MKV
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         VP9 MKV 576p25
+2023-07-05T14:56:34.285Z             VP9 video (up to 576p25) and Opus stereo audio, in an MKV
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z         VP9 MKV 480p30
+2023-07-05T14:56:34.285Z             VP9 video (up to 480p30) and Opus stereo audio, in an MKV
+2023-07-05T14:56:34.285Z             container.
+2023-07-05T14:56:34.285Z     Hardware/
+2023-07-05T14:56:34.285Z         AV1 QSV 2160p 4K
+2023-07-05T14:56:34.285Z             Intel Quick Sync Video hardware accelerated AV1 video (up to
+2023-07-05T14:56:34.285Z             2160p) and AAC stereo audio, in an MP4 container.
+2023-07-05T14:56:34.285Z         H.265 NVENC 2160p 4K
+2023-07-05T14:56:34.285Z             Nvidia NVENC hardware accelerated H.265 video (up to 2160p)
+2023-07-05T14:56:34.285Z             and AAC stereo audio, in an MP4 container.
+2023-07-05T14:56:34.285Z         H.265 NVENC 1080p
+2023-07-05T14:56:34.285Z             Nvidia NVENC hardware accelerated H.265 video (up to 1080p)
+2023-07-05T14:56:34.285Z     
+2023-07-05T14:56:34.285Z         and AAC stereo audio, in an MP4 container.
+2023-07-05T14:56:34.285Z         H.265 QSV 2160p 4K
+2023-07-05T14:56:34.285Z             Intel Quick Sync Video hardware accelerated H.265 video (up
+2023-07-05T14:56:34.285Z             to 2160p) and AAC stereo audio, in an MP4 container.
+2023-07-05T14:56:34.285Z         H.265 QSV 1080p
+2023-07-05T14:56:34.285Z             Intel Quick Sync Video hardware accelerated H.265 video (up
+2023-07-05T14:56:34.285Z             to 1080p) and AAC stereo audio, in an MP4 container.
+2023-07-05T14:56:34.285Z         H.265 VCN 2160p 4K
+2023-07-05T14:56:34.285Z             AMD VCN hardware accelerated H.265 video (up to 2160p) and
+2023-07-05T14:56:34.285Z             AAC stereo audio, in an MP4 container.
+2023-07-05T14:56:34.285Z         H.265 VCN 1080p
+2023-07-05T14:56:34.285Z             AMD VCN hardware accelerated H.265 video (up to 1080p) and
+2023-07-05T14:56:34.285Z             AAC stereo audio, in an MP4 container.
+2023-07-05T14:56:34.285Z         H.265 MF 2160p 4K
+2023-07-05T14:56:34.285Z             Hardware accelerated H.265 video (up to 2160p) and AAC
+2023-07-05T14:56:34.285Z             stereo audio, in an MP4 container for ARM based platforms
+2023-07-05T14:56:34.285Z             using Media Foundation
+2023-07-05T14:56:34.285Z         H.265 MF 1080p
+2023-07-05T14:56:34.285Z             Hardware accelerated H.265 video (up to 1080p) and AAC
+2023-07-05T14:56:34.285Z             stereo audio, in an MP4 container for ARM based platforms
+2023-07-05T14:56:34.285Z             using Media Foundation
+2023-07-05T14:56:34.285Z     Production/
+2023-07-05T14:56:34.285Z         Production Max
+2023-07-05T14:56:34.285Z             Maximum bit rate, constant frame rate H.264 video and high
+2023-07-05T14:56:34.285Z             bit rate AAC stereo audio in an MP4 container. For
+2023-07-05T14:56:34.285Z             professional use as an intermediate format for video
+2023-07-05T14:56:34.285Z             editing. Creates gigantic files.
+2023-07-05T14:56:34.285Z         Production Standard
+2023-07-05T14:56:34.285Z             High bit rate, constant frame rate H.264 video and high bit
+2023-07-05T14:56:34.285Z             rate AAC stereo audio in an MP4 container. For professional
+2023-07-05T14:56:34.285Z             use as an intermediate format for video editing. Creates
+2023-07-05T14:56:34.285Z             very large files.
+2023-07-05T14:56:34.285Z         Production Proxy 1080p
+2023-07-05T14:56:34.285Z             Intra-only, constant frame rate H.264 video (up to 1080p)
+2023-07-05T14:56:34.285Z             and high bit rate AAC stereo audio in an MP4 container. For
+2023-07-05T14:56:34.285Z             professional use as a low resolution proxy format for video
+2023-07-05T14:56:34.285Z             editing.
+2023-07-05T14:56:34.285Z         Production Proxy 540p
+2023-07-05T14:56:34.285Z             Intra-only, constant frame rate H.264 video (up to 540p) and
+2023-07-05T14:56:34.285Z             high bit rate AAC stereo audio in an MP4 container. For
+2023-07-05T14:56:34.285Z             professional use as a low resolution proxy format for video
+2023-07-05T14:56:34.285Z             editing.
+2023-07-05T14:56:34.285Z     CLI Defaults/
+2023-07-05T14:56:34.285Z         CLI Default
+2023-07-05T14:56:34.285Z 
+2023-07-05T14:56:34.285Z HandBrake has exited.
+2023-07-05T14:56:34.285Z 
+2023-07-05T14:56:34.285Z 
+2023-07-05T14:56:34.285Z 
+2023-07-05T14:56:34.285Z 
+2023-07-05T14:56:34.289Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[-error-]
+2023-07-05T14:56:34.290Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[Step W07] [C1] Worker [-error-]
+2023-07-05T14:56:34.290Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Error encountered when processing /media/movies/Everything Everywhere All at Once (2022)/Everything Everywhere All at Once (2022) Bluray-1080p.mp4
+2023-07-05T14:56:34.290Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Checking new cache file
+2023-07-05T14:56:34.290Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+2023-07-05T14:56:34.290Z /temp/Everything Everywhere All at Once (2022) Bluray-1080p-TdarrCacheFile-bDqNJy4KR.mkv
+2023-07-05T14:56:34.291Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:pluginCycleLogJSONString:{"nodeName":"MyInternalNode","workerID":"sore-swan","pluginCycle":1,"outcome":"error","workerLog":"\nPre-processing - Tdarr_Plugin_MC93_MigzImageRemoval\n☑File doesn't contain any unwanted image format streams.\n\nPre-processing - Tdarr_Plugin_lmg1_Reorder_Streams\nFile has video in first stream\n File meets conditions!\n\nPre-processing - Tdarr_Plugin_00td_action_handbrake_basic_options\nFile is being transcoded using HandBrake \n","lastCliCommand":"HandBrakeCLI -i \"/media/movies/Everything Everywhere All at Once (2022)/Everything Everywhere All at Once (2022) Bluray-1080p.mp4\" -o \"/temp/Everything Everywhere All at Once (2022) Bluray-1080p-TdarrCacheFile-bDqNJy4KR.mkv\" -Z \"H.265 MKV 2160p60\" -e x265 --all-subtitles"}
+2023-07-05T14:56:34.291Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Updating transcode stats
+2023-07-05T14:56:34.291Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[Step W09] [-error-] Job end
+2023-07-05T14:56:34.292Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Transcoding error encountered. Check sections above.
+2023-07-05T14:56:34.292Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:[Step W10] Worker processing end
+2023-07-05T14:56:34.292Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Subworker exited null
+2023-07-05T14:56:34.293Z jREy-sVPm:Node[MyInternalNode]:Worker[sore-swan]:Successfully updated server with verdict: transcodeError

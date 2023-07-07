@@ -1,0 +1,602 @@
+2023-07-05T20:28:51.103Z hGzOR0r0DW:[Step S01] [2.00.21] Server relay initialising job
+2023-07-05T20:28:51.108Z hGzOR0r0DW:Server: linux_x64_docker_true
+2023-07-05T20:28:51.109Z hGzOR0r0DW:Server relay adding file to staged files
+2023-07-05T20:28:51.109Z hGzOR0r0DW:Server relay sending job to Node relay: MyInternalNode
+2023-07-05T20:28:51.109Z hGzOR0r0DW:Node[MyInternalNode]:[Step N01] [2.00.21] Node relay received job
+2023-07-05T20:28:51.110Z hGzOR0r0DW:Node[MyInternalNode]:{"nodeName":"MyInternalNode","serverIP":"0.0.0.0","serverPort":"8266","handbrakePath":"","ffmpegPath":"","mkvpropeditPath":"","pathTranslators":[{"server":"","node":""}],"logLevel":"INFO","priority":-1,"platform_arch_isdocker":"linux_x64_docker_true","processPid":199,"nodeID":"_VxSJ6fLa"}
+2023-07-05T20:28:51.111Z hGzOR0r0DW:Node[MyInternalNode]:Node relay sending job to worker:key-kitten
+2023-07-05T20:28:51.111Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:[Step W01] Received file, original: /media/tvshows/Hunter x Hunter (2011)/Season 2/Hunter x Hunter (2011) - S02E21 - No x Good x NGL Bluray-720p.mkv
+2023-07-05T20:28:51.111Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:{"workerType":"healthcheckcpu"}
+2023-07-05T20:28:51.111Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:{"ffmpegPath":"tdarr-ffmpeg"}
+2023-07-05T20:28:51.112Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:{"handbrakePath":"HandBrakeCLI"}
+2023-07-05T20:28:51.112Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:{"mkvpropeditPath":"mkvpropedit"}
+2023-07-05T20:28:51.112Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:{"gpuSelect":"-"}
+2023-07-05T20:28:51.112Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:{"allowGpuDoCpu":false}
+2023-07-05T20:28:51.112Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:{"thoroughHealthCheckCpuExtraInputArgs":""}
+2023-07-05T20:28:51.112Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:{"thoroughHealthCheckGpuExtraInputArgs":""}
+2023-07-05T20:28:51.113Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:{"thoroughHealthCheckCpuExtraArgs":""}
+2023-07-05T20:28:51.113Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:{"thoroughHealthCheckGpuExtraArgs":""}
+2023-07-05T20:28:51.113Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:{"logFullCliOutput":false}
+2023-07-05T20:28:51.113Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Path translating objects
+2023-07-05T20:28:51.113Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:{"librarySettings":{"_id":"4BaCjCxnf","priority":1,"name":"TV","folder":"/media/tvshows","foldersToIgnore":"","folderWatchScanInterval":30,"scannerThreadCount":2,"cache":"/temp","output":"","folderToFolderConversion":false,"folderToFolderConversionDeleteSource":false,"folderToFolderRecordHistory":true,"copyIfConditionsMet":false,"container":".mkv","containerFilter":"mkv,mp4,mov,m4v,mpg,mpeg,avi,flv,webm,wmv,vob,evo,iso,m2ts,ts","createdAt":1675837380368,"folderWatching":true,"useFsEvents":false,"scheduledScanFindNew":false,"processLibrary":true,"scanOnStart":true,"exifToolScan":true,"mediaInfoScan":true,"closedCaptionScan":false,"scanButtons":true,"scanFound":"","navItemSelected":"navSourceFolder","pluginIDs":[{"_id":"plugin1","id":"Tdarr_Plugin_MC93_MigzImageRemoval","checked":true,"source":"Community","priority":0,"InputsDB":{},"Stage":"Pre-processing","Name":"Migz-Remove image formats from file","Type":"Video","Operation":"Transcode","Description":"Identify any unwanted image formats in the file and remove those streams. MJPEG, PNG & GIF \n\n","Version":"1.4","Tags":"pre-processing,ffmpeg,video only","Inputs":[],"source_id":"Community::Tdarr_Plugin_MC93_MigzImageRemoval"},{"_id":"plugin2","id":"Tdarr_Plugin_lmg1_Reorder_Streams","checked":true,"source":"Community","priority":1,"InputsDB":{},"Stage":"Pre-processing","Name":"Tdarr_Plugin_lmg1_Reorder_Streams ","Type":"Video","Operation":"Transcode","Description":"[Contains built-in filter] This plugin will move the video stream to the front so Tdarr will recognize the codec correctly.\n\n","Version":"1.00","Tags":"pre-processing,ffmpeg","Inputs":[],"source_id":"Community::Tdarr_Plugin_lmg1_Reorder_Streams"},{"_id":"1hAfv9lAl","id":"Tdarr_Plugin_00td_filter_by_codec","checked":true,"source":"Community","priority":2,"InputsDB":{"codecsToNotProcess":"h264"},"Stage":"Pre-processing","Name":"Filter by codec","Type":"Video","Operation":"Filter","Description":"Only allow specified codecs to be processed \n\n","Version":"1.00","Tags":"filter","Inputs":[{"name":"codecsToProcess","type":"string","defaultValue":"","inputUI":{"type":"text"},"tooltip":"Enter a comma separated list of codecs to be processed. Leave blank if using codecsToNotProcess"},{"name":"codecsToNotProcess","type":"string","defaultValue":"","inputUI":{"type":"text"},"tooltip":"Enter a comma separated list of codecs to be not be processed. Leave blank if using codecsToProcess"}],"source_id":"Community::Tdarr_Plugin_00td_filter_by_codec"},{"_id":"Pbuyde_00","id":"Tdarr_Plugin_00td_action_handbrake_basic_options","checked":true,"source":"Community","priority":3,"InputsDB":{"videoEncoder":"x264"},"Stage":"Pre-processing","Name":"HandBrake basic options","Type":"Video","Operation":"Transcode","Description":"\n  Set basic HandBrake transcode options. This action has no built-in filter so be sure to set a codec filter\n  to prevent a transcoding loop.\n  ","Version":"1.00","Tags":"action","Inputs":[{"name":"handbrakePreset","type":"string","defaultValue":"Very Fast 1080p30","inputUI":{"type":"dropdown","options":["Very Fast 1080p30","Very Fast 720p30","Very Fast 576p25","Very Fast 480p30","Fast 1080p30","Fast 720p30","Fast 576p25","Fast 480p30","HQ 1080p30 Surround","HQ 720p30 Surround","HQ 576p25 Surround","HQ 480p30 Surround\"","Super HQ 1080p30 Surround","Super HQ 720p30 Surround","Super HQ 576p25 Surround","Super HQ 480p30 Surround","Gmail Large 3 Minutes 720p30","Gmail Medium 5 Minutes 480p30","Gmail Small 10 Minutes 288p30","Vimeo YouTube HQ 2160p60 4K","Vimeo YouTube HQ 1440p60 2.5K","Vimeo YouTube HQ 1080p60","Vimeo YouTube HQ 720p60","Vimeo YouTube 720p30","Android 1080p30","Android 720p30","Android 576p25","Android 480p30","Apple 2160p60 4K HEVC Surround","Apple 1080p60 Surround","Apple 1080p30 Surround","Apple 720p30 Surround","Apple 540p30 Surround","Apple 240p30","Chromecast 2160p60 4K HEVC Surround","Chromecast 1080p60 Surround","Chromecast 1080p30 Surround","Amazon Fire 2160p60 4K HEVC Surround","Amazon Fire 1080p30 Surround","Amazon Fire 720p30","Playstation 1080p30 Surround","Playstation 720p30","Playstation 540p30","Roku 2160p60 4K HEVC Surround","Roku 1080p30 Surround","Roku 720p30 Surround","Roku 576p25","Roku 480p30","Windows Mobile 1080p30","Windows Mobile 720p30","Windows Mobile 540p30","Windows Mobile 480p30","Xbox 1080p30 Surround","Xbox Legacy 1080p30 Surround","H.265 MKV 2160p60","H.265 MKV 1080p30","H.265 MKV 720p30","H.265 MKV 576p25","H.265 MKV 480p30","H.264 MKV 2160p60","H.264 MKV 1080p30","H.264 MKV 720p30","H.264 MKV 576p25","H.264 MKV 480p30","VP9 MKV 2160p60","VP9 MKV 1080p30","VP9 MKV 720p30","VP9 MKV 576p25","VP9 MKV 480p30","VP8 MKV 1080p30","VP8 MKV 720p30","VP8 MKV 576p25","VP8 MKV 480p30","Production Max","Production Standard","Production Proxy 1080p","Production Proxy 540p"]},"tooltip":"Enter the desired HandBrake preset"},{"name":"videoEncoder","type":"string","defaultValue":"x265","inputUI":{"type":"dropdown","options":["x264","x264_10bit","qsv_h264","nvenc_h264","x265","x265_10bit","x265_12bit","qsv_h265","nvenc_h265","mpeg4","mpeg2","VP8","VP9","theora"]},"tooltip":"Enter the desired video encoder"},{"name":"keepSubtitles","type":"boolean","defaultValue":true,"inputUI":{"type":"dropdown","options":["true","false"]},"tooltip":"Specify whether to keep subs or not"},{"name":"container","type":"string","defaultValue":"mkv","inputUI":{"type":"text"},"tooltip":"Enter the desired container"}],"source_id":"Community::Tdarr_Plugin_00td_action_handbrake_basic_options"},{"_id":"plugin3","id":"Tdarr_Plugin_MC93_Migz1FFMPEG_CPU","checked":false,"source":"Community","priority":4,"InputsDB":{},"Stage":"Pre-processing","Name":"Migz-Transcode Using CPU & FFMPEG","Type":"Video","Operation":"Transcode","Description":"Files not in H265 will be transcoded into H265 using CPU with ffmpeg.\n                Settings are dependant on file bitrate\n                Working by the logic that H265 can support the same ammount of data at half the bitrate of H264.\n                This plugin will  skip any files that are in the VP9 codec.","Version":"1.9","Tags":"pre-processing,ffmpeg,video only,configurable,h265","Inputs":[{"name":"container","type":"string","defaultValue":"mkv","inputUI":{"type":"text"},"tooltip":"Specify output container of file. Use 'original' wihout quotes to keep original container.\n                  \\n Ensure that all stream types you may have are supported by your chosen container.\n                  \\n mkv is recommended.\n                    \\nExample:\\n\n                    mkv\n\n                    \\nExample:\\n\n                    mp4\n                                        \n                    \\nExample:\\n\n                    original"},{"name":"bitrate_cutoff","type":"string","defaultValue":"","inputUI":{"type":"text"},"tooltip":"Specify bitrate cutoff, files with a current bitrate lower then this will not be transcoded.\n                  \\n Rate is in kbps.\n                  \\n Leave empty to disable.\n                    \\nExample:\\n\n                    6000\n\n                    \\nExample:\\n\n                    4000"},{"name":"enable_10bit","type":"boolean","defaultValue":false,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Specify if output file should be 10bit. Default is false.\n                    \\nExample:\\n\n                    true\n\n                    \\nExample:\\n\n                    false"},{"name":"force_conform","type":"boolean","defaultValue":false,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Make the file conform to output containers requirements.\n                \\n Drop hdmv_pgs_subtitle/eia_608/subrip/timed_id3 for MP4.\n                \\n Drop data streams/mov_text/eia_608/timed_id3 for MKV.\n                \\n Default is false.\n                    \\nExample:\\n\n                    true\n\n                    \\nExample:\\n\n                    false"}],"source_id":"Community::Tdarr_Plugin_MC93_Migz1FFMPEG_CPU"},{"_id":"plugin4","id":"Tdarr_Plugin_MC93_Migz1FFMPEG","checked":false,"source":"Community","priority":5,"InputsDB":{},"Stage":"Pre-processing","Name":"Migz-Transcode Using Nvidia GPU & FFMPEG","Type":"Video","Operation":"Transcode","Description":"Files not in H265 will be transcoded into H265 using Nvidia GPU with ffmpeg.\n                  Settings are dependant on file bitrate\n                  Working by the logic that H265 can support the same ammount of data at half the bitrate of H264.\n                  NVDEC & NVENC compatable GPU required.\n                  This plugin will skip any files that are in the VP9 codec.","Version":"3.1","Tags":"pre-processing,ffmpeg,video only,nvenc h265,configurable","Inputs":[{"name":"container","type":"string","defaultValue":"mkv","inputUI":{"type":"text"},"tooltip":"Specify output container of file. Use 'original' wihout quotes to keep original container.\n                \\n Ensure that all stream types you may have are supported by your chosen container.\n                \\n mkv is recommended.\n                    \\nExample:\\n\n                    mkv\n\n                    \\nExample:\\n\n                    mp4\n                    \n                    \\nExample:\\n\n                    original"},{"name":"bitrate_cutoff","type":"string","defaultValue":"","inputUI":{"type":"text"},"tooltip":"Specify bitrate cutoff, files with a current bitrate lower then this will not be transcoded.\n               \\n Rate is in kbps.\n               \\n Leave empty to disable.\n                    \\nExample:\\n\n                    6000\n\n                    \\nExample:\\n\n                    4000"},{"name":"enable_10bit","type":"boolean","defaultValue":false,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Specify if output file should be 10bit. Default is false.\n                    \\nExample:\\n\n                    true\n\n                    \\nExample:\\n\n                    false"},{"name":"enable_bframes","type":"boolean","defaultValue":false,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Specify if b frames should be used.\n                 \\n Using B frames should decrease file sizes but are only supported on newer GPUs.\n                 \\n Default is false.\n                    \\nExample:\\n\n                    true\n\n                    \\nExample:\\n\n                    false"},{"name":"force_conform","type":"boolean","defaultValue":false,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Make the file conform to output containers requirements.\n                \\n Drop hdmv_pgs_subtitle/eia_608/subrip/timed_id3 for MP4.\n                \\n Drop data streams/mov_text/eia_608/timed_id3 for MKV.\n                \\n Default is false.\n                    \\nExample:\\n\n                    true\n\n                    \\nExample:\\n\n                    false"}],"source_id":"Community::Tdarr_Plugin_MC93_Migz1FFMPEG"},{"_id":"plugin5","id":"Tdarr_Plugin_a9he_New_file_size_check","checked":true,"source":"Community","priority":6,"InputsDB":{},"Stage":"Pre-processing","Name":"New file size check","Type":"Video","Operation":"Transcode","Description":"Give an error if new file is not within the specified upper and lower bound limits \n\n","Version":"1.00","Tags":"","Inputs":[{"name":"upperBound","type":"number","defaultValue":110,"inputUI":{"type":"text"},"tooltip":"Enter the upper bound % size for the new file. For example, if '110' is entered, \n        then if the new file size is 11% larger than the original, an error will be given."},{"name":"lowerBound","type":"number","defaultValue":40,"inputUI":{"type":"text"},"tooltip":"Enter the lower bound % size for the new file. For example, if '90' is entered, \n        then if the new file size is less than 90% of the original, an error will be given."}],"source_id":"Community::Tdarr_Plugin_a9he_New_file_size_check"}],"pluginCommunity":true,"handbrake":true,"ffmpeg":false,"handbrakescan":true,"ffmpegscan":false,"preset":"-Z \"Very Fast 1080p30\"","decisionMaker":{"settingsPlugin":true,"settingsVideo":false,"videoExcludeSwitch":true,"video_codec_names_exclude":[{"codec":"hevc","checked":false},{"codec":"h264","checked":true}],"video_size_range_include":{"min":0,"max":100000},"video_height_range_include":{"min":0,"max":3000},"video_width_range_include":{"min":0,"max":4000},"settingsAudio":false,"audioExcludeSwitch":true,"audio_codec_names_exclude":[{"codec":"mp3","checked":true},{"codec":"aac","checked":false}],"audio_size_range_include":{"min":0,"max":10}},"schedule":[{"_id":"Sun:00-01","checked":true},{"_id":"Sun:01-02","checked":true},{"_id":"Sun:02-03","checked":true},{"_id":"Sun:03-04","checked":true},{"_id":"Sun:04-05","checked":true},{"_id":"Sun:05-06","checked":true},{"_id":"Sun:06-07","checked":true},{"_id":"Sun:07-08","checked":true},{"_id":"Sun:08-09","checked":true},{"_id":"Sun:09-10","checked":true},{"_id":"Sun:10-11","checked":true},{"_id":"Sun:11-12","checked":true},{"_id":"Sun:12-13","checked":true},{"_id":"Sun:13-14","checked":true},{"_id":"Sun:14-15","checked":true},{"_id":"Sun:15-16","checked":true},{"_id":"Sun:16-17","checked":true},{"_id":"Sun:17-18","checked":true},{"_id":"Sun:18-19","checked":true},{"_id":"Sun:19-20","checked":true},{"_id":"Sun:20-21","checked":true},{"_id":"Sun:21-22","checked":true},{"_id":"Sun:22-23","checked":true},{"_id":"Sun:23-00","checked":true},{"_id":"Mon:00-01","checked":true},{"_id":"Mon:01-02","checked":true},{"_id":"Mon:02-03","checked":true},{"_id":"Mon:03-04","checked":true},{"_id":"Mon:04-05","checked":true},{"_id":"Mon:05-06","checked":true},{"_id":"Mon:06-07","checked":true},{"_id":"Mon:07-08","checked":true},{"_id":"Mon:08-09","checked":true},{"_id":"Mon:09-10","checked":true},{"_id":"Mon:10-11","checked":true},{"_id":"Mon:11-12","checked":true},{"_id":"Mon:12-13","checked":true},{"_id":"Mon:13-14","checked":true},{"_id":"Mon:14-15","checked":true},{"_id":"Mon:15-16","checked":true},{"_id":"Mon:16-17","checked":true},{"_id":"Mon:17-18","checked":true},{"_id":"Mon:18-19","checked":true},{"_id":"Mon:19-20","checked":true},{"_id":"Mon:20-21","checked":true},{"_id":"Mon:21-22","checked":true},{"_id":"Mon:22-23","checked":true},{"_id":"Mon:23-00","checked":true},{"_id":"Tue:00-01","checked":true},{"_id":"Tue:01-02","checked":true},{"_id":"Tue:02-03","checked":true},{"_id":"Tue:03-04","checked":true},{"_id":"Tue:04-05","checked":true},{"_id":"Tue:05-06","checked":true},{"_id":"Tue:06-07","checked":true},{"_id":"Tue:07-08","checked":true},{"_id":"Tue:08-09","checked":true},{"_id":"Tue:09-10","checked":true},{"_id":"Tue:10-11","checked":true},{"_id":"Tue:11-12","checked":true},{"_id":"Tue:12-13","checked":true},{"_id":"Tue:13-14","checked":true},{"_id":"Tue:14-15","checked":true},{"_id":"Tue:15-16","checked":true},{"_id":"Tue:16-17","checked":true},{"_id":"Tue:17-18","checked":true},{"_id":"Tue:18-19","checked":true},{"_id":"Tue:19-20","checked":true},{"_id":"Tue:20-21","checked":true},{"_id":"Tue:21-22","checked":true},{"_id":"Tue:22-23","checked":true},{"_id":"Tue:23-00","checked":true},{"_id":"Wed:00-01","checked":true},{"_id":"Wed:01-02","checked":true},{"_id":"Wed:02-03","checked":true},{"_id":"Wed:03-04","checked":true},{"_id":"Wed:04-05","checked":true},{"_id":"Wed:05-06","checked":true},{"_id":"Wed:06-07","checked":true},{"_id":"Wed:07-08","checked":true},{"_id":"Wed:08-09","checked":true},{"_id":"Wed:09-10","checked":true},{"_id":"Wed:10-11","checked":true},{"_id":"Wed:11-12","checked":true},{"_id":"Wed:12-13","checked":true},{"_id":"Wed:13-14","checked":true},{"_id":"Wed:14-15","checked":true},{"_id":"Wed:15-16","checked":true},{"_id":"Wed:16-17","checked":true},{"_id":"Wed:17-18","checked":true},{"_id":"Wed:18-19","checked":true},{"_id":"Wed:19-20","checked":true},{"_id":"Wed:20-21","checked":true},{"_id":"Wed:21-22","checked":true},{"_id":"Wed:22-23","checked":true},{"_id":"Wed:23-00","checked":true},{"_id":"Thur:00-01","checked":true},{"_id":"Thur:01-02","checked":true},{"_id":"Thur:02-03","checked":true},{"_id":"Thur:03-04","checked":true},{"_id":"Thur:04-05","checked":true},{"_id":"Thur:05-06","checked":true},{"_id":"Thur:06-07","checked":true},{"_id":"Thur:07-08","checked":true},{"_id":"Thur:08-09","checked":true},{"_id":"Thur:09-10","checked":true},{"_id":"Thur:10-11","checked":true},{"_id":"Thur:11-12","checked":true},{"_id":"Thur:12-13","checked":true},{"_id":"Thur:13-14","checked":true},{"_id":"Thur:14-15","checked":true},{"_id":"Thur:15-16","checked":true},{"_id":"Thur:16-17","checked":true},{"_id":"Thur:17-18","checked":true},{"_id":"Thur:18-19","checked":true},{"_id":"Thur:19-20","checked":true},{"_id":"Thur:20-21","checked":true},{"_id":"Thur:21-22","checked":true},{"_id":"Thur:22-23","checked":true},{"_id":"Thur:23-00","checked":true},{"_id":"Fri:00-01","checked":true},{"_id":"Fri:01-02","checked":true},{"_id":"Fri:02-03","checked":true},{"_id":"Fri:03-04","checked":true},{"_id":"Fri:04-05","checked":true},{"_id":"Fri:05-06","checked":true},{"_id":"Fri:06-07","checked":true},{"_id":"Fri:07-08","checked":true},{"_id":"Fri:08-09","checked":true},{"_id":"Fri:09-10","checked":true},{"_id":"Fri:10-11","checked":true},{"_id":"Fri:11-12","checked":true},{"_id":"Fri:12-13","checked":true},{"_id":"Fri:13-14","checked":true},{"_id":"Fri:14-15","checked":true},{"_id":"Fri:15-16","checked":true},{"_id":"Fri:16-17","checked":true},{"_id":"Fri:17-18","checked":true},{"_id":"Fri:18-19","checked":true},{"_id":"Fri:19-20","checked":true},{"_id":"Fri:20-21","checked":true},{"_id":"Fri:21-22","checked":true},{"_id":"Fri:22-23","checked":true},{"_id":"Fri:23-00","checked":true},{"_id":"Sat:00-01","checked":true},{"_id":"Sat:01-02","checked":true},{"_id":"Sat:02-03","checked":true},{"_id":"Sat:03-04","checked":true},{"_id":"Sat:04-05","checked":true},{"_id":"Sat:05-06","checked":true},{"_id":"Sat:06-07","checked":true},{"_id":"Sat:07-08","checked":true},{"_id":"Sat:08-09","checked":true},{"_id":"Sat:09-10","checked":true},{"_id":"Sat:10-11","checked":true},{"_id":"Sat:11-12","checked":true},{"_id":"Sat:12-13","checked":true},{"_id":"Sat:13-14","checked":true},{"_id":"Sat:14-15","checked":true},{"_id":"Sat:15-16","checked":true},{"_id":"Sat:16-17","checked":true},{"_id":"Sat:17-18","checked":true},{"_id":"Sat:18-19","checked":true},{"_id":"Sat:19-20","checked":true},{"_id":"Sat:20-21","checked":true},{"_id":"Sat:21-22","checked":true},{"_id":"Sat:22-23","checked":true},{"_id":"Sat:23-00","checked":true}],"totalHealthCheckCount":15,"totalTranscodeCount":0,"sizeDiff":0,"holdNewFiles":false,"holdFor":3600,"pluginStackOverview":true,"filterResolutionsSkip":"","filterCodecsSkip":"","processPluginsSequentially":true}}
+2023-07-05T20:28:51.114Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Scanning original library file
+2023-07-05T20:28:51.114Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:{
+2023-07-05T20:28:51.114Z   "exifToolScan": true,
+2023-07-05T20:28:51.114Z   "mediaInfoScan": false,
+2023-07-05T20:28:51.114Z   "closedCaptionScan": false
+2023-07-05T20:28:51.114Z }
+2023-07-05T20:28:51.121Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Requesting Tdarr Server to scan file
+2023-07-05T20:28:55.124Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Scan complete
+2023-07-05T20:28:55.125Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Original file scanned
+2023-07-05T20:28:55.125Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Source file to work on determined:/media/tvshows/Hunter x Hunter (2011)/Season 2/Hunter x Hunter (2011) - S02E21 - No x Good x NGL Bluray-720p.mkv
+2023-07-05T20:28:55.125Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:[Step W02] [C1] Running pre-process file
+2023-07-05T20:28:55.126Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Checking files can be accessed
+2023-07-05T20:28:55.127Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Relevant paths can be accessed
+2023-07-05T20:28:55.127Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Source file: /media/tvshows/Hunter x Hunter (2011)/Season 2/Hunter x Hunter (2011) - S02E21 - No x Good x NGL Bluray-720p.mkv
+2023-07-05T20:28:55.127Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:[Step W03] [C1] Analysing file - running plugins
+2023-07-05T20:28:55.127Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Handbrake healthcheck task, no need to scan for extra file details
+2023-07-05T20:28:55.127Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Updating Node relay: Processing
+2023-07-05T20:28:55.138Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:[1/2] Checking file frame count
+2023-07-05T20:28:55.138Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:[2/2] Frame count 0
+2023-07-05T20:28:55.138Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Determining healthcheck command
+2023-07-05T20:28:55.138Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:[Step W04] [C1] Preparing command
+2023-07-05T20:28:55.138Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Cache file stem: /temp
+2023-07-05T20:28:55.138Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Cache file path: /temp/Hunter x Hunter (2011) - S02E21 - No x Good x NGL Bluray-720p-TdarrCacheFile-Huia24twa.mp4
+2023-07-05T20:28:55.139Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Create transcode args
+2023-07-05T20:28:55.140Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Args:  -i "/media/tvshows/Hunter x Hunter (2011)/Season 2/Hunter x Hunter (2011) - S02E21 - No x Good x NGL Bluray-720p.mkv" -o "/temp/Hunter x Hunter (2011) - S02E21 - No x Good x NGL Bluray-720p-TdarrCacheFile-Huia24twa.mp4" --scan
+2023-07-05T20:28:55.140Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Getting source file size
+2023-07-05T20:28:55.144Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Source file size: 0.4225956695154309
+2023-07-05T20:28:55.156Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Performing safety check on worker config to see if old transcode args/container match new ones
+2023-07-05T20:28:55.157Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Safety check complete, all good
+2023-07-05T20:28:55.163Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:[Step W05] [C1] Launching subworker
+2023-07-05T20:28:55.163Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Preparing to launch subworker
+2023-07-05T20:28:55.165Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Subworker launched
+2023-07-05T20:28:55.165Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:[1/3] Sending command to subworker
+2023-07-05T20:28:55.166Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:[2/3] HandBrakeCLI -i "/media/tvshows/Hunter x Hunter (2011)/Season 2/Hunter x Hunter (2011) - S02E21 - No x Good x NGL Bluray-720p.mkv" -o "/temp/Hunter x Hunter (2011) - S02E21 - No x Good x NGL Bluray-720p-TdarrCacheFile-Huia24twa.mp4" --scan
+2023-07-05T20:28:55.166Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:[3/3] Command sent
+2023-07-05T20:28:55.166Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:To see live CLI output, enable 'Log full FFmpeg/HandBrake output' in the staging section on the Tdarr tab before the job starts. Note this could increase the job report size substantially.
+2023-07-05T20:28:55.166Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Subworker:Online
+2023-07-05T20:28:55.166Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Subworker:Receiving transcode settings
+2023-07-05T20:28:55.166Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Subworker:Running CLI
+2023-07-05T20:28:58.170Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Subworker:a.Thread closed, code: 0
+2023-07-05T20:28:58.176Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Subworker exit approved, killing subworker
+2023-07-05T20:28:58.178Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Subworker killed
+2023-07-05T20:28:58.182Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:b.Thread closed, code: 0
+2023-07-05T20:28:58.182Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:CLI code: 0
+2023-07-05T20:28:58.182Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Last 200 lines of CLI log:
+2023-07-05T20:28:58.183Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z     Chapter #0:5: 
+2023-07-05T20:28:58.183Z start 1400.072000, 
+2023-07-05T20:28:58.183Z end 1415.046000
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       Metadata:
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z         title           : 
+2023-07-05T20:28:58.183Z Anticipazioni
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:0
+2023-07-05T20:28:58.183Z (jpn)
+2023-07-05T20:28:58.183Z : Video: h264 (High 10), yuv420p10le(progressive), 1280x720
+2023-07-05T20:28:58.183Z , SAR 1:1 DAR 16:9, 23.98 fps, 23.98 tbr, 
+2023-07-05T20:28:58.183Z 1k tbn (default)
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       title           : Hunter x Hunter 079: Non x Bene, x NGL
+2023-07-05T20:28:58.183Z       BPS-eng         : 2044505
+2023-07-05T20:28:58.183Z       DURATION-eng    : 00:23:35.088000000
+2023-07-05T20:28:58.183Z       NUMBER_OF_FRAMES-eng: 33928
+2023-07-05T20:28:58.183Z       NUMBER_OF_BYTES-eng: 361644327
+2023-07-05T20:28:58.183Z       _STATISTICS_WRITING_APP-eng: mkvmerge v34.0.0 ('Sight and Seen') 64-bit
+2023-07-05T20:28:58.183Z       _STATISTICS_WRITING_DATE_UTC-eng: 2021-01-02 10:43:17
+2023-07-05T20:28:58.183Z       _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+2023-07-05T20:28:58.183Z   Stream #0:1(jpn): Audio: opus, 48000 Hz, stereo, fltp (default)
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       ENCODER         : Lavc58.52.102 libopus
+2023-07-05T20:28:58.183Z       BPS-eng         : 124590
+2023-07-05T20:28:58.183Z       DURATION-eng    : 00:23:36.418000000
+2023-07-05T20:28:58.183Z       NUMBER_OF_FRAMES-eng: 70821
+2023-07-05T20:28:58.183Z       NUMBER_OF_BYTES-eng: 22059073
+2023-07-05T20:28:58.183Z       _STATISTICS_WRITING_APP-eng: mkvmerge v34.0.0 ('Sight and Seen') 64-bit
+2023-07-05T20:28:58.183Z       _STATISTICS_WRITING_DATE_UTC-eng: 2021-01-02 10:43:17
+2023-07-05T20:28:58.183Z       _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+2023-07-05T20:28:58.183Z   Stream #0:2(ita): Subtitle: ass (default)
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       BPS-eng         : 10672
+2023-07-05T20:28:58.183Z       DURATION-eng    : 00:23:32.620000000
+2023-07-05T20:28:58.183Z       NUMBER_OF_FRAMES-eng: 1850
+2023-07-05T20:28:58.183Z       NUMBER_OF_BYTES-eng: 1884564
+2023-07-05T20:28:58.183Z       _STATISTICS_WRITING_APP-eng: mkvmerge v34.0.0 ('Sight and Seen') 64-bit
+2023-07-05T20:28:58.183Z       _STATISTICS_WRITING_DATE_UTC-eng: 2021-01-02 10:43:17
+2023-07-05T20:28:58.183Z       _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+2023-07-05T20:28:58.183Z   Stream #0:3: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : ariblk.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z   Stream #0:4: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : BLOKLETTERS-VILTSTIFT-FXD.TTF
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z   Stream #0:5: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : Brush Strokes.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z   Stream #0:6: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : calibri.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z   Stream #0:7: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : calibrib.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z   Stream #0:8: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : Calligraphic-810-BT_9088.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z   Stream #0:9: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : Cardo-Bold.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z   Stream #0:10: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : Cardo-Italic.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z   Stream #0:11: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : Cardo-Regular.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z   Stream #0:12: Attachment: otf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : Chalkaholic DEMO.otf
+2023-07-05T20:28:58.183Z       mimetype        : application/vnd.ms-opentype
+2023-07-05T20:28:58.183Z   Stream #0:13: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : DK CRAYON CRUMBLE_0.TTF
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z   Stream #0:14: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : edo.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z   Stream #0:15: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : EPSON sl.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z   Stream #0:16: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : flibustiere.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z   Stream #0:17: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : FOT Rodin Cattleta Pro B.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:18
+2023-07-05T20:28:58.183Z : Attachment: otf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       filename        : 
+2023-07-05T20:28:58.183Z FOT-HummingStd-E.otf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       mimetype        : 
+2023-07-05T20:28:58.183Z application/vnd.ms-opentype
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:19
+2023-07-05T20:28:58.183Z : Attachment: otf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       filename        : 
+2023-07-05T20:28:58.183Z FOT-HummingStdEn-B.OTF
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       mimetype        : 
+2023-07-05T20:28:58.183Z application/vnd.ms-opentype
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:20
+2023-07-05T20:28:58.183Z : Attachment: ttf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       filename        : 
+2023-07-05T20:28:58.183Z FOT-KokinHige Std EB v999.ttf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       mimetype        : 
+2023-07-05T20:28:58.183Z application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:21: Attachment: otf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : FOT-ManyoKoinStd-B.otf
+2023-07-05T20:28:58.183Z       mimetype        : application/vnd.ms-opentype
+2023-07-05T20:28:58.183Z   Stream #0:22: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : FOT-ManyoKoinStd-B_0.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:23
+2023-07-05T20:28:58.183Z : Attachment: otf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       filename        : 
+2023-07-05T20:28:58.183Z FOT-YurukaStd-UB.otf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       mimetype        : 
+2023-07-05T20:28:58.183Z application/vnd.ms-opentype
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:24
+2023-07-05T20:28:58.183Z : Attachment: ttf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       filename        : 
+2023-07-05T20:28:58.183Z GenBasB.ttf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       mimetype        : 
+2023-07-05T20:28:58.183Z application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:25
+2023-07-05T20:28:58.183Z : Attachment: ttf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       filename        : 
+2023-07-05T20:28:58.183Z GenBasBI.ttf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       mimetype        : 
+2023-07-05T20:28:58.183Z application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:26
+2023-07-05T20:28:58.183Z : Attachment: ttf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       filename        : 
+2023-07-05T20:28:58.183Z GenBasI.ttf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       mimetype        : 
+2023-07-05T20:28:58.183Z application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:27
+2023-07-05T20:28:58.183Z : Attachment: ttf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       filename        : 
+2023-07-05T20:28:58.183Z GenBasR.ttf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       mimetype        : 
+2023-07-05T20:28:58.183Z application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:28
+2023-07-05T20:28:58.183Z : Attachment: ttf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       filename        : 
+2023-07-05T20:28:58.183Z GenBkBasB.ttf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       mimetype        : 
+2023-07-05T20:28:58.183Z application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:29
+2023-07-05T20:28:58.183Z : Attachment: ttf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       filename        : 
+2023-07-05T20:28:58.183Z GenBkBasBI.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:30: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : GenBkBasI.ttf
+2023-07-05T20:28:58.183Z       mimetype        : 
+2023-07-05T20:28:58.183Z application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:31: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : GenBkBasR.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:32: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : HunterxHunterOP.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:33: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : IwaGyoPro-Bd-Kami.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:34
+2023-07-05T20:28:58.183Z : Attachment: otf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       filename        : 
+2023-07-05T20:28:58.183Z IwaMaruGothicPro-M-En.otf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       mimetype        : 
+2023-07-05T20:28:58.183Z application/vnd.ms-opentype
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:35
+2023-07-05T20:28:58.183Z : Attachment: otf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       filename        : 
+2023-07-05T20:28:58.183Z IWAMINPRO-BD-EN.otf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       mimetype        : 
+2023-07-05T20:28:58.183Z application/vnd.ms-opentype
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:36
+2023-07-05T20:28:58.183Z : Attachment: ttf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       filename        : 
+2023-07-05T20:28:58.183Z IwaMinPro-Bd-NMG.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z   Stream #0:37: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : IwaMinPro-Lt-Madoka.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z   Stream #0:38: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : IwaMinPro-Md-Kami_0.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z   Stream #0:39: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : IwaOMinPro-Bd-Fate.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:40: Attachment: otf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : IwaOMinPro-Hv-En.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/vnd.ms-opentype
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:41: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : IwaOMinPro-Hv-Fate_0.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:42: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : IwaRGoPro-Lt-Kami.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:43: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : IWARGOPRO-MD-KAMI.TTF
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:44: Attachment: otf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : Iwata Souchou Pro-Medium.otf
+2023-07-05T20:28:58.183Z       mimetype        : application/vnd.ms-opentype
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:45: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : JandaCloserToFree-Regular.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:46: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : KozGoProH-Madoka.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:47: Attachment: ttf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : lato-heavy.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:48: Attachment: otf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : MONTARA-GOTHIC.OTF
+2023-07-05T20:28:58.183Z       mimetype        : 
+2023-07-05T20:28:58.183Z application/vnd.ms-opentype
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:49: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : Polo Brush.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:50: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : SBT-TsukuMin Pr5 E.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:51: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : SHREDDED.TTF
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:52: Attachment: ttf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : TarifArabic-Bold.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:53: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       filename        : TarifArabic-Book.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:54
+2023-07-05T20:28:58.183Z : Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : TarifArabic-Extrabold.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:55: Attachment: ttf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : TarifArabic-Extralight.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:56: Attachment: ttf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : TarifArabic-Light.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:57: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : TarifArabic-Medium.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:58: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : TarifArabic-Regular.ttf
+2023-07-05T20:28:58.183Z       mimetype        : 
+2023-07-05T20:28:58.183Z application/x-truetype-font
+2023-07-05T20:28:58.183Z   Stream #0:59: Attachment: ttf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : Yu-Gi-Oh! Matrix Book.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:60: Attachment: ttf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : Yu-Gi-Oh! Matrix Regular Small Caps 2.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:61: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : 28 Days Later.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:62: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : 
+2023-07-05T20:28:58.183Z Ad HocRegular.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:63: Attachment: ttf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : Adobe_Garamond_LT_Bold.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:64: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : AlegreyaSansSC-Black.ttf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:65: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : AlegreyaSansSC-BlackItalic.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:66: Attachment: otf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : Amaranth-Bold.otf
+2023-07-05T20:28:58.183Z       mimetype        : application/vnd.ms-opentype
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:67: Attachment: otf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : Amaranth-BoldItalic.otf
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z       mimetype        : application/vnd.ms-opentype
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:68: Attachment: otf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : Amaranth-Italic.otf
+2023-07-05T20:28:58.183Z       mimetype        : application/vnd.ms-opentype
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:69: Attachment: otf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : Amaranth-Regular.otf
+2023-07-05T20:28:58.183Z       mimetype        : application/vnd.ms-opentype
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z   Stream #0:70: Attachment: ttf
+2023-07-05T20:28:58.183Z     Metadata:
+2023-07-05T20:28:58.183Z       filename        : 
+2023-07-05T20:28:58.183Z ARCENA.ttf
+2023-07-05T20:28:58.183Z       mimetype        : application/x-truetype-font
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z [20:28:53] scan: decoding previews for title 1
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z Scanning title 1 of 1, preview 1, 0.00 %
+2023-07-05T20:28:58.183Z [20:28:54] scan: audio 0x1: opus, rate=48000Hz, bitrate=1 日本語 (Opus) (2.0 ch)
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z Scanning title 1 of 1, preview 1, 10.00 %
+2023-07-05T20:28:58.183Z Scanning title 1 of 1, preview 1, 10.00 %
+2023-07-05T20:28:58.183Z Scanning title 1 of 1, preview 5, 50.00 %
+2023-07-05T20:28:58.183Z Scanning title 1 of 1, preview 8, 80.00 %
+2023-07-05T20:28:58.183Z [20:28:55] scan: 10 previews, 1280x720, 23.976 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1, color profile: 1-1-1, chroma location: left
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z [20:28:55] libhb: scan thread found 1 valid title(s)
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z + title 1:
+2023-07-05T20:28:58.183Z   + stream: /media/tvshows/Hunter x Hunter (2011)/Season 2/Hunter x Hunter (2011) - S02E21 - No x Good x NGL Bluray-720p.mkv
+2023-07-05T20:28:58.183Z   + duration: 00:23:36
+2023-07-05T20:28:58.183Z   + size: 1280x720, pixel aspect: 1/1, display aspect: 1.78, 23.976 fps
+2023-07-05T20:28:58.183Z   + autocrop: 0/0/0/0
+2023-07-05T20:28:58.183Z   + chapters:
+2023-07-05T20:28:58.183Z     + 1: duration 00:00:27
+2023-07-05T20:28:58.183Z     + 2: duration 00:01:20
+2023-07-05T20:28:58.183Z     + 3: duration 00:10:24
+2023-07-05T20:28:58.183Z     + 4: duration 00:09:49
+2023-07-05T20:28:58.183Z     + 5: duration 00:01:20
+2023-07-05T20:28:58.183Z     + 6: duration 00:00:16
+2023-07-05T20:28:58.183Z   + audio tracks:
+2023-07-05T20:28:58.183Z     + 1, 日本語 (Opus) (2.0 ch) (iso639-2: jpn)
+2023-07-05T20:28:58.183Z   + subtitle tracks:
+2023-07-05T20:28:58.183Z     + 1, italiano [SSA]
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z HandBrake has exited.
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z libdvdread: Encrypted DVD support unavailable.
+2023-07-05T20:28:58.183Z libdvdread: Can't open file VIDEO_TS.IFO.
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.183Z 
+2023-07-05T20:28:58.186Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:[Step W06] [C1] Worker [-success-]
+2023-07-05T20:28:58.186Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Worker success during processing
+2023-07-05T20:28:58.186Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Updating healthcheck stats
+2023-07-05T20:28:58.187Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:[Step W10] Worker processing end
+2023-07-05T20:28:58.187Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Subworker exited null
+2023-07-05T20:28:58.187Z hGzOR0r0DW:Node[MyInternalNode]:Worker[key-kitten]:Successfully updated server with verdict: healthcheckSuccess

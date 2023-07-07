@@ -1,0 +1,61 @@
+/videos/221b1d3f-c8d1-ffd4-4f64-8112ec64f31b/hls1/main/0.ts
+
+{"Protocol":0,"Id":"221b1d3fc8d1ffd44f648112ec64f31b","Path":"/data/tvshows/The IT Crowd/Specials/The IT Crowd - S00E04 - The Internet Is Coming WEBDL-720p Proper.mkv","EncoderPath":null,"EncoderProtocol":null,"Type":0,"Container":"mkv,webm","Size":486183264,"Name":"The IT Crowd - S00E04 - The Internet Is Coming WEBDL-720p Proper","IsRemote":false,"ETag":"78f17609d5f10f7cbef9df0b6133725b","RunTimeTicks":28810289152,"ReadAtNativeFramerate":false,"IgnoreDts":false,"IgnoreIndex":false,"GenPtsInput":false,"SupportsTranscoding":true,"SupportsDirectStream":true,"SupportsDirectPlay":true,"IsInfiniteStream":false,"RequiresOpening":false,"OpenToken":null,"RequiresClosing":false,"LiveStreamId":null,"BufferMs":null,"RequiresLooping":false,"SupportsProbing":true,"VideoType":0,"IsoType":null,"Video3DFormat":null,"MediaStreams":[{"Codec":"h264","CodecTag":null,"Language":null,"ColorRange":null,"ColorSpace":"bt709","ColorTransfer":"bt709","ColorPrimaries":"bt709","DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/1000","CodecTimeBase":null,"Title":null,"VideoRange":"SDR","VideoRangeType":"SDR","VideoDoViTitle":null,"LocalizedUndefined":null,"LocalizedDefault":null,"LocalizedForced":null,"LocalizedExternal":null,"DisplayTitle":"720p H264 SDR","NalLengthSize":"4","IsInterlaced":false,"IsAVC":true,"ChannelLayout":null,"BitRate":1350026,"BitDepth":8,"RefFrames":1,"PacketLength":null,"Channels":null,"SampleRate":null,"IsDefault":true,"IsForced":false,"Height":720,"Width":1280,"AverageFrameRate":25,"RealFrameRate":25,"Profile":"Main","Type":1,"AspectRatio":"16:9","Index":0,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Path":null,"PixelFormat":"yuv420p","Level":52,"IsAnamorphic":null},{"Codec":"aac","CodecTag":null,"Language":"eng","ColorRange":null,"ColorSpace":null,"ColorTransfer":null,"ColorPrimaries":null,"DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/1000","CodecTimeBase":null,"Title":"English","VideoRange":null,"VideoRangeType":null,"VideoDoViTitle":null,"LocalizedUndefined":null,"LocalizedDefault":null,"LocalizedForced":null,"LocalizedExternal":null,"DisplayTitle":"English - AAC - Stereo - Default","NalLengthSize":null,"IsInterlaced":false,"IsAVC":null,"ChannelLayout":"stereo","BitRate":192000,"BitDepth":null,"RefFrames":null,"PacketLength":null,"Channels":2,"SampleRate":48000,"IsDefault":true,"IsForced":false,"Height":null,"Width":null,"AverageFrameRate":null,"RealFrameRate":null,"Profile":"LC","Type":0,"AspectRatio":null,"Index":1,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Path":null,"PixelFormat":null,"Level":0,"IsAnamorphic":null},{"Codec":"ass","CodecTag":null,"Language":"eng","ColorRange":null,"ColorSpace":null,"ColorTransfer":null,"ColorPrimaries":null,"DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/1000","CodecTimeBase":null,"Title":"English","VideoRange":null,"VideoRangeType":null,"VideoDoViTitle":null,"LocalizedUndefined":"Undefined","LocalizedDefault":"Default","LocalizedForced":"Forced","LocalizedExternal":"External","DisplayTitle":"English - Default - Forced - ASS","NalLengthSize":null,"IsInterlaced":false,"IsAVC":null,"ChannelLayout":null,"BitRate":null,"BitDepth":null,"RefFrames":null,"PacketLength":null,"Channels":null,"SampleRate":null,"IsDefault":true,"IsForced":true,"Height":null,"Width":null,"AverageFrameRate":null,"RealFrameRate":null,"Profile":null,"Type":2,"AspectRatio":null,"Index":2,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":true,"SupportsExternalStream":true,"Path":null,"PixelFormat":null,"Level":0,"IsAnamorphic":null}],"MediaAttachments":[],"Formats":[],"Bitrate":1542026,"Timestamp":null,"RequiredHttpHeaders":{},"TranscodingUrl":null,"TranscodingSubProtocol":null,"TranscodingContainer":null,"AnalyzeDurationMs":null,"DefaultAudioStreamIndex":null,"DefaultSubtitleStreamIndex":null}
+
+/usr/lib/jellyfin-ffmpeg/ffmpeg -analyzeduration 200M -fflags +genpts -f matroska,webm  -i file:"/data/tvshows/The IT Crowd/Specials/The IT Crowd - S00E04 - The Internet Is Coming WEBDL-720p Proper.mkv" -map_metadata -1 -map_chapters -1 -threads 0 -map 0:0 -map 0:1 -map -0:s -codec:v:0 copy -bsf:v h264_mp4toannexb -start_at_zero -codec:a:0 copy -copyts -avoid_negative_ts disabled -max_muxing_queue_size 2048 -f hls -max_delay 5000000 -hls_time 6 -hls_segment_type mpegts -start_number 0 -hls_segment_filename "/data/transcodes/eff087842bb7c73c24faa8ab6edf05ad%d.ts" -hls_playlist_type vod -hls_list_size 0 -y "/data/transcodes/eff087842bb7c73c24faa8ab6edf05ad.m3u8"
+
+
+ffmpeg version 5.1.3-Jellyfin Copyright (c) 2000-2022 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.3.0-1ubuntu1~22.04.1)
+  configuration: --prefix=/usr/lib/jellyfin-ffmpeg --target-os=linux --extra-libs=-lfftw3f --extra-version=Jellyfin --disable-doc --disable-ffplay --disable-ptx-compression --disable-static --disable-libxcb --disable-sdl2 --disable-xlib --enable-lto --enable-gpl --enable-version3 --enable-shared --enable-gmp --enable-gnutls --enable-chromaprint --enable-libdrm --enable-libass --enable-libfreetype --enable-libfribidi --enable-libfontconfig --enable-libbluray --enable-libmp3lame --enable-libopus --enable-libtheora --enable-libvorbis --enable-libopenmpt --enable-libdav1d --enable-libwebp --enable-libvpx --enable-libx264 --enable-libx265 --enable-libzvbi --enable-libzimg --enable-libfdk-aac --arch=amd64 --enable-libsvtav1 --enable-libshaderc --enable-libplacebo --enable-vulkan --enable-opencl --enable-vaapi --enable-amf --enable-libmfx --enable-ffnvcodec --enable-cuda --enable-cuda-llvm --enable-cuvid --enable-nvdec --enable-nvenc
+  libavutil      57. 28.100 / 57. 28.100
+  libavcodec     59. 37.100 / 59. 37.100
+  libavformat    59. 27.100 / 59. 27.100
+  libavdevice    59.  7.100 / 59.  7.100
+  libavfilter     8. 44.100 /  8. 44.100
+  libswscale      6.  7.100 /  6.  7.100
+  libswresample   4.  7.100 /  4.  7.100
+  libpostproc    56.  6.100 / 56.  6.100
+Input #0, matroska,webm, from 'file:/data/tvshows/The IT Crowd/Specials/The IT Crowd - S00E04 - The Internet Is Coming WEBDL-720p Proper.mkv':
+  Metadata:
+    ENCODER         : Lavf60.3.100
+  Duration: 00:48:01.03, start: -0.021000, bitrate: 1350 kb/s
+  Stream #0:0: Video: h264 (Main), yuv420p(tv, bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], 25 fps, 25 tbr, 1k tbn (default)
+    Metadata:
+      DURATION        : 00:48:01.023000000
+  Stream #0:1(eng): Audio: aac (LC), 48000 Hz, stereo, fltp (default)
+    Metadata:
+      title           : English
+      ENCODER         : Lavc60.3.100 aac
+      DURATION        : 00:48:01.029000000
+  Stream #0:2(eng): Subtitle: ass (default) (forced)
+    Metadata:
+      title           : English
+      DURATION        : 00:47:56.023000000
+Output #0, hls, to '/data/transcodes/eff087842bb7c73c24faa8ab6edf05ad.m3u8':
+  Metadata:
+    encoder         : Lavf59.27.100
+  Stream #0:0: Video: h264 (Main), yuv420p(tv, bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 25 fps, 25 tbr, 90k tbn (default)
+  Stream #0:1: Audio: aac (LC), 48000 Hz, stereo, fltp (default)
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #0:1 -> #0:1 (copy)
+Press [q] to stop, [?] for help
+frame=    1 fps=0.0 q=-1.0 size=N/A time=00:00:00.00 bitrate=N/A speed=N/A    
+[hls @ 0x55ee082bb8c0] Opening '/data/transcodes/eff087842bb7c73c24faa8ab6edf05ad0.ts' for writing
+[hls @ 0x55ee082bb8c0] Opening '/data/transcodes/eff087842bb7c73c24faa8ab6edf05ad1.ts' for writing
+frame=  313 fps=263 q=-1.0 size=N/A time=00:00:00.05 bitrate=N/A speed=0.0472x    
+[hls @ 0x55ee082bb8c0] Opening '/data/transcodes/eff087842bb7c73c24faa8ab6edf05ad2.ts' for writing
+frame=  489 fps=183 q=-1.0 size=N/A time=00:00:07.09 bitrate=N/A speed=2.66x    
+[hls @ 0x55ee082bb8c0] Opening '/data/transcodes/eff087842bb7c73c24faa8ab6edf05ad3.ts' for writing
+frame=  610 fps=164 q=-1.0 size=N/A time=00:00:11.93 bitrate=N/A speed=3.21x    
+[hls @ 0x55ee082bb8c0] Opening '/data/transcodes/eff087842bb7c73c24faa8ab6edf05ad4.ts' for writing
+frame=  757 fps=159 q=-1.0 size=N/A time=00:00:17.80 bitrate=N/A speed=3.74x    
+[hls @ 0x55ee082bb8c0] Opening '/data/transcodes/eff087842bb7c73c24faa8ab6edf05ad5.ts' for writing
+
+
+[q] command received. Exiting.
+
+[hls @ 0x55ee082bb8c0] Opening '/data/transcodes/eff087842bb7c73c24faa8ab6edf05ad6.ts' for writing
+frame=  968 fps=117 q=-1.0 Lsize=N/A time=00:00:26.23 bitrate=N/A speed=3.17x    
+video:5654kB audio:614kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown

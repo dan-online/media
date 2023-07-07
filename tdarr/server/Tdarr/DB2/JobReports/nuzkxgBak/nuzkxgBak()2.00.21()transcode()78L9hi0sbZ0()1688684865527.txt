@@ -1,0 +1,653 @@
+2023-07-07T00:07:48.422Z 78L9hi0sbZ0:[Step S01] [2.00.21] Server relay initialising job
+2023-07-07T00:07:48.423Z 78L9hi0sbZ0:Server: linux_x64_docker_true
+2023-07-07T00:07:48.423Z 78L9hi0sbZ0:Server relay adding file to staged files
+2023-07-07T00:07:48.424Z 78L9hi0sbZ0:Server relay sending job to Node relay: MyInternalNode
+2023-07-07T00:07:48.424Z 78L9hi0sbZ0:Node[MyInternalNode]:[Step N01] [2.00.21] Node relay received job
+2023-07-07T00:07:48.424Z 78L9hi0sbZ0:Node[MyInternalNode]:{"nodeName":"MyInternalNode","serverIP":"0.0.0.0","serverPort":"8266","handbrakePath":"","ffmpegPath":"","mkvpropeditPath":"","pathTranslators":[{"server":"","node":""}],"logLevel":"INFO","priority":-1,"platform_arch_isdocker":"linux_x64_docker_true","processPid":200,"nodeID":"DI7hE6ijr"}
+2023-07-07T00:07:48.425Z 78L9hi0sbZ0:Node[MyInternalNode]:Node relay sending job to worker:yellow-yak
+2023-07-07T00:07:48.427Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[Step W01] Received file, original: /media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv
+2023-07-07T00:07:48.427Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:{"workerType":"transcodecpu"}
+2023-07-07T00:07:48.428Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:{"ffmpegPath":"tdarr-ffmpeg"}
+2023-07-07T00:07:48.428Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:{"handbrakePath":"HandBrakeCLI"}
+2023-07-07T00:07:48.436Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:{"mkvpropeditPath":"mkvpropedit"}
+2023-07-07T00:07:48.449Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:{"gpuSelect":"-"}
+2023-07-07T00:07:48.458Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:{"allowGpuDoCpu":false}
+2023-07-07T00:07:48.460Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:{"thoroughHealthCheckCpuExtraInputArgs":""}
+2023-07-07T00:07:48.461Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:{"thoroughHealthCheckGpuExtraInputArgs":""}
+2023-07-07T00:07:48.463Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:{"thoroughHealthCheckCpuExtraArgs":""}
+2023-07-07T00:07:48.463Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:{"thoroughHealthCheckGpuExtraArgs":""}
+2023-07-07T00:07:48.463Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:{"logFullCliOutput":false}
+2023-07-07T00:07:48.464Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Path translating objects
+2023-07-07T00:07:48.464Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:{"librarySettings":{"_id":"4BaCjCxnf","priority":1,"name":"TV","folder":"/media/tvshows","foldersToIgnore":"","folderWatchScanInterval":30,"scannerThreadCount":2,"cache":"/temp","output":".","folderToFolderConversion":false,"folderToFolderConversionDeleteSource":false,"folderToFolderRecordHistory":true,"copyIfConditionsMet":false,"container":".mkv","containerFilter":"mkv,mp4,mov,m4v,mpg,mpeg,avi,flv,webm,wmv,vob,evo,iso,m2ts,ts","createdAt":1675837380368,"folderWatching":true,"useFsEvents":false,"scheduledScanFindNew":false,"processLibrary":true,"scanOnStart":true,"exifToolScan":true,"mediaInfoScan":true,"closedCaptionScan":false,"scanButtons":true,"scanFound":"Files found:0","navItemSelected":"navSourceFolder","pluginIDs":[{"_id":"plugin1","id":"Tdarr_Plugin_MC93_MigzImageRemoval","checked":true,"source":"Community","priority":0,"InputsDB":{},"Stage":"Pre-processing","Name":"Migz-Remove image formats from file","Type":"Video","Operation":"Transcode","Description":"Identify any unwanted image formats in the file and remove those streams. MJPEG, PNG & GIF \n\n","Version":"1.4","Tags":"pre-processing,ffmpeg,video only","Inputs":[],"source_id":"Community::Tdarr_Plugin_MC93_MigzImageRemoval","Link":"Read error"},{"_id":"plugin2","id":"Tdarr_Plugin_lmg1_Reorder_Streams","checked":true,"source":"Community","priority":1,"InputsDB":{},"Stage":"Pre-processing","Name":"Tdarr_Plugin_lmg1_Reorder_Streams ","Type":"Video","Operation":"Transcode","Description":"[Contains built-in filter] This plugin will move the video stream to the front so Tdarr will recognize the codec correctly.\n\n","Version":"1.00","Tags":"pre-processing,ffmpeg","Inputs":[],"source_id":"Community::Tdarr_Plugin_lmg1_Reorder_Streams","Link":"Read error"},{"_id":"sxfFHmyyT","id":"Tdarr_Plugin_00td_action_standardise_audio_stream_codecs","checked":true,"source":"Community","priority":2,"InputsDB":{},"Stage":"Pre-processing","Name":"Standardise audio stream codecs","Type":"Video","Operation":"Transcode","Description":"\nThis action has a built-in filter. Additional filters can be added.\n\n\n\nAll audio tracks which are not in the specified codec will be transcoded\ninto the specified codec. Bitrate and channel count are kept the same.\n  ","Version":"1.00","Tags":"action","Inputs":[{"name":"audioCodec","type":"string","defaultValue":"aac","inputUI":{"type":"dropdown","options":["aac","ac3","eac3","dca","flac","mp2","libmp3lame","truehd"]},"tooltip":"Enter the desired audio codec"}],"source_id":"Community::Tdarr_Plugin_00td_action_standardise_audio_stream_codecs"},{"_id":"aEVldYMXA","id":"Tdarr_Plugin_075a_Transcode_Customisable","checked":true,"source":"Community","priority":3,"InputsDB":{"codecs_to_exclude":"h264","transcode_arguments":"-Z \"H.264 MKV 2160p60 4K\" -e x264 --all-subtitles --all-audio"},"Stage":"Pre-processing","Name":"Video Transcode Customisable","Type":"Video","Operation":"Transcode","Description":"[Contains built-in filter] Specify codec filter and transcode arguments for HandBrake or FFmpeg  \n\n","Version":"1.00","Tags":"pre-processing,handbrake,ffmpeg,configurable","Inputs":[{"name":"codecs_to_exclude","type":"string","defaultValue":"hevc","inputUI":{"type":"text"},"tooltip":"Input codecs, separated by a comma, that should be excluded when processing.\n\n        \\nFor example, if you're transcoding into hevc (h265), then add a filter to prevent hevc being transcoded so your newly transcoded files won't be infinitely looped/processed. \\n\n\n        \n        \\nCommon video codecs:\n\n        \\nmpeg4\n        \\nhevc\n        \\nh264\n        \\nmpeg2video\n        \\ntheora\n        \\nvp8\n        \\nvp9\n        \n        \n        \\nExample:\\n\n\n        hevc\n\n        \\nYou can also enter multiple codecs:\n\n        \\nExample:\\n\n\n        mp3,aac,dts\n\n        \\nExample:\\n\n\n        h264,vp9\n \n        "},{"name":"cli","type":"string","defaultValue":"handbrake","inputUI":{"type":"text"},"tooltip":"Enter the CLI to use.\n        \n        \\nExample:\\n\n        handbrake\n\n        \\nExample:\\n\n        ffmpeg\n        \n        "},{"name":"transcode_arguments","type":"string","defaultValue":"-Z \"Very Fast 1080p30\" --all-subtitles --all-audio","inputUI":{"type":"text"},"tooltip":"\\nEnter HandBrake or FFmpeg transcode arguments.\n        \n        \\nHandBrake examples:\n\n        \\nExample:\\n\n        -e x264 -q 20 -B\n        \n        \\nExample:\\n\n        -Z \"Very Fast 1080p30\"\n        \n        \\nExample:\\n\n        -Z \"Fast 1080p30\" -e nvenc_h265\n        \n        \\nExample:\\n\n        -Z \"Very Fast 1080p30\" --all-subtitles --all-audio\n        \n        \\nExample:\\n\n        -Z \"Very Fast 480p30\"\n        \n        \\nExample:\\n\n        --preset-import-file \"C:UsersHaveAGitGatDesktop\testpreset.json\" -Z \"My Preset\"\n        \n        \\nYou can learn more about HandBrake presets here:\n\n        \\nhttps://handbrake.fr/docs/en/latest/technical/official-presets.html\n        \n\n        \\nWhen using FFmpeg, you need to separate the input and output parameters with a comma. FFmpeg Examples:\n\n        \\nExample:\\n\n-r 1,-r 24\n\n\\nExample:\\n\n,-sn -c:v copy -c:a copy\n\n\\nExample:\\n\n,-c:v lib265 -crf 23 -ac 6 -c:a aac -preset veryfast\n\n\\nExample:\\n\n,-map 0 -c copy -c:v libx265 -c:a aac\n\n\\nExample:\\n\n-c:v h264_cuvid,-c:v hevc_nvenc -preset slow -c:a copy\n\n\\nPlease see the following for help with creating FFmpeg commands:\n\n\\nhttps://opensource.com/article/17/6/ffmpeg-convert-media-file-formats\n        \n        \n        \n        \n        "},{"name":"output_container","type":"string","defaultValue":".mkv","inputUI":{"type":"text"},"tooltip":"\n        \\nEnter the output container of the new file\n\n        \\nExample:\\n\n        .mp4\n\n        \\nExample:\\n\n        .mp3\n\n        \\nExample:\\n\n        .mkv\n        \n        "}],"source_id":"Community::Tdarr_Plugin_075a_Transcode_Customisable"},{"_id":"plugin5","id":"Tdarr_Plugin_a9he_New_file_size_check","checked":true,"source":"Community","priority":4,"InputsDB":{},"Stage":"Pre-processing","Name":"New file size check","Type":"Video","Operation":"Transcode","Description":"Give an error if new file is not within the specified upper and lower bound limits \n\n","Version":"1.00","Tags":"","Inputs":[{"name":"upperBound","type":"number","defaultValue":110,"inputUI":{"type":"text"},"tooltip":"Enter the upper bound % size for the new file. For example, if '110' is entered, \n        then if the new file size is 11% larger than the original, an error will be given."},{"name":"lowerBound","type":"number","defaultValue":40,"inputUI":{"type":"text"},"tooltip":"Enter the lower bound % size for the new file. For example, if '90' is entered, \n        then if the new file size is less than 90% of the original, an error will be given."}],"source_id":"Community::Tdarr_Plugin_a9he_New_file_size_check","Link":"Read error"},{"_id":"-XIe_rmCK","id":"Tdarr_Plugin_00td_filter_by_file_property","checked":true,"source":"Community","priority":5,"InputsDB":{"propertyValues":"mkv"},"Stage":"Pre-processing","Name":"Filter by file property","Type":"Video","Operation":"Filter","Description":"Filter by a top level file property.\n  For example, container, video_resolution, video_codec_name, fileMedium.\n  Click on a file name on the Tdarr tab or Search tab to see top-level file properties.\n  ","Version":"1.00","Tags":"filter","Inputs":[{"name":"propertyName","type":"string","defaultValue":"container","inputUI":{"type":"text"},"tooltip":"Enter the file property to check"},{"name":"propertyValues","type":"string","defaultValue":"mkv,mp4","inputUI":{"type":"text"},"tooltip":"Enter a comma separated list of values to check for."},{"name":"exactMatch","type":"boolean","defaultValue":true,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Specify true if the property value must be an exact match, false if the property value must contain the value."},{"name":"continueIfPropertyFound","type":"boolean","defaultValue":false,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Specify whether to continue the plugin stack if the property is found."}],"source_id":"Community::Tdarr_Plugin_00td_filter_by_file_property"},{"_id":"RZcj0lsWOB","id":"Tdarr_Plugin_00td_action_remux_container","checked":true,"source":"Community","priority":6,"InputsDB":{}}],"pluginCommunity":true,"handbrake":true,"ffmpeg":false,"handbrakescan":true,"ffmpegscan":false,"preset":"-Z \"Very Fast 1080p30\"","decisionMaker":{"settingsPlugin":true,"settingsVideo":false,"videoExcludeSwitch":true,"video_codec_names_exclude":[{"codec":"hevc","checked":false},{"codec":"h264","checked":true}],"video_size_range_include":{"min":0,"max":100000},"video_height_range_include":{"min":0,"max":3000},"video_width_range_include":{"min":0,"max":4000},"settingsAudio":false,"audioExcludeSwitch":true,"audio_codec_names_exclude":[{"codec":"mp3","checked":true},{"codec":"aac","checked":false}],"audio_size_range_include":{"min":0,"max":10}},"schedule":[{"_id":"Sun:00-01","checked":true},{"_id":"Sun:01-02","checked":true},{"_id":"Sun:02-03","checked":true},{"_id":"Sun:03-04","checked":true},{"_id":"Sun:04-05","checked":true},{"_id":"Sun:05-06","checked":true},{"_id":"Sun:06-07","checked":true},{"_id":"Sun:07-08","checked":true},{"_id":"Sun:08-09","checked":true},{"_id":"Sun:09-10","checked":true},{"_id":"Sun:10-11","checked":true},{"_id":"Sun:11-12","checked":true},{"_id":"Sun:12-13","checked":true},{"_id":"Sun:13-14","checked":true},{"_id":"Sun:14-15","checked":true},{"_id":"Sun:15-16","checked":true},{"_id":"Sun:16-17","checked":true},{"_id":"Sun:17-18","checked":true},{"_id":"Sun:18-19","checked":true},{"_id":"Sun:19-20","checked":true},{"_id":"Sun:20-21","checked":true},{"_id":"Sun:21-22","checked":true},{"_id":"Sun:22-23","checked":true},{"_id":"Sun:23-00","checked":true},{"_id":"Mon:00-01","checked":true},{"_id":"Mon:01-02","checked":true},{"_id":"Mon:02-03","checked":true},{"_id":"Mon:03-04","checked":true},{"_id":"Mon:04-05","checked":true},{"_id":"Mon:05-06","checked":true},{"_id":"Mon:06-07","checked":true},{"_id":"Mon:07-08","checked":true},{"_id":"Mon:08-09","checked":true},{"_id":"Mon:09-10","checked":true},{"_id":"Mon:10-11","checked":true},{"_id":"Mon:11-12","checked":true},{"_id":"Mon:12-13","checked":true},{"_id":"Mon:13-14","checked":true},{"_id":"Mon:14-15","checked":true},{"_id":"Mon:15-16","checked":true},{"_id":"Mon:16-17","checked":true},{"_id":"Mon:17-18","checked":true},{"_id":"Mon:18-19","checked":true},{"_id":"Mon:19-20","checked":true},{"_id":"Mon:20-21","checked":true},{"_id":"Mon:21-22","checked":true},{"_id":"Mon:22-23","checked":true},{"_id":"Mon:23-00","checked":true},{"_id":"Tue:00-01","checked":true},{"_id":"Tue:01-02","checked":true},{"_id":"Tue:02-03","checked":true},{"_id":"Tue:03-04","checked":true},{"_id":"Tue:04-05","checked":true},{"_id":"Tue:05-06","checked":true},{"_id":"Tue:06-07","checked":true},{"_id":"Tue:07-08","checked":true},{"_id":"Tue:08-09","checked":true},{"_id":"Tue:09-10","checked":true},{"_id":"Tue:10-11","checked":true},{"_id":"Tue:11-12","checked":true},{"_id":"Tue:12-13","checked":true},{"_id":"Tue:13-14","checked":true},{"_id":"Tue:14-15","checked":true},{"_id":"Tue:15-16","checked":true},{"_id":"Tue:16-17","checked":true},{"_id":"Tue:17-18","checked":true},{"_id":"Tue:18-19","checked":true},{"_id":"Tue:19-20","checked":true},{"_id":"Tue:20-21","checked":true},{"_id":"Tue:21-22","checked":true},{"_id":"Tue:22-23","checked":true},{"_id":"Tue:23-00","checked":true},{"_id":"Wed:00-01","checked":true},{"_id":"Wed:01-02","checked":true},{"_id":"Wed:02-03","checked":true},{"_id":"Wed:03-04","checked":true},{"_id":"Wed:04-05","checked":true},{"_id":"Wed:05-06","checked":true},{"_id":"Wed:06-07","checked":true},{"_id":"Wed:07-08","checked":true},{"_id":"Wed:08-09","checked":true},{"_id":"Wed:09-10","checked":true},{"_id":"Wed:10-11","checked":true},{"_id":"Wed:11-12","checked":true},{"_id":"Wed:12-13","checked":true},{"_id":"Wed:13-14","checked":true},{"_id":"Wed:14-15","checked":true},{"_id":"Wed:15-16","checked":true},{"_id":"Wed:16-17","checked":true},{"_id":"Wed:17-18","checked":true},{"_id":"Wed:18-19","checked":true},{"_id":"Wed:19-20","checked":true},{"_id":"Wed:20-21","checked":true},{"_id":"Wed:21-22","checked":true},{"_id":"Wed:22-23","checked":true},{"_id":"Wed:23-00","checked":true},{"_id":"Thur:00-01","checked":true},{"_id":"Thur:01-02","checked":true},{"_id":"Thur:02-03","checked":true},{"_id":"Thur:03-04","checked":true},{"_id":"Thur:04-05","checked":true},{"_id":"Thur:05-06","checked":true},{"_id":"Thur:06-07","checked":true},{"_id":"Thur:07-08","checked":true},{"_id":"Thur:08-09","checked":true},{"_id":"Thur:09-10","checked":true},{"_id":"Thur:10-11","checked":true},{"_id":"Thur:11-12","checked":true},{"_id":"Thur:12-13","checked":true},{"_id":"Thur:13-14","checked":true},{"_id":"Thur:14-15","checked":true},{"_id":"Thur:15-16","checked":true},{"_id":"Thur:16-17","checked":true},{"_id":"Thur:17-18","checked":true},{"_id":"Thur:18-19","checked":true},{"_id":"Thur:19-20","checked":true},{"_id":"Thur:20-21","checked":true},{"_id":"Thur:21-22","checked":true},{"_id":"Thur:22-23","checked":true},{"_id":"Thur:23-00","checked":true},{"_id":"Fri:00-01","checked":true},{"_id":"Fri:01-02","checked":true},{"_id":"Fri:02-03","checked":true},{"_id":"Fri:03-04","checked":true},{"_id":"Fri:04-05","checked":true},{"_id":"Fri:05-06","checked":true},{"_id":"Fri:06-07","checked":true},{"_id":"Fri:07-08","checked":true},{"_id":"Fri:08-09","checked":true},{"_id":"Fri:09-10","checked":true},{"_id":"Fri:10-11","checked":true},{"_id":"Fri:11-12","checked":true},{"_id":"Fri:12-13","checked":true},{"_id":"Fri:13-14","checked":true},{"_id":"Fri:14-15","checked":true},{"_id":"Fri:15-16","checked":true},{"_id":"Fri:16-17","checked":true},{"_id":"Fri:17-18","checked":true},{"_id":"Fri:18-19","checked":true},{"_id":"Fri:19-20","checked":true},{"_id":"Fri:20-21","checked":true},{"_id":"Fri:21-22","checked":true},{"_id":"Fri:22-23","checked":true},{"_id":"Fri:23-00","checked":true},{"_id":"Sat:00-01","checked":true},{"_id":"Sat:01-02","checked":true},{"_id":"Sat:02-03","checked":true},{"_id":"Sat:03-04","checked":true},{"_id":"Sat:04-05","checked":true},{"_id":"Sat:05-06","checked":true},{"_id":"Sat:06-07","checked":true},{"_id":"Sat:07-08","checked":true},{"_id":"Sat:08-09","checked":true},{"_id":"Sat:09-10","checked":true},{"_id":"Sat:10-11","checked":true},{"_id":"Sat:11-12","checked":true},{"_id":"Sat:12-13","checked":true},{"_id":"Sat:13-14","checked":true},{"_id":"Sat:14-15","checked":true},{"_id":"Sat:15-16","checked":true},{"_id":"Sat:16-17","checked":true},{"_id":"Sat:17-18","checked":true},{"_id":"Sat:18-19","checked":true},{"_id":"Sat:19-20","checked":true},{"_id":"Sat:20-21","checked":true},{"_id":"Sat:21-22","checked":true},{"_id":"Sat:22-23","checked":true},{"_id":"Sat:23-00","checked":true}],"totalHealthCheckCount":103,"totalTranscodeCount":84,"sizeDiff":3.4015409043058753,"holdNewFiles":false,"holdFor":3600,"pluginStackOverview":true,"filterResolutionsSkip":"","filterCodecsSkip":"","processPluginsSequentially":true}}
+2023-07-07T00:07:48.465Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Fetching plugin data from server
+2023-07-07T00:07:48.465Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Scanning original library file
+2023-07-07T00:07:48.465Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:{
+2023-07-07T00:07:48.465Z   "exifToolScan": true,
+2023-07-07T00:07:48.465Z   "mediaInfoScan": false,
+2023-07-07T00:07:48.465Z   "closedCaptionScan": false
+2023-07-07T00:07:48.465Z }
+2023-07-07T00:07:48.466Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Updating file properties using mkvpropedit
+2023-07-07T00:07:48.466Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Updated file properties using mkvpropedit
+2023-07-07T00:07:48.466Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Requesting Tdarr Server to scan file
+2023-07-07T00:07:51.476Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Scan complete
+2023-07-07T00:07:51.477Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Original file scanned
+2023-07-07T00:07:51.477Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:fileVersionOriginalLogJSONString:{"lastCliCommand":"","lastPluginId":"","sourceFile":{"_id":"/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv","footprintId":"nuzkxgBak","file":"/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv","container":"mkv","scannerReads":{"ffProbeRead":"success","exiftoolRead":"success","mediaInfoRead":"not enabled","closedCaptionRead":"not enabled"},"createdAt":1688684868572,"lastPluginDetails":"none","bit_rate":13815463,"statSync":{"dev":111,"mode":33188,"nlink":1,"uid":0,"gid":0,"rdev":0,"blksize":4096,"ino":5706183769150175000,"size":5470868432,"blocks":10685290,"atimeMs":1688683204000,"mtimeMs":1688683204000,"ctimeMs":1688683204000,"birthtimeMs":0,"atime":"2023-07-06T22:40:04.000Z","mtime":"2023-07-06T22:40:04.000Z","ctime":"2023-07-06T22:40:04.000Z","birthtime":"1970-01-01T00:00:00.000Z"},"file_size":5217.426712036133,"ffProbeData":{"streams":[{"index":0,"codec_name":"hevc","codec_long_name":"H.265 / HEVC (High Efficiency Video Coding)","profile":"Main","codec_type":"video","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","width":3840,"height":2160,"coded_width":3840,"coded_height":2160,"closed_captions":0,"has_b_frames":2,"sample_aspect_ratio":"1:1","display_aspect_ratio":"16:9","pix_fmt":"yuv420p","level":150,"color_range":"tv","color_space":"bt709","color_transfer":"bt709","color_primaries":"bt709","chroma_location":"left","refs":1,"r_frame_rate":"24/1","avg_frame_rate":"24/1","time_base":"1/1000","start_pts":0,"start_time":"0.000000","disposition":{"default":1,"dub":0,"original":1,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"BPS":"13045423","DURATION":"00:52:47.917000000","NUMBER_OF_FRAMES":"76030","NUMBER_OF_BYTES":"5165852502","_STATISTICS_WRITING_APP":"mkvmerge v77.0 ('Elemental') 64-bit","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}},{"index":1,"codec_name":"eac3","codec_long_name":"ATSC A/52B (AC-3, E-AC-3)","codec_type":"audio","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":"48000","channels":6,"channel_layout":"5.1(side)","bits_per_sample":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","bit_rate":"768000","disposition":{"default":1,"dub":0,"original":1,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"eng","BPS":"768000","DURATION":"00:52:47.968000000","NUMBER_OF_FRAMES":"98999","NUMBER_OF_BYTES":"304124928","_STATISTICS_WRITING_APP":"mkvmerge v77.0 ('Elemental') 64-bit","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}},{"index":2,"codec_name":"subrip","codec_long_name":"SubRip subtitle","codec_type":"subtitle","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","duration_ts":3167968,"duration":"3167.968000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"eng","BPS":"44","DURATION":"00:49:10.792000000","NUMBER_OF_FRAMES":"466","NUMBER_OF_BYTES":"16264","_STATISTICS_WRITING_APP":"mkvmerge v77.0 ('Elemental') 64-bit","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}},{"index":3,"codec_name":"subrip","codec_long_name":"SubRip subtitle","codec_type":"subtitle","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","duration_ts":3167968,"duration":"3167.968000","disposition":{"default":0,"dub":0,"original":1,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":1,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"eng","title":"SDH","BPS":"48","DURATION":"00:49:22.667000000","NUMBER_OF_FRAMES":"541","NUMBER_OF_BYTES":"18121","_STATISTICS_WRITING_APP":"mkvmerge v77.0 ('Elemental') 64-bit","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}}],"format":{"filename":"/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv","nb_streams":4,"nb_programs":0,"format_name":"matroska,webm","format_long_name":"Matroska / WebM","start_time":"0.000000","duration":"3167.968000","size":"5470868432","bit_rate":"13815463","probe_score":100,"tags":{"encoder":"libebml v1.4.4 + libmatroska v1.7.1"}}},"meta":{"SourceFile":"/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv","errors":[],"Duration":3167.968,"DefaultDuration":0.032,"ExifToolVersion":12.4,"FileName":"Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv","Directory":"/media/tvshows/Secret Invasion/Season 1","FileSize":"5.1 GiB","FileModifyDate":{"year":2023,"month":7,"day":6,"hour":22,"minute":40,"second":4,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:06 22:40:04+00:00"},"FileAccessDate":{"year":2023,"month":7,"day":6,"hour":22,"minute":40,"second":4,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:06 22:40:04+00:00"},"FileInodeChangeDate":{"year":2023,"month":7,"day":6,"hour":22,"minute":40,"second":4,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:06 22:40:04+00:00"},"FilePermissions":"-rw-r--r--","FileType":"MKV","FileTypeExtension":"mkv","MIMEType":"video/x-matroska","EBMLVersion":1,"EBMLReadVersion":1,"DocType":"matroska","DocTypeVersion":4,"DocTypeReadVersion":2,"TimecodeScale":"1 ms","MuxingApp":"libebml v1.4.4 + libmatroska v1.7.1","WritingApp":"mkvmerge v77.0 ('Elemental') 64-bit","TrackLanguage":"und","VideoCodecID":"V_MPEGH/ISO/HEVC","VideoFrameRate":24,"ImageWidth":3840,"ImageHeight":2160,"DisplayWidth":3840,"DisplayHeight":2160,"AudioCodecID":"A_EAC3","AudioSampleRate":48000,"AudioChannels":6,"TrackNumber":4,"TrackType":"Subtitle","TrackDefault":"No","CodecID":"S_TEXT/UTF8","TrackName":"SDH","ChapterTimeStart":"0:50:12","ChapterString":"Credits","ChapterLanguage":"eng","ImageSize":"3840x2160","Megapixels":8.3},"mediaInfo":{},"hasClosedCaptions":false,"DB":"4BaCjCxnf","bumped":false,"HealthCheck":"","TranscodeDecisionMaker":"","holdUntil":0,"fileMedium":"video","video_codec_name":"hevc","audio_codec_name":"","video_resolution":"4KUHD","lastHealthCheckDate":0,"lastTranscodeDate":0,"history":"","oldSize":0,"newSize":0,"videoStreamIndex":0,"duration":3167}}
+2023-07-07T00:07:51.477Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Source file to work on determined:/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv
+2023-07-07T00:07:51.478Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[Step W02] [C1] Running pre-process file
+2023-07-07T00:07:51.478Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Checking files can be accessed
+2023-07-07T00:07:51.478Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Relevant paths can be accessed
+2023-07-07T00:07:51.478Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Source file: /media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv
+2023-07-07T00:07:51.479Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Cache folder: /temp
+2023-07-07T00:07:51.479Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[Step W03] [C1] Analysing file - running plugins
+2023-07-07T00:07:51.479Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:transcode task, scanning for extra file details before transcode
+2023-07-07T00:07:51.479Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Updating file properties using mkvpropedit
+2023-07-07T00:07:51.479Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Updated file properties using mkvpropedit
+2023-07-07T00:07:51.480Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Requesting Tdarr Server to scan file
+2023-07-07T00:07:52.481Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Scan complete
+2023-07-07T00:07:52.482Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Scan complete
+2023-07-07T00:07:52.482Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Updating Node relay: Processing
+2023-07-07T00:07:52.483Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[1/2] Checking file frame count
+2023-07-07T00:07:52.483Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[2/2] Frame count 0
+2023-07-07T00:07:52.483Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Transcode task, determining transcode settings
+2023-07-07T00:07:52.484Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Plugin stack selected
+2023-07-07T00:07:52.484Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Plugin: plugin1:  Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-07T00:07:52.484Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[1/5] Reading plugin
+2023-07-07T00:07:52.485Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[2/5] Plugin read finished
+2023-07-07T00:07:52.485Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[3/5] Installing dependencies
+2023-07-07T00:07:52.485Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[4/5] Running plugin
+2023-07-07T00:07:52.486Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:{"pluginInputs":{}}
+2023-07-07T00:07:52.487Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[5/5] Running plugin finished
+2023-07-07T00:07:52.487Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Plugin: plugin2:  Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-07T00:07:52.488Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[1/5] Reading plugin
+2023-07-07T00:07:52.488Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[2/5] Plugin read finished
+2023-07-07T00:07:52.488Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[3/5] Installing dependencies
+2023-07-07T00:07:52.489Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[4/5] Running plugin
+2023-07-07T00:07:52.489Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:{"pluginInputs":{}}
+2023-07-07T00:07:52.489Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[5/5] Running plugin finished
+2023-07-07T00:07:52.490Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Plugin: sxfFHmyyT:  Tdarr_Plugin_00td_action_standardise_audio_stream_codecs
+2023-07-07T00:07:52.490Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[1/5] Reading plugin
+2023-07-07T00:07:52.490Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[2/5] Plugin read finished
+2023-07-07T00:07:52.491Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[3/5] Installing dependencies
+2023-07-07T00:07:52.491Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[4/5] Running plugin
+2023-07-07T00:07:52.492Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:{"pluginInputs":{"audioCodec":"aac"}}
+2023-07-07T00:07:52.492Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[5/5] Running plugin finished
+2023-07-07T00:07:52.493Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Worker config: {
+2023-07-07T00:07:52.493Z   "processFile": true,
+2023-07-07T00:07:52.493Z   "preset": ",-map 0:v -map 0:a -map 0:s? -map 0:d? -c copy  -c:a:0 aac",
+2023-07-07T00:07:52.493Z   "container": ".mkv",
+2023-07-07T00:07:52.493Z   "handBrakeMode": false,
+2023-07-07T00:07:52.493Z   "FFmpegMode": false,
+2023-07-07T00:07:52.493Z   "reQueueAfter": true,
+2023-07-07T00:07:52.493Z   "infoLog": "File has audio streams which aren't in aac \n",
+2023-07-07T00:07:52.493Z   "handbrakeMode": false,
+2023-07-07T00:07:52.493Z   "ffmpegMode": true,
+2023-07-07T00:07:52.493Z   "lastPluginDetails": {
+2023-07-07T00:07:52.493Z     "source": "Community",
+2023-07-07T00:07:52.493Z     "id": "Tdarr_Plugin_00td_action_standardise_audio_stream_codecs",
+2023-07-07T00:07:52.493Z     "number": "3/7"
+2023-07-07T00:07:52.493Z   },
+2023-07-07T00:07:52.493Z   "cliToUse": "ffmpeg"
+2023-07-07T00:07:52.493Z }
+2023-07-07T00:07:52.493Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Worker log: 
+2023-07-07T00:07:52.493Z Pre-processing - Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-07T00:07:52.493Z ☑File doesn't contain any unwanted image format streams.
+2023-07-07T00:07:52.493Z 
+2023-07-07T00:07:52.493Z Pre-processing - Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-07T00:07:52.493Z File has video in first stream
+2023-07-07T00:07:52.493Z  File meets conditions!
+2023-07-07T00:07:52.493Z 
+2023-07-07T00:07:52.493Z Pre-processing - Tdarr_Plugin_00td_action_standardise_audio_stream_codecs
+2023-07-07T00:07:52.493Z File has audio streams which aren't in aac 
+2023-07-07T00:07:52.493Z 
+2023-07-07T00:07:52.493Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Worker will process
+2023-07-07T00:07:52.493Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[Step W04] [C1] Preparing command
+2023-07-07T00:07:52.494Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Cache file stem: /temp
+2023-07-07T00:07:52.494Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Cache file path: /temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-zSni4rvMd.mkv
+2023-07-07T00:07:52.495Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Create transcode args
+2023-07-07T00:07:52.495Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Args:  -i "/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv" -map 0:v -map 0:a -map 0:s? -map 0:d? -c copy -c:a:0 aac "/temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-zSni4rvMd.mkv"
+2023-07-07T00:07:52.496Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Getting source file size
+2023-07-07T00:07:52.496Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Source file size: 5.095143273472786
+2023-07-07T00:07:52.497Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Performing safety check on worker config to see if old transcode args/container match new ones
+2023-07-07T00:07:52.497Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Safety check complete, all good
+2023-07-07T00:07:52.497Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[Step W05] [C1] Launching subworker
+2023-07-07T00:07:52.498Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Preparing to launch subworker
+2023-07-07T00:07:52.498Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Subworker launched
+2023-07-07T00:07:52.498Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[1/3] Sending command to subworker
+2023-07-07T00:07:52.499Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[2/3] tdarr-ffmpeg -i "/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv" -map 0:v -map 0:a -map 0:s? -map 0:d? -c copy -c:a:0 aac "/temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-zSni4rvMd.mkv"
+2023-07-07T00:07:52.499Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[3/3] Command sent
+2023-07-07T00:07:52.499Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:To see live CLI output, enable 'Log full FFmpeg/HandBrake output' in the staging section on the Tdarr tab before the job starts. Note this could increase the job report size substantially.
+2023-07-07T00:07:53.500Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Subworker:Online
+2023-07-07T00:07:53.501Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Subworker:Receiving transcode settings
+2023-07-07T00:07:53.501Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Subworker:Running CLI
+2023-07-07T00:17:56.067Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Subworker:a.Thread closed, code: 0
+2023-07-07T00:17:56.069Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Subworker exit approved, killing subworker
+2023-07-07T00:17:56.069Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Subworker killed
+2023-07-07T00:17:56.070Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:b.Thread closed, code: 0
+2023-07-07T00:17:56.070Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:CLI code: 0
+2023-07-07T00:17:56.070Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Last 200 lines of CLI log:
+2023-07-07T00:17:56.071Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:frame=51016 fps=103 q=-1.0 size= 3521792kB time=00:35:25.71 bitrate=13572.1kbits/s speed= 4.3x    
+2023-07-07T00:17:56.071Z frame=51121 fps=103 q=-1.0 size= 3521792kB time=00:35:30.06 bitrate=13544.4kbits/s speed=4.31x    
+2023-07-07T00:17:56.071Z frame=51223 fps=103 q=-1.0 size= 3531776kB time=00:35:34.46 bitrate=13554.8kbits/s speed=4.31x    
+2023-07-07T00:17:56.071Z frame=51385 fps=104 q=-1.0 size= 3543552kB time=00:35:41.14 bitrate=13557.6kbits/s speed=4.32x    
+2023-07-07T00:17:56.071Z frame=51513 fps=104 q=-1.0 size= 3554048kB time=00:35:46.45 bitrate=13564.1kbits/s speed=4.33x    
+2023-07-07T00:17:56.071Z frame=51593 fps=104 q=-1.0 size= 3554048kB time=00:35:49.82 bitrate=13542.9kbits/s speed=4.33x    
+2023-07-07T00:17:56.071Z frame=51654 fps=104 q=-1.0 size= 3569152kB time=00:35:52.32 bitrate=13584.6kbits/s speed=4.33x    
+2023-07-07T00:17:56.071Z frame=51736 fps=104 q=-1.0 size= 3571712kB time=00:35:55.84 bitrate=13572.2kbits/s speed=4.33x    
+2023-07-07T00:17:56.071Z frame=51867 fps=104 q=-1.0 size= 3583232kB time=00:36:01.28 bitrate=13581.7kbits/s speed=4.34x    
+2023-07-07T00:17:56.071Z frame=51985 fps=104 q=-1.0 size= 3585280kB time=00:36:05.97 bitrate=13560.0kbits/s speed=4.34x    
+2023-07-07T00:17:56.071Z frame=52109 fps=104 q=-1.0 size= 3599360kB time=00:36:11.20 bitrate=13580.5kbits/s speed=4.35x    
+2023-07-07T00:17:56.071Z frame=52225 fps=104 q=-1.0 size= 3602432kB time=00:36:16.19 bitrate=13560.9kbits/s speed=4.35x    
+2023-07-07T00:17:56.071Z frame=52357 fps=105 q=-1.0 size= 3617024kB time=00:36:21.50 bitrate=13582.7kbits/s speed=4.36x    
+2023-07-07T00:17:56.071Z frame=52484 fps=105 q=-1.0 size= 3624192kB time=00:36:27.02 bitrate=13575.2kbits/s speed=4.37x    
+2023-07-07T00:17:56.071Z frame=52631 fps=105 q=-1.0 size= 3637504kB time=00:36:32.91 bitrate=13588.5kbits/s speed=4.37x    
+2023-07-07T00:17:56.071Z frame=52777 fps=105 q=-1.0 size= 3643904kB time=00:36:39.12 bitrate=13574.0kbits/s speed=4.38x    
+2023-07-07T00:17:56.071Z frame=52895 fps=105 q=-1.0 size= 3653888kB time=00:36:43.92 bitrate=13581.5kbits/s speed=4.39x    
+2023-07-07T00:17:56.071Z frame=53023 fps=105 q=-1.0 size= 3660544kB time=00:36:49.42 bitrate=13572.4kbits/s speed=4.39x    
+2023-07-07T00:17:56.071Z frame=53122 fps=106 q=-1.0 size= 3666944kB time=00:36:53.39 bitrate=13571.7kbits/s speed= 4.4x    
+2023-07-07T00:17:56.071Z frame=53173 fps=105 q=-1.0 size= 3666944kB time=00:36:55.55 bitrate=13558.5kbits/s speed=4.39x    
+2023-07-07T00:17:56.071Z frame=53320 fps=105 q=-1.0 size= 3666944kB time=00:37:01.76 bitrate=13520.6kbits/s speed= 4.4x    
+2023-07-07T00:17:56.071Z frame=53386 fps=106 q=-1.0 size= 3673600kB time=00:37:04.44 bitrate=13528.8kbits/s speed= 4.4x    
+2023-07-07T00:17:56.071Z frame=53469 fps=106 q=-1.0 size= 3677440kB time=00:37:07.90 bitrate=13521.9kbits/s speed= 4.4x    
+2023-07-07T00:17:56.071Z frame=53565 fps=106 q=-1.0 size= 3683072kB time=00:37:11.80 bitrate=13519.0kbits/s speed= 4.4x    
+2023-07-07T00:17:56.071Z frame=53712 fps=106 q=-1.0 size= 3694592kB time=00:37:18.08 bitrate=13523.2kbits/s speed=4.41x    
+2023-07-07T00:17:56.071Z frame=53788 fps=106 q=-1.0 size= 3701248kB time=00:37:21.10 bitrate=13529.3kbits/s speed=4.41x    
+2023-07-07T00:17:56.071Z frame=53920 fps=106 q=-1.0 size= 3710976kB time=00:37:26.97 bitrate=13529.4kbits/s speed=4.42x    
+2023-07-07T00:17:56.071Z frame=54049 fps=106 q=-1.0 size= 3722496kB time=00:37:31.96 bitrate=13541.4kbits/s speed=4.42x    
+2023-07-07T00:17:56.071Z frame=54151 fps=106 q=-1.0 size= 3729408kB time=00:37:36.32 bitrate=13540.3kbits/s speed=4.43x    
+2023-07-07T00:17:56.071Z frame=54289 fps=106 q=-1.0 size= 3739648kB time=00:37:42.10 bitrate=13542.8kbits/s speed=4.43x    
+2023-07-07T00:17:56.071Z frame=54411 fps=107 q=-1.0 size= 3748352kB time=00:37:47.28 bitrate=13543.3kbits/s speed=4.44x    
+2023-07-07T00:17:56.071Z frame=54494 fps=107 q=-1.0 size= 3767552kB time=00:37:50.59 bitrate=13592.8kbits/s speed=4.44x    
+2023-07-07T00:17:56.071Z frame=54589 fps=107 q=-1.0 size= 3767552kB time=00:37:54.49 bitrate=13569.5kbits/s speed=4.44x    
+2023-07-07T00:17:56.071Z frame=54711 fps=107 q=-1.0 size= 3783424kB time=00:37:59.76 bitrate=13595.2kbits/s speed=4.45x    
+2023-07-07T00:17:56.071Z frame=54865 fps=107 q=-1.0 size= 3783424kB time=00:38:06.03 bitrate=13557.9kbits/s speed=4.46x    
+2023-07-07T00:17:56.071Z frame=54942 fps=107 q=-1.0 size= 3784960kB time=00:38:09.21 bitrate=13544.5kbits/s speed=4.46x    
+2023-07-07T00:17:56.071Z frame=54952 fps=107 q=-1.0 size= 3784960kB time=00:38:09.81 bitrate=13541.0kbits/s speed=4.45x    
+2023-07-07T00:17:56.071Z frame=55051 fps=107 q=-1.0 size= 3790080kB time=00:38:13.88 bitrate=13535.2kbits/s speed=4.45x    
+2023-07-07T00:17:56.071Z frame=55188 fps=107 q=-1.0 size= 3801088kB time=00:38:19.64 bitrate=13540.6kbits/s speed=4.46x    
+2023-07-07T00:17:56.071Z frame=55346 fps=107 q=-1.0 size= 3815680kB time=00:38:26.19 bitrate=13553.9kbits/s speed=4.46x    
+2023-07-07T00:17:56.071Z frame=55489 fps=107 q=-1.0 size= 3825920kB time=00:38:32.14 bitrate=13555.3kbits/s speed=4.47x    
+2023-07-07T00:17:56.071Z frame=55639 fps=107 q=-1.0 size= 3835904kB time=00:38:38.46 bitrate=13553.7kbits/s speed=4.47x    
+2023-07-07T00:17:56.071Z frame=55825 fps=108 q=-1.0 size= 3854848kB time=00:38:46.16 bitrate=13575.5kbits/s speed=4.48x    
+2023-07-07T00:17:56.071Z frame=55893 fps=108 q=-1.0 size= 3869184kB time=00:38:48.85 bitrate=13610.3kbits/s speed=4.48x    
+2023-07-07T00:17:56.071Z frame=55996 fps=108 q=-1.0 size= 3876096kB time=00:38:53.20 bitrate=13609.2kbits/s speed=4.49x    
+2023-07-07T00:17:56.071Z frame=56157 fps=108 q=-1.0 size= 3880704kB time=00:38:59.79 bitrate=13587.0kbits/s speed= 4.5x    
+2023-07-07T00:17:56.071Z frame=56257 fps=108 q=-1.0 size= 3891456kB time=00:39:04.06 bitrate=13599.8kbits/s speed= 4.5x    
+2023-07-07T00:17:56.071Z frame=56379 fps=108 q=-1.0 size= 3899904kB time=00:39:09.20 bitrate=13599.5kbits/s speed=4.51x    
+2023-07-07T00:17:56.071Z frame=56490 fps=108 q=-1.0 size= 3908352kB time=00:39:13.74 bitrate=13602.6kbits/s speed=4.51x    
+2023-07-07T00:17:56.071Z frame=56602 fps=108 q=-1.0 size= 3911168kB time=00:39:18.46 bitrate=13585.2kbits/s speed=4.52x    
+2023-07-07T00:17:56.071Z frame=56743 fps=109 q=-1.0 size= 3919104kB time=00:39:24.43 bitrate=13578.4kbits/s speed=4.52x    
+2023-07-07T00:17:56.071Z frame=56833 fps=109 q=-1.0 size= 3927296kB time=00:39:28.19 bitrate=13585.2kbits/s speed=4.52x    
+2023-07-07T00:17:56.071Z frame=56975 fps=109 q=-1.0 size= 3938560kB time=00:39:33.88 bitrate=13591.5kbits/s speed=4.53x    
+2023-07-07T00:17:56.071Z frame=57038 fps=109 q=-1.0 size= 3938560kB time=00:39:36.53 bitrate=13576.4kbits/s speed=4.53x    
+2023-07-07T00:17:56.071Z frame=57169 fps=109 q=-1.0 size= 3938560kB time=00:39:42.10 bitrate=13544.6kbits/s speed=4.54x    
+2023-07-07T00:17:56.071Z frame=57289 fps=109 q=-1.0 size= 3961344kB time=00:39:47.20 bitrate=13593.9kbits/s speed=4.54x    
+2023-07-07T00:17:56.071Z frame=57389 fps=109 q=-1.0 size= 3971328kB time=00:39:51.23 bitrate=13605.2kbits/s speed=4.55x    
+2023-07-07T00:17:56.071Z frame=57497 fps=109 q=-1.0 size= 3978240kB time=00:39:55.86 bitrate=13602.5kbits/s speed=4.55x    
+2023-07-07T00:17:56.071Z frame=57620 fps=109 q=-1.0 size= 3982848kB time=00:40:00.96 bitrate=13589.4kbits/s speed=4.56x    
+2023-07-07T00:17:56.071Z frame=57705 fps=109 q=-1.0 size= 3987456kB time=00:40:04.43 bitrate=13585.4kbits/s speed=4.56x    
+2023-07-07T00:17:56.071Z frame=57824 fps=109 q=-1.0 size= 3996160kB time=00:40:09.36 bitrate=13587.2kbits/s speed=4.56x    
+2023-07-07T00:17:56.071Z frame=57954 fps=110 q=-1.0 size= 4011008kB time=00:40:14.72 bitrate=13607.4kbits/s speed=4.57x    
+2023-07-07T00:17:56.071Z frame=58099 fps=110 q=-1.0 size= 4020992kB time=00:40:20.82 bitrate=13606.9kbits/s speed=4.57x    
+2023-07-07T00:17:56.071Z frame=58225 fps=110 q=-1.0 size= 4030208kB time=00:40:26.06 bitrate=13608.6kbits/s speed=4.58x    
+2023-07-07T00:17:56.071Z frame=58334 fps=110 q=-1.0 size= 4041728kB time=00:40:30.59 bitrate=13622.1kbits/s speed=4.58x    
+2023-07-07T00:17:56.071Z frame=58407 fps=110 q=-1.0 size= 4045056kB time=00:40:33.62 bitrate=13616.4kbits/s speed=4.59x    
+2023-07-07T00:17:56.071Z frame=58544 fps=110 q=-1.0 size= 4045056kB time=00:40:39.31 bitrate=13584.6kbits/s speed=4.59x    
+2023-07-07T00:17:56.071Z frame=58621 fps=110 q=-1.0 size= 4045056kB time=00:40:42.58 bitrate=13566.4kbits/s speed=4.59x    
+2023-07-07T00:17:56.071Z frame=58730 fps=110 q=-1.0 size= 4051712kB time=00:40:47.23 bitrate=13562.9kbits/s speed= 4.6x    
+2023-07-07T00:17:56.071Z frame=58867 fps=110 q=-1.0 size= 4073984kB time=00:40:52.88 bitrate=13606.1kbits/s speed= 4.6x    
+2023-07-07T00:17:56.071Z frame=59036 fps=111 q=-1.0 size= 4073984kB time=00:40:59.86 bitrate=13567.5kbits/s speed=4.61x    
+2023-07-07T00:17:56.071Z frame=59166 fps=111 q=-1.0 size= 4080640kB time=00:41:05.21 bitrate=13560.1kbits/s speed=4.62x    
+2023-07-07T00:17:56.071Z frame=59268 fps=111 q=-1.0 size= 4084224kB time=00:41:09.50 bitrate=13548.5kbits/s speed=4.62x    
+2023-07-07T00:17:56.071Z frame=59329 fps=111 q=-1.0 size= 4089856kB time=00:41:11.95 bitrate=13553.7kbits/s speed=4.62x    
+2023-07-07T00:17:56.071Z frame=59457 fps=111 q=-1.0 size= 4097536kB time=00:41:17.39 bitrate=13549.3kbits/s speed=4.63x    
+2023-07-07T00:17:56.071Z frame=59538 fps=111 q=-1.0 size= 4104704kB time=00:41:20.91 bitrate=13553.8kbits/s speed=4.63x    
+2023-07-07T00:17:56.071Z frame=59614 fps=111 q=-1.0 size= 4111360kB time=00:41:23.92 bitrate=13559.3kbits/s speed=4.63x    
+2023-07-07T00:17:56.071Z frame=59641 fps=111 q=-1.0 size= 4111360kB time=00:41:24.99 bitrate=13553.5kbits/s speed=4.62x    
+2023-07-07T00:17:56.071Z frame=59729 fps=111 q=-1.0 size= 4134144kB time=00:41:28.70 bitrate=13608.3kbits/s speed=4.62x    
+2023-07-07T00:17:56.071Z frame=59836 fps=111 q=-1.0 size= 4144896kB time=00:41:33.12 bitrate=13619.5kbits/s speed=4.63x    
+2023-07-07T00:17:56.071Z frame=59977 fps=111 q=-1.0 size= 4152064kB time=00:41:38.96 bitrate=13611.1kbits/s speed=4.63x    
+2023-07-07T00:17:56.071Z frame=60071 fps=111 q=-1.0 size= 4157440kB time=00:41:42.93 bitrate=13607.1kbits/s speed=4.64x    
+2023-07-07T00:17:56.071Z frame=60228 fps=111 q=-1.0 size= 4157440kB time=00:41:49.56 bitrate=13571.2kbits/s speed=4.64x    
+2023-07-07T00:17:56.071Z frame=60385 fps=112 q=-1.0 size= 4166912kB time=00:41:56.16 bitrate=13566.4kbits/s speed=4.65x    
+2023-07-07T00:17:56.071Z frame=60503 fps=112 q=-1.0 size= 4172800kB time=00:42:01.10 bitrate=13558.9kbits/s speed=4.66x    
+2023-07-07T00:17:56.071Z frame=60570 fps=112 q=-1.0 size= 4178176kB time=00:42:03.92 bitrate=13561.3kbits/s speed=4.65x    
+2023-07-07T00:17:56.071Z frame=60693 fps=112 q=-1.0 size= 4185600kB time=00:42:08.98 bitrate=13558.2kbits/s speed=4.65x    
+2023-07-07T00:17:56.071Z frame=60858 fps=112 q=-1.0 size= 4194560kB time=00:42:15.70 bitrate=13551.2kbits/s speed=4.66x    
+2023-07-07T00:17:56.071Z frame=60955 fps=112 q=-1.0 size= 4201472kB time=00:42:19.73 bitrate=13552.0kbits/s speed=4.66x    
+2023-07-07T00:17:56.071Z frame=61105 fps=112 q=-1.0 size= 4215296kB time=00:42:26.06 bitrate=13562.8kbits/s speed=4.67x    
+2023-07-07T00:17:56.071Z frame=61261 fps=112 q=-1.0 size= 4225280kB time=00:42:32.53 bitrate=13560.4kbits/s speed=4.68x    
+2023-07-07T00:17:56.071Z frame=61375 fps=112 q=-1.0 size= 4232448kB time=00:42:37.31 bitrate=13558.1kbits/s speed=4.68x    
+2023-07-07T00:17:56.071Z frame=61482 fps=112 q=-1.0 size= 4236800kB time=00:42:41.79 bitrate=13548.3kbits/s speed=4.69x    
+2023-07-07T00:17:56.071Z frame=61577 fps=113 q=-1.0 size= 4244224kB time=00:42:45.88 bitrate=13550.4kbits/s speed=4.69x    
+2023-07-07T00:17:56.071Z frame=61711 fps=113 q=-1.0 size= 4256000kB time=00:42:51.26 bitrate=13559.5kbits/s speed=4.69x    
+2023-07-07T00:17:56.071Z frame=61825 fps=113 q=-1.0 size= 4266240kB time=00:42:55.95 bitrate=13567.4kbits/s speed= 4.7x    
+2023-07-07T00:17:56.071Z frame=61992 fps=113 q=-1.0 size= 4292608kB time=00:43:03.12 bitrate=13613.4kbits/s speed=4.71x    
+2023-07-07T00:17:56.071Z frame=62141 fps=113 q=-1.0 size= 4300032kB time=00:43:09.20 bitrate=13604.9kbits/s speed=4.71x    
+2023-07-07T00:17:56.071Z frame=62299 fps=113 q=-1.0 size= 4306432kB time=00:43:15.79 bitrate=13590.5kbits/s speed=4.72x    
+2023-07-07T00:17:56.071Z frame=62439 fps=113 q=-1.0 size= 4320512kB time=00:43:21.74 bitrate=13603.8kbits/s speed=4.73x    
+2023-07-07T00:17:56.071Z frame=62542 fps=114 q=-1.0 size= 4331520kB time=00:43:25.88 bitrate=13616.8kbits/s speed=4.73x    
+2023-07-07T00:17:56.071Z frame=62689 fps=114 q=-1.0 size= 4331520kB time=00:43:31.98 bitrate=13585.0kbits/s speed=4.74x    
+2023-07-07T00:17:56.071Z frame=62838 fps=114 q=-1.0 size= 4350464kB time=00:43:38.26 bitrate=13611.7kbits/s speed=4.75x    
+2023-07-07T00:17:56.071Z frame=62977 fps=114 q=-1.0 size= 4358144kB time=00:43:44.08 bitrate=13605.5kbits/s speed=4.75x    
+2023-07-07T00:17:56.071Z frame=63104 fps=114 q=-1.0 size= 4369408kB time=00:43:49.33 bitrate=13613.4kbits/s speed=4.76x    
+2023-07-07T00:17:56.071Z frame=63235 fps=114 q=-1.0 size= 4380160kB time=00:43:54.75 bitrate=13618.8kbits/s speed=4.76x    
+2023-07-07T00:17:56.071Z frame=63339 fps=114 q=-1.0 size= 4380160kB time=00:43:59.23 bitrate=13595.7kbits/s speed=4.77x    
+2023-07-07T00:17:56.071Z frame=63429 fps=114 q=-1.0 size= 4394240kB time=00:44:02.88 bitrate=13620.6kbits/s speed=4.77x    
+2023-07-07T00:17:56.071Z frame=63529 fps=114 q=-1.0 size= 4394240kB time=00:44:06.99 bitrate=13599.4kbits/s speed=4.77x    
+2023-07-07T00:17:56.071Z frame=63627 fps=115 q=-1.0 size= 4394240kB time=00:44:11.28 bitrate=13577.4kbits/s speed=4.77x    
+2023-07-07T00:17:56.071Z frame=63757 fps=115 q=-1.0 size= 4414720kB time=00:44:16.59 bitrate=13613.4kbits/s speed=4.78x    
+2023-07-07T00:17:56.071Z frame=63902 fps=115 q=-1.0 size= 4428544kB time=00:44:22.67 bitrate=13624.9kbits/s speed=4.79x    
+2023-07-07T00:17:56.071Z frame=64045 fps=115 q=-1.0 size= 4428544kB time=00:44:28.56 bitrate=13594.8kbits/s speed=4.79x    
+2023-07-07T00:17:56.071Z frame=64203 fps=115 q=-1.0 size= 4445696kB time=00:44:35.07 bitrate=13614.3kbits/s speed= 4.8x    
+2023-07-07T00:17:56.071Z frame=64344 fps=115 q=-1.0 size= 4445696kB time=00:44:41.08 bitrate=13583.7kbits/s speed=4.81x    
+2023-07-07T00:17:56.071Z frame=64375 fps=115 q=-1.0 size= 4449792kB time=00:44:42.45 bitrate=13589.3kbits/s speed=4.79x    
+2023-07-07T00:17:56.071Z frame=64548 fps=115 q=-1.0 size= 4460032kB time=00:44:49.55 bitrate=13584.6kbits/s speed= 4.8x    
+2023-07-07T00:17:56.071Z frame=64632 fps=115 q=-1.0 size= 4466944kB time=00:44:52.94 bitrate=13588.5kbits/s speed= 4.8x    
+2023-07-07T00:17:56.071Z frame=64705 fps=115 q=-1.0 size= 4473344kB time=00:44:55.95 bitrate=13592.8kbits/s speed= 4.8x    
+2023-07-07T00:17:56.071Z frame=64801 fps=115 q=-1.0 size= 4495104kB time=00:45:00.09 bitrate=13638.0kbits/s speed=4.81x    
+2023-07-07T00:17:56.071Z frame=64907 fps=115 q=-1.0 size= 4505344kB time=00:45:04.51 bitrate=13646.7kbits/s speed=4.81x    
+2023-07-07T00:17:56.071Z frame=65033 fps=116 q=-1.0 size= 4510976kB time=00:45:09.76 bitrate=13637.3kbits/s speed=4.82x    
+2023-07-07T00:17:56.071Z frame=65172 fps=116 q=-1.0 size= 4520448kB time=00:45:15.66 bitrate=13636.2kbits/s speed=4.82x    
+2023-07-07T00:17:56.071Z frame=65327 fps=116 q=-1.0 size= 4520448kB time=00:45:21.94 bitrate=13604.8kbits/s speed=4.83x    
+2023-07-07T00:17:56.071Z frame=65389 fps=116 q=-1.0 size= 4520448kB time=00:45:24.69 bitrate=13591.1kbits/s speed=4.83x    
+2023-07-07T00:17:56.071Z frame=65479 fps=116 q=-1.0 size= 4528128kB time=00:45:28.38 bitrate=13595.7kbits/s speed=4.83x    
+2023-07-07T00:17:56.071Z frame=65657 fps=116 q=-1.0 size= 4547328kB time=00:45:35.80 bitrate=13616.3kbits/s speed=4.84x    
+2023-07-07T00:17:56.071Z frame=65771 fps=116 q=-1.0 size= 4563456kB time=00:45:40.43 bitrate=13641.6kbits/s speed=4.84x    
+2023-07-07T00:17:56.071Z frame=65905 fps=116 q=-1.0 size= 4571136kB time=00:45:46.06 bitrate=13636.5kbits/s speed=4.85x    
+2023-07-07T00:17:56.071Z frame=66029 fps=117 q=-1.0 size= 4586752kB time=00:45:51.31 bitrate=13657.0kbits/s speed=4.85x    
+2023-07-07T00:17:56.071Z frame=66137 fps=117 q=-1.0 size= 4586752kB time=00:45:55.86 bitrate=13634.5kbits/s speed=4.86x    
+2023-07-07T00:17:56.071Z frame=66280 fps=117 q=-1.0 size= 4586752kB time=00:46:01.68 bitrate=13605.7kbits/s speed=4.86x    
+2023-07-07T00:17:56.071Z frame=66467 fps=117 q=-1.0 size= 4600832kB time=00:46:09.49 bitrate=13609.0kbits/s speed=4.87x    
+2023-07-07T00:17:56.071Z frame=66583 fps=117 q=-1.0 size= 4610048kB time=00:46:14.22 bitrate=13613.0kbits/s speed=4.88x    
+2023-07-07T00:17:56.071Z frame=66704 fps=117 q=-1.0 size= 4617216kB time=00:46:19.32 bitrate=13609.1kbits/s speed=4.88x    
+2023-07-07T00:17:56.071Z frame=66783 fps=117 q=-1.0 size= 4622592kB time=00:46:22.72 bitrate=13608.4kbits/s speed=4.88x    
+2023-07-07T00:17:56.071Z frame=66896 fps=117 q=-1.0 size= 4629248kB time=00:46:27.41 bitrate=13605.0kbits/s speed=4.89x    
+2023-07-07T00:17:56.071Z frame=67027 fps=117 q=-1.0 size= 4639232kB time=00:46:32.89 bitrate=13607.6kbits/s speed=4.89x    
+2023-07-07T00:17:56.071Z frame=67183 fps=118 q=-1.0 size= 4651008kB time=00:46:39.31 bitrate=13610.8kbits/s speed= 4.9x    
+2023-07-07T00:17:56.071Z frame=67295 fps=118 q=-1.0 size= 4656384kB time=00:46:43.90 bitrate=13604.3kbits/s speed= 4.9x    
+2023-07-07T00:17:56.071Z frame=67426 fps=118 q=-1.0 size= 4665344kB time=00:46:49.60 bitrate=13602.8kbits/s speed=4.91x    
+2023-07-07T00:17:56.071Z frame=67549 fps=118 q=-1.0 size= 4676352kB time=00:46:54.61 bitrate=13610.6kbits/s speed=4.91x    
+2023-07-07T00:17:56.071Z frame=67657 fps=118 q=-1.0 size= 4684032kB time=00:46:59.02 bitrate=13611.6kbits/s speed=4.92x    
+2023-07-07T00:17:56.071Z frame=67777 fps=118 q=-1.0 size= 4695808kB time=00:47:04.14 bitrate=13621.1kbits/s speed=4.92x    
+2023-07-07T00:17:56.071Z frame=67908 fps=118 q=-1.0 size= 4703232kB time=00:47:09.58 bitrate=13616.4kbits/s speed=4.93x    
+2023-07-07T00:17:56.071Z frame=68011 fps=118 q=-1.0 size= 4709888kB time=00:47:13.94 bitrate=13614.8kbits/s speed=4.93x    
+2023-07-07T00:17:56.071Z frame=68148 fps=118 q=-1.0 size= 4719616kB time=00:47:19.55 bitrate=13615.9kbits/s speed=4.93x    
+2023-07-07T00:17:56.071Z frame=68317 fps=119 q=-1.0 size= 4732928kB time=00:47:26.59 bitrate=13620.5kbits/s speed=4.94x    
+2023-07-07T00:17:56.071Z frame=68461 fps=119 q=-1.0 size= 4741376kB time=00:47:32.60 bitrate=13616.1kbits/s speed=4.95x    
+2023-07-07T00:17:56.071Z frame=68628 fps=119 q=-1.0 size= 4752128kB time=00:47:39.54 bitrate=13613.9kbits/s speed=4.96x    
+2023-07-07T00:17:56.071Z frame=68729 fps=119 q=-1.0 size= 4760064kB time=00:47:43.87 bitrate=13616.0kbits/s speed=4.96x    
+2023-07-07T00:17:56.071Z frame=68862 fps=119 q=-1.0 size= 4768256kB time=00:47:49.39 bitrate=13613.2kbits/s speed=4.96x    
+2023-07-07T00:17:56.071Z frame=68991 fps=119 q=-1.0 size= 4779776kB time=00:47:54.62 bitrate=13621.2kbits/s speed=4.97x    
+2023-07-07T00:17:56.071Z frame=69093 fps=119 q=-1.0 size= 4786944kB time=00:47:59.04 bitrate=13620.7kbits/s speed=4.97x    
+2023-07-07T00:17:56.071Z frame=69260 fps=120 q=-1.0 size= 4797440kB time=00:48:05.78 bitrate=13618.7kbits/s speed=4.98x    
+2023-07-07T00:17:56.071Z frame=69402 fps=120 q=-1.0 size= 4818176kB time=00:48:11.84 bitrate=13648.9kbits/s speed=4.99x    
+2023-07-07T00:17:56.071Z frame=69553 fps=120 q=-1.0 size= 4821504kB time=00:48:18.17 bitrate=13628.5kbits/s speed=4.99x    
+2023-07-07T00:17:56.071Z frame=69687 fps=120 q=-1.0 size= 4827392kB time=00:48:23.57 bitrate=13619.8kbits/s speed=   5x    
+2023-07-07T00:17:56.071Z frame=69805 fps=120 q=-1.0 size= 4837120kB time=00:48:28.54 bitrate=13623.9kbits/s speed=   5x    
+2023-07-07T00:17:56.071Z frame=69943 fps=120 q=-1.0 size= 4849664kB time=00:48:34.32 bitrate=13632.1kbits/s speed=5.01x    
+2023-07-07T00:17:56.071Z frame=70116 fps=120 q=-1.0 size= 4861696kB time=00:48:41.49 bitrate=13632.4kbits/s speed=5.01x    
+2023-07-07T00:17:56.071Z frame=70289 fps=121 q=-1.0 size= 4874496kB time=00:48:48.70 bitrate=13634.7kbits/s speed=5.02x    
+2023-07-07T00:17:56.071Z frame=70410 fps=121 q=-1.0 size= 4898304kB time=00:48:53.78 bitrate=13677.5kbits/s speed=5.03x    
+2023-07-07T00:17:56.071Z frame=70483 fps=121 q=-1.0 size= 4898304kB time=00:48:56.83 bitrate=13663.3kbits/s speed=5.03x    
+2023-07-07T00:17:56.071Z frame=70626 fps=121 q=-1.0 size= 4898304kB time=00:49:02.80 bitrate=13635.6kbits/s speed=5.03x    
+2023-07-07T00:17:56.071Z frame=70759 fps=121 q=-1.0 size= 4908544kB time=00:49:08.43 bitrate=13638.0kbits/s speed=5.04x    
+2023-07-07T00:17:56.071Z frame=70840 fps=121 q=-1.0 size= 4911104kB time=00:49:11.76 bitrate=13629.7kbits/s speed=5.04x    
+2023-07-07T00:17:56.071Z frame=70928 fps=121 q=-1.0 size= 4918016kB time=00:49:15.32 bitrate=13632.5kbits/s speed=5.04x    
+2023-07-07T00:17:56.071Z frame=71065 fps=121 q=-1.0 size= 4925440kB time=00:49:21.04 bitrate=13626.7kbits/s speed=5.05x    
+2023-07-07T00:17:56.071Z frame=71214 fps=121 q=-1.0 size= 4938240kB time=00:49:27.38 bitrate=13632.9kbits/s speed=5.05x    
+2023-07-07T00:17:56.071Z frame=71341 fps=121 q=-1.0 size= 4967168kB time=00:49:32.56 bitrate=13688.9kbits/s speed=5.06x    
+2023-07-07T00:17:56.071Z frame=71472 fps=122 q=-1.0 size= 4970496kB time=00:49:37.94 bitrate=13673.3kbits/s speed=5.06x    
+2023-07-07T00:17:56.071Z frame=71608 fps=122 q=-1.0 size= 4970496kB time=00:49:43.82 bitrate=13646.3kbits/s speed=5.07x    
+2023-07-07T00:17:56.071Z frame=71765 fps=122 q=-1.0 size= 4978432kB time=00:49:50.27 bitrate=13638.7kbits/s speed=5.08x    
+2023-07-07T00:17:56.071Z frame=71897 fps=122 q=-1.0 size= 4986624kB time=00:49:55.73 bitrate=13636.2kbits/s speed=5.08x    
+2023-07-07T00:17:56.071Z frame=72007 fps=122 q=-1.0 size= 4995584kB time=00:50:00.25 bitrate=13640.1kbits/s speed=5.08x    
+2023-07-07T00:17:56.071Z frame=72193 fps=122 q=-1.0 size= 5010432kB time=00:50:08.00 bitrate=13645.4kbits/s speed=5.09x    
+2023-07-07T00:17:56.071Z frame=72400 fps=122 q=-1.0 size= 5019392kB time=00:50:16.96 bitrate=13629.2kbits/s speed= 5.1x    
+2023-07-07T00:17:56.071Z frame=72592 fps=123 q=-1.0 size= 5022208kB time=00:50:24.83 bitrate=13601.4kbits/s speed=5.11x    
+2023-07-07T00:17:56.071Z frame=72804 fps=123 q=-1.0 size= 5025792kB time=00:50:33.66 bitrate=13571.5kbits/s speed=5.12x    
+2023-07-07T00:17:56.071Z frame=73009 fps=123 q=-1.0 size= 5029888kB time=00:50:41.98 bitrate=13545.4kbits/s speed=5.13x    
+2023-07-07T00:17:56.071Z frame=73183 fps=123 q=-1.0 size= 5032448kB time=00:50:49.30 bitrate=13519.8kbits/s speed=5.14x    
+2023-07-07T00:17:56.071Z frame=73370 fps=124 q=-1.0 size= 5035520kB time=00:50:57.04 bitrate=13493.7kbits/s speed=5.15x    
+2023-07-07T00:17:56.071Z frame=73548 fps=124 q=-1.0 size= 5038848kB time=00:51:04.64 bitrate=13469.2kbits/s speed=5.16x    
+2023-07-07T00:17:56.071Z frame=73777 fps=124 q=-1.0 size= 5050112kB time=00:51:14.04 bitrate=13458.0kbits/s speed=5.17x    
+2023-07-07T00:17:56.071Z frame=73996 fps=124 q=-1.0 size= 5063168kB time=00:51:23.34 bitrate=13452.1kbits/s speed=5.18x    
+2023-07-07T00:17:56.071Z frame=74219 fps=125 q=-1.0 size= 5080320kB time=00:51:32.69 bitrate=13456.9kbits/s speed=5.19x    
+2023-07-07T00:17:56.071Z frame=74368 fps=125 q=-1.0 size= 5088256kB time=00:51:38.83 bitrate=13451.2kbits/s speed= 5.2x    
+2023-07-07T00:17:56.071Z frame=74487 fps=125 q=-1.0 size= 5092608kB time=00:51:43.80 bitrate=13441.1kbits/s speed= 5.2x    
+2023-07-07T00:17:56.071Z frame=74667 fps=125 q=-1.0 size= 5103104kB time=00:51:51.18 bitrate=13436.9kbits/s speed=5.21x    
+2023-07-07T00:17:56.071Z frame=74806 fps=125 q=-1.0 size= 5111808kB time=00:51:56.88 bitrate=13435.2kbits/s speed=5.21x    
+2023-07-07T00:17:56.071Z frame=74911 fps=125 q=-1.0 size= 5117696kB time=00:52:01.60 bitrate=13430.3kbits/s speed=5.22x    
+2023-07-07T00:17:56.071Z frame=75073 fps=125 q=-1.0 size= 5128960kB time=00:52:07.95 bitrate=13432.6kbits/s speed=5.22x    
+2023-07-07T00:17:56.071Z frame=75257 fps=126 q=-1.0 size= 5140480kB time=00:52:15.89 bitrate=13428.7kbits/s speed=5.23x    
+2023-07-07T00:17:56.071Z frame=75452 fps=126 q=-1.0 size= 5148416kB time=00:52:23.80 bitrate=13415.5kbits/s speed=5.24x    
+2023-07-07T00:17:56.071Z frame=75611 fps=126 q=-1.0 size= 5157632kB time=00:52:30.59 bitrate=13410.6kbits/s speed=5.25x    
+2023-07-07T00:17:56.071Z frame=75818 fps=126 q=-1.0 size= 5168128kB time=00:52:39.12 bitrate=13401.6kbits/s speed=5.26x    
+2023-07-07T00:17:56.071Z frame=75947 fps=126 q=-1.0 size= 5176320kB time=00:52:44.50 bitrate=13400.0kbits/s speed=5.26x    
+2023-07-07T00:17:56.071Z frame=76030 fps=126 q=-1.0 Lsize= 5198663kB time=00:52:47.95 bitrate=13443.2kbits/s speed=5.26x    
+2023-07-07T00:17:56.071Z video:5044778kB audio:152152kB subtitle:34kB other streams:0kB global headers:0kB muxing overhead: 0.032708%
+2023-07-07T00:17:56.071Z 
+2023-07-07T00:17:56.071Z [aac @ 0x5617f0c8b840] Qavg: 703.927
+2023-07-07T00:17:56.071Z 
+2023-07-07T00:17:56.071Z 
+2023-07-07T00:17:56.072Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[Step W06] [C1] Worker [-success-]
+2023-07-07T00:17:56.072Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Worker success during processing
+2023-07-07T00:17:56.072Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Updating transcode stats
+2023-07-07T00:17:56.073Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Deleting non-latest cache file /media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv
+2023-07-07T00:17:56.073Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Scanning new file: /temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-zSni4rvMd.mkv
+2023-07-07T00:17:56.074Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Updating file properties using mkvpropedit
+2023-07-07T00:17:56.074Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Updated file properties using mkvpropedit
+2023-07-07T00:17:56.074Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Requesting Tdarr Server to scan file
+2023-07-07T00:17:56.075Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Subworker exited null
+2023-07-07T00:17:58.079Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Scan complete
+2023-07-07T00:17:58.083Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:pluginCycleLogJSONString:{"nodeName":"MyInternalNode","workerID":"yellow-yak","pluginCycle":1,"outcome":"success","workerLog":"\nPre-processing - Tdarr_Plugin_MC93_MigzImageRemoval\n☑File doesn't contain any unwanted image format streams.\n\nPre-processing - Tdarr_Plugin_lmg1_Reorder_Streams\nFile has video in first stream\n File meets conditions!\n\nPre-processing - Tdarr_Plugin_00td_action_standardise_audio_stream_codecs\nFile has audio streams which aren't in aac \n","lastCliCommand":"tdarr-ffmpeg -i \"/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv\" -map 0:v -map 0:a -map 0:s? -map 0:d? -c copy -c:a:0 aac \"/temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-zSni4rvMd.mkv\""}
+2023-07-07T00:17:58.083Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:fileVersionLogJSONString:{"lastCliCommand":"tdarr-ffmpeg -i \"/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv\" -map 0:v -map 0:a -map 0:s? -map 0:d? -c copy -c:a:0 aac \"/temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-zSni4rvMd.mkv\"","lastPluginId":"Tdarr_Plugin_00td_action_standardise_audio_stream_codecs","sourceFile":{"_id":"/temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-zSni4rvMd.mkv","footprintId":"nuzkxgBak","file":"/temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-zSni4rvMd.mkv","container":"mkv","scannerReads":{"ffProbeRead":"success","exiftoolRead":"success","mediaInfoRead":"not enabled","closedCaptionRead":"not enabled"},"createdAt":1688685475483,"lastPluginDetails":"none","bit_rate":13443054,"statSync":{"dev":2051,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":5922120,"size":5323430963,"blocks":10397336,"atimeMs":1688685474057.108,"mtimeMs":1688685473749.1128,"ctimeMs":1688685473749.1128,"birthtimeMs":1688684871962.84,"atime":"2023-07-06T23:17:54.057Z","mtime":"2023-07-06T23:17:53.749Z","ctime":"2023-07-06T23:17:53.749Z","birthtime":"2023-07-06T23:07:51.963Z"},"file_size":5076.81938457489,"ffProbeData":{"streams":[{"index":0,"codec_name":"hevc","codec_long_name":"H.265 / HEVC (High Efficiency Video Coding)","profile":"Main","codec_type":"video","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","width":3840,"height":2160,"coded_width":3840,"coded_height":2160,"closed_captions":0,"has_b_frames":2,"sample_aspect_ratio":"1:1","display_aspect_ratio":"16:9","pix_fmt":"yuv420p","level":150,"color_range":"tv","color_space":"bt709","color_transfer":"bt709","color_primaries":"bt709","chroma_location":"left","refs":1,"r_frame_rate":"24/1","avg_frame_rate":"24/1","time_base":"1/1000","start_pts":0,"start_time":"0.000000","disposition":{"default":1,"dub":0,"original":1,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"BPS":"13045423","NUMBER_OF_FRAMES":"76030","NUMBER_OF_BYTES":"5165852502","_STATISTICS_WRITING_APP":"mkvmerge v77.0 ('Elemental') 64-bit","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES","DURATION":"00:52:47.916000000"}},{"index":1,"codec_name":"aac","codec_long_name":"AAC (Advanced Audio Coding)","profile":"LC","codec_type":"audio","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":"48000","channels":6,"bits_per_sample":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":-21,"start_time":"-0.021000","disposition":{"default":1,"dub":0,"original":1,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"eng","BPS":"768000","NUMBER_OF_FRAMES":"98999","NUMBER_OF_BYTES":"304124928","_STATISTICS_WRITING_APP":"mkvmerge v77.0 ('Elemental') 64-bit","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES","ENCODER":"Lavc60.3.100 aac","DURATION":"00:52:47.989000000"}},{"index":2,"codec_name":"subrip","codec_long_name":"SubRip subtitle","codec_type":"subtitle","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":-21,"start_time":"-0.021000","duration_ts":3167989,"duration":"3167.989000","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"eng","BPS":"44","NUMBER_OF_FRAMES":"466","NUMBER_OF_BYTES":"16264","_STATISTICS_WRITING_APP":"mkvmerge v77.0 ('Elemental') 64-bit","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES","DURATION":"00:49:36.667000000"}},{"index":3,"codec_name":"subrip","codec_long_name":"SubRip subtitle","codec_type":"subtitle","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":-21,"start_time":"-0.021000","duration_ts":3167989,"duration":"3167.989000","disposition":{"default":0,"dub":0,"original":1,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":1,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"eng","title":"SDH","BPS":"48","NUMBER_OF_FRAMES":"541","NUMBER_OF_BYTES":"18121","_STATISTICS_WRITING_APP":"mkvmerge v77.0 ('Elemental') 64-bit","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES","DURATION":"00:49:48.542000000"}}],"format":{"filename":"/temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-zSni4rvMd.mkv","nb_streams":4,"nb_programs":0,"format_name":"matroska,webm","format_long_name":"Matroska / WebM","start_time":"-0.021000","duration":"3167.989000","size":"5323430963","bit_rate":"13443054","probe_score":100,"tags":{"ENCODER":"Lavf60.3.100"}}},"meta":{"SourceFile":"/temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-zSni4rvMd.mkv","errors":[],"Duration":3167.989,"ExifToolVersion":12.4,"FileName":"Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-zSni4rvMd.mkv","Directory":"/temp","FileSize":"5.0 GiB","FileModifyDate":{"year":2023,"month":7,"day":6,"hour":23,"minute":17,"second":53,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:06 23:17:53+00:00"},"FileAccessDate":{"year":2023,"month":7,"day":6,"hour":23,"minute":17,"second":54,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:06 23:17:54+00:00"},"FileInodeChangeDate":{"year":2023,"month":7,"day":6,"hour":23,"minute":17,"second":53,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:06 23:17:53+00:00"},"FilePermissions":"-rw-rw-r--","FileType":"MKV","FileTypeExtension":"mkv","MIMEType":"video/x-matroska","EBMLVersion":1,"EBMLReadVersion":1,"DocType":"matroska","DocTypeVersion":4,"DocTypeReadVersion":2,"TimecodeScale":"1 ms","MuxingApp":"Lavf60.3.100","WritingApp":"Lavf60.3.100","VideoFrameRate":24,"ImageWidth":3840,"ImageHeight":2160,"AudioChannels":6,"AudioSampleRate":48000,"AudioBitsPerSample":32,"TrackNumber":4,"TrackName":"SDH","TrackLanguage":"eng","TrackDefault":"No","CodecID":"S_TEXT/UTF8","TrackType":"Subtitle","ChapterTimeStart":"0:50:12","ChapterTimeEnd":"0:52:48","ChapterString":"Credits","ChapterLanguage":"und","TagName":"DURATION","TagString":"00:49:48.542000000","ImageSize":"3840x2160","Megapixels":8.3},"mediaInfo":{},"hasClosedCaptions":false,"DB":"4BaCjCxnf","bumped":false,"HealthCheck":"","TranscodeDecisionMaker":"","holdUntil":0,"fileMedium":"video","video_codec_name":"hevc","audio_codec_name":"","video_resolution":"4KUHD","lastHealthCheckDate":0,"lastTranscodeDate":0,"history":"","oldSize":0,"newSize":0,"videoStreamIndex":0,"duration":3167}}
+2023-07-07T00:17:58.084Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Transcodes during this job so far: 1
+2023-07-07T00:17:58.084Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[Step W02] [C2] Running pre-process file
+2023-07-07T00:17:58.085Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Checking files can be accessed
+2023-07-07T00:17:58.086Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Relevant paths can be accessed
+2023-07-07T00:17:58.086Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Source file: /temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-zSni4rvMd.mkv
+2023-07-07T00:17:58.087Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Cache folder: /temp
+2023-07-07T00:17:58.088Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[Step W03] [C2] Analysing file - running plugins
+2023-07-07T00:17:58.089Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:New cache file has already been scanned, no need to scan again
+2023-07-07T00:17:58.090Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Updating Node relay: Processing
+2023-07-07T00:17:58.090Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[1/2] Checking file frame count
+2023-07-07T00:17:58.091Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[2/2] Frame count 0
+2023-07-07T00:17:58.091Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Transcode task, determining transcode settings
+2023-07-07T00:17:58.091Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Plugin stack selected
+2023-07-07T00:17:58.092Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Plugin: plugin1:  Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-07T00:17:58.094Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[1/5] Reading plugin
+2023-07-07T00:17:58.094Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[2/5] Plugin read finished
+2023-07-07T00:17:58.095Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[3/5] Installing dependencies
+2023-07-07T00:17:58.095Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[4/5] Running plugin
+2023-07-07T00:17:58.095Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:{"pluginInputs":{}}
+2023-07-07T00:17:58.096Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[5/5] Running plugin finished
+2023-07-07T00:17:58.096Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Plugin: plugin2:  Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-07T00:17:58.096Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[1/5] Reading plugin
+2023-07-07T00:17:58.097Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[2/5] Plugin read finished
+2023-07-07T00:17:58.097Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[3/5] Installing dependencies
+2023-07-07T00:17:58.097Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[4/5] Running plugin
+2023-07-07T00:17:58.098Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:{"pluginInputs":{}}
+2023-07-07T00:17:58.098Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[5/5] Running plugin finished
+2023-07-07T00:17:58.098Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Plugin: sxfFHmyyT:  Tdarr_Plugin_00td_action_standardise_audio_stream_codecs
+2023-07-07T00:17:58.099Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[1/5] Reading plugin
+2023-07-07T00:17:58.099Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[2/5] Plugin read finished
+2023-07-07T00:17:58.099Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[3/5] Installing dependencies
+2023-07-07T00:17:58.100Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[4/5] Running plugin
+2023-07-07T00:17:58.100Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:{"pluginInputs":{"audioCodec":"aac"}}
+2023-07-07T00:17:58.100Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[5/5] Running plugin finished
+2023-07-07T00:17:58.101Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Plugin: aEVldYMXA:  Tdarr_Plugin_075a_Transcode_Customisable
+2023-07-07T00:17:58.101Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[1/5] Reading plugin
+2023-07-07T00:17:58.101Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[2/5] Plugin read finished
+2023-07-07T00:17:58.102Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[3/5] Installing dependencies
+2023-07-07T00:17:58.102Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[4/5] Running plugin
+2023-07-07T00:17:58.102Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:{"pluginInputs":{"codecs_to_exclude":"h264","cli":"handbrake","transcode_arguments":"-Z \"H.264 MKV 2160p60 4K\" -e x264 --all-subtitles --all-audio","output_container":".mkv"}}
+2023-07-07T00:17:58.102Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[5/5] Running plugin finished
+2023-07-07T00:17:58.103Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Worker config: {
+2023-07-07T00:17:58.103Z   "processFile": true,
+2023-07-07T00:17:58.103Z   "preset": "-Z \"H.264 MKV 2160p60 4K\" -e x264 --all-subtitles --all-audio",
+2023-07-07T00:17:58.103Z   "container": ".mkv",
+2023-07-07T00:17:58.103Z   "handBrakeMode": true,
+2023-07-07T00:17:58.103Z   "FFmpegMode": false,
+2023-07-07T00:17:58.103Z   "reQueueAfter": true,
+2023-07-07T00:17:58.103Z   "infoLog": "☒File is not in desired codec! \n",
+2023-07-07T00:17:58.103Z   "lastPluginDetails": {
+2023-07-07T00:17:58.103Z     "source": "Community",
+2023-07-07T00:17:58.103Z     "id": "Tdarr_Plugin_075a_Transcode_Customisable",
+2023-07-07T00:17:58.103Z     "number": "4/7"
+2023-07-07T00:17:58.103Z   },
+2023-07-07T00:17:58.103Z   "handbrakeMode": true,
+2023-07-07T00:17:58.103Z   "cliToUse": "handbrake"
+2023-07-07T00:17:58.103Z }
+2023-07-07T00:17:58.103Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Worker log: 
+2023-07-07T00:17:58.103Z Pre-processing - Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-07T00:17:58.103Z ☑File doesn't contain any unwanted image format streams.
+2023-07-07T00:17:58.103Z 
+2023-07-07T00:17:58.103Z Pre-processing - Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-07T00:17:58.103Z File has video in first stream
+2023-07-07T00:17:58.103Z  File meets conditions!
+2023-07-07T00:17:58.103Z 
+2023-07-07T00:17:58.103Z Pre-processing - Tdarr_Plugin_00td_action_standardise_audio_stream_codecs
+2023-07-07T00:17:58.103Z File does not have any audio streams which aren't in aac 
+2023-07-07T00:17:58.103Z 
+2023-07-07T00:17:58.103Z Pre-processing - Tdarr_Plugin_075a_Transcode_Customisable
+2023-07-07T00:17:58.103Z ☒File is not in desired codec! 
+2023-07-07T00:17:58.103Z 
+2023-07-07T00:17:58.103Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Worker will process
+2023-07-07T00:17:58.104Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[Step W04] [C2] Preparing command
+2023-07-07T00:17:58.104Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Cache file stem: /temp
+2023-07-07T00:17:58.105Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Cache file path: /temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-ArzD4MLAz.mkv
+2023-07-07T00:17:58.105Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Create transcode args
+2023-07-07T00:17:58.106Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Args:  -i "/temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-zSni4rvMd.mkv" -o "/temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-ArzD4MLAz.mkv" -Z "H.264 MKV 2160p60 4K" -e x264 --all-subtitles --all-audio
+2023-07-07T00:17:58.106Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Getting source file size
+2023-07-07T00:17:58.107Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Source file size: 4.957831430248916
+2023-07-07T00:17:58.107Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Performing safety check on worker config to see if old transcode args/container match new ones
+2023-07-07T00:17:58.108Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Safety check complete, all good
+2023-07-07T00:17:58.108Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[Step W05] [C2] Launching subworker
+2023-07-07T00:17:58.109Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Preparing to launch subworker
+2023-07-07T00:17:58.109Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Subworker launched
+2023-07-07T00:17:58.110Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[1/3] Sending command to subworker
+2023-07-07T00:17:58.110Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[2/3] HandBrakeCLI -i "/temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-zSni4rvMd.mkv" -o "/temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-ArzD4MLAz.mkv" -Z "H.264 MKV 2160p60 4K" -e x264 --all-subtitles --all-audio
+2023-07-07T00:17:58.110Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[3/3] Command sent
+2023-07-07T00:17:58.110Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:To see live CLI output, enable 'Log full FFmpeg/HandBrake output' in the staging section on the Tdarr tab before the job starts. Note this could increase the job report size substantially.
+2023-07-07T00:17:58.111Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Subworker:Online
+2023-07-07T00:17:58.111Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Subworker:Receiving transcode settings
+2023-07-07T00:17:58.111Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Subworker:Running CLI
+2023-07-07T00:20:51.571Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Subworker:a.Thread closed, code: null
+2023-07-07T00:20:51.664Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Subworker exit approved, killing subworker
+2023-07-07T00:20:51.667Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Subworker killed
+2023-07-07T00:20:51.673Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:b.Thread closed, code: null
+2023-07-07T00:20:51.674Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:CLI code: null
+2023-07-07T00:20:51.674Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Last 200 lines of CLI log:
+2023-07-07T00:20:51.674Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Encoding: task 1 of 1, 1.23 % (5.74 fps, avg 8.82 fps, ETA 02h21m55s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.24 % (5.74 fps, avg 8.82 fps, ETA 02h21m55s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.24 % (5.74 fps, avg 8.82 fps, ETA 02h21m55s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.24 % (5.74 fps, avg 8.82 fps, ETA 02h21m55s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.24 % (5.74 fps, avg 8.82 fps, ETA 02h21m55s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.24 % (5.74 fps, avg 8.82 fps, ETA 02h21m55s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.24 % (5.74 fps, avg 8.82 fps, ETA 02h21m55s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.24 % (4.23 fps, avg 8.73 fps, ETA 02h23m23s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.25 % (4.23 fps, avg 8.73 fps, ETA 02h23m23s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.25 % (4.23 fps, avg 8.73 fps, ETA 02h23m23s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.25 % (4.23 fps, avg 8.73 fps, ETA 02h23m23s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.26 % (4.51 fps, avg 8.70 fps, ETA 02h23m44s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.26 % (4.51 fps, avg 8.70 fps, ETA 02h23m44s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.26 % (4.51 fps, avg 8.70 fps, ETA 02h23m44s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.27 % (6.07 fps, avg 8.72 fps, ETA 02h23m32s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.27 % (6.07 fps, avg 8.72 fps, ETA 02h23m32s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.27 % (6.07 fps, avg 8.72 fps, ETA 02h23m32s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.28 % (6.07 fps, avg 8.72 fps, ETA 02h23m32s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.28 % (7.89 fps, avg 8.70 fps, ETA 02h23m45s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.28 % (7.89 fps, avg 8.70 fps, ETA 02h23m45s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.29 % (7.89 fps, avg 8.70 fps, ETA 02h23m45s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.29 % (7.89 fps, avg 8.70 fps, ETA 02h23m45s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.29 % (8.36 fps, avg 8.69 fps, ETA 02h23m51s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.29 % (8.36 fps, avg 8.69 fps, ETA 02h23m51s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.30 % (8.36 fps, avg 8.69 fps, ETA 02h23m51s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.30 % (7.70 fps, avg 8.69 fps, ETA 02h23m59s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.30 % (7.70 fps, avg 8.69 fps, ETA 02h23m59s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.30 % (7.70 fps, avg 8.69 fps, ETA 02h23m59s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.31 % (7.55 fps, avg 8.67 fps, ETA 02h24m14s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.31 % (7.55 fps, avg 8.67 fps, ETA 02h24m14s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.32 % (7.55 fps, avg 8.67 fps, ETA 02h24m14s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.32 % (7.55 fps, avg 8.67 fps, ETA 02h24m14s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.32 % (8.15 fps, avg 8.68 fps, ETA 02h24m03s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.32 % (8.15 fps, avg 8.68 fps, ETA 02h24m03s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.33 % (8.15 fps, avg 8.68 fps, ETA 02h24m03s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.33 % (8.15 fps, avg 8.68 fps, ETA 02h24m03s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.33 % (8.15 fps, avg 8.68 fps, ETA 02h24m03s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.34 % (6.96 fps, avg 8.64 fps, ETA 02h24m47s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.34 % (6.96 fps, avg 8.64 fps, ETA 02h24m47s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.34 % (6.96 fps, avg 8.64 fps, ETA 02h24m47s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.34 % (6.69 fps, avg 8.61 fps, ETA 02h25m09s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.35 % (6.69 fps, avg 8.61 fps, ETA 02h25m09s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.35 % (6.69 fps, avg 8.61 fps, ETA 02h25m09s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.35 % (6.14 fps, avg 8.61 fps, ETA 02h25m13s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.35 % (6.14 fps, avg 8.61 fps, ETA 02h25m13s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.36 % (6.14 fps, avg 8.61 fps, ETA 02h25m13s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.36 % (6.14 fps, avg 8.61 fps, ETA 02h25m13s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.36 % (7.87 fps, avg 8.62 fps, ETA 02h25m04s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.36 % (7.87 fps, avg 8.62 fps, ETA 02h25m04s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.37 % (7.87 fps, avg 8.62 fps, ETA 02h25m04s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.37 % (7.85 fps, avg 8.59 fps, ETA 02h25m26s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.38 % (7.85 fps, avg 8.59 fps, ETA 02h25m26s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.38 % (7.85 fps, avg 8.59 fps, ETA 02h25m26s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.38 % (7.85 fps, avg 8.59 fps, ETA 02h25m26s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.38 % (7.85 fps, avg 8.59 fps, ETA 02h25m26s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.38 % (6.69 fps, avg 8.55 fps, ETA 02h26m05s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.38 % (6.69 fps, avg 8.55 fps, ETA 02h26m05s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.39 % (6.69 fps, avg 8.55 fps, ETA 02h26m05s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.39 % (5.60 fps, avg 8.53 fps, ETA 02h26m26s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.39 % (5.60 fps, avg 8.53 fps, ETA 02h26m26s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.39 % (5.60 fps, avg 8.53 fps, ETA 02h26m26s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.40 % (6.09 fps, avg 8.52 fps, ETA 02h26m34s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.41 % (6.09 fps, avg 8.52 fps, ETA 02h26m34s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.41 % (6.09 fps, avg 8.52 fps, ETA 02h26m34s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.41 % (6.09 fps, avg 8.52 fps, ETA 02h26m34s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.41 % (6.87 fps, avg 8.51 fps, ETA 02h26m47s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.42 % (6.87 fps, avg 8.51 fps, ETA 02h26m47s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.42 % (6.87 fps, avg 8.51 fps, ETA 02h26m47s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.42 % (6.87 fps, avg 8.51 fps, ETA 02h26m47s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.42 % (6.87 fps, avg 8.51 fps, ETA 02h26m47s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.42 % (7.48 fps, avg 8.50 fps, ETA 02h26m54s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.43 % (7.48 fps, avg 8.50 fps, ETA 02h26m54s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.44 % (7.48 fps, avg 8.50 fps, ETA 02h26m54s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.44 % (7.48 fps, avg 8.50 fps, ETA 02h26m54s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.44 % (7.48 fps, avg 8.50 fps, ETA 02h26m54s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.44 % (7.48 fps, avg 8.50 fps, ETA 02h26m54s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.44 % (7.48 fps, avg 8.50 fps, ETA 02h26m54s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.44 % (7.48 fps, avg 8.50 fps, ETA 02h26m54s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.44 % (7.48 fps, avg 8.50 fps, ETA 02h26m54s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.44 % (7.48 fps, avg 8.50 fps, ETA 02h26m54s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.44 % (7.48 fps, avg 8.50 fps, ETA 02h26m54s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.44 % (7.48 fps, avg 8.50 fps, ETA 02h26m54s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.44 % (7.48 fps, avg 8.50 fps, ETA 02h26m54s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.44 % (7.48 fps, avg 8.50 fps, ETA 02h26m54s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.44 % (4.45 fps, avg 8.32 fps, ETA 02h30m12s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.44 % (4.45 fps, avg 8.32 fps, ETA 02h30m12s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.44 % (4.45 fps, avg 8.32 fps, ETA 02h30m12s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.45 % (4.45 fps, avg 8.32 fps, ETA 02h30m12s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.45 % (4.45 fps, avg 8.32 fps, ETA 02h30m12s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.45 % (4.45 fps, avg 8.32 fps, ETA 02h30m12s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.45 % (4.45 fps, avg 8.32 fps, ETA 02h30m12s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.45 % (4.07 fps, avg 8.26 fps, ETA 02h31m14s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.45 % (4.07 fps, avg 8.26 fps, ETA 02h31m14s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.46 % (4.07 fps, avg 8.26 fps, ETA 02h31m14s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.46 % (4.07 fps, avg 8.26 fps, ETA 02h31m14s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.46 % (3.68 fps, avg 8.23 fps, ETA 02h31m42s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.46 % (3.68 fps, avg 8.23 fps, ETA 02h31m42s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.46 % (3.68 fps, avg 8.23 fps, ETA 02h31m42s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.47 % (3.68 fps, avg 8.23 fps, ETA 02h31m42s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.47 % (5.63 fps, avg 8.22 fps, ETA 02h31m49s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.48 % (5.63 fps, avg 8.22 fps, ETA 02h31m49s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.48 % (5.63 fps, avg 8.22 fps, ETA 02h31m49s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.48 % (5.63 fps, avg 8.22 fps, ETA 02h31m49s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.48 % (6.34 fps, avg 8.21 fps, ETA 02h32m07s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.49 % (6.34 fps, avg 8.21 fps, ETA 02h32m07s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.49 % (6.34 fps, avg 8.21 fps, ETA 02h32m07s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.49 % (6.80 fps, avg 8.20 fps, ETA 02h32m16s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.49 % (6.80 fps, avg 8.20 fps, ETA 02h32m16s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.50 % (6.80 fps, avg 8.20 fps, ETA 02h32m16s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.50 % (7.92 fps, avg 8.22 fps, ETA 02h31m53s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.50 % (7.92 fps, avg 8.22 fps, ETA 02h31m53s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.51 % (7.92 fps, avg 8.22 fps, ETA 02h31m53s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.51 % (7.92 fps, avg 8.22 fps, ETA 02h31m53s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.51 % (7.95 fps, avg 8.20 fps, ETA 02h32m10s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.51 % (7.95 fps, avg 8.20 fps, ETA 02h32m10s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.51 % (7.95 fps, avg 8.20 fps, ETA 02h32m10s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.51 % (7.95 fps, avg 8.20 fps, ETA 02h32m10s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.51 % (7.95 fps, avg 8.20 fps, ETA 02h32m10s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.52 % (5.26 fps, avg 8.12 fps, ETA 02h33m38s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.52 % (5.26 fps, avg 8.12 fps, ETA 02h33m38s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.52 % (5.26 fps, avg 8.12 fps, ETA 02h33m38s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.52 % (3.33 fps, avg 8.09 fps, ETA 02h34m11s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.52 % (3.33 fps, avg 8.09 fps, ETA 02h34m11s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.52 % (3.33 fps, avg 8.09 fps, ETA 02h34m11s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.53 % (3.60 fps, avg 8.09 fps, ETA 02h34m19s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.53 % (3.60 fps, avg 8.09 fps, ETA 02h34m19s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.53 % (3.60 fps, avg 8.09 fps, ETA 02h34m19s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.54 % (3.60 fps, avg 8.09 fps, ETA 02h34m19s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.54 % (5.98 fps, avg 8.08 fps, ETA 02h34m27s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.54 % (5.98 fps, avg 8.08 fps, ETA 02h34m27s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.54 % (5.98 fps, avg 8.08 fps, ETA 02h34m27s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.54 % (6.29 fps, avg 8.06 fps, ETA 02h34m51s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.54 % (6.29 fps, avg 8.06 fps, ETA 02h34m51s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.54 % (6.29 fps, avg 8.06 fps, ETA 02h34m51s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.55 % (6.29 fps, avg 8.06 fps, ETA 02h34m51s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.55 % (5.58 fps, avg 8.03 fps, ETA 02h35m16s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.55 % (5.58 fps, avg 8.03 fps, ETA 02h35m16s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.55 % (5.58 fps, avg 8.03 fps, ETA 02h35m16s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.56 % (4.68 fps, avg 8.00 fps, ETA 02h35m50s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.57 % (4.68 fps, avg 8.00 fps, ETA 02h35m50s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.57 % (4.68 fps, avg 8.00 fps, ETA 02h35m50s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.57 % (4.68 fps, avg 8.00 fps, ETA 02h35m50s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.57 % (5.60 fps, avg 8.00 fps, ETA 02h35m54s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.57 % (5.60 fps, avg 8.00 fps, ETA 02h35m54s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.58 % (5.60 fps, avg 8.00 fps, ETA 02h35m54s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.58 % (5.60 fps, avg 8.00 fps, ETA 02h35m54s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.59 % (7.80 fps, avg 8.03 fps, ETA 02h35m19s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.59 % (7.80 fps, avg 8.03 fps, ETA 02h35m19s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.59 % (7.80 fps, avg 8.03 fps, ETA 02h35m19s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.60 % (9.37 fps, avg 8.03 fps, ETA 02h35m11s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.60 % (9.37 fps, avg 8.03 fps, ETA 02h35m11s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.60 % (9.37 fps, avg 8.03 fps, ETA 02h35m11s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.61 % (9.37 fps, avg 8.03 fps, ETA 02h35m11s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.61 % (8.71 fps, avg 8.02 fps, ETA 02h35m32s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.61 % (8.71 fps, avg 8.02 fps, ETA 02h35m32s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.61 % (8.71 fps, avg 8.02 fps, ETA 02h35m32s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.62 % (8.71 fps, avg 8.02 fps, ETA 02h35m32s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.62 % (7.38 fps, avg 8.01 fps, ETA 02h35m32s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.62 % (7.38 fps, avg 8.01 fps, ETA 02h35m32s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.63 % (7.38 fps, avg 8.01 fps, ETA 02h35m32s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.63 % (6.97 fps, avg 8.01 fps, ETA 02h35m35s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.63 % (6.97 fps, avg 8.01 fps, ETA 02h35m35s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.63 % (6.97 fps, avg 8.01 fps, ETA 02h35m35s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.64 % (6.97 fps, avg 8.01 fps, ETA 02h35m35s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.64 % (7.92 fps, avg 8.01 fps, ETA 02h35m31s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.65 % (7.92 fps, avg 8.01 fps, ETA 02h35m31s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.65 % (7.92 fps, avg 8.01 fps, ETA 02h35m31s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.65 % (7.92 fps, avg 8.01 fps, ETA 02h35m31s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.65 % (7.92 fps, avg 8.01 fps, ETA 02h35m31s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.66 % (7.90 fps, avg 8.01 fps, ETA 02h35m32s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.67 % (7.90 fps, avg 8.01 fps, ETA 02h35m32s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.67 % (7.90 fps, avg 8.01 fps, ETA 02h35m32s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.67 % (8.84 fps, avg 8.03 fps, ETA 02h35m09s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.67 % (8.84 fps, avg 8.03 fps, ETA 02h35m09s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.68 % (8.84 fps, avg 8.03 fps, ETA 02h35m09s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.68 % (8.84 fps, avg 8.03 fps, ETA 02h35m09s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.69 % (8.86 fps, avg 8.03 fps, ETA 02h35m05s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.69 % (8.86 fps, avg 8.03 fps, ETA 02h35m05s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.69 % (8.86 fps, avg 8.03 fps, ETA 02h35m05s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.69 % (8.86 fps, avg 8.03 fps, ETA 02h35m05s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.70 % (9.35 fps, avg 8.04 fps, ETA 02h34m57s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.71 % (9.35 fps, avg 8.04 fps, ETA 02h34m57s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.71 % (9.35 fps, avg 8.04 fps, ETA 02h34m57s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.71 % (9.35 fps, avg 8.04 fps, ETA 02h34m57s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.72 % (8.60 fps, avg 8.04 fps, ETA 02h34m50s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.72 % (8.60 fps, avg 8.04 fps, ETA 02h34m50s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.72 % (8.60 fps, avg 8.04 fps, ETA 02h34m50s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.72 % (8.60 fps, avg 8.04 fps, ETA 02h34m50s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.73 % (9.23 fps, avg 8.06 fps, ETA 02h34m32s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.73 % (9.23 fps, avg 8.06 fps, ETA 02h34m32s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.73 % (9.23 fps, avg 8.06 fps, ETA 02h34m32s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.73 % (8.63 fps, avg 8.05 fps, ETA 02h34m39s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.74 % (8.63 fps, avg 8.05 fps, ETA 02h34m39s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.75 % (8.63 fps, avg 8.05 fps, ETA 02h34m39s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.75 % (8.63 fps, avg 8.05 fps, ETA 02h34m39s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.75 % (8.63 fps, avg 8.05 fps, ETA 02h34m39s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.75 % (8.63 fps, avg 8.05 fps, ETA 02h34m39s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.75 % (8.63 fps, avg 8.05 fps, ETA 02h34m39s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.75 % (7.09 fps, avg 8.02 fps, ETA 02h35m15s)
+2023-07-07T00:20:51.674Z Encoding: task 1 of 1, 1.75 % (7.09 fps, avg 8.02 fps, ETA 02h35m15s)
+2023-07-07T00:20:51.674Z 
+2023-07-07T00:20:51.682Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[-error-]
+2023-07-07T00:20:51.682Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[Step W07] [C2] Worker [-error-]
+2023-07-07T00:20:51.683Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Error encountered when processing /temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-zSni4rvMd.mkv
+2023-07-07T00:20:51.683Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[1/2] Trying to delete errored cache file /temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-ArzD4MLAz.mkv
+2023-07-07T00:20:51.683Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Subworker exited null
+2023-07-07T00:20:53.706Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[2/2] Delete success
+2023-07-07T00:20:53.707Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:pluginCycleLogJSONString:{"nodeName":"MyInternalNode","workerID":"yellow-yak","pluginCycle":2,"outcome":"error","workerLog":"\nPre-processing - Tdarr_Plugin_MC93_MigzImageRemoval\n☑File doesn't contain any unwanted image format streams.\n\nPre-processing - Tdarr_Plugin_lmg1_Reorder_Streams\nFile has video in first stream\n File meets conditions!\n\nPre-processing - Tdarr_Plugin_00td_action_standardise_audio_stream_codecs\nFile does not have any audio streams which aren't in aac \n\nPre-processing - Tdarr_Plugin_075a_Transcode_Customisable\n☒File is not in desired codec! \n","lastCliCommand":"HandBrakeCLI -i \"/temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-zSni4rvMd.mkv\" -o \"/temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-ArzD4MLAz.mkv\" -Z \"H.264 MKV 2160p60 4K\" -e x264 --all-subtitles --all-audio"}
+2023-07-07T00:20:53.708Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Updating transcode stats
+2023-07-07T00:20:53.708Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[Step W09] [-error-] Job end
+2023-07-07T00:20:53.709Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Transcoding error encountered. Check sections above.
+2023-07-07T00:20:53.709Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:[Step W10] Worker processing end
+2023-07-07T00:20:53.710Z 78L9hi0sbZ0:Node[MyInternalNode]:Worker[yellow-yak]:Successfully updated server with verdict: transcodeError

@@ -1,0 +1,764 @@
+[Script Info]
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 1280
+PlayResY: 720
+Timer: 100.0
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,sans-serif,47,&H00FFFFFF,&H00FFFFFF,&H000F0F0F,&H000F0F0F,0,0,0,0,100,100,0,0.00,1,1.57,1.31,2,20,20,20,0
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:02.02,0:00:06.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}This programme contains\Nstrong language and adult humour.
+Dialogue: 0,0:00:30.30,0:00:33.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Who owns the Infinity Gauntlet?\N'Thanos.'
+Dialogue: 0,0:00:33.14,0:00:35.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}What was Thor's father's name?\N'Odin.
+Dialogue: 0,0:00:35.86,0:00:38.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}'Sorry, Moss, I've really got to go.'
+Dialogue: 0,0:00:38.34,0:00:41.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Awww, just a few more,\Njust a few more...
+Dialogue: 0,0:00:41.06,0:00:43.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}No, no, I'm sorry,\Nyou've done more than enough.
+Dialogue: 0,0:00:43.46,0:00:48.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}OK, all right, baby, see you later.\NBye-bye. Wow! Right?
+Dialogue: 0,0:00:48.30,0:00:51.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}That's an impressive knowledge\Nof the Marvel universe. I know.
+Dialogue: 0,0:00:51.98,0:00:53.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Well, you've done it.
+Dialogue: 0,0:00:53.30,0:00:56.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}You've finally found a woman\NI can do business with.
+Dialogue: 0,0:00:56.62,0:00:59.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Yeah, no,\Ndon't say things like that.
+Dialogue: 0,0:00:59.66,0:01:03.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm sorry, I'm just so excited\Nfor us! No...
+Dialogue: 0,0:01:07.62,0:01:10.66,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}If you don't go in all the way,\Nit doesn't really count.
+Dialogue: 0,0:01:11.74,0:01:13.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}SHE LAUGHS
+Dialogue: 0,0:01:14.02,0:01:18.06,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Hey, Red! Stand back, stand back,\Nthis one's mine.
+Dialogue: 0,0:01:18.10,0:01:20.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm going to do everything for you,\Nreally nice.
+Dialogue: 0,0:01:20.46,0:01:22.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Stand back, stand back,\Nshe's all mine.
+Dialogue: 0,0:01:24.46,0:01:29.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It's tight. You're so strong.
+Dialogue: 0,0:01:31.98,0:01:35.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}SWIRLING MARIACHI-STYLE MUSIC
+Dialogue: 0,0:01:38.42,0:01:40.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}FROTHING HISS
+Dialogue: 0,0:01:46.06,0:01:47.34,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh!
+Dialogue: 0,0:01:47.38,0:01:49.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Ah, yes, yes.
+Dialogue: 0,0:01:52.74,0:01:54.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It's bubbling over.
+Dialogue: 0,0:02:14.06,0:02:16.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It's on the house...for you.
+Dialogue: 0,0:02:18.90,0:02:22.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, my God! You inspire me.
+Dialogue: 0,0:02:22.30,0:02:26.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Have a great day. I will...and you.
+Dialogue: 0,0:02:26.82,0:02:28.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Thank you. Ciao.
+Dialogue: 0,0:02:31.38,0:02:34.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}BABY TALKS FRENCH
+Dialogue: 0,0:02:35.22,0:02:38.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Moss, have you seen this video\Nof the baby speaking French?
+Dialogue: 0,0:02:38.66,0:02:42.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It went viral at 10:30, Roy,\Nof course I've seen it.
+Dialogue: 0,0:02:42.46,0:02:44.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I must have been in the toilet.
+Dialogue: 0,0:02:44.82,0:02:46.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Ah, Jen, exciting news,
+Dialogue: 0,0:02:46.54,0:02:48.34,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I've just uploaded\Nthe second episode
+Dialogue: 0,0:02:48.38,0:02:50.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}of my board games review show.
+Dialogue: 0,0:02:50.30,0:02:51.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Care to have a look?
+Dialogue: 0,0:02:55.14,0:02:57.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}That was fast.
+Dialogue: 0,0:02:57.22,0:03:01.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Seems like only yesterday\Nwe had to sit through the last one.
+Dialogue: 0,0:03:01.58,0:03:04.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It was three months ago, Jen.\NReally?
+Dialogue: 0,0:03:04.34,0:03:07.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It feels like it just happened.\NRoy, did you hear that?
+Dialogue: 0,0:03:07.86,0:03:12.14,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Moss has done his board game review\Nshow again. I'm not watching that.
+Dialogue: 0,0:03:12.18,0:03:13.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm not watching that again.
+Dialogue: 0,0:03:13.82,0:03:16.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Jesus Christ,\Nwe don't have to watch it, do we?
+Dialogue: 0,0:03:17.02,0:03:19.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}We only sat through the first one\Nthe other day.
+Dialogue: 0,0:03:19.66,0:03:26.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It was three months ago. My God!\NWow, it feels like it just ended.
+Dialogue: 0,0:03:26.66,0:03:32.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It was so boring! It was like being\Ninsane, it was so insanely boring!
+Dialogue: 0,0:03:34.54,0:03:37.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Roy's not a fan\Nbut you said you liked it.
+Dialogue: 0,0:03:38.74,0:03:42.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Where did you get your coffee?\NA new place. Any good? Really good.
+Dialogue: 0,0:03:44.10,0:03:46.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}You specifically said, and I quote,
+Dialogue: 0,0:03:46.46,0:03:49.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}"You must show me the next one,\NMoss." Did I?
+Dialogue: 0,0:03:49.34,0:03:51.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Did I really? My God!\NPHONE RINGS
+Dialogue: 0,0:03:51.74,0:03:53.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, if you'll excuse me,
+Dialogue: 0,0:03:53.34,0:03:55.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}that'll be my lady love\Nfrom the seventh floor.
+Dialogue: 0,0:03:55.98,0:03:59.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}That's going well? Oh, yeah!\NHe's cock-a-hoop over this Sheila.
+Dialogue: 0,0:04:01.50,0:04:03.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}OK, so that'll be over soon, then.
+Dialogue: 0,0:04:03.98,0:04:06.34,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Hey, I'll have you know\Nthat Alice is nuts about me.
+Dialogue: 0,0:04:06.38,0:04:12.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}She thinks that I'm emotionally\Nartistic. Well, what does that mean?
+Dialogue: 0,0:04:12.06,0:04:17.14,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Erm, she said that emotionally\NI was on the artistic spectrum.
+Dialogue: 0,0:04:17.18,0:04:22.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I think it means that I'm creative\Nabout my feelings, you know,
+Dialogue: 0,0:04:22.98,0:04:26.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}more in tune with her wants\Nand needs than most men.
+Dialogue: 0,0:04:26.50,0:04:29.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, she's rung out...\NThat keeps happening.
+Dialogue: 0,0:04:29.26,0:04:30.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}All right, if I'd said I'd watch it,
+Dialogue: 0,0:04:30.98,0:04:33.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}then I suppose that's what\NI'm going to have to do.
+Dialogue: 0,0:04:33.66,0:04:36.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}That's the spirit, Jen.\NCome on, let's get it over with.
+Dialogue: 0,0:04:36.86,0:04:38.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Now, keep an open mind.
+Dialogue: 0,0:04:38.22,0:04:41.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I know the first show was a bit\N"bare boned" but I think you'll
+Dialogue: 0,0:04:41.30,0:04:45.14,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}really enjoy my new episode,\Nor "webisode", if you prefer.
+Dialogue: 0,0:04:45.18,0:04:47.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I don't prefer that, no-one does.
+Dialogue: 0,0:04:47.06,0:04:50.14,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Come on, come on, sooner it starts,\Nsooner it's over.
+Dialogue: 0,0:04:50.18,0:04:53.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}FUNKY BASS GUITAR\NGame board.
+Dialogue: 0,0:04:58.14,0:05:01.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Game...game...game...
+Dialogue: 0,0:05:07.18,0:05:09.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Game... Board.
+Dialogue: 0,0:05:09.34,0:05:11.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Game... Board.
+Dialogue: 0,0:05:11.82,0:05:14.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Game... Board.
+Dialogue: 0,0:05:14.26,0:05:19.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Board...board...board...board...
+Dialogue: 0,0:05:22.30,0:05:27.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Hello and welcome to Games Board.\NToday on the show, we have...
+Dialogue: 0,0:05:27.46,0:05:29.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}So, guys... I've been playing...
+Dialogue: 0,0:05:32.30,0:05:33.90,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}What's coming up on the show...
+Dialogue: 0,0:05:35.86,0:05:39.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}..guys? I've...\NI've been playing Ports of Essen.
+Dialogue: 0,0:05:39.34,0:05:42.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}A strategic trading game,\Nwhere each player takes
+Dialogue: 0,0:05:43.02,0:05:47.14,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}the role of a Danish fishing port\Nmerchant in the 16th century.
+Dialogue: 0,0:05:49.70,0:05:51.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}And for a change of pace,
+Dialogue: 0,0:05:51.50,0:05:54.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I've been looking at the expansion\Nto Textile Merchant.
+Dialogue: 0,0:05:54.86,0:05:58.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Textile Merchant, Norfolk Edition.
+Dialogue: 0,0:05:59.70,0:06:02.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Two games by Reiner Kiniksi?\NHold on to your hat,
+Dialogue: 0,0:06:02.50,0:06:03.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}it's going to be a bumpy...
+Dialogue: 0,0:06:03.66,0:06:05.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}FUNKY BASS GUITAR
+Dialogue: 0,0:06:06.74,0:06:09.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Let's talk about components.
+Dialogue: 0,0:06:09.22,0:06:11.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Shouldn't we do rules\Nbefore components?
+Dialogue: 0,0:06:11.98,0:06:14.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It won't make any sense\Nif we do it before the rules.
+Dialogue: 0,0:06:14.82,0:06:17.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Don't forget to cut this\Nconversation.
+Dialogue: 0,0:06:17.30,0:06:19.66,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}What? Well,\Ndon't let the actual programme...
+Dialogue: 0,0:06:19.70,0:06:21.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}FUNKY BASS GUITAR
+Dialogue: 0,0:06:21.86,0:06:28.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}How long is this? Even hearing it is\Nbad. I need to stop hearing it.
+Dialogue: 0,0:06:28.78,0:06:31.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Sorry, Moss, I can't do it, it's\Nunbearable. Where are you going?
+Dialogue: 0,0:06:31.74,0:06:36.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm jealous of your coffee.\NYou literally can't watch it?
+Dialogue: 0,0:06:36.06,0:06:38.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I literally can't watch it.
+Dialogue: 0,0:06:39.34,0:06:41.06,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}So what can we do to make it better?
+Dialogue: 0,0:06:41.10,0:06:45.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Well, I don't want to say anything\Nthat might hurt your feelings.
+Dialogue: 0,0:06:45.50,0:06:48.90,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It's all right, I can take it, Jen.\NI'm a big boy.
+Dialogue: 0,0:06:48.94,0:06:51.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Well, as I say, it's slow,\Nit's so slow.
+Dialogue: 0,0:06:51.86,0:06:55.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}OK, good, it is a bit slow,\Nwe can work on that.
+Dialogue: 0,0:06:55.50,0:06:59.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}And I guess the other thing is that\Nit's terrible.
+Dialogue: 0,0:06:59.30,0:07:01.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It's slow and terrible.
+Dialogue: 0,0:07:01.98,0:07:04.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}If a friend asked me to describe it,\NI'd say it's a slow,
+Dialogue: 0,0:07:04.34,0:07:07.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}terrible thing on the internet, that\NI could only watch for a minute.
+Dialogue: 0,0:07:07.34,0:07:09.34,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Is this helpful? Arr...pfft!
+Dialogue: 0,0:07:09.38,0:07:16.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}So helpful! God! Slow, terrible,\Ncould only watch it for a minute.
+Dialogue: 0,0:07:17.02,0:07:19.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Wow, a lot to get our teeth\Nstuck into there.
+Dialogue: 0,0:07:19.42,0:07:22.06,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}OK, well, let's see if I can\Nhelp you with anything else.
+Dialogue: 0,0:07:22.10,0:07:24.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Erm, none of you are any good\Nin front of a camera.
+Dialogue: 0,0:07:24.82,0:07:27.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}None of us, yeah...\NYou've got really annoying voices.
+Dialogue: 0,0:07:27.58,0:07:29.06,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}The voices are a pain, yes.
+Dialogue: 0,0:07:29.10,0:07:31.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I guess that's because\Nyou haven't got any confidence.
+Dialogue: 0,0:07:31.22,0:07:35.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}No confidence. I mean, if there's\None thing you need, it's confidence.
+Dialogue: 0,0:07:35.06,0:07:37.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It is confidence. Absolutely.
+Dialogue: 0,0:07:37.54,0:07:40.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Well, Jen, I can only thank you,\Nonce again... And another thing...
+Dialogue: 0,0:07:40.42,0:07:42.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm not listening any more!
+Dialogue: 0,0:07:48.66,0:07:52.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Douglas, you're incorrigible.\NI'm incorrigible?
+Dialogue: 0,0:07:52.06,0:07:53.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}You're Raymond Peterfellow,
+Dialogue: 0,0:07:53.82,0:07:56.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}owner of the finest lap-dancing\Nestablishments in Soho.
+Dialogue: 0,0:07:56.90,0:08:01.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}If anyone's incorrigible it's you,\Nyou perfumed porno vampire.
+Dialogue: 0,0:08:01.66,0:08:03.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}THEY LAUGH
+Dialogue: 0,0:08:03.82,0:08:06.90,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Perfumed porno vampire, I like that.
+Dialogue: 0,0:08:06.94,0:08:09.90,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}So you're thinking of having 500 of\Nthese travelling across London?
+Dialogue: 0,0:08:09.94,0:08:13.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}That's what I said. Sexy and classy.
+Dialogue: 0,0:08:13.14,0:08:15.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}And that's difficult to pull off.
+Dialogue: 0,0:08:15.30,0:08:17.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}This will get people talking,\Nall right.
+Dialogue: 0,0:08:17.62,0:08:19.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Consider me one happy shareholder.
+Dialogue: 0,0:08:20.02,0:08:24.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Right. Oh, big party coming up on\NThursday night, if you're up for it?
+Dialogue: 0,0:08:24.58,0:08:27.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Damn, I'm supposed to be doing\NSecret Millionaire.
+Dialogue: 0,0:08:27.30,0:08:29.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}BLEEP it, I'll cancel.\NI'll tell my assistant.
+Dialogue: 0,0:08:31.02,0:08:34.14,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Hi, Joan. Jen. I'm not your\Nassistant, Mr Reynholm.
+Dialogue: 0,0:08:34.18,0:08:36.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I want you to cancel\NSecret Millionaire for me.
+Dialogue: 0,0:08:36.42,0:08:38.66,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm not your assistant,\Nwouldn't know who to call.
+Dialogue: 0,0:08:38.70,0:08:41.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Just say anything, work your\Nusual magic. 'Not your assistant.
+Dialogue: 0,0:08:41.46,0:08:42.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}'I am not your...'
+Dialogue: 0,0:08:43.02,0:08:45.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, I'm sorry, I thought\Nthis was the toilet.
+Dialogue: 0,0:08:45.74,0:08:47.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Didn't this used to be toilets?
+Dialogue: 0,0:08:47.22,0:08:50.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Yes, I moved my office here to be\Ncloser to the ladies toilets.
+Dialogue: 0,0:08:52.10,0:08:54.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Must get someone to take\Nthat sign down.
+Dialogue: 0,0:08:55.58,0:08:57.34,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}What's wrong with you, Ross?
+Dialogue: 0,0:08:57.38,0:09:01.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Small mocha, please.\NSmall mocha, please. Okey-dokey.
+Dialogue: 0,0:09:04.90,0:09:07.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Or medium...
+Dialogue: 0,0:09:07.98,0:09:11.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Yeah, you know what? I've changed\Nmy mind, I think I'll have a medium.
+Dialogue: 0,0:09:11.30,0:09:13.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}So, you don't want a small one?
+Dialogue: 0,0:09:15.58,0:09:19.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Small's fine, small is just as good,\Nso I'll...just...
+Dialogue: 0,0:09:19.26,0:09:22.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Yes, that is what I'll have, I'll\Nhave a small mocha, my little man.
+Dialogue: 0,0:09:22.98,0:09:25.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}My good man.
+Dialogue: 0,0:09:27.18,0:09:29.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}OK, coming up.
+Dialogue: 0,0:09:43.86,0:09:45.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Got it?
+Dialogue: 0,0:09:53.74,0:09:55.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}OK.
+Dialogue: 0,0:09:56.70,0:09:58.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}(Fuck's sake.)
+Dialogue: 0,0:10:06.58,0:10:08.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Thank you for the virgin\Ngin and tonic.
+Dialogue: 0,0:10:10.42,0:10:13.34,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I suppose you could just\Ncall it tonic. Yes.
+Dialogue: 0,0:10:15.02,0:10:18.66,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}So, Ross, how goes it\Nin the world of computers?
+Dialogue: 0,0:10:18.70,0:10:21.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Or PC world, if you will?
+Dialogue: 0,0:10:21.30,0:10:23.34,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}We're all very happy,\Nthank you, Mr Reynholm.
+Dialogue: 0,0:10:23.38,0:10:27.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Very happy indeed. Forget this "we"\Nmalarky, I'm talking to you, Ross.
+Dialogue: 0,0:10:27.50,0:10:30.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Are you happy? Very happy,\Nthank you, Mr Reynholm.
+Dialogue: 0,0:10:30.90,0:10:32.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Look, I'm not your boss.
+Dialogue: 0,0:10:32.46,0:10:34.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}We're just a couple of guys,\Na couple of guys,
+Dialogue: 0,0:10:34.50,0:10:36.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}shooting the shit,\Nnow tell me the truth.
+Dialogue: 0,0:10:38.38,0:10:42.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Well, I suppose, sometimes I do\Nfeel I lack a little confidence.
+Dialogue: 0,0:10:43.90,0:10:45.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I know, it's silly.
+Dialogue: 0,0:10:45.78,0:10:48.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}No, I've just realised what\Na funny voice you have.
+Dialogue: 0,0:10:50.74,0:10:52.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Now, Ross, I'm going to\Ntell you something.
+Dialogue: 0,0:10:52.86,0:10:57.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Confidence is a confidence trick.\NLook at me, what do you see?
+Dialogue: 0,0:10:58.74,0:11:02.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}A man who inherited his father's\Nsuccessful business.
+Dialogue: 0,0:11:02.14,0:11:04.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Wasn't that successful.\NIt was pretty successful.
+Dialogue: 0,0:11:04.78,0:11:06.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}A lot more successful than it is\Nnow, that's for sure.
+Dialogue: 0,0:11:07.02,0:11:09.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}All right, all right,\Njust say the right thing.
+Dialogue: 0,0:11:09.50,0:11:11.14,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Say the thing I want you to say.
+Dialogue: 0,0:11:11.18,0:11:14.90,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Say, "A confident man", say "A\Nconfident man". A confident man.
+Dialogue: 0,0:11:14.94,0:11:18.06,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I wasn't always this way. There was\Na time when I was just like you.
+Dialogue: 0,0:11:18.10,0:11:20.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}But then I discovered the secret.
+Dialogue: 0,0:11:20.90,0:11:23.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}And, Ross, I'm going to tell you\Nwhat that secret is
+Dialogue: 0,0:11:23.26,0:11:25.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}but you must keep it to yourself.
+Dialogue: 0,0:11:25.26,0:11:27.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I will take my ears to the grave.
+Dialogue: 0,0:11:30.26,0:11:34.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Two words. Women's slacks.
+Dialogue: 0,0:11:39.66,0:11:41.06,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm sorry?
+Dialogue: 0,0:11:42.10,0:11:43.66,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Women's slacks.
+Dialogue: 0,0:11:46.86,0:11:50.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Women's slacks? Yes.\NI'm wearing women's slacks.
+Dialogue: 0,0:11:53.06,0:11:55.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}You're wearing women's slacks? Yes.
+Dialogue: 0,0:12:00.66,0:12:04.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}That's nothing like what I thought\Nyou were going to say. Is it not?
+Dialogue: 0,0:12:04.66,0:12:06.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It is not.
+Dialogue: 0,0:12:06.26,0:12:09.34,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I thought you were going to give me\Na book recommendation, or something.
+Dialogue: 0,0:12:09.38,0:12:10.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}HE LAUGHS
+Dialogue: 0,0:12:10.66,0:12:14.06,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Book recommendation? I can't read.
+Dialogue: 0,0:12:14.10,0:12:16.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}No, I don't know what it is,\Nbut women's slacks give me
+Dialogue: 0,0:12:16.82,0:12:20.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}the confidence I need to survive\Nin a tough business world.
+Dialogue: 0,0:12:20.22,0:12:23.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}They're lighter, airier and less\Nconstricted than men's trousers
+Dialogue: 0,0:12:23.58,0:12:26.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}and I'm pretty sure\Nit doesn't make me a transvestite.
+Dialogue: 0,0:12:37.10,0:12:41.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Look at that shit, look at it.\NI can't... How am I supposed to...
+Dialogue: 0,0:12:41.22,0:12:45.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It looks like he milked a cow over\Nit. You're so fussy about coffee.
+Dialogue: 0,0:12:45.50,0:12:49.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It's very annoying. It's ruined.\NHe ruined my coffee.
+Dialogue: 0,0:12:49.30,0:12:51.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Don't just chuck it like that.
+Dialogue: 0,0:12:51.14,0:12:53.90,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}That fellow shouldn't be allowed to\Nbe a barista. Why not?
+Dialogue: 0,0:12:53.94,0:12:58.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Because he's too small, Jen. He's\Nclearly too small to be a barista.
+Dialogue: 0,0:12:59.50,0:13:04.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}What? You're being a bit of\Na small person racist, Roy.
+Dialogue: 0,0:13:05.86,0:13:08.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}A small person racist?\NThat's not a thing.
+Dialogue: 0,0:13:08.66,0:13:10.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}You can't have tiny baristas, Jen.
+Dialogue: 0,0:13:10.78,0:13:14.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}For God's sake,\Nthe man works with steam.
+Dialogue: 0,0:13:14.50,0:13:16.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm going\Nto have to have a word with him.
+Dialogue: 0,0:13:17.02,0:13:21.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Have a word with him?\NThat's right. About his height?
+Dialogue: 0,0:13:22.86,0:13:26.06,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I think he'd appreciate\Nthe feedback. About his height?
+Dialogue: 0,0:13:27.54,0:13:29.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}That's not what people do, Roy.
+Dialogue: 0,0:13:29.54,0:13:32.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Well, I'm not people, Jen,\Nand I think that's a good thing.
+Dialogue: 0,0:13:32.26,0:13:34.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm not afraid to cut through\Nthe bullshit.
+Dialogue: 0,0:13:34.54,0:13:39.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I bet this is exactly what Alice\Nwas talking about. Autistic.
+Dialogue: 0,0:13:39.54,0:13:42.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}She said, "Autistic."\NThat's what happened.
+Dialogue: 0,0:13:43.74,0:13:47.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}No, I don't think so. There is no\Nartistic spectrum.
+Dialogue: 0,0:13:47.98,0:13:49.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}But she's so...
+Dialogue: 0,0:13:51.38,0:13:54.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Did she say it during an argument,\Nby any chance?
+Dialogue: 0,0:13:54.82,0:13:57.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}She did say it during a...\NShe did say it...
+Dialogue: 0,0:13:57.78,0:14:01.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}You know what was weird, was\Nwe were having quite a big argument
+Dialogue: 0,0:14:01.30,0:14:05.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}and then suddenly, out of nowhere,\Nshe paid me that lovely compliment.
+Dialogue: 0,0:14:05.14,0:14:06.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}PHONE RINGS
+Dialogue: 0,0:14:08.38,0:14:10.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Hey, baby.
+Dialogue: 0,0:14:10.66,0:14:13.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, oh, good, good, yes.
+Dialogue: 0,0:14:14.58,0:14:16.34,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Sure, yeah, I'd love to.
+Dialogue: 0,0:14:18.10,0:14:20.06,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Yes, OK, well I'll see you there.
+Dialogue: 0,0:14:22.30,0:14:25.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}What? Why? No.
+Dialogue: 0,0:14:25.66,0:14:27.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Hello? Alice?
+Dialogue: 0,0:14:30.82,0:14:35.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}That was weird. What? OK,\Nso, what the hell is that?
+Dialogue: 0,0:14:35.90,0:14:38.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}So she tells me that her grandfather\Ndied, she wants me to go to the
+Dialogue: 0,0:14:38.78,0:14:42.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}funeral. I say that I'd be\Ndelighted, then she hangs up on me.
+Dialogue: 0,0:14:42.90,0:14:45.14,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Her grandfather's funeral? Yeah.
+Dialogue: 0,0:14:45.18,0:14:47.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}That's what you were just talking\Nabout just there. That's right.
+Dialogue: 0,0:14:48.02,0:14:52.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}You sounded like you were being\Ninvited to Glastonbury.
+Dialogue: 0,0:14:52.14,0:14:58.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, funerals are sad. You did not\Nsound sad.
+Dialogue: 0,0:14:58.34,0:14:59.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I wasn't concentrating.
+Dialogue: 0,0:14:59.66,0:15:02.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Emotionally artistic? You're\Nemotionally colour-blind,
+Dialogue: 0,0:15:02.26,0:15:05.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}that's what you are.\NMaybe I am emotional colour-blind.
+Dialogue: 0,0:15:05.78,0:15:08.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I was about to confront that\Nlittle man. I know.
+Dialogue: 0,0:15:08.14,0:15:10.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I was going to give him shit about\Nhis height.
+Dialogue: 0,0:15:10.22,0:15:14.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Glad you realise now how\Ninappropriate that would've been.
+Dialogue: 0,0:15:15.02,0:15:16.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'll just leave him a note.
+Dialogue: 0,0:15:39.10,0:15:42.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm here on purpose. Oh, yes.
+Dialogue: 0,0:15:45.14,0:15:49.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm interested in women's slacks.\NI see.
+Dialogue: 0,0:15:49.90,0:15:53.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'd like... Sorry. Hot ear.
+Dialogue: 0,0:15:54.62,0:15:59.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'd like to buy a pair\Nof women's slacks.
+Dialogue: 0,0:15:59.58,0:16:02.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}For me, not for a woman.
+Dialogue: 0,0:16:02.46,0:16:04.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, yes,\Nwell, that shouldn't be a problem.
+Dialogue: 0,0:16:06.46,0:16:08.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm not trying to look like a woman.\NI understand.
+Dialogue: 0,0:16:12.06,0:16:14.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm not a confident man.
+Dialogue: 0,0:16:14.54,0:16:18.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Quite. Well, let's see what we can\Ndo for you.
+Dialogue: 0,0:16:23.34,0:16:25.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I don't know about this.\NOh, just ask them, Jen.
+Dialogue: 0,0:16:25.98,0:16:28.66,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Me and Juan, we have a thing.
+Dialogue: 0,0:16:28.70,0:16:31.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I don't want another splashy-splashy\Ncoffee from the teeny-tiny
+Dialogue: 0,0:16:31.54,0:16:34.06,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}coffee man. Poor woman.
+Dialogue: 0,0:16:34.10,0:16:37.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}No, no, no, don't give her money.\NYou're not supposed to do that.
+Dialogue: 0,0:16:37.42,0:16:40.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm actually a person,\NRoy, with human feelings.
+Dialogue: 0,0:16:48.38,0:16:49.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}SHE GIBBERS
+Dialogue: 0,0:16:49.50,0:16:51.66,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm sorry, I thought you were...
+Dialogue: 0,0:16:51.70,0:16:53.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}SHE GIBBERS
+Dialogue: 0,0:16:56.14,0:16:57.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}SHE GIBBERS
+Dialogue: 0,0:16:57.86,0:17:01.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I don't know if you want money. I'm\Nsorry, I'm sorry.
+Dialogue: 0,0:17:01.66,0:17:05.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm sorry, I'm sorry. What happened?\NNever mind, just go.
+Dialogue: 0,0:17:05.26,0:17:08.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}SHE GIBBERS
+Dialogue: 0,0:17:16.46,0:17:21.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}What do you think? I think...
+Dialogue: 0,0:17:21.50,0:17:23.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}you just sold a brother some slacks.
+Dialogue: 0,0:17:29.38,0:17:34.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Help, help, get off me!\NLet go. You're a bully.
+Dialogue: 0,0:17:34.58,0:17:37.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Need to save that old woman,\Nbut I have no confidence.
+Dialogue: 0,0:17:52.10,0:17:53.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Hey!
+Dialogue: 0,0:18:02.58,0:18:04.14,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Thank you.
+Dialogue: 0,0:18:15.78,0:18:21.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Hey, come, come, no queue for you.\NCome on.
+Dialogue: 0,0:18:21.06,0:18:22.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Hello, Juan. I'm with her.
+Dialogue: 0,0:18:25.94,0:18:30.66,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It must be my birthday. I get to see\Nyou twice so quick. Back again.
+Dialogue: 0,0:18:30.70,0:18:32.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Same as usual, please.
+Dialogue: 0,0:18:32.58,0:18:33.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Could I ask you a huge favour
+Dialogue: 0,0:18:33.78,0:18:36.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}and ask you to make Roy's\Ncoffee for him, too?
+Dialogue: 0,0:18:36.34,0:18:40.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I've been going on and on about you.\NAnd I like what I heard.
+Dialogue: 0,0:18:40.50,0:18:42.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Would that be OK?\NWould you mind?
+Dialogue: 0,0:18:42.62,0:18:46.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Of course, anything for you, my\Nsweet. OK.
+Dialogue: 0,0:18:52.66,0:18:53.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Slippery fingers.
+Dialogue: 0,0:19:22.90,0:19:27.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It's all right. It's not all right.\NLook, it looks like me with a beard.
+Dialogue: 0,0:19:30.10,0:19:31.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I don't want this. It's horrible.
+Dialogue: 0,0:19:35.58,0:19:41.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, my God! I didn't mean to.\NI don't hate you.
+Dialogue: 0,0:19:41.54,0:19:42.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}None of this is on purpose.
+Dialogue: 0,0:19:42.86,0:19:45.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}SHE GIBBERS
+Dialogue: 0,0:19:45.34,0:19:48.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}What can I do?\NLet me give you some money.
+Dialogue: 0,0:19:53.34,0:19:54.90,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm not with her.
+Dialogue: 0,0:19:54.94,0:19:58.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oi! Oi! Did you write this comment?\NWhat? No.
+Dialogue: 0,0:19:58.46,0:20:00.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}You've got a problem with\Nsmaller people?
+Dialogue: 0,0:20:00.34,0:20:04.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I don't have a problem with small\Npeople, OK? I don't.
+Dialogue: 0,0:20:04.14,0:20:06.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I just don't want you\Nmaking my coffee.
+Dialogue: 0,0:20:06.58,0:20:09.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Because you're bad at it.\NYou're bad at making coffee.
+Dialogue: 0,0:20:09.98,0:20:12.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}You're too small. You're too\Nsmall to make good coffee.
+Dialogue: 0,0:20:12.46,0:20:15.06,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}You know what? Up yours. No!
+Dialogue: 0,0:20:16.34,0:20:18.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Little man, watch out!
+Dialogue: 0,0:20:22.18,0:20:24.66,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It's being called\Nthe viral video of the year.
+Dialogue: 0,0:20:24.70,0:20:27.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}A woman throws her coffee\Nonto a tramp
+Dialogue: 0,0:20:27.22,0:20:30.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}and then a man has an argument\Nwith a small barista.
+Dialogue: 0,0:20:30.50,0:20:31.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}You're just too small.
+Dialogue: 0,0:20:32.86,0:20:36.66,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}The barista goes to cross the road\Nand is hit by a van with breasts.
+Dialogue: 0,0:20:39.14,0:20:41.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}The woman who's been dubbed by\Nvarious online commentators
+Dialogue: 0,0:20:41.78,0:20:45.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}as Coffee Tramp Toss Bitch\Nhas not been identified,
+Dialogue: 0,0:20:45.74,0:20:49.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}while the man known as\NSmall Person Racist was also...
+Dialogue: 0,0:20:51.94,0:20:55.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Small people are not a race.\NThis isn't Game Of Thrones.
+Dialogue: 0,0:20:57.82,0:21:01.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}They're actually calling me\Na bitch on the news.
+Dialogue: 0,0:21:01.90,0:21:04.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}What the hell happened there?\NHow did you find out it was us?
+Dialogue: 0,0:21:05.02,0:21:08.66,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It's all here in the weekly\Nsurveillance report.
+Dialogue: 0,0:21:08.70,0:21:11.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}What's going on, Joan?\NI expect better from my assistant.
+Dialogue: 0,0:21:11.90,0:21:13.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm not your assistant.\NMy name isn't Joan.
+Dialogue: 0,0:21:13.98,0:21:17.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}What's your beef with the homeless?\NI don't have any homeless beef.
+Dialogue: 0,0:21:17.74,0:21:23.06,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Ah, so it's women you hate.\NWell, that I can understand.
+Dialogue: 0,0:21:23.10,0:21:26.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Whoa, whoa, you record our\Ne-mails and tape our phone calls?
+Dialogue: 0,0:21:26.50,0:21:28.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}All right, dry your eyes, Bono.
+Dialogue: 0,0:21:28.74,0:21:31.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}If you've nothing to hide,\Nyou've nothing to fear.
+Dialogue: 0,0:21:31.58,0:21:34.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It wasn't my fault Mr Reynholm.\NI would never throw coffee over
+Dialogue: 0,0:21:34.74,0:21:36.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}a homeless woman.
+Dialogue: 0,0:21:36.06,0:21:38.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I would never abuse a small person,
+Dialogue: 0,0:21:38.66,0:21:41.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}certainly not enough to make a van\Nwith tits hit him.
+Dialogue: 0,0:21:43.86,0:21:47.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Although, I suppose I sort of did.\NI sort of did my one, too.
+Dialogue: 0,0:21:47.82,0:21:51.14,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It's frustrating that we did\Nboth of our things. Yes, it is.
+Dialogue: 0,0:21:51.18,0:21:53.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}All right, spare me.
+Dialogue: 0,0:21:53.22,0:21:57.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I was young once, but if this gets\Nout, this could deeply damage
+Dialogue: 0,0:21:57.50,0:22:00.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Reynholm Industry's ability to make\Nthat product that we make.
+Dialogue: 0,0:22:00.98,0:22:03.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}What do you want us\Nto do, Mr Reynholm?
+Dialogue: 0,0:22:03.06,0:22:07.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Don't do anything. Stay\Nout of trouble and remain there.
+Dialogue: 0,0:22:07.22,0:22:10.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}There are places lower than\Nthe basement.
+Dialogue: 0,0:22:19.02,0:22:21.90,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Stop worrying, Jen. Nobody can\Nmake us out in that video.
+Dialogue: 0,0:22:21.94,0:22:24.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It's just like early footage of\Nhappy slapping. Just relax.
+Dialogue: 0,0:22:24.66,0:22:27.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I can't relax. It's all\Nright for you. I have plans.
+Dialogue: 0,0:22:27.46,0:22:32.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I want to get up there. I will not\Nbe a social piranha. A what, now?
+Dialogue: 0,0:22:33.54,0:22:37.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Jim, take a look at this. What is it?\NIt's the new-look game board.
+Dialogue: 0,0:22:37.06,0:22:40.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}200,000 views?\NI know. It's a bit different.
+Dialogue: 0,0:22:44.30,0:22:46.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Check it out. Game board.\NShut the fridge. It's...
+Dialogue: 0,0:22:46.50,0:22:49.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Game board.\NBLEEP game board.
+Dialogue: 0,0:22:53.42,0:22:54.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Say what?
+Dialogue: 0,0:22:59.26,0:23:02.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Wow!\NYou all seem different somehow. Yes.
+Dialogue: 0,0:23:02.50,0:23:04.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}We're all wearing women's trousers.
+Dialogue: 0,0:23:06.10,0:23:08.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh. Right.
+Dialogue: 0,0:23:08.50,0:23:10.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Hey, what's going on? Let's get the\Ngame board.
+Dialogue: 0,0:23:10.98,0:23:13.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}He is... Newton Sinclair.
+Dialogue: 0,0:23:13.30,0:23:15.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}This guy is... Roger Booth.
+Dialogue: 0,0:23:16.62,0:23:18.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}And I guess I'm still Maurice Moss.
+Dialogue: 0,0:23:19.98,0:23:22.14,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Are you wearing your trousers now?
+Dialogue: 0,0:23:22.18,0:23:25.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I couldn't wear them all the time,\NJen - I'd have a heart attack.
+Dialogue: 0,0:23:25.90,0:23:29.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}No, they're safely locked\Naway in my fortress of solitude.
+Dialogue: 0,0:23:30.14,0:23:33.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It's funny - when I wear them,\NI'm a dynamo.
+Dialogue: 0,0:23:33.30,0:23:36.14,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}A young Leonard Kravitz,\Npeople hanging off my every word.
+Dialogue: 0,0:23:36.18,0:23:39.66,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}And then as soon as I take them off,\NI'm just back to being the same...
+Dialogue: 0,0:23:39.70,0:23:44.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}She's gone, hasn't she? She's gone.\NShe went quite a while ago. Yeah.
+Dialogue: 0,0:23:44.58,0:23:48.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, Michael Buble's here.\NNo, no, it's a funeral, Moss.
+Dialogue: 0,0:23:48.58,0:23:51.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I have to go to this\Nfuneral for Alice's grandfather
+Dialogue: 0,0:23:51.62,0:23:53.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}and I'm not looking forward to it.
+Dialogue: 0,0:23:53.34,0:23:55.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Funerals are pain in the crack.
+Dialogue: 0,0:23:56.42,0:23:59.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Even in the best of circumstances,\Nthey're no picnic,
+Dialogue: 0,0:23:59.54,0:24:03.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}but now I've got Alice on my arse,\Nlike the emotion police.
+Dialogue: 0,0:24:03.62,0:24:06.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm going to have to look\Nconvincingly sad
+Dialogue: 0,0:24:06.98,0:24:09.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}for the majority of the day.
+Dialogue: 0,0:24:10.98,0:24:15.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}She's not going to expect me to cry,\Nis she? No. What if she does?
+Dialogue: 0,0:24:15.82,0:24:18.14,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I can't cry on cue. What do I do\Nthen?
+Dialogue: 0,0:24:18.18,0:24:22.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Do what I do when I need to cry.\NUse a mild pepper-spray solution.
+Dialogue: 0,0:24:23.90,0:24:26.06,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Now that makes sense. See?
+Dialogue: 0,0:24:26.10,0:24:28.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}That makes more sense than\Nhaving to feel something.
+Dialogue: 0,0:24:28.86,0:24:30.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Do you have any of that stuff here?
+Dialogue: 0,0:24:30.62,0:24:33.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Why do you think\Nwe have a mini-fridge?
+Dialogue: 0,0:24:33.22,0:24:34.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Good evening.
+Dialogue: 0,0:24:37.14,0:24:38.66,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}You've got quite a lot of it.
+Dialogue: 0,0:24:38.70,0:24:40.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I suppose I have made\Nquite a lot of it.
+Dialogue: 0,0:24:40.86,0:24:46.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}And what's in here? Just Tabasco,\Nwasabi and a bit of tear gas.
+Dialogue: 0,0:24:47.98,0:24:51.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Those sound like bad things to put\Nin your eyes. It's extremely mild.
+Dialogue: 0,0:24:51.86,0:24:56.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It's mainly water. OK, I'll take it\Nas a last resort. As a last resort?
+Dialogue: 0,0:24:56.50,0:24:59.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}In case I find myself out\Nof my emotional death. There you go.
+Dialogue: 0,0:24:59.30,0:25:01.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}All right. Thanks, Moss.\NBye. Bye.
+Dialogue: 0,0:25:06.30,0:25:08.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, don't forget to add the water.
+Dialogue: 0,0:25:19.66,0:25:22.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}CHURCH BELLS CHIME
+Dialogue: 0,0:25:24.74,0:25:27.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}ORGAN MUSIC PLAYS
+Dialogue: 0,0:25:29.26,0:25:31.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, poor Pip Pop.
+Dialogue: 0,0:25:31.38,0:25:33.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Sorry, what?
+Dialogue: 0,0:25:33.70,0:25:35.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Pip Pop...
+Dialogue: 0,0:25:35.34,0:25:39.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}We always called him Pip Pop\Nbecause he was so short.
+Dialogue: 0,0:25:41.22,0:25:43.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}All of my family on that side\Nare really short.
+Dialogue: 0,0:25:44.90,0:25:46.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Is that right?
+Dialogue: 0,0:25:48.86,0:25:51.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}SHE WEEPS
+Dialogue: 0,0:25:52.74,0:25:54.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh...
+Dialogue: 0,0:25:54.62,0:25:55.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, Alice.
+Dialogue: 0,0:25:55.94,0:25:57.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Shh...
+Dialogue: 0,0:26:07.42,0:26:08.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh!
+Dialogue: 0,0:26:08.46,0:26:10.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Roy, are you all right? Holy...!
+Dialogue: 0,0:26:10.50,0:26:12.66,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Yeah, it just really hurts.
+Dialogue: 0,0:26:12.74,0:26:14.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, darling.
+Dialogue: 0,0:26:14.26,0:26:18.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, it hurts. I know. I know.
+Dialogue: 0,0:26:20.66,0:26:21.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh...
+Dialogue: 0,0:26:29.34,0:26:32.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, Christ,\Nwhy is this happening?
+Dialogue: 0,0:26:33.74,0:26:37.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}COMMENTARY: 'Will we ever find out\Njust who this person was?
+Dialogue: 0,0:26:37.58,0:26:40.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}'Unfortunately, with current\Ntechnology we can't depixelate
+Dialogue: 0,0:26:40.38,0:26:42.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}'the picture, so it's very unlikely\Nwe'll ever find out
+Dialogue: 0,0:26:43.06,0:26:45.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}'the identity of\Nthis dreadful ginger cow.'
+Dialogue: 0,0:26:50.82,0:26:54.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, are you still crying?\NI don't seem to be able to stop.
+Dialogue: 0,0:26:56.42,0:27:00.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}One of the pallbearers wasn't able\Nto make it. Oh...
+Dialogue: 0,0:27:00.10,0:27:02.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Look, I know this is a bit weird.
+Dialogue: 0,0:27:02.86,0:27:04.90,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Do you mind stepping in?
+Dialogue: 0,0:27:04.98,0:27:08.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm happy to. I mean, I'm sadly\Nhappy to. Yeah, that's fine.
+Dialogue: 0,0:27:08.82,0:27:10.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}That's fine.
+Dialogue: 0,0:27:11.02,0:27:14.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Hi, thanks so much for helping us\Nout. No problem.
+Dialogue: 0,0:27:14.66,0:27:16.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Hey!
+Dialogue: 0,0:27:16.34,0:27:18.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Hello. Oh, there's another one.
+Dialogue: 0,0:27:18.66,0:27:21.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Hi. Are these the other\Npallbearers? Yeah.
+Dialogue: 0,0:27:21.94,0:27:27.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}So you guys and me, we are going to\Ncarry the coffin together? Yes.
+Dialogue: 0,0:27:27.82,0:27:32.14,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}We are going to put the casket\Non our collective shoulders
+Dialogue: 0,0:27:32.22,0:27:34.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}and walk in a straight line with it?
+Dialogue: 0,0:27:34.54,0:27:36.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}No, it didn't go well, Jen.\NIt didn't go well at all.
+Dialogue: 0,0:27:36.94,0:27:39.66,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I mean, thanks for asking,\Nbut no, it wasn't a success.
+Dialogue: 0,0:27:39.74,0:27:42.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It wasn't a successful funeral\Nfor me.
+Dialogue: 0,0:27:42.46,0:27:45.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It didn't have the required\Ngravitas.
+Dialogue: 0,0:27:45.94,0:27:48.06,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Gravitas? No, no.
+Dialogue: 0,0:27:48.14,0:27:52.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It wasn't very dignified.\NIt wasn't dignified at all, Jen.
+Dialogue: 0,0:27:53.02,0:27:56.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}If I had to pick a word to describe\NPip Pop's final journey
+Dialogue: 0,0:27:56.78,0:27:59.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}to the grave, it would be "funny".
+Dialogue: 0,0:28:01.18,0:28:04.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It was so funny, Jen.\NOf course, I tried not to laugh
+Dialogue: 0,0:28:04.78,0:28:06.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}and I tried to put\Nother things in my head,
+Dialogue: 0,0:28:07.02,0:28:09.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}but every step that we took\Nwas a fresh reminder
+Dialogue: 0,0:28:09.90,0:28:13.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}of just how funny\Nthe whole thing was!
+Dialogue: 0,0:28:13.94,0:28:17.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}You didn't laugh, did you?\NI laughed my hole off.
+Dialogue: 0,0:28:19.34,0:28:21.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I can't believe\Nshe's still with you.
+Dialogue: 0,0:28:21.54,0:28:23.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I suppose, but, I mean, I'm hanging\Non by a thread, Jen.
+Dialogue: 0,0:28:24.06,0:28:27.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I think I'll just get through it\Nas long as nothing else bad happens.
+Dialogue: 0,0:28:27.90,0:28:29.90,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}TELEPHONE RINGS
+Dialogue: 0,0:28:32.38,0:28:34.14,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}There's the phone now.
+Dialogue: 0,0:28:37.10,0:28:40.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}COMMENTARY: 'The new footage has led\Nto the pair being identified,
+Dialogue: 0,0:28:40.70,0:28:43.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}'Jen Barber and Roy Trenneman, both\Nemployees at Reynholm Industries.'
+Dialogue: 0,0:28:45.46,0:28:47.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}What the hell were you thinking?
+Dialogue: 0,0:28:47.34,0:28:49.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I told you to keep a low profile
+Dialogue: 0,0:28:50.02,0:28:51.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}and you do it again!
+Dialogue: 0,0:28:53.50,0:28:55.90,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}No, no, no, no, no, it's new\Nfootage, Mr Reynholm.
+Dialogue: 0,0:28:55.98,0:28:57.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Bum your excuses!
+Dialogue: 0,0:28:58.02,0:29:01.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Reynholm Industries has\Na reputation to uphold.
+Dialogue: 0,0:29:01.34,0:29:04.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}We're not News International,\Nfor Christ's sake!
+Dialogue: 0,0:29:04.82,0:29:07.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm going to have to do Secret\N"Pissing" Millionaire now
+Dialogue: 0,0:29:07.58,0:29:09.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}just to undo your damage!
+Dialogue: 0,0:29:09.46,0:29:12.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}And I'm missing out\Non a massive party!
+Dialogue: 0,0:29:12.62,0:29:15.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}You're no longer my assistant.
+Dialogue: 0,0:29:17.02,0:29:18.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm furious.
+Dialogue: 0,0:29:20.54,0:29:22.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}And I'll tell you something else,
+Dialogue: 0,0:29:22.30,0:29:24.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}when I return from the estate,\Nit's...
+Dialogue: 0,0:29:25.86,0:29:27.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}..for you.
+Dialogue: 0,0:29:32.54,0:29:33.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh...
+Dialogue: 0,0:29:33.86,0:29:34.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}MOBILE PHONE RINGS
+Dialogue: 0,0:29:35.02,0:29:37.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh!
+Dialogue: 0,0:29:37.34,0:29:39.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, hey, baby.
+Dialogue: 0,0:29:39.50,0:29:41.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, yeah, of course.
+Dialogue: 0,0:29:41.70,0:29:43.06,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}No, absolutely.
+Dialogue: 0,0:29:43.14,0:29:45.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}All right, OK. Bye-bye.
+Dialogue: 0,0:29:47.10,0:29:49.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}She left you? She did. Yeah.
+Dialogue: 0,0:29:53.14,0:29:56.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}As the identities\Nof Coffee Toss Tramp Bitch
+Dialogue: 0,0:29:56.30,0:29:59.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}and Small Person Racist\Nare finally revealed,
+Dialogue: 0,0:29:59.18,0:30:00.90,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}we at Channel 4 News ask,
+Dialogue: 0,0:30:00.98,0:30:03.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}"What the hell\Nis wrong with people?"
+Dialogue: 0,0:30:11.54,0:30:13.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I've got a lot of new\Nfollowers on Chitter.
+Dialogue: 0,0:30:13.94,0:30:15.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Loads more followers, yeah.
+Dialogue: 0,0:30:15.54,0:30:17.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}They're all very abusive.
+Dialogue: 0,0:30:17.10,0:30:18.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}They wish we were dead.
+Dialogue: 0,0:30:18.58,0:30:20.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Wait.
+Dialogue: 0,0:30:20.38,0:30:22.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}What? Chitter.
+Dialogue: 0,0:30:22.86,0:30:26.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}We can use Chitter\Nto explain ourselves.
+Dialogue: 0,0:30:27.34,0:30:29.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Yeah.
+Dialogue: 0,0:30:29.10,0:30:31.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Chitter is the perfect place to\Nexplain a complex situation.
+Dialogue: 0,0:30:32.02,0:30:33.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I know that.
+Dialogue: 0,0:30:33.34,0:30:35.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}"I didn't mean to throw\Ncoffee on that woman.
+Dialogue: 0,0:30:35.62,0:30:37.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}"I didn't know she was there.
+Dialogue: 0,0:30:37.18,0:30:39.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}"I went back to try and find her\Nbut..."
+Dialogue: 0,0:30:39.66,0:30:43.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh... Too many characters.\NToo many characters.
+Dialogue: 0,0:30:43.54,0:30:44.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Got it.
+Dialogue: 0,0:30:44.94,0:30:47.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}"Hate the homeless.
+Dialogue: 0,0:30:47.18,0:30:50.14,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}"And I suppose I hate women, too?
+Dialogue: 0,0:30:50.22,0:30:52.34,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}"LOL."
+Dialogue: 0,0:30:52.42,0:30:53.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Send.
+Dialogue: 0,0:30:53.58,0:30:56.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Whoa. You didn't just send\Nthat, did you? Yes.
+Dialogue: 0,0:30:56.94,0:30:58.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}That didn't sound so good.
+Dialogue: 0,0:30:58.30,0:31:00.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}People get the sense of it,\Nthat's the thing about Chitter.
+Dialogue: 0,0:31:00.94,0:31:03.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It's best if you're conversational\Nand off-the-cuff.
+Dialogue: 0,0:31:03.78,0:31:05.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Here it is.
+Dialogue: 0,0:31:05.26,0:31:08.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh... You didn't put a question\Nmark after the first sentence.
+Dialogue: 0,0:31:08.66,0:31:10.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}You don't need to\Nuse proper grammar on Chitter.
+Dialogue: 0,0:31:10.94,0:31:13.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}What you've Chitted here, Jen,\Nis,
+Dialogue: 0,0:31:13.86,0:31:18.34,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}"Hate the homeless and I suppose\NI hate women, too. LOL."
+Dialogue: 0,0:31:19.66,0:31:21.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Phew, I'm glad all that's over.
+Dialogue: 0,0:31:24.98,0:31:26.90,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}JEN GROWLS
+Dialogue: 0,0:31:46.66,0:31:48.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}EVIL LAUGHTER
+Dialogue: 0,0:31:51.06,0:31:52.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}SCREAMING
+Dialogue: 0,0:31:54.94,0:31:59.06,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}SCREAMING
+Dialogue: 0,0:32:29.54,0:32:32.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}You're too small,\Nyou're just too small!
+Dialogue: 0,0:32:32.18,0:32:34.34,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}You're too small,\Ntoo small, too small...
+Dialogue: 0,0:32:36.02,0:32:39.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}'Which then leads to him\Nbeing hit by a van with tits.'
+Dialogue: 0,0:32:49.82,0:32:52.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}And now Anonymous are after us.
+Dialogue: 0,0:32:52.78,0:32:55.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Well, that's just ideal.
+Dialogue: 0,0:32:55.30,0:32:58.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, a bunch of nerds sitting\Nat their computer, what can they do?
+Dialogue: 0,0:32:58.62,0:33:02.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}We pissed off the Internet, Jen.\NThe Internet is coming to get us!
+Dialogue: 0,0:33:03.62,0:33:07.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Well, let's get IT\Nbefore IT gets us.
+Dialogue: 0,0:33:07.94,0:33:09.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}What are you...?
+Dialogue: 0,0:33:11.06,0:33:13.90,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, I don't want Anonymous after me.
+Dialogue: 0,0:33:13.98,0:33:16.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm in anonymous...
+Dialogue: 0,0:33:16.10,0:33:17.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I think.
+Dialogue: 0,0:33:18.58,0:33:20.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Let's hide it.
+Dialogue: 0,0:33:22.82,0:33:24.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}What?
+Dialogue: 0,0:33:24.30,0:33:27.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}The Internet.
+Dialogue: 0,0:33:27.10,0:33:28.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh...
+Dialogue: 0,0:33:30.38,0:33:33.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Because we told you\Nthat was the Internet?
+Dialogue: 0,0:33:34.82,0:33:36.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Yes.
+Dialogue: 0,0:33:36.62,0:33:38.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}We never told you\Nit wasn't the Internet?
+Dialogue: 0,0:33:41.06,0:33:42.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}No.
+Dialogue: 0,0:33:42.62,0:33:45.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Well, the thing is, Jen...
+Dialogue: 0,0:33:45.82,0:33:48.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}that's not the Internet.
+Dialogue: 0,0:33:48.54,0:33:50.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}What's Jen doing with the Internet?
+Dialogue: 0,0:33:52.62,0:33:54.90,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}We're not doing that. Oh...
+Dialogue: 0,0:33:56.50,0:33:57.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Crickets!
+Dialogue: 0,0:33:59.50,0:34:01.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Right, don't be scared, yeah.
+Dialogue: 0,0:34:01.90,0:34:03.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}We're all friends here.
+Dialogue: 0,0:34:03.78,0:34:07.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Tell Dougie your story?\NOK, but who is he again?
+Dialogue: 0,0:34:07.82,0:34:11.06,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm just your average social worker.
+Dialogue: 0,0:34:11.14,0:34:14.14,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Yes, just in the area\Nhaving a look around.
+Dialogue: 0,0:34:14.22,0:34:16.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Please just pretend I'm not here.
+Dialogue: 0,0:34:16.70,0:34:19.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Do you ever have anyone come round\Nand help you and stuff?
+Dialogue: 0,0:34:19.34,0:34:21.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Granddad, sometimes.\NHe's hardly around.
+Dialogue: 0,0:34:22.06,0:34:25.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}What about your dad?\NHe's never around, either...\NBEEPING INTERRUPTS
+Dialogue: 0,0:34:25.10,0:34:28.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Sorry, my friend, I need to stop you\Nthere. I must take this.
+Dialogue: 0,0:34:28.10,0:34:29.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Reynholm...
+Dialogue: 0,0:34:29.58,0:34:32.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}What? Well, increase the bid.
+Dialogue: 0,0:34:32.78,0:34:35.14,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I don't care what I said\Nthe ceiling was.
+Dialogue: 0,0:34:35.22,0:34:37.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I want that artwork by Madonna.
+Dialogue: 0,0:34:38.86,0:34:42.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Now, 22 million is the minimum\Nbut I'm happy to go to 50.
+Dialogue: 0,0:34:42.66,0:34:45.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}In fact, make 50 the new minimum.\NYes, yes.
+Dialogue: 0,0:34:47.30,0:34:49.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I can't talk right now.
+Dialogue: 0,0:34:49.46,0:34:52.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm doing Secret Millionaire.
+Dialogue: 0,0:34:54.74,0:34:55.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}That's very sad.
+Dialogue: 0,0:34:56.06,0:34:59.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Do you want to shut up,\Nwe're filming Secret Millionaire.
+Dialogue: 0,0:34:59.86,0:35:01.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Check your privilege.
+Dialogue: 0,0:35:03.14,0:35:04.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}How am I finding it so far?
+Dialogue: 0,0:35:04.62,0:35:07.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}To be honest with you, it's not as\Ngod-awful as I thought it would be.
+Dialogue: 0,0:35:07.90,0:35:11.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}People have been terribly nice.\NThey're actually quite clean.
+Dialogue: 0,0:35:11.46,0:35:14.06,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I have been invited\Nto a party this evening.
+Dialogue: 0,0:35:14.14,0:35:17.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}The last party I ever went to was\Nwhen Elton John's dog had a baby.
+Dialogue: 0,0:35:18.82,0:35:20.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}LOUD MUSIC PLAYS
+Dialogue: 0,0:35:23.54,0:35:25.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I tell a lie. The last party I went\Nto was when
+Dialogue: 0,0:35:26.02,0:35:28.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Conrad Black got arrested.
+Dialogue: 0,0:35:28.26,0:35:29.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Conrad Black, who's that?
+Dialogue: 0,0:35:29.90,0:35:32.90,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, no-one, just an old friend.\NLet's get in there.
+Dialogue: 0,0:35:32.98,0:35:34.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Yeah, sure.
+Dialogue: 0,0:35:40.42,0:35:43.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}So I thought with Game Board's\Nincreased viewership,
+Dialogue: 0,0:35:43.90,0:35:47.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}perhaps it would be a good place\Nto put my side of the story and
+Dialogue: 0,0:35:47.26,0:35:50.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}show the world I'm not the monster\NI'm currently supposed to be.
+Dialogue: 0,0:35:50.70,0:35:52.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Boo! Boo!
+Dialogue: 0,0:35:52.82,0:35:54.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Don't boo, please.
+Dialogue: 0,0:35:54.10,0:35:56.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}That is a horrible T-shirt.
+Dialogue: 0,0:35:58.30,0:36:01.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}So the question everyone is asking,\NJen Barber, do you hate women?
+Dialogue: 0,0:36:01.86,0:36:03.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh...
+Dialogue: 0,0:36:03.78,0:36:05.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Thank you, Jen Barber.
+Dialogue: 0,0:36:05.58,0:36:09.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Coming up, what was it like to be\Na 14th-century grain merchant?
+Dialogue: 0,0:36:09.90,0:36:12.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Wait, I don't know if that was\Nclear. Sorry, it's these trousers.
+Dialogue: 0,0:36:12.94,0:36:17.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}They make me want to move\Nonto the next item. It's better\Nbroadcasting and the slacks know it!
+Dialogue: 0,0:36:17.50,0:36:21.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Coming up. Will you stop saying,\N"Coming up". Next... I don't know\Nif they got my point!
+Dialogue: 0,0:36:23.10,0:36:24.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, gosh!
+Dialogue: 0,0:36:24.90,0:36:26.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh!
+Dialogue: 0,0:36:26.50,0:36:28.06,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, gosh.
+Dialogue: 0,0:36:28.14,0:36:30.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Richmond, do you work here or not?
+Dialogue: 0,0:36:30.66,0:36:33.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I don't get paid,\Nbut I like to come in.
+Dialogue: 0,0:36:34.06,0:36:36.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}So that Goth to boss thing didn't\Nwork out?
+Dialogue: 0,0:36:37.50,0:36:39.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Does it look like it worked out?
+Dialogue: 0,0:36:39.70,0:36:42.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Anyway, how have you guys been?
+Dialogue: 0,0:36:42.34,0:36:44.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Everyone thinks I'm a misogynist.
+Dialogue: 0,0:36:44.62,0:36:47.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Roy lost his girlfriend because\Nhe's emotionally colour-blind
+Dialogue: 0,0:36:47.58,0:36:50.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}and Moss is wearing trousers\Nthat make him good at telly.
+Dialogue: 0,0:36:50.90,0:36:52.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Any gossip?
+Dialogue: 0,0:36:52.78,0:36:54.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}What's going on with you?
+Dialogue: 0,0:36:55.06,0:36:57.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, you know, keeping busy,\Nvoice-over work mainly.
+Dialogue: 0,0:36:59.30,0:37:00.90,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Really, how did that happen?
+Dialogue: 0,0:37:00.98,0:37:03.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Someone just noticed\NI had a beautiful voice.
+Dialogue: 0,0:37:08.58,0:37:09.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, Richmond.
+Dialogue: 0,0:37:09.94,0:37:11.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Things aren't going well at all.
+Dialogue: 0,0:37:11.62,0:37:13.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Just get in there.
+Dialogue: 0,0:37:13.90,0:37:16.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It's just not the same\Nwhen you guys aren't together.
+Dialogue: 0,0:37:16.30,0:37:18.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Anyway, if you want me,\Nyou know where I am.
+Dialogue: 0,0:37:20.86,0:37:22.66,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I don't, though, Richmond.
+Dialogue: 0,0:37:22.74,0:37:24.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Don't...lurk!
+Dialogue: 0,0:37:26.42,0:37:27.66,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Where did he go?
+Dialogue: 0,0:37:27.74,0:37:29.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Where did who go?
+Dialogue: 0,0:37:34.70,0:37:37.66,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Does it ever seem to you that\Nthe things that happen to us
+Dialogue: 0,0:37:37.74,0:37:39.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}are sort of...
+Dialogue: 0,0:37:39.78,0:37:41.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}strange?
+Dialogue: 0,0:37:41.46,0:37:43.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}How so, Roy?
+Dialogue: 0,0:37:43.58,0:37:45.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Well...
+Dialogue: 0,0:37:45.78,0:37:48.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}remember when I had to pretend\Nto be disabled
+Dialogue: 0,0:37:48.58,0:37:50.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}and I ended up in Manchester?
+Dialogue: 0,0:37:51.74,0:37:54.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}That wasn't a normal thing\Nto happen, was it?
+Dialogue: 0,0:37:54.46,0:37:58.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Or when you ended up spending\Nthe night in that arcade machine.
+Dialogue: 0,0:37:59.02,0:38:00.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}That was odd.
+Dialogue: 0,0:38:01.82,0:38:04.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I suppose those were unusual events.
+Dialogue: 0,0:38:04.46,0:38:05.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}And this is strange.
+Dialogue: 0,0:38:06.02,0:38:08.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}What's happening to us\Nright now is strange, isn't it?
+Dialogue: 0,0:38:09.02,0:38:11.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Well, at least,\Nit'll all be over soon.
+Dialogue: 0,0:38:11.38,0:38:14.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Douglas is bound to fire us\Nwhen he gets back.
+Dialogue: 0,0:38:15.62,0:38:17.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Come on, guys, this isn't us.
+Dialogue: 0,0:38:17.18,0:38:19.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Are we just going to sit here\Nand take it?
+Dialogue: 0,0:38:19.18,0:38:21.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}What do we normally do\Nwhen we get into a scrape?
+Dialogue: 0,0:38:21.54,0:38:23.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}We normally make things worse\Nand worse and then it ends.
+Dialogue: 0,0:38:23.94,0:38:26.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}No, we don't. We stick together.\NThat doesn't sound like us.
+Dialogue: 0,0:38:26.62,0:38:29.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Don't know where you're getting that\Nfrom... Come on, who are we?
+Dialogue: 0,0:38:29.46,0:38:31.34,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Who are we? I want to hear\Nyou say it!
+Dialogue: 0,0:38:31.42,0:38:34.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}We're the IT... We're the IT...\N..Department.
+Dialogue: 0,0:38:34.18,0:38:36.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}You're goddamn right we are!
+Dialogue: 0,0:38:37.06,0:38:39.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Are you wearing women's slacks?\NYes, I am.
+Dialogue: 0,0:38:39.46,0:38:41.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}This is exactly what\NI'm talking about.
+Dialogue: 0,0:38:54.54,0:38:57.06,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Let's get into a car\Nand cruise around.
+Dialogue: 0,0:38:57.10,0:39:01.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}How to get into a car?\NSmash a window. Great idea.
+Dialogue: 0,0:39:02.02,0:39:03.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}That's the one.
+Dialogue: 0,0:39:05.06,0:39:08.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm such an idiot.\NI've got a robot hand.
+Dialogue: 0,0:39:12.78,0:39:15.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Hang on a second. This is MY car.
+Dialogue: 0,0:39:21.38,0:39:24.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}HEAVY BASS LINE PLAYS
+Dialogue: 0,0:39:29.54,0:39:31.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}MELLOW CLASSICAL PIANO PLAYS
+Dialogue: 0,0:39:33.06,0:39:36.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}HEAVY METAL PLAYS
+Dialogue: 0,0:39:36.54,0:39:37.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}POLICE SIREN WAILS
+Dialogue: 0,0:39:37.66,0:39:40.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, shit. Wow-wow-wow.\NIt's all right, everyone, be cool.
+Dialogue: 0,0:39:40.54,0:39:42.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'll handle this. Take that.
+Dialogue: 0,0:39:56.82,0:40:00.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It's all right, Officer, I'm doing\NSecret Millionaire.
+Dialogue: 0,0:40:02.78,0:40:06.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Come on, come on, come on, people.\NWhat's going on?
+Dialogue: 0,0:40:06.06,0:40:07.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Come on, come on, come on, people.
+Dialogue: 0,0:40:07.74,0:40:10.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}How long has he been wearing the\Ntrousers? He won't take them off.
+Dialogue: 0,0:40:10.74,0:40:12.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}OK, come on, come on, come on...
+Dialogue: 0,0:40:12.14,0:40:14.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}What's going on, what's going on?\NWe don't know what's happening.
+Dialogue: 0,0:40:14.98,0:40:17.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}OK, come on. To every problem,\Nthere's a solution.
+Dialogue: 0,0:40:17.26,0:40:19.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}What's our problem here?\NWhat's our problem?
+Dialogue: 0,0:40:19.30,0:40:22.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Everyone thinks I'm a cow who\Nhates women. You're a cow.
+Dialogue: 0,0:40:24.58,0:40:28.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Terrible cow. Women, OK.\NRoy, hurt me.
+Dialogue: 0,0:40:28.86,0:40:31.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Erm, the woman I love thinks that\NI hate small people.
+Dialogue: 0,0:40:31.62,0:40:33.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Small people, thank you, Roy.
+Dialogue: 0,0:40:34.02,0:40:37.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm probably going to die alone\Nin front of computer pornography?
+Dialogue: 0,0:40:37.22,0:40:38.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'll just draw a sad face.
+Dialogue: 0,0:40:44.34,0:40:49.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}OK, so what do women and\Nsmall people both like?
+Dialogue: 0,0:40:50.02,0:40:55.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}What do they both like? Chairs.\NFilms. I really don't know.
+Dialogue: 0,0:40:56.02,0:40:59.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'll tell you. It's just they seem\Nlike very different groups.
+Dialogue: 0,0:40:59.54,0:41:02.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Very different groups.\NNot being attacked.
+Dialogue: 0,0:41:07.38,0:41:09.66,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}They both love not being attacked.
+Dialogue: 0,0:41:10.86,0:41:14.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Well, I can't speak for small people,\Nobviously, but as a woman,
+Dialogue: 0,0:41:14.98,0:41:18.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I certainly like not being attacked.\NWhere are you going with this, Moss?
+Dialogue: 0,0:41:18.74,0:41:21.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'll tell you exactly where I'm\Ngoing with this, Roy.
+Dialogue: 0,0:41:21.06,0:41:24.06,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm saying that we use this brief\Nwindow, while Douglas is away,
+Dialogue: 0,0:41:24.10,0:41:27.90,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}to produce a pepper-spray\Nsolution for small women,
+Dialogue: 0,0:41:27.94,0:41:30.06,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}using that stuff I gave Roy earlier.
+Dialogue: 0,0:41:30.10,0:41:31.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}That sounds really weird.
+Dialogue: 0,0:41:31.62,0:41:35.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Jen Barber, not a hater of women\Nbut their defender, their champion.
+Dialogue: 0,0:41:36.02,0:41:38.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I love it now.
+Dialogue: 0,0:41:38.22,0:41:40.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}And I can do a massive presentation.
+Dialogue: 0,0:41:40.90,0:41:46.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}A self-defence pepper spray for\Nsmall women suits my purposes also.
+Dialogue: 0,0:41:46.34,0:41:50.90,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It will show Alice that I care and,\Nas a woman with small relatives,
+Dialogue: 0,0:41:50.94,0:41:53.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}she's sure to come to Jen's\Npresentation.
+Dialogue: 0,0:41:53.62,0:41:56.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}You know, when I first stocked\Nthat mini-fridge\Nwith pepper-spray solution,
+Dialogue: 0,0:41:56.98,0:42:02.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I thought I'd made too much...but\Nonly now do I realise
+Dialogue: 0,0:42:02.26,0:42:06.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}that I'd made exactly the right\Namount for our current purposes.
+Dialogue: 0,0:42:07.98,0:42:11.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}It almost seems like it's\Ntoo good an idea.
+Dialogue: 0,0:42:11.62,0:42:15.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}You see what we can do when we work\Ntogether? With my business acumen...
+Dialogue: 0,0:42:15.66,0:42:18.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}My scientific know-how...\NAnd I'm also here...
+Dialogue: 0,0:42:21.22,0:42:23.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}We can do anything! Yes! Yes!
+Dialogue: 0,0:42:25.58,0:42:27.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I need a trouser break.
+Dialogue: 0,0:42:36.42,0:42:38.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}You coming, Roy?
+Dialogue: 0,0:42:38.06,0:42:40.66,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I can't seem to get the wording\Nof this speech to Alice right.
+Dialogue: 0,0:42:40.70,0:42:42.06,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}You're doing a speech?
+Dialogue: 0,0:42:42.10,0:42:45.14,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Yeah, I need to show her that I'm\Nnot emotionally colour-blind.
+Dialogue: 0,0:42:45.18,0:42:49.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm actually a very sensitive human\Nman, and she needs to know that.
+Dialogue: 0,0:42:49.26,0:42:53.66,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oooh, what's a more romantic word\Nfor "knockers"?
+Dialogue: 0,0:42:53.70,0:42:56.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}A MORE romantic word?
+Dialogue: 0,0:42:56.30,0:43:00.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Come on, guys. Let's protect women!\NI'll meet you up there. Good luck.
+Dialogue: 0,0:43:00.26,0:43:01.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Thanks.
+Dialogue: 0,0:43:02.90,0:43:04.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Eartha Kitts!
+Dialogue: 0,0:43:06.06,0:43:07.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Right, is everything ready?
+Dialogue: 0,0:43:07.86,0:43:09.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Yeah, well, I've got the posters up
+Dialogue: 0,0:43:09.46,0:43:12.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}and I've put gift bags with pepper\Nspray beside each chair.
+Dialogue: 0,0:43:12.34,0:43:14.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Now, I think it was a master stroke\Nto put the spray in these
+Dialogue: 0,0:43:14.98,0:43:16.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}elegant bottles.
+Dialogue: 0,0:43:16.34,0:43:19.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Why not look stylish\Nwhile you defend yourself?
+Dialogue: 0,0:43:19.30,0:43:21.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Something's bothering me, though.
+Dialogue: 0,0:43:21.34,0:43:25.06,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Are we missing something that's very\Nobviously wrong with this idea?
+Dialogue: 0,0:43:25.10,0:43:28.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I really don't think so. Oh, look,\Nhere comes everyone.
+Dialogue: 0,0:43:31.82,0:43:35.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Hello, and welcome to this\Nvery special
+Dialogue: 0,0:43:35.82,0:43:40.58,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}presentation for women by a woman, me\Na woman, who loves women.
+Dialogue: 0,0:43:40.62,0:43:44.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}By your seats you'll find a gift bag,\Nand in that gift bag
+Dialogue: 0,0:43:44.34,0:43:46.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}you'll find our very\Nexciting new product.
+Dialogue: 0,0:43:46.78,0:43:49.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}No, don't do that.
+Dialogue: 0,0:43:49.14,0:43:50.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}SCREAMING
+Dialogue: 0,0:43:50.98,0:43:52.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}No, you're not supposed to...
+Dialogue: 0,0:43:54.74,0:43:58.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Yes! I have some things\NI have to say to you!
+Dialogue: 0,0:43:58.14,0:44:01.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}No, I need to go.\NNo, you are going nowhere.
+Dialogue: 0,0:44:01.54,0:44:05.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Now, I know in the past that you\Nhave accused me
+Dialogue: 0,0:44:05.54,0:44:07.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}of being emotionally colour-blind.
+Dialogue: 0,0:44:07.82,0:44:08.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}SHE SCREAMS
+Dialogue: 0,0:44:08.98,0:44:13.94,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Shut up and listen. But now I've\Nchanged - my sight is perfect.
+Dialogue: 0,0:44:13.98,0:44:16.06,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Now I know what was wrong\Nwith the idea.
+Dialogue: 0,0:44:16.10,0:44:20.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}With your sweet lips and, of\Ncourse, your lovely bangers,
+Dialogue: 0,0:44:21.02,0:44:23.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I know you're the one for me.
+Dialogue: 0,0:44:23.22,0:44:25.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm in terrible pain.
+Dialogue: 0,0:44:25.74,0:44:30.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Me, too, Alice, me, too, but that\Nends now. It ends now.
+Dialogue: 0,0:44:37.42,0:44:40.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}That could not have gone better.
+Dialogue: 0,0:44:40.06,0:44:43.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, no, Roy, that didn't go\Nwell at all.
+Dialogue: 0,0:44:43.42,0:44:46.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, right, because we're going to\Nlose our jobs.
+Dialogue: 0,0:44:47.70,0:44:50.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Argh!
+Dialogue: 0,0:44:50.58,0:44:51.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Mr Reynholm...
+Dialogue: 0,0:44:51.78,0:44:55.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}So, that's the thing. I gave the boy\Nthe can of lager,
+Dialogue: 0,0:44:55.22,0:44:57.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}so technically I'm guilty of\Ncorrupting a minor.
+Dialogue: 0,0:44:57.90,0:45:00.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}So it's the reason why\NI bought the tramp uniform
+Dialogue: 0,0:45:00.26,0:45:03.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}and I've had to make myself scarce.
+Dialogue: 0,0:45:03.30,0:45:07.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}So, you need somewhere to hide out?\NYeah, somewhere off-piste.
+Dialogue: 0,0:45:07.22,0:45:10.42,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Somewhere where no-one will find you.\NBottom of the world.
+Dialogue: 0,0:45:10.46,0:45:13.14,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}You can use our office\Nif you'd like. Whoo.
+Dialogue: 0,0:45:13.18,0:45:15.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Well, I'll need someone to take\Ncare of business upstairs.
+Dialogue: 0,0:45:15.78,0:45:17.18,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}We're not doing anything.
+Dialogue: 0,0:45:17.22,0:45:18.90,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Well, this is perfect.
+Dialogue: 0,0:45:18.94,0:45:22.90,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}My wonderful assistant, Joan,\Nand her two friends, Ross.
+Dialogue: 0,0:45:22.94,0:45:26.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm going to go and piss around\Non the internet
+Dialogue: 0,0:45:26.14,0:45:28.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}but actually I'll need some food.
+Dialogue: 0,0:45:28.74,0:45:31.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I've already eaten one of\Nthe toys in here.
+Dialogue: 0,0:45:33.54,0:45:37.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Did he just say what I think he\Nsaid? I wasn't really listening.
+Dialogue: 0,0:45:38.02,0:45:43.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Is this... Is what's happening good\Nnow? Is this good?
+Dialogue: 0,0:45:44.02,0:45:46.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Yes, it's a very good outcome.\NOh, my God!
+Dialogue: 0,0:45:46.78,0:45:48.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I think we've come out on top,\NI can't believe it.
+Dialogue: 0,0:45:48.82,0:45:50.70,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}We've come out on top.
+Dialogue: 0,0:45:50.74,0:45:52.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}'Jen Barber.'
+Dialogue: 0,0:45:52.50,0:45:55.78,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Oh, I forgot about you.\NOh, God, that's impressive.
+Dialogue: 0,0:45:55.82,0:45:59.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}They're actually watching us.\NHey, mate, am I an anonymous?
+Dialogue: 0,0:46:00.82,0:46:03.54,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Silence, you person wasters.
+Dialogue: 0,0:46:03.58,0:46:06.26,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Greetings, Jen Barber.\NThis is your sentence.
+Dialogue: 0,0:46:06.30,0:46:10.14,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}You've been found guilty of the most\Nappalling lack of basic human
+Dialogue: 0,0:46:10.18,0:46:11.62,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}kindness and decency.
+Dialogue: 0,0:46:11.66,0:46:13.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}KNOCKING ON DOOR
+Dialogue: 0,0:46:13.54,0:46:15.14,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Come in.
+Dialogue: 0,0:46:15.18,0:46:20.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Shush, you. Peter, what are you\Ndoing in there? Shut up!
+Dialogue: 0,0:46:20.06,0:46:23.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}You've been there for hours.\NI'm doing something. Go away!
+Dialogue: 0,0:46:23.34,0:46:26.82,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Peter, your mum and I are worried\Nabout you. Get out.
+Dialogue: 0,0:46:27.90,0:46:33.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}You need to get off this computer.\NWho is this? Are these your friends?
+Dialogue: 0,0:46:33.34,0:46:36.10,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}I'm sorry. Peter can't play any\Nmore. He's coming outside.
+Dialogue: 0,0:46:36.14,0:46:38.86,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}'You said I could stay\Nhere as long as I wanted.'
+Dialogue: 0,0:46:38.90,0:46:40.66,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}We said that you had to come out.
+Dialogue: 0,0:46:40.70,0:46:43.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}MUFFLED VOICE ON MONITOR
+Dialogue: 0,0:46:44.94,0:46:47.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}'..do my homework...
+Dialogue: 0,0:46:47.06,0:46:48.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}'I've done my homework...
+Dialogue: 0,0:46:51.50,0:46:53.46,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}'I know my rights...'
+Dialogue: 0,0:46:53.50,0:46:55.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}WAILS ON MONITOR
+Dialogue: 0,0:46:57.78,0:47:00.30,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}This internet's not working.\NI can't connect.
+Dialogue: 0,0:47:00.34,0:47:03.06,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Just try turning it off\Nand on again.
+Dialogue: 0,0:47:03.10,0:47:04.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Thanks, Ross.
+Dialogue: 0,0:47:26.34,0:47:28.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}RICHMOND: Reynholm Industries\Nis changing.
+Dialogue: 0,0:47:28.42,0:47:32.38,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}New opportunities, new faces,\Na new direction.
+Dialogue: 0,0:47:32.42,0:47:35.22,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}A better workplace environment.
+Dialogue: 0,0:47:35.26,0:47:37.90,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Exciting new products.
+Dialogue: 0,0:47:39.78,0:47:43.50,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}An inclusive hiring policy...\NI am sounding happy?
+Dialogue: 0,0:47:43.54,0:47:46.74,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Can you be a little bit more...\NYeah, this is me being happy.
+Dialogue: 0,0:47:46.78,0:47:49.90,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Just be a bit more, I don't know...\NI'm being upbeat.
+Dialogue: 0,0:47:49.94,0:47:52.98,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}No, I just want you to speak...\NAh, forget it, let's just stop.
+Dialogue: 0,0:47:53.02,0:47:56.02,Default,,0,0,0,,{\i0\b0\u0\1c&HFFFFFF&\1a&H00&}Subtitles by Red Bee Media Ltd

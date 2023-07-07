@@ -1,0 +1,282 @@
+2023-07-05T14:52:12.362Z wiH2ocLyX:[Step S01] [2.00.21] Server relay initialising job
+2023-07-05T14:52:12.364Z wiH2ocLyX:Server: linux_x64_docker_true
+2023-07-05T14:52:12.364Z wiH2ocLyX:Server relay adding file to staged files
+2023-07-05T14:52:12.364Z wiH2ocLyX:Server relay sending job to Node relay: MyInternalNode
+2023-07-05T14:52:12.365Z wiH2ocLyX:Node[MyInternalNode]:[Step N01] [2.00.21] Node relay received job
+2023-07-05T14:52:12.365Z wiH2ocLyX:Node[MyInternalNode]:{"nodeName":"MyInternalNode","serverIP":"0.0.0.0","serverPort":"8266","handbrakePath":"","ffmpegPath":"","mkvpropeditPath":"","pathTranslators":[{"server":"","node":""}],"logLevel":"INFO","priority":-1,"platform_arch_isdocker":"linux_x64_docker_true","processPid":199,"nodeID":"_VxSJ6fLa"}
+2023-07-05T14:52:12.365Z wiH2ocLyX:Node[MyInternalNode]:Node relay sending job to worker:yellow-yak
+2023-07-05T14:52:12.366Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:[Step W01] Received file, original: /media/movies/To Me, the One Who Loved You (2022)/Kimi.wo.Aishita.Hitori.no.Boku.e.1080p.BDRip.10.bits.DD.x265-EMBER.mkv
+2023-07-05T14:52:12.366Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:{"workerType":"healthcheckcpu"}
+2023-07-05T14:52:12.366Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:{"ffmpegPath":"tdarr-ffmpeg"}
+2023-07-05T14:52:12.366Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:{"handbrakePath":"HandBrakeCLI"}
+2023-07-05T14:52:12.367Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:{"mkvpropeditPath":"mkvpropedit"}
+2023-07-05T14:52:12.367Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:{"gpuSelect":"-"}
+2023-07-05T14:52:12.368Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:{"allowGpuDoCpu":false}
+2023-07-05T14:52:12.368Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:{"thoroughHealthCheckCpuExtraInputArgs":""}
+2023-07-05T14:52:12.368Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:{"thoroughHealthCheckGpuExtraInputArgs":""}
+2023-07-05T14:52:12.369Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:{"thoroughHealthCheckCpuExtraArgs":""}
+2023-07-05T14:52:12.369Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:{"thoroughHealthCheckGpuExtraArgs":""}
+2023-07-05T14:52:12.369Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:{"logFullCliOutput":false}
+2023-07-05T14:52:12.370Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Path translating objects
+2023-07-05T14:52:12.370Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:{"librarySettings":{"_id":"kAfqSPAXA","priority":0,"name":"Movies","folder":"/media/movies","foldersToIgnore":"","folderWatchScanInterval":30,"scannerThreadCount":2,"cache":"/temp","output":".","folderToFolderConversion":false,"folderToFolderConversionDeleteSource":false,"folderToFolderRecordHistory":true,"copyIfConditionsMet":false,"container":".mkv","containerFilter":"mkv,mp4,mov,m4v,mpg,mpeg,avi,flv,webm,wmv,vob,evo,iso,m2ts,ts","createdAt":1675837380368,"folderWatching":true,"useFsEvents":true,"scheduledScanFindNew":true,"processLibrary":true,"scanOnStart":true,"exifToolScan":true,"mediaInfoScan":true,"closedCaptionScan":true,"scanButtons":true,"scanFound":"Files found:0","navItemSelected":"navSourceFolder","pluginIDs":[{"_id":"plugin1","id":"Tdarr_Plugin_MC93_MigzImageRemoval","checked":true,"source":"Community","priority":0,"InputsDB":{},"Stage":"Pre-processing","Name":"Migz-Remove image formats from file","Type":"Video","Operation":"Transcode","Description":"Identify any unwanted image formats in the file and remove those streams. MJPEG, PNG & GIF \n\n","Version":"1.4","Tags":"pre-processing,ffmpeg,video only","Inputs":[],"source_id":"Community::Tdarr_Plugin_MC93_MigzImageRemoval"},{"_id":"plugin2","id":"Tdarr_Plugin_lmg1_Reorder_Streams","checked":true,"source":"Community","priority":1,"InputsDB":{},"Stage":"Pre-processing","Name":"Tdarr_Plugin_lmg1_Reorder_Streams ","Type":"Video","Operation":"Transcode","Description":"[Contains built-in filter] This plugin will move the video stream to the front so Tdarr will recognize the codec correctly.\n\n","Version":"1.00","Tags":"pre-processing,ffmpeg","Inputs":[],"source_id":"Community::Tdarr_Plugin_lmg1_Reorder_Streams"},{"_id":"ng8UTQJB-","id":"Tdarr_Plugin_MC93_Migz1FFMPEG_CPU","checked":false,"source":"Community","priority":2,"InputsDB":{},"Stage":"Pre-processing","Name":"Migz-Transcode Using CPU & FFMPEG","Type":"Video","Operation":"Transcode","Description":"Files not in H265 will be transcoded into H265 using CPU with ffmpeg.\n                Settings are dependant on file bitrate\n                Working by the logic that H265 can support the same ammount of data at half the bitrate of H264.\n                This plugin will  skip any files that are in the VP9 codec.","Version":"1.9","Tags":"pre-processing,ffmpeg,video only,configurable,h265","Inputs":[{"name":"container","type":"string","defaultValue":"mkv","inputUI":{"type":"text"},"tooltip":"Specify output container of file. Use 'original' wihout quotes to keep original container.\n                  \\n Ensure that all stream types you may have are supported by your chosen container.\n                  \\n mkv is recommended.\n                    \\nExample:\\n\n                    mkv\n\n                    \\nExample:\\n\n                    mp4\n                                        \n                    \\nExample:\\n\n                    original"},{"name":"bitrate_cutoff","type":"string","defaultValue":"","inputUI":{"type":"text"},"tooltip":"Specify bitrate cutoff, files with a current bitrate lower then this will not be transcoded.\n                  \\n Rate is in kbps.\n                  \\n Leave empty to disable.\n                    \\nExample:\\n\n                    6000\n\n                    \\nExample:\\n\n                    4000"},{"name":"enable_10bit","type":"boolean","defaultValue":false,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Specify if output file should be 10bit. Default is false.\n                    \\nExample:\\n\n                    true\n\n                    \\nExample:\\n\n                    false"},{"name":"force_conform","type":"boolean","defaultValue":false,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Make the file conform to output containers requirements.\n                \\n Drop hdmv_pgs_subtitle/eia_608/subrip/timed_id3 for MP4.\n                \\n Drop data streams/mov_text/eia_608/timed_id3 for MKV.\n                \\n Default is false.\n                    \\nExample:\\n\n                    true\n\n                    \\nExample:\\n\n                    false"}],"source_id":"Community::Tdarr_Plugin_MC93_Migz1FFMPEG_CPU"},{"_id":"t_N6lRAvA","id":"Tdarr_Plugin_00td_action_handbrake_basic_options","checked":true,"source":"Community","priority":3,"InputsDB":{"handbrakePreset":"H.265 MKV 2160p60"},"Stage":"Pre-processing","Name":"HandBrake basic options","Type":"Video","Operation":"Transcode","Description":"\n  Set basic HandBrake transcode options. This action has no built-in filter so be sure to set a codec filter\n  to prevent a transcoding loop.\n  ","Version":"1.00","Tags":"action","Inputs":[{"name":"handbrakePreset","type":"string","defaultValue":"Very Fast 1080p30","inputUI":{"type":"dropdown","options":["Very Fast 1080p30","Very Fast 720p30","Very Fast 576p25","Very Fast 480p30","Fast 1080p30","Fast 720p30","Fast 576p25","Fast 480p30","HQ 1080p30 Surround","HQ 720p30 Surround","HQ 576p25 Surround","HQ 480p30 Surround\"","Super HQ 1080p30 Surround","Super HQ 720p30 Surround","Super HQ 576p25 Surround","Super HQ 480p30 Surround","Gmail Large 3 Minutes 720p30","Gmail Medium 5 Minutes 480p30","Gmail Small 10 Minutes 288p30","Vimeo YouTube HQ 2160p60 4K","Vimeo YouTube HQ 1440p60 2.5K","Vimeo YouTube HQ 1080p60","Vimeo YouTube HQ 720p60","Vimeo YouTube 720p30","Android 1080p30","Android 720p30","Android 576p25","Android 480p30","Apple 2160p60 4K HEVC Surround","Apple 1080p60 Surround","Apple 1080p30 Surround","Apple 720p30 Surround","Apple 540p30 Surround","Apple 240p30","Chromecast 2160p60 4K HEVC Surround","Chromecast 1080p60 Surround","Chromecast 1080p30 Surround","Amazon Fire 2160p60 4K HEVC Surround","Amazon Fire 1080p30 Surround","Amazon Fire 720p30","Playstation 1080p30 Surround","Playstation 720p30","Playstation 540p30","Roku 2160p60 4K HEVC Surround","Roku 1080p30 Surround","Roku 720p30 Surround","Roku 576p25","Roku 480p30","Windows Mobile 1080p30","Windows Mobile 720p30","Windows Mobile 540p30","Windows Mobile 480p30","Xbox 1080p30 Surround","Xbox Legacy 1080p30 Surround","H.265 MKV 2160p60","H.265 MKV 1080p30","H.265 MKV 720p30","H.265 MKV 576p25","H.265 MKV 480p30","H.264 MKV 2160p60","H.264 MKV 1080p30","H.264 MKV 720p30","H.264 MKV 576p25","H.264 MKV 480p30","VP9 MKV 2160p60","VP9 MKV 1080p30","VP9 MKV 720p30","VP9 MKV 576p25","VP9 MKV 480p30","VP8 MKV 1080p30","VP8 MKV 720p30","VP8 MKV 576p25","VP8 MKV 480p30","Production Max","Production Standard","Production Proxy 1080p","Production Proxy 540p"]},"tooltip":"Enter the desired HandBrake preset"},{"name":"videoEncoder","type":"string","defaultValue":"x265","inputUI":{"type":"dropdown","options":["x264","x264_10bit","qsv_h264","nvenc_h264","x265","x265_10bit","x265_12bit","qsv_h265","nvenc_h265","mpeg4","mpeg2","VP8","VP9","theora"]},"tooltip":"Enter the desired video encoder"},{"name":"keepSubtitles","type":"boolean","defaultValue":true,"inputUI":{"type":"dropdown","options":["true","false"]},"tooltip":"Specify whether to keep subs or not"},{"name":"container","type":"string","defaultValue":"mkv","inputUI":{"type":"text"},"tooltip":"Enter the desired container"}],"source_id":"Community::Tdarr_Plugin_00td_action_handbrake_basic_options"},{"_id":"plugin5","id":"Tdarr_Plugin_a9he_New_file_size_check","checked":true,"source":"Community","priority":4,"InputsDB":{},"Stage":"Pre-processing","Name":"New file size check","Type":"Video","Operation":"Transcode","Description":"Give an error if new file is not within the specified upper and lower bound limits \n\n","Version":"1.00","Tags":"","Inputs":[{"name":"upperBound","type":"number","defaultValue":110,"inputUI":{"type":"text"},"tooltip":"Enter the upper bound % size for the new file. For example, if '110' is entered, \n        then if the new file size is 11% larger than the original, an error will be given."},{"name":"lowerBound","type":"number","defaultValue":40,"inputUI":{"type":"text"},"tooltip":"Enter the lower bound % size for the new file. For example, if '90' is entered, \n        then if the new file size is less than 90% of the original, an error will be given."}],"source_id":"Community::Tdarr_Plugin_a9he_New_file_size_check"}],"pluginCommunity":true,"handbrake":true,"ffmpeg":false,"handbrakescan":true,"ffmpegscan":false,"preset":"-Z \"H.265 MKV 2160p60\" -e x264 --all-subtitles --all-audio","decisionMaker":{"settingsPlugin":true,"settingsVideo":false,"videoExcludeSwitch":true,"video_codec_names_exclude":[{"codec":"hevc","checked":false},{"codec":"h264","checked":false}],"video_size_range_include":{"min":0,"max":100000},"video_height_range_include":{"min":0,"max":3000},"video_width_range_include":{"min":0,"max":4000},"settingsAudio":false,"audioExcludeSwitch":true,"audio_codec_names_exclude":[{"codec":"mp3","checked":true},{"codec":"aac","checked":false}],"audio_size_range_include":{"min":0,"max":10}},"schedule":[{"_id":"Sun:00-01","checked":true},{"_id":"Sun:01-02","checked":true},{"_id":"Sun:02-03","checked":true},{"_id":"Sun:03-04","checked":true},{"_id":"Sun:04-05","checked":true},{"_id":"Sun:05-06","checked":true},{"_id":"Sun:06-07","checked":true},{"_id":"Sun:07-08","checked":true},{"_id":"Sun:08-09","checked":true},{"_id":"Sun:09-10","checked":true},{"_id":"Sun:10-11","checked":true},{"_id":"Sun:11-12","checked":true},{"_id":"Sun:12-13","checked":true},{"_id":"Sun:13-14","checked":true},{"_id":"Sun:14-15","checked":true},{"_id":"Sun:15-16","checked":true},{"_id":"Sun:16-17","checked":true},{"_id":"Sun:17-18","checked":true},{"_id":"Sun:18-19","checked":true},{"_id":"Sun:19-20","checked":true},{"_id":"Sun:20-21","checked":true},{"_id":"Sun:21-22","checked":true},{"_id":"Sun:22-23","checked":true},{"_id":"Sun:23-00","checked":true},{"_id":"Mon:00-01","checked":true},{"_id":"Mon:01-02","checked":true},{"_id":"Mon:02-03","checked":true},{"_id":"Mon:03-04","checked":true},{"_id":"Mon:04-05","checked":true},{"_id":"Mon:05-06","checked":true},{"_id":"Mon:06-07","checked":true},{"_id":"Mon:07-08","checked":true},{"_id":"Mon:08-09","checked":true},{"_id":"Mon:09-10","checked":true},{"_id":"Mon:10-11","checked":true},{"_id":"Mon:11-12","checked":true},{"_id":"Mon:12-13","checked":true},{"_id":"Mon:13-14","checked":true},{"_id":"Mon:14-15","checked":true},{"_id":"Mon:15-16","checked":true},{"_id":"Mon:16-17","checked":true},{"_id":"Mon:17-18","checked":true},{"_id":"Mon:18-19","checked":true},{"_id":"Mon:19-20","checked":true},{"_id":"Mon:20-21","checked":true},{"_id":"Mon:21-22","checked":true},{"_id":"Mon:22-23","checked":true},{"_id":"Mon:23-00","checked":true},{"_id":"Tue:00-01","checked":true},{"_id":"Tue:01-02","checked":true},{"_id":"Tue:02-03","checked":true},{"_id":"Tue:03-04","checked":true},{"_id":"Tue:04-05","checked":true},{"_id":"Tue:05-06","checked":true},{"_id":"Tue:06-07","checked":true},{"_id":"Tue:07-08","checked":true},{"_id":"Tue:08-09","checked":true},{"_id":"Tue:09-10","checked":true},{"_id":"Tue:10-11","checked":true},{"_id":"Tue:11-12","checked":true},{"_id":"Tue:12-13","checked":true},{"_id":"Tue:13-14","checked":true},{"_id":"Tue:14-15","checked":true},{"_id":"Tue:15-16","checked":true},{"_id":"Tue:16-17","checked":true},{"_id":"Tue:17-18","checked":true},{"_id":"Tue:18-19","checked":true},{"_id":"Tue:19-20","checked":true},{"_id":"Tue:20-21","checked":true},{"_id":"Tue:21-22","checked":true},{"_id":"Tue:22-23","checked":true},{"_id":"Tue:23-00","checked":true},{"_id":"Wed:00-01","checked":true},{"_id":"Wed:01-02","checked":true},{"_id":"Wed:02-03","checked":true},{"_id":"Wed:03-04","checked":true},{"_id":"Wed:04-05","checked":true},{"_id":"Wed:05-06","checked":true},{"_id":"Wed:06-07","checked":true},{"_id":"Wed:07-08","checked":true},{"_id":"Wed:08-09","checked":true},{"_id":"Wed:09-10","checked":true},{"_id":"Wed:10-11","checked":true},{"_id":"Wed:11-12","checked":true},{"_id":"Wed:12-13","checked":true},{"_id":"Wed:13-14","checked":true},{"_id":"Wed:14-15","checked":true},{"_id":"Wed:15-16","checked":true},{"_id":"Wed:16-17","checked":true},{"_id":"Wed:17-18","checked":true},{"_id":"Wed:18-19","checked":true},{"_id":"Wed:19-20","checked":true},{"_id":"Wed:20-21","checked":true},{"_id":"Wed:21-22","checked":true},{"_id":"Wed:22-23","checked":true},{"_id":"Wed:23-00","checked":true},{"_id":"Thur:00-01","checked":true},{"_id":"Thur:01-02","checked":true},{"_id":"Thur:02-03","checked":true},{"_id":"Thur:03-04","checked":true},{"_id":"Thur:04-05","checked":true},{"_id":"Thur:05-06","checked":true},{"_id":"Thur:06-07","checked":true},{"_id":"Thur:07-08","checked":true},{"_id":"Thur:08-09","checked":true},{"_id":"Thur:09-10","checked":true},{"_id":"Thur:10-11","checked":true},{"_id":"Thur:11-12","checked":true},{"_id":"Thur:12-13","checked":true},{"_id":"Thur:13-14","checked":true},{"_id":"Thur:14-15","checked":true},{"_id":"Thur:15-16","checked":true},{"_id":"Thur:16-17","checked":true},{"_id":"Thur:17-18","checked":true},{"_id":"Thur:18-19","checked":true},{"_id":"Thur:19-20","checked":true},{"_id":"Thur:20-21","checked":true},{"_id":"Thur:21-22","checked":true},{"_id":"Thur:22-23","checked":true},{"_id":"Thur:23-00","checked":true},{"_id":"Fri:00-01","checked":true},{"_id":"Fri:01-02","checked":true},{"_id":"Fri:02-03","checked":true},{"_id":"Fri:03-04","checked":true},{"_id":"Fri:04-05","checked":true},{"_id":"Fri:05-06","checked":true},{"_id":"Fri:06-07","checked":true},{"_id":"Fri:07-08","checked":true},{"_id":"Fri:08-09","checked":true},{"_id":"Fri:09-10","checked":true},{"_id":"Fri:10-11","checked":true},{"_id":"Fri:11-12","checked":true},{"_id":"Fri:12-13","checked":true},{"_id":"Fri:13-14","checked":true},{"_id":"Fri:14-15","checked":true},{"_id":"Fri:15-16","checked":true},{"_id":"Fri:16-17","checked":true},{"_id":"Fri:17-18","checked":true},{"_id":"Fri:18-19","checked":true},{"_id":"Fri:19-20","checked":true},{"_id":"Fri:20-21","checked":true},{"_id":"Fri:21-22","checked":true},{"_id":"Fri:22-23","checked":true},{"_id":"Fri:23-00","checked":true},{"_id":"Sat:00-01","checked":true},{"_id":"Sat:01-02","checked":true},{"_id":"Sat:02-03","checked":true},{"_id":"Sat:03-04","checked":true},{"_id":"Sat:04-05","checked":true},{"_id":"Sat:05-06","checked":true},{"_id":"Sat:06-07","checked":true},{"_id":"Sat:07-08","checked":true},{"_id":"Sat:08-09","checked":true},{"_id":"Sat:09-10","checked":true},{"_id":"Sat:10-11","checked":true},{"_id":"Sat:11-12","checked":true},{"_id":"Sat:12-13","checked":true},{"_id":"Sat:13-14","checked":true},{"_id":"Sat:14-15","checked":true},{"_id":"Sat:15-16","checked":true},{"_id":"Sat:16-17","checked":true},{"_id":"Sat:17-18","checked":true},{"_id":"Sat:18-19","checked":true},{"_id":"Sat:19-20","checked":true},{"_id":"Sat:20-21","checked":true},{"_id":"Sat:21-22","checked":true},{"_id":"Sat:22-23","checked":true},{"_id":"Sat:23-00","checked":true}],"totalHealthCheckCount":5,"totalTranscodeCount":2,"sizeDiff":0,"holdNewFiles":false,"holdFor":3600,"pluginStackOverview":true,"filterResolutionsSkip":"","filterCodecsSkip":"","processPluginsSequentially":true}}
+2023-07-05T14:52:12.370Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Scanning original library file
+2023-07-05T14:52:12.371Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:{
+2023-07-05T14:52:12.371Z   "exifToolScan": true,
+2023-07-05T14:52:12.371Z   "mediaInfoScan": false,
+2023-07-05T14:52:12.371Z   "closedCaptionScan": false
+2023-07-05T14:52:12.371Z }
+2023-07-05T14:52:12.371Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Requesting Tdarr Server to scan file
+2023-07-05T14:52:13.373Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Scan complete
+2023-07-05T14:52:13.375Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Original file scanned
+2023-07-05T14:52:13.376Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Source file to work on determined:/media/movies/To Me, the One Who Loved You (2022)/Kimi.wo.Aishita.Hitori.no.Boku.e.1080p.BDRip.10.bits.DD.x265-EMBER.mkv
+2023-07-05T14:52:13.376Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:[Step W02] [C1] Running pre-process file
+2023-07-05T14:52:13.377Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Checking files can be accessed
+2023-07-05T14:52:13.377Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Relevant paths can be accessed
+2023-07-05T14:52:13.377Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Source file: /media/movies/To Me, the One Who Loved You (2022)/Kimi.wo.Aishita.Hitori.no.Boku.e.1080p.BDRip.10.bits.DD.x265-EMBER.mkv
+2023-07-05T14:52:13.379Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:[Step W03] [C1] Analysing file - running plugins
+2023-07-05T14:52:13.379Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Handbrake healthcheck task, no need to scan for extra file details
+2023-07-05T14:52:13.379Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Updating Node relay: Processing
+2023-07-05T14:52:13.380Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:[1/2] Checking file frame count
+2023-07-05T14:52:13.380Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:[2/2] Frame count 0
+2023-07-05T14:52:13.383Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Determining healthcheck command
+2023-07-05T14:52:13.384Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:[Step W04] [C1] Preparing command
+2023-07-05T14:52:13.384Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Cache file stem: /temp
+2023-07-05T14:52:13.385Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Cache file path: /temp/Kimi.wo.Aishita.Hitori.no.Boku.e.1080p.BDRip.10.bits.DD.x265-EMBER-TdarrCacheFile-yKwK5Td3H.mp4
+2023-07-05T14:52:13.385Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Create transcode args
+2023-07-05T14:52:13.385Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Args:  -i "/media/movies/To Me, the One Who Loved You (2022)/Kimi.wo.Aishita.Hitori.no.Boku.e.1080p.BDRip.10.bits.DD.x265-EMBER.mkv" -o /temp/Kimi.wo.Aishita.Hitori.no.Boku.e.1080p.BDRip.10.bits.DD.x265-EMBER-TdarrCacheFile-yKwK5Td3H.mp4 --scan
+2023-07-05T14:52:13.386Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Getting source file size
+2023-07-05T14:52:13.386Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Source file size: 1.641831829212606
+2023-07-05T14:52:13.386Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Performing safety check on worker config to see if old transcode args/container match new ones
+2023-07-05T14:52:13.386Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Safety check complete, all good
+2023-07-05T14:52:13.387Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:[Step W05] [C1] Launching subworker
+2023-07-05T14:52:13.387Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Preparing to launch subworker
+2023-07-05T14:52:13.387Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Subworker launched
+2023-07-05T14:52:13.388Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:[1/3] Sending command to subworker
+2023-07-05T14:52:13.388Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:[2/3] HandBrakeCLI -i "/media/movies/To Me, the One Who Loved You (2022)/Kimi.wo.Aishita.Hitori.no.Boku.e.1080p.BDRip.10.bits.DD.x265-EMBER.mkv" -o /temp/Kimi.wo.Aishita.Hitori.no.Boku.e.1080p.BDRip.10.bits.DD.x265-EMBER-TdarrCacheFile-yKwK5Td3H.mp4 --scan
+2023-07-05T14:52:13.389Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:[3/3] Command sent
+2023-07-05T14:52:13.389Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:To see live CLI output, enable 'Log full FFmpeg/HandBrake output' in the staging section on the Tdarr tab before the job starts. Note this could increase the job report size substantially.
+2023-07-05T14:52:13.389Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Subworker:Online
+2023-07-05T14:52:13.404Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Subworker:Receiving transcode settings
+2023-07-05T14:52:13.405Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Subworker:Running CLI
+2023-07-05T14:52:15.431Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Subworker:a.Thread closed, code: 0
+2023-07-05T14:52:15.432Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Subworker exit approved, killing subworker
+2023-07-05T14:52:15.432Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Subworker killed
+2023-07-05T14:52:15.433Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:b.Thread closed, code: 0
+2023-07-05T14:52:15.433Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:CLI code: 0
+2023-07-05T14:52:15.434Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Last 200 lines of CLI log:
+2023-07-05T14:52:15.434Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:[14:52:11] Compile-time hardening features are enabled
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z [14:52:11] qsv: not available on this system
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z Cannot load libnvidia-encode.so.1
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z [14:52:11] hb_init: starting libhb thread
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z [14:52:11] thread 7fd6e7858700 started ("libhb")
+2023-07-05T14:52:15.434Z HandBrake 1.6.1 (2023061300) - Linux x86_64 - https://handbrake.fr
+2023-07-05T14:52:15.434Z 4 CPUs detected
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z Opening /media/movies/To Me, the One Who Loved You (2022)/Kimi.wo.Aishita.Hitori.no.Boku.e.1080p.BDRip.10.bits.DD.x265-EMBER.mkv...
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z [14:52:11] CPU: 
+2023-07-05T14:52:15.434Z [14:52:11]  - logical processor count: 4
+2023-07-05T14:52:15.434Z [14:52:11] Intel Quick Sync Video support: no
+2023-07-05T14:52:15.434Z [14:52:11] hb_scan: path=/media/movies/To Me, the One Who Loved You (2022)/Kimi.wo.Aishita.Hitori.no.Boku.e.1080p.BDRip.10.bits.DD.x265-EMBER.mkv, title_index=1
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z udfread ERROR: ECMA 167 Volume Recognition failed
+2023-07-05T14:52:15.434Z disc.c:333: failed opening UDF image /media/movies/To Me, the One Who Loved You (2022)/Kimi.wo.Aishita.Hitori.no.Boku.e.1080p.BDRip.10.bits.DD.x265-EMBER.mkv
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z disc.c:437: error opening file BDMV/index.bdmv
+2023-07-05T14:52:15.434Z disc.c:437: error opening file BDMV/BACKUP/index.bdmv
+2023-07-05T14:52:15.434Z [14:52:11] bd: not a bd - trying as a stream/file instead
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z libdvdread: DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.IFO failed
+2023-07-05T14:52:15.434Z libdvdnav: vm: vm: failed to read VIDEO_TS.IFO
+2023-07-05T14:52:15.434Z [14:52:11] dvd: not a dvd - trying as a stream/file instead
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z Input #0, matroska,webm, from '/media/movies/To Me, the One Who Loved You (2022)/Kimi.wo.Aishita.Hitori.no.Boku.e.1080p.BDRip.10.bits.DD.x265-EMBER.mkv':
+2023-07-05T14:52:15.434Z   Metadata:
+2023-07-05T14:52:15.434Z     title           : Kimi.wo.Aishita.Hitori.no.Boku.e.1080p.BDRip.10.bits.DD.x265-EMBER
+2023-07-05T14:52:15.434Z     encoder         : libebml v1.4.2 + libmatroska v1.6.4
+2023-07-05T14:52:15.434Z     creation_time   : 2023-04-22T13:00:51.000000Z
+2023-07-05T14:52:15.434Z   Duration: 01:38:39.94, start: 0.000000, bitrate: 2382 kb/s
+2023-07-05T14:52:15.434Z   Chapters:
+2023-07-05T14:52:15.434Z     Chapter #0:0: start 0.000000, end 670.252911
+2023-07-05T14:52:15.434Z       Metadata:
+2023-07-05T14:52:15.434Z         title           : Chapter 01
+2023-07-05T14:52:15.434Z     Chapter #0:1: start 670.252911, end 1251.625356
+2023-07-05T14:52:15.434Z       Metadata:
+2023-07-05T14:52:15.434Z         title           : Chapter 02
+2023-07-05T14:52:15.434Z     Chapter #0:2: start 1251.625356, end 1937.018400
+2023-07-05T14:52:15.434Z       Metadata:
+2023-07-05T14:52:15.434Z         title           : Chapter 03
+2023-07-05T14:52:15.434Z     Chapter #0:3: start 1937.018400, end 2506.587400
+2023-07-05T14:52:15.434Z       Metadata:
+2023-07-05T14:52:15.434Z         title           : 
+2023-07-05T14:52:15.434Z Chapter 04
+2023-07-05T14:52:15.434Z     Chapter #0:4: start 2506.587400, end 3010.507489
+2023-07-05T14:52:15.434Z       Metadata:
+2023-07-05T14:52:15.434Z         title           : Chapter 05
+2023-07-05T14:52:15.434Z     Chapter #0:5: start 3010.507489, end 3556.094200
+2023-07-05T14:52:15.434Z       Metadata:
+2023-07-05T14:52:15.434Z         title           : Chapter 06
+2023-07-05T14:52:15.434Z     Chapter #0:6: start 3556.094200, end 3951.739444
+2023-07-05T14:52:15.434Z       Metadata:
+2023-07-05T14:52:15.434Z         title           : Chapter 07
+2023-07-05T14:52:15.434Z     Chapter #0:7: start 3951.739444, end 4749.995244
+2023-07-05T14:52:15.434Z       Metadata:
+2023-07-05T14:52:15.434Z         title           : Chapter 08
+2023-07-05T14:52:15.434Z     Chapter #0:8: start 4749.995244, end 5679.173489
+2023-07-05T14:52:15.434Z       Metadata:
+2023-07-05T14:52:15.434Z         title           : Chapter 09
+2023-07-05T14:52:15.434Z     Chapter #0:9: start 5679.173489, end 5919.936000
+2023-07-05T14:52:15.434Z       Metadata:
+2023-07-05T14:52:15.434Z         title           : Chapter 10
+2023-07-05T14:52:15.434Z   Stream #0:0: Video: hevc (Main 10), yuv420p10le(tv, bt709), 1920x1080, SAR 1:1 DAR 16:9, 23.98 fps, 23.98 tbr, 1k tbn (default)
+2023-07-05T14:52:15.434Z     Metadata:
+2023-07-05T14:52:15.434Z       title           : Presented By EMBER
+2023-07-05T14:52:15.434Z       BPS             : 1923495
+2023-07-05T14:52:15.434Z       DURATION        : 01:38:39.914000000
+2023-07-05T14:52:15.434Z       NUMBER_OF_FRAMES: 141936
+2023-07-05T14:52:15.434Z       NUMBER_OF_BYTES : 1423366154
+2023-07-05T14:52:15.434Z       _STATISTICS_WRITING_APP: mkvmerge v69.0.0 ('Day And Age') 64-bit
+2023-07-05T14:52:15.434Z       _STATISTICS_WRITING_DATE_UTC: 2023-04-22 13:00:51
+2023-07-05T14:52:15.434Z       _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+2023-07-05T14:52:15.434Z   Stream #0:1(jpn): Audio: ac3, 48000 Hz, 5.1(side), fltp, 448 kb/s (default)
+2023-07-05T14:52:15.434Z     Metadata:
+2023-07-05T14:52:15.434Z       BPS             : 448000
+2023-07-05T14:52:15.434Z       DURATION        : 01:38:39.936000000
+2023-07-05T14:52:15.434Z       NUMBER_OF_FRAMES: 184998
+2023-07-05T14:52:15.434Z       NUMBER_OF_BYTES : 331516416
+2023-07-05T14:52:15.434Z       _STATISTICS_WRITING_APP: mkvmerge v69.0.0 ('Day And Age') 64-bit
+2023-07-05T14:52:15.434Z       _STATISTICS_WRITING_DATE_UTC: 2023-04-22 13:00:51
+2023-07-05T14:52:15.434Z       _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+2023-07-05T14:52:15.434Z   Stream #0:2(eng): Subtitle: ass (default)
+2023-07-05T14:52:15.434Z     Metadata:
+2023-07-05T14:52:15.434Z       BPS             : 133
+2023-07-05T14:52:15.434Z       DURATION        : 01:37:38.870000000
+2023-07-05T14:52:15.434Z       NUMBER_OF_FRAMES: 1317
+2023-07-05T14:52:15.434Z       NUMBER_OF_BYTES : 98060
+2023-07-05T14:52:15.434Z       _STATISTICS_WRITING_APP: mkvmerge v69.0.0 ('Day And Age') 64-bit
+2023-07-05T14:52:15.434Z       _STATISTICS_WRITING_DATE_UTC: 2023-04-22 13:00:51
+2023-07-05T14:52:15.434Z       _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+2023-07-05T14:52:15.434Z   Stream #0:3: Video: mjpeg (Baseline), yuvj444p(pc, bt470bg/unknown/unknown), 640x360 [SAR 72:72 DAR 16:9], 90k tbr, 90k tbn (attached pic)
+2023-07-05T14:52:15.434Z     Metadata:
+2023-07-05T14:52:15.434Z       filename        : 
+2023-07-05T14:52:15.434Z cover.jpg
+2023-07-05T14:52:15.434Z       mimetype        : image/jpeg
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z   Stream #0:4: Attachment: none
+2023-07-05T14:52:15.434Z     Metadata:
+2023-07-05T14:52:15.434Z       filename        : CONSOLAB.TTF
+2023-07-05T14:52:15.434Z       mimetype        : font/ttf
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z   Stream #0:5: Attachment: none
+2023-07-05T14:52:15.434Z     Metadata:
+2023-07-05T14:52:15.434Z       filename        : Roboto-Medium.ttf
+2023-07-05T14:52:15.434Z       mimetype        : font/ttf
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z   Stream #0:6: Attachment: none
+2023-07-05T14:52:15.434Z     Metadata:
+2023-07-05T14:52:15.434Z       filename        : Roboto-MediumItalic.ttf
+2023-07-05T14:52:15.434Z       mimetype        : font/ttf
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z   Stream #0:7: Attachment: none
+2023-07-05T14:52:15.434Z     Metadata:
+2023-07-05T14:52:15.434Z       filename        : times.ttf
+2023-07-05T14:52:15.434Z       mimetype        : font/ttf
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z   Stream #0:8: Attachment: none
+2023-07-05T14:52:15.434Z     Metadata:
+2023-07-05T14:52:15.434Z       filename        : timesbd.ttf
+2023-07-05T14:52:15.434Z       mimetype        : font/ttf
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z   Stream #0:9: Attachment: none
+2023-07-05T14:52:15.434Z     Metadata:
+2023-07-05T14:52:15.434Z       filename        : trebuc.ttf
+2023-07-05T14:52:15.434Z       mimetype        : font/ttf
+2023-07-05T14:52:15.434Z   Stream #0:10: Attachment: none
+2023-07-05T14:52:15.434Z     Metadata:
+2023-07-05T14:52:15.434Z       filename        : trebucbd.ttf
+2023-07-05T14:52:15.434Z       mimetype        : 
+2023-07-05T14:52:15.434Z font/ttf
+2023-07-05T14:52:15.434Z   Stream #0:11: Attachment: none
+2023-07-05T14:52:15.434Z     Metadata:
+2023-07-05T14:52:15.434Z       filename        : verdana.ttf
+2023-07-05T14:52:15.434Z       mimetype        : font/ttf
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z   Stream #0:12: Attachment: none
+2023-07-05T14:52:15.434Z     Metadata:
+2023-07-05T14:52:15.434Z       filename        : verdanab.ttf
+2023-07-05T14:52:15.434Z       mimetype        : font/ttf
+2023-07-05T14:52:15.434Z   Stream #0:13: Attachment: none
+2023-07-05T14:52:15.434Z     Metadata:
+2023-07-05T14:52:15.434Z       filename        : arial.ttf
+2023-07-05T14:52:15.434Z       mimetype        : font/ttf
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z   Stream #0:14: Attachment: none
+2023-07-05T14:52:15.434Z     Metadata:
+2023-07-05T14:52:15.434Z       filename        : arialbd.ttf
+2023-07-05T14:52:15.434Z       mimetype        : font/ttf
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z   Stream #0:15: Attachment: none
+2023-07-05T14:52:15.434Z     Metadata:
+2023-07-05T14:52:15.434Z       filename        : comic.ttf
+2023-07-05T14:52:15.434Z       mimetype        : font/ttf
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z   Stream #0:16: Attachment: none
+2023-07-05T14:52:15.434Z     Metadata:
+2023-07-05T14:52:15.434Z       filename        : comicbd.ttf
+2023-07-05T14:52:15.434Z       mimetype        : font/ttf
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z   Stream #0:17: Attachment: none
+2023-07-05T14:52:15.434Z     Metadata:
+2023-07-05T14:52:15.434Z       filename        : CONSOLA.TTF
+2023-07-05T14:52:15.434Z       mimetype        : font/ttf
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z [14:52:11] scan: decoding previews for title 1
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z [14:52:11] scan: audio 0x1: ac3, rate=48000Hz, bitrate=448000 日本語 (AC3) (5.1 ch) (448 kbps)
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z Scanning title 1 of 1, preview 1, 10.00 %
+2023-07-05T14:52:15.434Z Scanning title 1 of 1, preview 4, 40.00 %
+2023-07-05T14:52:15.434Z Scanning title 1 of 1, preview 6, 60.00 %
+2023-07-05T14:52:15.434Z Scanning title 1 of 1, preview 9, 90.00 %
+2023-07-05T14:52:15.434Z [14:52:12] scan: 10 previews, 1920x1080, 23.976 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1, color profile: 1-1-1, chroma location: left
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z [14:52:12] libhb: scan thread found 1 valid title(s)
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z + title 1:
+2023-07-05T14:52:15.434Z   + stream: /media/movies/To Me, the One Who Loved You (2022)/Kimi.wo.Aishita.Hitori.no.Boku.e.1080p.BDRip.10.bits.DD.x265-EMBER.mkv
+2023-07-05T14:52:15.434Z   + duration: 01:38:39
+2023-07-05T14:52:15.434Z   + size: 1920x1080, pixel aspect: 1/1, display aspect: 1.78, 23.976 fps
+2023-07-05T14:52:15.434Z   + autocrop: 0/0/0/0
+2023-07-05T14:52:15.434Z   + chapters:
+2023-07-05T14:52:15.434Z     + 1: duration 00:11:10
+2023-07-05T14:52:15.434Z     + 2: duration 00:09:41
+2023-07-05T14:52:15.434Z     + 3: duration 00:11:25
+2023-07-05T14:52:15.434Z     + 4: duration 00:09:30
+2023-07-05T14:52:15.434Z     + 5: duration 00:08:24
+2023-07-05T14:52:15.434Z     + 6: duration 00:09:06
+2023-07-05T14:52:15.434Z     + 7: duration 00:06:36
+2023-07-05T14:52:15.434Z     + 8: duration 00:13:18
+2023-07-05T14:52:15.434Z     + 9: duration 00:15:29
+2023-07-05T14:52:15.434Z     + 10: duration 00:04:01
+2023-07-05T14:52:15.434Z   + audio tracks:
+2023-07-05T14:52:15.434Z     + 1, 日本語 (AC3) (5.1 ch) (448 kbps) (iso639-2: jpn), 48000Hz, 448000bps
+2023-07-05T14:52:15.434Z   + subtitle tracks:
+2023-07-05T14:52:15.434Z     + 1, English [SSA]
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z HandBrake has exited.
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z libdvdread: Encrypted DVD support unavailable.
+2023-07-05T14:52:15.434Z libdvdread: Can't open file VIDEO_TS.IFO.
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.434Z 
+2023-07-05T14:52:15.437Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:[Step W06] [C1] Worker [-success-]
+2023-07-05T14:52:15.439Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Worker success during processing
+2023-07-05T14:52:15.440Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Updating healthcheck stats
+2023-07-05T14:52:15.440Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:[Step W10] Worker processing end
+2023-07-05T14:52:15.440Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Subworker exited null
+2023-07-05T14:52:15.441Z wiH2ocLyX:Node[MyInternalNode]:Worker[yellow-yak]:Successfully updated server with verdict: healthcheckSuccess

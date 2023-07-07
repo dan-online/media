@@ -1,0 +1,770 @@
+2023-07-06T08:52:14.899Z p_yOiwT16_:[Step S01] [2.00.21] Server relay initialising job
+2023-07-06T08:52:14.900Z p_yOiwT16_:Server: linux_x64_docker_true
+2023-07-06T08:52:14.901Z p_yOiwT16_:Server relay adding file to staged files
+2023-07-06T08:52:14.901Z p_yOiwT16_:Server relay sending job to Node relay: MyInternalNode
+2023-07-06T08:52:14.902Z p_yOiwT16_:Node[MyInternalNode]:[Step N01] [2.00.21] Node relay received job
+2023-07-06T08:52:14.902Z p_yOiwT16_:Node[MyInternalNode]:{"nodeName":"MyInternalNode","serverIP":"0.0.0.0","serverPort":"8266","handbrakePath":"","ffmpegPath":"","mkvpropeditPath":"","pathTranslators":[{"server":"","node":""}],"logLevel":"INFO","priority":-1,"platform_arch_isdocker":"linux_x64_docker_true","processPid":199,"nodeID":"_VxSJ6fLa"}
+2023-07-06T08:52:14.902Z p_yOiwT16_:Node[MyInternalNode]:Node relay sending job to worker:musty-mutt
+2023-07-06T08:52:14.903Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[Step W01] Received file, original: /media/tvshows/Hunter x Hunter (2011)/Season 2/Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p.mkv
+2023-07-06T08:52:14.903Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:{"workerType":"transcodecpu"}
+2023-07-06T08:52:14.904Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:{"ffmpegPath":"tdarr-ffmpeg"}
+2023-07-06T08:52:14.904Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:{"handbrakePath":"HandBrakeCLI"}
+2023-07-06T08:52:14.904Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:{"mkvpropeditPath":"mkvpropedit"}
+2023-07-06T08:52:14.905Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:{"gpuSelect":"-"}
+2023-07-06T08:52:14.905Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:{"allowGpuDoCpu":false}
+2023-07-06T08:52:14.905Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:{"thoroughHealthCheckCpuExtraInputArgs":""}
+2023-07-06T08:52:14.906Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:{"thoroughHealthCheckGpuExtraInputArgs":""}
+2023-07-06T08:52:14.906Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:{"thoroughHealthCheckCpuExtraArgs":""}
+2023-07-06T08:52:14.906Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:{"thoroughHealthCheckGpuExtraArgs":""}
+2023-07-06T08:52:14.907Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:{"logFullCliOutput":false}
+2023-07-06T08:52:14.907Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Path translating objects
+2023-07-06T08:52:14.907Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:{"librarySettings":{"_id":"4BaCjCxnf","priority":1,"name":"TV","folder":"/media/tvshows","foldersToIgnore":"","folderWatchScanInterval":30,"scannerThreadCount":2,"cache":"/temp","output":"","folderToFolderConversion":false,"folderToFolderConversionDeleteSource":false,"folderToFolderRecordHistory":true,"copyIfConditionsMet":false,"container":".mkv","containerFilter":"mkv,mp4,mov,m4v,mpg,mpeg,avi,flv,webm,wmv,vob,evo,iso,m2ts,ts","createdAt":1675837380368,"folderWatching":true,"useFsEvents":false,"scheduledScanFindNew":false,"processLibrary":true,"scanOnStart":true,"exifToolScan":true,"mediaInfoScan":true,"closedCaptionScan":false,"scanButtons":true,"scanFound":"","navItemSelected":"navSourceFolder","pluginIDs":[{"_id":"plugin1","id":"Tdarr_Plugin_MC93_MigzImageRemoval","checked":true,"source":"Community","priority":0,"InputsDB":{},"Stage":"Pre-processing","Name":"Migz-Remove image formats from file","Type":"Video","Operation":"Transcode","Description":"Identify any unwanted image formats in the file and remove those streams. MJPEG, PNG & GIF \n\n","Version":"1.4","Tags":"pre-processing,ffmpeg,video only","Inputs":[],"source_id":"Community::Tdarr_Plugin_MC93_MigzImageRemoval","Link":"Read error"},{"_id":"plugin2","id":"Tdarr_Plugin_lmg1_Reorder_Streams","checked":true,"source":"Community","priority":1,"InputsDB":{},"Stage":"Pre-processing","Name":"Tdarr_Plugin_lmg1_Reorder_Streams ","Type":"Video","Operation":"Transcode","Description":"[Contains built-in filter] This plugin will move the video stream to the front so Tdarr will recognize the codec correctly.\n\n","Version":"1.00","Tags":"pre-processing,ffmpeg","Inputs":[],"source_id":"Community::Tdarr_Plugin_lmg1_Reorder_Streams","Link":"Read error"},{"_id":"sxfFHmyyT","id":"Tdarr_Plugin_00td_action_standardise_audio_stream_codecs","checked":true,"source":"Community","priority":2,"InputsDB":{},"Stage":"Pre-processing","Name":"Standardise audio stream codecs","Type":"Video","Operation":"Transcode","Description":"\nThis action has a built-in filter. Additional filters can be added.\n\n\n\nAll audio tracks which are not in the specified codec will be transcoded\ninto the specified codec. Bitrate and channel count are kept the same.\n  ","Version":"1.00","Tags":"action","Inputs":[{"name":"audioCodec","type":"string","defaultValue":"aac","inputUI":{"type":"dropdown","options":["aac","ac3","eac3","dca","flac","mp2","libmp3lame","truehd"]},"tooltip":"Enter the desired audio codec"}],"source_id":"Community::Tdarr_Plugin_00td_action_standardise_audio_stream_codecs"},{"_id":"aEVldYMXA","id":"Tdarr_Plugin_075a_Transcode_Customisable","checked":true,"source":"Community","priority":3,"InputsDB":{"codecs_to_exclude":"h264","transcode_arguments":"-Z \"H.264 MKV 2160p60 4K\" -e x264 --all-subtitles --all-audio"},"Stage":"Pre-processing","Name":"Video Transcode Customisable","Type":"Video","Operation":"Transcode","Description":"[Contains built-in filter] Specify codec filter and transcode arguments for HandBrake or FFmpeg  \n\n","Version":"1.00","Tags":"pre-processing,handbrake,ffmpeg,configurable","Inputs":[{"name":"codecs_to_exclude","type":"string","defaultValue":"hevc","inputUI":{"type":"text"},"tooltip":"Input codecs, separated by a comma, that should be excluded when processing.\n\n        \\nFor example, if you're transcoding into hevc (h265), then add a filter to prevent hevc being transcoded so your newly transcoded files won't be infinitely looped/processed. \\n\n\n        \n        \\nCommon video codecs:\n\n        \\nmpeg4\n        \\nhevc\n        \\nh264\n        \\nmpeg2video\n        \\ntheora\n        \\nvp8\n        \\nvp9\n        \n        \n        \\nExample:\\n\n\n        hevc\n\n        \\nYou can also enter multiple codecs:\n\n        \\nExample:\\n\n\n        mp3,aac,dts\n\n        \\nExample:\\n\n\n        h264,vp9\n \n        "},{"name":"cli","type":"string","defaultValue":"handbrake","inputUI":{"type":"text"},"tooltip":"Enter the CLI to use.\n        \n        \\nExample:\\n\n        handbrake\n\n        \\nExample:\\n\n        ffmpeg\n        \n        "},{"name":"transcode_arguments","type":"string","defaultValue":"-Z \"Very Fast 1080p30\" --all-subtitles --all-audio","inputUI":{"type":"text"},"tooltip":"\\nEnter HandBrake or FFmpeg transcode arguments.\n        \n        \\nHandBrake examples:\n\n        \\nExample:\\n\n        -e x264 -q 20 -B\n        \n        \\nExample:\\n\n        -Z \"Very Fast 1080p30\"\n        \n        \\nExample:\\n\n        -Z \"Fast 1080p30\" -e nvenc_h265\n        \n        \\nExample:\\n\n        -Z \"Very Fast 1080p30\" --all-subtitles --all-audio\n        \n        \\nExample:\\n\n        -Z \"Very Fast 480p30\"\n        \n        \\nExample:\\n\n        --preset-import-file \"C:UsersHaveAGitGatDesktop\testpreset.json\" -Z \"My Preset\"\n        \n        \\nYou can learn more about HandBrake presets here:\n\n        \\nhttps://handbrake.fr/docs/en/latest/technical/official-presets.html\n        \n\n        \\nWhen using FFmpeg, you need to separate the input and output parameters with a comma. FFmpeg Examples:\n\n        \\nExample:\\n\n-r 1,-r 24\n\n\\nExample:\\n\n,-sn -c:v copy -c:a copy\n\n\\nExample:\\n\n,-c:v lib265 -crf 23 -ac 6 -c:a aac -preset veryfast\n\n\\nExample:\\n\n,-map 0 -c copy -c:v libx265 -c:a aac\n\n\\nExample:\\n\n-c:v h264_cuvid,-c:v hevc_nvenc -preset slow -c:a copy\n\n\\nPlease see the following for help with creating FFmpeg commands:\n\n\\nhttps://opensource.com/article/17/6/ffmpeg-convert-media-file-formats\n        \n        \n        \n        \n        "},{"name":"output_container","type":"string","defaultValue":".mkv","inputUI":{"type":"text"},"tooltip":"\n        \\nEnter the output container of the new file\n\n        \\nExample:\\n\n        .mp4\n\n        \\nExample:\\n\n        .mp3\n\n        \\nExample:\\n\n        .mkv\n        \n        "}],"source_id":"Community::Tdarr_Plugin_075a_Transcode_Customisable"},{"_id":"plugin5","id":"Tdarr_Plugin_a9he_New_file_size_check","checked":true,"source":"Community","priority":4,"InputsDB":{},"Stage":"Pre-processing","Name":"New file size check","Type":"Video","Operation":"Transcode","Description":"Give an error if new file is not within the specified upper and lower bound limits \n\n","Version":"1.00","Tags":"","Inputs":[{"name":"upperBound","type":"number","defaultValue":110,"inputUI":{"type":"text"},"tooltip":"Enter the upper bound % size for the new file. For example, if '110' is entered, \n        then if the new file size is 11% larger than the original, an error will be given."},{"name":"lowerBound","type":"number","defaultValue":40,"inputUI":{"type":"text"},"tooltip":"Enter the lower bound % size for the new file. For example, if '90' is entered, \n        then if the new file size is less than 90% of the original, an error will be given."}],"source_id":"Community::Tdarr_Plugin_a9he_New_file_size_check","Link":"Read error"},{"_id":"-XIe_rmCK","id":"Tdarr_Plugin_00td_filter_by_file_property","checked":true,"source":"Community","priority":5,"InputsDB":{"propertyValues":"mkv"},"Stage":"Pre-processing","Name":"Filter by file property","Type":"Video","Operation":"Filter","Description":"Filter by a top level file property.\n  For example, container, video_resolution, video_codec_name, fileMedium.\n  Click on a file name on the Tdarr tab or Search tab to see top-level file properties.\n  ","Version":"1.00","Tags":"filter","Inputs":[{"name":"propertyName","type":"string","defaultValue":"container","inputUI":{"type":"text"},"tooltip":"Enter the file property to check"},{"name":"propertyValues","type":"string","defaultValue":"mkv,mp4","inputUI":{"type":"text"},"tooltip":"Enter a comma separated list of values to check for."},{"name":"exactMatch","type":"boolean","defaultValue":true,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Specify true if the property value must be an exact match, false if the property value must contain the value."},{"name":"continueIfPropertyFound","type":"boolean","defaultValue":false,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Specify whether to continue the plugin stack if the property is found."}],"source_id":"Community::Tdarr_Plugin_00td_filter_by_file_property"},{"_id":"RZcj0lsWOB","id":"Tdarr_Plugin_00td_action_remux_container","checked":true,"source":"Community","priority":6,"InputsDB":{}}],"pluginCommunity":true,"handbrake":true,"ffmpeg":false,"handbrakescan":true,"ffmpegscan":false,"preset":"-Z \"Very Fast 1080p30\"","decisionMaker":{"settingsPlugin":true,"settingsVideo":false,"videoExcludeSwitch":true,"video_codec_names_exclude":[{"codec":"hevc","checked":false},{"codec":"h264","checked":true}],"video_size_range_include":{"min":0,"max":100000},"video_height_range_include":{"min":0,"max":3000},"video_width_range_include":{"min":0,"max":4000},"settingsAudio":false,"audioExcludeSwitch":true,"audio_codec_names_exclude":[{"codec":"mp3","checked":true},{"codec":"aac","checked":false}],"audio_size_range_include":{"min":0,"max":10}},"schedule":[{"_id":"Sun:00-01","checked":true},{"_id":"Sun:01-02","checked":true},{"_id":"Sun:02-03","checked":true},{"_id":"Sun:03-04","checked":true},{"_id":"Sun:04-05","checked":true},{"_id":"Sun:05-06","checked":true},{"_id":"Sun:06-07","checked":true},{"_id":"Sun:07-08","checked":true},{"_id":"Sun:08-09","checked":true},{"_id":"Sun:09-10","checked":true},{"_id":"Sun:10-11","checked":true},{"_id":"Sun:11-12","checked":true},{"_id":"Sun:12-13","checked":true},{"_id":"Sun:13-14","checked":true},{"_id":"Sun:14-15","checked":true},{"_id":"Sun:15-16","checked":true},{"_id":"Sun:16-17","checked":true},{"_id":"Sun:17-18","checked":true},{"_id":"Sun:18-19","checked":true},{"_id":"Sun:19-20","checked":true},{"_id":"Sun:20-21","checked":true},{"_id":"Sun:21-22","checked":true},{"_id":"Sun:22-23","checked":true},{"_id":"Sun:23-00","checked":true},{"_id":"Mon:00-01","checked":true},{"_id":"Mon:01-02","checked":true},{"_id":"Mon:02-03","checked":true},{"_id":"Mon:03-04","checked":true},{"_id":"Mon:04-05","checked":true},{"_id":"Mon:05-06","checked":true},{"_id":"Mon:06-07","checked":true},{"_id":"Mon:07-08","checked":true},{"_id":"Mon:08-09","checked":true},{"_id":"Mon:09-10","checked":true},{"_id":"Mon:10-11","checked":true},{"_id":"Mon:11-12","checked":true},{"_id":"Mon:12-13","checked":true},{"_id":"Mon:13-14","checked":true},{"_id":"Mon:14-15","checked":true},{"_id":"Mon:15-16","checked":true},{"_id":"Mon:16-17","checked":true},{"_id":"Mon:17-18","checked":true},{"_id":"Mon:18-19","checked":true},{"_id":"Mon:19-20","checked":true},{"_id":"Mon:20-21","checked":true},{"_id":"Mon:21-22","checked":true},{"_id":"Mon:22-23","checked":true},{"_id":"Mon:23-00","checked":true},{"_id":"Tue:00-01","checked":true},{"_id":"Tue:01-02","checked":true},{"_id":"Tue:02-03","checked":true},{"_id":"Tue:03-04","checked":true},{"_id":"Tue:04-05","checked":true},{"_id":"Tue:05-06","checked":true},{"_id":"Tue:06-07","checked":true},{"_id":"Tue:07-08","checked":true},{"_id":"Tue:08-09","checked":true},{"_id":"Tue:09-10","checked":true},{"_id":"Tue:10-11","checked":true},{"_id":"Tue:11-12","checked":true},{"_id":"Tue:12-13","checked":true},{"_id":"Tue:13-14","checked":true},{"_id":"Tue:14-15","checked":true},{"_id":"Tue:15-16","checked":true},{"_id":"Tue:16-17","checked":true},{"_id":"Tue:17-18","checked":true},{"_id":"Tue:18-19","checked":true},{"_id":"Tue:19-20","checked":true},{"_id":"Tue:20-21","checked":true},{"_id":"Tue:21-22","checked":true},{"_id":"Tue:22-23","checked":true},{"_id":"Tue:23-00","checked":true},{"_id":"Wed:00-01","checked":true},{"_id":"Wed:01-02","checked":true},{"_id":"Wed:02-03","checked":true},{"_id":"Wed:03-04","checked":true},{"_id":"Wed:04-05","checked":true},{"_id":"Wed:05-06","checked":true},{"_id":"Wed:06-07","checked":true},{"_id":"Wed:07-08","checked":true},{"_id":"Wed:08-09","checked":true},{"_id":"Wed:09-10","checked":true},{"_id":"Wed:10-11","checked":true},{"_id":"Wed:11-12","checked":true},{"_id":"Wed:12-13","checked":true},{"_id":"Wed:13-14","checked":true},{"_id":"Wed:14-15","checked":true},{"_id":"Wed:15-16","checked":true},{"_id":"Wed:16-17","checked":true},{"_id":"Wed:17-18","checked":true},{"_id":"Wed:18-19","checked":true},{"_id":"Wed:19-20","checked":true},{"_id":"Wed:20-21","checked":true},{"_id":"Wed:21-22","checked":true},{"_id":"Wed:22-23","checked":true},{"_id":"Wed:23-00","checked":true},{"_id":"Thur:00-01","checked":true},{"_id":"Thur:01-02","checked":true},{"_id":"Thur:02-03","checked":true},{"_id":"Thur:03-04","checked":true},{"_id":"Thur:04-05","checked":true},{"_id":"Thur:05-06","checked":true},{"_id":"Thur:06-07","checked":true},{"_id":"Thur:07-08","checked":true},{"_id":"Thur:08-09","checked":true},{"_id":"Thur:09-10","checked":true},{"_id":"Thur:10-11","checked":true},{"_id":"Thur:11-12","checked":true},{"_id":"Thur:12-13","checked":true},{"_id":"Thur:13-14","checked":true},{"_id":"Thur:14-15","checked":true},{"_id":"Thur:15-16","checked":true},{"_id":"Thur:16-17","checked":true},{"_id":"Thur:17-18","checked":true},{"_id":"Thur:18-19","checked":true},{"_id":"Thur:19-20","checked":true},{"_id":"Thur:20-21","checked":true},{"_id":"Thur:21-22","checked":true},{"_id":"Thur:22-23","checked":true},{"_id":"Thur:23-00","checked":true},{"_id":"Fri:00-01","checked":true},{"_id":"Fri:01-02","checked":true},{"_id":"Fri:02-03","checked":true},{"_id":"Fri:03-04","checked":true},{"_id":"Fri:04-05","checked":true},{"_id":"Fri:05-06","checked":true},{"_id":"Fri:06-07","checked":true},{"_id":"Fri:07-08","checked":true},{"_id":"Fri:08-09","checked":true},{"_id":"Fri:09-10","checked":true},{"_id":"Fri:10-11","checked":true},{"_id":"Fri:11-12","checked":true},{"_id":"Fri:12-13","checked":true},{"_id":"Fri:13-14","checked":true},{"_id":"Fri:14-15","checked":true},{"_id":"Fri:15-16","checked":true},{"_id":"Fri:16-17","checked":true},{"_id":"Fri:17-18","checked":true},{"_id":"Fri:18-19","checked":true},{"_id":"Fri:19-20","checked":true},{"_id":"Fri:20-21","checked":true},{"_id":"Fri:21-22","checked":true},{"_id":"Fri:22-23","checked":true},{"_id":"Fri:23-00","checked":true},{"_id":"Sat:00-01","checked":true},{"_id":"Sat:01-02","checked":true},{"_id":"Sat:02-03","checked":true},{"_id":"Sat:03-04","checked":true},{"_id":"Sat:04-05","checked":true},{"_id":"Sat:05-06","checked":true},{"_id":"Sat:06-07","checked":true},{"_id":"Sat:07-08","checked":true},{"_id":"Sat:08-09","checked":true},{"_id":"Sat:09-10","checked":true},{"_id":"Sat:10-11","checked":true},{"_id":"Sat:11-12","checked":true},{"_id":"Sat:12-13","checked":true},{"_id":"Sat:13-14","checked":true},{"_id":"Sat:14-15","checked":true},{"_id":"Sat:15-16","checked":true},{"_id":"Sat:16-17","checked":true},{"_id":"Sat:17-18","checked":true},{"_id":"Sat:18-19","checked":true},{"_id":"Sat:19-20","checked":true},{"_id":"Sat:20-21","checked":true},{"_id":"Sat:21-22","checked":true},{"_id":"Sat:22-23","checked":true},{"_id":"Sat:23-00","checked":true}],"totalHealthCheckCount":21,"totalTranscodeCount":7,"sizeDiff":2.687773029319942,"holdNewFiles":false,"holdFor":3600,"pluginStackOverview":true,"filterResolutionsSkip":"","filterCodecsSkip":"","processPluginsSequentially":true}}
+2023-07-06T08:52:14.908Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Fetching plugin data from server
+2023-07-06T08:52:14.908Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Scanning original library file
+2023-07-06T08:52:14.909Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:{
+2023-07-06T08:52:14.909Z   "exifToolScan": true,
+2023-07-06T08:52:14.909Z   "mediaInfoScan": false,
+2023-07-06T08:52:14.909Z   "closedCaptionScan": false
+2023-07-06T08:52:14.909Z }
+2023-07-06T08:52:14.909Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Updating file properties using mkvpropedit
+2023-07-06T08:52:14.910Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Updated file properties using mkvpropedit
+2023-07-06T08:52:14.910Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Requesting Tdarr Server to scan file
+2023-07-06T08:52:16.914Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Scan complete
+2023-07-06T08:52:16.914Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Original file scanned
+2023-07-06T08:52:16.915Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:fileVersionOriginalLogJSONString:{"lastCliCommand":"","lastPluginId":"","sourceFile":{"_id":"/media/tvshows/Hunter x Hunter (2011)/Season 2/Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p.mkv","footprintId":"xx2jxSiQz","file":"/media/tvshows/Hunter x Hunter (2011)/Season 2/Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p.mkv","container":"mkv","scannerReads":{"ffProbeRead":"success","exiftoolRead":"success","mediaInfoRead":"not enabled","closedCaptionRead":"not enabled"},"createdAt":1688629934136,"lastPluginDetails":"none","bit_rate":2877650,"statSync":{"dev":2051,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":5919043,"size":509494537,"blocks":995184,"atimeMs":1688548734987.2195,"mtimeMs":1688548694439.8633,"ctimeMs":1688548722467.4182,"birthtimeMs":1688548428736.0774,"atime":"2023-07-05T09:18:54.987Z","mtime":"2023-07-05T09:18:14.440Z","ctime":"2023-07-05T09:18:42.467Z","birthtime":"2023-07-05T09:13:48.736Z"},"file_size":485.89185428619385,"ffProbeData":{"streams":[{"index":0,"codec_name":"h264","codec_long_name":"H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10","profile":"High 10","codec_type":"video","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","width":1280,"height":720,"coded_width":1280,"coded_height":720,"closed_captions":0,"has_b_frames":2,"sample_aspect_ratio":"1:1","display_aspect_ratio":"16:9","pix_fmt":"yuv420p10le","level":50,"chroma_location":"left","field_order":"progressive","refs":1,"is_avc":"true","nal_length_size":"4","r_frame_rate":"24000/1001","avg_frame_rate":"24000/1001","time_base":"1/1000","start_pts":0,"start_time":"0.000000","bits_per_raw_sample":"10","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"jpn","title":"Hunter x Hunter 085: Luce x E x Oscurità","BPS-eng":"2357879","DURATION-eng":"00:23:35.088000000","NUMBER_OF_FRAMES-eng":"33928","NUMBER_OF_BYTES-eng":"417075870","_STATISTICS_WRITING_APP-eng":"mkvmerge v34.0.0 ('Sight and Seen') 64-bit","_STATISTICS_WRITING_DATE_UTC-eng":"2021-01-02 11:25:08","_STATISTICS_TAGS-eng":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}},{"index":1,"codec_name":"opus","codec_long_name":"Opus (Opus Interactive Audio Codec)","codec_type":"audio","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":"48000","channels":2,"channel_layout":"stereo","bits_per_sample":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":-7,"start_time":"-0.007000","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"jpn","ENCODER":"Lavc58.52.102 libopus","BPS-eng":"126341","DURATION-eng":"00:23:36.418000000","NUMBER_OF_FRAMES-eng":"70821","NUMBER_OF_BYTES-eng":"22369077","_STATISTICS_WRITING_APP-eng":"mkvmerge v34.0.0 ('Sight and Seen') 64-bit","_STATISTICS_WRITING_DATE_UTC-eng":"2021-01-02 11:25:08","_STATISTICS_TAGS-eng":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}},{"index":2,"codec_name":"ass","codec_long_name":"ASS (Advanced SSA) subtitle","codec_type":"subtitle","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":-7,"start_time":"-0.007000","duration_ts":1416418,"duration":"1416.418000","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"ita","BPS-eng":"10652","DURATION-eng":"00:23:32.960000000","NUMBER_OF_FRAMES-eng":"1809","NUMBER_OF_BYTES-eng":"1881458","_STATISTICS_WRITING_APP-eng":"mkvmerge v34.0.0 ('Sight and Seen') 64-bit","_STATISTICS_WRITING_DATE_UTC-eng":"2021-01-02 11:25:08","_STATISTICS_TAGS-eng":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}},{"index":3,"codec_name":"otf","codec_long_name":"OpenType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"Amaranth-Bold.otf","mimetype":"application/vnd.ms-opentype"}},{"index":4,"codec_name":"otf","codec_long_name":"OpenType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"Amaranth-BoldItalic.otf","mimetype":"application/vnd.ms-opentype"}},{"index":5,"codec_name":"otf","codec_long_name":"OpenType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"Amaranth-Italic.otf","mimetype":"application/vnd.ms-opentype"}},{"index":6,"codec_name":"otf","codec_long_name":"OpenType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"Amaranth-Regular.otf","mimetype":"application/vnd.ms-opentype"}},{"index":7,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"ARCENA.ttf","mimetype":"application/x-truetype-font"}},{"index":8,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"ariblk.ttf","mimetype":"application/x-truetype-font"}},{"index":9,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"BLOKLETTERS-VILTSTIFT-FXD.TTF","mimetype":"application/x-truetype-font"}},{"index":10,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"Brush Strokes.ttf","mimetype":"application/x-truetype-font"}},{"index":11,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"calibri.ttf","mimetype":"application/x-truetype-font"}},{"index":12,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"calibrib.ttf","mimetype":"application/x-truetype-font"}},{"index":13,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"Calligraphic-810-BT_9088.ttf","mimetype":"application/x-truetype-font"}},{"index":14,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"Cardo-Bold.ttf","mimetype":"application/x-truetype-font"}},{"index":15,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"Cardo-Italic.ttf","mimetype":"application/x-truetype-font"}},{"index":16,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"Cardo-Regular.ttf","mimetype":"application/x-truetype-font"}},{"index":17,"codec_name":"otf","codec_long_name":"OpenType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"Chalkaholic DEMO.otf","mimetype":"application/vnd.ms-opentype"}},{"index":18,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"DK CRAYON CRUMBLE_0.TTF","mimetype":"application/x-truetype-font"}},{"index":19,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"edo.ttf","mimetype":"application/x-truetype-font"}},{"index":20,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"EPSON sl.ttf","mimetype":"application/x-truetype-font"}},{"index":21,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"flibustiere.ttf","mimetype":"application/x-truetype-font"}},{"index":22,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"FOT Rodin Cattleta Pro B.ttf","mimetype":"application/x-truetype-font"}},{"index":23,"codec_name":"otf","codec_long_name":"OpenType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"FOT-HummingStd-E.otf","mimetype":"application/vnd.ms-opentype"}},{"index":24,"codec_name":"otf","codec_long_name":"OpenType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"FOT-HummingStdEn-B.OTF","mimetype":"application/vnd.ms-opentype"}},{"index":25,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"FOT-KokinHige Std EB v999.ttf","mimetype":"application/x-truetype-font"}},{"index":26,"codec_name":"otf","codec_long_name":"OpenType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"FOT-ManyoKoinStd-B.otf","mimetype":"application/vnd.ms-opentype"}},{"index":27,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"FOT-ManyoKoinStd-B_0.ttf","mimetype":"application/x-truetype-font"}},{"index":28,"codec_name":"otf","codec_long_name":"OpenType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"FOT-YurukaStd-UB.otf","mimetype":"application/vnd.ms-opentype"}},{"index":29,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"GenBasB.ttf","mimetype":"application/x-truetype-font"}},{"index":30,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"GenBasBI.ttf","mimetype":"application/x-truetype-font"}},{"index":31,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"GenBasI.ttf","mimetype":"application/x-truetype-font"}},{"index":32,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"GenBasR.ttf","mimetype":"application/x-truetype-font"}},{"index":33,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"GenBkBasB.ttf","mimetype":"application/x-truetype-font"}},{"index":34,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"GenBkBasBI.ttf","mimetype":"application/x-truetype-font"}},{"index":35,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"GenBkBasI.ttf","mimetype":"application/x-truetype-font"}},{"index":36,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"GenBkBasR.ttf","mimetype":"application/x-truetype-font"}},{"index":37,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"HunterxHunterOP.ttf","mimetype":"application/x-truetype-font"}},{"index":38,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"IwaGyoPro-Bd-Kami.ttf","mimetype":"application/x-truetype-font"}},{"index":39,"codec_name":"otf","codec_long_name":"OpenType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"IwaMaruGothicPro-M-En.otf","mimetype":"application/vnd.ms-opentype"}},{"index":40,"codec_name":"otf","codec_long_name":"OpenType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"IWAMINPRO-BD-EN.otf","mimetype":"application/vnd.ms-opentype"}},{"index":41,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"IwaMinPro-Bd-NMG.ttf","mimetype":"application/x-truetype-font"}},{"index":42,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"IwaMinPro-Lt-Madoka.ttf","mimetype":"application/x-truetype-font"}},{"index":43,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"IwaMinPro-Md-Kami_0.ttf","mimetype":"application/x-truetype-font"}},{"index":44,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"IwaOMinPro-Bd-Fate.ttf","mimetype":"application/x-truetype-font"}},{"index":45,"codec_name":"otf","codec_long_name":"OpenType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"IwaOMinPro-Hv-En.ttf","mimetype":"application/vnd.ms-opentype"}},{"index":46,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"IwaOMinPro-Hv-Fate_0.ttf","mimetype":"application/x-truetype-font"}},{"index":47,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"IwaRGoPro-Lt-Kami.ttf","mimetype":"application/x-truetype-font"}},{"index":48,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"IWARGOPRO-MD-KAMI.TTF","mimetype":"application/x-truetype-font"}},{"index":49,"codec_name":"otf","codec_long_name":"OpenType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"Iwata Souchou Pro-Medium.otf","mimetype":"application/vnd.ms-opentype"}},{"index":50,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"JandaCloserToFree-Regular.ttf","mimetype":"application/x-truetype-font"}},{"index":51,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"KozGoProH-Madoka.ttf","mimetype":"application/x-truetype-font"}},{"index":52,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"lato-heavy.ttf","mimetype":"application/x-truetype-font"}},{"index":53,"codec_name":"otf","codec_long_name":"OpenType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"MONTARA-GOTHIC.OTF","mimetype":"application/vnd.ms-opentype"}},{"index":54,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"Polo Brush.ttf","mimetype":"application/x-truetype-font"}},{"index":55,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"SBT-TsukuMin Pr5 E.ttf","mimetype":"application/x-truetype-font"}},{"index":56,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"SHREDDED.TTF","mimetype":"application/x-truetype-font"}},{"index":57,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"TarifArabic-Bold.ttf","mimetype":"application/x-truetype-font"}},{"index":58,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"TarifArabic-Book.ttf","mimetype":"application/x-truetype-font"}},{"index":59,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"TarifArabic-Extrabold.ttf","mimetype":"application/x-truetype-font"}},{"index":60,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"TarifArabic-Extralight.ttf","mimetype":"application/x-truetype-font"}},{"index":61,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"TarifArabic-Light.ttf","mimetype":"application/x-truetype-font"}},{"index":62,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"TarifArabic-Medium.ttf","mimetype":"application/x-truetype-font"}},{"index":63,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"TarifArabic-Regular.ttf","mimetype":"application/x-truetype-font"}},{"index":64,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"Yu-Gi-Oh! Matrix Book.ttf","mimetype":"application/x-truetype-font"}},{"index":65,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"Yu-Gi-Oh! Matrix Regular Small Caps 2.ttf","mimetype":"application/x-truetype-font"}},{"index":66,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"28 Days Later.ttf","mimetype":"application/x-truetype-font"}},{"index":67,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"Ad HocRegular.ttf","mimetype":"application/x-truetype-font"}},{"index":68,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"Adobe_Garamond_LT_Bold.ttf","mimetype":"application/x-truetype-font"}},{"index":69,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"AlegreyaSansSC-Black.ttf","mimetype":"application/x-truetype-font"}},{"index":70,"codec_name":"ttf","codec_long_name":"TrueType font","codec_type":"attachment","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":-630,"start_time":"-0.007000","duration_ts":127477620,"duration":"1416.418000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"filename":"AlegreyaSansSC-BlackItalic.ttf","mimetype":"application/x-truetype-font"}}],"format":{"filename":"/media/tvshows/Hunter x Hunter (2011)/Season 2/Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p.mkv","nb_streams":71,"nb_programs":0,"format_name":"matroska,webm","format_long_name":"Matroska / WebM","start_time":"-0.007000","duration":"1416.418000","size":"509494537","bit_rate":"2877650","probe_score":100,"tags":{"creation_time":"2021-01-02T11:25:08.000000Z","ENCODER":"Lavf58.27.103"}}},"meta":{"SourceFile":"/media/tvshows/Hunter x Hunter (2011)/Season 2/Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p.mkv","errors":[],"Duration":1416.418,"ExifToolVersion":12.4,"FileName":"Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p.mkv","Directory":"/media/tvshows/Hunter x Hunter (2011)/Season 2","FileSize":"486 MiB","FileModifyDate":{"year":2023,"month":7,"day":5,"hour":9,"minute":18,"second":14,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:05 09:18:14+00:00"},"FileAccessDate":{"year":2023,"month":7,"day":5,"hour":9,"minute":18,"second":54,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:05 09:18:54+00:00"},"FileInodeChangeDate":{"year":2023,"month":7,"day":5,"hour":9,"minute":18,"second":42,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:05 09:18:42+00:00"},"FilePermissions":"-rw-rw-r--","FileType":"MKV","FileTypeExtension":"mkv","MIMEType":"video/x-matroska","EBMLVersion":1,"EBMLReadVersion":1,"DocType":"matroska","DocTypeVersion":4,"DocTypeReadVersion":2,"TimecodeScale":"1 ms","MuxingApp":"libebml v1.3.7 + libmatroska v1.5.0","WritingApp":"mkvmerge v34.0.0 ('Sight and Seen') 64-bit","DateTimeOriginal":{"year":2021,"month":1,"day":2,"hour":11,"minute":25,"second":8,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2021:01:02 11:25:08Z"},"VideoCodecID":"V_MPEG4/ISO/AVC","VideoFrameRate":23.976,"TrackName":"Hunter x Hunter 085: Luce x E x Oscurità","ImageWidth":1280,"ImageHeight":720,"DisplayWidth":1280,"DisplayHeight":720,"AudioCodecID":"A_OPUS","AudioSampleRate":48000,"AudioChannels":2,"TrackNumber":3,"TrackType":"Subtitle","CodecID":"S_TEXT/ASS","TrackLanguage":"ita","AttachedFileName":"AlegreyaSansSC-BlackItalic.ttf","AttachedFileMIMEType":"application/x-truetype-font","AttachedFileData":"(Binary data 86872 bytes, use -b option to extract)","AttachedFileUID":"9862465172566336060","ChapterTimeStart":"0:23:20","ChapterTimeEnd":"0:23:35","ChapterString":"Anticipazioni","ChapterLanguage":"ita","ChapterCountry":"it","ImageSize":"1280x720","Megapixels":0.922},"mediaInfo":{},"hasClosedCaptions":false,"DB":"4BaCjCxnf","bumped":false,"HealthCheck":"","TranscodeDecisionMaker":"","holdUntil":0,"fileMedium":"video","video_codec_name":"h264","audio_codec_name":"","video_resolution":"720p","lastHealthCheckDate":0,"lastTranscodeDate":0,"history":"","oldSize":0,"newSize":0,"videoStreamIndex":0,"duration":1416}}
+2023-07-06T08:52:16.915Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Source file to work on determined:/media/tvshows/Hunter x Hunter (2011)/Season 2/Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p.mkv
+2023-07-06T08:52:16.916Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[Step W02] [C1] Running pre-process file
+2023-07-06T08:52:16.916Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Checking files can be accessed
+2023-07-06T08:52:16.916Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Relevant paths can be accessed
+2023-07-06T08:52:16.916Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Source file: /media/tvshows/Hunter x Hunter (2011)/Season 2/Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p.mkv
+2023-07-06T08:52:16.917Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Cache folder: /temp
+2023-07-06T08:52:16.917Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[Step W03] [C1] Analysing file - running plugins
+2023-07-06T08:52:16.917Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:transcode task, scanning for extra file details before transcode
+2023-07-06T08:52:16.917Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Updating file properties using mkvpropedit
+2023-07-06T08:52:16.920Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Updated file properties using mkvpropedit
+2023-07-06T08:52:16.920Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Requesting Tdarr Server to scan file
+2023-07-06T08:52:17.921Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Scan complete
+2023-07-06T08:52:17.922Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Scan complete
+2023-07-06T08:52:17.922Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Updating Node relay: Processing
+2023-07-06T08:52:17.923Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[1/2] Checking file frame count
+2023-07-06T08:52:17.923Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[2/2] Frame count 0
+2023-07-06T08:52:17.923Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Transcode task, determining transcode settings
+2023-07-06T08:52:17.924Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Plugin stack selected
+2023-07-06T08:52:17.924Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Plugin: plugin1:  Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-06T08:52:17.924Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[1/5] Reading plugin
+2023-07-06T08:52:17.925Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[2/5] Plugin read finished
+2023-07-06T08:52:17.925Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[3/5] Installing dependencies
+2023-07-06T08:52:17.925Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[4/5] Running plugin
+2023-07-06T08:52:17.925Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:{"pluginInputs":{}}
+2023-07-06T08:52:17.926Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[5/5] Running plugin finished
+2023-07-06T08:52:17.926Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Plugin: plugin2:  Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-06T08:52:17.927Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[1/5] Reading plugin
+2023-07-06T08:52:17.927Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[2/5] Plugin read finished
+2023-07-06T08:52:17.927Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[3/5] Installing dependencies
+2023-07-06T08:52:17.928Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[4/5] Running plugin
+2023-07-06T08:52:17.928Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:{"pluginInputs":{}}
+2023-07-06T08:52:17.928Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[5/5] Running plugin finished
+2023-07-06T08:52:17.930Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Plugin: sxfFHmyyT:  Tdarr_Plugin_00td_action_standardise_audio_stream_codecs
+2023-07-06T08:52:17.930Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[1/5] Reading plugin
+2023-07-06T08:52:17.931Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[2/5] Plugin read finished
+2023-07-06T08:52:17.931Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[3/5] Installing dependencies
+2023-07-06T08:52:17.931Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[4/5] Running plugin
+2023-07-06T08:52:17.932Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:{"pluginInputs":{"audioCodec":"aac"}}
+2023-07-06T08:52:17.932Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[5/5] Running plugin finished
+2023-07-06T08:52:17.932Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Worker config: {
+2023-07-06T08:52:17.932Z   "processFile": true,
+2023-07-06T08:52:17.932Z   "preset": ",-map 0:v -map 0:a -map 0:s? -map 0:d? -c copy  -c:a:0 aac",
+2023-07-06T08:52:17.932Z   "container": ".mkv",
+2023-07-06T08:52:17.932Z   "handBrakeMode": false,
+2023-07-06T08:52:17.932Z   "FFmpegMode": false,
+2023-07-06T08:52:17.932Z   "reQueueAfter": true,
+2023-07-06T08:52:17.932Z   "infoLog": "File has audio streams which aren't in aac \n",
+2023-07-06T08:52:17.932Z   "handbrakeMode": false,
+2023-07-06T08:52:17.932Z   "ffmpegMode": true,
+2023-07-06T08:52:17.932Z   "lastPluginDetails": {
+2023-07-06T08:52:17.932Z     "source": "Community",
+2023-07-06T08:52:17.932Z     "id": "Tdarr_Plugin_00td_action_standardise_audio_stream_codecs",
+2023-07-06T08:52:17.932Z     "number": "3/7"
+2023-07-06T08:52:17.932Z   },
+2023-07-06T08:52:17.932Z   "cliToUse": "ffmpeg"
+2023-07-06T08:52:17.932Z }
+2023-07-06T08:52:17.933Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Worker log: 
+2023-07-06T08:52:17.933Z Pre-processing - Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-06T08:52:17.933Z ☑File doesn't contain any unwanted image format streams.
+2023-07-06T08:52:17.933Z 
+2023-07-06T08:52:17.933Z Pre-processing - Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-06T08:52:17.933Z File has video in first stream
+2023-07-06T08:52:17.933Z  File meets conditions!
+2023-07-06T08:52:17.933Z 
+2023-07-06T08:52:17.933Z Pre-processing - Tdarr_Plugin_00td_action_standardise_audio_stream_codecs
+2023-07-06T08:52:17.933Z File has audio streams which aren't in aac 
+2023-07-06T08:52:17.933Z 
+2023-07-06T08:52:17.933Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Worker will process
+2023-07-06T08:52:17.933Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[Step W04] [C1] Preparing command
+2023-07-06T08:52:17.934Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Cache file stem: /temp
+2023-07-06T08:52:17.934Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Cache file path: /temp/Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p-TdarrCacheFile-vjG-GO3P_.mkv
+2023-07-06T08:52:17.934Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Create transcode args
+2023-07-06T08:52:17.934Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Args:  -i "/media/tvshows/Hunter x Hunter (2011)/Season 2/Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p.mkv" -map 0:v -map 0:a -map 0:s? -map 0:d? -c copy -c:a:0 aac "/temp/Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p-TdarrCacheFile-vjG-GO3P_.mkv"
+2023-07-06T08:52:17.935Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Getting source file size
+2023-07-06T08:52:17.935Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Source file size: 0.4745037639513612
+2023-07-06T08:52:17.935Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Performing safety check on worker config to see if old transcode args/container match new ones
+2023-07-06T08:52:17.936Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Safety check complete, all good
+2023-07-06T08:52:17.936Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[Step W05] [C1] Launching subworker
+2023-07-06T08:52:17.936Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Preparing to launch subworker
+2023-07-06T08:52:17.937Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Subworker launched
+2023-07-06T08:52:17.937Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[1/3] Sending command to subworker
+2023-07-06T08:52:17.938Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[2/3] tdarr-ffmpeg -i "/media/tvshows/Hunter x Hunter (2011)/Season 2/Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p.mkv" -map 0:v -map 0:a -map 0:s? -map 0:d? -c copy -c:a:0 aac "/temp/Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p-TdarrCacheFile-vjG-GO3P_.mkv"
+2023-07-06T08:52:17.938Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[3/3] Command sent
+2023-07-06T08:52:17.939Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:To see live CLI output, enable 'Log full FFmpeg/HandBrake output' in the staging section on the Tdarr tab before the job starts. Note this could increase the job report size substantially.
+2023-07-06T08:52:17.939Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Subworker:Online
+2023-07-06T08:52:17.939Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Subworker:Receiving transcode settings
+2023-07-06T08:52:17.940Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Subworker:Running CLI
+2023-07-06T08:52:58.971Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Subworker:a.Thread closed, code: 0
+2023-07-06T08:52:59.976Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Subworker exit approved, killing subworker
+2023-07-06T08:52:59.978Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Subworker killed
+2023-07-06T08:52:59.978Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:b.Thread closed, code: 0
+2023-07-06T08:52:59.978Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:CLI code: 0
+2023-07-06T08:52:59.978Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Last 200 lines of CLI log:
+2023-07-06T08:52:59.979Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:ffmpeg version 6.0-Jellyfin Copyright (c) 2000-2023 the FFmpeg developers
+2023-07-06T08:52:59.979Z   built with gcc 9 (Ubuntu 9.4.0-1ubuntu1~20.04.1)
+2023-07-06T08:52:59.979Z   configuration: --prefix=/usr/lib/jellyfin-ffmpeg --target-os=linux --extra-version=Jellyfin --disable-doc --disable-ffplay --disable-ptx-compression --disable-static --disable-libxcb --disable-sdl2 --disable-xlib --enable-lto --enable-gpl --enable-version3 --enable-shared --enable-gmp --enable-gnutls --enable-chromaprint --enable-libdrm --enable-libass --enable-libfreetype --enable-libfribidi --enable-libfontconfig --enable-libbluray --enable-libmp3lame --enable-libopus --enable-libtheora --enable-libvorbis --enable-libdav1d --enable-libwebp --enable-libvpx --enable-libx264 --enable-libx265 --enable-libzvbi --enable-libzimg --enable-libfdk-aac --arch=amd64 --enable-libsvtav1 --enable-libshaderc --enable-libplacebo --enable-vulkan --enable-opencl --enable-vaapi --enable-amf --enable-libvpl --enable-ffnvcodec --enable-cuda --enable-cuda-llvm --enable-cuvid --enable-nvdec --enable-nvenc
+2023-07-06T08:52:59.979Z   libavutil      58.  2.100 / 58.  2.100
+2023-07-06T08:52:59.979Z   libavcodec     60.  3.100 / 60.  3.100
+2023-07-06T08:52:59.979Z   libavformat    60.  3.100 / 60.  3.100
+2023-07-06T08:52:59.979Z   libavdevice    60.  1.100 / 60.  1.100
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   libavfilter     9.  3.100 /  9.  3.100
+2023-07-06T08:52:59.979Z   libswscale      7.  1.100 /  7.  1.100
+2023-07-06T08:52:59.979Z   libswresample   4. 10.100 /  4. 10.100
+2023-07-06T08:52:59.979Z   libpostproc    57.  1.100 / 57.  1.100
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z Input #0, matroska,webm, from '/media/tvshows/Hunter x Hunter (2011)/Season 2/Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p.mkv':
+2023-07-06T08:52:59.979Z   Metadata:
+2023-07-06T08:52:59.979Z     creation_time   : 2021-01-02T11:25:08.000000Z
+2023-07-06T08:52:59.979Z     ENCODER         : Lavf58.27.103
+2023-07-06T08:52:59.979Z   Duration: 00:23:36.42, start: -0.007000, bitrate: 2877 kb/s
+2023-07-06T08:52:59.979Z   Chapters:
+2023-07-06T08:52:59.979Z     Chapter #0:0: 
+2023-07-06T08:52:59.979Z start 0.000000, end 10.976000
+2023-07-06T08:52:59.979Z       Metadata:
+2023-07-06T08:52:59.979Z         title           : Prologo
+2023-07-06T08:52:59.979Z     Chapter #0:1: start 11.018000, end 90.973000
+2023-07-06T08:52:59.979Z       Metadata:
+2023-07-06T08:52:59.979Z         title           : Sigla iniziale
+2023-07-06T08:52:59.979Z     Chapter #0:2: start 91.015000, end 672.929000
+2023-07-06T08:52:59.979Z       Metadata:
+2023-07-06T08:52:59.979Z         title           : Prima parte
+2023-07-06T08:52:59.979Z     Chapter #0:3: start 672.971000, end 1320.034000
+2023-07-06T08:52:59.979Z       Metadata:
+2023-07-06T08:52:59.979Z         title           : Seconda parte
+2023-07-06T08:52:59.979Z     Chapter #0:4: start 1320.076000, end 1400.031000
+2023-07-06T08:52:59.979Z       Metadata:
+2023-07-06T08:52:59.979Z         title           : Sigla finale
+2023-07-06T08:52:59.979Z     Chapter #0:5: start 1400.072000, end 1415.046000
+2023-07-06T08:52:59.979Z       Metadata:
+2023-07-06T08:52:59.979Z         title           : Anticipazioni
+2023-07-06T08:52:59.979Z   Stream #0:0(jpn): Video: h264 (High 10), yuv420p10le(progressive), 1280x720, SAR 1:1 DAR 16:9, 23.98 fps, 23.98 tbr, 1k tbn (default)
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       title           : Hunter x Hunter 085: Luce x E x Oscurità
+2023-07-06T08:52:59.979Z       BPS-eng         : 2357879
+2023-07-06T08:52:59.979Z       DURATION-eng    : 00:23:35.088000000
+2023-07-06T08:52:59.979Z       NUMBER_OF_FRAMES-eng: 33928
+2023-07-06T08:52:59.979Z       NUMBER_OF_BYTES-eng: 417075870
+2023-07-06T08:52:59.979Z       _STATISTICS_WRITING_APP-eng: mkvmerge v34.0.0 ('Sight and Seen') 64-bit
+2023-07-06T08:52:59.979Z       _STATISTICS_WRITING_DATE_UTC-eng: 2021-01-02 11:25:08
+2023-07-06T08:52:59.979Z       _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+2023-07-06T08:52:59.979Z   Stream #0:1(jpn): Audio: opus, 48000 Hz, stereo, fltp (default)
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       ENCODER         : Lavc58.52.102 libopus
+2023-07-06T08:52:59.979Z       BPS-eng         : 126341
+2023-07-06T08:52:59.979Z       DURATION-eng    : 00:23:36.418000000
+2023-07-06T08:52:59.979Z       NUMBER_OF_FRAMES-eng: 70821
+2023-07-06T08:52:59.979Z       NUMBER_OF_BYTES-eng: 22369077
+2023-07-06T08:52:59.979Z       _STATISTICS_WRITING_APP-eng: mkvmerge v34.0.0 ('Sight and Seen') 64-bit
+2023-07-06T08:52:59.979Z       _STATISTICS_WRITING_DATE_UTC-eng: 2021-01-02 11:25:08
+2023-07-06T08:52:59.979Z       _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:2(ita): Subtitle: ass (default)
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       BPS-eng         : 10652
+2023-07-06T08:52:59.979Z       DURATION-eng    : 00:23:32.960000000
+2023-07-06T08:52:59.979Z       NUMBER_OF_FRAMES-eng: 1809
+2023-07-06T08:52:59.979Z       NUMBER_OF_BYTES-eng: 1881458
+2023-07-06T08:52:59.979Z       _STATISTICS_WRITING_APP-eng: mkvmerge v34.0.0 ('Sight and Seen') 64-bit
+2023-07-06T08:52:59.979Z       _STATISTICS_WRITING_DATE_UTC-eng: 2021-01-02 11:25:08
+2023-07-06T08:52:59.979Z       _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:3: Attachment: otf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : Amaranth-Bold.otf
+2023-07-06T08:52:59.979Z       mimetype        : application/vnd.ms-opentype
+2023-07-06T08:52:59.979Z   Stream #0:4: Attachment: otf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : Amaranth-BoldItalic.otf
+2023-07-06T08:52:59.979Z       mimetype        : application/vnd.ms-opentype
+2023-07-06T08:52:59.979Z   Stream #0:5: Attachment: otf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : Amaranth-Italic.otf
+2023-07-06T08:52:59.979Z       mimetype        : application/vnd.ms-opentype
+2023-07-06T08:52:59.979Z   Stream #0:6: Attachment: otf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : Amaranth-Regular.otf
+2023-07-06T08:52:59.979Z       mimetype        : application/vnd.ms-opentype
+2023-07-06T08:52:59.979Z   Stream #0:7: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : ARCENA.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z   Stream #0:8: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : ariblk.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:9: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : BLOKLETTERS-VILTSTIFT-FXD.TTF
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z   Stream #0:10: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : Brush Strokes.ttf
+2023-07-06T08:52:59.979Z       mimetype        : 
+2023-07-06T08:52:59.979Z application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:11: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : calibri.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:12: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : calibrib.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:13: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : Calligraphic-810-BT_9088.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:14: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : Cardo-Bold.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:15: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : Cardo-Italic.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:16: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z       filename        : Cardo-Regular.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:17: Attachment: otf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : Chalkaholic DEMO.otf
+2023-07-06T08:52:59.979Z       mimetype        : application/vnd.ms-opentype
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:18: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : DK CRAYON CRUMBLE_0.TTF
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z   Stream #0:19: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : edo.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:20: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : EPSON sl.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:21: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : flibustiere.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z   Stream #0:22: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : FOT Rodin Cattleta Pro B.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:23: Attachment: otf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : FOT-HummingStd-E.otf
+2023-07-06T08:52:59.979Z       mimetype        : application/vnd.ms-opentype
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:24: Attachment: otf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : FOT-HummingStdEn-B.OTF
+2023-07-06T08:52:59.979Z       mimetype        : application/vnd.ms-opentype
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:25: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : FOT-KokinHige Std EB v999.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:26: Attachment: otf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : FOT-ManyoKoinStd-B.otf
+2023-07-06T08:52:59.979Z       mimetype        : application/vnd.ms-opentype
+2023-07-06T08:52:59.979Z   Stream #0:27: Attachment: ttf
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : FOT-ManyoKoinStd-B_0.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:28: Attachment: otf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : FOT-YurukaStd-UB.otf
+2023-07-06T08:52:59.979Z       mimetype        : application/vnd.ms-opentype
+2023-07-06T08:52:59.979Z   Stream #0:29: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : 
+2023-07-06T08:52:59.979Z GenBasB.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z   Stream #0:30: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : GenBasBI.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z   Stream #0:31: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : GenBasI.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z   Stream #0:32: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : GenBasR.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z   Stream #0:33: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : GenBkBasB.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z   Stream #0:34: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : GenBkBasBI.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:35: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : GenBkBasI.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z   Stream #0:36: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : GenBkBasR.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:37: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : HunterxHunterOP.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:38: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : IwaGyoPro-Bd-Kami.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:39: Attachment: otf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : IwaMaruGothicPro-M-En.otf
+2023-07-06T08:52:59.979Z       mimetype        : application/vnd.ms-opentype
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:40: Attachment: otf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : IWAMINPRO-BD-EN.otf
+2023-07-06T08:52:59.979Z       mimetype        : application/vnd.ms-opentype
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:41: Attachment: ttf
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : IwaMinPro-Bd-NMG.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:42: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : IwaMinPro-Lt-Madoka.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:43: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : IwaMinPro-Md-Kami_0.ttf
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:44: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : IwaOMinPro-Bd-Fate.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:45: Attachment: otf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : IwaOMinPro-Hv-En.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/vnd.ms-opentype
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:46: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : IwaOMinPro-Hv-Fate_0.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z   Stream #0:47: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : IwaRGoPro-Lt-Kami.ttf
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z   Stream #0:48: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : IWARGOPRO-MD-KAMI.TTF
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:49: Attachment: otf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : Iwata Souchou Pro-Medium.otf
+2023-07-06T08:52:59.979Z       mimetype        : application/vnd.ms-opentype
+2023-07-06T08:52:59.979Z   Stream #0:50: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : JandaCloserToFree-Regular.ttf
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z   Stream #0:51: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : KozGoProH-Madoka.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z   Stream #0:52: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : lato-heavy.ttf
+2023-07-06T08:52:59.979Z       mimetype        : 
+2023-07-06T08:52:59.979Z application/x-truetype-font
+2023-07-06T08:52:59.979Z   Stream #0:53: Attachment: otf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : MONTARA-GOTHIC.OTF
+2023-07-06T08:52:59.979Z       mimetype        : application/vnd.ms-opentype
+2023-07-06T08:52:59.979Z   Stream #0:54: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : 
+2023-07-06T08:52:59.979Z Polo Brush.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z   Stream #0:55: Attachment: ttf
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : SBT-TsukuMin Pr5 E.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z   Stream #0:56: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : SHREDDED.TTF
+2023-07-06T08:52:59.979Z       mimetype        : 
+2023-07-06T08:52:59.979Z application/x-truetype-font
+2023-07-06T08:52:59.979Z   Stream #0:57: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : TarifArabic-Bold.ttf
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z   Stream #0:58: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : TarifArabic-Book.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:59: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : TarifArabic-Extrabold.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z   Stream #0:60: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : TarifArabic-Extralight.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:61: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : TarifArabic-Light.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:62: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : TarifArabic-Medium.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:63: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : TarifArabic-Regular.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:64: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : Yu-Gi-Oh! Matrix Book.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z   Stream #0:65: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : Yu-Gi-Oh! Matrix Regular Small Caps 2.ttf
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:66: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : 28 Days Later.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:67: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : Ad HocRegular.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:68: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : Adobe_Garamond_LT_Bold.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z   Stream #0:69: Attachment: ttf
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : AlegreyaSansSC-Black.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z   Stream #0:70: Attachment: ttf
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       filename        : AlegreyaSansSC-BlackItalic.ttf
+2023-07-06T08:52:59.979Z       mimetype        : application/x-truetype-font
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z Multiple -c, -codec, -acodec, -vcodec, -scodec or -dcodec options specified for stream 1, only the last option '-c:a:0 aac' will be used.
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z Stream mapping:
+2023-07-06T08:52:59.979Z   Stream #0:0 -> #0:0 (copy)
+2023-07-06T08:52:59.979Z   Stream #0:1 -> #0:1 (opus (native) -> aac (native))
+2023-07-06T08:52:59.979Z   Stream #0:2 -> #0:2 (copy)
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z Press [q] to stop, [?] for help
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z Output #0, matroska, to '/temp/Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p-TdarrCacheFile-vjG-GO3P_.mkv':
+2023-07-06T08:52:59.979Z   Metadata:
+2023-07-06T08:52:59.979Z     encoder         : Lavf60.3.100
+2023-07-06T08:52:59.979Z   Chapters:
+2023-07-06T08:52:59.979Z     Chapter #0:0: start 0.007000, end 10.983000
+2023-07-06T08:52:59.979Z       Metadata:
+2023-07-06T08:52:59.979Z         title           : Prologo
+2023-07-06T08:52:59.979Z     Chapter #0:1: start 11.025000, end 90.980000
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z       Metadata:
+2023-07-06T08:52:59.979Z         title           : Sigla iniziale
+2023-07-06T08:52:59.979Z     Chapter #0:2: start 91.022000, end 672.936000
+2023-07-06T08:52:59.979Z       Metadata:
+2023-07-06T08:52:59.979Z         title           : Prima parte
+2023-07-06T08:52:59.979Z     Chapter #0:3: start 672.978000, end 1320.041000
+2023-07-06T08:52:59.979Z       Metadata:
+2023-07-06T08:52:59.979Z         title           : Seconda parte
+2023-07-06T08:52:59.979Z     Chapter #0:4: start 1320.083000, end 1400.038000
+2023-07-06T08:52:59.979Z       Metadata:
+2023-07-06T08:52:59.979Z         title           : Sigla finale
+2023-07-06T08:52:59.979Z     Chapter #0:5: start 1400.079000, end 1415.053000
+2023-07-06T08:52:59.979Z       Metadata:
+2023-07-06T08:52:59.979Z         title           : Anticipazioni
+2023-07-06T08:52:59.979Z   Stream #0:0(jpn): Video: h264 (High 10) (H264 / 0x34363248), yuv420p10le(progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 
+2023-07-06T08:52:59.979Z 23.98 fps, 23.98 tbr, 1k tbn (default)
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       title           : Hunter x Hunter 085: Luce x E x Oscurità
+2023-07-06T08:52:59.979Z       BPS-eng         : 2357879
+2023-07-06T08:52:59.979Z       DURATION-eng    : 00:23:35.088000000
+2023-07-06T08:52:59.979Z       NUMBER_OF_FRAMES-eng: 33928
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z       NUMBER_OF_BYTES-eng: 417075870
+2023-07-06T08:52:59.979Z       _STATISTICS_WRITING_APP-eng: mkvmerge v34.0.0 ('Sight and Seen') 64-bit
+2023-07-06T08:52:59.979Z       _STATISTICS_WRITING_DATE_UTC-eng: 2021-01-02 11:25:08
+2023-07-06T08:52:59.979Z       _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+2023-07-06T08:52:59.979Z   Stream #0:1(jpn): Audio: aac (LC) ([255][0][0][0] / 0x00FF), 48000 Hz, stereo, fltp, 128 kb/s (default)
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+2023-07-06T08:52:59.979Z       BPS-eng         : 126341
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z       DURATION-eng    : 00:23:36.418000000
+2023-07-06T08:52:59.979Z       NUMBER_OF_FRAMES-eng: 70821
+2023-07-06T08:52:59.979Z       NUMBER_OF_BYTES-eng: 22369077
+2023-07-06T08:52:59.979Z       _STATISTICS_WRITING_APP-eng: mkvmerge v34.0.0 ('Sight and Seen') 64-bit
+2023-07-06T08:52:59.979Z       _STATISTICS_WRITING_DATE_UTC-eng: 2021-01-02 11:25:08
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z       encoder         : Lavc60.3.100 aac
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z   Stream #0:2(ita): Subtitle: ass (default)
+2023-07-06T08:52:59.979Z     Metadata:
+2023-07-06T08:52:59.979Z       BPS-eng         : 10652
+2023-07-06T08:52:59.979Z       DURATION-eng    : 00:23:32.960000000
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z       NUMBER_OF_FRAMES-eng: 1809
+2023-07-06T08:52:59.979Z       NUMBER_OF_BYTES-eng: 1881458
+2023-07-06T08:52:59.979Z       _STATISTICS_WRITING_APP-eng: mkvmerge v34.0.0 ('Sight and Seen') 64-bit
+2023-07-06T08:52:59.979Z       _STATISTICS_WRITING_DATE_UTC-eng: 2021-01-02 11:25:08
+2023-07-06T08:52:59.979Z       _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z frame=    0 fps=0.0 q=-1.0 size=       0kB time=-577014:32:22.77 bitrate=  -0.0kbits/s speed=N/A    
+2023-07-06T08:52:59.979Z frame=  464 fps=0.0 q=-1.0 size=    4864kB time=00:00:19.59 bitrate=2033.8kbits/s speed=39.2x    
+2023-07-06T08:52:59.979Z frame=  908 fps=907 q=-1.0 size=   20736kB time=00:00:37.91 bitrate=4480.0kbits/s speed=37.9x    
+2023-07-06T08:52:59.979Z frame= 1357 fps=902 q=-1.0 size=   32768kB time=00:00:56.71 bitrate=4733.3kbits/s speed=37.7x    
+2023-07-06T08:52:59.979Z frame= 1880 fps=938 q=-1.0 size=   43776kB time=00:01:18.66 bitrate=4558.8kbits/s speed=39.3x    
+2023-07-06T08:52:59.979Z frame= 2310 fps=922 q=-1.0 size=   54528kB time=00:01:36.58 bitrate=4624.9kbits/s speed=38.6x    
+2023-07-06T08:52:59.979Z frame= 2758 fps=918 q=-1.0 size=   57856kB time=00:01:55.46 bitrate=4104.8kbits/s speed=38.4x    
+2023-07-06T08:52:59.979Z frame= 3134 fps=894 q=-1.0 size=   61696kB time=00:02:10.95 bitrate=3859.5kbits/s speed=37.4x    
+2023-07-06T08:52:59.979Z frame= 3555 fps=888 q=-1.0 size=   68096kB time=00:02:28.42 bitrate=3758.4kbits/s speed=37.1x    
+2023-07-06T08:52:59.979Z frame= 3828 fps=849 q=-1.0 size=   70656kB time=00:02:39.79 bitrate=3622.3kbits/s speed=35.5x    
+2023-07-06T08:52:59.979Z frame= 4140 fps=827 q=-1.0 size=   73984kB time=00:02:52.85 bitrate=3506.4kbits/s speed=34.5x    
+2023-07-06T08:52:59.979Z frame= 4620 fps=839 q=-1.0 size=   78848kB time=00:03:12.90 bitrate=3348.4kbits/s speed=  35x    
+2023-07-06T08:52:59.979Z frame= 5031 fps=837 q=-1.0 size=   87552kB time=00:03:30.14 bitrate=3413.1kbits/s speed=  35x    
+2023-07-06T08:52:59.979Z frame= 5430 fps=834 q=-1.0 size=   91392kB time=00:03:46.69 bitrate=3302.6kbits/s speed=34.8x    
+2023-07-06T08:52:59.979Z frame= 5874 fps=838 q=-1.0 size=   93184kB time=00:04:05.04 bitrate=3115.2kbits/s speed=  35x    
+2023-07-06T08:52:59.979Z frame= 6278 fps=836 q=-1.0 size=  102912kB time=00:04:21.98 bitrate=3218.0kbits/s speed=34.9x    
+2023-07-06T08:52:59.979Z frame= 6681 fps=834 q=-1.0 size=  107008kB time=00:04:38.81 bitrate=3144.1kbits/s speed=34.8x    
+2023-07-06T08:52:59.979Z frame= 6970 fps=819 q=-1.0 size=  110592kB time=00:04:50.80 bitrate=3115.4kbits/s speed=34.2x    
+2023-07-06T08:52:59.979Z frame= 7151 fps=792 q=-1.0 size=  112128kB time=00:04:58.61 bitrate=3076.1kbits/s speed=33.1x    
+2023-07-06T08:52:59.979Z frame= 7461 fps=783 q=-1.0 size=  114688kB time=00:05:11.34 bitrate=3017.6kbits/s speed=32.7x    
+2023-07-06T08:52:59.979Z frame= 7752 fps=773 q=-1.0 size=  115712kB time=00:05:23.57 bitrate=2929.5kbits/s speed=32.3x    
+2023-07-06T08:52:59.979Z frame= 8073 fps=766 q=-1.0 size=  118784kB time=00:05:37.05 bitrate=2887.0kbits/s speed=  32x    
+2023-07-06T08:52:59.979Z frame= 8385 fps=760 q=-1.0 size=  120576kB time=00:05:49.87 bitrate=2823.2kbits/s speed=31.7x    
+2023-07-06T08:52:59.979Z frame= 8747 fps=758 q=-1.0 size=  124672kB time=00:06:04.93 bitrate=2798.6kbits/s speed=31.6x    
+2023-07-06T08:52:59.979Z frame= 9071 fps=754 q=-1.0 size=  127488kB time=00:06:18.39 bitrate=2760.0kbits/s speed=31.4x    
+2023-07-06T08:52:59.979Z frame= 9467 fps=755 q=-1.0 size=  132096kB time=00:06:35.08 bitrate=2739.0kbits/s speed=31.5x    
+2023-07-06T08:52:59.979Z frame= 9905 fps=760 q=-1.0 size=  136448kB time=00:06:53.34 bitrate=2704.3kbits/s speed=31.7x    
+2023-07-06T08:52:59.979Z frame=10394 fps=768 q=-1.0 size=  141312kB time=00:07:13.54 bitrate=2670.2kbits/s speed=  32x    
+2023-07-06T08:52:59.979Z frame=10784 fps=768 q=-1.0 size=  144384kB time=00:07:29.97 bitrate=2628.6kbits/s speed=32.1x    
+2023-07-06T08:52:59.979Z frame=11210 fps=771 q=-1.0 size=  146944kB time=00:07:47.65 bitrate=2574.0kbits/s speed=32.2x    
+2023-07-06T08:52:59.979Z frame=11555 fps=769 q=-1.0 size=  149504kB time=00:08:02.29 bitrate=2539.4kbits/s speed=32.1x    
+2023-07-06T08:52:59.979Z frame=11987 fps=772 q=-1.0 size=  152320kB time=00:08:20.12 bitrate=2495.0kbits/s speed=32.2x    
+2023-07-06T08:52:59.979Z frame=12491 fps=779 q=-1.0 size=  157440kB time=00:08:41.24 bitrate=2474.4kbits/s speed=32.5x    
+2023-07-06T08:52:59.979Z frame=12896 fps=780 q=-1.0 size=  161024kB time=00:08:58.07 bitrate=2451.5kbits/s speed=32.5x    
+2023-07-06T08:52:59.979Z frame=13316 fps=781 q=-1.0 size=  164864kB time=00:09:15.65 bitrate=2430.6kbits/s speed=32.6x    
+2023-07-06T08:52:59.979Z frame=13739 fps=783 q=-1.0 size=  168960kB time=00:09:33.12 bitrate=2415.0kbits/s speed=32.7x    
+2023-07-06T08:52:59.979Z frame=14173 fps=785 q=-1.0 size=  178432kB time=00:09:51.24 bitrate=2472.3kbits/s speed=32.8x    
+2023-07-06T08:52:59.979Z frame=14615 fps=788 q=-1.0 size=  194048kB time=00:10:09.71 bitrate=2607.2kbits/s speed=32.9x    
+2023-07-06T08:52:59.979Z frame=15009 fps=788 q=-1.0 size=  207616kB time=00:10:26.35 bitrate=2715.4kbits/s speed=32.9x    
+2023-07-06T08:52:59.979Z frame=15483 fps=792 q=-1.0 size=  209408kB time=00:10:45.83 bitrate=2656.2kbits/s speed=  33x    
+2023-07-06T08:52:59.979Z frame=15792 fps=788 q=-1.0 size=  215808kB time=00:10:58.76 bitrate=2683.7kbits/s speed=32.9x    
+2023-07-06T08:52:59.979Z frame=16212 fps=789 q=-1.0 size=  218368kB time=00:11:16.44 bitrate=2644.5kbits/s speed=32.9x    
+2023-07-06T08:52:59.979Z frame=16656 fps=791 q=-1.0 size=  227584kB time=00:11:34.79 bitrate=2683.3kbits/s speed=  33x    
+2023-07-06T08:52:59.979Z frame=16999 fps=789 q=-1.0 size=  264960kB time=00:11:49.12 bitrate=3060.9kbits/s speed=32.9x    
+2023-07-06T08:52:59.979Z frame=17413 fps=790 q=-1.0 size=  272384kB time=00:12:06.55 bitrate=3071.2kbits/s speed=  33x    
+2023-07-06T08:52:59.979Z frame=17867 fps=792 q=-1.0 size=  276480kB time=00:12:25.43 bitrate=3038.4kbits/s speed=33.1x    
+2023-07-06T08:52:59.979Z frame=18274 fps=793 q=-1.0 size=  278784kB time=00:12:42.26 bitrate=2996.1kbits/s speed=33.1x    
+2023-07-06T08:52:59.979Z frame=18764 fps=797 q=-1.0 size=  282112kB time=00:13:02.72 bitrate=2952.6kbits/s speed=33.2x    
+2023-07-06T08:52:59.979Z frame=19158 fps=797 q=-1.0 size=  289024kB time=00:13:19.51 bitrate=2961.4kbits/s speed=33.2x    
+2023-07-06T08:52:59.979Z frame=19731 fps=804 q=-1.0 size=  291840kB time=00:13:43.09 bitrate=2904.6kbits/s speed=33.5x    
+2023-07-06T08:52:59.979Z frame=20216 fps=807 q=-1.0 size=  296448kB time=00:14:03.33 bitrate=2879.6kbits/s speed=33.7x    
+2023-07-06T08:52:59.979Z frame=20690 fps=810 q=-1.0 size=  302336kB time=00:14:23.06 bitrate=2869.7kbits/s speed=33.8x    
+2023-07-06T08:52:59.979Z frame=21205 fps=814 q=-1.0 size=  307712kB time=00:14:44.57 bitrate=2849.7kbits/s speed=  34x    
+2023-07-06T08:52:59.979Z frame=21657 fps=816 q=-1.0 size=  311552kB time=00:15:03.32 bitrate=2825.4kbits/s speed=  34x    
+2023-07-06T08:52:59.979Z frame=22146 fps=819 q=-1.0 size=  318976kB time=00:15:23.86 bitrate=2828.4kbits/s speed=34.2x    
+2023-07-06T08:52:59.979Z frame=22625 fps=821 q=-1.0 size=  323328kB time=00:15:43.88 bitrate=2806.2kbits/s speed=34.3x    
+2023-07-06T08:52:59.979Z frame=23099 fps=823 q=-1.0 size=  327168kB time=00:16:03.67 bitrate=2781.2kbits/s speed=34.4x    
+2023-07-06T08:52:59.979Z frame=23389 fps=819 q=-1.0 size=  329472kB time=00:16:15.62 bitrate=2766.5kbits/s speed=34.2x    
+2023-07-06T08:52:59.979Z frame=23708 fps=816 q=-1.0 size=  330752kB time=00:16:28.93 bitrate=2739.8kbits/s speed=  34x    
+2023-07-06T08:52:59.979Z frame=24044 fps=814 q=-1.0 size=  332800kB time=00:16:42.99 bitrate=2718.2kbits/s speed=33.9x    
+2023-07-06T08:52:59.979Z frame=24382 fps=811 q=-1.0 size=  335616kB time=00:16:57.11 bitrate=2703.1kbits/s speed=33.8x    
+2023-07-06T08:52:59.979Z frame=24730 fps=809 q=-1.0 size=  337408kB time=00:17:11.68 bitrate=2679.1kbits/s speed=33.8x    
+2023-07-06T08:52:59.979Z frame=25062 fps=807 q=-1.0 size=  340736kB time=00:17:25.55 bitrate=2669.7kbits/s speed=33.7x    
+2023-07-06T08:52:59.979Z frame=25499 fps=808 q=-1.0 size=  343296kB time=00:17:43.77 bitrate=2643.7kbits/s speed=33.7x    
+2023-07-06T08:52:59.979Z frame=26019 fps=812 q=-1.0 size=  348160kB time=00:18:05.38 bitrate=2627.8kbits/s speed=33.9x    
+2023-07-06T08:52:59.979Z frame=26573 fps=816 q=-1.0 size=  354304kB time=00:18:28.57 bitrate=2618.2kbits/s speed=34.1x    
+2023-07-06T08:52:59.979Z frame=27134 fps=821 q=-1.0 size=  357632kB time=00:18:51.80 bitrate=2588.5kbits/s speed=34.2x    
+2023-07-06T08:52:59.979Z frame=27707 fps=826 q=-1.0 size=  365568kB time=00:19:15.74 bitrate=2591.2kbits/s speed=34.4x    
+2023-07-06T08:52:59.979Z frame=28233 fps=829 q=-1.0 size=  368640kB time=00:19:37.75 bitrate=2564.1kbits/s speed=34.6x    
+2023-07-06T08:52:59.979Z frame=28679 fps=830 q=-1.0 size=  372992kB time=00:19:56.18 bitrate=2554.4kbits/s speed=34.6x    
+2023-07-06T08:52:59.979Z frame=29086 fps=830 q=-1.0 size=  376320kB time=00:20:13.38 bitrate=2540.7kbits/s speed=34.6x    
+2023-07-06T08:52:59.979Z frame=29486 fps=829 q=-1.0 size=  379904kB time=00:20:30.15 bitrate=2529.9kbits/s speed=34.6x    
+2023-07-06T08:52:59.979Z frame=29954 fps=831 q=-1.0 size=  382464kB time=00:20:49.52 bitrate=2507.5kbits/s speed=34.7x    
+2023-07-06T08:52:59.979Z frame=30457 fps=833 q=-1.0 size=  386816kB time=00:21:10.55 bitrate=2494.0kbits/s speed=34.8x    
+2023-07-06T08:52:59.979Z frame=30948 fps=835 q=-1.0 size=  391936kB time=00:21:30.82 bitrate=2487.4kbits/s speed=34.8x    
+2023-07-06T08:52:59.979Z frame=31410 fps=836 q=-1.0 size=  397824kB time=00:21:50.10 bitrate=2487.6kbits/s speed=34.9x    
+2023-07-06T08:52:59.979Z frame=31842 fps=837 q=-1.0 size=  403456kB time=00:22:08.24 bitrate=2488.3kbits/s speed=34.9x    
+2023-07-06T08:52:59.979Z frame=32210 fps=835 q=-1.0 size=  413440kB time=00:22:23.47 bitrate=2521.0kbits/s speed=34.8x    
+2023-07-06T08:52:59.979Z frame=32609 fps=835 q=-1.0 size=  418304kB time=00:22:40.43 bitrate=2518.9kbits/s speed=34.8x    
+2023-07-06T08:52:59.979Z frame=33046 fps=835 q=-1.0 size=  422656kB time=00:22:58.39 bitrate=2511.9kbits/s speed=34.8x    
+2023-07-06T08:52:59.979Z frame=33464 fps=835 q=-1.0 size=  426752kB time=00:23:15.78 bitrate=2504.7kbits/s speed=34.8x    
+2023-07-06T08:52:59.979Z frame=33928 fps=836 q=-1.0 Lsize=  432598kB time=00:23:36.41 bitrate=2502.0kbits/s speed=34.9x    
+2023-07-06T08:52:59.979Z video:407301kB audio:22478kB subtitle:1837kB other streams:0kB global headers:214kB muxing overhead: 0.227576%
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z [aac @ 0x555e9cade100] Qavg: 748.565
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.979Z 
+2023-07-06T08:52:59.983Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[Step W06] [C1] Worker [-success-]
+2023-07-06T08:52:59.984Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Worker success during processing
+2023-07-06T08:52:59.985Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Updating transcode stats
+2023-07-06T08:52:59.985Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Deleting non-latest cache file /media/tvshows/Hunter x Hunter (2011)/Season 2/Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p.mkv
+2023-07-06T08:52:59.986Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Scanning new file: /temp/Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p-TdarrCacheFile-vjG-GO3P_.mkv
+2023-07-06T08:52:59.986Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Updating file properties using mkvpropedit
+2023-07-06T08:52:59.986Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Updated file properties using mkvpropedit
+2023-07-06T08:52:59.988Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Requesting Tdarr Server to scan file
+2023-07-06T08:52:59.989Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Subworker exited null
+2023-07-06T08:53:00.993Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Scan complete
+2023-07-06T08:53:00.994Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:pluginCycleLogJSONString:{"nodeName":"MyInternalNode","workerID":"musty-mutt","pluginCycle":1,"outcome":"success","workerLog":"\nPre-processing - Tdarr_Plugin_MC93_MigzImageRemoval\n☑File doesn't contain any unwanted image format streams.\n\nPre-processing - Tdarr_Plugin_lmg1_Reorder_Streams\nFile has video in first stream\n File meets conditions!\n\nPre-processing - Tdarr_Plugin_00td_action_standardise_audio_stream_codecs\nFile has audio streams which aren't in aac \n","lastCliCommand":"tdarr-ffmpeg -i \"/media/tvshows/Hunter x Hunter (2011)/Season 2/Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p.mkv\" -map 0:v -map 0:a -map 0:s? -map 0:d? -c copy -c:a:0 aac \"/temp/Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p-TdarrCacheFile-vjG-GO3P_.mkv\""}
+2023-07-06T08:53:00.994Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:fileVersionLogJSONString:{"lastCliCommand":"tdarr-ffmpeg -i \"/media/tvshows/Hunter x Hunter (2011)/Season 2/Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p.mkv\" -map 0:v -map 0:a -map 0:s? -map 0:d? -c copy -c:a:0 aac \"/temp/Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p-TdarrCacheFile-vjG-GO3P_.mkv\"","lastPluginId":"Tdarr_Plugin_00td_action_standardise_audio_stream_codecs","sourceFile":{"_id":"/temp/Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p-TdarrCacheFile-vjG-GO3P_.mkv","footprintId":"xx2jxSiQz","file":"/temp/Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p-TdarrCacheFile-vjG-GO3P_.mkv","container":"mkv","scannerReads":{"ffProbeRead":"success","exiftoolRead":"success","mediaInfoRead":"not enabled","closedCaptionRead":"not enabled"},"createdAt":1688629978320,"lastPluginDetails":"none","bit_rate":2501939,"statSync":{"dev":2051,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":5920067,"size":442980560,"blocks":865208,"atimeMs":1688629977115.78,"mtimeMs":1688629976927.783,"ctimeMs":1688629976927.783,"birthtimeMs":1688629936360.4111,"atime":"2023-07-06T07:52:57.116Z","mtime":"2023-07-06T07:52:56.928Z","ctime":"2023-07-06T07:52:56.928Z","birthtime":"2023-07-06T07:52:16.360Z"},"file_size":422.4591827392578,"ffProbeData":{"streams":[{"index":0,"codec_name":"h264","codec_long_name":"H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10","profile":"High 10","codec_type":"video","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","width":1280,"height":720,"coded_width":1280,"coded_height":720,"closed_captions":0,"has_b_frames":2,"sample_aspect_ratio":"1:1","display_aspect_ratio":"16:9","pix_fmt":"yuv420p10le","level":50,"chroma_location":"left","field_order":"progressive","refs":1,"is_avc":"true","nal_length_size":"4","r_frame_rate":"24000/1001","avg_frame_rate":"24000/1001","time_base":"1/1000","start_pts":7,"start_time":"0.007000","bits_per_raw_sample":"10","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"jpn","title":"Hunter x Hunter 085: Luce x E x Oscurità","BPS-eng":"2357879","DURATION-eng":"00:23:35.088000000","NUMBER_OF_FRAMES-eng":"33928","NUMBER_OF_BYTES-eng":"417075870","_STATISTICS_WRITING_APP-eng":"mkvmerge v34.0.0 ('Sight and Seen') 64-bit","_STATISTICS_WRITING_DATE_UTC-eng":"2021-01-02 11:25:08","_STATISTICS_TAGS-eng":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES","DURATION":"00:23:35.094000000"}},{"index":1,"codec_name":"aac","codec_long_name":"AAC (Advanced Audio Coding)","profile":"LC","codec_type":"audio","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":"48000","channels":2,"channel_layout":"stereo","bits_per_sample":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":-14,"start_time":"-0.014000","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"jpn","_STATISTICS_TAGS-eng":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES","BPS-eng":"126341","DURATION-eng":"00:23:36.418000000","NUMBER_OF_FRAMES-eng":"70821","NUMBER_OF_BYTES-eng":"22369077","_STATISTICS_WRITING_APP-eng":"mkvmerge v34.0.0 ('Sight and Seen') 64-bit","_STATISTICS_WRITING_DATE_UTC-eng":"2021-01-02 11:25:08","ENCODER":"Lavc60.3.100 aac","DURATION":"00:23:36.439000000"}},{"index":2,"codec_name":"ass","codec_long_name":"ASS (Advanced SSA) subtitle","codec_type":"subtitle","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":-14,"start_time":"-0.014000","duration_ts":1416439,"duration":"1416.439000","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"ita","BPS-eng":"10652","DURATION-eng":"00:23:32.960000000","NUMBER_OF_FRAMES-eng":"1809","NUMBER_OF_BYTES-eng":"1881458","_STATISTICS_WRITING_APP-eng":"mkvmerge v34.0.0 ('Sight and Seen') 64-bit","_STATISTICS_WRITING_DATE_UTC-eng":"2021-01-02 11:25:08","_STATISTICS_TAGS-eng":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES","DURATION":"00:23:33.527000000"}}],"format":{"filename":"/temp/Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p-TdarrCacheFile-vjG-GO3P_.mkv","nb_streams":3,"nb_programs":0,"format_name":"matroska,webm","format_long_name":"Matroska / WebM","start_time":"-0.014000","duration":"1416.439000","size":"442980560","bit_rate":"2501939","probe_score":100,"tags":{"ENCODER":"Lavf60.3.100"}}},"meta":{"SourceFile":"/temp/Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p-TdarrCacheFile-vjG-GO3P_.mkv","errors":[],"Duration":1416.439,"ExifToolVersion":12.4,"FileName":"Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p-TdarrCacheFile-vjG-GO3P_.mkv","Directory":"/temp","FileSize":"422 MiB","FileModifyDate":{"year":2023,"month":7,"day":6,"hour":7,"minute":52,"second":56,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:06 07:52:56+00:00"},"FileAccessDate":{"year":2023,"month":7,"day":6,"hour":7,"minute":52,"second":57,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:06 07:52:57+00:00"},"FileInodeChangeDate":{"year":2023,"month":7,"day":6,"hour":7,"minute":52,"second":56,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:06 07:52:56+00:00"},"FilePermissions":"-rw-rw-r--","FileType":"MKV","FileTypeExtension":"mkv","MIMEType":"video/x-matroska","EBMLVersion":1,"EBMLReadVersion":1,"DocType":"matroska","DocTypeVersion":4,"DocTypeReadVersion":2,"TimecodeScale":"1 ms","MuxingApp":"Lavf60.3.100","WritingApp":"Lavf60.3.100","TrackName":"Hunter x Hunter 085: Luce x E x Oscurità","VideoFrameRate":23.976,"ImageWidth":1280,"ImageHeight":720,"VideoScanType":"Unknown (2)","AudioChannels":2,"AudioSampleRate":48000,"AudioBitsPerSample":32,"TrackNumber":3,"TrackLanguage":"ita","CodecID":"S_TEXT/ASS","TrackType":"Subtitle","ChapterTimeStart":"0:23:20","ChapterTimeEnd":"0:23:35","ChapterString":"Anticipazioni","ChapterLanguage":"und","TagLanguage":"eng","TagName":"DURATION","TagString":"00:23:33.527000000","ImageSize":"1280x720","Megapixels":0.922},"mediaInfo":{},"hasClosedCaptions":false,"DB":"4BaCjCxnf","bumped":false,"HealthCheck":"","TranscodeDecisionMaker":"","holdUntil":0,"fileMedium":"video","video_codec_name":"h264","audio_codec_name":"","video_resolution":"720p","lastHealthCheckDate":0,"lastTranscodeDate":0,"history":"","oldSize":0,"newSize":0,"videoStreamIndex":0,"duration":1416}}
+2023-07-06T08:53:00.995Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Transcodes during this job so far: 1
+2023-07-06T08:53:00.995Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[Step W02] [C2] Running pre-process file
+2023-07-06T08:53:00.995Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Checking files can be accessed
+2023-07-06T08:53:00.996Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Relevant paths can be accessed
+2023-07-06T08:53:00.996Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Source file: /temp/Hunter x Hunter (2011) - S02E27 - Light x And x Dark Bluray-720p-TdarrCacheFile-vjG-GO3P_.mkv
+2023-07-06T08:53:00.996Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Cache folder: /temp
+2023-07-06T08:53:00.997Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[Step W03] [C2] Analysing file - running plugins
+2023-07-06T08:53:00.997Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:New cache file has already been scanned, no need to scan again
+2023-07-06T08:53:00.997Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Updating Node relay: Processing
+2023-07-06T08:53:00.997Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[1/2] Checking file frame count
+2023-07-06T08:53:00.998Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[2/2] Frame count 0
+2023-07-06T08:53:00.998Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Transcode task, determining transcode settings
+2023-07-06T08:53:00.998Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Plugin stack selected
+2023-07-06T08:53:00.999Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Plugin: plugin1:  Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-06T08:53:01.003Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[1/5] Reading plugin
+2023-07-06T08:53:01.003Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[2/5] Plugin read finished
+2023-07-06T08:53:01.003Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[3/5] Installing dependencies
+2023-07-06T08:53:01.004Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[4/5] Running plugin
+2023-07-06T08:53:01.004Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:{"pluginInputs":{}}
+2023-07-06T08:53:01.005Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[5/5] Running plugin finished
+2023-07-06T08:53:01.005Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Plugin: plugin2:  Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-06T08:53:01.005Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[1/5] Reading plugin
+2023-07-06T08:53:01.005Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[2/5] Plugin read finished
+2023-07-06T08:53:01.006Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[3/5] Installing dependencies
+2023-07-06T08:53:01.006Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[4/5] Running plugin
+2023-07-06T08:53:01.006Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:{"pluginInputs":{}}
+2023-07-06T08:53:01.007Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[5/5] Running plugin finished
+2023-07-06T08:53:01.007Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Plugin: sxfFHmyyT:  Tdarr_Plugin_00td_action_standardise_audio_stream_codecs
+2023-07-06T08:53:01.007Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[1/5] Reading plugin
+2023-07-06T08:53:01.008Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[2/5] Plugin read finished
+2023-07-06T08:53:01.008Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[3/5] Installing dependencies
+2023-07-06T08:53:01.008Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[4/5] Running plugin
+2023-07-06T08:53:01.009Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:{"pluginInputs":{"audioCodec":"aac"}}
+2023-07-06T08:53:01.009Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[5/5] Running plugin finished
+2023-07-06T08:53:01.009Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Plugin: aEVldYMXA:  Tdarr_Plugin_075a_Transcode_Customisable
+2023-07-06T08:53:01.011Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[1/5] Reading plugin
+2023-07-06T08:53:01.011Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[2/5] Plugin read finished
+2023-07-06T08:53:01.011Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[3/5] Installing dependencies
+2023-07-06T08:53:01.012Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[4/5] Running plugin
+2023-07-06T08:53:01.012Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:{"pluginInputs":{"codecs_to_exclude":"h264","cli":"handbrake","transcode_arguments":"-Z \"H.264 MKV 2160p60 4K\" -e x264 --all-subtitles --all-audio","output_container":".mkv"}}
+2023-07-06T08:53:01.012Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[5/5] Running plugin finished
+2023-07-06T08:53:01.013Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Plugin: plugin5:  Tdarr_Plugin_a9he_New_file_size_check
+2023-07-06T08:53:01.013Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[1/5] Reading plugin
+2023-07-06T08:53:01.013Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[2/5] Plugin read finished
+2023-07-06T08:53:01.014Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[3/5] Installing dependencies
+2023-07-06T08:53:01.015Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[4/5] Running plugin
+2023-07-06T08:53:01.016Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:{"pluginInputs":{"upperBound":110,"lowerBound":40}}
+2023-07-06T08:53:01.019Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[5/5] Running plugin finished
+2023-07-06T08:53:01.019Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Plugin: -XIe_rmCK:  Tdarr_Plugin_00td_filter_by_file_property
+2023-07-06T08:53:01.020Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[1/5] Reading plugin
+2023-07-06T08:53:01.020Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[2/5] Plugin read finished
+2023-07-06T08:53:01.021Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[3/5] Installing dependencies
+2023-07-06T08:53:01.021Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[4/5] Running plugin
+2023-07-06T08:53:01.023Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:{"pluginInputs":{"propertyName":"container","propertyValues":"mkv","exactMatch":true,"continueIfPropertyFound":false}}
+2023-07-06T08:53:01.024Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[5/5] Running plugin finished
+2023-07-06T08:53:01.024Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Worker config: {
+2023-07-06T08:53:01.024Z   "processFile": false,
+2023-07-06T08:53:01.024Z   "infoLog": "File property container of mkv being one of mkv has been found, breaking out of stack  \n"
+2023-07-06T08:53:01.024Z }
+2023-07-06T08:53:01.024Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Worker log: 
+2023-07-06T08:53:01.024Z Pre-processing - Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-06T08:53:01.024Z ☑File doesn't contain any unwanted image format streams.
+2023-07-06T08:53:01.024Z 
+2023-07-06T08:53:01.024Z Pre-processing - Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-06T08:53:01.024Z File has video in first stream
+2023-07-06T08:53:01.024Z  File meets conditions!
+2023-07-06T08:53:01.024Z 
+2023-07-06T08:53:01.024Z Pre-processing - Tdarr_Plugin_00td_action_standardise_audio_stream_codecs
+2023-07-06T08:53:01.024Z File does not have any audio streams which aren't in aac 
+2023-07-06T08:53:01.024Z 
+2023-07-06T08:53:01.024Z Pre-processing - Tdarr_Plugin_075a_Transcode_Customisable
+2023-07-06T08:53:01.024Z ☑File is already in h264! 
+2023-07-06T08:53:01.024Z 
+2023-07-06T08:53:01.024Z Pre-processing - Tdarr_Plugin_a9he_New_file_size_check
+2023-07-06T08:53:01.024Z New file has size 422.459 MB which is 86% of original file size:  485.892 MB
+2023-07-06T08:53:01.024Z Pre-processing - Tdarr_Plugin_00td_filter_by_file_property
+2023-07-06T08:53:01.024Z File property container of mkv being one of mkv has been found, breaking out of stack  
+2023-07-06T08:53:01.024Z 
+2023-07-06T08:53:01.024Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[Step W08] [-success-] Job end
+2023-07-06T08:53:01.024Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Transcoding successful. Finished job.
+2023-07-06T08:53:01.026Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:[Step W10] Worker processing end
+2023-07-06T08:53:01.026Z p_yOiwT16_:Node[MyInternalNode]:Worker[musty-mutt]:Successfully updated server with verdict: transcodeSuccess

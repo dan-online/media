@@ -1,0 +1,356 @@
+2023-07-06T08:39:13.624Z c8sERsCZof:[Step S01] [2.00.21] Server relay initialising job
+2023-07-06T08:39:13.624Z c8sERsCZof:Server: linux_x64_docker_true
+2023-07-06T08:39:13.625Z c8sERsCZof:Server relay adding file to staged files
+2023-07-06T08:39:13.625Z c8sERsCZof:Server relay sending job to Node relay: MyInternalNode
+2023-07-06T08:39:13.626Z c8sERsCZof:Node[MyInternalNode]:[Step N01] [2.00.21] Node relay received job
+2023-07-06T08:39:13.626Z c8sERsCZof:Node[MyInternalNode]:{"nodeName":"MyInternalNode","serverIP":"0.0.0.0","serverPort":"8266","handbrakePath":"","ffmpegPath":"","mkvpropeditPath":"","pathTranslators":[{"server":"","node":""}],"logLevel":"INFO","priority":-1,"platform_arch_isdocker":"linux_x64_docker_true","processPid":199,"nodeID":"_VxSJ6fLa"}
+2023-07-06T08:39:13.626Z c8sERsCZof:Node[MyInternalNode]:Node relay sending job to worker:musty-mutt
+2023-07-06T08:39:13.627Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[Step W01] Received file, original: /media/movies/Everything Everywhere All at Once (2022)/Everything Everywhere All at Once (2022) Bluray-1080p.mp4
+2023-07-06T08:39:13.627Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:{"workerType":"transcodecpu"}
+2023-07-06T08:39:13.628Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:{"ffmpegPath":"tdarr-ffmpeg"}
+2023-07-06T08:39:13.629Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:{"handbrakePath":"HandBrakeCLI"}
+2023-07-06T08:39:13.629Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:{"mkvpropeditPath":"mkvpropedit"}
+2023-07-06T08:39:13.630Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:{"gpuSelect":"-"}
+2023-07-06T08:39:13.630Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:{"allowGpuDoCpu":false}
+2023-07-06T08:39:13.631Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:{"thoroughHealthCheckCpuExtraInputArgs":""}
+2023-07-06T08:39:13.631Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:{"thoroughHealthCheckGpuExtraInputArgs":""}
+2023-07-06T08:39:13.631Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:{"thoroughHealthCheckCpuExtraArgs":""}
+2023-07-06T08:39:13.632Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:{"thoroughHealthCheckGpuExtraArgs":""}
+2023-07-06T08:39:13.632Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:{"logFullCliOutput":false}
+2023-07-06T08:39:13.634Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Path translating objects
+2023-07-06T08:39:13.636Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:{"librarySettings":{"_id":"9gM67-NoX","priority":0,"name":"Movies","folder":"/media/movies","foldersToIgnore":"","folderWatchScanInterval":30,"scannerThreadCount":2,"cache":"/temp","output":"","folderToFolderConversion":false,"folderToFolderConversionDeleteSource":false,"folderToFolderRecordHistory":true,"copyIfConditionsMet":false,"container":".mkv","containerFilter":"mkv,mp4,mov,m4v,mpg,mpeg,avi,flv,webm,wmv,vob,evo,iso,m2ts,ts","createdAt":1675837380368,"folderWatching":true,"useFsEvents":false,"scheduledScanFindNew":false,"processLibrary":true,"scanOnStart":true,"exifToolScan":true,"mediaInfoScan":true,"closedCaptionScan":false,"scanButtons":true,"scanFound":"","navItemSelected":"navSourceFolder","pluginIDs":[{"_id":"plugin1","id":"Tdarr_Plugin_MC93_MigzImageRemoval","checked":true,"source":"Community","priority":0,"InputsDB":{},"Stage":"Pre-processing","Name":"Migz-Remove image formats from file","Type":"Video","Operation":"Transcode","Description":"Identify any unwanted image formats in the file and remove those streams. MJPEG, PNG & GIF \n\n","Version":"1.4","Tags":"pre-processing,ffmpeg,video only","Inputs":[],"source_id":"Community::Tdarr_Plugin_MC93_MigzImageRemoval","Link":"Read error"},{"_id":"plugin2","id":"Tdarr_Plugin_lmg1_Reorder_Streams","checked":true,"source":"Community","priority":1,"InputsDB":{},"Stage":"Pre-processing","Name":"Tdarr_Plugin_lmg1_Reorder_Streams ","Type":"Video","Operation":"Transcode","Description":"[Contains built-in filter] This plugin will move the video stream to the front so Tdarr will recognize the codec correctly.\n\n","Version":"1.00","Tags":"pre-processing,ffmpeg","Inputs":[],"source_id":"Community::Tdarr_Plugin_lmg1_Reorder_Streams","Link":"Read error"},{"_id":"etpKIa5Kz","id":"Tdarr_Plugin_00td_action_standardise_audio_stream_codecs","checked":true,"source":"Community","priority":2,"InputsDB":{},"Stage":"Pre-processing","Name":"Standardise audio stream codecs","Type":"Video","Operation":"Transcode","Description":"\nThis action has a built-in filter. Additional filters can be added.\n\n\n\nAll audio tracks which are not in the specified codec will be transcoded\ninto the specified codec. Bitrate and channel count are kept the same.\n  ","Version":"1.00","Tags":"action","Inputs":[{"name":"audioCodec","type":"string","defaultValue":"aac","inputUI":{"type":"dropdown","options":["aac","ac3","eac3","dca","flac","mp2","libmp3lame","truehd"]},"tooltip":"Enter the desired audio codec"}],"source_id":"Community::Tdarr_Plugin_00td_action_standardise_audio_stream_codecs"},{"_id":"OQpTwInrm","id":"Tdarr_Plugin_075a_Transcode_Customisable","checked":true,"source":"Community","priority":3,"InputsDB":{"output_container":".mkv","transcode_arguments":"-Z \"H.264 MKV 2160p60 4K\" -e x264 --all-subtitles --all-audio","codecs_to_exclude":"h264"},"Stage":"Pre-processing","Name":"Video Transcode Customisable","Type":"Video","Operation":"Transcode","Description":"[Contains built-in filter] Specify codec filter and transcode arguments for HandBrake or FFmpeg  \n\n","Version":"1.00","Tags":"pre-processing,handbrake,ffmpeg,configurable","Inputs":[{"name":"codecs_to_exclude","type":"string","defaultValue":"hevc","inputUI":{"type":"text"},"tooltip":"Input codecs, separated by a comma, that should be excluded when processing.\n\n        \\nFor example, if you're transcoding into hevc (h265), then add a filter to prevent hevc being transcoded so your newly transcoded files won't be infinitely looped/processed. \\n\n\n        \n        \\nCommon video codecs:\n\n        \\nmpeg4\n        \\nhevc\n        \\nh264\n        \\nmpeg2video\n        \\ntheora\n        \\nvp8\n        \\nvp9\n        \n        \n        \\nExample:\\n\n\n        hevc\n\n        \\nYou can also enter multiple codecs:\n\n        \\nExample:\\n\n\n        mp3,aac,dts\n\n        \\nExample:\\n\n\n        h264,vp9\n \n        "},{"name":"cli","type":"string","defaultValue":"handbrake","inputUI":{"type":"text"},"tooltip":"Enter the CLI to use.\n        \n        \\nExample:\\n\n        handbrake\n\n        \\nExample:\\n\n        ffmpeg\n        \n        "},{"name":"transcode_arguments","type":"string","defaultValue":"-Z \"Very Fast 1080p30\" --all-subtitles --all-audio","inputUI":{"type":"text"},"tooltip":"\\nEnter HandBrake or FFmpeg transcode arguments.\n        \n        \\nHandBrake examples:\n\n        \\nExample:\\n\n        -e x264 -q 20 -B\n        \n        \\nExample:\\n\n        -Z \"Very Fast 1080p30\"\n        \n        \\nExample:\\n\n        -Z \"Fast 1080p30\" -e nvenc_h265\n        \n        \\nExample:\\n\n        -Z \"Very Fast 1080p30\" --all-subtitles --all-audio\n        \n        \\nExample:\\n\n        -Z \"Very Fast 480p30\"\n        \n        \\nExample:\\n\n        --preset-import-file \"C:UsersHaveAGitGatDesktop\testpreset.json\" -Z \"My Preset\"\n        \n        \\nYou can learn more about HandBrake presets here:\n\n        \\nhttps://handbrake.fr/docs/en/latest/technical/official-presets.html\n        \n\n        \\nWhen using FFmpeg, you need to separate the input and output parameters with a comma. FFmpeg Examples:\n\n        \\nExample:\\n\n-r 1,-r 24\n\n\\nExample:\\n\n,-sn -c:v copy -c:a copy\n\n\\nExample:\\n\n,-c:v lib265 -crf 23 -ac 6 -c:a aac -preset veryfast\n\n\\nExample:\\n\n,-map 0 -c copy -c:v libx265 -c:a aac\n\n\\nExample:\\n\n-c:v h264_cuvid,-c:v hevc_nvenc -preset slow -c:a copy\n\n\\nPlease see the following for help with creating FFmpeg commands:\n\n\\nhttps://opensource.com/article/17/6/ffmpeg-convert-media-file-formats\n        \n        \n        \n        \n        "},{"name":"output_container","type":"string","defaultValue":".mkv","inputUI":{"type":"text"},"tooltip":"\n        \\nEnter the output container of the new file\n\n        \\nExample:\\n\n        .mp4\n\n        \\nExample:\\n\n        .mp3\n\n        \\nExample:\\n\n        .mkv\n        \n        "}],"source_id":"Community::Tdarr_Plugin_075a_Transcode_Customisable","Link":"Read error"},{"_id":"plugin5","id":"Tdarr_Plugin_a9he_New_file_size_check","checked":true,"source":"Community","priority":4,"InputsDB":{},"Stage":"Pre-processing","Name":"New file size check","Type":"Video","Operation":"Transcode","Description":"Give an error if new file is not within the specified upper and lower bound limits \n\n","Version":"1.00","Tags":"","Inputs":[{"name":"upperBound","type":"number","defaultValue":110,"inputUI":{"type":"text"},"tooltip":"Enter the upper bound % size for the new file. For example, if '110' is entered, \n        then if the new file size is 11% larger than the original, an error will be given."},{"name":"lowerBound","type":"number","defaultValue":40,"inputUI":{"type":"text"},"tooltip":"Enter the lower bound % size for the new file. For example, if '90' is entered, \n        then if the new file size is less than 90% of the original, an error will be given."}],"source_id":"Community::Tdarr_Plugin_a9he_New_file_size_check","Link":"Read error"},{"_id":"oAM1JWA4Q4","id":"Tdarr_Plugin_00td_filter_by_file_property","checked":true,"source":"Community","priority":5,"InputsDB":{"propertyValues":"mkv"},"Stage":"Pre-processing","Name":"Filter by file property","Type":"Video","Operation":"Filter","Description":"Filter by a top level file property.\n  For example, container, video_resolution, video_codec_name, fileMedium.\n  Click on a file name on the Tdarr tab or Search tab to see top-level file properties.\n  ","Version":"1.00","Tags":"filter","Inputs":[{"name":"propertyName","type":"string","defaultValue":"container","inputUI":{"type":"text"},"tooltip":"Enter the file property to check"},{"name":"propertyValues","type":"string","defaultValue":"mkv,mp4","inputUI":{"type":"text"},"tooltip":"Enter a comma separated list of values to check for."},{"name":"exactMatch","type":"boolean","defaultValue":true,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Specify true if the property value must be an exact match, false if the property value must contain the value."},{"name":"continueIfPropertyFound","type":"boolean","defaultValue":false,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Specify whether to continue the plugin stack if the property is found."}],"source_id":"Community::Tdarr_Plugin_00td_filter_by_file_property"},{"_id":"K_fx5PVha","id":"Tdarr_Plugin_00td_action_remux_container","checked":true,"source":"Community","priority":6,"InputsDB":{}}],"pluginCommunity":true,"handbrake":true,"ffmpeg":false,"handbrakescan":true,"ffmpegscan":false,"preset":"-Z \"Very Fast 1080p30\"","decisionMaker":{"settingsPlugin":true,"settingsVideo":false,"videoExcludeSwitch":true,"video_codec_names_exclude":[{"codec":"hevc","checked":false},{"codec":"h264","checked":true}],"video_size_range_include":{"min":0,"max":100000},"video_height_range_include":{"min":0,"max":3000},"video_width_range_include":{"min":0,"max":4000},"settingsAudio":false,"audioExcludeSwitch":true,"audio_codec_names_exclude":[{"codec":"mp3","checked":true},{"codec":"aac","checked":false}],"audio_size_range_include":{"min":0,"max":10}},"schedule":[{"_id":"Sun:00-01","checked":true},{"_id":"Sun:01-02","checked":true},{"_id":"Sun:02-03","checked":true},{"_id":"Sun:03-04","checked":true},{"_id":"Sun:04-05","checked":true},{"_id":"Sun:05-06","checked":true},{"_id":"Sun:06-07","checked":true},{"_id":"Sun:07-08","checked":true},{"_id":"Sun:08-09","checked":true},{"_id":"Sun:09-10","checked":true},{"_id":"Sun:10-11","checked":true},{"_id":"Sun:11-12","checked":true},{"_id":"Sun:12-13","checked":true},{"_id":"Sun:13-14","checked":true},{"_id":"Sun:14-15","checked":true},{"_id":"Sun:15-16","checked":true},{"_id":"Sun:16-17","checked":true},{"_id":"Sun:17-18","checked":true},{"_id":"Sun:18-19","checked":true},{"_id":"Sun:19-20","checked":true},{"_id":"Sun:20-21","checked":true},{"_id":"Sun:21-22","checked":true},{"_id":"Sun:22-23","checked":true},{"_id":"Sun:23-00","checked":true},{"_id":"Mon:00-01","checked":true},{"_id":"Mon:01-02","checked":true},{"_id":"Mon:02-03","checked":true},{"_id":"Mon:03-04","checked":true},{"_id":"Mon:04-05","checked":true},{"_id":"Mon:05-06","checked":true},{"_id":"Mon:06-07","checked":true},{"_id":"Mon:07-08","checked":true},{"_id":"Mon:08-09","checked":true},{"_id":"Mon:09-10","checked":true},{"_id":"Mon:10-11","checked":true},{"_id":"Mon:11-12","checked":true},{"_id":"Mon:12-13","checked":true},{"_id":"Mon:13-14","checked":true},{"_id":"Mon:14-15","checked":true},{"_id":"Mon:15-16","checked":true},{"_id":"Mon:16-17","checked":true},{"_id":"Mon:17-18","checked":true},{"_id":"Mon:18-19","checked":true},{"_id":"Mon:19-20","checked":true},{"_id":"Mon:20-21","checked":true},{"_id":"Mon:21-22","checked":true},{"_id":"Mon:22-23","checked":true},{"_id":"Mon:23-00","checked":true},{"_id":"Tue:00-01","checked":true},{"_id":"Tue:01-02","checked":true},{"_id":"Tue:02-03","checked":true},{"_id":"Tue:03-04","checked":true},{"_id":"Tue:04-05","checked":true},{"_id":"Tue:05-06","checked":true},{"_id":"Tue:06-07","checked":true},{"_id":"Tue:07-08","checked":true},{"_id":"Tue:08-09","checked":true},{"_id":"Tue:09-10","checked":true},{"_id":"Tue:10-11","checked":true},{"_id":"Tue:11-12","checked":true},{"_id":"Tue:12-13","checked":true},{"_id":"Tue:13-14","checked":true},{"_id":"Tue:14-15","checked":true},{"_id":"Tue:15-16","checked":true},{"_id":"Tue:16-17","checked":true},{"_id":"Tue:17-18","checked":true},{"_id":"Tue:18-19","checked":true},{"_id":"Tue:19-20","checked":true},{"_id":"Tue:20-21","checked":true},{"_id":"Tue:21-22","checked":true},{"_id":"Tue:22-23","checked":true},{"_id":"Tue:23-00","checked":true},{"_id":"Wed:00-01","checked":true},{"_id":"Wed:01-02","checked":true},{"_id":"Wed:02-03","checked":true},{"_id":"Wed:03-04","checked":true},{"_id":"Wed:04-05","checked":true},{"_id":"Wed:05-06","checked":true},{"_id":"Wed:06-07","checked":true},{"_id":"Wed:07-08","checked":true},{"_id":"Wed:08-09","checked":true},{"_id":"Wed:09-10","checked":true},{"_id":"Wed:10-11","checked":true},{"_id":"Wed:11-12","checked":true},{"_id":"Wed:12-13","checked":true},{"_id":"Wed:13-14","checked":true},{"_id":"Wed:14-15","checked":true},{"_id":"Wed:15-16","checked":true},{"_id":"Wed:16-17","checked":true},{"_id":"Wed:17-18","checked":true},{"_id":"Wed:18-19","checked":true},{"_id":"Wed:19-20","checked":true},{"_id":"Wed:20-21","checked":true},{"_id":"Wed:21-22","checked":true},{"_id":"Wed:22-23","checked":true},{"_id":"Wed:23-00","checked":true},{"_id":"Thur:00-01","checked":true},{"_id":"Thur:01-02","checked":true},{"_id":"Thur:02-03","checked":true},{"_id":"Thur:03-04","checked":true},{"_id":"Thur:04-05","checked":true},{"_id":"Thur:05-06","checked":true},{"_id":"Thur:06-07","checked":true},{"_id":"Thur:07-08","checked":true},{"_id":"Thur:08-09","checked":true},{"_id":"Thur:09-10","checked":true},{"_id":"Thur:10-11","checked":true},{"_id":"Thur:11-12","checked":true},{"_id":"Thur:12-13","checked":true},{"_id":"Thur:13-14","checked":true},{"_id":"Thur:14-15","checked":true},{"_id":"Thur:15-16","checked":true},{"_id":"Thur:16-17","checked":true},{"_id":"Thur:17-18","checked":true},{"_id":"Thur:18-19","checked":true},{"_id":"Thur:19-20","checked":true},{"_id":"Thur:20-21","checked":true},{"_id":"Thur:21-22","checked":true},{"_id":"Thur:22-23","checked":true},{"_id":"Thur:23-00","checked":true},{"_id":"Fri:00-01","checked":true},{"_id":"Fri:01-02","checked":true},{"_id":"Fri:02-03","checked":true},{"_id":"Fri:03-04","checked":true},{"_id":"Fri:04-05","checked":true},{"_id":"Fri:05-06","checked":true},{"_id":"Fri:06-07","checked":true},{"_id":"Fri:07-08","checked":true},{"_id":"Fri:08-09","checked":true},{"_id":"Fri:09-10","checked":true},{"_id":"Fri:10-11","checked":true},{"_id":"Fri:11-12","checked":true},{"_id":"Fri:12-13","checked":true},{"_id":"Fri:13-14","checked":true},{"_id":"Fri:14-15","checked":true},{"_id":"Fri:15-16","checked":true},{"_id":"Fri:16-17","checked":true},{"_id":"Fri:17-18","checked":true},{"_id":"Fri:18-19","checked":true},{"_id":"Fri:19-20","checked":true},{"_id":"Fri:20-21","checked":true},{"_id":"Fri:21-22","checked":true},{"_id":"Fri:22-23","checked":true},{"_id":"Fri:23-00","checked":true},{"_id":"Sat:00-01","checked":true},{"_id":"Sat:01-02","checked":true},{"_id":"Sat:02-03","checked":true},{"_id":"Sat:03-04","checked":true},{"_id":"Sat:04-05","checked":true},{"_id":"Sat:05-06","checked":true},{"_id":"Sat:06-07","checked":true},{"_id":"Sat:07-08","checked":true},{"_id":"Sat:08-09","checked":true},{"_id":"Sat:09-10","checked":true},{"_id":"Sat:10-11","checked":true},{"_id":"Sat:11-12","checked":true},{"_id":"Sat:12-13","checked":true},{"_id":"Sat:13-14","checked":true},{"_id":"Sat:14-15","checked":true},{"_id":"Sat:15-16","checked":true},{"_id":"Sat:16-17","checked":true},{"_id":"Sat:17-18","checked":true},{"_id":"Sat:18-19","checked":true},{"_id":"Sat:19-20","checked":true},{"_id":"Sat:20-21","checked":true},{"_id":"Sat:21-22","checked":true},{"_id":"Sat:22-23","checked":true},{"_id":"Sat:23-00","checked":true}],"totalHealthCheckCount":6,"totalTranscodeCount":5,"sizeDiff":0.9662887658923864,"holdNewFiles":false,"holdFor":3600,"pluginStackOverview":true,"filterResolutionsSkip":"","filterCodecsSkip":"","processPluginsSequentially":true}}
+2023-07-06T08:39:13.640Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Fetching plugin data from server
+2023-07-06T08:39:13.641Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Scanning original library file
+2023-07-06T08:39:13.641Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:{
+2023-07-06T08:39:13.641Z   "exifToolScan": true,
+2023-07-06T08:39:13.641Z   "mediaInfoScan": false,
+2023-07-06T08:39:13.641Z   "closedCaptionScan": false
+2023-07-06T08:39:13.641Z }
+2023-07-06T08:39:13.642Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Updating file properties using mkvpropedit
+2023-07-06T08:39:13.642Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Updated file properties using mkvpropedit
+2023-07-06T08:39:13.643Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Requesting Tdarr Server to scan file
+2023-07-06T08:39:15.650Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Scan complete
+2023-07-06T08:39:15.651Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Original file scanned
+2023-07-06T08:39:15.651Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:fileVersionOriginalLogJSONString:{"lastCliCommand":"","lastPluginId":"","sourceFile":{"_id":"/media/movies/Everything Everywhere All at Once (2022)/Everything Everywhere All at Once (2022) Bluray-1080p.mp4","footprintId":"m7dkO-ImY","file":"/media/movies/Everything Everywhere All at Once (2022)/Everything Everywhere All at Once (2022) Bluray-1080p.mp4","container":"mp4","scannerReads":{"ffProbeRead":"success","exiftoolRead":"success","mediaInfoRead":"not enabled","closedCaptionRead":"not enabled"},"createdAt":1688629152757,"lastPluginDetails":"none","bit_rate":2638634,"statSync":{"dev":2051,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":5904647,"size":2757173059,"blocks":5385128,"atimeMs":1688547516166.5122,"mtimeMs":1687016521585.6587,"ctimeMs":1687166131076.3975,"birthtimeMs":1687016386115.7864,"atime":"2023-07-05T08:58:36.167Z","mtime":"2023-06-17T15:42:01.586Z","ctime":"2023-06-19T09:15:31.076Z","birthtime":"2023-06-17T15:39:46.116Z"},"file_size":2629.445132255554,"ffProbeData":{"streams":[{"index":0,"codec_name":"h264","codec_long_name":"H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10","profile":"High","codec_type":"video","codec_tag_string":"avc1","codec_tag":"0x31637661","width":1920,"height":1036,"coded_width":1920,"coded_height":1036,"closed_captions":0,"has_b_frames":2,"sample_aspect_ratio":"1:1","display_aspect_ratio":"480:259","pix_fmt":"yuv420p","level":41,"color_range":"tv","color_space":"bt709","color_transfer":"bt709","color_primaries":"bt709","chroma_location":"left","refs":1,"is_avc":"true","nal_length_size":"4","r_frame_rate":"24000/1001","avg_frame_rate":"24000/1001","time_base":"1/24000","start_pts":0,"start_time":"0.000000","duration_ts":200625425,"duration":"8359.392708","bit_rate":"2249226","bits_per_raw_sample":"8","nb_frames":"200425","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"und","handler_name":"VideoHandler","vendor_id":"[0][0][0][0]"}},{"index":1,"codec_name":"aac","codec_long_name":"AAC (Advanced Audio Coding)","profile":"LC","codec_type":"audio","codec_tag_string":"mp4a","codec_tag":"0x6134706d","sample_fmt":"fltp","sample_rate":"48000","channels":6,"channel_layout":"5.1","bits_per_sample":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/48000","start_pts":0,"start_time":"0.000000","duration_ts":401250864,"duration":"8359.393000","bit_rate":"384002","nb_frames":"391849","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"und","handler_name":"SoundHandler","vendor_id":"[0][0][0][0]"}}],"format":{"filename":"/media/movies/Everything Everywhere All at Once (2022)/Everything Everywhere All at Once (2022) Bluray-1080p.mp4","nb_streams":2,"nb_programs":0,"format_name":"mov,mp4,m4a,3gp,3g2,mj2","format_long_name":"QuickTime / MOV","start_time":"0.000000","duration":"8359.394000","size":"2757173059","bit_rate":"2638634","probe_score":100,"tags":{"major_brand":"isom","minor_version":"512","compatible_brands":"isomiso2avc1mp41","encoder":"Lavf58.67.100"}}},"meta":{"SourceFile":"/media/movies/Everything Everywhere All at Once (2022)/Everything Everywhere All at Once (2022) Bluray-1080p.mp4","errors":[],"Duration":8359.394,"PreviewDuration":0,"SelectionDuration":0,"TrackDuration":8359.393,"MediaDuration":8359.39270833333,"ExifToolVersion":12.4,"FileName":"Everything Everywhere All at Once (2022) Bluray-1080p.mp4","Directory":"/media/movies/Everything Everywhere All at Once (2022)","FileSize":"2.6 GiB","FileModifyDate":{"year":2023,"month":6,"day":17,"hour":15,"minute":42,"second":1,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:06:17 15:42:01+00:00"},"FileAccessDate":{"year":2023,"month":7,"day":5,"hour":8,"minute":58,"second":36,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:05 08:58:36+00:00"},"FileInodeChangeDate":{"year":2023,"month":6,"day":19,"hour":9,"minute":15,"second":31,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:06:19 09:15:31+00:00"},"FilePermissions":"-rw-rw-r--","FileType":"MP4","FileTypeExtension":"mp4","MIMEType":"video/mp4","MajorBrand":"MP4 Base Media v1 [IS0 14496-12:2003]","MinorVersion":"0.2.0","CompatibleBrands":["isom","iso2","avc1","mp41"],"MovieHeaderVersion":0,"CreateDate":"0000:00:00 00:00:00","ModifyDate":"0000:00:00 00:00:00","TimeScale":1000,"PreferredRate":1,"PreferredVolume":"100.00%","PreviewTime":"0 s","PosterTime":"0 s","SelectionTime":"0 s","CurrentTime":"0 s","NextTrackID":3,"TrackHeaderVersion":0,"TrackCreateDate":"0000:00:00 00:00:00","TrackModifyDate":"0000:00:00 00:00:00","TrackID":1,"TrackLayer":0,"TrackVolume":"0.00%","ImageWidth":1920,"ImageHeight":1036,"GraphicsMode":"srcCopy","OpColor":"0 0 0","CompressorID":"avc1","SourceImageWidth":1920,"SourceImageHeight":1036,"XResolution":72,"YResolution":72,"BitDepth":24,"ColorRepresentation":"nclx 1 1 1","PixelAspectRatio":"1:1","BufferSize":3906250,"MaxBitrate":31250000,"AverageBitrate":2249226,"VideoFrameRate":23.976,"MatrixStructure":"1 0 0 0 1 0 0 0 1","MediaHeaderVersion":0,"MediaCreateDate":"0000:00:00 00:00:00","MediaModifyDate":"0000:00:00 00:00:00","MediaTimeScale":48000,"MediaLanguageCode":"und","HandlerDescription":"SoundHandler","Balance":0,"AudioFormat":"mp4a","AudioChannels":2,"AudioBitsPerSample":16,"AudioSampleRate":48000,"HandlerType":"Metadata","HandlerVendorID":"Apple","Encoder":"Lavf58.67.100","MediaDataSize":2751524392,"MediaDataOffset":5648667,"ImageSize":"1920x1036","Megapixels":2,"AvgBitrate":"2.63 Mbps","Rotation":0},"mediaInfo":{},"hasClosedCaptions":false,"DB":"9gM67-NoX","bumped":false,"HealthCheck":"","TranscodeDecisionMaker":"","holdUntil":0,"fileMedium":"video","video_codec_name":"h264","audio_codec_name":"","video_resolution":"1080p","lastHealthCheckDate":0,"lastTranscodeDate":0,"history":"","oldSize":0,"newSize":0,"videoStreamIndex":0,"duration":8359}}
+2023-07-06T08:39:15.652Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Source file to work on determined:/media/movies/Everything Everywhere All at Once (2022)/Everything Everywhere All at Once (2022) Bluray-1080p.mp4
+2023-07-06T08:39:15.652Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[Step W02] [C1] Running pre-process file
+2023-07-06T08:39:15.652Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Checking files can be accessed
+2023-07-06T08:39:15.653Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Relevant paths can be accessed
+2023-07-06T08:39:15.653Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Source file: /media/movies/Everything Everywhere All at Once (2022)/Everything Everywhere All at Once (2022) Bluray-1080p.mp4
+2023-07-06T08:39:15.653Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Cache folder: /temp
+2023-07-06T08:39:15.654Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[Step W03] [C1] Analysing file - running plugins
+2023-07-06T08:39:15.654Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:transcode task, scanning for extra file details before transcode
+2023-07-06T08:39:15.654Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Updating file properties using mkvpropedit
+2023-07-06T08:39:15.655Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Updated file properties using mkvpropedit
+2023-07-06T08:39:15.655Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Requesting Tdarr Server to scan file
+2023-07-06T08:39:16.657Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Scan complete
+2023-07-06T08:39:16.657Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Scan complete
+2023-07-06T08:39:16.658Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Updating Node relay: Processing
+2023-07-06T08:39:16.658Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[1/2] Checking file frame count
+2023-07-06T08:39:16.659Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[2/2] Frame count 200425
+2023-07-06T08:39:16.659Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Transcode task, determining transcode settings
+2023-07-06T08:39:16.659Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Plugin stack selected
+2023-07-06T08:39:16.660Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Plugin: plugin1:  Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-06T08:39:16.660Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[1/5] Reading plugin
+2023-07-06T08:39:16.661Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[2/5] Plugin read finished
+2023-07-06T08:39:16.661Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[3/5] Installing dependencies
+2023-07-06T08:39:16.662Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[4/5] Running plugin
+2023-07-06T08:39:16.663Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:{"pluginInputs":{}}
+2023-07-06T08:39:16.664Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[5/5] Running plugin finished
+2023-07-06T08:39:16.665Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Plugin: plugin2:  Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-06T08:39:16.668Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[1/5] Reading plugin
+2023-07-06T08:39:16.668Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[2/5] Plugin read finished
+2023-07-06T08:39:16.669Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[3/5] Installing dependencies
+2023-07-06T08:39:16.669Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[4/5] Running plugin
+2023-07-06T08:39:16.669Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:{"pluginInputs":{}}
+2023-07-06T08:39:16.670Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[5/5] Running plugin finished
+2023-07-06T08:39:16.670Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Plugin: etpKIa5Kz:  Tdarr_Plugin_00td_action_standardise_audio_stream_codecs
+2023-07-06T08:39:16.671Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[1/5] Reading plugin
+2023-07-06T08:39:16.671Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[2/5] Plugin read finished
+2023-07-06T08:39:16.672Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[3/5] Installing dependencies
+2023-07-06T08:39:16.672Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[4/5] Running plugin
+2023-07-06T08:39:16.673Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:{"pluginInputs":{"audioCodec":"aac"}}
+2023-07-06T08:39:16.673Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[5/5] Running plugin finished
+2023-07-06T08:39:16.673Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Plugin: OQpTwInrm:  Tdarr_Plugin_075a_Transcode_Customisable
+2023-07-06T08:39:16.674Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[1/5] Reading plugin
+2023-07-06T08:39:16.675Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[2/5] Plugin read finished
+2023-07-06T08:39:16.675Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[3/5] Installing dependencies
+2023-07-06T08:39:16.675Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[4/5] Running plugin
+2023-07-06T08:39:16.676Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:{"pluginInputs":{"codecs_to_exclude":"h264","cli":"handbrake","transcode_arguments":"-Z \"H.264 MKV 2160p60 4K\" -e x264 --all-subtitles --all-audio","output_container":".mkv"}}
+2023-07-06T08:39:16.676Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[5/5] Running plugin finished
+2023-07-06T08:39:16.676Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Plugin: plugin5:  Tdarr_Plugin_a9he_New_file_size_check
+2023-07-06T08:39:16.676Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[1/5] Reading plugin
+2023-07-06T08:39:16.676Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[2/5] Plugin read finished
+2023-07-06T08:39:16.677Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[3/5] Installing dependencies
+2023-07-06T08:39:16.677Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[4/5] Running plugin
+2023-07-06T08:39:16.677Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:{"pluginInputs":{"upperBound":110,"lowerBound":40}}
+2023-07-06T08:39:16.677Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[5/5] Running plugin finished
+2023-07-06T08:39:16.678Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Plugin: oAM1JWA4Q4:  Tdarr_Plugin_00td_filter_by_file_property
+2023-07-06T08:39:16.678Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[1/5] Reading plugin
+2023-07-06T08:39:16.679Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[2/5] Plugin read finished
+2023-07-06T08:39:16.679Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[3/5] Installing dependencies
+2023-07-06T08:39:16.679Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[4/5] Running plugin
+2023-07-06T08:39:16.680Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:{"pluginInputs":{"propertyName":"container","propertyValues":"mkv","exactMatch":true,"continueIfPropertyFound":false}}
+2023-07-06T08:39:16.680Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[5/5] Running plugin finished
+2023-07-06T08:39:16.680Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Plugin: K_fx5PVha:  Tdarr_Plugin_00td_action_remux_container
+2023-07-06T08:39:16.681Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[1/5] Reading plugin
+2023-07-06T08:39:16.681Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[2/5] Plugin read finished
+2023-07-06T08:39:16.681Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[3/5] Installing dependencies
+2023-07-06T08:39:16.682Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[4/5] Running plugin
+2023-07-06T08:39:16.682Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:{"pluginInputs":{"container":"mkv"}}
+2023-07-06T08:39:16.682Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[5/5] Running plugin finished
+2023-07-06T08:39:16.683Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Worker config: {
+2023-07-06T08:39:16.683Z   "processFile": true,
+2023-07-06T08:39:16.683Z   "preset": ", -map 0 -c copy",
+2023-07-06T08:39:16.683Z   "container": ".mkv",
+2023-07-06T08:39:16.683Z   "handBrakeMode": false,
+2023-07-06T08:39:16.683Z   "FFmpegMode": true,
+2023-07-06T08:39:16.683Z   "reQueueAfter": true,
+2023-07-06T08:39:16.683Z   "infoLog": "File is not in mkv \n",
+2023-07-06T08:39:16.683Z   "handbrakeMode": false,
+2023-07-06T08:39:16.683Z   "lastPluginDetails": {
+2023-07-06T08:39:16.683Z     "source": "Community",
+2023-07-06T08:39:16.683Z     "id": "Tdarr_Plugin_00td_action_remux_container",
+2023-07-06T08:39:16.683Z     "number": "7/7"
+2023-07-06T08:39:16.683Z   },
+2023-07-06T08:39:16.683Z   "ffmpegMode": true,
+2023-07-06T08:39:16.683Z   "cliToUse": "ffmpeg"
+2023-07-06T08:39:16.683Z }
+2023-07-06T08:39:16.683Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Worker log: 
+2023-07-06T08:39:16.683Z Pre-processing - Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-06T08:39:16.683Z ☑File doesn't contain any unwanted image format streams.
+2023-07-06T08:39:16.683Z 
+2023-07-06T08:39:16.683Z Pre-processing - Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-06T08:39:16.683Z File has video in first stream
+2023-07-06T08:39:16.683Z  File meets conditions!
+2023-07-06T08:39:16.683Z 
+2023-07-06T08:39:16.683Z Pre-processing - Tdarr_Plugin_00td_action_standardise_audio_stream_codecs
+2023-07-06T08:39:16.683Z File does not have any audio streams which aren't in aac 
+2023-07-06T08:39:16.683Z 
+2023-07-06T08:39:16.683Z Pre-processing - Tdarr_Plugin_075a_Transcode_Customisable
+2023-07-06T08:39:16.683Z ☑File is already in h264! 
+2023-07-06T08:39:16.683Z 
+2023-07-06T08:39:16.683Z Pre-processing - Tdarr_Plugin_a9he_New_file_size_check
+2023-07-06T08:39:16.683Z New file has size 2629.445 MB which is 100% of original file size:  2629.445 MB
+2023-07-06T08:39:16.683Z Pre-processing - Tdarr_Plugin_00td_filter_by_file_property
+2023-07-06T08:39:16.683Z File property container of mp4 being one of mkv has not been found, continuing to next plugin 
+2023-07-06T08:39:16.683Z 
+2023-07-06T08:39:16.683Z Pre-processing - Tdarr_Plugin_00td_action_remux_container
+2023-07-06T08:39:16.683Z File is not in mkv 
+2023-07-06T08:39:16.683Z 
+2023-07-06T08:39:16.683Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Worker will process
+2023-07-06T08:39:16.683Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[Step W04] [C1] Preparing command
+2023-07-06T08:39:16.684Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Cache file stem: /temp
+2023-07-06T08:39:16.684Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Cache file path: /temp/Everything Everywhere All at Once (2022) Bluray-1080p-TdarrCacheFile-2836Msm_e.mkv
+2023-07-06T08:39:16.684Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Create transcode args
+2023-07-06T08:39:16.685Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Args:  -i "/media/movies/Everything Everywhere All at Once (2022)/Everything Everywhere All at Once (2022) Bluray-1080p.mp4" -map 0 -c copy "/temp/Everything Everywhere All at Once (2022) Bluray-1080p-TdarrCacheFile-2836Msm_e.mkv"
+2023-07-06T08:39:16.685Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Getting source file size
+2023-07-06T08:39:16.685Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Source file size: 2.5678175119683146
+2023-07-06T08:39:16.686Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Performing safety check on worker config to see if old transcode args/container match new ones
+2023-07-06T08:39:16.686Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Safety check complete, all good
+2023-07-06T08:39:16.686Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[Step W05] [C1] Launching subworker
+2023-07-06T08:39:16.687Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Preparing to launch subworker
+2023-07-06T08:39:16.687Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Subworker launched
+2023-07-06T08:39:16.687Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[1/3] Sending command to subworker
+2023-07-06T08:39:16.688Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[2/3] tdarr-ffmpeg -i "/media/movies/Everything Everywhere All at Once (2022)/Everything Everywhere All at Once (2022) Bluray-1080p.mp4" -map 0 -c copy "/temp/Everything Everywhere All at Once (2022) Bluray-1080p-TdarrCacheFile-2836Msm_e.mkv"
+2023-07-06T08:39:16.688Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[3/3] Command sent
+2023-07-06T08:39:16.688Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:To see live CLI output, enable 'Log full FFmpeg/HandBrake output' in the staging section on the Tdarr tab before the job starts. Note this could increase the job report size substantially.
+2023-07-06T08:39:16.689Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Subworker:Online
+2023-07-06T08:39:16.689Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Subworker:Receiving transcode settings
+2023-07-06T08:39:16.689Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Subworker:Running CLI
+2023-07-06T08:39:37.705Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Subworker:a.Thread closed, code: 0
+2023-07-06T08:39:37.706Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Subworker exit approved, killing subworker
+2023-07-06T08:39:37.706Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Subworker killed
+2023-07-06T08:39:37.706Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:b.Thread closed, code: 0
+2023-07-06T08:39:37.706Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:CLI code: 0
+2023-07-06T08:39:37.707Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Last 200 lines of CLI log:
+2023-07-06T08:39:37.707Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:ffmpeg version 6.0-Jellyfin Copyright (c) 2000-2023 the FFmpeg developers
+2023-07-06T08:39:37.707Z   built with gcc 9 (Ubuntu 9.4.0-1ubuntu1~20.04.1)
+2023-07-06T08:39:37.707Z   configuration: --prefix=/usr/lib/jellyfin-ffmpeg --target-os=linux --extra-version=Jellyfin --disable-doc --disable-ffplay --disable-ptx-compression --disable-static --disable-libxcb --disable-sdl2 --disable-xlib --enable-lto --enable-gpl --enable-version3 --enable-shared --enable-gmp --enable-gnutls --enable-chromaprint --enable-libdrm --enable-libass --enable-libfreetype --enable-libfribidi --enable-libfontconfig --enable-libbluray --enable-libmp3lame --enable-libopus --enable-libtheora --enable-libvorbis --enable-libdav1d --enable-libwebp --enable-libvpx --enable-libx264 --enable-libx265 --enable-libzvbi --enable-libzimg --enable-libfdk-aac --arch=amd64 --enable-libsvtav1 --enable-libshaderc --enable-libplacebo --enable-vulkan --enable-opencl --enable-vaapi --enable-amf --enable-libvpl --enable-ffnvcodec --enable-cuda --enable-cuda-llvm --enable-cuvid --enable-nvdec --enable-nvenc
+2023-07-06T08:39:37.707Z 
+2023-07-06T08:39:37.707Z   libavutil      58.  2.100 / 58.  2.100
+2023-07-06T08:39:37.707Z   libavcodec     60.  3.100 / 60.  3.100
+2023-07-06T08:39:37.707Z   libavformat    60.  3.100 / 60.  3.100
+2023-07-06T08:39:37.707Z   libavdevice    60.  1.100 / 60.  1.100
+2023-07-06T08:39:37.707Z   libavfilter     9.  3.100 /  9.  3.100
+2023-07-06T08:39:37.707Z   libswscale      7.  1.100 /  7.  1.100
+2023-07-06T08:39:37.707Z   libswresample   4. 10.100 /  4. 10.100
+2023-07-06T08:39:37.707Z   libpostproc    57.  1.100 / 57.  1.100
+2023-07-06T08:39:37.707Z 
+2023-07-06T08:39:37.707Z Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/media/movies/Everything Everywhere All at Once (2022)/Everything Everywhere All at Once (2022) Bluray-1080p.mp4':
+2023-07-06T08:39:37.707Z   Metadata:
+2023-07-06T08:39:37.707Z     major_brand     : isom
+2023-07-06T08:39:37.707Z     minor_version   : 512
+2023-07-06T08:39:37.707Z     compatible_brands: isomiso2avc1mp41
+2023-07-06T08:39:37.707Z     encoder         : Lavf58.67.100
+2023-07-06T08:39:37.707Z   Duration: 02:19:19.39, start: 0.000000, bitrate: 2638 kb/s
+2023-07-06T08:39:37.707Z 
+2023-07-06T08:39:37.707Z   Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1036 [SAR 1:1 DAR 480:259], 2249 kb/s, 23.98 fps, 23.98 tbr, 24k tbn (default)
+2023-07-06T08:39:37.707Z     Metadata:
+2023-07-06T08:39:37.707Z       handler_name    : VideoHandler
+2023-07-06T08:39:37.707Z       vendor_id       : [0][0][0][0]
+2023-07-06T08:39:37.707Z   Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, 5.1, fltp, 384 kb/s (default)
+2023-07-06T08:39:37.707Z     Metadata:
+2023-07-06T08:39:37.707Z       handler_name    : SoundHandler
+2023-07-06T08:39:37.707Z       vendor_id       : [0][0][0][0]
+2023-07-06T08:39:37.707Z 
+2023-07-06T08:39:37.707Z Output #0, matroska, to '/temp/Everything Everywhere All at Once (2022) Bluray-1080p-TdarrCacheFile-2836Msm_e.mkv':
+2023-07-06T08:39:37.707Z   Metadata:
+2023-07-06T08:39:37.707Z     major_brand     : isom
+2023-07-06T08:39:37.707Z     minor_version   : 512
+2023-07-06T08:39:37.707Z     compatible_brands: isomiso2avc1mp41
+2023-07-06T08:39:37.707Z     encoder         : Lavf60.3.100
+2023-07-06T08:39:37.707Z 
+2023-07-06T08:39:37.707Z   Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1036 [SAR 1:1 DAR 480:259], q=2-31, 2249 kb/s, 23.98 fps, 23.98 tbr, 1k tbn (default)
+2023-07-06T08:39:37.707Z     Metadata:
+2023-07-06T08:39:37.707Z       handler_name    : VideoHandler
+2023-07-06T08:39:37.707Z       vendor_id       : [0][0][0][0]
+2023-07-06T08:39:37.707Z   Stream #0:1
+2023-07-06T08:39:37.707Z (und): Audio: aac (LC) ([255][0][0][0] / 0x00FF), 48000 Hz, 5.1, fltp, 384 kb/s (default)
+2023-07-06T08:39:37.707Z     Metadata:
+2023-07-06T08:39:37.707Z       handler_name    : SoundHandler
+2023-07-06T08:39:37.707Z       vendor_id       : [0][0][0][0]
+2023-07-06T08:39:37.707Z 
+2023-07-06T08:39:37.707Z Stream mapping:
+2023-07-06T08:39:37.707Z   Stream #0:0 -> #0:0 (copy)
+2023-07-06T08:39:37.707Z   Stream #0:1 -> #0:1 (copy)
+2023-07-06T08:39:37.707Z Press [q] to stop, [?] for help
+2023-07-06T08:39:37.707Z 
+2023-07-06T08:39:37.707Z frame=    0 fps=0.0 q=-1.0 size=       0kB time=-00:00:00.08 bitrate=  -0.0kbits/s speed=N/A    
+2023-07-06T08:39:37.707Z frame= 5790 fps=0.0 q=-1.0 size=   78336kB time=00:04:01.40 bitrate=2658.3kbits/s speed= 483x    
+2023-07-06T08:39:37.707Z frame=10817 fps=10816 q=-1.0 size=  165376kB time=00:07:31.07 bitrate=3003.4kbits/s speed= 451x    
+2023-07-06T08:39:37.707Z frame=15925 fps=10606 q=-1.0 size=  241408kB time=00:11:04.10 bitrate=2977.9kbits/s speed= 442x    
+2023-07-06T08:39:37.707Z frame=20786 fps=10384 q=-1.0 size=  319744kB time=00:14:26.85 bitrate=3021.6kbits/s speed= 433x    
+2023-07-06T08:39:37.707Z frame=25528 fps=10191 q=-1.0 size=  389888kB time=00:17:44.64 bitrate=3000.0kbits/s speed= 425x    
+2023-07-06T08:39:37.707Z frame=30607 fps=10186 q=-1.0 size=  450304kB time=00:21:16.50 bitrate=2889.8kbits/s speed= 425x    
+2023-07-06T08:39:37.707Z frame=34486 fps=9839 q=-1.0 size=  501248kB time=00:23:58.25 bitrate=2855.0kbits/s speed= 410x    
+2023-07-06T08:39:37.707Z frame=37989 fps=9485 q=-1.0 size=  558592kB time=00:26:24.34 bitrate=2888.3kbits/s speed= 396x    
+2023-07-06T08:39:37.707Z frame=40621 fps=9014 q=-1.0 size=  602368kB time=00:28:14.14 bitrate=2912.7kbits/s speed= 376x    
+2023-07-06T08:39:37.707Z frame=45225 fps=9033 q=-1.0 size=  673024kB time=00:31:26.14 bitrate=2923.1kbits/s speed= 377x    
+2023-07-06T08:39:37.707Z frame=50318 fps=9138 q=-1.0 size=  737792kB time=00:34:58.60 bitrate=2880.0kbits/s speed= 381x    
+2023-07-06T08:39:37.707Z frame=56136 fps=9346 q=-1.0 size=  797440kB time=00:39:01.25 bitrate=2790.2kbits/s speed= 390x    
+2023-07-06T08:39:37.707Z frame=61585 fps=9465 q=-1.0 size=  858112kB time=00:42:48.52 bitrate=2736.8kbits/s speed= 395x    
+2023-07-06T08:39:37.707Z frame=65971 fps=9415 q=-1.0 size=  925184kB time=00:45:51.42 bitrate=2754.6kbits/s speed= 393x    
+2023-07-06T08:39:37.707Z frame=67514 fps=8987 q=-1.0 size=  960000kB time=00:46:55.80 bitrate=2792.9kbits/s speed= 375x    
+2023-07-06T08:39:37.707Z frame=72425 fps=9039 q=-1.0 size= 1015040kB time=00:50:20.65 bitrate=2752.8kbits/s speed= 377x    
+2023-07-06T08:39:37.707Z frame=76554 fps=8990 q=-1.0 size= 1081856kB time=00:53:12.85 bitrate=2775.8kbits/s speed= 375x    
+2023-07-06T08:39:37.707Z frame=81259 fps=9014 q=-1.0 size= 1140736kB time=00:56:29.05 bitrate=2757.4kbits/s speed= 376x    
+2023-07-06T08:39:37.707Z frame=85673 fps=9004 q=-1.0 size= 1202688kB time=00:59:33.27 bitrate=2757.2kbits/s speed= 376x    
+2023-07-06T08:39:37.707Z frame=91707 fps=9157 q=-1.0 size= 1270016kB time=01:03:44.86 bitrate=2720.1kbits/s speed= 382x    
+2023-07-06T08:39:37.707Z frame=97380 fps=9261 q=-1.0 size= 1326336kB time=01:07:41.44 bitrate=2675.2kbits/s speed= 386x    
+2023-07-06T08:39:37.707Z frame=102372 fps=9294 q=-1.0 size= 1382656kB time=01:11:09.78 bitrate=2652.8kbits/s speed= 388x    
+2023-07-06T08:39:37.707Z frame=106234 fps=9225 q=-1.0 size= 1437440kB time=01:13:50.76 bitrate=2657.7kbits/s speed= 385x    
+2023-07-06T08:39:37.707Z frame=110359 fps=9185 q=-1.0 size= 1509376kB time=01:16:42.80 bitrate=2686.4kbits/s speed= 383x    
+2023-07-06T08:39:37.707Z frame=115677 fps=9242 q=-1.0 size= 1594368kB time=01:20:24.59 bitrate=2707.2kbits/s speed= 385x    
+2023-07-06T08:39:37.707Z frame=122058 fps=9377 q=-1.0 size= 1674752kB time=01:24:50.73 bitrate=2695.0kbits/s speed= 391x    
+2023-07-06T08:39:37.707Z frame=128780 fps=9527 q=-1.0 size= 1763840kB time=01:29:31.11 bitrate=2690.2kbits/s speed= 397x    
+2023-07-06T08:39:37.707Z frame=133479 fps=9522 q=-1.0 size= 1832960kB time=01:32:47.10 bitrate=2697.2kbits/s speed= 397x    
+2023-07-06T08:39:37.707Z frame=137041 fps=9440 q=-1.0 size= 1878784kB time=01:35:15.66 bitrate=2692.8kbits/s speed= 394x    
+2023-07-06T08:39:37.707Z frame=142298 fps=9475 q=-1.0 size= 1957376kB time=01:38:54.95 bitrate=2701.8kbits/s speed= 395x    
+2023-07-06T08:39:37.707Z frame=148519 fps=9571 q=-1.0 size= 2049024kB time=01:43:14.41 bitrate=2709.8kbits/s speed= 399x    
+2023-07-06T08:39:37.707Z frame=155092 fps=9682 q=-1.0 size= 2126848kB time=01:47:48.54 bitrate=2693.5kbits/s speed= 404x    
+2023-07-06T08:39:37.707Z frame=161235 fps=9761 q=-1.0 size= 2208256kB time=01:52:04.76 bitrate=2690.1kbits/s speed= 407x    
+2023-07-06T08:39:37.707Z frame=167428 fps=9838 q=-1.0 size= 2300160kB time=01:56:23.06 bitrate=2698.4kbits/s speed= 410x    
+2023-07-06T08:39:37.707Z frame=172935 fps=9871 q=-1.0 size= 2383872kB time=02:00:12.74 bitrate=2707.5kbits/s speed= 412x    
+2023-07-06T08:39:37.707Z frame=178191 fps=9889 q=-1.0 size= 2470400kB time=02:03:51.95 bitrate=2723.0kbits/s speed= 412x    
+2023-07-06T08:39:37.707Z frame=183825 fps=9926 q=-1.0 size= 2526976kB time=02:07:46.95 bitrate=2700.0kbits/s speed= 414x    
+2023-07-06T08:39:37.707Z frame=188761 fps=9924 q=-1.0 size= 2594560kB time=02:11:12.81 bitrate=2699.8kbits/s speed= 414x    
+2023-07-06T08:39:37.707Z frame=196830 fps=10083 q=-1.0 size= 2652416kB time=02:16:49.34 bitrate=2646.8kbits/s speed= 421x    
+2023-07-06T08:39:37.707Z frame=200425 fps=10094 q=-1.0 Lsize= 2691222kB time=02:19:19.38 bitrate=2637.3kbits/s speed= 421x    
+2023-07-06T08:39:37.707Z video:2295187kB audio:391849kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.155796%
+2023-07-06T08:39:37.707Z 
+2023-07-06T08:39:37.707Z 
+2023-07-06T08:39:37.707Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[Step W06] [C1] Worker [-success-]
+2023-07-06T08:39:37.708Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Worker success during processing
+2023-07-06T08:39:37.708Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Updating transcode stats
+2023-07-06T08:39:37.708Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Deleting non-latest cache file /media/movies/Everything Everywhere All at Once (2022)/Everything Everywhere All at Once (2022) Bluray-1080p.mp4
+2023-07-06T08:39:37.709Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Scanning new file: /temp/Everything Everywhere All at Once (2022) Bluray-1080p-TdarrCacheFile-2836Msm_e.mkv
+2023-07-06T08:39:37.709Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Updating file properties using mkvpropedit
+2023-07-06T08:39:37.709Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Updated file properties using mkvpropedit
+2023-07-06T08:39:37.710Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Requesting Tdarr Server to scan file
+2023-07-06T08:39:37.710Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Subworker exited null
+2023-07-06T08:39:38.714Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Scan complete
+2023-07-06T08:39:38.715Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:pluginCycleLogJSONString:{"nodeName":"MyInternalNode","workerID":"musty-mutt","pluginCycle":1,"outcome":"success","workerLog":"\nPre-processing - Tdarr_Plugin_MC93_MigzImageRemoval\n☑File doesn't contain any unwanted image format streams.\n\nPre-processing - Tdarr_Plugin_lmg1_Reorder_Streams\nFile has video in first stream\n File meets conditions!\n\nPre-processing - Tdarr_Plugin_00td_action_standardise_audio_stream_codecs\nFile does not have any audio streams which aren't in aac \n\nPre-processing - Tdarr_Plugin_075a_Transcode_Customisable\n☑File is already in h264! \n\nPre-processing - Tdarr_Plugin_a9he_New_file_size_check\nNew file has size 2629.445 MB which is 100% of original file size:  2629.445 MB\nPre-processing - Tdarr_Plugin_00td_filter_by_file_property\nFile property container of mp4 being one of mkv has not been found, continuing to next plugin \n\nPre-processing - Tdarr_Plugin_00td_action_remux_container\nFile is not in mkv \n","lastCliCommand":"tdarr-ffmpeg -i \"/media/movies/Everything Everywhere All at Once (2022)/Everything Everywhere All at Once (2022) Bluray-1080p.mp4\" -map 0 -c copy \"/temp/Everything Everywhere All at Once (2022) Bluray-1080p-TdarrCacheFile-2836Msm_e.mkv\""}
+2023-07-06T08:39:38.715Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:fileVersionLogJSONString:{"lastCliCommand":"tdarr-ffmpeg -i \"/media/movies/Everything Everywhere All at Once (2022)/Everything Everywhere All at Once (2022) Bluray-1080p.mp4\" -map 0 -c copy \"/temp/Everything Everywhere All at Once (2022) Bluray-1080p-TdarrCacheFile-2836Msm_e.mkv\"","lastPluginId":"Tdarr_Plugin_00td_action_remux_container","sourceFile":{"_id":"/temp/Everything Everywhere All at Once (2022) Bluray-1080p-TdarrCacheFile-2836Msm_e.mkv","footprintId":"m7dkO-ImY","file":"/temp/Everything Everywhere All at Once (2022) Bluray-1080p-TdarrCacheFile-2836Msm_e.mkv","container":"mkv","scannerReads":{"ffProbeRead":"success","exiftoolRead":"success","mediaInfoRead":"not enabled","closedCaptionRead":"not enabled"},"createdAt":1688629175825,"lastPluginDetails":"none","bit_rate":2637317,"statSync":{"dev":2051,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":5919929,"size":2755811147,"blocks":5382456,"atimeMs":1688629174836.466,"mtimeMs":1688629174664.4688,"ctimeMs":1688629174664.4688,"birthtimeMs":1688629154804.7866,"atime":"2023-07-06T07:39:34.836Z","mtime":"2023-07-06T07:39:34.664Z","ctime":"2023-07-06T07:39:34.664Z","birthtime":"2023-07-06T07:39:14.805Z"},"file_size":2628.1463117599487,"ffProbeData":{"streams":[{"index":0,"codec_name":"h264","codec_long_name":"H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10","profile":"High","codec_type":"video","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","width":1920,"height":1036,"coded_width":1920,"coded_height":1036,"closed_captions":0,"has_b_frames":2,"sample_aspect_ratio":"1:1","display_aspect_ratio":"480:259","pix_fmt":"yuv420p","level":41,"color_range":"tv","color_space":"bt709","color_transfer":"bt709","color_primaries":"bt709","chroma_location":"left","field_order":"progressive","refs":1,"is_avc":"true","nal_length_size":"4","r_frame_rate":"24000/1001","avg_frame_rate":"24000/1001","time_base":"1/1000","start_pts":43,"start_time":"0.043000","bits_per_raw_sample":"8","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"HANDLER_NAME":"VideoHandler","VENDOR_ID":"[0][0][0][0]","DURATION":"02:19:19.436000000"}},{"index":1,"codec_name":"aac","codec_long_name":"AAC (Advanced Audio Coding)","profile":"LC","codec_type":"audio","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":"48000","channels":6,"channel_layout":"5.1","bits_per_sample":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"HANDLER_NAME":"SoundHandler","VENDOR_ID":"[0][0][0][0]","DURATION":"02:19:19.436000000"}}],"format":{"filename":"/temp/Everything Everywhere All at Once (2022) Bluray-1080p-TdarrCacheFile-2836Msm_e.mkv","nb_streams":2,"nb_programs":0,"format_name":"matroska,webm","format_long_name":"Matroska / WebM","start_time":"0.000000","duration":"8359.436000","size":"2755811147","bit_rate":"2637317","probe_score":100,"tags":{"COMPATIBLE_BRANDS":"isomiso2avc1mp41","MAJOR_BRAND":"isom","MINOR_VERSION":"512","ENCODER":"Lavf60.3.100"}}},"meta":{"SourceFile":"/temp/Everything Everywhere All at Once (2022) Bluray-1080p-TdarrCacheFile-2836Msm_e.mkv","errors":[],"Duration":8359.436,"ExifToolVersion":12.4,"FileName":"Everything Everywhere All at Once (2022) Bluray-1080p-TdarrCacheFile-2836Msm_e.mkv","Directory":"/temp","FileSize":"2.6 GiB","FileModifyDate":{"year":2023,"month":7,"day":6,"hour":7,"minute":39,"second":34,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:06 07:39:34+00:00"},"FileAccessDate":{"year":2023,"month":7,"day":6,"hour":7,"minute":39,"second":34,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:06 07:39:34+00:00"},"FileInodeChangeDate":{"year":2023,"month":7,"day":6,"hour":7,"minute":39,"second":34,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:06 07:39:34+00:00"},"FilePermissions":"-rw-rw-r--","FileType":"MKV","FileTypeExtension":"mkv","MIMEType":"video/x-matroska","EBMLVersion":1,"EBMLReadVersion":1,"DocType":"matroska","DocTypeVersion":4,"DocTypeReadVersion":2,"TimecodeScale":"1 ms","MuxingApp":"Lavf60.3.100","WritingApp":"Lavf60.3.100","VideoFrameRate":23.976,"ImageWidth":1920,"ImageHeight":1036,"VideoScanType":"Unknown (2)","TrackNumber":2,"TrackLanguage":"und","CodecID":"A_AAC","TrackType":"Audio","AudioChannels":6,"AudioSampleRate":48000,"AudioBitsPerSample":32,"TagName":"DURATION","TagString":"02:19:19.436000000","ImageSize":"1920x1036","Megapixels":2},"mediaInfo":{},"hasClosedCaptions":false,"DB":"9gM67-NoX","bumped":false,"HealthCheck":"","TranscodeDecisionMaker":"","holdUntil":0,"fileMedium":"video","video_codec_name":"h264","audio_codec_name":"","video_resolution":"1080p","lastHealthCheckDate":0,"lastTranscodeDate":0,"history":"","oldSize":0,"newSize":0,"videoStreamIndex":0,"duration":8359}}
+2023-07-06T08:39:38.716Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Transcodes during this job so far: 1
+2023-07-06T08:39:38.716Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[Step W02] [C2] Running pre-process file
+2023-07-06T08:39:38.717Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Checking files can be accessed
+2023-07-06T08:39:38.717Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Relevant paths can be accessed
+2023-07-06T08:39:38.718Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Source file: /temp/Everything Everywhere All at Once (2022) Bluray-1080p-TdarrCacheFile-2836Msm_e.mkv
+2023-07-06T08:39:38.718Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Cache folder: /temp
+2023-07-06T08:39:38.718Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[Step W03] [C2] Analysing file - running plugins
+2023-07-06T08:39:38.719Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:New cache file has already been scanned, no need to scan again
+2023-07-06T08:39:38.719Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Updating Node relay: Processing
+2023-07-06T08:39:38.720Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[1/2] Checking file frame count
+2023-07-06T08:39:38.720Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[2/2] Frame count 0
+2023-07-06T08:39:38.721Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Transcode task, determining transcode settings
+2023-07-06T08:39:38.721Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Plugin stack selected
+2023-07-06T08:39:38.721Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Plugin: plugin1:  Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-06T08:39:38.722Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[1/5] Reading plugin
+2023-07-06T08:39:38.722Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[2/5] Plugin read finished
+2023-07-06T08:39:38.723Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[3/5] Installing dependencies
+2023-07-06T08:39:38.723Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[4/5] Running plugin
+2023-07-06T08:39:38.724Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:{"pluginInputs":{}}
+2023-07-06T08:39:38.724Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[5/5] Running plugin finished
+2023-07-06T08:39:38.725Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Plugin: plugin2:  Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-06T08:39:38.725Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[1/5] Reading plugin
+2023-07-06T08:39:38.726Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[2/5] Plugin read finished
+2023-07-06T08:39:38.726Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[3/5] Installing dependencies
+2023-07-06T08:39:38.726Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[4/5] Running plugin
+2023-07-06T08:39:38.727Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:{"pluginInputs":{}}
+2023-07-06T08:39:38.727Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[5/5] Running plugin finished
+2023-07-06T08:39:38.727Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Plugin: etpKIa5Kz:  Tdarr_Plugin_00td_action_standardise_audio_stream_codecs
+2023-07-06T08:39:38.728Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[1/5] Reading plugin
+2023-07-06T08:39:38.728Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[2/5] Plugin read finished
+2023-07-06T08:39:38.728Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[3/5] Installing dependencies
+2023-07-06T08:39:38.728Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[4/5] Running plugin
+2023-07-06T08:39:38.729Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:{"pluginInputs":{"audioCodec":"aac"}}
+2023-07-06T08:39:38.729Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[5/5] Running plugin finished
+2023-07-06T08:39:38.729Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Plugin: OQpTwInrm:  Tdarr_Plugin_075a_Transcode_Customisable
+2023-07-06T08:39:38.730Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[1/5] Reading plugin
+2023-07-06T08:39:38.730Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[2/5] Plugin read finished
+2023-07-06T08:39:38.730Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[3/5] Installing dependencies
+2023-07-06T08:39:38.731Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[4/5] Running plugin
+2023-07-06T08:39:38.731Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:{"pluginInputs":{"codecs_to_exclude":"h264","cli":"handbrake","transcode_arguments":"-Z \"H.264 MKV 2160p60 4K\" -e x264 --all-subtitles --all-audio","output_container":".mkv"}}
+2023-07-06T08:39:38.731Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[5/5] Running plugin finished
+2023-07-06T08:39:38.732Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Plugin: plugin5:  Tdarr_Plugin_a9he_New_file_size_check
+2023-07-06T08:39:38.732Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[1/5] Reading plugin
+2023-07-06T08:39:38.734Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[2/5] Plugin read finished
+2023-07-06T08:39:38.734Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[3/5] Installing dependencies
+2023-07-06T08:39:38.736Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[4/5] Running plugin
+2023-07-06T08:39:38.736Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:{"pluginInputs":{"upperBound":110,"lowerBound":40}}
+2023-07-06T08:39:38.737Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[5/5] Running plugin finished
+2023-07-06T08:39:38.737Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Plugin: oAM1JWA4Q4:  Tdarr_Plugin_00td_filter_by_file_property
+2023-07-06T08:39:38.737Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[1/5] Reading plugin
+2023-07-06T08:39:38.738Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[2/5] Plugin read finished
+2023-07-06T08:39:38.738Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[3/5] Installing dependencies
+2023-07-06T08:39:38.738Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[4/5] Running plugin
+2023-07-06T08:39:38.739Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:{"pluginInputs":{"propertyName":"container","propertyValues":"mkv","exactMatch":true,"continueIfPropertyFound":false}}
+2023-07-06T08:39:38.739Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[5/5] Running plugin finished
+2023-07-06T08:39:38.739Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Worker config: {
+2023-07-06T08:39:38.739Z   "processFile": false,
+2023-07-06T08:39:38.739Z   "infoLog": "File property container of mkv being one of mkv has been found, breaking out of stack  \n"
+2023-07-06T08:39:38.739Z }
+2023-07-06T08:39:38.740Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Worker log: 
+2023-07-06T08:39:38.740Z Pre-processing - Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-06T08:39:38.740Z ☑File doesn't contain any unwanted image format streams.
+2023-07-06T08:39:38.740Z 
+2023-07-06T08:39:38.740Z Pre-processing - Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-06T08:39:38.740Z File has video in first stream
+2023-07-06T08:39:38.740Z  File meets conditions!
+2023-07-06T08:39:38.740Z 
+2023-07-06T08:39:38.740Z Pre-processing - Tdarr_Plugin_00td_action_standardise_audio_stream_codecs
+2023-07-06T08:39:38.740Z File does not have any audio streams which aren't in aac 
+2023-07-06T08:39:38.740Z 
+2023-07-06T08:39:38.740Z Pre-processing - Tdarr_Plugin_075a_Transcode_Customisable
+2023-07-06T08:39:38.740Z ☑File is already in h264! 
+2023-07-06T08:39:38.740Z 
+2023-07-06T08:39:38.740Z Pre-processing - Tdarr_Plugin_a9he_New_file_size_check
+2023-07-06T08:39:38.740Z New file has size 2628.146 MB which is 99% of original file size:  2629.445 MB
+2023-07-06T08:39:38.740Z Pre-processing - Tdarr_Plugin_00td_filter_by_file_property
+2023-07-06T08:39:38.740Z File property container of mkv being one of mkv has been found, breaking out of stack  
+2023-07-06T08:39:38.740Z 
+2023-07-06T08:39:38.740Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[Step W08] [-success-] Job end
+2023-07-06T08:39:38.741Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Transcoding successful. Finished job.
+2023-07-06T08:39:38.741Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:[Step W10] Worker processing end
+2023-07-06T08:39:38.741Z c8sERsCZof:Node[MyInternalNode]:Worker[musty-mutt]:Successfully updated server with verdict: transcodeSuccess

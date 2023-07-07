@@ -1,0 +1,1329 @@
+[Script Info]
+; Script downloaded from Crunchyroll with Auto Multi Downloader v2.0.3-beta [Roselia]
+; discord.gg/vostfr #tsundere-raws@irc.rizon.net
+ScaledBorderAndShadow: yes
+Title: Français (France)
+Original Script: cr_fr  [http://www.crunchyroll.com/user/cr_fr]
+Original Translation: 
+Original Editing: 
+Original Timing: 
+Synch Point: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 640
+PlayResY: 360
+Timer: 0.0000
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,Strikeout,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Default,Trebuchet MS,22,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,1,1,2,0002,0002,0025,1
+Style: Italique,Trebuchet MS,22,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,-1,0,0,100,100,0,0,1,1,1,2,0002,0002,0025,1
+Style: TiretsDefault,Trebuchet MS,22,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,1,1,1,0020,0002,0025,1
+Style: Sign,Arial,18,&H00FFFFFF,&H000000FF,&H00292929,&H00000000,0,0,0,0,100,100,0,0,1,1,0,2,0010,0010,0025,1
+
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 0,0:00:31.92,0:00:33.38,Italique,Koyomi,0000,0000,0000,,Je m’apprête à partir.
+Dialogue: 0,0:00:34.01,0:00:37.43,Italique,Koyomi,0000,0000,0000,,À mourir en étant\Nle plus heureux des hommes.
+Dialogue: 0,0:00:48.40,0:00:51.23,Default,Koyomi,0000,0000,0000,,Je suis encore en vie ?
+Dialogue: 0,0:01:14.67,0:01:16.18,Italique,Terminal IP,0000,0000,0000,,Journal de bord.
+Dialogue: 0,0:01:16.30,0:01:20.43,Italique,Terminal IP,0000,0000,0000,,Vous avez un rendez-vous,\Naujourd’hui.
+Dialogue: 0,0:01:20.85,0:01:23.98,Italique,Terminal IP,0000,0000,0000,,17 août, 10 heures.
+Dialogue: 0,0:01:24.14,0:01:25.81,Italique,Terminal IP,0000,0000,0000,,Carrefour de l’avenue Showa.
+Dialogue: 0,0:01:29.11,0:01:30.94,Default,Kazune,0000,0000,0000,,Tu ne t’en souvenais pas ?
+Dialogue: 0,0:01:31.23,0:01:31.98,Default,Koyomi,0000,0000,0000,,Non.
+Dialogue: 0,0:01:32.86,0:01:35.03,Default,Koyomi,0000,0000,0000,,Ce rendez-vous inconnu
+Dialogue: 0,0:01:35.19,0:01:37.74,Default,Koyomi,0000,0000,0000,,était inscrit dans mon terminal IP…
+Dialogue: 0,0:01:43.33,0:01:45.91,Default,Kazune,0000,0000,0000,,Je vois… C’est étrange.
+Dialogue: 0,0:01:47.12,0:01:49.13,Default,Kazune,0000,0000,0000,,C’est dans deux heures et demie.
+Dialogue: 0,0:01:50.29,0:01:54.46,Default,Ai,0000,0000,0000,,Ça a peut-être été enregistré\Npar un papy venant d’un monde parallèle ?
+Dialogue: 0,0:01:55.72,0:01:58.80,Default,Koyomi,0000,0000,0000,,Oh, c’est fort possible, oui !
+Dialogue: 0,0:01:59.09,0:02:00.30,Default,Ai,0000,0000,0000,,Ou alors…
+Dialogue: 0,0:02:00.76,0:02:04.97,Default,Ai,0000,0000,0000,,T’es devenu tellement sénile\Nque tu ne te souviens pas l’avoir noté.
+Dialogue: 0,0:02:05.43,0:02:06.35,Default,Kazune,0000,0000,0000,,Allons, Ai !
+Dialogue: 0,0:02:07.39,0:02:09.73,Default,Koyomi,0000,0000,0000,,Oui, ça doit sûrement être ça.
+Dialogue: 0,0:02:11.48,0:02:13.32,Default,Kazune,0000,0000,0000,,Et donc ? Tu comptes y aller ?
+Dialogue: 0,0:02:14.69,0:02:16.03,Default,Koyomi,0000,0000,0000,,J’y réfléchis…
+Dialogue: 0,0:02:17.03,0:02:19.32,Default,Koyomi,0000,0000,0000,,Puisque le rendez-vous est pris…
+Dialogue: 0,0:02:19.45,0:02:21.62,Default,Ai,0000,0000,0000,,Tu ne devrais pas y aller, papy !
+Dialogue: 0,0:02:23.37,0:02:24.29,Default,Koyomi,0000,0000,0000,,Et pourquoi ça ?
+Dialogue: 0,0:02:24.91,0:02:27.87,Default,Ai,0000,0000,0000,,Tu vas vite comprendre\Nque tu perds la boule.
+Dialogue: 0,0:02:28.04,0:02:30.25,Default,Kazune,0000,0000,0000,,Ai ! Ça suffit, maintenant !
+Dialogue: 0,0:02:30.88,0:02:33.84,Default,Kazune,0000,0000,0000,,Et pose ces chocolats,\Nje les garde pour le goûter.
+Dialogue: 0,0:02:36.88,0:02:39.84,Default,Kazune,0000,0000,0000,,Tu étais censée réviser\Ndans ta chambre, ce matin !
+Dialogue: 0,0:02:40.51,0:02:44.06,Default,Ai,0000,0000,0000,,Je sais, je prends juste\Ndu thé d’orge pour me motiver.
+Dialogue: 0,0:02:52.81,0:02:54.73,Default,Koyomi,0000,0000,0000,,Les écoliers de nos jours
+Dialogue: 0,0:02:54.90,0:02:58.11,Default,Koyomi,0000,0000,0000,,savent déjà ce que sont\Nles mondes parallèles, hein…
+Dialogue: 0,0:02:58.65,0:03:02.12,Default,Koyomi,0000,0000,0000,,Eri m’a dit qu’ils l’apprenaient\Ndès l’entrée en primaire.
+Dialogue: 0,0:03:03.70,0:03:04.66,Default,Koyomi,0000,0000,0000,,Je vois…
+Dialogue: 0,0:03:05.66,0:03:07.37,Default,Kazune,0000,0000,0000,,Tu devrais y aller, non ?
+Dialogue: 0,0:03:08.58,0:03:10.16,Default,Kazune,0000,0000,0000,,Ça doit t’intriguer.
+Dialogue: 0,0:03:11.25,0:03:13.67,Default,Kazune,0000,0000,0000,,Tu t’en souviendras\Npeut-être sur place.
+Dialogue: 0,0:03:14.59,0:03:17.42,Default,Koyomi,0000,0000,0000,,Tu as raison…\NC’est tout près, en plus.
+Dialogue: 0,0:03:24.35,0:03:25.47,Default,Koyomi,0000,0000,0000,,Bon, j’y vais.
+Dialogue: 0,0:03:25.76,0:03:27.77,Default,Kazune,0000,0000,0000,,D’accord. Sois prudent.
+Dialogue: 0,0:03:27.93,0:03:28.68,Default,Koyomi,0000,0000,0000,,Oui.
+Dialogue: 0,0:03:30.18,0:03:31.10,Default,Kazune,0000,0000,0000,,Attends !
+Dialogue: 0,0:03:32.48,0:03:34.81,Default,Kazune,0000,0000,0000,,Je vais te chercher ton chapeau.
+Dialogue: 0,0:03:35.86,0:03:37.36,Default,Koyomi,0000,0000,0000,,Donne-moi le tien.
+Dialogue: 0,0:03:38.99,0:03:39.82,Default,Kazune,0000,0000,0000,,Celui-ci ?
+Dialogue: 0,0:04:12.60,0:04:15.02,Default,Koyomi,0000,0000,0000,,Dis-moi, que fais-tu ici ?
+Dialogue: 0,0:04:15.56,0:04:16.56,Default,Koyomi,0000,0000,0000,,C’est dangereux.
+Dialogue: 0,0:04:20.40,0:04:21.99,Default,Shiori,0000,0000,0000,,Tu es venu me chercher ?
+Dialogue: 0,0:04:24.07,0:04:26.62,Default,Koyomi,0000,0000,0000,,Oui, c’est pour ça que je suis là.
+Dialogue: 0,0:04:51.56,0:04:53.18,Italique,Feu,0000,0000,0000,,Le feu va passer au rouge.
+Dialogue: 0,0:04:53.60,0:04:56.35,Italique,Feu,0000,0000,0000,,Ne restez pas\Nsur le passage piéton.
+Dialogue: 0,0:05:02.19,0:05:05.40,Italique,Feu,0000,0000,0000,,Ne vous arrêtez pas en traversant.
+Dialogue: 0,0:05:12.50,0:05:14.46,Default,Koyomi,0000,0000,0000,,J’ai fait un transfert parallèle ?
+Dialogue: 0,0:05:15.46,0:05:17.00,Default,Koyomi,0000,0000,0000,,Montre-moi l’IEPP.
+Dialogue: 0,0:05:23.17,0:05:23.97,Default,Koyomi,0000,0000,0000,,Une erreur ?
+Dialogue: 0,0:05:25.17,0:05:26.93,Default,Koyomi,0000,0000,0000,,Mais enfin, où suis-je ?
+Dialogue: 0,0:05:29.39,0:05:36.35,Sign,Sign,0000,0000,0000,,{\an8\fad(1600,2000)\c&H000000&\bord0\b0\pos(132.444,147.556)}TO EVERY YOU\NI’VE LOVED BEFORE{\b0}
+Dialogue: 0,0:05:39.15,0:05:42.82,Italique,Koyomi,0000,0000,0000,,Dès leur naissance,\Nles humains font d’innombrables choix.
+Dialogue: 0,0:05:44.40,0:05:46.03,Italique,Koyomi,0000,0000,0000,,Les « mondes parallèles »
+Dialogue: 0,0:05:46.28,0:05:49.07,Italique,Koyomi,0000,0000,0000,,sont ceux créés en marge\Nde ces choix effectués.
+Dialogue: 0,0:05:49.70,0:05:50.53,Italique,Koyomi,0000,0000,0000,,Il faut savoir
+Dialogue: 0,0:05:50.83,0:05:54.20,Italique,Koyomi,0000,0000,0000,,que leur existence\Na été scientifiquement prouvée.
+Dialogue: 0,0:05:57.00,0:06:00.84,Italique,Koyomi,0000,0000,0000,,On appelle le voyage entre ces mondes\Nle « transfert parallèle ».
+Dialogue: 0,0:06:01.54,0:06:05.26,Italique,Koyomi,0000,0000,0000,,L’enveloppe corporelle\Nne voyage pas entre ces mondes.
+Dialogue: 0,0:06:05.59,0:06:08.26,Italique,Koyomi,0000,0000,0000,,Seule la conscience en est capable.
+Dialogue: 0,0:06:09.80,0:06:13.47,Italique,Koyomi,0000,0000,0000,,Peu de personnes se rendent compte\Ndes transferts parallèles
+Dialogue: 0,0:06:13.89,0:06:15.47,Italique,Koyomi,0000,0000,0000,,qui ont lieu chaque jour.
+Dialogue: 0,0:06:17.18,0:06:20.02,Italique,Koyomi,0000,0000,0000,,Quand une chose\Nque vous avez rangée disparaît
+Dialogue: 0,0:06:20.23,0:06:22.94,Italique,Koyomi,0000,0000,0000,,pour réapparaître\Nquand vous revérifiez,
+Dialogue: 0,0:06:23.32,0:06:26.07,Italique,Koyomi,0000,0000,0000,,un transfert parallèle\Nen est souvent la cause.
+Dialogue: 0,0:06:28.61,0:06:30.49,Italique,Koyomi,0000,0000,0000,,Vous l’avez rangée\Ndans le monde 0,
+Dialogue: 0,0:06:30.82,0:06:35.12,Italique,Koyomi,0000,0000,0000,,puis elle a été transférée\Ndans le monde 1 où elle ne l’était pas,
+Dialogue: 0,0:06:35.45,0:06:37.16,Italique,Koyomi,0000,0000,0000,,pour revenir dans le monde 0.
+Dialogue: 0,0:06:41.21,0:06:44.63,Italique,Koyomi,0000,0000,0000,,Plus vous vous éloignez de 0,\Nplus les mondes diffèrent.
+Dialogue: 0,0:06:46.09,0:06:48.42,Italique,Koyomi,0000,0000,0000,,Vous pourriez avoir\Nun autre travail,
+Dialogue: 0,0:06:48.80,0:06:50.51,Italique,Koyomi,0000,0000,0000,,voire un partenaire différent.
+Dialogue: 0,0:06:51.72,0:06:55.10,Italique,Koyomi,0000,0000,0000,,Mais tous ces mondes restent\Nla conséquence de vos choix.
+Dialogue: 0,0:06:56.93,0:06:59.64,Italique,Koyomi,0000,0000,0000,,J’avais à peine 7 ans\Nquand j’ai dû faire
+Dialogue: 0,0:06:59.81,0:07:01.27,Italique,Koyomi,0000,0000,0000,,mon premier choix crucial.
+Dialogue: 0,0:07:03.40,0:07:04.61,Italique,Shôdai,0000,0000,0000,,Papa…
+Dialogue: 0,0:07:04.77,0:07:06.11,Italique,Mayumi,0000,0000,0000,,Ou maman…
+Dialogue: 0,0:07:06.53,0:07:07.90,Italique,Parents,0000,0000,0000,,Tu veux vivre avec qui ?
+Dialogue: 0,0:07:08.49,0:07:12.11,Italique,Koyomi,0000,0000,0000,,Je ne me souviens plus où\Nni comment ils me l’ont annoncé,
+Dialogue: 0,0:07:12.74,0:07:14.91,Italique,Koyomi,0000,0000,0000,,mais ça illustre bien mon propos.
+Dialogue: 0,0:07:15.95,0:07:18.91,Italique,Koyomi,0000,0000,0000,,Je me demande ce que\Nj’ai pu penser ou répondre.
+Dialogue: 0,0:07:20.62,0:07:23.29,Italique,Koyomi,0000,0000,0000,,Même après le divorce,\Nplusieurs fois par mois,
+Dialogue: 0,0:07:23.42,0:07:25.92,Italique,Koyomi,0000,0000,0000,,on sortait ensemble\Npour faire du shopping.
+Dialogue: 0,0:07:26.75,0:07:29.38,Italique,Koyomi,0000,0000,0000,,Mais quand ces belles journées\Nse terminaient,
+Dialogue: 0,0:07:29.76,0:07:34.43,Italique,Koyomi,0000,0000,0000,,on quittait mon père pour rentrer\Nchez mes grands-parents maternels.
+Dialogue: 0,0:07:35.72,0:07:37.93,Italique,Koyomi,0000,0000,0000,,Leur grande bâtisse était vieille…
+Dialogue: 0,0:07:38.22,0:07:41.64,Italique,Yasuto,0000,0000,0000,,« Elle tombait déjà en ruines\Nquand j’étais enfant. »
+Dialogue: 0,0:07:41.98,0:07:43.77,Italique,Koyomi,0000,0000,0000,,Papy s’en plaignait aussi.
+Dialogue: 0,0:07:45.23,0:07:48.03,Italique,Koyomi,0000,0000,0000,,C’était une maison de plain-pied\Navec deux entrées,
+Dialogue: 0,0:07:48.53,0:07:50.03,Italique,Koyomi,0000,0000,0000,,mais pas une bifamiliale.
+Dialogue: 0,0:07:50.40,0:07:54.57,Italique,Mayumi,0000,0000,0000,,« On n’ouvre l’avant qu’au Nouvel An\Net pour les occasions spéciales.
+Dialogue: 0,0:07:55.12,0:07:57.83,Italique,Mayumi,0000,0000,0000,,Au quotidien,\Non vit dans la partie du fond. »
+Dialogue: 0,0:07:59.12,0:08:03.04,Italique,Koyomi,0000,0000,0000,,Mes grands-parents y habitaient\Navec leur gros chien.
+Dialogue: 0,0:08:05.54,0:08:08.05,Italique,Koyomi,0000,0000,0000,,Il n’y avait ni poisson dans l’étang
+Dialogue: 0,0:08:08.46,0:08:10.21,Italique,Koyomi,0000,0000,0000,,ni meubles dans les pièces.
+Dialogue: 0,0:08:11.30,0:08:14.05,Italique,Koyomi,0000,0000,0000,,Ce n’était qu’un grand espace vide\Navec un toit.
+Dialogue: 0,0:08:31.99,0:08:34.41,Default,Yasuto,0000,0000,0000,,Qu’est-ce que c’est, Koyomi ?
+Dialogue: 0,0:08:34.57,0:08:37.78,Default,Koyomi,0000,0000,0000,,Papa me l’a acheté\Nquand je suis allé le voir, l’autre jour.
+Dialogue: 0,0:08:37.91,0:08:39.99,Default,Koyomi,0000,0000,0000,,C’est mon cadeau d’anniversaire !
+Dialogue: 0,0:08:50.84,0:08:51.76,Default,Koyomi,0000,0000,0000,,Yuno !
+Dialogue: 0,0:08:53.26,0:08:54.22,Default,Koyomi,0000,0000,0000,,Pan.
+Dialogue: 0,0:08:57.30,0:08:59.10,Default,Yasuto,0000,0000,0000,,Tu es encore trop petit pour ça.
+Dialogue: 0,0:09:00.10,0:09:03.27,Default,Yasuto,0000,0000,0000,,C’est pour les enfants\Nde plus de 10 ans !
+Dialogue: 0,0:09:05.06,0:09:07.44,Default,Koyomi,0000,0000,0000,,Mais tous mes copains en ont…
+Dialogue: 0,0:09:07.86,0:09:10.73,Default,Yasuto,0000,0000,0000,,Tu n’as pas à copier\Nles bêtises des autres.
+Dialogue: 0,0:09:10.86,0:09:12.07,Default,Koyomi,0000,0000,0000,,Papy !
+Dialogue: 0,0:09:22.45,0:09:23.66,Default,Mayumi,0000,0000,0000,,Koyomi ?
+Dialogue: 0,0:09:24.75,0:09:26.12,Default,Mayumi,0000,0000,0000,,Ça va pas ?
+Dialogue: 0,0:09:29.88,0:09:33.42,Default,Koyomi,0000,0000,0000,,Je veux plus jamais lui parler\Nde toute ma vie !
+Dialogue: 0,0:10:08.79,0:10:10.08,Default,Koyomi,0000,0000,0000,,Maman ?
+Dialogue: 0,0:10:11.09,0:10:12.04,Default,Mayumi,0000,0000,0000,,Quoi ?
+Dialogue: 0,0:10:12.21,0:10:15.21,Default,Koyomi,0000,0000,0000,,Je peux aller promener Yuno ?
+Dialogue: 0,0:10:15.42,0:10:16.59,Default,Mayumi,0000,0000,0000,,Bien sûr.
+Dialogue: 0,0:10:17.05,0:10:19.59,Default,Mayumi,0000,0000,0000,,Dépêche-toi, on doit se préparer\Npour la veillée.
+Dialogue: 0,0:10:34.02,0:10:34.86,Default,Koyomi,0000,0000,0000,,Yuno !
+Dialogue: 0,0:10:38.11,0:10:39.28,Default,Koyomi,0000,0000,0000,,C’est pas vrai…
+Dialogue: 0,0:10:40.36,0:10:42.24,Default,Koyomi,0000,0000,0000,,Faut pas partir comme ça…
+Dialogue: 0,0:10:42.41,0:10:43.87,Default,Koyomi,0000,0000,0000,,Yuno !
+Dialogue: 0,0:10:44.03,0:10:44.87,Default,Koyomi,0000,0000,0000,,Attends, Yuno !
+Dialogue: 0,0:10:45.20,0:10:45.91,Default,Koyomi,0000,0000,0000,,Attends !
+Dialogue: 0,0:11:15.11,0:11:19.07,Default,Koyomi,0000,0000,0000,,Dis, tu peux ouvrir la cabine,\Ns’il te plaît ?
+Dialogue: 0,0:11:28.37,0:11:29.37,Default,Koyomi,0000,0000,0000,,Merci.
+Dialogue: 0,0:11:33.50,0:11:35.21,Default,Koyomi,0000,0000,0000,,Hé, attends !
+Dialogue: 0,0:12:29.06,0:12:32.94,Sign,Sign,0000,0000,0000,,{\an8}INSTITUT DE RECHERCHE\NEN SCIENCES SPÉCULATIVES
+Dialogue: 0,0:12:33.85,0:12:37.61,Default,Koyomi,0000,0000,0000,,L’institut de recherche ?\NPapa travaille ici.
+Dialogue: 0,0:12:38.94,0:12:40.94,Default,Koyomi,0000,0000,0000,,Euh… Excusez-moi ?
+Dialogue: 0,0:12:42.28,0:12:45.32,Default,Koyomi,0000,0000,0000,,Puis-je emprunter votre téléphone,\Ns’il vous plaît ?
+Dialogue: 0,0:12:46.82,0:12:50.95,Default,Mayumi,0000,0000,0000,,Quelle surprise, je ne m’attendais pas\Nà ce que tu me téléphones.
+Dialogue: 0,0:12:51.20,0:12:54.37,Default,Mayumi,0000,0000,0000,,Tu étais au laboratoire,\Ntu aurais pu appeler ton père.
+Dialogue: 0,0:12:54.54,0:12:58.00,Default,Koyomi,0000,0000,0000,,Je ne connais pas son numéro.
+Dialogue: 0,0:12:58.25,0:13:00.13,Default,Mayumi,0000,0000,0000,,Ah, parce que tu connais le mien ?
+Dialogue: 0,0:13:00.25,0:13:03.88,Default,Koyomi,0000,0000,0000,,Je m’en souviens, oui.\NEn même temps, je t’appelle souvent.
+Dialogue: 0,0:13:04.80,0:13:07.97,Default,Mayumi,0000,0000,0000,,Tu en dis,\Ndes choses étranges, mon fils.
+Dialogue: 0,0:13:13.18,0:13:15.19,Default,Mayumi,0000,0000,0000,,Qu’est-ce que tu fais, Koyomi ?
+Dialogue: 0,0:13:16.15,0:13:18.36,Default,Koyomi,0000,0000,0000,,Oh, rien de spécial !
+Dialogue: 0,0:13:24.95,0:13:27.78,Default,Mayumi,0000,0000,0000,,C’est moi !\NJ’ai amené Koyomi, ce soir !
+Dialogue: 0,0:13:27.95,0:13:28.87,Default,Koyomi,0000,0000,0000,,« Ce soir » ?
+Dialogue: 0,0:13:30.62,0:13:32.24,Default,Yasuto,0000,0000,0000,,Oh, bonsoir, Koyomi !
+Dialogue: 0,0:13:32.70,0:13:34.50,Default,Mayumi,0000,0000,0000,,Maman est dans la cuisine ?
+Dialogue: 0,0:13:34.71,0:13:35.75,Default,Yasuto,0000,0000,0000,,Oui.
+Dialogue: 0,0:13:36.75,0:13:40.42,Default,Yasuto,0000,0000,0000,,Ça faisait longtemps !\NAlors, tu vas bien ?
+Dialogue: 0,0:13:42.42,0:13:43.53,Italique,Koyomi,0000,0000,0000,,Ce monde…
+Dialogue: 0,0:13:44.03,0:13:45.75,Italique,Koyomi,0000,0000,0000,,n’est pas celui d’où je viens.
+Dialogue: 0,0:13:48.39,0:13:52.81,Italique,Koyomi,0000,0000,0000,,C’est celui où j’ai choisi\Nde vivre avec mon père.
+Dialogue: 0,0:13:53.18,0:13:56.52,Italique,Koyomi,0000,0000,0000,,Et surtout, c’est un monde\Noù papy est encore en vie.
+Dialogue: 0,0:13:56.64,0:13:59.23,Default,Grand-mère,0000,0000,0000,,Sache que\Ntu peux venir quand tu veux !
+Dialogue: 0,0:14:00.27,0:14:04.19,Default,Yasuto,0000,0000,0000,,Bon, je devrais aller nourrir Yuno.
+Dialogue: 0,0:14:06.74,0:14:08.28,Default,Koyomi,0000,0000,0000,,Je t’accompagne !
+Dialogue: 0,0:14:10.37,0:14:13.20,Default,Yasuto,0000,0000,0000,,Bonne idée !\NSuis-moi.
+Dialogue: 0,0:14:19.25,0:14:22.54,Default,Yasuto,0000,0000,0000,,Tu sais quoi, Yuno ?\NKoyomi est venu, aujourd’hui.
+Dialogue: 0,0:14:31.97,0:14:33.18,Default,Koyomi,0000,0000,0000,,Papy…
+Dialogue: 0,0:14:33.43,0:14:34.56,Default,Yasuto,0000,0000,0000,,Ah, Koyomi !
+Dialogue: 0,0:14:34.89,0:14:35.93,Default,Yasuto,0000,0000,0000,,Ça va pas ?
+Dialogue: 0,0:14:36.98,0:14:40.19,Default,Koyomi,0000,0000,0000,,Est-ce que je peux dormir avec toi,\Nce soir ?
+Dialogue: 0,0:14:40.65,0:14:42.56,Default,Yasuto,0000,0000,0000,,Oui, bien sûr.
+Dialogue: 0,0:14:45.03,0:14:46.19,Default,Yasuto,0000,0000,0000,,J’y pense…
+Dialogue: 0,0:14:46.40,0:14:49.82,Default,Yasuto,0000,0000,0000,,C’est la première fois que tu viens\Ndepuis tes 8 ans.
+Dialogue: 0,0:14:58.21,0:15:00.00,Default,Koyomi,0000,0000,0000,,Yuno est mort, hein…
+Dialogue: 0,0:15:01.00,0:15:02.00,Default,Yasuto,0000,0000,0000,,Hélas…
+Dialogue: 0,0:15:05.13,0:15:08.09,Default,Koyomi,0000,0000,0000,,On ne pourra pas le ramener,\Nquoi qu’on fasse ?
+Dialogue: 0,0:15:08.80,0:15:10.26,Default,Yasuto,0000,0000,0000,,C’est malheureux,
+Dialogue: 0,0:15:10.43,0:15:14.35,Default,Yasuto,0000,0000,0000,,mais les morts n’ont aucune chance\Nde revenir à la vie.
+Dialogue: 0,0:15:19.10,0:15:21.23,Default,Koyomi,0000,0000,0000,,Pardonne-moi, papy…
+Dialogue: 0,0:15:21.85,0:15:24.82,Default,Koyomi,0000,0000,0000,,On s’est disputés\Njuste avant de se quitter…
+Dialogue: 0,0:15:26.65,0:15:27.73,Default,Yasuto,0000,0000,0000,,Disputés ?
+Dialogue: 0,0:15:28.03,0:15:31.74,Default,Yasuto,0000,0000,0000,,On s’est disputés\Nla dernière fois que tu es venu ?
+Dialogue: 0,0:15:35.08,0:15:37.66,Default,Yasuto,0000,0000,0000,,Je t’ai réprimandé, mon bonhomme ?
+Dialogue: 0,0:15:40.58,0:15:43.96,Default,Yasuto,0000,0000,0000,,Même si c’est le cas,\Nje t’aime toujours autant, tu sais.
+Dialogue: 0,0:15:44.08,0:15:45.63,Default,Yasuto,0000,0000,0000,,Tu n’as pas à t’en faire.
+Dialogue: 0,0:15:46.17,0:15:48.51,Default,Koyomi,0000,0000,0000,,Vraiment ? Pourquoi ?
+Dialogue: 0,0:15:50.34,0:15:51.63,Default,Yasuto,0000,0000,0000,,Eh bien…
+Dialogue: 0,0:15:52.59,0:15:55.01,Default,Yasuto,0000,0000,0000,,Koyomi,\Nest-ce que tu préfères être triste
+Dialogue: 0,0:15:55.14,0:15:57.76,Default,Yasuto,0000,0000,0000,,ou voir quelqu’un d’autre l’être ?
+Dialogue: 0,0:15:58.56,0:16:02.44,Default,Koyomi,0000,0000,0000,,Bah, c’est évident…\NJe veux pas être triste, moi !
+Dialogue: 0,0:16:03.23,0:16:05.65,Default,Yasuto,0000,0000,0000,,Je comprends.\NTout le monde pense pareil.
+Dialogue: 0,0:16:06.69,0:16:10.44,Default,Yasuto,0000,0000,0000,,C’est pour ça que les gens\Nchagrinent les autres
+Dialogue: 0,0:16:10.57,0:16:13.45,Default,Yasuto,0000,0000,0000,,à cause de leurs humeurs passagères,\Npar exemple.
+Dialogue: 0,0:16:15.03,0:16:17.45,Default,Yasuto,0000,0000,0000,,Puis, ils se rendent compte\Nde leur erreur,
+Dialogue: 0,0:16:17.62,0:16:21.33,Default,Yasuto,0000,0000,0000,,et se demandent pourquoi\Nils ont fait une chose pareille.
+Dialogue: 0,0:16:24.00,0:16:27.25,Default,Yasuto,0000,0000,0000,,Malheureusement, ils ne peuvent pas\Nretourner en arrière
+Dialogue: 0,0:16:27.38,0:16:30.55,Default,Yasuto,0000,0000,0000,,et continuent à souffrir\Nde ces mêmes regrets.
+Dialogue: 0,0:16:31.72,0:16:34.55,Default,Yasuto,0000,0000,0000,,Ça peut ronger quelqu’un, tu sais.
+Dialogue: 0,0:16:37.80,0:16:40.06,Default,Yasuto,0000,0000,0000,,Comme je l’ai déjà vécu,
+Dialogue: 0,0:16:40.18,0:16:44.60,Default,Yasuto,0000,0000,0000,,je préférais te prévenir, pour que\Ntu ne finisses pas dans cette situation.
+Dialogue: 0,0:16:44.98,0:16:46.65,Default,Yasuto,0000,0000,0000,,Parce que je t’aime, Koyomi.
+Dialogue: 0,0:16:47.61,0:16:48.73,Default,Koyomi,0000,0000,0000,,Vraiment ?
+Dialogue: 0,0:16:49.40,0:16:51.07,Default,Yasuto,0000,0000,0000,,Bien sûr !
+Dialogue: 0,0:16:52.74,0:16:56.87,Default,Yasuto,0000,0000,0000,,Mais n’oublie pas\Nqu’il m’arrive aussi de me tromper.
+Dialogue: 0,0:16:57.78,0:17:01.45,Default,Yasuto,0000,0000,0000,,En fin de compte, c’est à toi\Nde faire tes propres choix.
+Dialogue: 0,0:17:02.37,0:17:05.42,Default,Yasuto,0000,0000,0000,,Tu vas expérimenter\Ntant de choses en grandissant…
+Dialogue: 0,0:17:06.12,0:17:11.00,Default,Yasuto,0000,0000,0000,,Peut-être même des choses inconnues\Nque tu seras le premier à découvrir.
+Dialogue: 0,0:17:11.59,0:17:15.18,Default,Yasuto,0000,0000,0000,,C’est dire le nombre de possibilités\Nqui s’offrent à toi !
+Dialogue: 0,0:17:16.18,0:17:17.64,Default,Koyomi,0000,0000,0000,,Des possibilités…
+Dialogue: 0,0:17:18.97,0:17:19.97,Italique,Koyomi,0000,0000,0000,,Après ça,
+Dialogue: 0,0:17:20.22,0:17:22.98,Italique,Koyomi,0000,0000,0000,,papy m’expliqua\Nl’importance des possibilités,
+Dialogue: 0,0:17:23.39,0:17:26.52,Italique,Koyomi,0000,0000,0000,,mais à cet âge,\Nj’avais du mal à tout saisir.
+Dialogue: 0,0:17:28.98,0:17:32.90,Default,Yasuto,0000,0000,0000,,Je peine à trouver\Ndes mots simples pour te l’expliquer.
+Dialogue: 0,0:17:33.94,0:17:35.53,Default,Yasuto,0000,0000,0000,,Tu es un garçon intelligent,
+Dialogue: 0,0:17:35.65,0:17:38.66,Default,Yasuto,0000,0000,0000,,quand tu l’auras compris,\Ntransmets-le aux autres.
+Dialogue: 0,0:17:39.62,0:17:40.37,Default,Koyomi,0000,0000,0000,,D’accord.
+Dialogue: 0,0:17:41.45,0:17:45.41,Default,Yasuto,0000,0000,0000,,Sache que même si tu te trompes,\Njamais je ne te détesterai.
+Dialogue: 0,0:17:45.87,0:17:48.88,Default,Yasuto,0000,0000,0000,,Et lorsqu’il m’arrivera\Nde faire des erreurs,
+Dialogue: 0,0:17:49.04,0:17:51.50,Default,Yasuto,0000,0000,0000,,ne te mets pas à me détester,\Nd’accord ?
+Dialogue: 0,0:17:54.88,0:17:57.22,Default,Koyomi,0000,0000,0000,,Moi aussi, je t’aime, papy.
+Dialogue: 0,0:18:18.74,0:18:19.82,Default,Mayumi,0000,0000,0000,,Bonjour.
+Dialogue: 0,0:18:22.99,0:18:24.37,Default,Koyomi,0000,0000,0000,,Maman ?
+Dialogue: 0,0:18:28.50,0:18:29.58,Default,Mayumi,0000,0000,0000,,Tu es surpris ?
+Dialogue: 0,0:18:30.46,0:18:31.84,Default,Koyomi,0000,0000,0000,,Où est papy ?
+Dialogue: 0,0:18:32.84,0:18:35.21,Default,Mayumi,0000,0000,0000,,Les messieurs\Nl’ont fait tout beau,
+Dialogue: 0,0:18:35.34,0:18:37.72,Default,Mayumi,0000,0000,0000,,il dort paisiblement\Ndans le grand salon.
+Dialogue: 0,0:18:43.01,0:18:44.26,Default,Mayumi,0000,0000,0000,,Tu es sûr que ça va ?
+Dialogue: 0,0:18:45.02,0:18:47.64,Default,Koyomi,0000,0000,0000,,Tu sais, maman, hier…
+Dialogue: 0,0:18:47.89,0:18:49.85,Default,Mayumi,0000,0000,0000,,Tu n’as pas à avoir honte.
+Dialogue: 0,0:18:50.06,0:18:51.65,Default,Mayumi,0000,0000,0000,,Dans un moment pareil,
+Dialogue: 0,0:18:51.98,0:18:54.94,Default,Mayumi,0000,0000,0000,,c’est normal\Nde ne pas vouloir dormir seul.
+Dialogue: 0,0:18:56.82,0:18:57.65,Default,Koyomi,0000,0000,0000,,D’accord.
+Dialogue: 0,0:18:58.11,0:18:59.95,Default,Mayumi,0000,0000,0000,,Préparons-nous, maintenant.
+Dialogue: 0,0:19:00.66,0:19:04.28,Default,Mayumi,0000,0000,0000,,On se doit de lui faire\Nde beaux adieux.
+Dialogue: 0,0:19:08.79,0:19:11.21,Italique,Koyomi,0000,0000,0000,,Le grand-père\Nde la photo sur l’autel
+Dialogue: 0,0:19:11.42,0:19:13.29,Italique,Koyomi,0000,0000,0000,,avait un air grincheux,
+Dialogue: 0,0:19:13.67,0:19:17.05,Italique,Koyomi,0000,0000,0000,,et ne ressemblait pas\Nau gentil papy de la veille.
+Dialogue: 0,0:19:18.22,0:19:21.93,Italique,Koyomi,0000,0000,0000,,L’image ne représentait pas non plus\Nla personne dans le cercueil.
+Dialogue: 0,0:19:27.56,0:19:29.48,Default,Koyomi,0000,0000,0000,,J’ai rempli le seau !
+Dialogue: 0,0:19:29.69,0:19:31.90,Default,Mayumi,0000,0000,0000,,Merci ! Pose-le ici.
+Dialogue: 0,0:19:32.60,0:19:33.31,Default,Koyomi,0000,0000,0000,,Voilà.
+Dialogue: 0,0:19:33.52,0:19:37.23,Default,Mayumi,0000,0000,0000,,Dis-moi, tu peux débarrasser\Nle haut de cette armoire ?
+Dialogue: 0,0:19:37.82,0:19:38.53,Default,Koyomi,0000,0000,0000,,D’accord.
+Dialogue: 0,0:19:38.82,0:19:40.20,Default,Grand-mère,0000,0000,0000,,Fais attention.
+Dialogue: 0,0:19:40.61,0:19:41.53,Default,Koyomi,0000,0000,0000,,Oui !
+Dialogue: 0,0:19:46.03,0:19:47.70,Default,Mayumi,0000,0000,0000,,Regarde, maman !
+Dialogue: 0,0:19:47.87,0:19:51.37,Default,Grand-mère,0000,0000,0000,,Oh, il avait gardé ça ?
+Dialogue: 0,0:19:51.54,0:19:52.33,Default,Mayumi,0000,0000,0000,,Je la mets où ?
+Dialogue: 0,0:19:52.58,0:19:55.46,Default,Grand-mère,0000,0000,0000,,Tu peux la laisser ici,\Nje n’utilise pas cette pièce.
+Dialogue: 0,0:19:57.17,0:20:01.97,Sign,Sign,0000,0000,0000,,{\an1\pos(211.78,111.46)\frz0.193\fnComic Sans MS\fs20\bord0\fad(650,0)\c&H000000&}Joyeux anniversaire, Koyomi.\NDéjà 10 ans ! Voilà ton cadeau.\NNe tire pas sur les gens\Nni sur les animaux.
+Dialogue: 0,0:19:57.17,0:20:01.97,Sign,Sign,0000,0000,0000,,{\pos(315.84,155.23)\frz359.7\fnComic Sans MS\fs20\bord0\fad(650,0)\c&H000000&}Ton papy
+Dialogue: 0,0:20:01.97,0:20:03.72,Sign,Sign,0000,0000,0000,,{\fnComic Sans MS\c&H000000&\fs45\bord0\frz359.7\pos(466.488,201.556)}Ton papy
+Dialogue: 0,0:20:02.88,0:20:03.72,Italique,Koyomi,0000,0000,0000,,À cette époque,
+Dialogue: 0,0:20:04.39,0:20:08.72,Italique,Koyomi,0000,0000,0000,,les images de ces trois papys\Nne faisaient qu’une dans ma tête.
+Dialogue: 0,0:20:13.10,0:20:17.27,Italique,Mère Kazune,0000,0000,0000,,C’est la première fois que\Nje pris conscience des mondes parallèles.
+Dialogue: 0,0:20:18.73,0:20:22.45,Italique,Koyomi,0000,0000,0000,,Le Yuno de mon monde a rendu\Nson dernier souffle deux ans plus tard,
+Dialogue: 0,0:20:22.90,0:20:25.87,Italique,Koyomi,0000,0000,0000,,et repose à l’endroit\Nque j’avais vu dans l’autre.
+Dialogue: 0,0:20:28.12,0:20:30.54,Italique,Koyomi,0000,0000,0000,,L’existence des mondes parallèles
+Dialogue: 0,0:20:30.70,0:20:34.58,Italique,Koyomi,0000,0000,0000,,a été démontrée grâce à l’institut\Ndes sciences spéculatives,
+Dialogue: 0,0:20:34.88,0:20:37.38,Italique,Koyomi,0000,0000,0000,,là où travaille mon père.
+Dialogue: 0,0:20:38.84,0:20:42.67,Italique,Koyomi,0000,0000,0000,,Le résultat de ses recherches\Na attiré l’attention du monde entier.
+Dialogue: 0,0:20:43.26,0:20:45.26,Italique,Koyomi,0000,0000,0000,,C’est sûrement ce père brillant
+Dialogue: 0,0:20:45.80,0:20:49.64,Italique,Koyomi,0000,0000,0000,,qui m’a transmis la faculté\Nd’avoir de bonnes notes sans étudier.
+Dialogue: 0,0:20:51.52,0:20:52.27,Italique,Koyomi,0000,0000,0000,,Cependant…
+Dialogue: 0,0:20:52.56,0:20:54.60,Italique,Koyomi,0000,0000,0000,,être le premier de la classe
+Dialogue: 0,0:20:54.73,0:20:57.69,Italique,Koyomi,0000,0000,0000,,s’accompagne toujours\Nd’une adolescence solitaire.
+Dialogue: 0,0:20:59.65,0:21:03.20,Italique,Koyomi,0000,0000,0000,,Du moins, à l’époque,\Nj’en étais persuadé.
+Dialogue: 0,0:21:04.45,0:21:07.70,Default,Mayumi,0000,0000,0000,,« Koyomi, tu n’as pas beaucoup d’amis,\Non dirait. »
+Dialogue: 0,0:21:07.95,0:21:11.29,Italique,Koyomi,0000,0000,0000,,Voilà ce que ma mère me disait,\Nmais elle se trompait.
+Dialogue: 0,0:21:12.00,0:21:15.29,Italique,Koyomi,0000,0000,0000,,Au collège, j’étais effectivement\Nun garçon isolé.
+Dialogue: 0,0:21:16.29,0:21:17.58,Italique,Koyomi,0000,0000,0000,,Je me suis donc juré
+Dialogue: 0,0:21:17.88,0:21:20.00,Italique,Koyomi,0000,0000,0000,,de trouver des amis au lycée.
+Dialogue: 0,0:21:21.13,0:21:21.92,Italique,Koyomi,0000,0000,0000,,C’est pour ça…
+Dialogue: 0,0:21:22.42,0:21:25.01,Italique,Koyomi,0000,0000,0000,,que j’ai poliment décliné\Nquand on m’a proposé
+Dialogue: 0,0:21:25.13,0:21:29.01,Italique,Koyomi,0000,0000,0000,,d’être le représentant des nouveaux élèves\Nà la cérémonie de rentrée.
+Dialogue: 0,0:21:32.31,0:21:34.56,Italique,Koyomi,0000,0000,0000,,Ça m’évitait\Nqu’on me trouve bizarre.
+Dialogue: 0,0:21:36.23,0:21:39.36,Italique,Koyomi,0000,0000,0000,,J’ai cru que je pouvais me faire\Ndes amis facilement.
+Dialogue: 0,0:21:40.69,0:21:41.32,Italique,Koyomi,0000,0000,0000,,Cependant…
+Dialogue: 0,0:21:42.40,0:21:44.32,Italique,Koyomi,0000,0000,0000,,ce ne fut pas aussi simple.
+Dialogue: 0,0:21:52.33,0:21:57.83,Sign,Sign,0000,0000,0000,,{\fnTimes New Roman\fs28\c&H000000&\bord3\3c&HEDEBEB&\frx2\fry354\pos(219.2,115.8)\frz2.48}Examen d’entrée à l’université\NListe d’universités nationales et publiques
+Dialogue: 0,0:21:52.91,0:21:54.70,Italique,Koyomi,0000,0000,0000,,Dans cette école préparatoire,
+Dialogue: 0,0:21:54.87,0:21:57.33,Italique,Koyomi,0000,0000,0000,,personne ne se préoccupait\Ndes autres.
+Dialogue: 0,0:21:58.54,0:22:00.21,Italique,Koyomi,0000,0000,0000,,Une fois de plus,
+Dialogue: 0,0:22:00.46,0:22:03.38,Italique,Koyomi,0000,0000,0000,,je choisis\Nde mener une vie scolaire solitaire.
+Dialogue: 0,0:22:10.43,0:22:11.39,Default,Kazune,0000,0000,0000,,Koyomi ?
+Dialogue: 0,0:22:15.85,0:22:18.02,Default,Kazune,0000,0000,0000,,Hé, Koyomi !\NPourquoi tu m’ignores ?
+Dialogue: 0,0:22:21.65,0:22:24.48,Default,Koyomi,0000,0000,0000,,Euh… Takigawa, c’est ça ?
+Dialogue: 0,0:22:25.11,0:22:27.65,Default,Koyomi,0000,0000,0000,,C’est moi que tu appelles Koyomi ?
+Dialogue: 0,0:22:28.11,0:22:29.57,Default,Kazune,0000,0000,0000,,Bah oui, qui d’autre ?
+Dialogue: 0,0:22:31.16,0:22:33.03,Default,Kazune,0000,0000,0000,,Je ne suis plus en colère.
+Dialogue: 0,0:22:36.04,0:22:39.25,Default,Kazune,0000,0000,0000,,Si tu veux encore t’excuser,\Nfais-le ce soir, sur la route.
+Dialogue: 0,0:22:40.54,0:22:43.50,Default,Koyomi,0000,0000,0000,,Att… Attends, Takigawa !
+Dialogue: 0,0:22:45.21,0:22:47.55,Default,Kazune,0000,0000,0000,,Pourquoi tu m’appelles pas\Npar mon prénom ?
+Dialogue: 0,0:22:48.76,0:22:50.64,Default,Kazune,0000,0000,0000,,Je déteste quand tu fais ça !
+Dialogue: 0,0:22:51.43,0:22:54.51,Default,Koyomi,0000,0000,0000,,Mais qu’est-ce qui te prend,\NTakigawa ?
+Dialogue: 0,0:22:54.85,0:22:56.43,Default,Kazune,0000,0000,0000,,T’es bizarre, aujourd’hui !
+Dialogue: 0,0:22:56.56,0:22:59.23,Default,Kazune,0000,0000,0000,,On n’a fait que se croiser\Nces derniers temps,
+Dialogue: 0,0:22:59.56,0:23:02.48,Default,Kazune,0000,0000,0000,,mais c’est pas une raison\Npour réagir comme ça !
+Dialogue: 0,0:23:10.36,0:23:11.57,Default,Kazune,0000,0000,0000,,Désolée, j’y vais.
+Dialogue: 0,0:23:31.55,0:23:32.34,Default,Kazune,0000,0000,0000,,Dis…
+Dialogue: 0,0:23:32.93,0:23:33.97,Default,Kazune,0000,0000,0000,,T’as une minute ?
+Dialogue: 0,0:23:35.18,0:23:36.51,Default,Koyomi,0000,0000,0000,,Qu’est-ce que tu veux ?
+Dialogue: 0,0:23:37.02,0:23:39.35,Default,Kazune,0000,0000,0000,,Il faut qu’on parle. C’est sérieux.
+Dialogue: 0,0:23:40.48,0:23:42.52,Default,Kazune,0000,0000,0000,,Suis-moi, je vais t’expliquer.
+Dialogue: 0,0:23:58.66,0:23:59.70,Default,Koyomi,0000,0000,0000,,Un karaoké ?
+Dialogue: 0,0:24:08.30,0:24:09.34,Default,Kazune,0000,0000,0000,,Viens t’asseoir.
+Dialogue: 0,0:24:13.09,0:24:13.80,Default,Koyomi,0000,0000,0000,,J’arrive.
+Dialogue: 0,0:24:21.60,0:24:23.27,Default,Kazune,0000,0000,0000,,Tu sais ce que c’est ?
+Dialogue: 0,0:24:25.69,0:24:29.78,Default,Koyomi,0000,0000,0000,,Euh… Une montre ?\NNon, rien à voir.
+Dialogue: 0,0:24:30.36,0:24:32.15,Default,Kazune,0000,0000,0000,,Un terminal IP. Tu connais ?
+Dialogue: 0,0:24:34.11,0:24:35.03,Default,Koyomi,0000,0000,0000,,Ah, oui.
+Dialogue: 0,0:24:35.70,0:24:40.16,Default,Koyomi,0000,0000,0000,,C’est l’appareil qui te dit\Ndans quel monde parallèle tu es, non ?
+Dialogue: 0,0:24:41.29,0:24:44.08,Default,Koyomi,0000,0000,0000,,Je croyais qu’il était\Nencore en phase de test,
+Dialogue: 0,0:24:44.25,0:24:49.17,Default,Koyomi,0000,0000,0000,,et étudié par des chercheurs\Ndu domaine des sciences spéculatives.
+Dialogue: 0,0:24:49.63,0:24:51.76,Default,Kazune,0000,0000,0000,,Mon père en fait partie.
+Dialogue: 0,0:24:53.55,0:24:55.76,Default,Koyomi,0000,0000,0000,,Le mien aussi.
+Dialogue: 0,0:24:55.89,0:24:56.85,Default,Kazune,0000,0000,0000,,Je sais.
+Dialogue: 0,0:24:58.81,0:24:59.60,Default,Koyomi,0000,0000,0000,,Ah bon ?
+Dialogue: 0,0:25:00.10,0:25:01.18,Default,Kazune,0000,0000,0000,,Je suis rassurée.
+Dialogue: 0,0:25:01.73,0:25:05.06,Default,Kazune,0000,0000,0000,,T’as l’air d’en savoir autant\Nque le Koyomi de mon monde.
+Dialogue: 0,0:25:06.35,0:25:08.19,Default,Koyomi,0000,0000,0000,,Comment ça ?
+Dialogue: 0,0:25:09.07,0:25:13.70,Default,Koyomi,0000,0000,0000,,Alors,\Nla Takigawa que j’ai devant moi…
+Dialogue: 0,0:25:20.79,0:25:25.33,Default,Kazune,0000,0000,0000,,Ça veut dire que je viens\Ndu monde numéro 85.
+Dialogue: 0,0:25:28.00,0:25:32.38,Default,Kazune,0000,0000,0000,,Ça signifie donc que j’ai continué\Nde te parler sans même remarquer
+Dialogue: 0,0:25:32.59,0:25:36.26,Default,Kazune,0000,0000,0000,,que j’avais fait un transfert parallèle,\NKoyomi.
+Dialogue: 0,0:25:46.23,0:25:48.35,Default,Kazune,0000,0000,0000,,Bois un coup.\NTu dois avoir soif.
+Dialogue: 0,0:25:48.48,0:25:50.40,Default,Koyomi,0000,0000,0000,,Ah… Oh, oui…
+Dialogue: 0,0:25:53.90,0:25:57.41,Default,Koyomi,0000,0000,0000,,Pourquoi est-ce que\Ntu me dis tout ça ?
+Dialogue: 0,0:25:59.41,0:26:00.53,Default,Kazune,0000,0000,0000,,T’es mon copain.
+Dialogue: 0,0:26:01.74,0:26:02.74,Default,Koyomi,0000,0000,0000,,Je vois.
+Dialogue: 0,0:26:03.37,0:26:06.54,Default,Koyomi,0000,0000,0000,,Et donc, quelle relation on a,\Ntous les deux ?
+Dialogue: 0,0:26:20.30,0:26:22.18,Default,Koyomi,0000,0000,0000,,Attends, je suis ton copain ?
+Dialogue: 0,0:26:22.93,0:26:25.73,Default,Koyomi,0000,0000,0000,,Mais alors, ça veut dire que…
+Dialogue: 0,0:26:26.10,0:26:28.48,Default,Koyomi,0000,0000,0000,,On sort ensemble, c’est ça ?
+Dialogue: 0,0:26:28.65,0:26:30.06,Default,Kazune,0000,0000,0000,,Oui, c’est évident.
+Dialogue: 0,0:26:30.81,0:26:32.48,Default,Koyomi,0000,0000,0000,,Alors, euh…
+Dialogue: 0,0:26:32.61,0:26:34.44,Default,Kazune,0000,0000,0000,,T’as aucun tact, hein.
+Dialogue: 0,0:26:39.53,0:26:40.62,Default,Koyomi,0000,0000,0000,,Désolé…
+Dialogue: 0,0:26:41.95,0:26:43.54,Default,Kazune,0000,0000,0000,,Tu me gonfles !
+Dialogue: 0,0:26:43.79,0:26:46.04,Default,Kazune,0000,0000,0000,,T’as rien à voir avec mon Koyomi !
+Dialogue: 0,0:26:47.25,0:26:48.25,Default,Koyomi,0000,0000,0000,,Pardon…
+Dialogue: 0,0:26:49.21,0:26:53.46,Default,Kazune,0000,0000,0000,,Le mien est beaucoup plus réfléchi,\Nc’est quelqu’un de fiable !
+Dialogue: 0,0:26:54.80,0:26:55.46,Default,Koyomi,0000,0000,0000,,Fiable ?
+Dialogue: 0,0:26:55.59,0:26:56.80,Default,Kazune,0000,0000,0000,,Oui !
+Dialogue: 0,0:26:57.17,0:27:01.30,Default,Kazune,0000,0000,0000,,Tu ne te rappelles pas m’avoir sauvée\Nde l’attaque d’un chien errant ?
+Dialogue: 0,0:27:01.97,0:27:04.31,Default,Koyomi,0000,0000,0000,,Un chien errant ? Quand ?
+Dialogue: 0,0:27:06.31,0:27:07.31,Default,Kazune,0000,0000,0000,,Laisse tomber…
+Dialogue: 0,0:27:10.31,0:27:11.10,Default,Koyomi,0000,0000,0000,,Euh…
+Dialogue: 0,0:27:13.86,0:27:17.19,Default,Kazune,0000,0000,0000,,On est d’accord que maintenant,\Ntu es Koyomi Takasaki ?
+Dialogue: 0,0:27:18.19,0:27:19.03,Default,Koyomi,0000,0000,0000,,Ben…
+Dialogue: 0,0:27:19.95,0:27:23.07,Default,Koyomi,0000,0000,0000,,Oui, et je le resterai.
+Dialogue: 0,0:27:24.20,0:27:27.62,Default,Koyomi,0000,0000,0000,,C’est normal que je sois différent\Nde celui que tu connais !
+Dialogue: 0,0:27:28.33,0:27:31.08,Default,Koyomi,0000,0000,0000,,Le monde numéro 85,\Nc’est vachement loin.
+Dialogue: 0,0:27:31.37,0:27:33.63,Default,Koyomi,0000,0000,0000,,On pourrait pas être identiques.
+Dialogue: 0,0:27:34.34,0:27:35.63,Default,Kazune,0000,0000,0000,,Ah bon…
+Dialogue: 0,0:27:35.80,0:27:37.17,Default,Koyomi,0000,0000,0000,,Réfléchis.
+Dialogue: 0,0:27:37.59,0:27:40.63,Default,Koyomi,0000,0000,0000,,Je ne sais rien de la Takigawa\Nde ce monde,
+Dialogue: 0,0:27:40.97,0:27:42.34,Default,Koyomi,0000,0000,0000,,et celle de l’autre…
+Dialogue: 0,0:27:42.47,0:27:44.85,Default,Kazune,0000,0000,0000,,Attends, tu parles de qui, là ?
+Dialogue: 0,0:27:46.26,0:27:47.85,Default,Koyomi,0000,0000,0000,,De toi, en face de moi.
+Dialogue: 0,0:27:47.97,0:27:49.10,Default,Kazune,0000,0000,0000,,C’est fatigant.
+Dialogue: 0,0:27:50.56,0:27:52.40,Default,Kazune,0000,0000,0000,,Au lieu de préciser le monde,
+Dialogue: 0,0:27:52.73,0:27:55.61,Default,Kazune,0000,0000,0000,,tu n’as qu’à nous appeler\Ndifféremment.
+Dialogue: 0,0:27:56.44,0:27:59.11,Default,Kazune,0000,0000,0000,,Dans ce monde,\Nnous sommes Takasaki et Takigawa.
+Dialogue: 0,0:27:59.49,0:28:02.16,Default,Kazune,0000,0000,0000,,Et ceux de mon monde\Nsont Koyomi et Kazune.
+Dialogue: 0,0:28:03.03,0:28:05.74,Default,Koyomi,0000,0000,0000,,Alors dans ce cas…
+Dialogue: 0,0:28:06.24,0:28:09.75,Default,Koyomi,0000,0000,0000,,Je dois t’appeler Kazune, c’est ça ?
+Dialogue: 0,0:28:10.12,0:28:12.50,Default,Kazune,0000,0000,0000,,Oui, ça te semble bizarre ?
+Dialogue: 0,0:28:13.54,0:28:16.96,Default,Koyomi,0000,0000,0000,,Bah, c’est comme ça\Nque Koyomi t’appelle, non ?
+Dialogue: 0,0:28:17.84,0:28:21.51,Default,Koyomi,0000,0000,0000,,Ça me gêne de le faire, moi aussi…
+Dialogue: 0,0:28:22.05,0:28:23.43,Default,Kazune,0000,0000,0000,,C’est qu’un prénom.
+Dialogue: 0,0:28:23.72,0:28:26.51,Default,Kazune,0000,0000,0000,,Et puis… Je reste moi.
+Dialogue: 0,0:28:29.18,0:28:30.93,Default,Koyomi,0000,0000,0000,,Bon, si ça te va…
+Dialogue: 0,0:28:31.06,0:28:32.52,Default,Kazune,0000,0000,0000,,Revenons-en au sujet.
+Dialogue: 0,0:28:32.98,0:28:34.31,Default,Kazune,0000,0000,0000,,Le terminal IP
+Dialogue: 0,0:28:34.44,0:28:38.27,Default,Kazune,0000,0000,0000,,lit les traces de conscience gravées\Ndans l’imaginaire et les quantifie.
+Dialogue: 0,0:28:38.52,0:28:39.23,Default,Koyomi,0000,0000,0000,,Oui.
+Dialogue: 0,0:28:40.07,0:28:43.36,Default,Koyomi,0000,0000,0000,,Il traduit le nombre de bifurcations\Ncomme des distances.
+Dialogue: 0,0:28:44.32,0:28:47.45,Default,Koyomi,0000,0000,0000,,Un transfert parallèle de 85,\Nc’est considérable, non ?
+Dialogue: 0,0:28:47.62,0:28:51.00,Default,Kazune,0000,0000,0000,,Pourtant, je n’avais pas remarqué\Nen avoir fait un
+Dialogue: 0,0:28:51.16,0:28:53.54,Default,Kazune,0000,0000,0000,,avant de te parler\Nà la sortie des cours.
+Dialogue: 0,0:28:54.33,0:28:56.13,Default,Kazune,0000,0000,0000,,Tout me paraît si normal,
+Dialogue: 0,0:28:56.33,0:28:58.84,Default,Kazune,0000,0000,0000,,on ne dirait pas\Nque je viens d’aussi loin.
+Dialogue: 0,0:29:00.13,0:29:01.80,Default,Kazune,0000,0000,0000,,J’ai donc réfléchi un peu…
+Dialogue: 0,0:29:02.84,0:29:07.05,Default,Kazune,0000,0000,0000,,Il est probable qu’un flux de mondes\Ndérivés d’un monde éloigné,
+Dialogue: 0,0:29:07.43,0:29:10.60,Default,Kazune,0000,0000,0000,,bifurquant à plusieurs reprises\Ndans la même direction,
+Dialogue: 0,0:29:10.93,0:29:14.19,Default,Kazune,0000,0000,0000,,en ait créé un nouveau\Nqui ressemble à celui d’origine.
+Dialogue: 0,0:29:15.06,0:29:18.36,Default,Koyomi,0000,0000,0000,,Le chemin emprunté diffère,\Nmais pas la destination.
+Dialogue: 0,0:29:19.02,0:29:20.82,Default,Koyomi,0000,0000,0000,,Un peu comme une fluctuation ?
+Dialogue: 0,0:29:21.19,0:29:24.90,Default,Kazune,0000,0000,0000,,En partant du principe que l’imaginaire\Nagisse comme la matière…
+Dialogue: 0,0:29:25.07,0:29:26.53,Default,Koyomi,0000,0000,0000,,C’est qu’une hypothèse.
+Dialogue: 0,0:29:27.07,0:29:28.83,Default,Kazune,0000,0000,0000,,La prochaine étape logique…
+Dialogue: 0,0:29:29.41,0:29:33.12,Default,Koyomi,0000,0000,0000,,La convergence.\NLes deux mondes se superposeraient ?
+Dialogue: 0,0:29:33.87,0:29:34.58,Default,Koyomi,0000,0000,0000,,Non.
+Dialogue: 0,0:29:34.83,0:29:37.46,Default,Koyomi,0000,0000,0000,,Ils ont tous deux\Nune histoire différente,
+Dialogue: 0,0:29:37.63,0:29:38.96,Default,Koyomi,0000,0000,0000,,ce serait impossible…
+Dialogue: 0,0:29:40.34,0:29:43.84,Default,Koyomi,0000,0000,0000,,Sauf si, comme des étoiles binaires,\Nils avancent conjointement
+Dialogue: 0,0:29:44.01,0:29:46.84,Default,Koyomi,0000,0000,0000,,et s’influencent\Ntout en gardant leurs distances.
+Dialogue: 0,0:29:47.68,0:29:49.80,Default,Kazune,0000,0000,0000,,En sciences spéculatives,
+Dialogue: 0,0:29:50.01,0:29:52.52,Default,Kazune,0000,0000,0000,,on compare les mondes parallèles\Nà des bulles.
+Dialogue: 0,0:29:53.06,0:29:57.31,Default,Kazune,0000,0000,0000,,Si on suit ce modèle, les deux bulles\Ntourneraient l’une autour de l’autre,
+Dialogue: 0,0:29:57.48,0:29:59.90,Default,Kazune,0000,0000,0000,,avant de remonter\Ndans la même direction.
+Dialogue: 0,0:30:00.27,0:30:01.36,Default,Kazune,0000,0000,0000,,Un truc comme ça.
+Dialogue: 0,0:30:02.15,0:30:06.20,Default,Kazune,0000,0000,0000,,Mais pour l’instant,\Ntu n’as rien à voir avec Takasaki…
+Dialogue: 0,0:30:06.70,0:30:08.53,Default,Kazune,0000,0000,0000,,Je me fais peut-être des idées,
+Dialogue: 0,0:30:08.74,0:30:12.16,Default,Kazune,0000,0000,0000,,mais Takigawa et Kazune\Nont pu faire un transfert de 85 mondes
+Dialogue: 0,0:30:12.29,0:30:14.25,Default,Kazune,0000,0000,0000,,pour une raison précise.
+Dialogue: 0,0:30:16.62,0:30:19.71,Default,Koyomi,0000,0000,0000,,Une force qui maintiendrait\Nces deux bulles ensemble…
+Dialogue: 0,0:30:21.04,0:30:22.09,Default,Kazune,0000,0000,0000,,T’en penses quoi ?
+Dialogue: 0,0:30:22.75,0:30:24.71,Default,Koyomi,0000,0000,0000,,Takigawa, admettons que…
+Dialogue: 0,0:30:24.92,0:30:27.93,Default,Koyomi,0000,0000,0000,,Non, pardon, Kazune.\NSi tu sortais avec moi…
+Dialogue: 0,0:30:29.34,0:30:31.39,Default,Kazune,0000,0000,0000,,Moi, avec Takasaki ?
+Dialogue: 0,0:30:32.76,0:30:35.89,Default,Koyomi,0000,0000,0000,,Oh, non !\NDésolé, j’étais en pleine réflexion !
+Dialogue: 0,0:30:36.48,0:30:38.27,Default,Koyomi,0000,0000,0000,,Non, enfin, j’étais confus !
+Dialogue: 0,0:30:39.48,0:30:42.98,Default,Kazune,0000,0000,0000,,Je ne suis pas amoureuse de toi,\NTakasaki.
+Dialogue: 0,0:30:43.73,0:30:44.57,Default,Koyomi,0000,0000,0000,,Je me doute.
+Dialogue: 0,0:30:44.94,0:30:47.95,Default,Kazune,0000,0000,0000,,Mais j’aime Koyomi du fond du cœur,
+Dialogue: 0,0:30:48.78,0:30:52.49,Default,Kazune,0000,0000,0000,,donc il est probable\Nque Takigawa tombe amoureuse de Takasaki.
+Dialogue: 0,0:30:53.45,0:30:57.16,Default,Kazune,0000,0000,0000,,Il serait alors logique\Nque le choix s’offre à toi aussi.
+Dialogue: 0,0:30:58.04,0:31:00.92,Default,Kazune,0000,0000,0000,,Bon courage\Nsi tu prévois de te lancer !
+Dialogue: 0,0:31:04.09,0:31:08.09,Default,Kazune,0000,0000,0000,,Je ne peux pas prédire la suite,\Nmais gardons tout ça pour nous.
+Dialogue: 0,0:31:08.84,0:31:10.55,Default,Kazune,0000,0000,0000,,Je veux pas faire d’histoires.
+Dialogue: 0,0:31:11.43,0:31:12.97,Default,Kazune,0000,0000,0000,,Sortons d’ici séparément.
+Dialogue: 0,0:31:13.89,0:31:16.02,Default,Koyomi,0000,0000,0000,,Oui, tu as raison.
+Dialogue: 0,0:31:16.97,0:31:18.02,Default,Koyomi,0000,0000,0000,,Je vais payer.
+Dialogue: 0,0:31:18.64,0:31:20.27,Default,Koyomi,0000,0000,0000,,Tu es l’invitée, après tout.
+Dialogue: 0,0:31:20.85,0:31:22.52,Default,Kazune,0000,0000,0000,,Drôle de façon de me voir.
+Dialogue: 0,0:31:23.19,0:31:24.07,Default,Kazune,0000,0000,0000,,Merci !
+Dialogue: 0,0:31:25.65,0:31:29.95,Default,Kazune,0000,0000,0000,,Garde ton naturel\Nen sortant d’ici, d’accord ?
+Dialogue: 0,0:31:31.53,0:31:32.82,Default,Koyomi,0000,0000,0000,,Mon naturel, hein…
+Dialogue: 0,0:31:33.70,0:31:36.29,Default,Kazune,0000,0000,0000,,Oui. Laisse-toi porter\Npar le cours des choses.
+Dialogue: 0,0:31:37.54,0:31:41.46,Default,Kazune,0000,0000,0000,,Bon, je sais pas\Nsi on se verra demain.
+Dialogue: 0,0:31:42.75,0:31:44.42,Default,Koyomi,0000,0000,0000,,Oh, oui…
+Dialogue: 0,0:31:45.96,0:31:46.84,Default,Kazune,0000,0000,0000,,À plus.
+Dialogue: 0,0:31:48.92,0:31:49.84,Default,Koyomi,0000,0000,0000,,Salut.
+Dialogue: 0,0:31:51.34,0:31:52.39,Italique,Koyomi,0000,0000,0000,,Et c’est comme ça
+Dialogue: 0,0:31:52.97,0:31:55.43,Italique,Koyomi,0000,0000,0000,,que je me suis séparé\Nde cette Takigawa,
+Dialogue: 0,0:31:55.64,0:31:58.22,Italique,Koyomi,0000,0000,0000,,cette Kazune venant\Nde 85 mondes plus loin.
+Dialogue: 0,0:32:02.85,0:32:05.36,Default,Koyomi,0000,0000,0000,,Le monde numéro 85, hein…
+Dialogue: 0,0:32:14.95,0:32:15.91,Italique,Koyomi,0000,0000,0000,,Le lendemain,
+Dialogue: 0,0:32:16.33,0:32:18.70,Italique,Koyomi,0000,0000,0000,,elle est venue en cours\Ncomme d’habitude.
+Dialogue: 0,0:32:22.62,0:32:26.75,Italique,Koyomi,0000,0000,0000,,Mais était-ce Kazune ou Takigawa ?
+Dialogue: 0,0:32:30.34,0:32:34.22,Italique,Koyomi,0000,0000,0000,,Si elle vient vraiment du monde 85,\Nelle devrait être différente.
+Dialogue: 0,0:32:35.22,0:32:38.39,Italique,Koyomi,0000,0000,0000,,Pourtant, son apparence\Nétait identique à celle de Kazune.
+Dialogue: 0,0:32:39.97,0:32:41.27,Italique,Koyomi,0000,0000,0000,,Mais jusqu’à présent…
+Dialogue: 0,0:32:41.56,0:32:43.94,Italique,Koyomi,0000,0000,0000,,je n’avais jamais salué Takigawa,
+Dialogue: 0,0:32:44.35,0:32:47.44,Italique,Koyomi,0000,0000,0000,,j’aurais du mal à voir\Nce qui les distingue.
+Dialogue: 0,0:32:49.53,0:32:50.61,Italique,Koyomi,0000,0000,0000,,Le surlendemain,
+Dialogue: 0,0:32:51.15,0:32:54.28,Italique,Koyomi,0000,0000,0000,,et le jour suivant,\Npuis le jour encore après…
+Dialogue: 0,0:32:54.95,0:32:56.74,Italique,Koyomi,0000,0000,0000,,il m’arrivait de la croiser,
+Dialogue: 0,0:32:58.45,0:33:00.08,Italique,Koyomi,0000,0000,0000,,sans qu’on échange un seul mot.
+Dialogue: 0,0:33:01.79,0:33:02.91,Italique,Koyomi,0000,0000,0000,,Je n’y arrivais pas.
+Dialogue: 0,0:33:07.50,0:33:10.92,Italique,Koyomi,0000,0000,0000,,Le fait de savoir qu’un autre moi\Nexistait dans son monde…
+Dialogue: 0,0:33:15.89,0:33:19.14,Italique,Koyomi,0000,0000,0000,,Un moi qui n’est pas\Ncelui que je suis ici…
+Dialogue: 0,0:33:37.91,0:33:39.08,Italique,Koyomi,0000,0000,0000,,Un monde dans lequel…
+Dialogue: 0,0:33:39.58,0:33:42.79,Italique,Koyomi,0000,0000,0000,,on est tous les deux\Ntombés amoureux.
+Dialogue: 0,0:33:50.00,0:33:51.09,Italique,Koyomi,0000,0000,0000,,Deux autres…
+Dialogue: 0,0:33:51.92,0:33:53.09,Italique,Koyomi,0000,0000,0000,,elle et moi.
+Dialogue: 0,0:34:12.07,0:34:12.90,Default,Koyomi,0000,0000,0000,,Dis…
+Dialogue: 0,0:34:13.73,0:34:18.57,Default,Koyomi,0000,0000,0000,,Est-ce que c’est possible de choisir\Nle monde dans lequel on veut voyager ?
+Dialogue: 0,0:34:19.12,0:34:21.12,Italique,Shôdai,0000,0000,0000,,Théoriquement, ça l’est.
+Dialogue: 0,0:34:21.78,0:34:24.83,Italique,Shôdai,0000,0000,0000,,J’étudie moi-même la possibilité\Nde transferts orientés,
+Dialogue: 0,0:34:25.37,0:34:29.63,Italique,Shôdai,0000,0000,0000,,c’est-à-dire\Ndes transferts parallèles arbitraires.
+Dialogue: 0,0:34:29.92,0:34:31.34,Default,Koyomi,0000,0000,0000,,Ah oui ? Alors…
+Dialogue: 0,0:34:31.46,0:34:34.59,Italique,Shôdai,0000,0000,0000,,Cependant, je n’ai encore\Nrien établi scientifiquement.
+Dialogue: 0,0:34:35.13,0:34:39.14,Italique,Shôdai,0000,0000,0000,,Je crois que ça me prendra encore…\NAllez, une bonne dizaine d’années ?
+Dialogue: 0,0:34:40.14,0:34:41.14,Default,Koyomi,0000,0000,0000,,Je vois…
+Dialogue: 0,0:34:42.22,0:34:43.14,Default,Koyomi,0000,0000,0000,,Merci.
+Dialogue: 0,0:34:43.76,0:34:45.73,Default,Koyomi,0000,0000,0000,,Oui. À plus tard.
+Dialogue: 0,0:34:47.35,0:34:48.69,Default,Koyomi,0000,0000,0000,,Dix ans…
+Dialogue: 0,0:35:05.79,0:35:06.87,Default,Koyomi,0000,0000,0000,,Salut, Kazune.
+Dialogue: 0,0:35:11.21,0:35:12.13,Default,Koyomi,0000,0000,0000,,Kazune ?
+Dialogue: 0,0:35:20.26,0:35:21.84,Italique,Koyomi,0000,0000,0000,,Mince, c’est Takigawa !
+Dialogue: 0,0:35:27.14,0:35:29.81,Italique,Koyomi,0000,0000,0000,,Kazune a donc réussi à rentrer…
+Dialogue: 0,0:35:47.24,0:35:48.70,Sign,Sign,0000,0000,0000,,{\fs15\fnComic Sans MS\c&H000000&\3c&HFFFFFF&\bord0\frz3.944\pos(319.998,235.637)}TAKIGAWA
+Dialogue: 0,0:35:57.92,0:36:00.47,Default,Koyomi,0000,0000,0000,,Salut !\NDésolé pour l’invitation surprise.
+Dialogue: 0,0:36:02.18,0:36:02.93,Default,Kazune,0000,0000,0000,,C’était toi ?
+Dialogue: 0,0:36:03.26,0:36:04.14,Default,Koyomi,0000,0000,0000,,Oui.
+Dialogue: 0,0:36:04.93,0:36:07.26,Default,Koyomi,0000,0000,0000,,Entre et assieds-toi.
+Dialogue: 0,0:36:14.65,0:36:15.65,Default,Koyomi,0000,0000,0000,,Tu as soif ?
+Dialogue: 0,0:36:16.23,0:36:17.02,Default,Kazune,0000,0000,0000,,Non.
+Dialogue: 0,0:36:18.94,0:36:19.94,Default,Koyomi,0000,0000,0000,,Tu veux chanter ?
+Dialogue: 0,0:36:20.32,0:36:22.03,TiretsDefault,Kazune + Koyomi,0259,0000,0000,,– Quoi ?\N– Oh, désolé…
+Dialogue: 0,0:36:28.70,0:36:30.50,Default,Koyomi,0000,0000,0000,,Bon, alors…
+Dialogue: 0,0:36:31.16,0:36:32.92,Default,Koyomi,0000,0000,0000,,Je vais tout te dire franchement.
+Dialogue: 0,0:36:33.96,0:36:35.42,Default,Koyomi,0000,0000,0000,,Je te l’ai aussi écrit,
+Dialogue: 0,0:36:35.84,0:36:39.76,Default,Koyomi,0000,0000,0000,,mais tu étais dans le monde 85\Npendant quelque temps, n’est-ce pas ?
+Dialogue: 0,0:36:41.22,0:36:42.13,Default,Kazune,0000,0000,0000,,Oui…
+Dialogue: 0,0:36:42.68,0:36:44.47,Default,Koyomi,0000,0000,0000,,Et donc, euh…
+Dialogue: 0,0:36:45.09,0:36:47.05,Default,Koyomi,0000,0000,0000,,Comment c’était ?
+Dialogue: 0,0:36:47.85,0:36:49.52,Default,Kazune,0000,0000,0000,,C’est-à-dire ?
+Dialogue: 0,0:36:49.68,0:36:52.06,Default,Koyomi,0000,0000,0000,,Eh bien…
+Dialogue: 0,0:36:53.31,0:36:54.98,Default,Koyomi,0000,0000,0000,,Dans cet autre monde, on…
+Dialogue: 0,0:37:02.19,0:37:04.57,Default,Koyomi,0000,0000,0000,,Non, rien. Laisse tomber !
+Dialogue: 0,0:37:05.36,0:37:06.16,Default,Koyomi,0000,0000,0000,,Pardon.
+Dialogue: 0,0:37:08.24,0:37:10.66,Default,Kazune,0000,0000,0000,,Comment ça s’est passé\Nde ton côté ?
+Dialogue: 0,0:37:11.79,0:37:13.91,Default,Koyomi,0000,0000,0000,,Oh, euh…
+Dialogue: 0,0:37:14.67,0:37:16.92,Default,Koyomi,0000,0000,0000,,J’ai discuté avec Kazune.
+Dialogue: 0,0:37:17.67,0:37:18.79,Default,Kazune,0000,0000,0000,,« Kazune » ?
+Dialogue: 0,0:37:19.34,0:37:21.84,Default,Koyomi,0000,0000,0000,,Pardon, on peut arrêter,\Nsi t’es gênée !
+Dialogue: 0,0:37:24.68,0:37:26.80,Default,Kazune,0000,0000,0000,,Non, ça ne me dérange pas.
+Dialogue: 0,0:37:28.80,0:37:30.56,Default,Kazune,0000,0000,0000,,Je pourrais avoir le menu ?
+Dialogue: 0,0:37:31.31,0:37:32.06,Default,Koyomi,0000,0000,0000,,Bien sûr.
+Dialogue: 0,0:37:34.81,0:37:35.60,Default,Koyomi,0000,0000,0000,,Tiens.
+Dialogue: 0,0:37:41.11,0:37:42.94,Default,Kazune,0000,0000,0000,,Alors, comment elle était…
+Dialogue: 0,0:37:44.40,0:37:46.82,Default,Kazune,0000,0000,0000,,cette Kazune-là ?
+Dialogue: 0,0:37:48.12,0:37:52.83,Default,Koyomi,0000,0000,0000,,Elle était… amoureuse de Koyomi.
+Dialogue: 0,0:37:54.08,0:37:55.00,Default,Kazune,0000,0000,0000,,Ah bon ?
+Dialogue: 0,0:37:55.46,0:37:56.21,Default,Koyomi,0000,0000,0000,,Oui.
+Dialogue: 0,0:37:57.46,0:37:59.00,Default,Koyomi,0000,0000,0000,,Ah, mais pas de moi, hein !
+Dialogue: 0,0:37:59.25,0:38:03.59,Default,Koyomi,0000,0000,0000,,« Koyomi », c’est le moi existant\Ndans le monde 85.
+Dialogue: 0,0:38:04.72,0:38:06.13,Default,Kazune,0000,0000,0000,,Ah, je vois…
+Dialogue: 0,0:38:06.59,0:38:08.80,Default,Koyomi,0000,0000,0000,,Oui, et donc…
+Dialogue: 0,0:38:12.60,0:38:14.39,Default,Koyomi,0000,0000,0000,,Ce n’est pas vraiment pour ça…
+Dialogue: 0,0:38:16.35,0:38:17.39,Default,Koyomi,0000,0000,0000,,mais Takigawa…
+Dialogue: 0,0:38:18.48,0:38:20.56,Default,Koyomi,0000,0000,0000,,Est-ce que tu voudrais bien…
+Dialogue: 0,0:38:23.44,0:38:26.40,Default,Koyomi,0000,0000,0000,,qu’on soit amis ?
+Dialogue: 0,0:38:32.54,0:38:34.37,Default,Kazune,0000,0000,0000,,Nous ? Amis ?
+Dialogue: 0,0:38:35.45,0:38:36.16,Default,Koyomi,0000,0000,0000,,Oui.
+Dialogue: 0,0:38:47.55,0:38:48.63,Default,Koyomi,0000,0000,0000,,Takigawa !
+Dialogue: 0,0:38:57.27,0:38:58.27,Default,Koyomi,0000,0000,0000,,Euh, Takigawa ?
+Dialogue: 0,0:38:58.89,0:39:00.52,Default,Kazune,0000,0000,0000,,Tout ce discours…
+Dialogue: 0,0:39:00.86,0:39:02.94,Default,Kazune,0000,0000,0000,,simplement pour qu’on soit amis ?
+Dialogue: 0,0:39:05.65,0:39:07.15,Default,Kazune,0000,0000,0000,,Regarde ça !
+Dialogue: 0,0:39:16.70,0:39:18.33,Default,Koyomi,0000,0000,0000,,Ka… Kazune ?
+Dialogue: 0,0:39:19.58,0:39:20.62,Default,Koyomi,0000,0000,0000,,Tu m’as piégé !
+Dialogue: 0,0:39:21.04,0:39:24.80,Default,Koyomi,0000,0000,0000,,Moi qui étais soulagé\Nque tu sois retournée dans ton monde !
+Dialogue: 0,0:39:25.09,0:39:26.63,Default,Kazune,0000,0000,0000,,Mais non, idiot.
+Dialogue: 0,0:39:27.34,0:39:28.26,Default,Kazune,0000,0000,0000,,En fait…
+Dialogue: 0,0:39:29.68,0:39:30.43,Default,Kazune,0000,0000,0000,,Regarde !
+Dialogue: 0,0:39:37.35,0:39:38.23,Default,Koyomi,0000,0000,0000,,Un autocollant ?
+Dialogue: 0,0:39:38.43,0:39:39.85,Default,Koyomi,0000,0000,0000,,Pas mal, hein ?
+Dialogue: 0,0:39:40.39,0:39:43.36,Default,Koyomi,0000,0000,0000,,Attends, me dis pas que…
+Dialogue: 0,0:39:43.52,0:39:48.94,Default,Kazune,0000,0000,0000,,Si, tu as très bien compris.\NJe n’ai jamais fait aucun transfert !
+Dialogue: 0,0:39:50.49,0:39:54.07,Default,Kazune,0000,0000,0000,,J’ai toujours été\Nla Kazune Takigawa de ce monde.
+Dialogue: 0,0:39:54.99,0:39:58.33,Default,Kazune,0000,0000,0000,,La Kazune du monde numéro 85\Nn’existe pas.
+Dialogue: 0,0:39:59.25,0:40:01.00,Default,Koyomi,0000,0000,0000,,Mais pourquoi ?
+Dialogue: 0,0:40:02.04,0:40:03.33,Default,Koyomi,0000,0000,0000,,Pourquoi t’as fait ça ?
+Dialogue: 0,0:40:05.75,0:40:06.84,Default,Kazune,0000,0000,0000,,Pour me venger.
+Dialogue: 0,0:40:07.50,0:40:08.59,Default,Koyomi,0000,0000,0000,,Te venger ?
+Dialogue: 0,0:40:09.34,0:40:11.84,Default,Kazune,0000,0000,0000,,Oui, parce que tu m’as oubliée.
+Dialogue: 0,0:40:12.18,0:40:12.84,Default,Koyomi,0000,0000,0000,,Hein ?
+Dialogue: 0,0:40:17.39,0:40:19.48,Default,Kazune,0000,0000,0000,,Écoute-moi, Takasaki !
+Dialogue: 0,0:40:19.60,0:40:23.52,Default,Kazune,0000,0000,0000,,Tu as refusé d’être étudiant d’honneur\Nmalgré tes notes, non ?
+Dialogue: 0,0:40:24.56,0:40:26.69,Default,Koyomi,0000,0000,0000,,Ah, ça… oui.
+Dialogue: 0,0:40:27.02,0:40:31.70,Default,Kazune,0000,0000,0000,,À cause de toi, c’est moi qui ai dû faire\Nle discours à la rentrée des classes.
+Dialogue: 0,0:40:33.16,0:40:34.37,Default,Koyomi,0000,0000,0000,,Vraiment ?
+Dialogue: 0,0:40:34.78,0:40:36.37,Default,Kazune,0000,0000,0000,,Tu vois, tu as oublié !
+Dialogue: 0,0:40:36.91,0:40:39.75,Default,Kazune,0000,0000,0000,,J’étais fière\Nd’être l’étudiante d’honneur,
+Dialogue: 0,0:40:40.20,0:40:43.12,Default,Kazune,0000,0000,0000,,avant d’apprendre\Nque j’ai eu la place par défaut !
+Dialogue: 0,0:40:47.13,0:40:49.63,Default,Koyomi,0000,0000,0000,,Attends, j’ai du mal à comprendre…
+Dialogue: 0,0:40:50.71,0:40:52.51,Default,Koyomi,0000,0000,0000,,Tu voulais te venger pour ça ?
+Dialogue: 0,0:40:54.55,0:40:57.14,Default,Kazune,0000,0000,0000,,C’est bien normal, non ?
+Dialogue: 0,0:40:59.72,0:41:02.18,Default,Koyomi,0000,0000,0000,,Bah non, je ne crois pas, justement.
+Dialogue: 0,0:41:04.35,0:41:07.77,Default,Koyomi,0000,0000,0000,,J’ai refusé parce que\Nje ne voulais pas me mettre en avant.
+Dialogue: 0,0:41:08.90,0:41:10.48,Default,Koyomi,0000,0000,0000,,Ça t’a posé problème ?
+Dialogue: 0,0:41:14.41,0:41:15.24,Default,Koyomi,0000,0000,0000,,Quoi ?
+Dialogue: 0,0:41:17.66,0:41:18.78,Default,Kazune,0000,0000,0000,,Réconcilions-nous.
+Dialogue: 0,0:41:19.54,0:41:22.20,Default,Kazune,0000,0000,0000,,Tu m’as fait rire,\Nça m’a mise de bonne humeur.
+Dialogue: 0,0:41:23.29,0:41:24.25,Default,Kazune,0000,0000,0000,,Merci !
+Dialogue: 0,0:41:36.97,0:41:38.72,TiretsDefault,Kazune + Koyomi,0274,0000,0000,,– Kazune…\N– Oui ?
+Dialogue: 0,0:41:39.14,0:41:42.35,Default,Koyomi,0000,0000,0000,,Tu veux sortir avec moi ?
+Dialogue: 0,0:41:42.89,0:41:44.27,TiretsDefault,Kazune + Koyomi,0286,0000,0000,,– Non…\N– Hein ?
+Dialogue: 0,0:41:44.94,0:41:46.19,Default,Kazune,0000,0000,0000,,Je t’ai prévenu !
+Dialogue: 0,0:41:46.52,0:41:50.19,Default,Kazune,0000,0000,0000,,Le Koyomi que j’aime\Nest quelqu’un de fiable.
+Dialogue: 0,0:41:55.03,0:41:57.20,Default,Kazune,0000,0000,0000,,Tu en es encore loin, Takasaki !
+Dialogue: 0,0:41:58.28,0:42:01.79,Italique,Koyomi,0000,0000,0000,,Ma première tentative\Nd’avouer mes sentiments…
+Dialogue: 0,0:42:01.99,0:42:04.75,Default,Kazune,0000,0000,0000,,Te sens pas obligé\Nde me saluer le matin.
+Dialogue: 0,0:42:06.96,0:42:08.75,Italique,Koyomi,0000,0000,0000,,… s’est soldée par un échec cuisant.
+Dialogue: 0,0:42:11.88,0:42:14.34,Default,Koyomi,0000,0000,0000,,Sérieux…\NJ’arrive vraiment pas à la saisir.
+Dialogue: 0,0:42:21.56,0:42:24.35,Italique,Koyomi,0000,0000,0000,,Elle qui ne voulait pas\Nqu’on se salue
+Dialogue: 0,0:42:24.93,0:42:27.77,Italique,Koyomi,0000,0000,0000,,a été la première\Nà venir me reparler.
+Dialogue: 0,0:42:28.44,0:42:29.31,Default,Koyomi,0000,0000,0000,,Quoi ?
+Dialogue: 0,0:42:30.11,0:42:31.02,Default,Kazune,0000,0000,0000,,Regarde.
+Dialogue: 0,0:42:31.82,0:42:34.15,Default,Koyomi,0000,0000,0000,,Tu as eu 18/20 ?\NT’y étais presque.
+Dialogue: 0,0:42:34.28,0:42:35.53,Default,Kazune,0000,0000,0000,,Je parle pas de ça.
+Dialogue: 0,0:42:36.45,0:42:37.57,Default,Kazune,0000,0000,0000,,Cette question…
+Dialogue: 0,0:42:38.41,0:42:40.78,Default,Kazune,0000,0000,0000,,T’es le seul à avoir eu bon.
+Dialogue: 0,0:42:41.12,0:42:42.99,Default,Koyomi,0000,0000,0000,,Ah oui ?
+Dialogue: 0,0:42:44.54,0:42:45.95,Default,Kazune,0000,0000,0000,,Alors, explique-moi.
+Dialogue: 0,0:42:46.54,0:42:49.46,Default,Kazune,0000,0000,0000,,Comment t’as réussi\Nà ne pas tomber dans le piège ?
+Dialogue: 0,0:42:49.96,0:42:53.84,Default,Koyomi,0000,0000,0000,,Ce n’était pas un piège.\NEn fait, on l’a pas encore vu en cours.
+Dialogue: 0,0:42:54.17,0:42:55.96,TiretsDefault,Kazune + Koyomi,0276,0000,0000,,– Ah bon ?\N– Oui.
+Dialogue: 0,0:42:56.26,0:42:59.64,Default,Koyomi,0000,0000,0000,,Si tu t’aides de ce qu’on a appris\Njusqu’à présent…
+Dialogue: 0,0:43:00.34,0:43:02.51,Italique,Koyomi,0000,0000,0000,,Comme si sa blague\Nn’avait pas suffi,
+Dialogue: 0,0:43:02.72,0:43:04.85,Italique,Koyomi,0000,0000,0000,,elle a commencé\Nà rivaliser avec moi.
+Dialogue: 0,0:43:05.64,0:43:08.85,Italique,Koyomi,0000,0000,0000,,Mais son approche\Nétait soit forcée, soit trop directe…
+Dialogue: 0,0:43:08.98,0:43:10.15,Default,Kazune,0000,0000,0000,,Je vois.
+Dialogue: 0,0:43:11.40,0:43:12.69,Default,Kazune,0000,0000,0000,,Je comprends mieux.
+Dialogue: 0,0:43:13.57,0:43:14.65,Default,Kazune,0000,0000,0000,,Merci !
+Dialogue: 0,0:43:17.32,0:43:19.20,Default,Kosugi,0000,0000,0000,,Je la trouve super cool…
+Dialogue: 0,0:43:19.32,0:43:20.11,Default,Koyomi,0000,0000,0000,,Hein ?
+Dialogue: 0,0:43:20.78,0:43:22.03,Default,Kazune,0000,0000,0000,,Takasaki.
+Dialogue: 0,0:43:22.24,0:43:25.37,Default,Kazune,0000,0000,0000,,T’as pas eu 20 à l’interro\Nde littérature classique ?
+Dialogue: 0,0:43:25.99,0:43:27.33,Default,Kazune,0000,0000,0000,,Tu veux des conseils ?
+Dialogue: 0,0:43:28.16,0:43:30.46,Default,Koyomi,0000,0000,0000,,Non, ça ne m’intéresse pas vraiment.
+Dialogue: 0,0:43:30.62,0:43:31.83,Default,Kazune,0000,0000,0000,,Je m’en doutais !
+Dialogue: 0,0:43:32.04,0:43:35.34,Default,Kazune,0000,0000,0000,,Tu te relâches, sois plus studieux !
+Dialogue: 0,0:43:36.63,0:43:37.71,Default,Koyomi,0000,0000,0000,,Pourquoi ?
+Dialogue: 0,0:43:38.30,0:43:40.34,Italique,Koyomi,0000,0000,0000,,J’ignore comment c’est arrivé,
+Dialogue: 0,0:43:40.51,0:43:42.85,Italique,Koyomi,0000,0000,0000,,mais durant le déjeuner\Net après l’école,
+Dialogue: 0,0:43:42.97,0:43:45.64,Italique,Koyomi,0000,0000,0000,,on s’est mis à faire\Ndes séances de révisions.
+Dialogue: 0,0:43:47.39,0:43:50.60,Italique,Koyomi,0000,0000,0000,,Au début, ça me gênait un peu,\Nmais petit à petit,
+Dialogue: 0,0:43:50.98,0:43:53.11,Italique,Koyomi,0000,0000,0000,,j’ai commencé\Nà apprécier lui parler,
+Dialogue: 0,0:43:53.36,0:43:55.61,Italique,Koyomi,0000,0000,0000,,et je m’y suis mis sérieusement.
+Dialogue: 0,0:43:56.53,0:43:59.70,Italique,Koyomi,0000,0000,0000,,Ces séances m’apportaient\Nbeaucoup de bonheur.
+Dialogue: 0,0:44:00.11,0:44:04.16,Italique,Koyomi,0000,0000,0000,,Peut-être étaient-ils curieux de voir\Nles deux meilleurs élèves rivaliser,
+Dialogue: 0,0:44:04.49,0:44:07.33,Italique,Koyomi,0000,0000,0000,,mais les autres\Nont commencé à envahir cet espace,
+Dialogue: 0,0:44:08.00,0:44:10.83,Italique,Koyomi,0000,0000,0000,,brisant sans peine\Nce moment rien qu’à nous.
+Dialogue: 0,0:44:11.54,0:44:14.79,Italique,Koyomi,0000,0000,0000,,Si voulez réussir,\Nallez en cours du soir, sérieux…
+Dialogue: 0,0:44:15.13,0:44:17.30,Italique,Koyomi,0000,0000,0000,,Voilà ce que je pensais.
+Dialogue: 0,0:44:18.84,0:44:19.46,Italique,Koyomi,0000,0000,0000,,Mais…
+Dialogue: 0,0:44:20.17,0:44:23.22,Italique,Koyomi,0000,0000,0000,,ça a permis aux élèves\Nde mieux échanger entre eux
+Dialogue: 0,0:44:24.05,0:44:26.60,Italique,Koyomi,0000,0000,0000,,et d’augmenter la moyenne de la classe,
+Dialogue: 0,0:44:26.76,0:44:30.02,Italique,Koyomi,0000,0000,0000,,en plus de rendre\Nl’atmosphère du groupe plus chaleureuse.
+Dialogue: 0,0:44:33.15,0:44:35.27,Italique,Koyomi,0000,0000,0000,,J’ai même réussi à me faire des amis.
+Dialogue: 0,0:44:36.69,0:44:38.98,Italique,Koyomi,0000,0000,0000,,Mais même après\Navoir créé des liens…
+Dialogue: 0,0:44:39.28,0:44:42.24,Italique,Sonoda,0000,0000,0000,,« T’as un cœur de pierre,\NTakasaki. »
+Dialogue: 0,0:44:42.74,0:44:44.16,Italique,Koyomi,0000,0000,0000,,… on me sortait ça.
+Dialogue: 0,0:44:45.20,0:44:46.16,Italique,Koyomi,0000,0000,0000,,Quant à Kazune…
+Dialogue: 0,0:44:46.41,0:44:48.66,Italique,Kazune,0000,0000,0000,,« T’as aucun tact, Koyomi. »
+Dialogue: 0,0:44:48.83,0:44:50.29,Italique,Koyomi,0000,0000,0000,,… répétait-elle sans cesse.
+Dialogue: 0,0:44:51.12,0:44:53.71,Italique,Koyomi,0000,0000,0000,,Pour résumer, n’ayant pas de cœur,
+Dialogue: 0,0:44:54.17,0:44:58.21,Italique,Koyomi,0000,0000,0000,,je suis apparemment incapable\Nd’agir avec considération pour autrui.
+Dialogue: 0,0:44:58.71,0:45:02.13,Italique,Kazune,0000,0000,0000,,« Le pire, c’est que\Ntu ne t’en rends même pas compte. »
+Dialogue: 0,0:45:06.51,0:45:07.72,Italique,Koyomi,0000,0000,0000,,Moi, je n’y crois pas.
+Dialogue: 0,0:45:09.18,0:45:12.27,Italique,Koyomi,0000,0000,0000,,Arrivé au lycée,\Navec l’aide de mes amis…
+Dialogue: 0,0:45:12.60,0:45:16.48,Italique,Koyomi,0000,0000,0000,,ou plutôt, face à un public curieux,\Nj’ai avoué mes sentiments à Kazune.
+Dialogue: 0,0:45:17.52,0:45:18.27,Italique,Koyomi,0000,0000,0000,,Kazune !
+Dialogue: 0,0:45:19.27,0:45:20.23,Default,Kazune,0000,0000,0000,,Quoi ?
+Dialogue: 0,0:45:21.57,0:45:24.78,Italique,Koyomi,0000,0000,0000,,Je crois que tu le sais déjà,\Nmais je t’aime.
+Dialogue: 0,0:45:25.61,0:45:26.53,Italique,Koyomi,0000,0000,0000,,Tu veux bien…
+Dialogue: 0,0:45:29.03,0:45:30.04,Italique,Kazune,0000,0000,0000,,Non.
+Dialogue: 0,0:45:46.30,0:45:49.97,Italique,Koyomi,0000,0000,0000,,Faut pas abuser.\NJ’ai un cœur, moi aussi.
+Dialogue: 0,0:45:54.06,0:45:56.02,Italique,Koyomi,0000,0000,0000,,Kazune ne voulait pas de moi
+Dialogue: 0,0:45:56.60,0:45:59.77,Italique,Koyomi,0000,0000,0000,,et m’a même rejeté\Nle jour de notre remise des diplômes.
+Dialogue: 0,0:46:02.48,0:46:03.78,Italique,Koyomi,0000,0000,0000,,Je suis entré à la fac
+Dialogue: 0,0:46:04.07,0:46:07.99,Italique,Koyomi,0000,0000,0000,,possédant le 1er département\Nde sciences spéculatives.
+Dialogue: 0,0:46:09.12,0:46:11.24,Italique,Koyomi,0000,0000,0000,,C’est là-bas que je l’ai retrouvée.
+Dialogue: 0,0:46:13.87,0:46:14.75,Default,Kazune,0000,0000,0000,,Au fait.
+Dialogue: 0,0:46:15.50,0:46:17.33,Default,Kazune,0000,0000,0000,,J’ai un truc à te demander.
+Dialogue: 0,0:46:17.79,0:46:18.63,Default,Koyomi,0000,0000,0000,,Quoi ?
+Dialogue: 0,0:46:19.17,0:46:20.96,Default,Kazune,0000,0000,0000,,Ça te dit de sortir avec moi ?
+Dialogue: 0,0:46:21.71,0:46:24.17,Default,Koyomi,0000,0000,0000,,Si tu veux, oui. Où ça ?
+Dialogue: 0,0:46:37.64,0:46:39.77,Italique,Kazune,0000,0000,0000,,Notre histoire a commencé comme ça.
+Dialogue: 0,0:46:39.77,0:46:41.94,Sign,Sign,0000,0000,0000,,{\pos(399.64,226.97)\org(398.223,235.334)\frz-13.41\fry-14.94\frx-1.71\fax0.1\fnRubik\bord0\c&H686868&\blur0.3}Un problème inattendu s’est produit.\N\N\N\N\h\h\h\h\h\hLe programme a cessé de fonctionner.
+Dialogue: 0,0:46:42.73,0:46:46.70,Italique,Koyomi,0000,0000,0000,,Kazune gardait\Nun air taciturne et froid en public,
+Dialogue: 0,0:46:46.99,0:46:48.45,Italique,Koyomi,0000,0000,0000,,mais une fois seuls,
+Dialogue: 0,0:46:48.57,0:46:51.03,Italique,Koyomi,0000,0000,0000,,elle blaguait\Net me collait tout le temps.
+Dialogue: 0,0:46:51.99,0:46:55.20,Italique,Koyomi,0000,0000,0000,,Parfois, elle s’énervait\Nsans que je comprenne pourquoi.
+Dialogue: 0,0:46:55.66,0:46:59.21,Italique,Koyomi,0000,0000,0000,,On se rapprochait pour s’éloigner\Ncontinuellement.
+Dialogue: 0,0:46:59.58,0:47:01.54,Default,Kazune,0000,0000,0000,,Takasaki !
+Dialogue: 0,0:47:07.13,0:47:07.97,Default,Kazune,0000,0000,0000,,Bonjour.
+Dialogue: 0,0:47:08.47,0:47:09.30,Default,Koyomi,0000,0000,0000,,Salut.
+Dialogue: 0,0:47:10.14,0:47:11.22,Default,Kazune,0000,0000,0000,,T’as l’air crevé.
+Dialogue: 0,0:47:11.51,0:47:13.39,Default,Koyomi,0000,0000,0000,,Oui, j’ai sommeil.
+Dialogue: 0,0:47:24.48,0:47:25.40,Default,Koyomi,0000,0000,0000,,Tes cheveux !
+Dialogue: 0,0:47:27.49,0:47:36.24,Sign,Sign,0000,0000,0000,,{\an8}INSTITUT DE RECHERCHE\NEN SCIENCES SPÉCULATIVES
+Dialogue: 0,0:47:28.32,0:47:31.70,Italique,Koyomi,0000,0000,0000,,Après avoir obtenu nos diplômes,\Nnous avons tous les deux
+Dialogue: 0,0:47:31.82,0:47:35.08,Italique,Koyomi,0000,0000,0000,,été admis à l’institut de recherche\Noù mon père travaille.
+Dialogue: 0,0:47:37.70,0:47:38.83,Default,Kazune,0000,0000,0000,,Tu ne viens pas ?
+Dialogue: 0,0:47:40.71,0:47:42.38,Default,Kazune,0000,0000,0000,,Tu connais déjà le labo, non ?
+Dialogue: 0,0:47:44.04,0:47:46.84,Default,Kazune,0000,0000,0000,,On est venus plusieurs fois\Npour les entretiens.
+Dialogue: 0,0:47:47.92,0:47:49.67,Italique,Koyomi,0000,0000,0000,,Oui, maintenant qu’elle le dit.
+Dialogue: 0,0:47:50.76,0:47:51.64,Italique,Koyomi,0000,0000,0000,,À cette époque,
+Dialogue: 0,0:47:51.76,0:47:55.01,Italique,Koyomi,0000,0000,0000,,les terminaux IP\Nallaient être commercialisés,
+Dialogue: 0,0:47:55.26,0:47:57.14,Italique,Koyomi,0000,0000,0000,,mais il restait quelques anomalies.
+Dialogue: 0,0:47:58.60,0:48:01.02,Italique,Koyomi,0000,0000,0000,,L’équipe que nous avons intégrée
+Dialogue: 0,0:48:01.23,0:48:04.40,Italique,Koyomi,0000,0000,0000,,avait pour objectif\Nd’optimiser ces terminaux.
+Dialogue: 0,0:49:18.64,0:49:19.60,Default,Koyomi,0000,0000,0000,,Ça peut marcher.
+Dialogue: 0,0:49:19.97,0:49:20.97,Default,Kazune,0000,0000,0000,,Je crois aussi.
+Dialogue: 0,0:49:22.73,0:49:25.56,Default,Kazune,0000,0000,0000,,C’est une bonne idée, non ?\NC’est parfait, même.
+Dialogue: 0,0:49:26.48,0:49:28.06,Default,Koyomi,0000,0000,0000,,Merci de me l’avoir prêté !
+Dialogue: 0,0:49:28.69,0:49:30.57,Default,Koyomi,0000,0000,0000,,C’est pas mal, les stylos à gel.
+Dialogue: 0,0:49:31.86,0:49:33.36,Default,Kazune,0000,0000,0000,,C’est un eyeliner.
+Dialogue: 0,0:49:33.86,0:49:34.86,Default,Koyomi,0000,0000,0000,,Ah bon ?
+Dialogue: 0,0:49:38.07,0:49:41.20,Default,Kazune,0000,0000,0000,,Tu l’avais même pas remarqué ?
+Dialogue: 0,0:49:41.54,0:49:42.79,Italique,Mère Kazune,0000,0000,0000,,Je peux entrer ?
+Dialogue: 0,0:49:42.91,0:49:43.71,Default,Mayumi,0000,0000,0000,,Oui !
+Dialogue: 0,0:49:48.08,0:49:50.21,Default,Koyomi,0000,0000,0000,,C’était trop long\Nà écrire sur téléphone,
+Dialogue: 0,0:49:50.50,0:49:54.34,Default,Koyomi,0000,0000,0000,,et l’écran est trop petit\Npour voir l’équation dans son ensemble.
+Dialogue: 0,0:49:54.55,0:49:57.01,Default,Kazune,0000,0000,0000,,Qu’est-ce que ta mère a dit ?
+Dialogue: 0,0:49:57.97,0:50:00.56,Default,Koyomi,0000,0000,0000,,Qu’elle allait payer\Nles frais de pressing.
+Dialogue: 0,0:50:01.77,0:50:02.89,Default,Kazune,0000,0000,0000,,Pas la peine.
+Dialogue: 0,0:50:03.77,0:50:05.77,Default,Koyomi,0000,0000,0000,,Je vois. Désolé.
+Dialogue: 0,0:50:06.27,0:50:07.56,Default,Koyomi,0000,0000,0000,,Je t’en achèterai une.
+Dialogue: 0,0:50:07.77,0:50:08.65,Default,Kazune,0000,0000,0000,,Non merci.
+Dialogue: 0,0:50:19.32,0:50:24.20,Italique,Koyomi,0000,0000,0000,,Kazune et moi avons considérablement\Noptimisé les terminaux IP.
+Dialogue: 0,0:50:25.87,0:50:28.17,Default,Koyomi,0000,0000,0000,,Grâce à ça,\Non a pu remarquer que les gens
+Dialogue: 0,0:50:28.38,0:50:32.17,Default,Koyomi,0000,0000,0000,,faisaient de petits transferts\Nquotidiens sans s’en rendre compte.
+Dialogue: 0,0:50:34.17,0:50:36.63,Default,Koyomi,0000,0000,0000,,On en a ajouté\Naux montres classiques
+Dialogue: 0,0:50:36.97,0:50:39.43,Default,Koyomi,0000,0000,0000,,pour collecter plus de données.
+Dialogue: 0,0:50:42.10,0:50:44.39,Default,Koyomi,0000,0000,0000,,Veux-tu m’épouser ?
+Dialogue: 0,0:50:52.82,0:50:54.40,Default,Kazune,0000,0000,0000,,Elle est en aigue-marine…
+Dialogue: 0,0:50:54.53,0:50:55.28,Default,Koyomi,0000,0000,0000,,Oui.
+Dialogue: 0,0:50:56.19,0:50:58.45,Default,Koyomi,0000,0000,0000,,C’est la pierre du mois de mars.
+Dialogue: 0,0:51:00.12,0:51:02.12,Default,Kazune,0000,0000,0000,,Pas mal, venant de toi, Koyomi.
+Dialogue: 0,0:51:04.41,0:51:07.29,Default,Kazune,0000,0000,0000,,T’attends quoi ?\NMets-la sur mon annulaire gauche.
+Dialogue: 0,0:51:11.29,0:51:12.13,Default,Koyomi,0000,0000,0000,,Merci.
+Dialogue: 0,0:51:12.29,0:51:13.59,Default,Kazune,0000,0000,0000,,Pourquoi tu me dis ça ?
+Dialogue: 0,0:51:14.21,0:51:15.42,Default,Kazune,0000,0000,0000,,Attends de voir…
+Dialogue: 0,0:51:16.17,0:51:17.92,Default,Kazune,0000,0000,0000,,mais j’espère te rendre heureux.
+Dialogue: 0,0:51:23.97,0:51:26.89,Default,Koyomi,0000,0000,0000,,Boire une bière dehors\Nme donne encore plus froid.
+Dialogue: 0,0:51:27.10,0:51:28.02,Default,Kazune,0000,0000,0000,,Tu trouves ?
+Dialogue: 0,0:51:28.44,0:51:31.81,Default,Kazune,0000,0000,0000,,Je préfère la boire\Ndans un verre, moi.
+Dialogue: 0,0:51:32.90,0:51:37.44,Default,Koyomi,0000,0000,0000,,Normalement, la vue devait être\Nun peu différente, de nuit…
+Dialogue: 0,0:51:38.11,0:51:40.16,Default,Koyomi,0000,0000,0000,,mais je me suis trompé d’horaire.
+Dialogue: 0,0:51:42.70,0:51:45.12,Default,Kazune,0000,0000,0000,,Ça te ressemble déjà plus, Takasaki.
+Dialogue: 0,0:51:45.74,0:51:46.79,Default,Koyomi,0000,0000,0000,,C’est-à-dire ?
+Dialogue: 0,0:51:47.16,0:51:50.17,Default,Kazune,0000,0000,0000,,J’ai hâte de voir\Nce paysage nocturne.
+Dialogue: 0,0:51:51.37,0:51:52.13,Default,Kazune,0000,0000,0000,,Pas toi ?
+Dialogue: 0,0:51:55.84,0:51:56.84,Default,Koyomi,0000,0000,0000,,Ça va pas ?
+Dialogue: 0,0:51:57.42,0:51:58.63,Default,Kazune,0000,0000,0000,,Mon sac a disparu…
+Dialogue: 0,0:51:59.59,0:52:00.80,Default,Koyomi,0000,0000,0000,,Derrière toi.
+Dialogue: 0,0:52:04.10,0:52:05.43,Default,Kazune,0000,0000,0000,,C’est bizarre…
+Dialogue: 0,0:52:06.18,0:52:08.43,Default,Kazune,0000,0000,0000,,J’étais sûre\Nde l’avoir mis à droite.
+Dialogue: 0,0:52:13.10,0:52:15.65,Default,Kazune,0000,0000,0000,,Désolée, de quoi on parlait, déjà ?
+Dialogue: 0,0:52:17.48,0:52:18.78,Default,Koyomi,0000,0000,0000,,Je commence par quoi ?
+Dialogue: 0,0:52:19.78,0:52:21.61,Italique,Koyomi,0000,0000,0000,,Puis soudain, j’ai réalisé…
+Dialogue: 0,0:52:22.57,0:52:25.70,Italique,Koyomi,0000,0000,0000,,Est-ce la Kazune du monde 0\Nqui a reçu la bague ?
+Dialogue: 0,0:52:26.41,0:52:28.91,Italique,Koyomi,0000,0000,0000,,Et est-ce qu’à cet instant,\Nj’étais bien moi ?
+Dialogue: 0,0:52:30.46,0:52:31.25,Default,Koyomi,0000,0000,0000,,Oui ?
+Dialogue: 0,0:52:32.92,0:52:35.71,Default,Préposé,0000,0000,0000,,M. Koyomi Takasaki,\Nsuivez-moi, je vous prie.
+Dialogue: 0,0:52:51.31,0:52:52.81,Default,Kazune,0000,0000,0000,,T’as pas ton terminal IP.
+Dialogue: 0,0:52:53.19,0:52:55.11,Default,Koyomi,0000,0000,0000,,Toi non plus.
+Dialogue: 0,0:52:55.31,0:52:56.11,Default,Kazune,0000,0000,0000,,Non.
+Dialogue: 0,0:53:25.55,0:53:28.76,Italique,Koyomi,0000,0000,0000,,Avec qui je m’apprête à me marier ?
+Dialogue: 0,0:53:35.31,0:53:37.77,Italique,Koyomi,0000,0000,0000,,À mesure des progrès\Nde la recherche,
+Dialogue: 0,0:53:38.40,0:53:41.03,Italique,Koyomi,0000,0000,0000,,les mondes parallèles\Ncommuniquaient entre eux,
+Dialogue: 0,0:53:41.36,0:53:43.78,Italique,Koyomi,0000,0000,0000,,et le monde\Ndevint un ordinateur quantique
+Dialogue: 0,0:53:44.40,0:53:49.49,Italique,Koyomi,0000,0000,0000,,accélérant le développement\Nde nombreuses sciences et technologies.
+Dialogue: 0,0:53:51.37,0:53:56.08,Italique,Koyomi,0000,0000,0000,,En peu de temps, j’ai dû rouvrir\Ndeux fois la grande pièce de ma maison,
+Dialogue: 0,0:53:56.79,0:53:58.79,Italique,Koyomi,0000,0000,0000,,et je commençais\Nà me sentir seul.
+Dialogue: 0,0:54:00.50,0:54:02.80,Italique,Koyomi,0000,0000,0000,,Mais on a accueilli\Nun nouveau membre.
+Dialogue: 0,0:54:03.38,0:54:04.38,Default,Kazune,0000,0000,0000,,Quelle couleur ?
+Dialogue: 0,0:54:04.55,0:54:05.34,Default,Ryô,0000,0000,0000,,Orange !
+Dialogue: 0,0:54:06.22,0:54:07.39,Default,Kazune,0000,0000,0000,,Il est juste là.
+Dialogue: 0,0:54:07.55,0:54:08.76,Default,Ryô,0000,0000,0000,,Oh, j’avais pas vu.
+Dialogue: 0,0:54:12.06,0:54:13.60,Default,Kazune,0000,0000,0000,,Qu’est-ce que tu dessines ?
+Dialogue: 0,0:54:14.10,0:54:15.19,Default,Ryô,0000,0000,0000,,Je sais pas.
+Dialogue: 0,0:54:16.02,0:54:18.27,Default,Kazune,0000,0000,0000,,Tu ne sais même pas\Nce que tu dessines ?
+Dialogue: 0,0:54:20.06,0:54:22.82,Default,Ryô,0000,0000,0000,,Je connais pas le nom,\Nmais c’était trop cool.
+Dialogue: 0,0:54:22.98,0:54:25.74,Default,Kazune,0000,0000,0000,,Je vois….\NOù est-ce que tu l’as vu ?
+Dialogue: 0,0:54:26.03,0:54:27.95,Default,Ryô,0000,0000,0000,,Euh…
+Dialogue: 0,0:54:28.11,0:54:30.78,Default,Ryô,0000,0000,0000,,J’y suis allé\Navec papa l’autre jour.
+Dialogue: 0,0:54:30.95,0:54:32.04,Default,Kazune,0000,0000,0000,,Où ça ?
+Dialogue: 0,0:54:32.37,0:54:33.54,Default,Ryô,0000,0000,0000,,Je sais pas.
+Dialogue: 0,0:54:34.45,0:54:35.41,Default,Ryô,0000,0000,0000,,C’est un secret.
+Dialogue: 0,0:54:35.62,0:54:37.83,Default,Kazune,0000,0000,0000,,Oh, s’il te plaît.
+Dialogue: 0,0:54:37.96,0:54:39.08,Default,Ryô,0000,0000,0000,,Non, c’est secret.
+Dialogue: 0,0:54:39.92,0:54:41.46,Default,Kazune,0000,0000,0000,,Allez, s’il te plaît !
+Dialogue: 0,0:54:41.59,0:54:43.13,Default,Ryô,0000,0000,0000,,Je te dirai pas.
+Dialogue: 0,0:54:44.80,0:54:47.43,Default,Ryô,0000,0000,0000,,Tu m’embêtes, maman !
+Dialogue: 0,0:54:47.76,0:54:49.84,Default,Kazune,0000,0000,0000,,Allez, dis-moi !
+Dialogue: 0,0:54:49.97,0:54:51.93,Default,Kazune,0000,0000,0000,,Guili, guili, guili.
+Dialogue: 0,0:54:52.10,0:54:55.06,Default,Koyomi,0000,0000,0000,,Désolé de vous interrompre,\Nmais c’est l’heure.
+Dialogue: 0,0:54:55.48,0:54:59.15,Default,Kazune,0000,0000,0000,,Ryô ne veut pas me dire\Nce qu’il a dessiné.
+Dialogue: 0,0:54:59.31,0:55:02.57,Default,Ryô,0000,0000,0000,,Papa sait, lui.\NC’est son endroit préféré !
+Dialogue: 0,0:55:03.78,0:55:05.19,Default,Koyomi,0000,0000,0000,,C’est où, ça ?
+Dialogue: 0,0:55:05.36,0:55:07.07,Default,Ryô,0000,0000,0000,,Je l’ai pas encore fini…
+Dialogue: 0,0:55:09.41,0:55:11.45,Default,Kazune,0000,0000,0000,,Bon, il est temps d’y aller.
+Dialogue: 0,0:55:11.57,0:55:14.70,Default,Ryô,0000,0000,0000,,Hein ?\NMais je veux encore dessiner !
+Dialogue: 0,0:55:15.04,0:55:16.25,Default,Ryô,0000,0000,0000,,Maman !
+Dialogue: 0,0:55:17.29,0:55:18.33,Default,Kazune,0000,0000,0000,,Très bien.
+Dialogue: 0,0:55:18.58,0:55:22.63,Default,Kazune,0000,0000,0000,,Aujourd’hui, je t’autorise\Nà laisser tes crayons par terre.
+Dialogue: 0,0:55:22.79,0:55:24.25,Default,Ryô,0000,0000,0000,,J’ai pas à les ranger ?
+Dialogue: 0,0:55:24.38,0:55:27.59,Default,Kazune,0000,0000,0000,,Non, comme ça,\Ntu pourras continuer en rentrant.
+Dialogue: 0,0:55:27.80,0:55:28.55,Default,Ryô,0000,0000,0000,,D’accord.
+Dialogue: 0,0:55:31.72,0:55:33.64,Default,Kazune,0000,0000,0000,,Ne marche pas dessus, hein ?
+Dialogue: 0,0:55:33.81,0:55:34.81,Default,Ryô,0000,0000,0000,,Oui, maman.
+Dialogue: 0,0:55:45.53,0:55:49.36,Italique,Voix,0000,0000,0000,,Pour les besoins de l’exposition,\Nl’éclairage peut être intense.
+Dialogue: 0,0:55:50.53,0:55:53.37,Italique,Voix,0000,0000,0000,,Le zoo fantastique\Nest un ensemble de sculptures
+Dialogue: 0,0:55:54.03,0:55:56.33,Italique,Voix,0000,0000,0000,,imaginées par Claire Udesky.
+Dialogue: 0,0:56:04.09,0:56:07.01,Default,Koyomi,0000,0000,0000,,Je n’avance pas.\NÇa risque de prendre du temps.
+Dialogue: 0,0:56:07.76,0:56:10.38,Default,Koyomi,0000,0000,0000,,Cinq minutes, voire dix, je pense.
+Dialogue: 0,0:56:11.05,0:56:12.30,Default,Koyomi,0000,0000,0000,,T’es où, Kazune ?
+Dialogue: 0,0:56:12.59,0:56:14.22,Italique,Kazune,0000,0000,0000,,À la colline de la place.
+Dialogue: 0,0:56:14.55,0:56:16.31,Italique,Kazune,0000,0000,0000,,La place Kiri quelque chose.
+Dialogue: 0,0:56:18.31,0:56:19.18,Default,Koyomi,0000,0000,0000,,Kazune ?
+Dialogue: 0,0:56:20.48,0:56:21.39,Default,Koyomi,0000,0000,0000,,Allô ?
+Dialogue: 0,0:56:21.52,0:56:22.90,Default,Voyou,0000,0000,0000,,Restez là !
+Dialogue: 0,0:56:23.27,0:56:26.40,Default,Voyou,0000,0000,0000,,Revenez, bande de lâches !
+Dialogue: 0,0:56:41.92,0:56:43.92,Default,Kazune,0000,0000,0000,,Ryô ? Ryô ?
+Dialogue: 0,0:56:48.09,0:56:49.84,Default,Kazune,0000,0000,0000,,Maman est par là, Ryô !
+Dialogue: 0,0:56:51.42,0:56:52.43,Default,Ryô,0000,0000,0000,,Maman !
+Dialogue: 0,0:57:15.62,0:57:16.66,Default,Kazune,0000,0000,0000,,Non !
+Dialogue: 0,0:57:50.15,0:57:51.32,Default,Kazune,0000,0000,0000,,Ça va pas ?
+Dialogue: 0,0:57:52.15,0:57:52.94,Default,Koyomi,0000,0000,0000,,C’est rien.
+Dialogue: 0,0:57:53.82,0:57:56.11,Default,Koyomi,0000,0000,0000,,J’ai juste fait un cauchemar.
+Dialogue: 0,0:57:57.57,0:57:59.78,Default,Kazune,0000,0000,0000,,Normal, après ce qu’il s’est passé.
+Dialogue: 0,0:58:00.12,0:58:00.83,Default,Koyomi,0000,0000,0000,,Oui.
+Dialogue: 0,0:58:01.08,0:58:02.45,Default,Kazune,0000,0000,0000,,Mais ça va aller.
+Dialogue: 0,0:58:03.04,0:58:05.25,Default,Kazune,0000,0000,0000,,Tu n’as plus à te faire de souci.
+Dialogue: 0,0:58:05.75,0:58:06.83,Default,Koyomi,0000,0000,0000,,T’as raison.
+Dialogue: 0,0:58:07.79,0:58:10.96,Default,Koyomi,0000,0000,0000,,Le coupable a été attrapé sur place…
+Dialogue: 0,0:58:15.51,0:58:18.47,Default,Kazune,0000,0000,0000,,Je suis surtout rassurée\Nque Ryô soit sain et sauf.
+Dialogue: 0,0:58:19.39,0:58:22.18,Default,Kazune,0000,0000,0000,,C’est parce que\Ntu as poussé ce fou.
+Dialogue: 0,0:58:22.77,0:58:24.35,Default,Koyomi,0000,0000,0000,,Tu m’as trouvé classe ?
+Dialogue: 0,0:58:25.23,0:58:29.02,Default,Koyomi,0000,0000,0000,,Est-ce que j’ai réussi à me rapprocher\Nde l’image que t’avais de moi ?
+Dialogue: 0,0:58:30.23,0:58:32.69,Default,Kazune,0000,0000,0000,,Comme tu me disais\Nquand on était jeunes…
+Dialogue: 0,0:58:33.28,0:58:36.45,Default,Koyomi,0000,0000,0000,,« Mon Koyomi\Nest quelqu’un de fiable ».
+Dialogue: 0,0:58:42.20,0:58:45.54,Default,Kazune,0000,0000,0000,,Je suis contente\Nqu’il ne vous soit rien arrivé.
+Dialogue: 0,0:58:47.37,0:58:48.29,Default,Koyomi,0000,0000,0000,,Kazune…
+Dialogue: 0,0:59:12.15,0:59:14.65,Default,Koyomi,0000,0000,0000,,On ne doit pas\Nrester bloqués sur l’accident.
+Dialogue: 0,0:59:14.82,0:59:17.53,Default,Koyomi,0000,0000,0000,,Il faut que nous retrouvions\Nnotre quotidien.
+Dialogue: 0,0:59:18.40,0:59:21.57,Default,Koyomi,0000,0000,0000,,Et si on le remettait à la crèche\Nla semaine prochaine ?
+Dialogue: 0,0:59:21.78,0:59:23.03,Default,Ryô,0000,0000,0000,,Génial !
+Dialogue: 0,0:59:23.16,0:59:24.24,Default,Ryô,0000,0000,0000,,Je veux y aller !
+Dialogue: 0,0:59:24.37,0:59:25.20,Default,Kazune,0000,0000,0000,,Pas question !
+Dialogue: 0,0:59:25.58,0:59:28.29,Default,Kazune,0000,0000,0000,,Et s’il lui arrivait quelque chose,\Nhein ?
+Dialogue: 0,0:59:31.54,0:59:34.84,Default,Koyomi,0000,0000,0000,,Ne t’en fais pas,\Nmaman n’est pas en colère.
+Dialogue: 0,0:59:35.63,0:59:36.30,Default,Koyomi,0000,0000,0000,,Pas vrai ?
+Dialogue: 0,0:59:38.22,0:59:40.80,Default,Kazune,0000,0000,0000,,Je t’ai fait peur ? Pardon…
+Dialogue: 0,0:59:41.80,0:59:44.51,Default,Kazune,0000,0000,0000,,Qu’est-ce que\Ntu veux manger, ce midi ?
+Dialogue: 0,0:59:45.18,0:59:47.81,Default,Ryô,0000,0000,0000,,Je viens à peine de prendre\Nmon petit déjeuner.
+Dialogue: 0,0:59:49.52,0:59:52.11,Default,Ryô,0000,0000,0000,,Hors de mon chemin !
+Dialogue: 0,0:59:54.40,0:59:55.32,Default,Koyomi,0000,0000,0000,,Bon, j’y vais.
+Dialogue: 0,0:59:55.53,0:59:57.24,Default,Ryô,0000,0000,0000,,À plus tard, papa !
+Dialogue: 0,0:59:57.74,0:59:58.90,Default,Kazune,0000,0000,0000,,Sois prudent.
+Dialogue: 0,0:59:59.15,1:00:01.07,Default,Koyomi,0000,0000,0000,,Il y a des courses à faire ?
+Dialogue: 0,1:00:01.91,1:00:03.07,Default,Kazune,0000,0000,0000,,Eh bien…
+Dialogue: 0,1:00:04.16,1:00:05.54,Default,Kazune,0000,0000,0000,,Non, rien de spécial.
+Dialogue: 0,1:00:05.87,1:00:09.29,Default,Ryô,0000,0000,0000,,Je peux faire sortir\Nmon humanoïde volant par la fenêtre ?
+Dialogue: 0,1:00:09.41,1:00:11.50,Default,Koyomi,0000,0000,0000,,Il va se faire emporter par le vent.
+Dialogue: 0,1:00:12.42,1:00:14.34,Default,Kazune,0000,0000,0000,,Je te l’avais bien dit.
+Dialogue: 0,1:00:16.63,1:00:19.80,Default,Kazune,0000,0000,0000,,Dis, Ryô. Je vois que\Ntu n’as pas terminé ce dessin.
+Dialogue: 0,1:00:20.09,1:00:21.63,Default,Kazune,0000,0000,0000,,Tu ne veux pas le continuer ?
+Dialogue: 0,1:00:23.34,1:00:26.35,Default,Ryô,0000,0000,0000,,J’ai déjà oublié\Nce que je voulais faire.
+Dialogue: 0,1:00:30.73,1:00:32.35,Default,Shôdai,0000,0000,0000,,Et Kazune ?
+Dialogue: 0,1:00:33.15,1:00:36.32,Default,Koyomi,0000,0000,0000,,Elle a réagi de manière\Nbeaucoup plus calme que moi.
+Dialogue: 0,1:00:36.69,1:00:38.78,Default,Koyomi,0000,0000,0000,,Ça lui ressemblait bien.
+Dialogue: 0,1:00:40.11,1:00:42.61,Default,Koyomi,0000,0000,0000,,Mais ces trois derniers jours,\Neh bien…
+Dialogue: 0,1:00:43.70,1:00:45.91,Default,Koyomi,0000,0000,0000,,Elle ne quitte pas Ryô des yeux.
+Dialogue: 0,1:00:46.66,1:00:49.58,Default,Shôdai,0000,0000,0000,,C’est normal,\Nvu ce que vous avez vécu…
+Dialogue: 0,1:00:49.87,1:00:52.12,Default,Shôdai,0000,0000,0000,,Toutes les mères feraient ça.
+Dialogue: 0,1:00:52.79,1:00:54.38,Default,Koyomi,0000,0000,0000,,Je suppose, oui…
+Dialogue: 0,1:00:55.21,1:00:56.09,Default,Koyomi,0000,0000,0000,,Mais…
+Dialogue: 0,1:00:57.88,1:00:59.71,Default,Shôdai,0000,0000,0000,,Ne t’en fais pas, va.
+Dialogue: 0,1:01:00.01,1:01:02.93,Default,Shôdai,0000,0000,0000,,C’est une chance\Nque tu aies réussi à protéger Ryô.
+Dialogue: 0,1:01:03.05,1:01:06.05,Default,Shôdai,0000,0000,0000,,J’imagine pas dans quel état\Nt’aurais été, sinon.
+Dialogue: 0,1:01:06.43,1:01:07.72,Default,Koyomi,0000,0000,0000,,Comment ça ?
+Dialogue: 0,1:01:09.35,1:01:11.98,Default,Homme 1,0000,0000,0000,,Excusez-moi, puis-je entrer ?
+Dialogue: 0,1:01:12.23,1:01:13.06,Default,Shôdai,0000,0000,0000,,Oui ?
+Dialogue: 0,1:01:13.27,1:01:15.90,Default,Homme 1,0000,0000,0000,,Navré de vous déranger,\NM. le directeur adjoint.
+Dialogue: 0,1:01:22.45,1:01:25.99,Default,Homme 1,0000,0000,0000,,J’ai reçu un appel urgent\Nde l’agence des sciences spéculatives.
+Dialogue: 0,1:01:26.32,1:01:27.45,Default,Shôdai,0000,0000,0000,,Urgent ?
+Dialogue: 0,1:01:27.62,1:01:31.12,Default,Homme 1,0000,0000,0000,,Oui, concernant la nouvelle salle\Nde surveillance des transferts…
+Dialogue: 0,1:01:43.17,1:01:46.97,Default,Shôdai,0000,0000,0000,,La valeur relative SIP\Nest de 22 plus 10…
+Dialogue: 0,1:01:47.14,1:01:49.64,Default,Homme 1,0000,0000,0000,,Le problème\Nest la distance du transfert.
+Dialogue: 0,1:01:50.14,1:01:51.60,Default,Koyomi,0000,0000,0000,,Je vais rentrer, moi.
+Dialogue: 0,1:01:52.43,1:01:54.06,Default,Shôdai,0000,0000,0000,,Attends, Koyomi !
+Dialogue: 0,1:01:54.89,1:01:56.77,Default,Shôdai,0000,0000,0000,,Il semblerait qu’on ait forcé
+Dialogue: 0,1:01:56.90,1:01:59.65,Default,Shôdai,0000,0000,0000,,un transfert orienté interdit\Nsur Kazune.
+Dialogue: 0,1:02:00.90,1:02:02.32,Italique,Koyomi,0000,0000,0000,,Le transfert orienté.
+Dialogue: 0,1:02:02.90,1:02:07.16,Italique,Koyomi,0000,0000,0000,,En utilisant un générateur magnétique,\Non provoque un transfert artificiel
+Dialogue: 0,1:02:07.28,1:02:10.16,Italique,Koyomi,0000,0000,0000,,pour s’envoyer\Ndans un monde spécifique.
+Dialogue: 0,1:02:09.41,1:02:11.41,Sign,Sign,0000,0000,0000,,{\bord0\fs28\pos(299.334,133)\frx6\fry0\frz334}KAZUNE
+Dialogue: 0,1:02:12.41,1:02:14.12,Italique,Koyomi,0000,0000,0000,,Voilà plus de dix ans
+Dialogue: 0,1:02:14.29,1:02:17.71,Italique,Koyomi,0000,0000,0000,,qu’on les expérimente\Nà l’institut des sciences spéculatives.
+Dialogue: 0,1:02:18.21,1:02:20.84,Italique,Koyomi,0000,0000,0000,,Mais à l’époque déjà,\Nil était obligatoire
+Dialogue: 0,1:02:20.96,1:02:23.59,Italique,Koyomi,0000,0000,0000,,de prévenir les autorités\Nde nos expériences.
+Dialogue: 0,1:02:25.09,1:02:27.80,Italique,Koyomi,0000,0000,0000,,Un tel transfert\Nprésente plusieurs risques,
+Dialogue: 0,1:02:28.59,1:02:32.01,Italique,Koyomi,0000,0000,0000,,dont une utilisation\Nà des fins criminelles.
+Dialogue: 0,1:02:32.77,1:02:34.18,Default,Satô,0000,0000,0000,,Inutile de te dire
+Dialogue: 0,1:02:34.35,1:02:36.94,Default,Satô,0000,0000,0000,,que la sécurité de ta famille\Npasse avant tout.
+Dialogue: 0,1:02:37.81,1:02:39.94,Default,Satô,0000,0000,0000,,Mais selon\Nla tournure des événements,
+Dialogue: 0,1:02:40.15,1:02:42.90,Default,Satô,0000,0000,0000,,les conséquences pourraient\Nêtre néfastes.
+Dialogue: 0,1:02:43.15,1:02:44.82,Default,Satô,0000,0000,0000,,Tente de régler ce problème.
+Dialogue: 0,1:02:45.74,1:02:50.57,Italique,Koyomi,0000,0000,0000,,Ce qui nous préoccupait\Nétait une chose bien plus complexe.
+Dialogue: 0,1:02:53.33,1:02:54.16,Default,Koyomi,0000,0000,0000,,Bonsoir.
+Dialogue: 0,1:03:05.21,1:03:07.34,Default,Koyomi,0000,0000,0000,,Kazune ? C’est moi.
+Dialogue: 0,1:03:09.39,1:03:10.89,Default,Koyomi,0000,0000,0000,,Ryô, j’ouvre la porte.
+Dialogue: 0,1:04:13.95,1:04:15.53,Default,Koyomi,0000,0000,0000,,Vous n’avez pas froid ?
+Dialogue: 0,1:04:15.87,1:04:16.74,Default,Ryô,0000,0000,0000,,Papa !
+Dialogue: 0,1:04:17.75,1:04:19.12,Default,Koyomi,0000,0000,0000,,J’ai pris ça sur la route.
+Dialogue: 0,1:04:19.79,1:04:21.37,Default,Ryô,0000,0000,0000,,Je veux le chocolat au lait !
+Dialogue: 0,1:04:26.50,1:04:30.42,Default,Kazune,0000,0000,0000,,Si tu es venu là, c’est que\Ntu connaissais l’endroit du dessin.
+Dialogue: 0,1:04:31.18,1:04:33.55,Default,Koyomi,0000,0000,0000,,Non, je l’ai compris ce matin.
+Dialogue: 0,1:04:34.14,1:04:35.51,Default,Koyomi,0000,0000,0000,,C’est là que…
+Dialogue: 0,1:04:37.18,1:04:38.10,Default,Koyomi,0000,0000,0000,,Oh, je vois…
+Dialogue: 0,1:04:39.48,1:04:43.69,Default,Koyomi,0000,0000,0000,,À cet instant, nous étions encore\Ndans le même monde.
+Dialogue: 0,1:04:45.73,1:04:47.02,Default,Koyomi,0000,0000,0000,,Je t’ouvre ta canette ?
+Dialogue: 0,1:04:47.23,1:04:48.48,Default,Ryô,0000,0000,0000,,Après, s’il te plaît.
+Dialogue: 0,1:04:48.86,1:04:49.65,Default,Koyomi,0000,0000,0000,,D’accord.
+Dialogue: 0,1:04:51.57,1:04:53.11,Default,Koyomi,0000,0000,0000,,Je te la pose là.
+Dialogue: 0,1:04:53.28,1:04:54.03,Default,Ryô,0000,0000,0000,,Oui !
+Dialogue: 0,1:04:54.91,1:04:56.24,Default,Koyomi,0000,0000,0000,,Tu as oublié ça.
+Dialogue: 0,1:04:57.58,1:05:00.70,Default,Koyomi,0000,0000,0000,,Même si tu l’as retiré,\Nles transferts sont surveillés.
+Dialogue: 0,1:05:01.54,1:05:02.87,Default,Kazune,0000,0000,0000,,C’est pas logique.
+Dialogue: 0,1:05:03.54,1:05:05.50,Default,Kazune,0000,0000,0000,,Ça m’énerve qu’il n’affiche pas 0.
+Dialogue: 0,1:05:06.13,1:05:08.34,Default,Kazune,0000,0000,0000,,Tu ne crains pas\Nde perdre ton identité ?
+Dialogue: 0,1:05:21.77,1:05:23.35,Italique,Koyomi,0000,0000,0000,,La perte de l’identité…
+Dialogue: 0,1:05:24.06,1:05:26.31,Italique,Koyomi,0000,0000,0000,,Si, lors d’un transfert\Ndans un autre monde,
+Dialogue: 0,1:05:26.44,1:05:28.90,Italique,Koyomi,0000,0000,0000,,une bifurcation\Nse produit dans celui-ci,
+Dialogue: 0,1:05:29.23,1:05:31.53,Italique,Koyomi,0000,0000,0000,,vous vous éloignez\Nde celui d’origine.
+Dialogue: 0,1:05:32.45,1:05:35.61,Italique,Koyomi,0000,0000,0000,,En outre, cela ouvre\Nune nouvelle destination de retour
+Dialogue: 0,1:05:35.82,1:05:38.20,Italique,Koyomi,0000,0000,0000,,pour la personne ayant été remplacée,
+Dialogue: 0,1:05:38.58,1:05:41.58,Italique,Koyomi,0000,0000,0000,,créant une divergence complexe\Ndurant son parcours.
+Dialogue: 0,1:05:43.29,1:05:44.87,Default,Koyomi,0000,0000,0000,,Retourne vite à l’institut.
+Dialogue: 0,1:05:45.00,1:05:45.88,Default,Kazune,0000,0000,0000,,Pas question !
+Dialogue: 0,1:05:48.42,1:05:50.34,Default,Kazune,0000,0000,0000,,Je ne le lâcherai jamais !
+Dialogue: 0,1:05:52.80,1:05:54.88,Default,Koyomi,0000,0000,0000,,Tu n’es pas la Kazune\Nde ce monde.
+Dialogue: 0,1:05:55.05,1:05:56.51,Default,Kazune,0000,0000,0000,,J’ai enfin pu le revoir !
+Dialogue: 0,1:05:56.64,1:05:57.39,Default,Koyomi,0000,0000,0000,,Tu te trompes.
+Dialogue: 0,1:05:58.30,1:05:59.39,Default,Koyomi,0000,0000,0000,,C’est un autre Ryô.
+Dialogue: 0,1:06:00.81,1:06:01.89,Default,Koyomi,0000,0000,0000,,Le…
+Dialogue: 0,1:06:02.81,1:06:04.44,Default,Koyomi,0000,0000,0000,,Le Ryô de ton monde…
+Dialogue: 0,1:06:08.90,1:06:10.23,Default,Ryô,0000,0000,0000,,Où est maman ?
+Dialogue: 0,1:06:11.65,1:06:14.15,Default,Ryô,0000,0000,0000,,Tu sais où est partie ma maman ?
+Dialogue: 0,1:06:17.45,1:06:18.45,Default,Kazune,0000,0000,0000,,Tu as raison…
+Dialogue: 0,1:06:19.28,1:06:22.37,Default,Kazune,0000,0000,0000,,Tu n’es plus mon Ryô…
+Dialogue: 0,1:06:23.29,1:06:27.08,Default,Kazune,0000,0000,0000,,Le mien est ce petit garçon\Nque j’ai perdu.
+Dialogue: 0,1:06:28.79,1:06:29.79,Default,Kazune,0000,0000,0000,,Mes jambes…
+Dialogue: 0,1:06:31.13,1:06:32.88,Default,Kazune,0000,0000,0000,,Elles ne bougeaient pas…
+Dialogue: 0,1:06:34.42,1:06:35.55,Default,Kazune,0000,0000,0000,,J’étais tétanisée…
+Dialogue: 0,1:06:37.18,1:06:40.68,Default,Kazune,0000,0000,0000,,Je n’ai rien su faire\Npour le sauver !
+Dialogue: 0,1:06:42.18,1:06:44.02,Default,Kazune,0000,0000,0000,,Pardonne-moi, Ryô…
+Dialogue: 0,1:06:44.85,1:06:46.81,Default,Kazune,0000,0000,0000,,J’ai été incapable de te protéger…
+Dialogue: 0,1:06:48.06,1:06:49.27,Default,Kazune,0000,0000,0000,,Pardon.
+Dialogue: 0,1:06:53.53,1:06:56.20,Default,Koyomi,0000,0000,0000,,Ramasse tes crayons, Ryô.
+Dialogue: 0,1:06:56.74,1:06:58.61,Default,Ryô,0000,0000,0000,,Oui, mais…
+Dialogue: 0,1:07:00.03,1:07:01.66,Default,Ryô,0000,0000,0000,,Ne marche pas dessus.
+Dialogue: 0,1:07:02.20,1:07:03.12,Default,Ryô,0000,0000,0000,,D’accord…
+Dialogue: 0,1:07:15.09,1:07:16.38,Default,Koyomi,0000,0000,0000,,Tu n’y es pour rien.
+Dialogue: 0,1:07:16.67,1:07:17.97,Default,Kazune,0000,0000,0000,,Bien sûr que si.
+Dialogue: 0,1:07:18.88,1:07:21.18,Default,Kazune,0000,0000,0000,,C’est moi qui l’ai tué !
+Dialogue: 0,1:07:21.43,1:07:24.22,Default,Kazune,0000,0000,0000,,Koyomi doit penser la même chose.
+Dialogue: 0,1:07:25.31,1:07:27.48,Default,Koyomi,0000,0000,0000,,Non, pas du tout.
+Dialogue: 0,1:07:27.94,1:07:29.69,Default,Kazune,0000,0000,0000,,Comment tu pourrais comprendre ?
+Dialogue: 0,1:07:29.94,1:07:32.48,Default,Kazune,0000,0000,0000,,Tu vis dans le bonheur,\Ntu n’en sais rien !
+Dialogue: 0,1:07:32.86,1:07:34.07,Default,Kazune,0000,0000,0000,,Tu ne peux pas savoir !
+Dialogue: 0,1:07:37.07,1:07:38.36,Default,Koyomi,0000,0000,0000,,Peut-être, oui.
+Dialogue: 0,1:07:39.36,1:07:40.82,Default,Koyomi,0000,0000,0000,,Mais tu es dans l’erreur.
+Dialogue: 0,1:07:42.12,1:07:44.91,Default,Koyomi,0000,0000,0000,,Où que tu ailles, je reste le même.
+Dialogue: 0,1:07:47.45,1:07:48.37,Default,Koyomi,0000,0000,0000,,En cet instant,
+Dialogue: 0,1:07:48.83,1:07:52.25,Default,Koyomi,0000,0000,0000,,j’attends avec impatience\Nque Kazune revienne.
+Dialogue: 0,1:07:53.34,1:07:56.34,Default,Koyomi,0000,0000,0000,,Le moi dans ton monde
+Dialogue: 0,1:07:56.63,1:07:58.88,Default,Koyomi,0000,0000,0000,,doit sûrement t’attendre aussi.
+Dialogue: 0,1:08:07.52,1:08:08.48,Default,Ryô,0000,0000,0000,,Oh, regardez !
+Dialogue: 0,1:08:12.73,1:08:14.77,Default,Ryô,0000,0000,0000,,Ça s’est allumé !\NVous avez vu ?
+Dialogue: 0,1:08:15.11,1:08:16.69,Default,Ryô,0000,0000,0000,,Les lumières sont allumées !
+Dialogue: 0,1:08:19.07,1:08:20.32,Default,Kazune,0000,0000,0000,,C’est si beau…
+Dialogue: 0,1:08:43.47,1:08:45.30,Default,Fonctionnaire 1,0000,0000,0000,,Que se passe-t-il, M. Hidaka ?
+Dialogue: 0,1:08:45.76,1:08:50.64,Default,Shôdai,0000,0000,0000,,On clone des terminaux IP\Npour la recherche.
+Dialogue: 0,1:08:57.90,1:08:59.32,Default,Ryô,0000,0000,0000,,J’ai terminé !
+Dialogue: 0,1:09:01.70,1:09:04.07,Default,Kazune,0000,0000,0000,,Ryô, tu n’as pas le droit\Nd’entrer ici !
+Dialogue: 0,1:09:04.37,1:09:05.49,Default,Satô,0000,0000,0000,,Ce n’est rien.
+Dialogue: 0,1:09:06.58,1:09:07.87,Default,Satô,0000,0000,0000,,Ça ne me dérange pas.
+Dialogue: 0,1:09:08.95,1:09:10.25,Default,Ryô,0000,0000,0000,,Tiens, c’est pour toi.
+Dialogue: 0,1:09:14.33,1:09:15.96,Default,Kazune,0000,0000,0000,,J’ai tant rêvé le voir…
+Dialogue: 0,1:09:18.38,1:09:19.51,Default,Kazune,0000,0000,0000,,Merci.
+Dialogue: 0,1:09:26.55,1:09:27.43,Default,Koyomi,0000,0000,0000,,Kazune…
+Dialogue: 0,1:09:34.02,1:09:36.44,Default,Koyomi,0000,0000,0000,,Bon, eh bien…\NPrends soin de toi.
+Dialogue: 0,1:09:37.48,1:09:39.44,Default,Kazune,0000,0000,0000,,Tu n’as aucun tact.
+Dialogue: 0,1:09:40.90,1:09:41.94,Default,Koyomi,0000,0000,0000,,Désolé.
+Dialogue: 0,1:09:48.66,1:09:51.16,Italique,Koyomi,0000,0000,0000,,J’ai cru te voir dire\Nque c’était injuste.
+Dialogue: 0,1:09:53.37,1:09:55.50,Default,Kazune,0000,0000,0000,,Pourquoi je n’y ai pas droit ?
+Dialogue: 0,1:10:02.80,1:10:04.93,Default,Homme 2,0000,0000,0000,,Initialisation du protocole.
+Dialogue: 0,1:10:05.47,1:10:06.93,Default,Homme 3,0000,0000,0000,,Aucune anomalie vitale.
+Dialogue: 0,1:10:07.14,1:10:08.93,Default,Femme 1,0000,0000,0000,,Champ magnétique élargi.
+Dialogue: 0,1:10:09.35,1:10:11.10,Default,Homme 1,0000,0000,0000,,Début du transfert orienté.
+Dialogue: 0,1:10:16.94,1:10:19.15,Default,Homme 1,0000,0000,0000,,Fin du transfert orienté.
+Dialogue: 0,1:10:20.19,1:10:23.94,Default,Homme 3,0000,0000,0000,,Les signes vitaux sont normaux,\Nmais l’EEG est légèrement lent.
+Dialogue: 0,1:10:38.04,1:10:42.34,Italique,Koyomi,0000,0000,0000,,Les capsules IP étaient conçues\Npour être actionnées de l’extérieur.
+Dialogue: 0,1:10:43.26,1:10:47.30,Italique,Koyomi,0000,0000,0000,,C’est sûrement le Koyomi du monde 13\Nqui a aidé au transfert de Kazune.
+Dialogue: 0,1:10:48.09,1:10:51.05,Italique,Koyomi,0000,0000,0000,,Ils pourraient tous deux\Nêtre licenciés de l’institut.
+Dialogue: 0,1:10:52.35,1:10:54.60,Italique,Koyomi,0000,0000,0000,,Ayant perdu Ryô\Net leur travail,
+Dialogue: 0,1:10:54.85,1:10:57.39,Italique,Koyomi,0000,0000,0000,,ils devront trouver\Nun nouveau mode de vie.
+Dialogue: 0,1:11:00.19,1:11:02.32,Italique,Koyomi,0000,0000,0000,,L’identité de la Kazune\Nde mon monde
+Dialogue: 0,1:11:02.73,1:11:04.78,Italique,Koyomi,0000,0000,0000,,a également été perturbée.
+Dialogue: 0,1:11:05.53,1:11:08.07,Italique,Koyomi,0000,0000,0000,,En revenant\Noù la scission s’est produite,
+Dialogue: 0,1:11:08.36,1:11:11.66,Italique,Koyomi,0000,0000,0000,,elle s’est divisée,\Net n’est plus vraiment du monde 0.
+Dialogue: 0,1:11:13.58,1:11:16.04,Italique,Koyomi,0000,0000,0000,,Mais personne\Nn’est plus proche du 0 qu’elle.
+Dialogue: 0,1:11:17.46,1:11:21.00,Italique,Koyomi,0000,0000,0000,,De son point de vue aussi,\Nnous ne sommes plus les mêmes.
+Dialogue: 0,1:11:26.88,1:11:31.14,Default,Koyomi,0000,0000,0000,,Il y a longtemps, quelqu’un m’a parlé\Nde l’importance des possibilités,
+Dialogue: 0,1:11:31.47,1:11:34.06,Default,Koyomi,0000,0000,0000,,mais j’étais bien trop jeune\Npour comprendre.
+Dialogue: 0,1:11:34.77,1:11:35.60,Default,Kazune,0000,0000,0000,,Ah oui ?
+Dialogue: 0,1:11:36.18,1:11:37.81,Default,Koyomi,0000,0000,0000,,C’était mon devoir d’adulte.
+Dialogue: 0,1:11:38.94,1:11:42.56,Default,Koyomi,0000,0000,0000,,Mais cette personne\Nn’avait pas de réponse claire non plus.
+Dialogue: 0,1:11:42.98,1:11:44.23,Default,Kazune,0000,0000,0000,,De quoi tu parles ?
+Dialogue: 0,1:11:45.03,1:11:46.65,Default,Koyomi,0000,0000,0000,,Je n’ai toujours pas la réponse.
+Dialogue: 0,1:11:47.40,1:11:50.53,Default,Koyomi,0000,0000,0000,,Mais j’aime avoir des possibilités.
+Dialogue: 0,1:11:51.87,1:11:54.70,Default,Koyomi,0000,0000,0000,,C’est ma conclusion\Nà force d’y réfléchir.
+Dialogue: 0,1:11:56.29,1:11:57.66,Default,Kazune,0000,0000,0000,,Tu parles d’amour, là ?
+Dialogue: 0,1:11:58.00,1:12:01.67,Default,Koyomi,0000,0000,0000,,Je veux aimer\Ntoutes les versions possibles des gens.
+Dialogue: 0,1:12:01.88,1:12:04.67,Default,Kazune,0000,0000,0000,,Aimer… toutes leurs versions ?
+Dialogue: 0,1:12:05.38,1:12:09.17,Default,Koyomi,0000,0000,0000,,Ainsi que la possibilité\Nd’être heureux ou malheureux…
+Dialogue: 0,1:12:09.93,1:12:12.51,Default,Koyomi,0000,0000,0000,,Si on les compte toutes,\Nil doit y avoir…
+Dialogue: 0,1:12:15.06,1:12:19.14,Default,Koyomi,0000,0000,0000,,autant de possibilités\Nde devenir heureux que malheureux.
+Dialogue: 0,1:12:20.06,1:12:24.27,Default,Koyomi,0000,0000,0000,,Et celles-ci nous parviennent\Ncontinuellement tant qu’on est en vie.
+Dialogue: 0,1:12:25.19,1:12:25.98,Default,Kazune,0000,0000,0000,,Oui.
+Dialogue: 0,1:12:26.65,1:12:31.61,Default,Koyomi,0000,0000,0000,,Par exemple, s’il y avait 100 toi\Net 100 moi dans ce monde,
+Dialogue: 0,1:12:32.41,1:12:36.12,Default,Koyomi,0000,0000,0000,,je suis persuadé que ces 100 moi\Naimeraient ces 100 toi.
+Dialogue: 0,1:12:37.41,1:12:40.46,Default,Kazune,0000,0000,0000,,Qu’ils soient malheureux ou heureux…
+Dialogue: 0,1:12:40.96,1:12:45.50,Default,Koyomi,0000,0000,0000,,Dans chaque monde,\Nmes moi sont amoureux de toi.
+Dialogue: 0,1:12:47.00,1:12:48.80,Default,Koyomi,0000,0000,0000,,Kazune, tu sais…
+Dialogue: 0,1:12:59.77,1:13:03.27,Default,Kazune,0000,0000,0000,,Moi aussi,\Nj’aime toutes les versions de toi.
+Dialogue: 0,1:13:04.23,1:13:06.65,Default,Kazune,0000,0000,0000,,Celui qui m’a sauvé\Nd’un chien errant,
+Dialogue: 0,1:13:07.07,1:13:08.69,Default,Kazune,0000,0000,0000,,et celui qui ne l’a pas fait.
+Dialogue: 0,1:13:08.90,1:13:10.69,Default,Koyomi,0000,0000,0000,,Hein ?\NDe quoi tu parles ?
+Dialogue: 0,1:13:11.78,1:13:12.99,Default,Koyomi,0000,0000,0000,,De rien, va…
+Dialogue: 0,1:13:25.75,1:13:29.17,Italique,Koyomi,0000,0000,0000,,Puis, nous avons vieilli\Nde manière paisible,
+Dialogue: 0,1:13:29.84,1:13:31.76,Italique,Koyomi,0000,0000,0000,,et les « papa » et « maman »,
+Dialogue: 0,1:13:31.92,1:13:35.14,Italique,Koyomi,0000,0000,0000,,se sont transformés\Nen « papy » et « mamie ».
+Dialogue: 0,1:13:35.97,1:13:37.72,Italique,Koyomi,0000,0000,0000,,Dans mon entourage,
+Dialogue: 0,1:13:37.89,1:13:41.14,Italique,Koyomi,0000,0000,0000,,de nombreuses\Npersonnes sont parties,
+Dialogue: 0,1:13:41.27,1:13:43.23,Italique,Koyomi,0000,0000,0000,,mais la grande entrée de ma maison
+Dialogue: 0,1:13:43.35,1:13:46.15,Italique,Koyomi,0000,0000,0000,,est restée fermée,\Nsauf pour le Nouvel An.
+Dialogue: 0,1:13:47.27,1:13:49.23,Italique,Koyomi,0000,0000,0000,,Elle devrait bientôt se rouvrir,
+Dialogue: 0,1:13:49.73,1:13:52.44,Italique,Koyomi,0000,0000,0000,,pour me laisser passer,\Nles pieds devant.
+Dialogue: 0,1:13:53.20,1:13:55.53,Italique,Koyomi,0000,0000,0000,,Le médecin me l’a annoncé
+Dialogue: 0,1:13:55.70,1:13:59.16,Italique,Koyomi,0000,0000,0000,,juste avant que ma petite-fille Ai\Nne fête ses 10 ans.
+Dialogue: 0,1:14:01.37,1:14:04.04,Italique,Koyomi,0000,0000,0000,,Kazune n’a rien dit.
+Dialogue: 0,1:14:06.67,1:14:09.88,Italique,Koyomi,0000,0000,0000,,Moi, j’étais étonnamment tranquille.
+Dialogue: 0,1:14:14.05,1:14:15.63,Default,Kazune,0000,0000,0000,,Passe une bonne nuit.
+Dialogue: 0,1:14:15.84,1:14:18.43,Default,Koyomi,0000,0000,0000,,Oui, à toi aussi.
+Dialogue: 0,1:14:21.43,1:14:24.64,Italique,Koyomi,0000,0000,0000,,Je ne voulais pas causer\Nde tracas à ma famille,
+Dialogue: 0,1:14:25.35,1:14:27.77,Italique,Koyomi,0000,0000,0000,,mais comme Ryô et Eri\Nme l’ont proposé,
+Dialogue: 0,1:14:28.11,1:14:33.19,Italique,Koyomi,0000,0000,0000,,j’ai décidé de passer\Nmes derniers instants à la maison.
+Dialogue: 0,1:14:49.21,1:14:55.76,Sign,Sign,0000,0000,0000,,{\pos(320,150)\fnComic Sans MS\fs14\bord0\c&H000000&}Pour Kazune Takasaki
+Dialogue: 0,1:15:05.10,1:15:06.48,Italique,Kazune,0000,0000,0000,,Chère Kazune Takasaki.
+Dialogue: 0,1:15:06.69,1:15:07.94,Italique,Kazune,0000,0000,0000,,Enchantée.
+Dialogue: 0,1:15:08.56,1:15:10.61,Italique,Kazune,0000,0000,0000,,Je m’appelle Kazune Takigawa.
+Dialogue: 0,1:15:11.61,1:15:13.48,Italique,Kazune,0000,0000,0000,,Je tiens d’abord à m’excuser.
+Dialogue: 0,1:15:14.11,1:15:16.90,Italique,Kazune,0000,0000,0000,,Pardon d’avoir fait\Nun transfert orienté.
+Dialogue: 0,1:15:17.65,1:15:21.45,Italique,Kazune,0000,0000,0000,,J’emprunte votre main\Npour vous écrire ceci.
+Dialogue: 0,1:15:23.45,1:15:27.79,Italique,Kazune,0000,0000,0000,,Il s’avère que j’ai une requête importante\Nà vous faire.
+Dialogue: 0,1:15:28.46,1:15:29.71,Italique,Kazune,0000,0000,0000,,Mais avant ça,
+Dialogue: 0,1:15:30.08,1:15:33.50,Italique,Kazune,0000,0000,0000,,je dois vous parler de moi,\Net du Koyomi de mon monde,
+Dialogue: 0,1:15:33.84,1:15:37.80,Italique,Kazune,0000,0000,0000,,Koyomi Hidaka.
+Dialogue: 0,1:15:38.97,1:15:43.14,Italique,Kazune,0000,0000,0000,,Ça risque d’être assez long,\Nmais je vous prie de me lire.
+Dialogue: 0,1:15:48.60,1:15:52.36,Italique,Kazune,0000,0000,0000,,Je ne suis pas l’épouse\Nde Koyomi Hidaka.
+Dialogue: 0,1:15:48.85,1:15:52.77,Sign,Sign,0000,0000,0000,,{\an8}INSTITUT DE RECHERCHE\NEN SCIENCES SPÉCULATIVES
+Dialogue: 0,1:15:53.27,1:15:55.65,Italique,Kazune,0000,0000,0000,,Nous avons passé\Npas mal d’années ensemble
+Dialogue: 0,1:15:55.86,1:15:58.03,Italique,Kazune,0000,0000,0000,,à n’être\Nque des partenaires chercheurs.
+Dialogue: 0,1:15:59.07,1:16:02.37,Italique,Kazune,0000,0000,0000,,La différence\Nentre ce monde et le nôtre
+Dialogue: 0,1:16:02.57,1:16:04.24,Italique,Kazune,0000,0000,0000,,semble être le parent divorcé
+Dialogue: 0,1:16:04.37,1:16:08.41,Italique,Kazune,0000,0000,0000,,qu’il a choisi de suivre\Nlorsqu’il avait 7 ans.
+Dialogue: 0,1:16:10.25,1:16:14.46,Italique,Kazune,0000,0000,0000,,J’ai rencontré Koyomi Hidaka\Nau lycée.
+Dialogue: 0,1:16:14.46,1:16:16.46,Sign,Sign,0000,0000,0000,,{\frz358.5\c&H000000&\bord2\3c&HE5E2D9&\fnTimes New Roman\fs15\frx0\fry348\pos(560,133.2)}RENTRÉE\NDES CLASSES
+Dialogue: 0,1:16:15.21,1:16:17.84,Italique,Kazune,0000,0000,0000,,Il ne parlait à personne\Net séchait des cours.
+Dialogue: 0,1:16:17.96,1:16:20.47,Italique,Kazune,0000,0000,0000,,Il m’agaçait,\Nà toujours exceller en tout.
+Dialogue: 0,1:16:21.18,1:16:24.10,Italique,Kazune,0000,0000,0000,,J’ai fini par le considérer\Ncomme mon rival.
+Dialogue: 0,1:16:25.51,1:16:29.18,Italique,Kazune,0000,0000,0000,,Alors quand j’ai su\Nqu’il n’entrait pas à l’université,
+Dialogue: 0,1:16:29.39,1:16:32.19,Italique,Kazune,0000,0000,0000,,j’étais soulagée,\Net un peu triste aussi.
+Dialogue: 0,1:16:32.52,1:16:34.65,Italique,Kazune,0000,0000,0000,,Mes sentiments étaient confus.
+Dialogue: 0,1:16:35.77,1:16:37.19,Italique,Kazune,0000,0000,0000,,À bien y réfléchir,
+Dialogue: 0,1:16:37.36,1:16:40.82,Italique,Kazune,0000,0000,0000,,c’est sans doute car il était\Nplus qu’un rival pour moi.
+Dialogue: 0,1:16:37.57,1:16:42.03,Sign,Sign,0000,0000,0000,,{\pos(514,91)\c&H000000&\3c&HD5D5D5&\bord2\b1}RÉSULTATS DU\N1ER TRIMESTRE{\b0}
+Dialogue: 0,1:16:37.57,1:16:42.03,Sign,Sign,0000,0000,0000,,{\c&H000000&\3c&HD5D5D5&\bord2\b1\fs12\pos(424,209)}HIDAKA{\b0}
+Dialogue: 0,1:16:37.57,1:16:42.03,Sign,Sign,0000,0000,0000,,{\c&H000000&\3c&HD5D5D5&\bord2\b1\fs12\pos(359.273,209)}TAKIGAWA{\b0}
+Dialogue: 0,1:16:37.57,1:16:42.03,Sign,Sign,0000,0000,0000,,{\c&H000000&\3c&HD5D5D5&\bord2\b1\fs10\pos(289.455,207.546)}TESHIGAWARA{\b0}
+Dialogue: 0,1:16:37.57,1:16:42.03,Sign,Sign,0000,0000,0000,,{\c&H000000&\3c&HD5D5D5&\bord2\b1\fs12\pos(224.728,208.273)}SAKINO{\b0}
+Dialogue: 0,1:16:37.57,1:16:42.03,Sign,Sign,0000,0000,0000,,{\c&H000000&\3c&HD5D5D5&\bord2\b1\fs10\pos(157.819,208.273)}HOSHISASHI{\b0}
+Dialogue: 0,1:16:37.57,1:16:42.03,Sign,Sign,0000,0000,0000,,{\c&H000000&\3c&HD5D5D5&\bord2\b1\fs12\pos(90.91,209)}KUGIMIYA{\b0}
+Dialogue: 0,1:16:37.57,1:16:42.03,Sign,Sign,0000,0000,0000,,{\c&H000000&\3c&HD5D5D5&\bord2\b1\fs10\pos(26.91,207.545)}TAKAYOSHI{\b0}
+Dialogue: 0,1:16:42.03,1:16:43.28,Italique,Kazune,0000,0000,0000,,Quoi qu’il en soit,
+Dialogue: 0,1:16:43.66,1:16:48.70,Italique,Kazune,0000,0000,0000,,je l’ai retrouvé quand j’ai eu une place\Nau laboratoire des sciences spéculatives.
+Dialogue: 0,1:16:47.83,1:16:49.70,Sign,Sign,0000,0000,0000,,{\pos(267.83,191.39)\org(304.001,182)\frz13.88\fry15.34\frx-2.98\fax-0.13\bord0\c&H8C6F54&\blur0.3\fad(0,400)}THÉORIE DU CERCLE DES ÉVÉNEMENTS INÉVITABLES
+Dialogue: 0,1:16:49.41,1:16:52.00,Italique,Kazune,0000,0000,0000,,Bon, l’histoire est un peu différente.
+Dialogue: 0,1:16:52.71,1:16:54.54,Italique,Kazune,0000,0000,0000,,En fait, c’est pour le retrouver
+Dialogue: 0,1:16:55.09,1:16:57.59,Italique,Kazune,0000,0000,0000,,que je suis entrée\Ndans ce laboratoire.
+Dialogue: 0,1:17:13.98,1:17:16.23,Italique,Kazune,0000,0000,0000,,Finalement, il m’a demandé
+Dialogue: 0,1:17:16.36,1:17:20.28,Italique,Kazune,0000,0000,0000,,si je voulais mener\Ndes recherches secrètes avec lui.
+Dialogue: 0,1:17:21.07,1:17:24.07,Italique,Kazune,0000,0000,0000,,Elles concernaient\Nle voyage temporel.
+Dialogue: 0,1:17:25.12,1:17:26.37,Italique,Kazune,0000,0000,0000,,J’ai été pris de court.
+Dialogue: 0,1:17:26.74,1:17:30.37,Italique,Kazune,0000,0000,0000,,Je trouvais son idée\Ninsensée et ridicule.
+Dialogue: 0,1:17:31.71,1:17:33.42,Italique,Kazune,0000,0000,0000,,Vous aussi, n’est-ce pas ?
+Dialogue: 0,1:17:34.71,1:17:36.54,Italique,Kazune,0000,0000,0000,,J’étais certaine qu’il blaguait.
+Dialogue: 0,1:17:37.34,1:17:41.67,Italique,Kazune,0000,0000,0000,,Une plaisanterie ratée\Nvenant du meilleur chercheur du labo.
+Dialogue: 0,1:17:42.30,1:17:45.47,Italique,Kazune,0000,0000,0000,,Mais Koyomi\Nn’était pas ce genre d’homme.
+Dialogue: 0,1:17:46.30,1:17:50.39,Italique,Kazune,0000,0000,0000,,Il était on ne peut plus sincère.
+Dialogue: 0,1:17:51.60,1:17:53.94,Italique,Kazune,0000,0000,0000,,Et pour cause,
+Dialogue: 0,1:17:54.10,1:17:58.15,Italique,Kazune,0000,0000,0000,,c’était son seul moyen de sauver\Nle fantôme du carrefour.
+Dialogue: 0,1:17:59.48,1:18:00.86,Italique,Kazune,0000,0000,0000,,Ce fantôme est en vérité
+Dialogue: 0,1:18:01.53,1:18:03.82,Italique,Kazune,0000,0000,0000,,son amour d’enfance.
+Dialogue: 0,1:19:53.60,1:19:57.77,Italique,Kazune,0000,0000,0000,,Un accident a causé une scission\Nentre son corps et son imaginaire,
+Dialogue: 0,1:19:57.93,1:20:00.27,Italique,Kazune,0000,0000,0000,,la faisant devenir\Nle fantôme du carrefour.
+Dialogue: 0,1:20:01.56,1:20:02.52,Italique,Kazune,0000,0000,0000,,« C’est ma faute. »
+Dialogue: 0,1:20:03.61,1:20:05.28,Italique,Kazune,0000,0000,0000,,Il le répétait constamment.
+Dialogue: 0,1:20:06.11,1:20:08.36,Italique,Kazune,0000,0000,0000,,Et ce simple regret l’a poussé
+Dialogue: 0,1:20:08.82,1:20:12.70,Italique,Kazune,0000,0000,0000,,à consacrer sa vie à la recherche\Nd’une solution pour la sauver.
+Dialogue: 0,1:20:14.16,1:20:17.95,Italique,Kazune,0000,0000,0000,,C’est marrant,\Nmais à le voir comme ça…
+Dialogue: 0,1:20:18.29,1:20:20.08,Italique,Kazune,0000,0000,0000,,Il me paraissait un peu fou.
+Dialogue: 0,1:20:21.37,1:20:26.09,Italique,Kazune,0000,0000,0000,,Mais d’un autre côté,\Nil était si pur que ça faisait mal à voir.
+Dialogue: 0,1:20:27.21,1:20:32.01,Italique,Kazune,0000,0000,0000,,On aurait dit\Nun petit garçon sanglotant.
+Dialogue: 0,1:20:33.72,1:20:36.22,Italique,Kazune,0000,0000,0000,,Le seul moyen qu’il ait trouvé\Npour la sauver
+Dialogue: 0,1:20:36.68,1:20:38.02,Italique,Kazune,0000,0000,0000,,était le voyage temporel.
+Dialogue: 0,1:20:39.68,1:20:43.15,Italique,Kazune,0000,0000,0000,,Bien sûr,\Nce n’était pas un voyage physique,
+Dialogue: 0,1:20:43.65,1:20:46.11,Italique,Kazune,0000,0000,0000,,mais un voyage temporel\Nde l’imaginaire.
+Dialogue: 0,1:20:46.86,1:20:49.94,Italique,Kazune,0000,0000,0000,,En résumé, un transfert temporel.
+Dialogue: 0,1:20:51.95,1:20:53.62,Default,Kazune,0000,0000,0000,,Un transfert temporel ?
+Dialogue: 0,1:20:56.03,1:20:57.70,Default,Koyomi,0000,0000,0000,,Attends-moi !
+Dialogue: 0,1:20:57.83,1:21:00.91,Default,Koyomi,0000,0000,0000,,Je vais te sortir de là,\Nje le jure !
+Dialogue: 0,1:21:04.54,1:21:06.67,Default,Shiori,0000,0000,0000,,Arrête de te faire du mal, Koyomi.
+Dialogue: 0,1:21:08.80,1:21:11.05,Default,Shiori,0000,0000,0000,,Tu as déjà perdu assez de temps\Ncomme ça.
+Dialogue: 0,1:21:12.72,1:21:13.76,Default,Koyomi,0000,0000,0000,,Shiori ?
+Dialogue: 0,1:21:14.09,1:21:15.39,Default,Shiori,0000,0000,0000,,Savoir que…
+Dialogue: 0,1:21:17.01,1:21:19.89,Default,Shiori,0000,0000,0000,,tu me consacres toute ta vie…
+Dialogue: 0,1:21:20.77,1:21:22.31,Default,Shiori,0000,0000,0000,,ça ne me réjouit pas.
+Dialogue: 0,1:21:23.35,1:21:26.27,Default,Koyomi,0000,0000,0000,,Pourquoi tu dis ça ?\NJe te l’ai promis !
+Dialogue: 0,1:21:27.23,1:21:29.23,Default,Koyomi,0000,0000,0000,,Je vais te sauver.
+Dialogue: 0,1:21:39.41,1:21:40.95,Italique,Kazune,0000,0000,0000,,Koyomi et moi…
+Dialogue: 0,1:21:41.12,1:21:44.54,Italique,Kazune,0000,0000,0000,,avons passé des années\Nà faire des recherches sur le sujet
+Dialogue: 0,1:21:44.96,1:21:48.09,Italique,Kazune,0000,0000,0000,,avant de trouver\Nun moyen de le réaliser.
+Dialogue: 0,1:21:49.00,1:21:50.59,Italique,Kazune,0000,0000,0000,,Malheureusement…
+Dialogue: 0,1:21:51.01,1:21:54.05,Italique,Kazune,0000,0000,0000,,Koyomi finirait fatalement\Nen état de mort cérébrale.
+Dialogue: 0,1:21:55.09,1:21:57.26,Italique,Kazune,0000,0000,0000,,Il est vraiment égoïste,\Nsuffisant,
+Dialogue: 0,1:21:57.43,1:22:00.47,Italique,Kazune,0000,0000,0000,,et ignorant des tracas\Nqu’il cause aux autres.
+Dialogue: 0,1:22:01.35,1:22:05.44,Italique,Kazune,0000,0000,0000,,Enfin, je suis sûrement la seule\Nà qui il en causait…
+Dialogue: 0,1:22:06.56,1:22:11.23,Italique,Kazune,0000,0000,0000,,Sa détermination était sans faille\Net il se fichait bien des conséquences.
+Dialogue: 0,1:22:12.74,1:22:15.66,Italique,Kazune,0000,0000,0000,,Ça ne m’a pas étonnée.
+Dialogue: 0,1:22:16.82,1:22:18.49,Italique,Kazune,0000,0000,0000,,Mais au fond, ça m’a fait mal…
+Dialogue: 0,1:22:18.83,1:22:22.29,Italique,Kazune,0000,0000,0000,,qu’il se contrefiche\Nde me laisser pour compte.
+Dialogue: 0,1:22:22.79,1:22:25.29,Italique,Kazune,0000,0000,0000,,« Sortons ensemble\Njusqu’à la date fatidique ! »
+Dialogue: 0,1:22:26.12,1:22:28.75,Italique,Kazune,0000,0000,0000,,J’étais vraiment têtue,\Nmais j’étais persuadée
+Dialogue: 0,1:22:29.00,1:22:31.88,Italique,Kazune,0000,0000,0000,,d’être la seule\Nà pouvoir l’aider dans sa quête.
+Dialogue: 0,1:22:33.47,1:22:37.43,Italique,Kazune,0000,0000,0000,,Nous avons choisi\Nnos destinations avec soin.
+Dialogue: 0,1:22:38.64,1:22:42.02,Italique,Kazune,0000,0000,0000,,C’est-à-dire, le monde dans lequel\Nvous vivez actuellement.
+Dialogue: 0,1:22:43.48,1:22:45.44,Italique,Kazune,0000,0000,0000,,Koyomi ne veut rien me dire
+Dialogue: 0,1:22:45.73,1:22:48.10,Italique,Kazune,0000,0000,0000,,sur ce qu’il s’est passé\Nentre eux deux.
+Dialogue: 0,1:22:49.36,1:22:50.19,Italique,Kazune,0000,0000,0000,,Je sais juste
+Dialogue: 0,1:22:50.44,1:22:52.94,Italique,Kazune,0000,0000,0000,,que l’accident n’aura pas lieu\Ns’il tombe
+Dialogue: 0,1:22:53.15,1:22:55.95,Italique,Kazune,0000,0000,0000,,dans un monde\Noù ils ne se rencontrent jamais.
+Dialogue: 0,1:23:21.18,1:23:24.35,Default,Koyomi,0000,0000,0000,,Pardon de t’avoir fait patienter.
+Dialogue: 0,1:23:26.48,1:23:27.60,Default,Shiori,0000,0000,0000,,De quoi tu parles ?
+Dialogue: 0,1:23:29.60,1:23:31.98,Default,Koyomi,0000,0000,0000,,On s’est rencontrés\Nquand on était enfants,
+Dialogue: 0,1:23:32.69,1:23:34.32,Default,Koyomi,0000,0000,0000,,puis tu as eu ton accident…
+Dialogue: 0,1:23:35.65,1:23:38.36,Default,Koyomi,0000,0000,0000,,Ça fait déjà 60 ans.
+Dialogue: 0,1:23:39.61,1:23:41.74,Default,Koyomi,0000,0000,0000,,J’en aurai mis, du temps…
+Dialogue: 0,1:23:42.16,1:23:43.33,Default,Shiori,0000,0000,0000,,Koyomi ?
+Dialogue: 0,1:23:44.54,1:23:45.58,Default,Koyomi,0000,0000,0000,,Shiori…
+Dialogue: 0,1:23:46.25,1:23:47.25,Default,Koyomi,0000,0000,0000,,C’est l’heure.
+Dialogue: 0,1:23:52.17,1:23:56.21,Italique,Kazune,0000,0000,0000,,Hier, Koyomi a fait\Nun transfert temporel.
+Dialogue: 0,1:23:57.22,1:23:58.80,Italique,Kazune,0000,0000,0000,,Dans mon monde,
+Dialogue: 0,1:23:59.18,1:24:02.14,Italique,Kazune,0000,0000,0000,,ce n’est qu’un simple vieillard\Nayant fait une attaque
+Dialogue: 0,1:24:02.30,1:24:05.06,Italique,Kazune,0000,0000,0000,,et qui est tombé en coma dépassé.
+Dialogue: 0,1:24:06.43,1:24:09.48,Italique,Kazune,0000,0000,0000,,Je suis la seule\Nà connaître la vérité.
+Dialogue: 0,1:24:10.60,1:24:13.52,Italique,Kazune,0000,0000,0000,,Je sais qu’il est parti\Ndans le passé de votre monde.
+Dialogue: 0,1:24:15.15,1:24:15.94,Italique,Kazune,0000,0000,0000,,Et maintenant,
+Dialogue: 0,1:24:16.07,1:24:20.45,Italique,Kazune,0000,0000,0000,,dans Koyomi Takasaki,\Nvotre mari qui dort à vos côtés,
+Dialogue: 0,1:24:21.20,1:24:23.28,Italique,Kazune,0000,0000,0000,,coule l’imaginaire de mon Koyomi,
+Dialogue: 0,1:24:23.45,1:24:25.99,Italique,Kazune,0000,0000,0000,,et ce, depuis ses 7 ans.
+Dialogue: 0,1:24:26.49,1:24:29.37,Italique,Kazune,0000,0000,0000,,Et dans la ville de votre monde,
+Dialogue: 0,1:24:29.75,1:24:33.25,Italique,Kazune,0000,0000,0000,,coule l’imaginaire de celle\Nqui a été sauvée par Koyomi.
+Dialogue: 0,1:24:34.59,1:24:37.46,Italique,Kazune,0000,0000,0000,,En continuant leurs vies ainsi,
+Dialogue: 0,1:24:37.76,1:24:39.84,Italique,Kazune,0000,0000,0000,,ils ne devraient jamais\Nse croiser.
+Dialogue: 0,1:24:40.97,1:24:42.39,Italique,Kazune,0000,0000,0000,,C’est parfait.
+Dialogue: 0,1:24:43.22,1:24:47.85,Italique,Kazune,0000,0000,0000,,Après tout, ils ont choisi un monde\Noù ils ne se rencontrent pas.
+Dialogue: 0,1:24:49.73,1:24:50.73,Italique,Kazune,0000,0000,0000,,Cependant…
+Dialogue: 0,1:24:51.02,1:24:52.90,Italique,Kazune,0000,0000,0000,,juste avant le transfert temporel,
+Dialogue: 0,1:24:53.15,1:24:56.90,Italique,Kazune,0000,0000,0000,,Koyomi m’a dit\Nqu’ils s’étaient promis de se revoir.
+Dialogue: 0,1:24:58.78,1:25:01.57,Italique,Kazune,0000,0000,0000,,Ils se sont donnés rendez-vous
+Dialogue: 0,1:25:01.86,1:25:03.91,Italique,Kazune,0000,0000,0000,,à la fin de leur vie\Ndans ce monde.
+Dialogue: 0,1:25:05.41,1:25:07.20,Italique,Kazune,0000,0000,0000,,Les théories suggèrent
+Dialogue: 0,1:25:07.49,1:25:11.62,Italique,Kazune,0000,0000,0000,,que la probabilité que des souvenirs\Nde ce monde subsistent
+Dialogue: 0,1:25:12.08,1:25:14.21,Italique,Kazune,0000,0000,0000,,après le transfert temporel est nulle.
+Dialogue: 0,1:25:15.59,1:25:20.59,Italique,Kazune,0000,0000,0000,,Mais il a utilisé ça comme argument\Npour convaincre sa jeune amoureuse.
+Dialogue: 0,1:25:22.01,1:25:24.39,Italique,Kazune,0000,0000,0000,,Une promesse difficile à tenir.
+Dialogue: 0,1:25:25.97,1:25:27.81,Italique,Kazune,0000,0000,0000,,Enfin, plus qu’une promesse,
+Dialogue: 0,1:25:28.01,1:25:30.60,Italique,Kazune,0000,0000,0000,,c’est plutôt\Nle faible espoir de Koyomi
+Dialogue: 0,1:25:30.73,1:25:32.81,Italique,Kazune,0000,0000,0000,,qu’un tel miracle\Npuisse se produire.
+Dialogue: 0,1:25:48.79,1:25:53.83,Italique,Kazune,0000,0000,0000,,Et je pense qu’il est grand temps\Nde le faire devenir réalité.
+Dialogue: 0,1:25:55.25,1:25:56.79,Italique,Kazune,0000,0000,0000,,Je vous avoue que…
+Dialogue: 0,1:25:56.96,1:26:00.84,Italique,Kazune,0000,0000,0000,,au fond de moi,\Nje ne voulais pas qu’ils se revoient.
+Dialogue: 0,1:26:02.38,1:26:03.17,Italique,Kazune,0000,0000,0000,,Pourtant…
+Dialogue: 0,1:26:05.72,1:26:08.35,Italique,Kazune,0000,0000,0000,,j’ai indiqué le rendez-vous\Nau carrefour Showa
+Dialogue: 0,1:26:08.55,1:26:12.52,Italique,Kazune,0000,0000,0000,,dans le terminal IP de votre mari.
+Dialogue: 0,1:26:19.44,1:26:21.44,Italique,Kazune,0000,0000,0000,,C’est dans un mois.
+Dialogue: 0,1:26:21.57,1:26:24.74,Italique,Kazune,0000,0000,0000,,Pourriez-vous le laisser s’y rendre ?
+Dialogue: 0,1:26:27.87,1:26:29.45,Italique,Kazune,0000,0000,0000,,En toute franchise…
+Dialogue: 0,1:26:30.83,1:26:33.33,Italique,Kazune,0000,0000,0000,,Si vous êtes vraiment moi\Ndans un autre monde,
+Dialogue: 0,1:26:33.50,1:26:36.33,Italique,Kazune,0000,0000,0000,,alors vous l’avez\Nsûrement déjà ressenti,
+Dialogue: 0,1:26:37.04,1:26:39.34,Italique,Kazune,0000,0000,0000,,mais j’aime le Koyomi de ce monde.
+Dialogue: 0,1:26:39.59,1:26:41.55,Italique,Kazune,0000,0000,0000,,Koyomi Hidaka.
+Dialogue: 0,1:26:43.76,1:26:47.47,Italique,Kazune,0000,0000,0000,,Bien sûr, cet amour est différent\Nde celui d’une relation,
+Dialogue: 0,1:26:47.84,1:26:51.18,Italique,Kazune,0000,0000,0000,,ou de celui qui mène à un mariage.
+Dialogue: 0,1:26:52.60,1:26:55.06,Italique,Kazune,0000,0000,0000,,Malgré tout ça,
+Dialogue: 0,1:26:55.23,1:26:58.94,Italique,Kazune,0000,0000,0000,,je comprends maintenant\Nque je l’ai aimé profondément
+Dialogue: 0,1:26:59.11,1:27:01.86,Italique,Kazune,0000,0000,0000,,durant toute mon existence.
+Dialogue: 0,1:27:04.07,1:27:06.99,Italique,Kazune,0000,0000,0000,,Je comprends\Nque ma demande est égoïste.
+Dialogue: 0,1:27:07.74,1:27:09.70,Italique,Kazune,0000,0000,0000,,Parce que vous…
+Dialogue: 0,1:27:09.99,1:27:12.29,Italique,Kazune,0000,0000,0000,,enfin, dans un sens, moi aussi…
+Dialogue: 0,1:27:13.29,1:27:17.50,Italique,Kazune,0000,0000,0000,,Nous allons devoir envoyer\Ncelui qu’on aime vers une autre personne.
+Dialogue: 0,1:27:19.42,1:27:23.46,Italique,Kazune,0000,0000,0000,,J’ai l’espoir que mes pensées\Natteignent votre cœur.
+Dialogue: 0,1:27:28.89,1:27:31.55,Italique,Kazune,0000,0000,0000,,Le bonheur et le malheur\Nne font que se répéter,
+Dialogue: 0,1:27:33.06,1:27:35.89,Italique,Kazune,0000,0000,0000,,et une personne\Npense toujours à une autre.
+Dialogue: 0,1:27:36.93,1:27:40.90,Italique,Kazune,0000,0000,0000,,Si nous pouvons croire\Nque ces sentiments sont liés,
+Dialogue: 0,1:27:45.99,1:27:48.49,Italique,Kazune,0000,0000,0000,,alors notre naissance\Ndans un certain monde,
+Dialogue: 0,1:27:50.91,1:27:51.91,Italique,Kazune,0000,0000,0000,,notre rencontre,
+Dialogue: 0,1:27:53.03,1:27:53.91,Italique,Kazune,0000,0000,0000,,notre vie,
+Dialogue: 0,1:27:54.62,1:27:57.71,Italique,Kazune,0000,0000,0000,,et notre mort ont du sens.
+Dialogue: 0,1:27:58.12,1:28:00.75,Italique,Kazune,0000,0000,0000,,À la fin de mon existence,\Nje peux l’affirmer.
+Dialogue: 0,1:28:13.55,1:28:14.51,Default,Koyomi,0000,0000,0000,,Bonjour.
+Dialogue: 0,1:28:15.22,1:28:16.22,Italique,Kazune,0000,0000,0000,,Post-scriptum…
+Dialogue: 0,1:28:16.72,1:28:20.06,Italique,Kazune,0000,0000,0000,,En vérité, j’ai déjà fait\Nun transfert une fois.
+Dialogue: 0,1:28:20.52,1:28:23.56,Italique,Kazune,0000,0000,0000,,J’ai acheté\Nla même bague aigue-marine
+Dialogue: 0,1:28:23.73,1:28:25.90,Italique,Kazune,0000,0000,0000,,que vous portiez à ce moment-là.
+Dialogue: 0,1:28:26.40,1:28:27.32,Italique,Kazune,0000,0000,0000,,Pardonnez-moi.
+Dialogue: 0,1:28:50.63,1:28:51.88,Default,Koyomi,0000,0000,0000,,Une erreur ?
+Dialogue: 0,1:28:53.05,1:28:54.51,Default,Koyomi,0000,0000,0000,,Mais enfin, où suis-je ?
+Dialogue: 0,1:28:55.56,1:28:57.18,Default,Koyomi,0000,0000,0000,,Où ai-je été transporté ?
+Dialogue: 0,1:29:03.56,1:29:06.44,Italique,Koyomi,0000,0000,0000,,Si un transfert parallèle a eu lieu,
+Dialogue: 0,1:29:06.98,1:29:09.69,Italique,Koyomi,0000,0000,0000,,alors je ne dois\Nplus être dans le monde
+Dialogue: 0,1:29:09.82,1:29:12.66,Italique,Koyomi,0000,0000,0000,,de la fille fantôme du carrefour.\NTant pis.
+Dialogue: 0,1:29:14.12,1:29:18.87,Italique,Koyomi,0000,0000,0000,,Je n’ai plus qu’à espérer\Nque le moi transféré ne se perdra pas.
+Dialogue: 0,1:29:21.25,1:29:22.42,Default,Koyomi,0000,0000,0000,,L’espoir, toujours…
+Dialogue: 0,1:29:25.25,1:29:27.63,Italique,Koyomi,0000,0000,0000,,Mais pourquoi une erreur ?
+Dialogue: 0,1:29:28.00,1:29:31.59,Italique,Koyomi,0000,0000,0000,,Si le monde n’est pas mesurable,\Nil est possible que…
+Dialogue: 0,1:29:32.34,1:29:35.64,Italique,Koyomi,0000,0000,0000,,il y ait eu un changement\Ndans mon imaginaire lui-même…
+Dialogue: 0,1:29:36.10,1:29:39.52,Italique,Koyomi,0000,0000,0000,,Une minute. J’ai l’impression\Nde connaître cette hypothèse.
+Dialogue: 0,1:29:40.18,1:29:41.56,Italique,Koyomi,0000,0000,0000,,Dans quel essai était-ce ?
+Dialogue: 0,1:29:42.48,1:29:45.10,Italique,Koyomi,0000,0000,0000,,Plutôt durant une conférence ?\NMais où ?
+Dialogue: 0,1:29:45.31,1:29:47.48,Italique,Koyomi,0000,0000,0000,,Avec qui ai-je discuté ?
+Dialogue: 0,1:30:23.10,1:30:24.39,Default,Femme,0000,0000,0000,,Monsieur ?
+Dialogue: 0,1:30:25.39,1:30:26.73,Default,Femme,0000,0000,0000,,Vous allez bien ?
+Dialogue: 0,1:30:27.19,1:30:28.27,Default,Femme,0000,0000,0000,,Vous m’entendez ?
+Dialogue: 0,1:30:28.56,1:30:29.57,Default,Koyomi,0000,0000,0000,,Mes médicaments…
+Dialogue: 0,1:30:30.52,1:30:32.61,Default,Koyomi,0000,0000,0000,,Prenez mes médicaments…
+Dialogue: 0,1:30:37.82,1:30:39.08,Default,Femme,0000,0000,0000,,Ceux-là ?
+Dialogue: 0,1:30:40.53,1:30:42.12,Default,Femme,0000,0000,0000,,Je vous ouvre la boîte.
+Dialogue: 0,1:30:44.50,1:30:46.54,Default,Femme,0000,0000,0000,,Tenez. Vous pouvez les prendre ?
+Dialogue: 0,1:31:12.07,1:31:15.44,Default,Koyomi,0000,0000,0000,,Ça va mieux,\Nmerci de votre aide.
+Dialogue: 0,1:31:16.99,1:31:18.45,Default,Femme,0000,0000,0000,,Je suis soulagée !
+Dialogue: 0,1:31:20.37,1:31:21.41,Default,Koyomi,0000,0000,0000,,Merci, madame.
+Dialogue: 0,1:31:23.66,1:31:28.33,Default,Koyomi,0000,0000,0000,,Excusez-moi. Puis-je savoir\Ncomment vous vous appelez ?
+Dialogue: 0,1:31:28.87,1:31:31.96,Default,Femme,0000,0000,0000,,Ça n’a pas d’importance.
+Dialogue: 0,1:31:34.59,1:31:37.17,Default,Femme,0000,0000,0000,,Pardon ! Pour tout vous dire…
+Dialogue: 0,1:31:37.97,1:31:41.14,Default,Femme,0000,0000,0000,,Je rêvais de dire cette phrase\Nune fois dans ma vie.
+Dialogue: 0,1:31:41.97,1:31:44.97,Default,Femme,0000,0000,0000,,« Mon nom n’a aucune importance. »
+Dialogue: 0,1:31:46.48,1:31:49.90,Default,Koyomi,0000,0000,0000,,Eh bien, ravi de vous avoir aidée\Nà réaliser votre rêve.
+Dialogue: 0,1:31:50.19,1:31:52.02,TiretsDefault,Femme + Koyomi,0283,0000,0000,,– Tenez.\N– Merci.
+Dialogue: 0,1:31:52.94,1:31:53.86,Default,Koyomi,0000,0000,0000,,Oups.
+Dialogue: 0,1:31:54.48,1:31:55.90,Default,Femme,0000,0000,0000,,Oh, c’est drôle !
+Dialogue: 0,1:31:56.49,1:31:57.49,Default,Koyomi,0000,0000,0000,,Oui…
+Dialogue: 0,1:31:57.82,1:31:59.07,Default,Koyomi,0000,0000,0000,,C’est à ma femme.
+Dialogue: 0,1:31:59.86,1:32:01.03,Default,Koyomi,0000,0000,0000,,Je lui ai emprunté.
+Dialogue: 0,1:32:01.74,1:32:03.12,Default,Femme,0000,0000,0000,,Je vois.
+Dialogue: 0,1:32:05.04,1:32:06.00,Default,Koyomi,0000,0000,0000,,Dites-moi…
+Dialogue: 0,1:32:06.83,1:32:09.37,Default,Koyomi,0000,0000,0000,,On ne se serait pas\Ndéjà rencontrés ?
+Dialogue: 0,1:32:09.67,1:32:10.46,Default,Femme,0000,0000,0000,,Pardon ?
+Dialogue: 0,1:32:13.84,1:32:16.13,Default,Femme,0000,0000,0000,,Comment vous appelez-vous,\Npar hasard ?
+Dialogue: 0,1:32:16.55,1:32:17.80,Default,Koyomi,0000,0000,0000,,Takasaki.
+Dialogue: 0,1:32:24.64,1:32:28.77,Default,Femme,0000,0000,0000,,Alors là, je m’excuse,\Nmais cela ne me dit rien.
+Dialogue: 0,1:32:30.85,1:32:31.98,Default,Koyomi,0000,0000,0000,,Je vois…
+Dialogue: 0,1:32:33.23,1:32:34.40,Default,Koyomi,0000,0000,0000,,Peut-être bien
+Dialogue: 0,1:32:34.57,1:32:38.28,Default,Koyomi,0000,0000,0000,,qu’on s’est rencontrés\Ndans un monde parallèle.
+Dialogue: 0,1:32:38.44,1:32:42.36,Default,Femme,0000,0000,0000,,Oui, c’est vrai\Nque c’est fort possible.
+Dialogue: 0,1:32:45.70,1:32:46.91,Default,Koyomi,0000,0000,0000,,Et, euh…
+Dialogue: 0,1:32:48.50,1:32:52.25,Default,Koyomi,0000,0000,0000,,êtes-vous heureuse ?
+Dialogue: 0,1:32:55.50,1:32:59.72,Default,Femme,0000,0000,0000,,Oui, je le suis.\NDu fond du cœur.
+Dialogue: 0,1:33:02.59,1:33:04.18,Default,Koyomi,0000,0000,0000,,Tant mieux, alors.
+Dialogue: 0,1:33:04.60,1:33:05.55,Default,Femme,0000,0000,0000,,Bien…
+Dialogue: 0,1:33:07.97,1:33:09.43,Default,Femme,0000,0000,0000,,Prenez soin de vous.
+Dialogue: 0,1:33:10.06,1:33:11.44,Default,Femme,0000,0000,0000,,Au revoir.
+Dialogue: 0,1:33:12.56,1:33:13.60,Default,Koyomi,0000,0000,0000,,Au revoir…
+Dialogue: 0,1:33:14.56,1:33:15.94,Default,Koyomi,0000,0000,0000,,et merci.
+Dialogue: 0,1:33:41.76,1:33:43.09,Default,Kazune,0000,0000,0000,,Ah, tu es rentré.
+Dialogue: 0,1:33:43.80,1:33:44.76,Default,Koyomi,0000,0000,0000,,Oui, c’est moi.
+Dialogue: 0,1:33:45.72,1:33:47.14,Default,Koyomi,0000,0000,0000,,Tu m’as attendu ?
+Dialogue: 0,1:33:47.72,1:33:48.76,Default,Kazune,0000,0000,0000,,Eh oui.
+Dialogue: 0,1:33:50.18,1:33:51.23,Default,Koyomi,0000,0000,0000,,J’y pense…
+Dialogue: 0,1:33:52.48,1:33:53.73,Default,Koyomi,0000,0000,0000,,T’es qui, toi ?
+Dialogue: 0,1:33:56.15,1:34:01.24,Default,Koyomi,0000,0000,0000,,Il y a eu une erreur dans mon IEPP\Net je ne sais pas où je suis.
+Dialogue: 0,1:34:01.82,1:34:03.49,Default,Kazune,0000,0000,0000,,Tu pourrais être plus poli !
+Dialogue: 0,1:34:03.99,1:34:05.16,Default,Koyomi,0000,0000,0000,,Pardon, je plaisante.
+Dialogue: 0,1:34:06.12,1:34:08.53,Default,Koyomi,0000,0000,0000,,Regarde,\Ntu crois que c’est une anomalie ?
+Dialogue: 0,1:34:10.45,1:34:12.00,Default,Kazune,0000,0000,0000,,C’est rare !
+Dialogue: 0,1:34:12.66,1:34:17.50,Default,Koyomi,0000,0000,0000,,On est d’accord\Nque je suis allé au carrefour Showa ?
+Dialogue: 0,1:34:17.92,1:34:18.92,Default,Kazune,0000,0000,0000,,Oui.
+Dialogue: 0,1:34:19.67,1:34:20.80,Default,Kazune,0000,0000,0000,,À 10 heures.
+Dialogue: 0,1:34:22.80,1:34:25.01,Default,Koyomi,0000,0000,0000,,Même s’il y a eu\Nun transfert parallèle,
+Dialogue: 0,1:34:25.22,1:34:28.35,Default,Koyomi,0000,0000,0000,,c’est proche d’ici,\Ndonc je reviendrai bientôt à 0.
+Dialogue: 0,1:34:30.18,1:34:33.48,Default,Kazune,0000,0000,0000,,Alors, comment c’était ?
+Dialogue: 0,1:34:34.27,1:34:37.06,Default,Koyomi,0000,0000,0000,,Oh, personne n’est venu.
+Dialogue: 0,1:34:37.86,1:34:38.69,Default,Kazune,0000,0000,0000,,Vraiment ?
+Dialogue: 0,1:34:42.48,1:34:45.32,Default,Koyomi,0000,0000,0000,,Ce rendez-vous ne devait être\Nqu’une erreur.
+Dialogue: 0,1:34:46.20,1:34:49.99,Default,Koyomi,0000,0000,0000,,J’ai tout de même fait\Nune belle rencontre.
+Dialogue: 0,1:34:50.66,1:34:53.58,Default,Kazune,0000,0000,0000,,Qui donc ?\NUne ancienne connaissance ?
+Dialogue: 0,1:34:54.08,1:34:56.83,Default,Koyomi,0000,0000,0000,,Non, je ne la connaissais pas.
+Dialogue: 0,1:34:57.37,1:35:00.67,Default,Koyomi,0000,0000,0000,,Pourtant, elle m’a dit\Nqu’elle était heureuse…
+Dialogue: 0,1:35:01.38,1:35:03.51,Default,Koyomi,0000,0000,0000,,et ça m’a fait plaisir\Nde l’entendre.
+Dialogue: 0,1:35:08.89,1:35:11.01,Default,Kazune,0000,0000,0000,,C’était une parfaite inconnue ?
+Dialogue: 0,1:35:11.43,1:35:12.39,Default,Koyomi,0000,0000,0000,,Oui.
+Dialogue: 0,1:35:12.60,1:35:16.02,Default,Koyomi,0000,0000,0000,,Et le bonheur de cette inconnue\Nm’a ravi.
+Dialogue: 0,1:35:16.77,1:35:19.65,Default,Koyomi,0000,0000,0000,,C’est parce que je nage moi-même\Ndans le bonheur
+Dialogue: 0,1:35:19.94,1:35:23.32,Default,Koyomi,0000,0000,0000,,que je peux me réjouir\Nde celui des autres.
+Dialogue: 0,1:35:24.74,1:35:26.03,Default,Kazune,0000,0000,0000,,Quel homme simplet.
+Dialogue: 0,1:35:26.57,1:35:27.66,Default,Koyomi,0000,0000,0000,,Tu trouves ?
+Dialogue: 0,1:35:28.36,1:35:31.91,Default,Koyomi,0000,0000,0000,,C’est pas facile de trouver les mots\Npour l’expliquer…
+Dialogue: 0,1:35:34.04,1:35:34.95,Default,Koyomi,0000,0000,0000,,Kazune ?
+Dialogue: 0,1:35:35.87,1:35:39.92,Default,Koyomi,0000,0000,0000,,C’est parce que tu es à mes côtés\Nque je suis si heureux.
+Dialogue: 0,1:35:44.21,1:35:47.17,Default,Kazune,0000,0000,0000,,Va dire ça à la personne\Ndu monde 0.
+Dialogue: 0,1:35:47.59,1:35:48.97,Default,Koyomi,0000,0000,0000,,Je lui dirai.
+Dialogue: 0,1:35:50.01,1:35:53.18,Default,Koyomi,0000,0000,0000,,Mais j’ai envie de le dire\Nà toutes les toi existantes.
+Dialogue: 0,1:35:56.23,1:35:57.18,Italique,Koyomi,0000,0000,0000,,En même temps,
+Dialogue: 0,1:35:57.73,1:36:01.23,Italique,Koyomi,0000,0000,0000,,je voudrais dire aux moi\Nqui ont aimé une personne différente
+Dialogue: 0,1:36:02.02,1:36:05.15,Italique,Koyomi,0000,0000,0000,,que c’est parce qu’ils ont aimé\Nquelqu’un d’autre
+Dialogue: 0,1:36:05.82,1:36:08.70,Italique,Koyomi,0000,0000,0000,,que moi, j’ai pu t’aimer à ce point.
+Dialogue: 0,1:36:09.70,1:36:10.66,Italique,Koyomi,0000,0000,0000,,Merci à tous.
+Dialogue: 0,1:36:12.37,1:36:14.37,Default,Ai,0000,0000,0000,,T’es rentré, papy ?
+Dialogue: 0,1:36:15.12,1:36:16.33,Default,Koyomi,0000,0000,0000,,Eh oui !
+Dialogue: 0,1:36:17.20,1:36:20.87,Default,Koyomi,0000,0000,0000,,Tu as bâclé tes révisions\Npour m’espionner, je me trompe ?
+Dialogue: 0,1:36:22.13,1:36:24.63,Default,Ai,0000,0000,0000,,Je voulais savoir\Nce qui se passe, moi !
+Dialogue: 0,1:36:26.13,1:36:28.42,Default,Koyomi,0000,0000,0000,,Tu es une petite fille curieuse,\NAi.
+Dialogue: 0,1:36:29.17,1:36:30.97,Default,Kazune,0000,0000,0000,,Sois plus sévère avec elle !
+Dialogue: 0,1:36:33.97,1:36:34.89,Italique,Koyomi,0000,0000,0000,,Et surtout
+Dialogue: 0,1:36:35.47,1:36:39.64,Italique,Koyomi,0000,0000,0000,,si vous faites partie des personnes\Nqui ont pu aimer une version de moi…
+Dialogue: 0,1:36:41.77,1:36:45.27,Italique,Koyomi,0000,0000,0000,,Je vous souhaite,\Nà vous et à votre partenaire
+Dialogue: 0,1:36:45.98,1:36:49.99,Italique,Koyomi,0000,0000,0000,,de trouver le bonheur\Nquelque part dans l’univers.
+Dialogue: 0,1:36:57.04,1:37:02.96,Sign,Sign,0000,0000,0000,,{\an8\c&HFFFFFF&\fad(1000,1000)\bord0\b0\pos(328.889,143.111)}TO EVERY YOU I’VE LOVED BEFORE{\b0}
+Dialogue: 0,1:37:03.42,1:37:07.00,Default,Sign,0000,0000,0000,,{\an8}Traduction : Angélique Mariet\NAdaptation : Corentin Le Corre
+Dialogue: 0,1:37:07.17,1:37:10.47,Default,Sign,0000,0000,0000,,{\an8}Repérage : Nolan Fond\NRelecture : Emilie G.
+

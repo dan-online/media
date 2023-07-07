@@ -1,0 +1,1074 @@
+2023-07-07T12:06:17.489Z bhx_A2rsl6L:[Step S01] [2.00.21] Server relay initialising job
+2023-07-07T12:06:17.490Z bhx_A2rsl6L:Server: linux_x64_docker_true
+2023-07-07T12:06:17.490Z bhx_A2rsl6L:Server relay adding file to staged files
+2023-07-07T12:06:17.491Z bhx_A2rsl6L:Server relay sending job to Node relay: MyInternalNode
+2023-07-07T12:06:17.491Z bhx_A2rsl6L:Node[MyInternalNode]:[Step N01] [2.00.21] Node relay received job
+2023-07-07T12:06:17.491Z bhx_A2rsl6L:Node[MyInternalNode]:{"nodeName":"MyInternalNode","serverIP":"0.0.0.0","serverPort":"8266","handbrakePath":"","ffmpegPath":"","mkvpropeditPath":"","pathTranslators":[{"server":"","node":""}],"logLevel":"INFO","priority":-1,"platform_arch_isdocker":"linux_x64_docker_true","processPid":198,"nodeID":"PGiqJeCdV"}
+2023-07-07T12:06:17.492Z bhx_A2rsl6L:Node[MyInternalNode]:Node relay sending job to worker:upset-urva
+2023-07-07T12:06:17.492Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[Step W01] Received file, original: /media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 HDTV-1080p.mkv
+2023-07-07T12:06:17.492Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:{"workerType":"transcodecpu"}
+2023-07-07T12:06:17.492Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:{"ffmpegPath":"tdarr-ffmpeg"}
+2023-07-07T12:06:17.493Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:{"handbrakePath":"HandBrakeCLI"}
+2023-07-07T12:06:17.493Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:{"mkvpropeditPath":"mkvpropedit"}
+2023-07-07T12:06:17.493Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:{"gpuSelect":"-"}
+2023-07-07T12:06:17.494Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:{"allowGpuDoCpu":false}
+2023-07-07T12:06:17.494Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:{"thoroughHealthCheckCpuExtraInputArgs":""}
+2023-07-07T12:06:17.494Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:{"thoroughHealthCheckGpuExtraInputArgs":""}
+2023-07-07T12:06:17.494Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:{"thoroughHealthCheckCpuExtraArgs":""}
+2023-07-07T12:06:17.495Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:{"thoroughHealthCheckGpuExtraArgs":""}
+2023-07-07T12:06:17.495Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:{"logFullCliOutput":false}
+2023-07-07T12:06:17.495Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Path translating objects
+2023-07-07T12:06:17.496Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:{"librarySettings":{"_id":"4BaCjCxnf","priority":1,"name":"TV","folder":"/media/tvshows","foldersToIgnore":"","folderWatchScanInterval":30,"scannerThreadCount":2,"cache":"/temp","output":".","folderToFolderConversion":false,"folderToFolderConversionDeleteSource":false,"folderToFolderRecordHistory":true,"copyIfConditionsMet":false,"container":".mkv","containerFilter":"mkv,mp4,mov,m4v,mpg,mpeg,avi,flv,webm,wmv,vob,evo,iso,m2ts,ts","createdAt":1675837380368,"folderWatching":true,"useFsEvents":false,"scheduledScanFindNew":false,"processLibrary":true,"scanOnStart":true,"exifToolScan":true,"mediaInfoScan":true,"closedCaptionScan":false,"scanButtons":true,"scanFound":"Files found:0","navItemSelected":"navSourceFolder","pluginIDs":[{"_id":"plugin1","id":"Tdarr_Plugin_MC93_MigzImageRemoval","checked":true,"source":"Community","priority":0,"InputsDB":{},"Stage":"Pre-processing","Name":"Migz-Remove image formats from file","Type":"Video","Operation":"Transcode","Description":"Identify any unwanted image formats in the file and remove those streams. MJPEG, PNG & GIF \n\n","Version":"1.4","Tags":"pre-processing,ffmpeg,video only","Inputs":[],"source_id":"Community::Tdarr_Plugin_MC93_MigzImageRemoval","Link":"Read error"},{"_id":"plugin2","id":"Tdarr_Plugin_lmg1_Reorder_Streams","checked":true,"source":"Community","priority":1,"InputsDB":{},"Stage":"Pre-processing","Name":"Tdarr_Plugin_lmg1_Reorder_Streams ","Type":"Video","Operation":"Transcode","Description":"[Contains built-in filter] This plugin will move the video stream to the front so Tdarr will recognize the codec correctly.\n\n","Version":"1.00","Tags":"pre-processing,ffmpeg","Inputs":[],"source_id":"Community::Tdarr_Plugin_lmg1_Reorder_Streams","Link":"Read error"},{"_id":"sxfFHmyyT","id":"Tdarr_Plugin_00td_action_standardise_audio_stream_codecs","checked":true,"source":"Community","priority":2,"InputsDB":{},"Stage":"Pre-processing","Name":"Standardise audio stream codecs","Type":"Video","Operation":"Transcode","Description":"\nThis action has a built-in filter. Additional filters can be added.\n\n\n\nAll audio tracks which are not in the specified codec will be transcoded\ninto the specified codec. Bitrate and channel count are kept the same.\n  ","Version":"1.00","Tags":"action","Inputs":[{"name":"audioCodec","type":"string","defaultValue":"aac","inputUI":{"type":"dropdown","options":["aac","ac3","eac3","dca","flac","mp2","libmp3lame","truehd"]},"tooltip":"Enter the desired audio codec"}],"source_id":"Community::Tdarr_Plugin_00td_action_standardise_audio_stream_codecs","Link":"Read error"},{"_id":"aEVldYMXA","id":"Tdarr_Plugin_075a_Transcode_Customisable","checked":true,"source":"Community","priority":3,"InputsDB":{"codecs_to_exclude":"h264","transcode_arguments":"-Z \"H.264 MKV 2160p60 4K\" -e x264 --all-subtitles --all-audio  -x threads=1"},"Stage":"Pre-processing","Name":"Video Transcode Customisable","Type":"Video","Operation":"Transcode","Description":"[Contains built-in filter] Specify codec filter and transcode arguments for HandBrake or FFmpeg  \n\n","Version":"1.00","Tags":"pre-processing,handbrake,ffmpeg,configurable","Inputs":[{"name":"codecs_to_exclude","type":"string","defaultValue":"hevc","inputUI":{"type":"text"},"tooltip":"Input codecs, separated by a comma, that should be excluded when processing.\n\n        \\nFor example, if you're transcoding into hevc (h265), then add a filter to prevent hevc being transcoded so your newly transcoded files won't be infinitely looped/processed. \\n\n\n        \n        \\nCommon video codecs:\n\n        \\nmpeg4\n        \\nhevc\n        \\nh264\n        \\nmpeg2video\n        \\ntheora\n        \\nvp8\n        \\nvp9\n        \n        \n        \\nExample:\\n\n\n        hevc\n\n        \\nYou can also enter multiple codecs:\n\n        \\nExample:\\n\n\n        mp3,aac,dts\n\n        \\nExample:\\n\n\n        h264,vp9\n \n        "},{"name":"cli","type":"string","defaultValue":"handbrake","inputUI":{"type":"text"},"tooltip":"Enter the CLI to use.\n        \n        \\nExample:\\n\n        handbrake\n\n        \\nExample:\\n\n        ffmpeg\n        \n        "},{"name":"transcode_arguments","type":"string","defaultValue":"-Z \"Very Fast 1080p30\" --all-subtitles --all-audio","inputUI":{"type":"text"},"tooltip":"\\nEnter HandBrake or FFmpeg transcode arguments.\n        \n        \\nHandBrake examples:\n\n        \\nExample:\\n\n        -e x264 -q 20 -B\n        \n        \\nExample:\\n\n        -Z \"Very Fast 1080p30\"\n        \n        \\nExample:\\n\n        -Z \"Fast 1080p30\" -e nvenc_h265\n        \n        \\nExample:\\n\n        -Z \"Very Fast 1080p30\" --all-subtitles --all-audio\n        \n        \\nExample:\\n\n        -Z \"Very Fast 480p30\"\n        \n        \\nExample:\\n\n        --preset-import-file \"C:UsersHaveAGitGatDesktop\testpreset.json\" -Z \"My Preset\"\n        \n        \\nYou can learn more about HandBrake presets here:\n\n        \\nhttps://handbrake.fr/docs/en/latest/technical/official-presets.html\n        \n\n        \\nWhen using FFmpeg, you need to separate the input and output parameters with a comma. FFmpeg Examples:\n\n        \\nExample:\\n\n-r 1,-r 24\n\n\\nExample:\\n\n,-sn -c:v copy -c:a copy\n\n\\nExample:\\n\n,-c:v lib265 -crf 23 -ac 6 -c:a aac -preset veryfast\n\n\\nExample:\\n\n,-map 0 -c copy -c:v libx265 -c:a aac\n\n\\nExample:\\n\n-c:v h264_cuvid,-c:v hevc_nvenc -preset slow -c:a copy\n\n\\nPlease see the following for help with creating FFmpeg commands:\n\n\\nhttps://opensource.com/article/17/6/ffmpeg-convert-media-file-formats\n        \n        \n        \n        \n        "},{"name":"output_container","type":"string","defaultValue":".mkv","inputUI":{"type":"text"},"tooltip":"\n        \\nEnter the output container of the new file\n\n        \\nExample:\\n\n        .mp4\n\n        \\nExample:\\n\n        .mp3\n\n        \\nExample:\\n\n        .mkv\n        \n        "}],"source_id":"Community::Tdarr_Plugin_075a_Transcode_Customisable","Link":"Read error"},{"_id":"plugin5","id":"Tdarr_Plugin_a9he_New_file_size_check","checked":true,"source":"Community","priority":4,"InputsDB":{"upperBound":"200"},"Stage":"Pre-processing","Name":"New file size check","Type":"Video","Operation":"Transcode","Description":"Give an error if new file is not within the specified upper and lower bound limits \n\n","Version":"1.00","Tags":"","Inputs":[{"name":"upperBound","type":"number","defaultValue":110,"inputUI":{"type":"text"},"tooltip":"Enter the upper bound % size for the new file. For example, if '110' is entered, \n        then if the new file size is 11% larger than the original, an error will be given."},{"name":"lowerBound","type":"number","defaultValue":40,"inputUI":{"type":"text"},"tooltip":"Enter the lower bound % size for the new file. For example, if '90' is entered, \n        then if the new file size is less than 90% of the original, an error will be given."}],"source_id":"Community::Tdarr_Plugin_a9he_New_file_size_check","Link":"Read error"},{"_id":"-XIe_rmCK","id":"Tdarr_Plugin_00td_filter_by_file_property","checked":true,"source":"Community","priority":5,"InputsDB":{"propertyValues":"mkv"},"Stage":"Pre-processing","Name":"Filter by file property","Type":"Video","Operation":"Filter","Description":"Filter by a top level file property.\n  For example, container, video_resolution, video_codec_name, fileMedium.\n  Click on a file name on the Tdarr tab or Search tab to see top-level file properties.\n  ","Version":"1.00","Tags":"filter","Inputs":[{"name":"propertyName","type":"string","defaultValue":"container","inputUI":{"type":"text"},"tooltip":"Enter the file property to check"},{"name":"propertyValues","type":"string","defaultValue":"mkv,mp4","inputUI":{"type":"text"},"tooltip":"Enter a comma separated list of values to check for."},{"name":"exactMatch","type":"boolean","defaultValue":true,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Specify true if the property value must be an exact match, false if the property value must contain the value."},{"name":"continueIfPropertyFound","type":"boolean","defaultValue":false,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Specify whether to continue the plugin stack if the property is found."}],"source_id":"Community::Tdarr_Plugin_00td_filter_by_file_property","Link":"Read error"},{"_id":"RZcj0lsWOB","id":"Tdarr_Plugin_00td_action_remux_container","checked":true,"source":"Community","priority":6,"InputsDB":{},"Name":"Remux container","Type":"Video","Operation":"Transcode","Description":"\n  This action has a built-in filter. Additional filters can be added.\n\n\n\n  If not in the specified container, the file will be remuxed.\n  ","Version":"1.00","Link":"Read error","Stage":"Pre-processing","Tags":"action","Inputs":[{"name":"container","type":"string","defaultValue":"mkv","inputUI":{"type":"text"},"tooltip":"Enter the desired container"}],"source_id":"Community::Tdarr_Plugin_00td_action_remux_container"}],"pluginCommunity":true,"handbrake":true,"ffmpeg":false,"handbrakescan":true,"ffmpegscan":false,"preset":"-Z \"Very Fast 1080p30\"","decisionMaker":{"settingsPlugin":true,"settingsVideo":false,"videoExcludeSwitch":true,"video_codec_names_exclude":[{"codec":"hevc","checked":false},{"codec":"h264","checked":true}],"video_size_range_include":{"min":0,"max":100000},"video_height_range_include":{"min":0,"max":3000},"video_width_range_include":{"min":0,"max":4000},"settingsAudio":false,"audioExcludeSwitch":true,"audio_codec_names_exclude":[{"codec":"mp3","checked":true},{"codec":"aac","checked":false}],"audio_size_range_include":{"min":0,"max":10}},"schedule":[{"_id":"Sun:00-01","checked":true},{"_id":"Sun:01-02","checked":true},{"_id":"Sun:02-03","checked":true},{"_id":"Sun:03-04","checked":true},{"_id":"Sun:04-05","checked":true},{"_id":"Sun:05-06","checked":true},{"_id":"Sun:06-07","checked":true},{"_id":"Sun:07-08","checked":true},{"_id":"Sun:08-09","checked":true},{"_id":"Sun:09-10","checked":true},{"_id":"Sun:10-11","checked":true},{"_id":"Sun:11-12","checked":true},{"_id":"Sun:12-13","checked":true},{"_id":"Sun:13-14","checked":true},{"_id":"Sun:14-15","checked":true},{"_id":"Sun:15-16","checked":true},{"_id":"Sun:16-17","checked":true},{"_id":"Sun:17-18","checked":true},{"_id":"Sun:18-19","checked":true},{"_id":"Sun:19-20","checked":true},{"_id":"Sun:20-21","checked":true},{"_id":"Sun:21-22","checked":true},{"_id":"Sun:22-23","checked":true},{"_id":"Sun:23-00","checked":true},{"_id":"Mon:00-01","checked":true},{"_id":"Mon:01-02","checked":true},{"_id":"Mon:02-03","checked":true},{"_id":"Mon:03-04","checked":true},{"_id":"Mon:04-05","checked":true},{"_id":"Mon:05-06","checked":true},{"_id":"Mon:06-07","checked":true},{"_id":"Mon:07-08","checked":true},{"_id":"Mon:08-09","checked":true},{"_id":"Mon:09-10","checked":true},{"_id":"Mon:10-11","checked":true},{"_id":"Mon:11-12","checked":true},{"_id":"Mon:12-13","checked":true},{"_id":"Mon:13-14","checked":true},{"_id":"Mon:14-15","checked":true},{"_id":"Mon:15-16","checked":true},{"_id":"Mon:16-17","checked":true},{"_id":"Mon:17-18","checked":true},{"_id":"Mon:18-19","checked":true},{"_id":"Mon:19-20","checked":true},{"_id":"Mon:20-21","checked":true},{"_id":"Mon:21-22","checked":true},{"_id":"Mon:22-23","checked":true},{"_id":"Mon:23-00","checked":true},{"_id":"Tue:00-01","checked":true},{"_id":"Tue:01-02","checked":true},{"_id":"Tue:02-03","checked":true},{"_id":"Tue:03-04","checked":true},{"_id":"Tue:04-05","checked":true},{"_id":"Tue:05-06","checked":true},{"_id":"Tue:06-07","checked":true},{"_id":"Tue:07-08","checked":true},{"_id":"Tue:08-09","checked":true},{"_id":"Tue:09-10","checked":true},{"_id":"Tue:10-11","checked":true},{"_id":"Tue:11-12","checked":true},{"_id":"Tue:12-13","checked":true},{"_id":"Tue:13-14","checked":true},{"_id":"Tue:14-15","checked":true},{"_id":"Tue:15-16","checked":true},{"_id":"Tue:16-17","checked":true},{"_id":"Tue:17-18","checked":true},{"_id":"Tue:18-19","checked":true},{"_id":"Tue:19-20","checked":true},{"_id":"Tue:20-21","checked":true},{"_id":"Tue:21-22","checked":true},{"_id":"Tue:22-23","checked":true},{"_id":"Tue:23-00","checked":true},{"_id":"Wed:00-01","checked":true},{"_id":"Wed:01-02","checked":true},{"_id":"Wed:02-03","checked":true},{"_id":"Wed:03-04","checked":true},{"_id":"Wed:04-05","checked":true},{"_id":"Wed:05-06","checked":true},{"_id":"Wed:06-07","checked":true},{"_id":"Wed:07-08","checked":true},{"_id":"Wed:08-09","checked":true},{"_id":"Wed:09-10","checked":true},{"_id":"Wed:10-11","checked":true},{"_id":"Wed:11-12","checked":true},{"_id":"Wed:12-13","checked":true},{"_id":"Wed:13-14","checked":true},{"_id":"Wed:14-15","checked":true},{"_id":"Wed:15-16","checked":true},{"_id":"Wed:16-17","checked":true},{"_id":"Wed:17-18","checked":true},{"_id":"Wed:18-19","checked":true},{"_id":"Wed:19-20","checked":true},{"_id":"Wed:20-21","checked":true},{"_id":"Wed:21-22","checked":true},{"_id":"Wed:22-23","checked":true},{"_id":"Wed:23-00","checked":true},{"_id":"Thur:00-01","checked":true},{"_id":"Thur:01-02","checked":true},{"_id":"Thur:02-03","checked":true},{"_id":"Thur:03-04","checked":true},{"_id":"Thur:04-05","checked":true},{"_id":"Thur:05-06","checked":true},{"_id":"Thur:06-07","checked":true},{"_id":"Thur:07-08","checked":true},{"_id":"Thur:08-09","checked":true},{"_id":"Thur:09-10","checked":true},{"_id":"Thur:10-11","checked":true},{"_id":"Thur:11-12","checked":true},{"_id":"Thur:12-13","checked":true},{"_id":"Thur:13-14","checked":true},{"_id":"Thur:14-15","checked":true},{"_id":"Thur:15-16","checked":true},{"_id":"Thur:16-17","checked":true},{"_id":"Thur:17-18","checked":true},{"_id":"Thur:18-19","checked":true},{"_id":"Thur:19-20","checked":true},{"_id":"Thur:20-21","checked":true},{"_id":"Thur:21-22","checked":true},{"_id":"Thur:22-23","checked":true},{"_id":"Thur:23-00","checked":true},{"_id":"Fri:00-01","checked":true},{"_id":"Fri:01-02","checked":true},{"_id":"Fri:02-03","checked":true},{"_id":"Fri:03-04","checked":true},{"_id":"Fri:04-05","checked":true},{"_id":"Fri:05-06","checked":true},{"_id":"Fri:06-07","checked":true},{"_id":"Fri:07-08","checked":true},{"_id":"Fri:08-09","checked":true},{"_id":"Fri:09-10","checked":true},{"_id":"Fri:10-11","checked":true},{"_id":"Fri:11-12","checked":true},{"_id":"Fri:12-13","checked":true},{"_id":"Fri:13-14","checked":true},{"_id":"Fri:14-15","checked":true},{"_id":"Fri:15-16","checked":true},{"_id":"Fri:16-17","checked":true},{"_id":"Fri:17-18","checked":true},{"_id":"Fri:18-19","checked":true},{"_id":"Fri:19-20","checked":true},{"_id":"Fri:20-21","checked":true},{"_id":"Fri:21-22","checked":true},{"_id":"Fri:22-23","checked":true},{"_id":"Fri:23-00","checked":true},{"_id":"Sat:00-01","checked":true},{"_id":"Sat:01-02","checked":true},{"_id":"Sat:02-03","checked":true},{"_id":"Sat:03-04","checked":true},{"_id":"Sat:04-05","checked":true},{"_id":"Sat:05-06","checked":true},{"_id":"Sat:06-07","checked":true},{"_id":"Sat:07-08","checked":true},{"_id":"Sat:08-09","checked":true},{"_id":"Sat:09-10","checked":true},{"_id":"Sat:10-11","checked":true},{"_id":"Sat:11-12","checked":true},{"_id":"Sat:12-13","checked":true},{"_id":"Sat:13-14","checked":true},{"_id":"Sat:14-15","checked":true},{"_id":"Sat:15-16","checked":true},{"_id":"Sat:16-17","checked":true},{"_id":"Sat:17-18","checked":true},{"_id":"Sat:18-19","checked":true},{"_id":"Sat:19-20","checked":true},{"_id":"Sat:20-21","checked":true},{"_id":"Sat:21-22","checked":true},{"_id":"Sat:22-23","checked":true},{"_id":"Sat:23-00","checked":true}],"totalHealthCheckCount":130,"totalTranscodeCount":143,"sizeDiff":2.696708295494318,"holdNewFiles":false,"holdFor":3600,"pluginStackOverview":true,"filterResolutionsSkip":"","filterCodecsSkip":"","processPluginsSequentially":true}}
+2023-07-07T12:06:17.496Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Fetching plugin data from server
+2023-07-07T12:06:17.496Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Scanning original library file
+2023-07-07T12:06:17.497Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:{
+2023-07-07T12:06:17.497Z   "exifToolScan": true,
+2023-07-07T12:06:17.497Z   "mediaInfoScan": false,
+2023-07-07T12:06:17.497Z   "closedCaptionScan": false
+2023-07-07T12:06:17.497Z }
+2023-07-07T12:06:17.497Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Updating file properties using mkvpropedit
+2023-07-07T12:06:17.497Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Updated file properties using mkvpropedit
+2023-07-07T12:06:17.506Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Requesting Tdarr Server to scan file
+2023-07-07T12:06:20.926Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Scan complete
+2023-07-07T12:06:20.926Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Original file scanned
+2023-07-07T12:06:20.927Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:fileVersionOriginalLogJSONString:{"lastCliCommand":"","lastPluginId":"","sourceFile":{"_id":"/media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 HDTV-1080p.mkv","footprintId":"yL5WAY-dr","file":"/media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 HDTV-1080p.mkv","container":"mkv","scannerReads":{"ffProbeRead":"success","exiftoolRead":"success","mediaInfoRead":"not enabled","closedCaptionRead":"not enabled"},"createdAt":1688727978698,"lastPluginDetails":"none","bit_rate":7246137,"statSync":{"dev":111,"mode":33188,"nlink":1,"uid":0,"gid":0,"rdev":0,"blksize":4096,"ino":7863030971316558000,"size":3391409543,"blocks":6623847,"atimeMs":1688723965000,"mtimeMs":1688723965000,"ctimeMs":1688723965000,"birthtimeMs":0,"atime":"2023-07-07T09:59:25.000Z","mtime":"2023-07-07T09:59:25.000Z","ctime":"2023-07-07T09:59:25.000Z","birthtime":"1970-01-01T00:00:00.000Z"},"file_size":3234.3001775741577,"ffProbeData":{"streams":[{"index":0,"codec_name":"subrip","codec_long_name":"SubRip subtitle","codec_type":"subtitle","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","duration_ts":3744240,"duration":"3744.240000","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"BPS":"95","BPS-eng":"95","DURATION":"01:01:49.880000000","DURATION-eng":"01:01:49.880000000","NUMBER_OF_FRAMES":"1100","NUMBER_OF_FRAMES-eng":"1100","NUMBER_OF_BYTES":"44383","NUMBER_OF_BYTES-eng":"44383","_STATISTICS_WRITING_APP":"mkvmerge v7.5.0 ('Glass Culture') 64bit built on Jan  4 2015 16:48:44","_STATISTICS_WRITING_APP-eng":"mkvmerge v7.5.0 ('Glass Culture') 64bit built on Jan  4 2015 16:48:44","_STATISTICS_WRITING_DATE_UTC":"2015-02-01 21:04:52","_STATISTICS_WRITING_DATE_UTC-eng":"2015-02-01 21:04:52","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES","_STATISTICS_TAGS-eng":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}},{"index":1,"codec_name":"h264","codec_long_name":"H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10","profile":"High","codec_type":"video","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","width":1920,"height":1080,"coded_width":1920,"coded_height":1080,"closed_captions":0,"has_b_frames":3,"sample_aspect_ratio":"1:1","display_aspect_ratio":"16:9","pix_fmt":"yuv420p","level":40,"color_range":"tv","color_space":"bt709","color_transfer":"bt709","color_primaries":"bt709","chroma_location":"left","field_order":"tt","refs":1,"is_avc":"true","nal_length_size":"4","r_frame_rate":"25/1","avg_frame_rate":"25/1","time_base":"1/1000","start_pts":0,"start_time":"0.000000","bits_per_raw_sample":"8","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"BPS":"7051852","BPS-eng":"7051852","DURATION":"01:02:24.240000000","DURATION-eng":"01:02:24.240000000","NUMBER_OF_FRAMES":"94413","NUMBER_OF_FRAMES-eng":"94413","NUMBER_OF_BYTES":"3300478459","NUMBER_OF_BYTES-eng":"3300478459","_STATISTICS_WRITING_APP":"mkvmerge v7.5.0 ('Glass Culture') 64bit built on Jan  4 2015 16:48:44","_STATISTICS_WRITING_APP-eng":"mkvmerge v7.5.0 ('Glass Culture') 64bit built on Jan  4 2015 16:48:44","_STATISTICS_WRITING_DATE_UTC":"2015-02-01 21:04:52","_STATISTICS_WRITING_DATE_UTC-eng":"2015-02-01 21:04:52","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES","_STATISTICS_TAGS-eng":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}},{"index":2,"codec_name":"ac3","codec_long_name":"ATSC A/52A (AC-3)","codec_type":"audio","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":"48000","channels":2,"channel_layout":"stereo","bits_per_sample":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":9,"start_time":"0.009000","bit_rate":"192000","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"eng","BPS":"192000","BPS-eng":"192000","DURATION":"01:02:23.392000000","DURATION-eng":"01:02:23.392000000","NUMBER_OF_FRAMES":"116981","NUMBER_OF_FRAMES-eng":"116981","NUMBER_OF_BYTES":"89841408","NUMBER_OF_BYTES-eng":"89841408","_STATISTICS_WRITING_APP":"mkvmerge v7.5.0 ('Glass Culture') 64bit built on Jan  4 2015 16:48:44","_STATISTICS_WRITING_APP-eng":"mkvmerge v7.5.0 ('Glass Culture') 64bit built on Jan  4 2015 16:48:44","_STATISTICS_WRITING_DATE_UTC":"2015-02-01 21:04:52","_STATISTICS_WRITING_DATE_UTC-eng":"2015-02-01 21:04:52","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES","_STATISTICS_TAGS-eng":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}}],"format":{"filename":"/media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 HDTV-1080p.mkv","nb_streams":3,"nb_programs":0,"format_name":"matroska,webm","format_long_name":"Matroska / WebM","start_time":"0.000000","duration":"3744.240000","size":"3391409543","bit_rate":"7246137","probe_score":100,"tags":{"encoder":"libebml v1.3.1 + libmatroska v1.4.2","creation_time":"2015-02-01T21:04:52.000000Z"}}},"meta":{"SourceFile":"/media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 HDTV-1080p.mkv","errors":[],"Duration":3744.24,"DefaultDuration":0.032,"ExifToolVersion":12.4,"FileName":"Top Gear - S22E02 - Episode 2 HDTV-1080p.mkv","Directory":"/media/tvshows/Top Gear/Season 22","FileSize":"3.2 GiB","FileModifyDate":{"year":2023,"month":7,"day":7,"hour":9,"minute":59,"second":25,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:07 09:59:25+00:00"},"FileAccessDate":{"year":2023,"month":7,"day":7,"hour":9,"minute":59,"second":25,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:07 09:59:25+00:00"},"FileInodeChangeDate":{"year":2023,"month":7,"day":7,"hour":9,"minute":59,"second":25,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:07 09:59:25+00:00"},"FilePermissions":"-rw-r--r--","FileType":"MKV","FileTypeExtension":"mkv","MIMEType":"video/x-matroska","EBMLVersion":1,"EBMLReadVersion":1,"DocType":"matroska","DocTypeVersion":4,"DocTypeReadVersion":2,"TimecodeScale":"1 ms","MuxingApp":"libebml v1.3.1 + libmatroska v1.4.2","WritingApp":"mkvmerge v7.5.0 ('Glass Culture') 64bit built on Jan  4 2015 16:48:44","DateTimeOriginal":{"year":2015,"month":2,"day":1,"hour":21,"minute":4,"second":52,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2015:02:01 21:04:52Z"},"CodecID":"S_TEXT/UTF8","VideoCodecID":"V_MPEG4/ISO/AVC","TrackLanguage":"und","ImageWidth":1920,"ImageHeight":1080,"DisplayWidth":1920,"DisplayHeight":1080,"VideoFrameRate":25,"TrackNumber":3,"TrackType":"Audio","AudioCodecID":"A_AC3","AudioSampleRate":48000,"AudioChannels":2,"ImageSize":"1920x1080","Megapixels":2.1},"mediaInfo":{},"hasClosedCaptions":false,"DB":"4BaCjCxnf","bumped":false,"HealthCheck":"","TranscodeDecisionMaker":"","holdUntil":0,"fileMedium":"video","video_codec_name":"h264","audio_codec_name":"","video_resolution":"1080p","lastHealthCheckDate":0,"lastTranscodeDate":0,"history":"","oldSize":0,"newSize":0,"videoStreamIndex":1,"duration":3744}}
+2023-07-07T12:06:20.927Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Source file to work on determined:/media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 HDTV-1080p.mkv
+2023-07-07T12:06:20.928Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[Step W02] [C1] Running pre-process file
+2023-07-07T12:06:20.928Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Checking files can be accessed
+2023-07-07T12:06:20.928Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Relevant paths can be accessed
+2023-07-07T12:06:20.929Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Source file: /media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 HDTV-1080p.mkv
+2023-07-07T12:06:20.930Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Cache folder: /temp
+2023-07-07T12:06:20.931Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[Step W03] [C1] Analysing file - running plugins
+2023-07-07T12:06:20.932Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:transcode task, scanning for extra file details before transcode
+2023-07-07T12:06:20.932Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Updating file properties using mkvpropedit
+2023-07-07T12:06:20.932Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Updated file properties using mkvpropedit
+2023-07-07T12:06:20.933Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Requesting Tdarr Server to scan file
+2023-07-07T12:06:24.950Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Scan complete
+2023-07-07T12:06:24.952Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Scan complete
+2023-07-07T12:06:24.953Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Updating Node relay: Processing
+2023-07-07T12:06:24.954Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[1/2] Checking file frame count
+2023-07-07T12:06:24.954Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[2/2] Frame count 0
+2023-07-07T12:06:24.955Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Transcode task, determining transcode settings
+2023-07-07T12:06:24.955Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Plugin stack selected
+2023-07-07T12:06:24.957Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Plugin: plugin1:  Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-07T12:06:24.958Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[1/5] Reading plugin
+2023-07-07T12:06:24.958Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[2/5] Plugin read finished
+2023-07-07T12:06:24.959Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[3/5] Installing dependencies
+2023-07-07T12:06:24.959Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[4/5] Running plugin
+2023-07-07T12:06:24.959Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:{"pluginInputs":{}}
+2023-07-07T12:06:24.962Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[5/5] Running plugin finished
+2023-07-07T12:06:24.963Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Plugin: plugin2:  Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-07T12:06:24.964Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[1/5] Reading plugin
+2023-07-07T12:06:24.965Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[2/5] Plugin read finished
+2023-07-07T12:06:24.966Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[3/5] Installing dependencies
+2023-07-07T12:06:24.966Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[4/5] Running plugin
+2023-07-07T12:06:24.967Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:{"pluginInputs":{}}
+2023-07-07T12:06:24.967Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[5/5] Running plugin finished
+2023-07-07T12:06:24.968Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Worker config: {
+2023-07-07T12:06:24.968Z   "processFile": true,
+2023-07-07T12:06:24.968Z   "preset": ",-map 0:v? -map 0:a? -map 0:s? -map 0:d? -map 0:t? -c copy",
+2023-07-07T12:06:24.968Z   "container": ".mkv",
+2023-07-07T12:06:24.968Z   "handBrakeMode": false,
+2023-07-07T12:06:24.968Z   "FFmpegMode": true,
+2023-07-07T12:06:24.968Z   "reQueueAfter": true,
+2023-07-07T12:06:24.968Z   "infoLog": "Video is not in the first stream",
+2023-07-07T12:06:24.968Z   "lastPluginDetails": {
+2023-07-07T12:06:24.968Z     "source": "Community",
+2023-07-07T12:06:24.968Z     "id": "Tdarr_Plugin_lmg1_Reorder_Streams",
+2023-07-07T12:06:24.968Z     "number": "2/7"
+2023-07-07T12:06:24.968Z   },
+2023-07-07T12:06:24.968Z   "ffmpegMode": true,
+2023-07-07T12:06:24.968Z   "cliToUse": "ffmpeg"
+2023-07-07T12:06:24.968Z }
+2023-07-07T12:06:24.968Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Worker log: 
+2023-07-07T12:06:24.968Z Pre-processing - Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-07T12:06:24.968Z ☑File doesn't contain any unwanted image format streams.
+2023-07-07T12:06:24.968Z 
+2023-07-07T12:06:24.968Z Pre-processing - Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-07T12:06:24.968Z Video is not in the first stream
+2023-07-07T12:06:24.969Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Worker will process
+2023-07-07T12:06:24.969Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[Step W04] [C1] Preparing command
+2023-07-07T12:06:24.969Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Cache file stem: /temp
+2023-07-07T12:06:24.970Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Cache file path: /temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-y_VHiuCfy.mkv
+2023-07-07T12:06:24.970Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Create transcode args
+2023-07-07T12:06:24.971Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Args:  -i "/media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 HDTV-1080p.mkv" -map 0:v? -map 0:a? -map 0:s? -map 0:d? -map 0:t? -c copy "/temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-y_VHiuCfy.mkv"
+2023-07-07T12:06:24.971Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Getting source file size
+2023-07-07T12:06:24.972Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Source file size: 3.1584962671622634
+2023-07-07T12:06:24.973Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Performing safety check on worker config to see if old transcode args/container match new ones
+2023-07-07T12:06:24.974Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Safety check complete, all good
+2023-07-07T12:06:24.976Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[Step W05] [C1] Launching subworker
+2023-07-07T12:06:24.977Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Preparing to launch subworker
+2023-07-07T12:06:24.985Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Subworker launched
+2023-07-07T12:06:24.986Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[1/3] Sending command to subworker
+2023-07-07T12:06:24.987Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[2/3] tdarr-ffmpeg -i "/media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 HDTV-1080p.mkv" -map 0:v? -map 0:a? -map 0:s? -map 0:d? -map 0:t? -c copy "/temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-y_VHiuCfy.mkv"
+2023-07-07T12:06:24.988Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[3/3] Command sent
+2023-07-07T12:06:24.988Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:To see live CLI output, enable 'Log full FFmpeg/HandBrake output' in the staging section on the Tdarr tab before the job starts. Note this could increase the job report size substantially.
+2023-07-07T12:06:24.988Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Subworker:Online
+2023-07-07T12:06:24.989Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Subworker:Receiving transcode settings
+2023-07-07T12:06:24.989Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Subworker:Running CLI
+2023-07-07T12:10:20.196Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Subworker:a.Thread closed, code: 0
+2023-07-07T12:10:20.200Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Subworker exit approved, killing subworker
+2023-07-07T12:10:20.200Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Subworker killed
+2023-07-07T12:10:20.201Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:b.Thread closed, code: 0
+2023-07-07T12:10:20.201Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:CLI code: 0
+2023-07-07T12:10:20.202Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Last 200 lines of CLI log:
+2023-07-07T12:10:20.202Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3558480, current: 3558440; changing to 3558480. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3558560, current: 3558520; changing to 3558560. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3558800, current: 3558720; changing to 3558800. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3558800, current: 3558740; changing to 3558800. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3558800, current: 3558680; changing to 3558800. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3558800, current: 3558760; 
+2023-07-07T12:10:20.202Z changing to 3558800. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3558880, current: 3558840; changing to 3558880. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] 
+2023-07-07T12:10:20.202Z Non-monotonous DTS in output stream 0:0; previous: 3559120, current: 3559040; changing to 3559120. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3559120, current: 3559060; changing to 3559120. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3559120, current: 3559000; changing to 3559120. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3559120, current: 3559080; changing to 3559120. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3559200, current: 3559160; changing to 3559200. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3559440, current: 3559360; changing to 3559440. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3559440, current: 3559380; changing to 3559440. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3559440, current: 3559320; changing to 3559440. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3559440, current: 3559400; changing to 3559440. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3559520, current: 3559480; changing to 3559520. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3559760, current: 3559680; changing to 3559760. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3559760, current: 3559700; changing to 3559760. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3559760, current: 3559640; changing to 3559760. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3559760, current: 3559720; changing to 3559760. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3559840, current: 3559800; changing to 3559840. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z frame=89539 fps=394 q=-1.0 size= 3185152kB time=00:59:20.23 bitrate=7328.9kbits/s speed=15.7x    [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3560080, current: 3560000; changing to 3560080. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3560080, current: 3560020; changing to 3560080. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3560080, current: 3559960; changing to 3560080. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3560080, current: 3560040; changing to 3560080. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3560160, current: 3560120; changing to 3560160. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3562180, current: 3562120; changing to 3562180. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3562560, current: 3562480; changing to 3562560. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3562560, current: 3562500; changing to 3562560. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3562560, current: 3562440; changing to 3562560. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3562560, current: 3562520; changing to 3562560. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3562640, current: 3562600; changing to 3562640. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3562880, current: 3562800; changing to 3562880. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3562880, current: 3562820; changing to 3562880. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3562880, current: 3562760; changing to 3562880. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3562880, current: 3562840; changing to 3562880. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3562960, current: 3562920; changing to 3562960. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3563200, current: 3563120; changing to 3563200. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3563200, current: 3563140; changing to 3563200. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3563200, current: 3563080; changing to 3563200. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3563200, current: 3563160; changing to 3563200. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3563280, current: 3563240; changing to 3563280. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3563520, current: 3563440; changing to 3563520. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3563520, current: 3563460; changing to 3563520. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3563520, current: 3563400; changing to 3563520. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3563520, current: 3563480; changing to 3563520. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3563600, current: 3563560; changing to 3563600. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3565120, current: 3565040; changing to 3565120. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3565120, current: 3565000; changing to 3565120. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3565120, current: 3565080; changing to 3565120. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3565200, current: 3565160; changing to 3565200. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3565440, current: 3565360; changing to 3565440. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3565440, current: 3565380; changing to 3565440. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3565440, current: 3565320; changing to 3565440. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3565440, current: 3565400; changing to 3565440. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3565520, current: 3565480; changing to 3565520. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3565760, current: 3565680; changing to 3565760. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3565760, current: 3565700; changing to 3565760. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3565760, current: 3565640; changing to 3565760. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3565760, current: 3565720; changing to 3565760. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3565840, current: 3565800; changing to 3565840. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3566080, current: 3566000; changing to 3566080. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3566080, current: 3566020; changing to 3566080. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3566080, current: 3565960; changing to 3566080. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3566080, current: 3566040; changing to 3566080. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3566160, current: 3566120; changing to 3566160. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3566320, current: 3566280; changing to 3566320. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z frame=89966 fps=395 q=-1.0 size= 3197696kB time=00:59:35.72 bitrate=7325.9kbits/s speed=15.7x    
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3576880, current: 3576800; changing to 3576880. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3576880, current: 3576760; changing to 3576880. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3576880, current: 3576840; changing to 3576880. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3576960, current: 3576920; changing to 3576960. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] 
+2023-07-07T12:10:20.202Z Non-monotonous DTS in output stream 0:0; previous: 3577200, current: 3577120; 
+2023-07-07T12:10:20.202Z changing to 3577200. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] 
+2023-07-07T12:10:20.202Z Non-monotonous DTS in output stream 0:0; previous: 3577200, current: 3577140; changing to 3577200. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3577200, current: 3577080; changing to 3577200. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3577200, current: 3577160; changing to 3577200. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3577280, current: 3577240; changing to 3577280. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3577520, current: 3577440; changing to 3577520. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3577520, current: 3577460; changing to 3577520. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3577520, current: 3577400; changing to 3577520. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3577520, current: 3577480; changing to 3577520. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3577600, current: 3577560; changing to 3577600. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3577840, current: 3577760; changing to 3577840. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3577840, current: 3577780; changing to 3577840. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3577840, current: 3577720; changing to 3577840. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3577840, current: 3577800; changing to 3577840. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3577920, current: 3577880; changing to 3577920. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3578160, current: 3578080; changing to 3578160. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3578160, current: 3578100; changing to 3578160. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3578160, current: 3578040; changing to 3578160. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3578160, current: 3578120; changing to 3578160. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3578240, current: 3578200; changing to 3578240. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3578420, current: 3578360; changing to 3578420. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3579040, current: 3579000; changing to 3579040. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3581040, current: 3580960; changing to 3581040. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3581040, current: 3580920; changing to 3581040. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3581040, current: 3581000; changing to 3581040. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3581120, current: 3581080; changing to 3581120. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3581360, current: 3581280; changing to 3581360. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3581360, current: 3581300; changing to 3581360. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3581360, current: 3581240; changing to 3581360. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3581360, current: 3581320; changing to 3581360. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3581440, current: 3581400; changing to 3581440. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3581600, current: 3581560; changing to 3581600. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3582000, current: 3581920; changing to 3582000. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3582000, current: 3581880; changing to 3582000. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3582000, current: 3581960; changing to 3582000. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z frame=90320 fps=396 q=-1.0 size= 3206912kB time=00:59:48.42 bitrate=7321.0kbits/s speed=15.7x    
+2023-07-07T12:10:20.202Z frame=90664 fps=396 q=-1.0 size= 3216384kB time=01:00:02.47 bitrate=7314.0kbits/s speed=15.7x    
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3606000, current: 3605920; changing to 3606000. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3606000, current: 3605940; changing to 3606000. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3606000, current: 3605880; changing to 3606000. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3606000, current: 3605960; changing to 3606000. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3606080, current: 3606040; changing to 3606080. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] 
+2023-07-07T12:10:20.202Z Non-monotonous DTS in output stream 0:0; previous: 3606320, current: 3606240; 
+2023-07-07T12:10:20.202Z changing to 3606320. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] 
+2023-07-07T12:10:20.202Z Non-monotonous DTS in output stream 0:0; previous: 3606320, current: 3606260; 
+2023-07-07T12:10:20.202Z changing to 3606320. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3606320, current: 3606200; changing to 3606320. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3606320, current: 3606280; changing to 3606320. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3606400, current: 3606360; changing to 3606400. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3606640, current: 3606560; changing to 3606640. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3606640, current: 3606580; changing to 3606640. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3606640, current: 3606520; changing to 3606640. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3606640, current: 3606600; changing to 3606640. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3606720, current: 3606680; changing to 3606720. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3606960, current: 3606880; changing to 3606960. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3606960, current: 3606900; changing to 3606960. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3606960, current: 3606840; changing to 3606960. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3606960, current: 3606920; changing to 3606960. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3607040, current: 3607000; changing to 3607040. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3607220, current: 3607160; changing to 3607220. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3607540, current: 3607480; changing to 3607540. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3613640, current: 3613560; changing to 3613640. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3613640, current: 3613580; changing to 3613640. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3613640, current: 3613520; changing to 3613640. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3613640, current: 3613600; changing to 3613640. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3613720, current: 3613680; changing to 3613720. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3613880, current: 3613840; changing to 3613880. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] 
+2023-07-07T12:10:20.202Z Non-monotonous DTS in output stream 0:0; previous: 3614220, current: 3614160; 
+2023-07-07T12:10:20.202Z changing to 3614220. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3614600, current: 3614520; changing to 3614600. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3614600, current: 3614540; changing to 3614600. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3614600, current: 3614480; changing to 3614600. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3614600, current: 3614560; 
+2023-07-07T12:10:20.202Z changing to 3614600. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3614680, current: 3614640; changing to 3614680. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3614860, current: 3614800; changing to 3614860. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z frame=91158 fps=398 q=-1.0 size= 3229952kB time=01:00:20.58 bitrate=7308.1kbits/s speed=15.8x    
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3624720, current: 3624640; changing to 3624720. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3624720, current: 3624600; changing to 3624720. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3624720, current: 3624680; changing to 3624720. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3624800, current: 3624760; changing to 3624800. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3625040, current: 3624960; changing to 3625040. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3625040, current: 3624980; changing to 3625040. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3625040, current: 3624920; changing to 3625040. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3625040, current: 3625000; changing to 3625040. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3625120, current: 3625080; changing to 3625120. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3625360, current: 3625280; changing to 3625360. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3625360, current: 3625300; changing to 3625360. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3625360, current: 3625240; changing to 3625360. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3625360, current: 3625320; changing to 3625360. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3625520, current: 3625480; changing to 3625520. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3625680, current: 3625640; changing to 3625680. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3625860, current: 3625800; changing to 3625860. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3628880, current: 3628800; changing to 3628880. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3628880, current: 3628760; changing to 3628880. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3628880, current: 3628840; changing to 3628880. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3628960, current: 3628920; changing to 3628960. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3629200, current: 3629120; changing to 3629200. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3629200, current: 3629140; changing to 3629200. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3629200, current: 3629080; changing to 3629200. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3629200, current: 3629160; changing to 3629200. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3629280, current: 3629240; changing to 3629280. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3629780, current: 3629720; changing to 3629780. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3630480, current: 3630400; changing to 3630480. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3630480, current: 3630420; changing to 3630480. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3630480, current: 3630360; changing to 3630480. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3630480, current: 3630440; changing to 3630480. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3630560, current: 3630520; changing to 3630560. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3632800, current: 3632720; changing to 3632800. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3632800, current: 3632740; changing to 3632800. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3632800, current: 3632680; changing to 3632800. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3632800, current: 3632760; changing to 3632800. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3632880, current: 3632840; changing to 3632880. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3633040, current: 3633000; changing to 3633040. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3633280, current: 3633200; changing to 3633280. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3633280, current: 3633220; changing to 3633280. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3633280, current: 3633160; changing to 3633280. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3633280, current: 3633240; changing to 3633280. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3633360, current: 3633320; changing to 3633360. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3633600, current: 3633520; changing to 3633600. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] 
+2023-07-07T12:10:20.202Z Non-monotonous DTS in output stream 0:0; previous: 3633600, current: 3633540; changing to 3633600. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3633600, current: 3633480; changing to 3633600. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3633600, current: 3633560; changing to 3633600. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3633680, current: 3633640; changing to 3633680. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3633920, current: 3633840; changing to 3633920. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] 
+2023-07-07T12:10:20.202Z Non-monotonous DTS in output stream 0:0; previous: 3633920, current: 3633860; changing to 3633920. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3633920, current: 3633800; changing to 3633920. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3633920, current: 3633880; changing to 3633920. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z frame=91550 fps=398 q=-1.0 size= 3240704kB time=01:00:34.15 bitrate=7305.1kbits/s speed=15.8x    [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3634000, current: 3633960; changing to 3634000. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3634240, current: 3634200; changing to 3634240. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3646640, current: 3646600; changing to 3646640. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3646800, current: 3646760; changing to 3646800. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3646980, current: 3646920; changing to 3646980. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z frame=91888 fps=399 q=-1.0 size= 3250688kB time=01:00:47.65 bitrate=7300.5kbits/s speed=15.8x    [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3647280, current: 3647240; changing to 3647280. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] 
+2023-07-07T12:10:20.202Z Non-monotonous DTS in output stream 0:0; previous: 3647600, current: 3647560; 
+2023-07-07T12:10:20.202Z changing to 3647600. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3656680, current: 3656640; changing to 3656680. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3656840, current: 3656800; changing to 3656840. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3657020, current: 3656960; changing to 3657020. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z frame=92311 fps=400 q=-1.0 size= 3264000kB time=01:01:03.91 bitrate=7297.9kbits/s speed=15.9x    
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3665240, current: 3665160; changing to 3665240. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3665240, current: 3665180; changing to 3665240. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3665240, current: 3665120; changing to 3665240. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3665240, current: 3665200; changing to 3665240. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3665320, current: 3665280; changing to 3665320. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3665480, current: 3665440; changing to 3665480. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3666520, current: 3666440; changing to 3666520. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3666520, current: 3666460; changing to 3666520. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3666520, current: 3666400; changing to 3666520. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3666520, current: 3666480; changing to 3666520. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3666600, current: 3666560; changing to 3666600. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3666840, current: 3666760; changing to 3666840. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3666840, current: 3666780; changing to 3666840. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3666840, current: 3666720; changing to 3666840. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3666840, current: 3666800; changing to 3666840. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3666920, current: 3666880; changing to 3666920. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3667160, current: 3667080; changing to 3667160. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3667160, current: 3667100; changing to 3667160. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3667160, current: 3667040; changing to 3667160. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3667160, current: 3667120; changing to 3667160. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3667240, current: 3667200; changing to 3667240. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3667480, current: 3667400; changing to 3667480. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3667480, current: 3667420; 
+2023-07-07T12:10:20.202Z changing to 3667480. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3667480, current: 3667360; changing to 3667480. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3667480, current: 3667440; changing to 3667480. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3667560, current: 3667520; changing to 3667560. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3667720, current: 3667680; changing to 3667720. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3675880, current: 3675840; changing to 3675880. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3676280, current: 3676200; changing to 3676280. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3676280, current: 3676220; changing to 3676280. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3676280, current: 3676160; changing to 3676280. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3676280, current: 3676240; changing to 3676280. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3676360, current: 3676320; changing to 3676360. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3676600, current: 3676520; changing to 3676600. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3676600, current: 3676540; changing to 3676600. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3676600, current: 3676480; changing to 3676600. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3676600, current: 3676560; changing to 3676600. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3676680, current: 3676640; changing to 3676680. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z frame=92669 fps=401 q=-1.0 size= 3271936kB time=01:01:17.22 bitrate=7289.1kbits/s speed=15.9x    
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3676920, current: 3676840; changing to 3676920. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3676920, current: 3676860; changing to 3676920. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3676920, current: 3676800; changing to 3676920. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3676920, current: 3676880; changing to 3676920. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3677000, current: 3676960; changing to 3677000. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] 
+2023-07-07T12:10:20.202Z Non-monotonous DTS in output stream 0:0; previous: 3677160, current: 3677120; changing to 3677160. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3678520, current: 3678440; changing to 3678520. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3678520, current: 3678460; changing to 3678520. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3678520, current: 3678400; changing to 3678520. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3678520, current: 3678480; changing to 3678520. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3678600, current: 3678560; changing to 3678600. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3678840, current: 3678760; changing to 3678840. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3678840, current: 3678780; changing to 3678840. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3678840, current: 3678720; changing to 3678840. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3678840, current: 3678800; changing to 3678840. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3678920, current: 3678880; changing to 3678920. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] 
+2023-07-07T12:10:20.202Z Non-monotonous DTS in output stream 0:0; previous: 3679160, current: 3679080; changing to 3679160. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3679160, current: 3679100; changing to 3679160. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3679160, current: 3679040; changing to 3679160. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3679160, current: 3679120; changing to 3679160. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3679240, current: 3679200; changing to 3679240. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3679400, current: 3679360; changing to 3679400. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z frame=92967 fps=401 q=-1.0 size= 3280640kB time=01:01:28.26 bitrate=7286.6kbits/s speed=15.9x    
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3691560, current: 3691520; changing to 3691560. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z frame=93268 fps=401 q=-1.0 size= 3288832kB time=01:01:40.32 bitrate=7281.0kbits/s speed=15.9x    
+2023-07-07T12:10:20.202Z frame=93621 fps=402 q=-1.0 size= 3297792kB time=01:01:54.50 bitrate=7273.0kbits/s speed=  16x    
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] 
+2023-07-07T12:10:20.202Z Non-monotonous DTS in output stream 0:0; previous: 3716760, current: 3716720; changing to 3716760. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3716920, current: 3716880; changing to 3716920. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3717160, current: 3717080; changing to 3717160. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3717160, current: 3717100; changing to 3717160. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3717160, current: 3717040; changing to 3717160. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3717160, current: 3717120; changing to 3717160. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3717240, current: 3717200; changing to 3717240. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] 
+2023-07-07T12:10:20.202Z Non-monotonous DTS in output stream 0:0; previous: 3717480, current: 3717400; changing to 3717480. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3717480, current: 3717420; changing to 3717480. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3717480, current: 3717360; changing to 3717480. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3717480, current: 3717440; changing to 3717480. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3717560, current: 3717520; changing to 3717560. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3717800, current: 3717720; changing to 3717800. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3717800, current: 3717740; changing to 3717800. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3717800, current: 3717680; changing to 3717800. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3717800, current: 3717760; changing to 3717800. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3717880, current: 3717840; changing to 3717880. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3718120, current: 3718040; changing to 3718120. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3718120, current: 3718060; changing to 3718120. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3718120, current: 3718000; changing to 3718120. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3718120, current: 3718080; changing to 3718120. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3718200, current: 3718160; changing to 3718200. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3718440, current: 3718360; changing to 3718440. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3718440, current: 3718380; changing to 3718440. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3718440, current: 3718320; changing to 3718440. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3718440, current: 3718400; changing to 3718440. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3718520, current: 3718480; changing to 3718520. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3718760, current: 3718680; changing to 3718760. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3718760, current: 3718700; changing to 3718760. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3718760, current: 3718640; changing to 3718760. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3718760, current: 3718720; changing to 3718760. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3718840, current: 3718800; changing to 3718840. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] 
+2023-07-07T12:10:20.202Z Non-monotonous DTS in output stream 0:0; previous: 3719080, current: 3719000; changing to 3719080. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] 
+2023-07-07T12:10:20.202Z Non-monotonous DTS in output stream 0:0; previous: 3719080, current: 3719020; 
+2023-07-07T12:10:20.202Z changing to 3719080. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3719080, current: 3718960; changing to 3719080. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3719080, current: 3719040; changing to 3719080. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3719160, current: 3719120; changing to 3719160. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3719400, current: 3719320; changing to 3719400. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3719400, current: 3719340; changing to 3719400. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3719400, current: 3719280; changing to 3719400. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3719400, current: 3719360; changing to 3719400. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3719480, current: 3719440; changing to 3719480. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3719720, current: 3719640; changing to 3719720. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3719720, current: 3719660; changing to 3719720. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3719720, current: 3719600; changing to 3719720. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] 
+2023-07-07T12:10:20.202Z Non-monotonous DTS in output stream 0:0; previous: 3719720, current: 3719680; changing to 3719720. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] Non-monotonous DTS in output stream 0:0; previous: 3719800, current: 3719760; changing to 3719800. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z [matroska @ 0x5586b5ce8e00] 
+2023-07-07T12:10:20.202Z Non-monotonous DTS in output stream 0:0; previous: 3719960, current: 3719920; changing to 3719960. This may result in incorrect timestamps in the output file.
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z frame=93917 fps=402 q=-1.0 size= 3301888kB time=01:02:04.77 bitrate=7261.9kbits/s speed=  16x    
+2023-07-07T12:10:20.202Z frame=94413 fps=404 q=-1.0 Lsize= 3312604kB time=01:02:24.08 bitrate=7247.9kbits/s speed=  16x    
+2023-07-07T12:10:20.202Z video:3223123kB audio:87736kB subtitle:43kB other streams:0kB global headers:0kB muxing overhead: 0.051399%
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.202Z 
+2023-07-07T12:10:20.207Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[Step W06] [C1] Worker [-success-]
+2023-07-07T12:10:20.207Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Worker success during processing
+2023-07-07T12:10:20.208Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Updating transcode stats
+2023-07-07T12:10:20.208Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Deleting non-latest cache file /media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 HDTV-1080p.mkv
+2023-07-07T12:10:20.208Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Scanning new file: /temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-y_VHiuCfy.mkv
+2023-07-07T12:10:20.208Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Updating file properties using mkvpropedit
+2023-07-07T12:10:20.209Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Updated file properties using mkvpropedit
+2023-07-07T12:10:20.209Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Requesting Tdarr Server to scan file
+2023-07-07T12:10:20.209Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Subworker exited null
+2023-07-07T12:10:21.212Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Scan complete
+2023-07-07T12:10:21.213Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:pluginCycleLogJSONString:{"nodeName":"MyInternalNode","workerID":"upset-urva","pluginCycle":1,"outcome":"success","workerLog":"\nPre-processing - Tdarr_Plugin_MC93_MigzImageRemoval\n☑File doesn't contain any unwanted image format streams.\n\nPre-processing - Tdarr_Plugin_lmg1_Reorder_Streams\nVideo is not in the first stream","lastCliCommand":"tdarr-ffmpeg -i \"/media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 HDTV-1080p.mkv\" -map 0:v? -map 0:a? -map 0:s? -map 0:d? -map 0:t? -c copy \"/temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-y_VHiuCfy.mkv\""}
+2023-07-07T12:10:21.213Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:fileVersionLogJSONString:{"lastCliCommand":"tdarr-ffmpeg -i \"/media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 HDTV-1080p.mkv\" -map 0:v? -map 0:a? -map 0:s? -map 0:d? -map 0:t? -c copy \"/temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-y_VHiuCfy.mkv\"","lastPluginId":"Tdarr_Plugin_lmg1_Reorder_Streams","sourceFile":{"_id":"/temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-y_VHiuCfy.mkv","footprintId":"yL5WAY-dr","file":"/temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-y_VHiuCfy.mkv","container":"mkv","scannerReads":{"ffProbeRead":"success","exiftoolRead":"success","mediaInfoRead":"not enabled","closedCaptionRead":"not enabled"},"createdAt":1688728219083,"lastPluginDetails":"none","bit_rate":7247627,"statSync":{"dev":2051,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":5923894,"size":3392106880,"blocks":6625224,"atimeMs":1688728217368.0415,"mtimeMs":1688728217180.0444,"ctimeMs":1688728217180.0444,"birthtimeMs":1688727983679.8074,"atime":"2023-07-07T11:10:17.368Z","mtime":"2023-07-07T11:10:17.180Z","ctime":"2023-07-07T11:10:17.180Z","birthtime":"2023-07-07T11:06:23.680Z"},"file_size":3234.9652099609375,"ffProbeData":{"streams":[{"index":0,"codec_name":"h264","codec_long_name":"H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10","profile":"High","codec_type":"video","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","width":1920,"height":1080,"coded_width":1920,"coded_height":1080,"closed_captions":0,"has_b_frames":3,"sample_aspect_ratio":"1:1","display_aspect_ratio":"16:9","pix_fmt":"yuv420p","level":40,"color_range":"tv","color_space":"bt709","color_transfer":"bt709","color_primaries":"bt709","chroma_location":"left","field_order":"tt","refs":1,"is_avc":"true","nal_length_size":"4","r_frame_rate":"25/1","avg_frame_rate":"25/1","time_base":"1/1000","start_pts":0,"start_time":"0.000000","bits_per_raw_sample":"8","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"BPS":"7051852","BPS-eng":"7051852","DURATION-eng":"01:02:24.240000000","NUMBER_OF_FRAMES":"94413","NUMBER_OF_FRAMES-eng":"94413","NUMBER_OF_BYTES":"3300478459","NUMBER_OF_BYTES-eng":"3300478459","_STATISTICS_WRITING_APP":"mkvmerge v7.5.0 ('Glass Culture') 64bit built on Jan  4 2015 16:48:44","_STATISTICS_WRITING_APP-eng":"mkvmerge v7.5.0 ('Glass Culture') 64bit built on Jan  4 2015 16:48:44","_STATISTICS_WRITING_DATE_UTC":"2015-02-01 21:04:52","_STATISTICS_WRITING_DATE_UTC-eng":"2015-02-01 21:04:52","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES","_STATISTICS_TAGS-eng":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES","DURATION":"01:02:24.240000000"}},{"index":1,"codec_name":"ac3","codec_long_name":"ATSC A/52A (AC-3)","codec_type":"audio","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":"48000","channels":2,"channel_layout":"stereo","bits_per_sample":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":9,"start_time":"0.009000","bit_rate":"192000","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"eng","BPS":"192000","BPS-eng":"192000","DURATION-eng":"01:02:23.392000000","NUMBER_OF_FRAMES":"116981","NUMBER_OF_FRAMES-eng":"116981","NUMBER_OF_BYTES":"89841408","NUMBER_OF_BYTES-eng":"89841408","_STATISTICS_WRITING_APP":"mkvmerge v7.5.0 ('Glass Culture') 64bit built on Jan  4 2015 16:48:44","_STATISTICS_WRITING_APP-eng":"mkvmerge v7.5.0 ('Glass Culture') 64bit built on Jan  4 2015 16:48:44","_STATISTICS_WRITING_DATE_UTC":"2015-02-01 21:04:52","_STATISTICS_WRITING_DATE_UTC-eng":"2015-02-01 21:04:52","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES","_STATISTICS_TAGS-eng":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES","DURATION":"01:02:23.401000000"}},{"index":2,"codec_name":"subrip","codec_long_name":"SubRip subtitle","codec_type":"subtitle","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","duration_ts":3744240,"duration":"3744.240000","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"BPS":"95","BPS-eng":"95","DURATION-eng":"01:01:49.880000000","NUMBER_OF_FRAMES":"1100","NUMBER_OF_FRAMES-eng":"1100","NUMBER_OF_BYTES":"44383","NUMBER_OF_BYTES-eng":"44383","_STATISTICS_WRITING_APP":"mkvmerge v7.5.0 ('Glass Culture') 64bit built on Jan  4 2015 16:48:44","_STATISTICS_WRITING_APP-eng":"mkvmerge v7.5.0 ('Glass Culture') 64bit built on Jan  4 2015 16:48:44","_STATISTICS_WRITING_DATE_UTC":"2015-02-01 21:04:52","_STATISTICS_WRITING_DATE_UTC-eng":"2015-02-01 21:04:52","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES","_STATISTICS_TAGS-eng":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES","DURATION":"01:01:59.860000000"}}],"format":{"filename":"/temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-y_VHiuCfy.mkv","nb_streams":3,"nb_programs":0,"format_name":"matroska,webm","format_long_name":"Matroska / WebM","start_time":"0.000000","duration":"3744.240000","size":"3392106880","bit_rate":"7247627","probe_score":100,"tags":{"ENCODER":"Lavf60.3.100"}}},"meta":{"SourceFile":"/temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-y_VHiuCfy.mkv","errors":[],"Duration":3744.24,"ExifToolVersion":12.4,"FileName":"Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-y_VHiuCfy.mkv","Directory":"/temp","FileSize":"3.2 GiB","FileModifyDate":{"year":2023,"month":7,"day":7,"hour":11,"minute":10,"second":17,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:07 11:10:17+00:00"},"FileAccessDate":{"year":2023,"month":7,"day":7,"hour":11,"minute":10,"second":17,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:07 11:10:17+00:00"},"FileInodeChangeDate":{"year":2023,"month":7,"day":7,"hour":11,"minute":10,"second":17,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:07 11:10:17+00:00"},"FilePermissions":"-rw-rw-r--","FileType":"MKV","FileTypeExtension":"mkv","MIMEType":"video/x-matroska","EBMLVersion":1,"EBMLReadVersion":1,"DocType":"matroska","DocTypeVersion":4,"DocTypeReadVersion":2,"TimecodeScale":"1 ms","MuxingApp":"Lavf60.3.100","WritingApp":"Lavf60.3.100","VideoFrameRate":25,"ImageWidth":1920,"ImageHeight":1080,"VideoScanType":"Interlaced","AudioChannels":2,"AudioSampleRate":48000,"AudioBitsPerSample":32,"TrackNumber":3,"TrackLanguage":"und","CodecID":"S_TEXT/UTF8","TrackType":"Subtitle","TagLanguage":"eng","TagName":"DURATION","TagString":"01:01:59.860000000","ImageSize":"1920x1080","Megapixels":2.1},"mediaInfo":{},"hasClosedCaptions":false,"DB":"4BaCjCxnf","bumped":false,"HealthCheck":"","TranscodeDecisionMaker":"","holdUntil":0,"fileMedium":"video","video_codec_name":"h264","audio_codec_name":"","video_resolution":"1080p","lastHealthCheckDate":0,"lastTranscodeDate":0,"history":"","oldSize":0,"newSize":0,"videoStreamIndex":0,"duration":3744}}
+2023-07-07T12:10:21.214Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Transcodes during this job so far: 1
+2023-07-07T12:10:21.214Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[Step W02] [C2] Running pre-process file
+2023-07-07T12:10:21.214Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Checking files can be accessed
+2023-07-07T12:10:21.214Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Relevant paths can be accessed
+2023-07-07T12:10:21.215Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Source file: /temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-y_VHiuCfy.mkv
+2023-07-07T12:10:21.215Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Cache folder: /temp
+2023-07-07T12:10:21.223Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[Step W03] [C2] Analysing file - running plugins
+2023-07-07T12:10:21.224Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:New cache file has already been scanned, no need to scan again
+2023-07-07T12:10:21.224Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Updating Node relay: Processing
+2023-07-07T12:10:21.224Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[1/2] Checking file frame count
+2023-07-07T12:10:21.225Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[2/2] Frame count 0
+2023-07-07T12:10:21.225Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Transcode task, determining transcode settings
+2023-07-07T12:10:21.225Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Plugin stack selected
+2023-07-07T12:10:21.225Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Plugin: plugin1:  Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-07T12:10:21.225Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[1/5] Reading plugin
+2023-07-07T12:10:21.226Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[2/5] Plugin read finished
+2023-07-07T12:10:21.226Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[3/5] Installing dependencies
+2023-07-07T12:10:21.226Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[4/5] Running plugin
+2023-07-07T12:10:21.226Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:{"pluginInputs":{}}
+2023-07-07T12:10:21.226Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[5/5] Running plugin finished
+2023-07-07T12:10:21.227Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Plugin: plugin2:  Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-07T12:10:21.227Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[1/5] Reading plugin
+2023-07-07T12:10:21.227Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[2/5] Plugin read finished
+2023-07-07T12:10:21.227Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[3/5] Installing dependencies
+2023-07-07T12:10:21.227Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[4/5] Running plugin
+2023-07-07T12:10:21.228Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:{"pluginInputs":{}}
+2023-07-07T12:10:21.228Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[5/5] Running plugin finished
+2023-07-07T12:10:21.228Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Plugin: sxfFHmyyT:  Tdarr_Plugin_00td_action_standardise_audio_stream_codecs
+2023-07-07T12:10:21.228Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[1/5] Reading plugin
+2023-07-07T12:10:21.229Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[2/5] Plugin read finished
+2023-07-07T12:10:21.229Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[3/5] Installing dependencies
+2023-07-07T12:10:21.229Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[4/5] Running plugin
+2023-07-07T12:10:21.229Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:{"pluginInputs":{"audioCodec":"aac"}}
+2023-07-07T12:10:21.229Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[5/5] Running plugin finished
+2023-07-07T12:10:21.230Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Worker config: {
+2023-07-07T12:10:21.230Z   "processFile": true,
+2023-07-07T12:10:21.230Z   "preset": ",-map 0:v -map 0:a -map 0:s? -map 0:d? -c copy  -c:a:0 aac",
+2023-07-07T12:10:21.230Z   "container": ".mkv",
+2023-07-07T12:10:21.230Z   "handBrakeMode": false,
+2023-07-07T12:10:21.230Z   "FFmpegMode": false,
+2023-07-07T12:10:21.230Z   "reQueueAfter": true,
+2023-07-07T12:10:21.230Z   "infoLog": "File has audio streams which aren't in aac \n",
+2023-07-07T12:10:21.230Z   "handbrakeMode": false,
+2023-07-07T12:10:21.230Z   "ffmpegMode": true,
+2023-07-07T12:10:21.230Z   "lastPluginDetails": {
+2023-07-07T12:10:21.230Z     "source": "Community",
+2023-07-07T12:10:21.230Z     "id": "Tdarr_Plugin_00td_action_standardise_audio_stream_codecs",
+2023-07-07T12:10:21.230Z     "number": "3/7"
+2023-07-07T12:10:21.230Z   },
+2023-07-07T12:10:21.230Z   "cliToUse": "ffmpeg"
+2023-07-07T12:10:21.230Z }
+2023-07-07T12:10:21.230Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Worker log: 
+2023-07-07T12:10:21.230Z Pre-processing - Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-07T12:10:21.230Z ☑File doesn't contain any unwanted image format streams.
+2023-07-07T12:10:21.230Z 
+2023-07-07T12:10:21.230Z Pre-processing - Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-07T12:10:21.230Z File has video in first stream
+2023-07-07T12:10:21.230Z  File meets conditions!
+2023-07-07T12:10:21.230Z 
+2023-07-07T12:10:21.230Z Pre-processing - Tdarr_Plugin_00td_action_standardise_audio_stream_codecs
+2023-07-07T12:10:21.230Z File has audio streams which aren't in aac 
+2023-07-07T12:10:21.230Z 
+2023-07-07T12:10:21.230Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Worker will process
+2023-07-07T12:10:21.230Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[Step W04] [C2] Preparing command
+2023-07-07T12:10:21.230Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Cache file stem: /temp
+2023-07-07T12:10:21.231Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Cache file path: /temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-LP_DxbSIb.mkv
+2023-07-07T12:10:21.231Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Create transcode args
+2023-07-07T12:10:21.231Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Args:  -i "/temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-y_VHiuCfy.mkv" -map 0:v -map 0:a -map 0:s? -map 0:d? -c copy -c:a:0 aac "/temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-LP_DxbSIb.mkv"
+2023-07-07T12:10:21.231Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Getting source file size
+2023-07-07T12:10:21.232Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Source file size: 3.159145712852478
+2023-07-07T12:10:21.232Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Performing safety check on worker config to see if old transcode args/container match new ones
+2023-07-07T12:10:21.232Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Safety check complete, all good
+2023-07-07T12:10:21.232Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[Step W05] [C2] Launching subworker
+2023-07-07T12:10:21.232Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Preparing to launch subworker
+2023-07-07T12:10:21.233Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Subworker launched
+2023-07-07T12:10:21.233Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[1/3] Sending command to subworker
+2023-07-07T12:10:21.233Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[2/3] tdarr-ffmpeg -i "/temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-y_VHiuCfy.mkv" -map 0:v -map 0:a -map 0:s? -map 0:d? -c copy -c:a:0 aac "/temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-LP_DxbSIb.mkv"
+2023-07-07T12:10:21.233Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[3/3] Command sent
+2023-07-07T12:10:21.233Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:To see live CLI output, enable 'Log full FFmpeg/HandBrake output' in the staging section on the Tdarr tab before the job starts. Note this could increase the job report size substantially.
+2023-07-07T12:10:22.234Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Subworker:Online
+2023-07-07T12:10:22.235Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Subworker:Receiving transcode settings
+2023-07-07T12:10:22.235Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Subworker:Running CLI
+2023-07-07T12:12:35.314Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Subworker:a.Thread closed, code: 0
+2023-07-07T12:12:35.315Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Subworker exit approved, killing subworker
+2023-07-07T12:12:35.315Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Subworker killed
+2023-07-07T12:12:35.316Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:b.Thread closed, code: 0
+2023-07-07T12:12:35.316Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:CLI code: 0
+2023-07-07T12:12:35.316Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Last 200 lines of CLI log:
+2023-07-07T12:12:35.317Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:frame=25528 fps=759 q=-1.0 size=  888064kB time=00:16:51.20 bitrate=7194.4kbits/s speed=30.1x    
+2023-07-07T12:12:35.317Z frame=25951 fps=760 q=-1.0 size=  905216kB time=00:17:06.80 bitrate=7222.0kbits/s speed=30.1x    
+2023-07-07T12:12:35.317Z frame=26237 fps=758 q=-1.0 size=  914176kB time=00:17:18.24 bitrate=7213.1kbits/s speed=  30x    
+2023-07-07T12:12:35.317Z frame=26618 fps=758 q=-1.0 size=  925184kB time=00:17:32.64 bitrate=7200.1kbits/s speed=  30x    
+2023-07-07T12:12:35.317Z frame=26986 fps=757 q=-1.0 size=  937472kB time=00:17:47.00 bitrate=7197.5kbits/s speed=29.9x    
+2023-07-07T12:12:35.317Z frame=27181 fps=752 q=-1.0 size=  942592kB time=00:17:54.80 bitrate=7184.3kbits/s speed=29.7x    
+2023-07-07T12:12:35.317Z frame=27368 fps=747 q=-1.0 size=  945920kB time=00:18:02.28 bitrate=7159.9kbits/s speed=29.5x    
+2023-07-07T12:12:35.317Z frame=27649 fps=745 q=-1.0 size=  953088kB time=00:18:13.48 bitrate=7140.2kbits/s speed=29.4x    
+2023-07-07T12:12:35.317Z frame=28027 fps=745 q=-1.0 size=  963072kB time=00:18:28.64 bitrate=7116.4kbits/s speed=29.5x    
+2023-07-07T12:12:35.317Z frame=28353 fps=743 q=-1.0 size=  969216kB time=00:18:41.64 bitrate=7078.8kbits/s speed=29.4x    
+2023-07-07T12:12:35.317Z frame=28577 fps=740 q=-1.0 size=  974336kB time=00:18:50.60 bitrate=7059.8kbits/s speed=29.3x    
+2023-07-07T12:12:35.317Z frame=28950 fps=740 q=-1.0 size=  985088kB time=00:19:05.56 bitrate=7044.5kbits/s speed=29.3x    
+2023-07-07T12:12:35.317Z frame=29260 fps=738 q=-1.0 size=  991488kB time=00:19:17.96 bitrate=7014.3kbits/s speed=29.2x    
+2023-07-07T12:12:35.317Z frame=29553 fps=736 q=-1.0 size=  999168kB time=00:19:29.64 bitrate=6998.0kbits/s speed=29.1x    
+2023-07-07T12:12:35.317Z frame=29817 fps=734 q=-1.0 size= 1005312kB time=00:19:40.20 bitrate=6978.1kbits/s speed=  29x    
+2023-07-07T12:12:35.317Z frame=30020 fps=730 q=-1.0 size= 1009664kB time=00:19:48.36 bitrate=6960.2kbits/s speed=28.9x    
+2023-07-07T12:12:35.317Z frame=30213 fps=726 q=-1.0 size= 1012736kB time=00:19:56.04 bitrate=6936.5kbits/s speed=28.7x    
+2023-07-07T12:12:35.317Z frame=30417 fps=722 q=-1.0 size= 1018368kB time=00:20:04.28 bitrate=6927.4kbits/s speed=28.6x    
+2023-07-07T12:12:35.317Z frame=30630 fps=718 q=-1.0 size= 1021952kB time=00:20:12.76 bitrate=6903.1kbits/s speed=28.4x    
+2023-07-07T12:12:35.317Z frame=30992 fps=718 q=-1.0 size= 1030656kB time=00:20:27.24 bitrate=6879.8kbits/s speed=28.4x    
+2023-07-07T12:12:35.317Z frame=31297 fps=717 q=-1.0 size= 1038592kB time=00:20:39.40 bitrate=6864.7kbits/s speed=28.4x    
+2023-07-07T12:12:35.317Z frame=31565 fps=715 q=-1.0 size= 1043968kB time=00:20:50.12 bitrate=6841.1kbits/s speed=28.3x    
+2023-07-07T12:12:35.317Z frame=31784 fps=712 q=-1.0 size= 1049344kB time=00:20:58.92 bitrate=6828.3kbits/s speed=28.2x    
+2023-07-07T12:12:35.317Z frame=32020 fps=709 q=-1.0 size= 1053952kB time=00:21:08.36 bitrate=6807.2kbits/s speed=28.1x    
+2023-07-07T12:12:35.317Z frame=32251 fps=707 q=-1.0 size= 1059840kB time=00:21:17.64 bitrate=6795.5kbits/s speed=  28x    
+2023-07-07T12:12:35.317Z frame=32496 fps=704 q=-1.0 size= 1065216kB time=00:21:27.36 bitrate=6778.4kbits/s speed=27.9x    
+2023-07-07T12:12:35.317Z frame=32822 fps=704 q=-1.0 size= 1073152kB time=00:21:40.40 bitrate=6760.4kbits/s speed=27.9x    
+2023-07-07T12:12:35.317Z frame=33208 fps=704 q=-1.0 size= 1082880kB time=00:21:55.80 bitrate=6741.8kbits/s speed=27.9x    
+2023-07-07T12:12:35.317Z frame=33522 fps=703 q=-1.0 size= 1090560kB time=00:22:08.20 bitrate=6726.3kbits/s speed=27.9x    
+2023-07-07T12:12:35.317Z frame=33780 fps=701 q=-1.0 size= 1097728kB time=00:22:18.52 bitrate=6718.3kbits/s speed=27.8x    
+2023-07-07T12:12:35.317Z frame=33948 fps=698 q=-1.0 size= 1101056kB time=00:22:25.24 bitrate=6705.0kbits/s speed=27.6x    
+2023-07-07T12:12:35.317Z frame=34195 fps=696 q=-1.0 size= 1106176kB time=00:22:35.12 bitrate=6687.1kbits/s speed=27.6x    
+2023-07-07T12:12:35.317Z frame=34481 fps=694 q=-1.0 size= 1113600kB time=00:22:46.60 bitrate=6675.4kbits/s speed=27.5x    
+2023-07-07T12:12:35.317Z frame=34783 fps=693 q=-1.0 size= 1117696kB time=00:22:58.64 bitrate=6641.4kbits/s speed=27.5x    
+2023-07-07T12:12:35.317Z frame=35105 fps=693 q=-1.0 size= 1126144kB time=00:23:11.52 bitrate=6629.7kbits/s speed=27.5x    
+2023-07-07T12:12:35.317Z frame=35490 fps=694 q=-1.0 size= 1135104kB time=00:23:26.92 bitrate=6609.3kbits/s speed=27.5x    
+2023-07-07T12:12:35.317Z frame=35776 fps=692 q=-1.0 size= 1142272kB time=00:23:38.36 bitrate=6597.4kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=36049 fps=691 q=-1.0 size= 1149440kB time=00:23:49.28 bitrate=6588.1kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=36339 fps=690 q=-1.0 size= 1157632kB time=00:24:00.88 bitrate=6581.6kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=36711 fps=690 q=-1.0 size= 1166336kB time=00:24:15.74 bitrate=6563.4kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=37049 fps=690 q=-1.0 size= 1176832kB time=00:24:29.28 bitrate=6561.5kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=37368 fps=690 q=-1.0 size= 1186816kB time=00:24:42.04 bitrate=6560.1kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=37623 fps=688 q=-1.0 size= 1195776kB time=00:24:52.24 bitrate=6564.5kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=37890 fps=687 q=-1.0 size= 1201152kB time=00:25:02.92 bitrate=6547.1kbits/s speed=27.2x    
+2023-07-07T12:12:35.317Z frame=38257 fps=687 q=-1.0 size= 1209088kB time=00:25:17.60 bitrate=6526.7kbits/s speed=27.2x    
+2023-07-07T12:12:35.317Z frame=38510 fps=685 q=-1.0 size= 1218560kB time=00:25:27.72 bitrate=6534.2kbits/s speed=27.2x    
+2023-07-07T12:12:35.317Z frame=38940 fps=687 q=-1.0 size= 1226752kB time=00:25:44.48 bitrate=6506.8kbits/s speed=27.2x    
+2023-07-07T12:12:35.317Z frame=39331 fps=688 q=-1.0 size= 1242624kB time=00:25:58.12 bitrate=6533.2kbits/s speed=27.2x    
+2023-07-07T12:12:35.317Z frame=39698 fps=688 q=-1.0 size= 1250560kB time=00:26:12.80 bitrate=6513.6kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=40024 fps=688 q=-1.0 size= 1258240kB time=00:26:25.84 bitrate=6499.7kbits/s speed=27.2x    
+2023-07-07T12:12:35.317Z frame=40345 fps=687 q=-1.0 size= 1265152kB time=00:26:38.66 bitrate=6483.0kbits/s speed=27.2x    
+2023-07-07T12:12:35.317Z frame=40733 fps=688 q=-1.0 size= 1271296kB time=00:26:53.68 bitrate=6453.9kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=40961 fps=686 q=-1.0 size= 1281280kB time=00:27:02.76 bitrate=6468.1kbits/s speed=27.2x    
+2023-07-07T12:12:35.317Z frame=41132 fps=683 q=-1.0 size= 1284352kB time=00:27:09.64 bitrate=6456.3kbits/s speed=27.1x    
+2023-07-07T12:12:35.317Z frame=41435 fps=683 q=-1.0 size= 1292800kB time=00:27:21.76 bitrate=6450.8kbits/s speed=  27x    
+2023-07-07T12:12:35.317Z frame=41866 fps=684 q=-1.0 size= 1309184kB time=00:27:36.80 bitrate=6473.2kbits/s speed=27.1x    
+2023-07-07T12:12:35.317Z frame=42158 fps=683 q=-1.0 size= 1315328kB time=00:27:48.48 bitrate=6458.1kbits/s speed=  27x    
+2023-07-07T12:12:35.317Z frame=42516 fps=683 q=-1.0 size= 1326336kB time=00:28:02.76 bitrate=6456.9kbits/s speed=27.1x    
+2023-07-07T12:12:35.317Z frame=42828 fps=683 q=-1.0 size= 1336832kB time=00:28:15.24 bitrate=6460.0kbits/s speed=  27x    
+2023-07-07T12:12:35.317Z frame=43063 fps=681 q=-1.0 size= 1343744kB time=00:28:24.68 bitrate=6457.5kbits/s speed=  27x    
+2023-07-07T12:12:35.317Z frame=43399 fps=681 q=-1.0 size= 1357056kB time=00:28:38.04 bitrate=6470.7kbits/s speed=  27x    
+2023-07-07T12:12:35.317Z frame=43610 fps=679 q=-1.0 size= 1361664kB time=00:28:46.48 bitrate=6461.0kbits/s speed=26.9x    
+2023-07-07T12:12:35.317Z frame=43832 fps=677 q=-1.0 size= 1367040kB time=00:28:55.36 bitrate=6453.3kbits/s speed=26.8x    
+2023-07-07T12:12:35.317Z frame=44192 fps=678 q=-1.0 size= 1376512kB time=00:29:09.72 bitrate=6444.7kbits/s speed=26.8x    
+2023-07-07T12:12:35.317Z frame=44536 fps=678 q=-1.0 size= 1387776kB time=00:29:23.52 bitrate=6446.6kbits/s speed=26.8x    
+2023-07-07T12:12:35.317Z frame=44882 fps=678 q=-1.0 size= 1403904kB time=00:29:37.32 bitrate=6470.9kbits/s speed=26.8x    
+2023-07-07T12:12:35.317Z frame=45213 fps=678 q=-1.0 size= 1413120kB time=00:29:50.60 bitrate=6465.0kbits/s speed=26.8x    
+2023-07-07T12:12:35.317Z frame=45474 fps=676 q=-1.0 size= 1418752kB time=00:30:01.00 bitrate=6453.3kbits/s speed=26.8x    
+2023-07-07T12:12:35.317Z frame=45864 fps=677 q=-1.0 size= 1437440kB time=00:30:16.64 bitrate=6482.0kbits/s speed=26.8x    
+2023-07-07T12:12:35.317Z frame=46221 fps=678 q=-1.0 size= 1450752kB time=00:30:30.92 bitrate=6491.0kbits/s speed=26.8x    
+2023-07-07T12:12:35.317Z frame=46650 fps=679 q=-1.0 size= 1466368kB time=00:30:48.04 bitrate=6500.1kbits/s speed=26.9x    
+2023-07-07T12:12:35.317Z frame=46994 fps=679 q=-1.0 size= 1477888kB time=00:31:01.80 bitrate=6502.8kbits/s speed=26.9x    
+2023-07-07T12:12:35.317Z frame=47322 fps=679 q=-1.0 size= 1488384kB time=00:31:14.96 bitrate=6503.0kbits/s speed=26.9x    
+2023-07-07T12:12:35.317Z frame=47672 fps=679 q=-1.0 size= 1503488kB time=00:31:28.96 bitrate=6520.3kbits/s speed=26.9x    
+2023-07-07T12:12:35.317Z frame=48066 fps=680 q=-1.0 size= 1518592kB time=00:31:44.68 bitrate=6531.4kbits/s speed=26.9x    
+2023-07-07T12:12:35.317Z frame=48462 fps=680 q=-1.0 size= 1542144kB time=00:32:00.52 bitrate=6578.0kbits/s speed=  27x    
+2023-07-07T12:12:35.317Z frame=48878 fps=681 q=-1.0 size= 1566208kB time=00:32:17.20 bitrate=6623.2kbits/s speed=  27x    
+2023-07-07T12:12:35.317Z frame=49242 fps=682 q=-1.0 size= 1590272kB time=00:32:31.76 bitrate=6674.7kbits/s speed=  27x    
+2023-07-07T12:12:35.317Z frame=49614 fps=682 q=-1.0 size= 1607936kB time=00:32:46.60 bitrate=6698.0kbits/s speed=  27x    
+2023-07-07T12:12:35.317Z frame=49896 fps=681 q=-1.0 size= 1625344kB time=00:32:57.92 bitrate=6731.7kbits/s speed=  27x    
+2023-07-07T12:12:35.317Z frame=50190 fps=681 q=-1.0 size= 1636096kB time=00:33:09.64 bitrate=6736.3kbits/s speed=  27x    
+2023-07-07T12:12:35.317Z frame=50587 fps=681 q=-1.0 size= 1649408kB time=00:33:25.56 bitrate=6737.2kbits/s speed=  27x    
+2023-07-07T12:12:35.317Z frame=50944 fps=682 q=-1.0 size= 1659648kB time=00:33:39.84 bitrate=6731.1kbits/s speed=  27x    
+2023-07-07T12:12:35.317Z frame=51279 fps=682 q=-1.0 size= 1666560kB time=00:33:53.24 bitrate=6714.6kbits/s speed=  27x    
+2023-07-07T12:12:35.317Z frame=51658 fps=682 q=-1.0 size= 1677824kB time=00:34:08.36 bitrate=6710.1kbits/s speed=  27x    
+2023-07-07T12:12:35.317Z frame=51966 fps=682 q=-1.0 size= 1685760kB time=00:34:20.72 bitrate=6701.4kbits/s speed=  27x    
+2023-07-07T12:12:35.317Z frame=52262 fps=681 q=-1.0 size= 1693696kB time=00:34:32.56 bitrate=6694.5kbits/s speed=  27x    
+2023-07-07T12:12:35.317Z frame=52584 fps=681 q=-1.0 size= 1700864kB time=00:34:45.44 bitrate=6681.3kbits/s speed=  27x    
+2023-07-07T12:12:35.317Z frame=52867 fps=680 q=-1.0 size= 1720576kB time=00:34:56.76 bitrate=6722.3kbits/s speed=  27x    
+2023-07-07T12:12:35.317Z frame=53242 fps=680 q=-1.0 size= 1733120kB time=00:35:11.72 bitrate=6723.3kbits/s speed=  27x    
+2023-07-07T12:12:35.317Z frame=53540 fps=680 q=-1.0 size= 1754624kB time=00:35:23.68 bitrate=6768.4kbits/s speed=  27x    
+2023-07-07T12:12:35.317Z frame=53888 fps=680 q=-1.0 size= 1764608kB time=00:35:37.60 bitrate=6762.6kbits/s speed=  27x    
+2023-07-07T12:12:35.317Z frame=54214 fps=680 q=-1.0 size= 1774848kB time=00:35:50.64 bitrate=6760.6kbits/s speed=  27x    
+2023-07-07T12:12:35.317Z frame=54627 fps=681 q=-1.0 size= 1785088kB time=00:36:07.16 bitrate=6747.7kbits/s speed=  27x    
+2023-07-07T12:12:35.317Z frame=54976 fps=681 q=-1.0 size= 1796608kB time=00:36:21.12 bitrate=6747.8kbits/s speed=  27x    
+2023-07-07T12:12:35.317Z frame=55399 fps=682 q=-1.0 size= 1817088kB time=00:36:38.04 bitrate=6772.2kbits/s speed=27.1x    
+2023-07-07T12:12:35.317Z frame=55787 fps=682 q=-1.0 size= 1828096kB time=00:36:53.56 bitrate=6765.5kbits/s speed=27.1x    
+2023-07-07T12:12:35.317Z frame=56190 fps=683 q=-1.0 size= 1857024kB time=00:37:09.68 bitrate=6822.8kbits/s speed=27.1x    
+2023-07-07T12:12:35.317Z frame=56552 fps=683 q=-1.0 size= 1869568kB time=00:37:24.16 bitrate=6824.6kbits/s speed=27.1x    
+2023-07-07T12:12:35.317Z frame=57054 fps=685 q=-1.0 size= 1885952kB time=00:37:44.20 bitrate=6823.5kbits/s speed=27.2x    
+2023-07-07T12:12:35.317Z frame=57475 fps=686 q=-1.0 size= 1906944kB time=00:38:01.08 bitrate=6848.4kbits/s speed=27.2x    
+2023-07-07T12:12:35.317Z frame=57931 fps=687 q=-1.0 size= 1920512kB time=00:38:19.32 bitrate=6842.4kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=58253 fps=687 q=-1.0 size= 1944064kB time=00:38:32.20 bitrate=6887.7kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=58482 fps=686 q=-1.0 size= 1951744kB time=00:38:41.32 bitrate=6887.8kbits/s speed=27.2x    
+2023-07-07T12:12:35.317Z frame=58818 fps=686 q=-1.0 size= 1960960kB time=00:38:54.76 bitrate=6880.4kbits/s speed=27.2x    
+2023-07-07T12:12:35.317Z frame=59274 fps=687 q=-1.0 size= 1980416kB time=00:39:13.00 bitrate=6894.8kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=59814 fps=689 q=-1.0 size= 2007808kB time=00:39:34.60 bitrate=6926.6kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=60278 fps=691 q=-1.0 size= 2032128kB time=00:39:53.20 bitrate=6956.0kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=60598 fps=690 q=-1.0 size= 2042112kB time=00:40:06.00 bitrate=6953.0kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=60802 fps=689 q=-1.0 size= 2046976kB time=00:40:14.12 bitrate=6946.1kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=61075 fps=688 q=-1.0 size= 2054144kB time=00:40:25.08 bitrate=6939.0kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=61355 fps=687 q=-1.0 size= 2061312kB time=00:40:36.28 bitrate=6931.2kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=61678 fps=687 q=-1.0 size= 2070016kB time=00:40:49.20 bitrate=6923.7kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=62101 fps=688 q=-1.0 size= 2095104kB time=00:41:06.12 bitrate=6959.6kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=62542 fps=689 q=-1.0 size= 2117376kB time=00:41:23.76 bitrate=6983.6kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=62925 fps=689 q=-1.0 size= 2133248kB time=00:41:39.08 bitrate=6992.8kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=63352 fps=690 q=-1.0 size= 2147072kB time=00:41:56.16 bitrate=6990.3kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=63673 fps=690 q=-1.0 size= 2150912kB time=00:42:09.00 bitrate=6967.3kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=63955 fps=689 q=-1.0 size= 2161664kB time=00:42:20.28 bitrate=6971.0kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=64278 fps=689 q=-1.0 size= 2168576kB time=00:42:33.20 bitrate=6957.9kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=64642 fps=689 q=-1.0 size= 2181888kB time=00:42:47.72 bitrate=6961.0kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=64970 fps=689 q=-1.0 size= 2196736kB time=00:43:00.84 bitrate=6972.8kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=65254 fps=688 q=-1.0 size= 2207232kB time=00:43:12.20 bitrate=6975.4kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=65530 fps=688 q=-1.0 size= 2218752kB time=00:43:23.28 bitrate=6982.0kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=65896 fps=688 q=-1.0 size= 2235648kB time=00:43:37.92 bitrate=6995.8kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=66206 fps=687 q=-1.0 size= 2248960kB time=00:43:50.28 bitrate=7004.4kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=66506 fps=687 q=-1.0 size= 2262528kB time=00:44:02.28 bitrate=7014.6kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=66854 fps=687 q=-1.0 size= 2272768kB time=00:44:16.24 bitrate=7009.3kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=67272 fps=688 q=-1.0 size= 2291200kB time=00:44:32.96 bitrate=7022.0kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=67715 fps=689 q=-1.0 size= 2311680kB time=00:44:50.68 bitrate=7038.1kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=68094 fps=689 q=-1.0 size= 2334464kB time=00:45:05.80 bitrate=7067.8kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=68382 fps=689 q=-1.0 size= 2352128kB time=00:45:17.36 bitrate=7090.9kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=68847 fps=690 q=-1.0 size= 2364928kB time=00:45:35.92 bitrate=7081.2kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=69272 fps=690 q=-1.0 size= 2389248kB time=00:45:52.96 bitrate=7109.7kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=69594 fps=690 q=-1.0 size= 2394880kB time=00:46:05.84 bitrate=7093.3kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=69829 fps=689 q=-1.0 size= 2404864kB time=00:46:15.24 bitrate=7098.7kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=70125 fps=689 q=-1.0 size= 2410752kB time=00:46:27.08 bitrate=7085.9kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=70455 fps=688 q=-1.0 size= 2420224kB time=00:46:40.28 bitrate=7080.2kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=70726 fps=688 q=-1.0 size= 2426880kB time=00:46:51.08 bitrate=7072.4kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=71046 fps=688 q=-1.0 size= 2434816kB time=00:47:03.88 bitrate=7063.3kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=71304 fps=687 q=-1.0 size= 2439424kB time=00:47:14.24 bitrate=7050.8kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=71712 fps=687 q=-1.0 size= 2447360kB time=00:47:30.56 bitrate=7033.3kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=71976 fps=687 q=-1.0 size= 2455808kB time=00:47:41.12 bitrate=7031.5kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=72196 fps=685 q=-1.0 size= 2463488kB time=00:47:49.92 bitrate=7031.9kbits/s speed=27.2x    
+2023-07-07T12:12:35.317Z frame=72475 fps=685 q=-1.0 size= 2472192kB time=00:48:01.08 bitrate=7029.4kbits/s speed=27.2x    
+2023-07-07T12:12:35.317Z frame=72758 fps=684 q=-1.0 size= 2481408kB time=00:48:12.40 bitrate=7028.0kbits/s speed=27.2x    
+2023-07-07T12:12:35.317Z frame=73006 fps=683 q=-1.0 size= 2486784kB time=00:48:22.32 bitrate=7019.1kbits/s speed=27.2x    
+2023-07-07T12:12:35.317Z frame=73362 fps=683 q=-1.0 size= 2495744kB time=00:48:36.52 bitrate=7010.1kbits/s speed=27.2x    
+2023-07-07T12:12:35.317Z frame=73774 fps=684 q=-1.0 size= 2515200kB time=00:48:53.04 bitrate=7025.0kbits/s speed=27.2x    
+2023-07-07T12:12:35.317Z frame=74246 fps=685 q=-1.0 size= 2534656kB time=00:49:11.88 bitrate=7034.1kbits/s speed=27.2x    
+2023-07-07T12:12:35.317Z frame=74610 fps=685 q=-1.0 size= 2548480kB time=00:49:26.44 bitrate=7037.8kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=75088 fps=687 q=-1.0 size= 2569216kB time=00:49:45.60 bitrate=7049.5kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=75408 fps=686 q=-1.0 size= 2583040kB time=00:49:58.40 bitrate=7057.2kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=75813 fps=687 q=-1.0 size= 2602496kB time=00:50:14.60 bitrate=7072.1kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=76218 fps=688 q=-1.0 size= 2617856kB time=00:50:30.76 bitrate=7075.9kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=76557 fps=687 q=-1.0 size= 2635264kB time=00:50:44.36 bitrate=7091.2kbits/s speed=27.3x    
+2023-07-07T12:12:35.317Z frame=77034 fps=689 q=-1.0 size= 2662912kB time=00:51:03.40 bitrate=7121.0kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=77434 fps=689 q=-1.0 size= 2685952kB time=00:51:19.44 bitrate=7145.2kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=77726 fps=689 q=-1.0 size= 2704640kB time=00:51:31.12 bitrate=7167.8kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=78114 fps=689 q=-1.0 size= 2722048kB time=00:51:46.60 bitrate=7177.9kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=78483 fps=689 q=-1.0 size= 2733824kB time=00:52:01.40 bitrate=7174.8kbits/s speed=27.4x    
+2023-07-07T12:12:35.317Z frame=78931 fps=690 q=-1.0 size= 2760448kB time=00:52:19.32 bitrate=7203.3kbits/s speed=27.5x    
+2023-07-07T12:12:35.317Z frame=79325 fps=691 q=-1.0 size= 2779904kB time=00:52:35.04 bitrate=7218.0kbits/s speed=27.5x    
+2023-07-07T12:12:35.317Z frame=79794 fps=692 q=-1.0 size= 2797824kB time=00:52:53.80 bitrate=7221.6kbits/s speed=27.5x    
+2023-07-07T12:12:35.317Z frame=80241 fps=693 q=-1.0 size= 2823424kB time=00:53:11.72 bitrate=7246.7kbits/s speed=27.5x    
+2023-07-07T12:12:35.317Z frame=80699 fps=694 q=-1.0 size= 2850816kB time=00:53:30.04 bitrate=7275.3kbits/s speed=27.6x    
+2023-07-07T12:12:35.317Z frame=81163 fps=695 q=-1.0 size= 2871296kB time=00:53:48.60 bitrate=7285.4kbits/s speed=27.6x    
+2023-07-07T12:12:35.317Z frame=81653 fps=696 q=-1.0 size= 2887168kB time=00:54:08.20 bitrate=7281.5kbits/s speed=27.7x    
+2023-07-07T12:12:35.317Z frame=81966 fps=695 q=-1.0 size= 2895360kB time=00:54:20.72 bitrate=7274.1kbits/s speed=27.7x    
+2023-07-07T12:12:35.317Z frame=82399 fps=696 q=-1.0 size= 2913536kB time=00:54:38.04 bitrate=7281.1kbits/s speed=27.7x    
+2023-07-07T12:12:35.317Z frame=82837 fps=697 q=-1.0 size= 2932224kB time=00:54:55.56 bitrate=7288.8kbits/s speed=27.7x    
+2023-07-07T12:12:35.317Z frame=83248 fps=697 q=-1.0 size= 2948096kB time=00:55:12.00 bitrate=7291.9kbits/s speed=27.7x    
+2023-07-07T12:12:35.317Z frame=83630 fps=698 q=-1.0 size= 2959872kB time=00:55:27.28 bitrate=7287.4kbits/s speed=27.8x    
+2023-07-07T12:12:35.317Z frame=84086 fps=699 q=-1.0 size= 2982656kB time=00:55:45.52 bitrate=7303.5kbits/s speed=27.8x    
+2023-07-07T12:12:35.317Z frame=84560 fps=700 q=-1.0 size= 3005440kB time=00:56:04.48 bitrate=7317.8kbits/s speed=27.8x    
+2023-07-07T12:12:35.317Z frame=85042 fps=701 q=-1.0 size= 3019008kB time=00:56:23.72 bitrate=7309.0kbits/s speed=27.9x    
+2023-07-07T12:12:35.317Z frame=85646 fps=703 q=-1.0 size= 3037696kB time=00:56:48.00 bitrate=7301.9kbits/s speed=  28x    
+2023-07-07T12:12:35.317Z frame=86270 fps=705 q=-1.0 size= 3062272kB time=00:57:12.88 bitrate=7307.6kbits/s speed=28.1x    
+2023-07-07T12:12:35.317Z frame=86893 fps=707 q=-1.0 size= 3079680kB time=00:57:37.80 bitrate=7296.2kbits/s speed=28.1x    
+2023-07-07T12:12:35.317Z frame=87420 fps=709 q=-1.0 size= 3099904kB time=00:57:58.92 bitrate=7299.5kbits/s speed=28.2x    
+2023-07-07T12:12:35.317Z frame=87889 fps=709 q=-1.0 size= 3113984kB time=00:58:15.80 bitrate=7297.3kbits/s speed=28.2x    
+2023-07-07T12:12:35.317Z frame=88209 fps=709 q=-1.0 size= 3122432kB time=00:58:28.16 bitrate=7291.3kbits/s speed=28.2x    
+2023-07-07T12:12:35.317Z frame=88519 fps=709 q=-1.0 size= 3131648kB time=00:58:40.52 bitrate=7287.1kbits/s speed=28.2x    
+2023-07-07T12:12:35.317Z frame=88884 fps=709 q=-1.0 size= 3141632kB time=00:58:55.08 bitrate=7280.2kbits/s speed=28.2x    
+2023-07-07T12:12:35.317Z frame=89178 fps=708 q=-1.0 size= 3149824kB time=00:59:06.60 bitrate=7275.5kbits/s speed=28.2x    
+2023-07-07T12:12:35.317Z frame=89538 fps=708 q=-1.0 size= 3158784kB time=00:59:19.92 bitrate=7268.9kbits/s speed=28.2x    
+2023-07-07T12:12:35.317Z frame=89915 fps=709 q=-1.0 size= 3168512kB time=00:59:33.32 bitrate=7264.0kbits/s speed=28.2x    
+2023-07-07T12:12:35.317Z frame=90361 fps=709 q=-1.0 size= 3180288kB time=00:59:49.84 bitrate=7257.4kbits/s speed=28.2x    
+2023-07-07T12:12:35.317Z frame=90729 fps=709 q=-1.0 size= 3191808kB time=01:00:04.52 bitrate=7254.0kbits/s speed=28.2x    
+2023-07-07T12:12:35.317Z frame=91208 fps=710 q=-1.0 size= 3203328kB time=01:00:22.12 bitrate=7244.8kbits/s speed=28.2x    
+2023-07-07T12:12:35.317Z frame=91626 fps=711 q=-1.0 size= 3217408kB time=01:00:36.80 bitrate=7247.3kbits/s speed=28.2x    
+2023-07-07T12:12:35.317Z frame=91959 fps=711 q=-1.0 size= 3226624kB time=01:00:49.84 bitrate=7242.1kbits/s speed=28.2x    
+2023-07-07T12:12:35.317Z frame=92308 fps=711 q=-1.0 size= 3235328kB time=01:01:03.60 bitrate=7234.4kbits/s speed=28.2x    
+2023-07-07T12:12:35.317Z frame=92625 fps=710 q=-1.0 size= 3244800kB time=01:01:15.36 bitrate=7232.3kbits/s speed=28.2x    
+2023-07-07T12:12:35.317Z frame=92973 fps=710 q=-1.0 size= 3254016kB time=01:01:28.16 bitrate=7227.7kbits/s speed=28.2x    
+2023-07-07T12:12:35.317Z frame=93278 fps=710 q=-1.0 size= 3261440kB time=01:01:40.28 bitrate=7220.5kbits/s speed=28.2x    
+2023-07-07T12:12:35.317Z frame=93704 fps=710 q=-1.0 size= 3272192kB time=01:01:57.18 bitrate=7211.3kbits/s speed=28.2x    
+2023-07-07T12:12:35.317Z frame=94172 fps=711 q=-1.0 size= 3280640kB time=01:02:14.44 bitrate=7196.5kbits/s speed=28.2x    
+2023-07-07T12:12:35.317Z frame=94413 fps=712 q=-1.0 Lsize= 3284802kB time=01:02:24.08 bitrate=7187.1kbits/s speed=28.2x    
+2023-07-07T12:12:35.317Z video:3223123kB audio:59533kB subtitle:43kB other streams:0kB global headers:0kB muxing overhead: 0.064025%
+2023-07-07T12:12:35.317Z 
+2023-07-07T12:12:35.317Z [aac @ 0x556643e6f680] Qavg: 637.333
+2023-07-07T12:12:35.317Z 
+2023-07-07T12:12:35.317Z 
+2023-07-07T12:12:35.318Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[Step W06] [C2] Worker [-success-]
+2023-07-07T12:12:35.318Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Worker success during processing
+2023-07-07T12:12:35.318Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Updating transcode stats
+2023-07-07T12:12:35.318Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Deleting non-latest cache file /temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-y_VHiuCfy.mkv
+2023-07-07T12:12:35.319Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Subworker exited null
+2023-07-07T12:12:37.322Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Deleted successfully
+2023-07-07T12:12:37.323Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Scanning new file: /temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-LP_DxbSIb.mkv
+2023-07-07T12:12:37.323Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Updating file properties using mkvpropedit
+2023-07-07T12:12:37.323Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Updated file properties using mkvpropedit
+2023-07-07T12:12:37.324Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Requesting Tdarr Server to scan file
+2023-07-07T12:12:39.331Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Scan complete
+2023-07-07T12:12:39.331Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:pluginCycleLogJSONString:{"nodeName":"MyInternalNode","workerID":"upset-urva","pluginCycle":2,"outcome":"success","workerLog":"\nPre-processing - Tdarr_Plugin_MC93_MigzImageRemoval\n☑File doesn't contain any unwanted image format streams.\n\nPre-processing - Tdarr_Plugin_lmg1_Reorder_Streams\nFile has video in first stream\n File meets conditions!\n\nPre-processing - Tdarr_Plugin_00td_action_standardise_audio_stream_codecs\nFile has audio streams which aren't in aac \n","lastCliCommand":"tdarr-ffmpeg -i \"/temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-y_VHiuCfy.mkv\" -map 0:v -map 0:a -map 0:s? -map 0:d? -c copy -c:a:0 aac \"/temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-LP_DxbSIb.mkv\""}
+2023-07-07T12:12:39.332Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:fileVersionLogJSONString:{"lastCliCommand":"tdarr-ffmpeg -i \"/temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-y_VHiuCfy.mkv\" -map 0:v -map 0:a -map 0:s? -map 0:d? -c copy -c:a:0 aac \"/temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-LP_DxbSIb.mkv\"","lastPluginId":"Tdarr_Plugin_00td_action_standardise_audio_stream_codecs","sourceFile":{"_id":"/temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-LP_DxbSIb.mkv","footprintId":"yL5WAY-dr","file":"/temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-LP_DxbSIb.mkv","container":"mkv","scannerReads":{"ffProbeRead":"success","exiftoolRead":"success","mediaInfoRead":"not enabled","closedCaptionRead":"not enabled"},"createdAt":1688728356646,"lastPluginDetails":"none","bit_rate":7186798,"statSync":{"dev":2051,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":5923873,"size":3363637101,"blocks":6569616,"atimeMs":1688728355061.8235,"mtimeMs":1688728352641.8625,"ctimeMs":1688728352641.8625,"birthtimeMs":1688728219979.9995,"atime":"2023-07-07T11:12:35.062Z","mtime":"2023-07-07T11:12:32.642Z","ctime":"2023-07-07T11:12:32.642Z","birthtime":"2023-07-07T11:10:19.980Z"},"file_size":3207.8143129348755,"ffProbeData":{"streams":[{"index":0,"codec_name":"h264","codec_long_name":"H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10","profile":"High","codec_type":"video","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","width":1920,"height":1080,"coded_width":1920,"coded_height":1080,"closed_captions":0,"has_b_frames":3,"sample_aspect_ratio":"1:1","display_aspect_ratio":"16:9","pix_fmt":"yuv420p","level":40,"color_range":"tv","color_space":"bt709","color_transfer":"bt709","color_primaries":"bt709","chroma_location":"left","field_order":"tt","refs":1,"is_avc":"true","nal_length_size":"4","r_frame_rate":"25/1","avg_frame_rate":"25/1","time_base":"1/1000","start_pts":0,"start_time":"0.000000","bits_per_raw_sample":"8","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"BPS":"7051852","BPS-eng":"7051852","DURATION-eng":"01:02:24.240000000","NUMBER_OF_FRAMES":"94413","NUMBER_OF_FRAMES-eng":"94413","NUMBER_OF_BYTES":"3300478459","NUMBER_OF_BYTES-eng":"3300478459","_STATISTICS_WRITING_APP":"mkvmerge v7.5.0 ('Glass Culture') 64bit built on Jan  4 2015 16:48:44","_STATISTICS_WRITING_APP-eng":"mkvmerge v7.5.0 ('Glass Culture') 64bit built on Jan  4 2015 16:48:44","_STATISTICS_WRITING_DATE_UTC":"2015-02-01 21:04:52","_STATISTICS_WRITING_DATE_UTC-eng":"2015-02-01 21:04:52","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES","_STATISTICS_TAGS-eng":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES","DURATION":"01:02:24.240000000"}},{"index":1,"codec_name":"aac","codec_long_name":"AAC (Advanced Audio Coding)","profile":"LC","codec_type":"audio","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":"48000","channels":2,"channel_layout":"stereo","bits_per_sample":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":-12,"start_time":"-0.012000","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"eng","BPS":"192000","BPS-eng":"192000","DURATION-eng":"01:02:23.392000000","NUMBER_OF_FRAMES":"116981","NUMBER_OF_FRAMES-eng":"116981","NUMBER_OF_BYTES":"89841408","NUMBER_OF_BYTES-eng":"89841408","_STATISTICS_WRITING_APP":"mkvmerge v7.5.0 ('Glass Culture') 64bit built on Jan  4 2015 16:48:44","_STATISTICS_WRITING_APP-eng":"mkvmerge v7.5.0 ('Glass Culture') 64bit built on Jan  4 2015 16:48:44","_STATISTICS_WRITING_DATE_UTC":"2015-02-01 21:04:52","_STATISTICS_WRITING_DATE_UTC-eng":"2015-02-01 21:04:52","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES","_STATISTICS_TAGS-eng":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES","ENCODER":"Lavc60.3.100 aac","DURATION":"01:02:23.422000000"}},{"index":2,"codec_name":"subrip","codec_long_name":"SubRip subtitle","codec_type":"subtitle","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":-12,"start_time":"-0.012000","duration_ts":3744240,"duration":"3744.240000","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"BPS":"95","BPS-eng":"95","DURATION-eng":"01:01:49.880000000","NUMBER_OF_FRAMES":"1100","NUMBER_OF_FRAMES-eng":"1100","NUMBER_OF_BYTES":"44383","NUMBER_OF_BYTES-eng":"44383","_STATISTICS_WRITING_APP":"mkvmerge v7.5.0 ('Glass Culture') 64bit built on Jan  4 2015 16:48:44","_STATISTICS_WRITING_APP-eng":"mkvmerge v7.5.0 ('Glass Culture') 64bit built on Jan  4 2015 16:48:44","_STATISTICS_WRITING_DATE_UTC":"2015-02-01 21:04:52","_STATISTICS_WRITING_DATE_UTC-eng":"2015-02-01 21:04:52","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES","_STATISTICS_TAGS-eng":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES","DURATION":"01:01:59.860000000"}}],"format":{"filename":"/temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-LP_DxbSIb.mkv","nb_streams":3,"nb_programs":0,"format_name":"matroska,webm","format_long_name":"Matroska / WebM","start_time":"-0.012000","duration":"3744.240000","size":"3363637101","bit_rate":"7186798","probe_score":100,"tags":{"ENCODER":"Lavf60.3.100"}}},"meta":{"SourceFile":"/temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-LP_DxbSIb.mkv","errors":[],"Duration":3744.24,"ExifToolVersion":12.4,"FileName":"Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-LP_DxbSIb.mkv","Directory":"/temp","FileSize":"3.1 GiB","FileModifyDate":{"year":2023,"month":7,"day":7,"hour":11,"minute":12,"second":32,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:07 11:12:32+00:00"},"FileAccessDate":{"year":2023,"month":7,"day":7,"hour":11,"minute":12,"second":35,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:07 11:12:35+00:00"},"FileInodeChangeDate":{"year":2023,"month":7,"day":7,"hour":11,"minute":12,"second":32,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:07 11:12:32+00:00"},"FilePermissions":"-rw-rw-r--","FileType":"MKV","FileTypeExtension":"mkv","MIMEType":"video/x-matroska","EBMLVersion":1,"EBMLReadVersion":1,"DocType":"matroska","DocTypeVersion":4,"DocTypeReadVersion":2,"TimecodeScale":"1 ms","MuxingApp":"Lavf60.3.100","WritingApp":"Lavf60.3.100","VideoFrameRate":25,"ImageWidth":1920,"ImageHeight":1080,"VideoScanType":"Interlaced","AudioChannels":2,"AudioSampleRate":48000,"AudioBitsPerSample":32,"TrackNumber":3,"TrackLanguage":"und","CodecID":"S_TEXT/UTF8","TrackType":"Subtitle","TagLanguage":"eng","TagName":"DURATION","TagString":"01:01:59.860000000","ImageSize":"1920x1080","Megapixels":2.1},"mediaInfo":{},"hasClosedCaptions":false,"DB":"4BaCjCxnf","bumped":false,"HealthCheck":"","TranscodeDecisionMaker":"","holdUntil":0,"fileMedium":"video","video_codec_name":"h264","audio_codec_name":"","video_resolution":"1080p","lastHealthCheckDate":0,"lastTranscodeDate":0,"history":"","oldSize":0,"newSize":0,"videoStreamIndex":0,"duration":3744}}
+2023-07-07T12:12:39.332Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Transcodes during this job so far: 2
+2023-07-07T12:12:39.332Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[Step W02] [C3] Running pre-process file
+2023-07-07T12:12:39.333Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Checking files can be accessed
+2023-07-07T12:12:39.333Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Relevant paths can be accessed
+2023-07-07T12:12:39.333Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Source file: /temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-LP_DxbSIb.mkv
+2023-07-07T12:12:39.334Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Cache folder: /temp
+2023-07-07T12:12:39.334Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[Step W03] [C3] Analysing file - running plugins
+2023-07-07T12:12:39.334Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:New cache file has already been scanned, no need to scan again
+2023-07-07T12:12:39.335Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Updating Node relay: Processing
+2023-07-07T12:12:39.335Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[1/2] Checking file frame count
+2023-07-07T12:12:39.336Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[2/2] Frame count 0
+2023-07-07T12:12:39.336Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Transcode task, determining transcode settings
+2023-07-07T12:12:39.336Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Plugin stack selected
+2023-07-07T12:12:39.337Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Plugin: plugin1:  Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-07T12:12:39.337Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[1/5] Reading plugin
+2023-07-07T12:12:39.337Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[2/5] Plugin read finished
+2023-07-07T12:12:39.338Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[3/5] Installing dependencies
+2023-07-07T12:12:39.338Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[4/5] Running plugin
+2023-07-07T12:12:39.338Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:{"pluginInputs":{}}
+2023-07-07T12:12:39.339Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[5/5] Running plugin finished
+2023-07-07T12:12:39.339Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Plugin: plugin2:  Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-07T12:12:39.340Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[1/5] Reading plugin
+2023-07-07T12:12:39.341Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[2/5] Plugin read finished
+2023-07-07T12:12:39.341Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[3/5] Installing dependencies
+2023-07-07T12:12:39.342Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[4/5] Running plugin
+2023-07-07T12:12:39.342Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:{"pluginInputs":{}}
+2023-07-07T12:12:39.342Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[5/5] Running plugin finished
+2023-07-07T12:12:39.343Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Plugin: sxfFHmyyT:  Tdarr_Plugin_00td_action_standardise_audio_stream_codecs
+2023-07-07T12:12:39.343Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[1/5] Reading plugin
+2023-07-07T12:12:39.343Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[2/5] Plugin read finished
+2023-07-07T12:12:39.344Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[3/5] Installing dependencies
+2023-07-07T12:12:39.345Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[4/5] Running plugin
+2023-07-07T12:12:39.345Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:{"pluginInputs":{"audioCodec":"aac"}}
+2023-07-07T12:12:39.346Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[5/5] Running plugin finished
+2023-07-07T12:12:39.346Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Plugin: aEVldYMXA:  Tdarr_Plugin_075a_Transcode_Customisable
+2023-07-07T12:12:39.347Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[1/5] Reading plugin
+2023-07-07T12:12:39.348Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[2/5] Plugin read finished
+2023-07-07T12:12:39.348Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[3/5] Installing dependencies
+2023-07-07T12:12:39.348Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[4/5] Running plugin
+2023-07-07T12:12:39.349Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:{"pluginInputs":{"codecs_to_exclude":"h264","cli":"handbrake","transcode_arguments":"-Z \"H.264 MKV 2160p60 4K\" -e x264 --all-subtitles --all-audio  -x threads=1","output_container":".mkv"}}
+2023-07-07T12:12:39.349Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[5/5] Running plugin finished
+2023-07-07T12:12:39.350Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Plugin: plugin5:  Tdarr_Plugin_a9he_New_file_size_check
+2023-07-07T12:12:39.350Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[1/5] Reading plugin
+2023-07-07T12:12:39.354Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[2/5] Plugin read finished
+2023-07-07T12:12:39.355Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[3/5] Installing dependencies
+2023-07-07T12:12:39.356Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[4/5] Running plugin
+2023-07-07T12:12:39.356Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:{"pluginInputs":{"upperBound":"200","lowerBound":40}}
+2023-07-07T12:12:39.356Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[5/5] Running plugin finished
+2023-07-07T12:12:39.357Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Plugin: -XIe_rmCK:  Tdarr_Plugin_00td_filter_by_file_property
+2023-07-07T12:12:39.357Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[1/5] Reading plugin
+2023-07-07T12:12:39.357Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[2/5] Plugin read finished
+2023-07-07T12:12:39.358Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[3/5] Installing dependencies
+2023-07-07T12:12:39.358Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[4/5] Running plugin
+2023-07-07T12:12:39.358Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:{"pluginInputs":{"propertyName":"container","propertyValues":"mkv","exactMatch":true,"continueIfPropertyFound":false}}
+2023-07-07T12:12:39.359Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[5/5] Running plugin finished
+2023-07-07T12:12:39.359Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Worker config: {
+2023-07-07T12:12:39.359Z   "processFile": false,
+2023-07-07T12:12:39.359Z   "infoLog": "File property container of mkv being one of mkv has been found, breaking out of stack  \n"
+2023-07-07T12:12:39.359Z }
+2023-07-07T12:12:39.359Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Worker log: 
+2023-07-07T12:12:39.359Z Pre-processing - Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-07T12:12:39.359Z ☑File doesn't contain any unwanted image format streams.
+2023-07-07T12:12:39.359Z 
+2023-07-07T12:12:39.359Z Pre-processing - Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-07T12:12:39.359Z File has video in first stream
+2023-07-07T12:12:39.359Z  File meets conditions!
+2023-07-07T12:12:39.359Z 
+2023-07-07T12:12:39.359Z Pre-processing - Tdarr_Plugin_00td_action_standardise_audio_stream_codecs
+2023-07-07T12:12:39.359Z File does not have any audio streams which aren't in aac 
+2023-07-07T12:12:39.359Z 
+2023-07-07T12:12:39.359Z Pre-processing - Tdarr_Plugin_075a_Transcode_Customisable
+2023-07-07T12:12:39.359Z ☑File is already in h264! 
+2023-07-07T12:12:39.359Z 
+2023-07-07T12:12:39.359Z Pre-processing - Tdarr_Plugin_a9he_New_file_size_check
+2023-07-07T12:12:39.359Z New file has size 3207.814 MB which is 99% of original file size:  3234.300 MB
+2023-07-07T12:12:39.359Z Pre-processing - Tdarr_Plugin_00td_filter_by_file_property
+2023-07-07T12:12:39.359Z File property container of mkv being one of mkv has been found, breaking out of stack  
+2023-07-07T12:12:39.359Z 
+2023-07-07T12:12:39.360Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[Step W08] [-success-] Job end
+2023-07-07T12:12:39.360Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Transcoding successful. Finished job.
+2023-07-07T12:12:39.360Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:[Step W10] Worker processing end
+2023-07-07T12:12:39.361Z bhx_A2rsl6L:Node[MyInternalNode]:Worker[upset-urva]:Successfully updated server with verdict: transcodeSuccess
+2023-07-07T12:12:40.362Z bhx_A2rsl6L:[Step S02] Beginning move/copy operation
+2023-07-07T12:12:40.363Z bhx_A2rsl6L:Calculating old and new sizes of the following files
+2023-07-07T12:12:40.364Z bhx_A2rsl6L:/media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 HDTV-1080p.mkv
+2023-07-07T12:12:40.364Z bhx_A2rsl6L:/temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-LP_DxbSIb.mkv
+2023-07-07T12:12:42.366Z bhx_A2rsl6L:Old size 3.1584962671622634. New size 3.1326311649754643
+2023-07-07T12:12:42.367Z bhx_A2rsl6L:Folder to folder conversion is off
+2023-07-07T12:12:42.368Z bhx_A2rsl6L:New file path /media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-UWY2Faus1e.mkv
+2023-07-07T12:12:42.368Z bhx_A2rsl6L:Ensuring output folder path exists /media/tvshows/Top Gear/Season 22
+2023-07-07T12:12:43.372Z bhx_A2rsl6L:Calculating cache file size in bytes
+2023-07-07T12:12:43.373Z bhx_A2rsl6L:3363637101
+2023-07-07T12:12:43.373Z bhx_A2rsl6L:Attempting to move cache file to output folder, method 1
+2023-07-07T12:12:43.374Z bhx_A2rsl6L:File move error: Error: EXDEV: cross-device link not permitted, rename '/temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-LP_DxbSIb.mkv' -> '/media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-UWY2Faus1e.mkv'
+2023-07-07T12:12:43.374Z bhx_A2rsl6L:File move error: Cache file /temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-LP_DxbSIb.mkv (3363637101 bytes) does not match size of new cache file /media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-UWY2Faus1e.mkv (0 bytes)
+2023-07-07T12:12:43.375Z bhx_A2rsl6L:Attempting to move/copy cache file to output folder, method 2
+2023-07-07T12:15:27.491Z bhx_A2rsl6L:Move/Copy succeeded
+2023-07-07T12:15:28.493Z bhx_A2rsl6L:Deleting cache file /temp/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-LP_DxbSIb.mkv
+2023-07-07T12:15:28.494Z bhx_A2rsl6L:Deleting original file: /media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 HDTV-1080p.mkv
+2023-07-07T12:15:30.497Z bhx_A2rsl6L:New file name: /media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 HDTV-1080p.mkv
+2023-07-07T12:15:30.497Z bhx_A2rsl6L:Renaming cache file to new name
+2023-07-07T12:15:30.498Z bhx_A2rsl6L:/media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 HDTV-1080p-TdarrCacheFile-UWY2Faus1e.mkv
+2023-07-07T12:15:30.498Z bhx_A2rsl6L:/media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 HDTV-1080p.mkv
+2023-07-07T12:15:31.499Z bhx_A2rsl6L:Removing item from staging section
+2023-07-07T12:15:31.500Z bhx_A2rsl6L:Scanning new file
+2023-07-07T12:15:31.500Z bhx_A2rsl6L:Running new file through post processing plugins
+2023-07-07T12:15:31.501Z bhx_A2rsl6L:Getting enabled plugins
+2023-07-07T12:15:31.502Z bhx_A2rsl6L:Sorting plugins by priority
+2023-07-07T12:15:31.502Z bhx_A2rsl6L:Plugins selected: 7, checking which ones are Post-processing
+2023-07-07T12:15:31.502Z bhx_A2rsl6L:Plugin 1: path=/app/server/Tdarr/Plugins/Community/Tdarr_Plugin_MC93_MigzImageRemoval.js
+2023-07-07T12:15:31.502Z bhx_A2rsl6L:Plugin 1: importing plugin
+2023-07-07T12:15:31.503Z bhx_A2rsl6L:Plugin 2: path=/app/server/Tdarr/Plugins/Community/Tdarr_Plugin_lmg1_Reorder_Streams.js
+2023-07-07T12:15:31.503Z bhx_A2rsl6L:Plugin 2: importing plugin
+2023-07-07T12:15:31.503Z bhx_A2rsl6L:Plugin 3: path=/app/server/Tdarr/Plugins/Community/Tdarr_Plugin_00td_action_standardise_audio_stream_codecs.js
+2023-07-07T12:15:31.503Z bhx_A2rsl6L:Plugin 3: importing plugin
+2023-07-07T12:15:31.503Z bhx_A2rsl6L:Plugin 4: path=/app/server/Tdarr/Plugins/Community/Tdarr_Plugin_075a_Transcode_Customisable.js
+2023-07-07T12:15:31.504Z bhx_A2rsl6L:Plugin 4: importing plugin
+2023-07-07T12:15:31.504Z bhx_A2rsl6L:Plugin 5: path=/app/server/Tdarr/Plugins/Community/Tdarr_Plugin_a9he_New_file_size_check.js
+2023-07-07T12:15:31.504Z bhx_A2rsl6L:Plugin 5: importing plugin
+2023-07-07T12:15:31.505Z bhx_A2rsl6L:Plugin 6: path=/app/server/Tdarr/Plugins/Community/Tdarr_Plugin_00td_filter_by_file_property.js
+2023-07-07T12:15:31.505Z bhx_A2rsl6L:Plugin 6: importing plugin
+2023-07-07T12:15:31.505Z bhx_A2rsl6L:Plugin 7: path=/app/server/Tdarr/Plugins/Community/Tdarr_Plugin_00td_action_remux_container.js
+2023-07-07T12:15:31.505Z bhx_A2rsl6L:Plugin 7: importing plugin
+2023-07-07T12:15:31.506Z bhx_A2rsl6L:
+2023-07-07T12:15:31.506Z bhx_A2rsl6L:Removing original item from database
+2023-07-07T12:15:31.507Z bhx_A2rsl6L:Adding new file to database
+2023-07-07T12:15:31.507Z bhx_A2rsl6L:Updating size stats
+2023-07-07T12:15:31.507Z bhx_A2rsl6L:[Step S03] Item processing end. [-success-]

@@ -1,0 +1,347 @@
+2023-07-06T08:50:02.739Z II42_UENG1_:[Step S01] [2.00.21] Server relay initialising job
+2023-07-06T08:50:02.740Z II42_UENG1_:Server: linux_x64_docker_true
+2023-07-06T08:50:02.742Z II42_UENG1_:Server relay adding file to staged files
+2023-07-06T08:50:02.742Z II42_UENG1_:Server relay sending job to Node relay: MyInternalNode
+2023-07-06T08:50:02.743Z II42_UENG1_:Node[MyInternalNode]:[Step N01] [2.00.21] Node relay received job
+2023-07-06T08:50:02.743Z II42_UENG1_:Node[MyInternalNode]:{"nodeName":"MyInternalNode","serverIP":"0.0.0.0","serverPort":"8266","handbrakePath":"","ffmpegPath":"","mkvpropeditPath":"","pathTranslators":[{"server":"","node":""}],"logLevel":"INFO","priority":-1,"platform_arch_isdocker":"linux_x64_docker_true","processPid":199,"nodeID":"_VxSJ6fLa"}
+2023-07-06T08:50:02.745Z II42_UENG1_:Node[MyInternalNode]:Node relay sending job to worker:musty-mutt
+2023-07-06T08:50:02.746Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[Step W01] Received file, original: /media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 WEBDL-720p.mkv
+2023-07-06T08:50:02.746Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:{"workerType":"transcodecpu"}
+2023-07-06T08:50:02.749Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:{"ffmpegPath":"tdarr-ffmpeg"}
+2023-07-06T08:50:02.750Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:{"handbrakePath":"HandBrakeCLI"}
+2023-07-06T08:50:02.754Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:{"mkvpropeditPath":"mkvpropedit"}
+2023-07-06T08:50:02.755Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:{"gpuSelect":"-"}
+2023-07-06T08:50:02.755Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:{"allowGpuDoCpu":false}
+2023-07-06T08:50:02.755Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:{"thoroughHealthCheckCpuExtraInputArgs":""}
+2023-07-06T08:50:02.756Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:{"thoroughHealthCheckGpuExtraInputArgs":""}
+2023-07-06T08:50:02.756Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:{"thoroughHealthCheckCpuExtraArgs":""}
+2023-07-06T08:50:02.758Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:{"thoroughHealthCheckGpuExtraArgs":""}
+2023-07-06T08:50:02.759Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:{"logFullCliOutput":false}
+2023-07-06T08:50:02.759Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Path translating objects
+2023-07-06T08:50:02.760Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:{"librarySettings":{"_id":"4BaCjCxnf","priority":1,"name":"TV","folder":"/media/tvshows","foldersToIgnore":"","folderWatchScanInterval":30,"scannerThreadCount":2,"cache":"/temp","output":"","folderToFolderConversion":false,"folderToFolderConversionDeleteSource":false,"folderToFolderRecordHistory":true,"copyIfConditionsMet":false,"container":".mkv","containerFilter":"mkv,mp4,mov,m4v,mpg,mpeg,avi,flv,webm,wmv,vob,evo,iso,m2ts,ts","createdAt":1675837380368,"folderWatching":true,"useFsEvents":false,"scheduledScanFindNew":false,"processLibrary":true,"scanOnStart":true,"exifToolScan":true,"mediaInfoScan":true,"closedCaptionScan":false,"scanButtons":true,"scanFound":"","navItemSelected":"navSourceFolder","pluginIDs":[{"_id":"plugin1","id":"Tdarr_Plugin_MC93_MigzImageRemoval","checked":true,"source":"Community","priority":0,"InputsDB":{},"Stage":"Pre-processing","Name":"Migz-Remove image formats from file","Type":"Video","Operation":"Transcode","Description":"Identify any unwanted image formats in the file and remove those streams. MJPEG, PNG & GIF \n\n","Version":"1.4","Tags":"pre-processing,ffmpeg,video only","Inputs":[],"source_id":"Community::Tdarr_Plugin_MC93_MigzImageRemoval","Link":"Read error"},{"_id":"plugin2","id":"Tdarr_Plugin_lmg1_Reorder_Streams","checked":true,"source":"Community","priority":1,"InputsDB":{},"Stage":"Pre-processing","Name":"Tdarr_Plugin_lmg1_Reorder_Streams ","Type":"Video","Operation":"Transcode","Description":"[Contains built-in filter] This plugin will move the video stream to the front so Tdarr will recognize the codec correctly.\n\n","Version":"1.00","Tags":"pre-processing,ffmpeg","Inputs":[],"source_id":"Community::Tdarr_Plugin_lmg1_Reorder_Streams","Link":"Read error"},{"_id":"sxfFHmyyT","id":"Tdarr_Plugin_00td_action_standardise_audio_stream_codecs","checked":true,"source":"Community","priority":2,"InputsDB":{},"Stage":"Pre-processing","Name":"Standardise audio stream codecs","Type":"Video","Operation":"Transcode","Description":"\nThis action has a built-in filter. Additional filters can be added.\n\n\n\nAll audio tracks which are not in the specified codec will be transcoded\ninto the specified codec. Bitrate and channel count are kept the same.\n  ","Version":"1.00","Tags":"action","Inputs":[{"name":"audioCodec","type":"string","defaultValue":"aac","inputUI":{"type":"dropdown","options":["aac","ac3","eac3","dca","flac","mp2","libmp3lame","truehd"]},"tooltip":"Enter the desired audio codec"}],"source_id":"Community::Tdarr_Plugin_00td_action_standardise_audio_stream_codecs"},{"_id":"aEVldYMXA","id":"Tdarr_Plugin_075a_Transcode_Customisable","checked":true,"source":"Community","priority":3,"InputsDB":{"codecs_to_exclude":"h264","transcode_arguments":"-Z \"H.264 MKV 2160p60 4K\" -e x264 --all-subtitles --all-audio"},"Stage":"Pre-processing","Name":"Video Transcode Customisable","Type":"Video","Operation":"Transcode","Description":"[Contains built-in filter] Specify codec filter and transcode arguments for HandBrake or FFmpeg  \n\n","Version":"1.00","Tags":"pre-processing,handbrake,ffmpeg,configurable","Inputs":[{"name":"codecs_to_exclude","type":"string","defaultValue":"hevc","inputUI":{"type":"text"},"tooltip":"Input codecs, separated by a comma, that should be excluded when processing.\n\n        \\nFor example, if you're transcoding into hevc (h265), then add a filter to prevent hevc being transcoded so your newly transcoded files won't be infinitely looped/processed. \\n\n\n        \n        \\nCommon video codecs:\n\n        \\nmpeg4\n        \\nhevc\n        \\nh264\n        \\nmpeg2video\n        \\ntheora\n        \\nvp8\n        \\nvp9\n        \n        \n        \\nExample:\\n\n\n        hevc\n\n        \\nYou can also enter multiple codecs:\n\n        \\nExample:\\n\n\n        mp3,aac,dts\n\n        \\nExample:\\n\n\n        h264,vp9\n \n        "},{"name":"cli","type":"string","defaultValue":"handbrake","inputUI":{"type":"text"},"tooltip":"Enter the CLI to use.\n        \n        \\nExample:\\n\n        handbrake\n\n        \\nExample:\\n\n        ffmpeg\n        \n        "},{"name":"transcode_arguments","type":"string","defaultValue":"-Z \"Very Fast 1080p30\" --all-subtitles --all-audio","inputUI":{"type":"text"},"tooltip":"\\nEnter HandBrake or FFmpeg transcode arguments.\n        \n        \\nHandBrake examples:\n\n        \\nExample:\\n\n        -e x264 -q 20 -B\n        \n        \\nExample:\\n\n        -Z \"Very Fast 1080p30\"\n        \n        \\nExample:\\n\n        -Z \"Fast 1080p30\" -e nvenc_h265\n        \n        \\nExample:\\n\n        -Z \"Very Fast 1080p30\" --all-subtitles --all-audio\n        \n        \\nExample:\\n\n        -Z \"Very Fast 480p30\"\n        \n        \\nExample:\\n\n        --preset-import-file \"C:UsersHaveAGitGatDesktop\testpreset.json\" -Z \"My Preset\"\n        \n        \\nYou can learn more about HandBrake presets here:\n\n        \\nhttps://handbrake.fr/docs/en/latest/technical/official-presets.html\n        \n\n        \\nWhen using FFmpeg, you need to separate the input and output parameters with a comma. FFmpeg Examples:\n\n        \\nExample:\\n\n-r 1,-r 24\n\n\\nExample:\\n\n,-sn -c:v copy -c:a copy\n\n\\nExample:\\n\n,-c:v lib265 -crf 23 -ac 6 -c:a aac -preset veryfast\n\n\\nExample:\\n\n,-map 0 -c copy -c:v libx265 -c:a aac\n\n\\nExample:\\n\n-c:v h264_cuvid,-c:v hevc_nvenc -preset slow -c:a copy\n\n\\nPlease see the following for help with creating FFmpeg commands:\n\n\\nhttps://opensource.com/article/17/6/ffmpeg-convert-media-file-formats\n        \n        \n        \n        \n        "},{"name":"output_container","type":"string","defaultValue":".mkv","inputUI":{"type":"text"},"tooltip":"\n        \\nEnter the output container of the new file\n\n        \\nExample:\\n\n        .mp4\n\n        \\nExample:\\n\n        .mp3\n\n        \\nExample:\\n\n        .mkv\n        \n        "}],"source_id":"Community::Tdarr_Plugin_075a_Transcode_Customisable"},{"_id":"plugin5","id":"Tdarr_Plugin_a9he_New_file_size_check","checked":true,"source":"Community","priority":4,"InputsDB":{},"Stage":"Pre-processing","Name":"New file size check","Type":"Video","Operation":"Transcode","Description":"Give an error if new file is not within the specified upper and lower bound limits \n\n","Version":"1.00","Tags":"","Inputs":[{"name":"upperBound","type":"number","defaultValue":110,"inputUI":{"type":"text"},"tooltip":"Enter the upper bound % size for the new file. For example, if '110' is entered, \n        then if the new file size is 11% larger than the original, an error will be given."},{"name":"lowerBound","type":"number","defaultValue":40,"inputUI":{"type":"text"},"tooltip":"Enter the lower bound % size for the new file. For example, if '90' is entered, \n        then if the new file size is less than 90% of the original, an error will be given."}],"source_id":"Community::Tdarr_Plugin_a9he_New_file_size_check","Link":"Read error"},{"_id":"-XIe_rmCK","id":"Tdarr_Plugin_00td_filter_by_file_property","checked":true,"source":"Community","priority":5,"InputsDB":{"propertyValues":"mkv"},"Stage":"Pre-processing","Name":"Filter by file property","Type":"Video","Operation":"Filter","Description":"Filter by a top level file property.\n  For example, container, video_resolution, video_codec_name, fileMedium.\n  Click on a file name on the Tdarr tab or Search tab to see top-level file properties.\n  ","Version":"1.00","Tags":"filter","Inputs":[{"name":"propertyName","type":"string","defaultValue":"container","inputUI":{"type":"text"},"tooltip":"Enter the file property to check"},{"name":"propertyValues","type":"string","defaultValue":"mkv,mp4","inputUI":{"type":"text"},"tooltip":"Enter a comma separated list of values to check for."},{"name":"exactMatch","type":"boolean","defaultValue":true,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Specify true if the property value must be an exact match, false if the property value must contain the value."},{"name":"continueIfPropertyFound","type":"boolean","defaultValue":false,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Specify whether to continue the plugin stack if the property is found."}],"source_id":"Community::Tdarr_Plugin_00td_filter_by_file_property"},{"_id":"RZcj0lsWOB","id":"Tdarr_Plugin_00td_action_remux_container","checked":true,"source":"Community","priority":6,"InputsDB":{}}],"pluginCommunity":true,"handbrake":true,"ffmpeg":false,"handbrakescan":true,"ffmpegscan":false,"preset":"-Z \"Very Fast 1080p30\"","decisionMaker":{"settingsPlugin":true,"settingsVideo":false,"videoExcludeSwitch":true,"video_codec_names_exclude":[{"codec":"hevc","checked":false},{"codec":"h264","checked":true}],"video_size_range_include":{"min":0,"max":100000},"video_height_range_include":{"min":0,"max":3000},"video_width_range_include":{"min":0,"max":4000},"settingsAudio":false,"audioExcludeSwitch":true,"audio_codec_names_exclude":[{"codec":"mp3","checked":true},{"codec":"aac","checked":false}],"audio_size_range_include":{"min":0,"max":10}},"schedule":[{"_id":"Sun:00-01","checked":true},{"_id":"Sun:01-02","checked":true},{"_id":"Sun:02-03","checked":true},{"_id":"Sun:03-04","checked":true},{"_id":"Sun:04-05","checked":true},{"_id":"Sun:05-06","checked":true},{"_id":"Sun:06-07","checked":true},{"_id":"Sun:07-08","checked":true},{"_id":"Sun:08-09","checked":true},{"_id":"Sun:09-10","checked":true},{"_id":"Sun:10-11","checked":true},{"_id":"Sun:11-12","checked":true},{"_id":"Sun:12-13","checked":true},{"_id":"Sun:13-14","checked":true},{"_id":"Sun:14-15","checked":true},{"_id":"Sun:15-16","checked":true},{"_id":"Sun:16-17","checked":true},{"_id":"Sun:17-18","checked":true},{"_id":"Sun:18-19","checked":true},{"_id":"Sun:19-20","checked":true},{"_id":"Sun:20-21","checked":true},{"_id":"Sun:21-22","checked":true},{"_id":"Sun:22-23","checked":true},{"_id":"Sun:23-00","checked":true},{"_id":"Mon:00-01","checked":true},{"_id":"Mon:01-02","checked":true},{"_id":"Mon:02-03","checked":true},{"_id":"Mon:03-04","checked":true},{"_id":"Mon:04-05","checked":true},{"_id":"Mon:05-06","checked":true},{"_id":"Mon:06-07","checked":true},{"_id":"Mon:07-08","checked":true},{"_id":"Mon:08-09","checked":true},{"_id":"Mon:09-10","checked":true},{"_id":"Mon:10-11","checked":true},{"_id":"Mon:11-12","checked":true},{"_id":"Mon:12-13","checked":true},{"_id":"Mon:13-14","checked":true},{"_id":"Mon:14-15","checked":true},{"_id":"Mon:15-16","checked":true},{"_id":"Mon:16-17","checked":true},{"_id":"Mon:17-18","checked":true},{"_id":"Mon:18-19","checked":true},{"_id":"Mon:19-20","checked":true},{"_id":"Mon:20-21","checked":true},{"_id":"Mon:21-22","checked":true},{"_id":"Mon:22-23","checked":true},{"_id":"Mon:23-00","checked":true},{"_id":"Tue:00-01","checked":true},{"_id":"Tue:01-02","checked":true},{"_id":"Tue:02-03","checked":true},{"_id":"Tue:03-04","checked":true},{"_id":"Tue:04-05","checked":true},{"_id":"Tue:05-06","checked":true},{"_id":"Tue:06-07","checked":true},{"_id":"Tue:07-08","checked":true},{"_id":"Tue:08-09","checked":true},{"_id":"Tue:09-10","checked":true},{"_id":"Tue:10-11","checked":true},{"_id":"Tue:11-12","checked":true},{"_id":"Tue:12-13","checked":true},{"_id":"Tue:13-14","checked":true},{"_id":"Tue:14-15","checked":true},{"_id":"Tue:15-16","checked":true},{"_id":"Tue:16-17","checked":true},{"_id":"Tue:17-18","checked":true},{"_id":"Tue:18-19","checked":true},{"_id":"Tue:19-20","checked":true},{"_id":"Tue:20-21","checked":true},{"_id":"Tue:21-22","checked":true},{"_id":"Tue:22-23","checked":true},{"_id":"Tue:23-00","checked":true},{"_id":"Wed:00-01","checked":true},{"_id":"Wed:01-02","checked":true},{"_id":"Wed:02-03","checked":true},{"_id":"Wed:03-04","checked":true},{"_id":"Wed:04-05","checked":true},{"_id":"Wed:05-06","checked":true},{"_id":"Wed:06-07","checked":true},{"_id":"Wed:07-08","checked":true},{"_id":"Wed:08-09","checked":true},{"_id":"Wed:09-10","checked":true},{"_id":"Wed:10-11","checked":true},{"_id":"Wed:11-12","checked":true},{"_id":"Wed:12-13","checked":true},{"_id":"Wed:13-14","checked":true},{"_id":"Wed:14-15","checked":true},{"_id":"Wed:15-16","checked":true},{"_id":"Wed:16-17","checked":true},{"_id":"Wed:17-18","checked":true},{"_id":"Wed:18-19","checked":true},{"_id":"Wed:19-20","checked":true},{"_id":"Wed:20-21","checked":true},{"_id":"Wed:21-22","checked":true},{"_id":"Wed:22-23","checked":true},{"_id":"Wed:23-00","checked":true},{"_id":"Thur:00-01","checked":true},{"_id":"Thur:01-02","checked":true},{"_id":"Thur:02-03","checked":true},{"_id":"Thur:03-04","checked":true},{"_id":"Thur:04-05","checked":true},{"_id":"Thur:05-06","checked":true},{"_id":"Thur:06-07","checked":true},{"_id":"Thur:07-08","checked":true},{"_id":"Thur:08-09","checked":true},{"_id":"Thur:09-10","checked":true},{"_id":"Thur:10-11","checked":true},{"_id":"Thur:11-12","checked":true},{"_id":"Thur:12-13","checked":true},{"_id":"Thur:13-14","checked":true},{"_id":"Thur:14-15","checked":true},{"_id":"Thur:15-16","checked":true},{"_id":"Thur:16-17","checked":true},{"_id":"Thur:17-18","checked":true},{"_id":"Thur:18-19","checked":true},{"_id":"Thur:19-20","checked":true},{"_id":"Thur:20-21","checked":true},{"_id":"Thur:21-22","checked":true},{"_id":"Thur:22-23","checked":true},{"_id":"Thur:23-00","checked":true},{"_id":"Fri:00-01","checked":true},{"_id":"Fri:01-02","checked":true},{"_id":"Fri:02-03","checked":true},{"_id":"Fri:03-04","checked":true},{"_id":"Fri:04-05","checked":true},{"_id":"Fri:05-06","checked":true},{"_id":"Fri:06-07","checked":true},{"_id":"Fri:07-08","checked":true},{"_id":"Fri:08-09","checked":true},{"_id":"Fri:09-10","checked":true},{"_id":"Fri:10-11","checked":true},{"_id":"Fri:11-12","checked":true},{"_id":"Fri:12-13","checked":true},{"_id":"Fri:13-14","checked":true},{"_id":"Fri:14-15","checked":true},{"_id":"Fri:15-16","checked":true},{"_id":"Fri:16-17","checked":true},{"_id":"Fri:17-18","checked":true},{"_id":"Fri:18-19","checked":true},{"_id":"Fri:19-20","checked":true},{"_id":"Fri:20-21","checked":true},{"_id":"Fri:21-22","checked":true},{"_id":"Fri:22-23","checked":true},{"_id":"Fri:23-00","checked":true},{"_id":"Sat:00-01","checked":true},{"_id":"Sat:01-02","checked":true},{"_id":"Sat:02-03","checked":true},{"_id":"Sat:03-04","checked":true},{"_id":"Sat:04-05","checked":true},{"_id":"Sat:05-06","checked":true},{"_id":"Sat:06-07","checked":true},{"_id":"Sat:07-08","checked":true},{"_id":"Sat:08-09","checked":true},{"_id":"Sat:09-10","checked":true},{"_id":"Sat:10-11","checked":true},{"_id":"Sat:11-12","checked":true},{"_id":"Sat:12-13","checked":true},{"_id":"Sat:13-14","checked":true},{"_id":"Sat:14-15","checked":true},{"_id":"Sat:15-16","checked":true},{"_id":"Sat:16-17","checked":true},{"_id":"Sat:17-18","checked":true},{"_id":"Sat:18-19","checked":true},{"_id":"Sat:19-20","checked":true},{"_id":"Sat:20-21","checked":true},{"_id":"Sat:21-22","checked":true},{"_id":"Sat:22-23","checked":true},{"_id":"Sat:23-00","checked":true}],"totalHealthCheckCount":21,"totalTranscodeCount":7,"sizeDiff":2.687773029319942,"holdNewFiles":false,"holdFor":3600,"pluginStackOverview":true,"filterResolutionsSkip":"","filterCodecsSkip":"","processPluginsSequentially":true}}
+2023-07-06T08:50:02.760Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Fetching plugin data from server
+2023-07-06T08:50:02.761Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Scanning original library file
+2023-07-06T08:50:02.762Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:{
+2023-07-06T08:50:02.762Z   "exifToolScan": true,
+2023-07-06T08:50:02.762Z   "mediaInfoScan": false,
+2023-07-06T08:50:02.762Z   "closedCaptionScan": false
+2023-07-06T08:50:02.762Z }
+2023-07-06T08:50:02.762Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Updating file properties using mkvpropedit
+2023-07-06T08:50:02.763Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Updated file properties using mkvpropedit
+2023-07-06T08:50:02.764Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Requesting Tdarr Server to scan file
+2023-07-06T08:50:04.767Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Scan complete
+2023-07-06T08:50:04.767Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Original file scanned
+2023-07-06T08:50:04.768Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:fileVersionOriginalLogJSONString:{"lastCliCommand":"","lastPluginId":"","sourceFile":{"_id":"/media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 WEBDL-720p.mkv","footprintId":"EftU9XG_Tm","file":"/media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 WEBDL-720p.mkv","container":"mkv","scannerReads":{"ffProbeRead":"success","exiftoolRead":"success","mediaInfoRead":"not enabled","closedCaptionRead":"not enabled"},"createdAt":1688629801851,"lastPluginDetails":"none","bit_rate":6124523,"statSync":{"dev":2051,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":5918413,"size":2702997227,"blocks":5279344,"atimeMs":1688595371230.4092,"mtimeMs":1688508117698.1707,"ctimeMs":1688508178233.2097,"birthtimeMs":1688506898393.7046,"atime":"2023-07-05T22:16:11.230Z","mtime":"2023-07-04T22:01:57.698Z","ctime":"2023-07-04T22:02:58.233Z","birthtime":"2023-07-04T21:41:38.394Z"},"file_size":2577.7790327072144,"ffProbeData":{"streams":[{"index":0,"codec_name":"h264","codec_long_name":"H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10","profile":"High","codec_type":"video","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","width":1280,"height":720,"coded_width":1280,"coded_height":720,"closed_captions":0,"has_b_frames":2,"sample_aspect_ratio":"1:1","display_aspect_ratio":"16:9","pix_fmt":"yuv420p","level":31,"color_range":"tv","color_space":"bt709","color_transfer":"bt709","color_primaries":"bt709","chroma_location":"left","field_order":"progressive","refs":1,"is_avc":"true","nal_length_size":"4","r_frame_rate":"25/1","avg_frame_rate":"25/1","time_base":"1/1000","start_pts":0,"start_time":"0.000000","bits_per_raw_sample":"8","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"eng","BPS-eng":"5898418","DURATION-eng":"00:58:50.680000000","NUMBER_OF_FRAMES-eng":"88267","NUMBER_OF_BYTES-eng":"2603178658","_STATISTICS_WRITING_APP-eng":"mkvmerge v51.0.0 ('I Wish') 64-bit","_STATISTICS_WRITING_DATE_UTC-eng":"2020-12-30 10:29:32","_STATISTICS_TAGS-eng":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}},{"index":1,"codec_name":"eac3","codec_long_name":"ATSC A/52B (AC-3, E-AC-3)","codec_type":"audio","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":"48000","channels":2,"channel_layout":"stereo","bits_per_sample":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","bit_rate":"224000","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"eng","title":"English","BPS-eng":"224000","DURATION-eng":"00:58:50.720000000","NUMBER_OF_FRAMES-eng":"110335","NUMBER_OF_BYTES-eng":"98860160","_STATISTICS_WRITING_APP-eng":"mkvmerge v51.0.0 ('I Wish') 64-bit","_STATISTICS_WRITING_DATE_UTC-eng":"2020-12-30 10:29:32","_STATISTICS_TAGS-eng":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}},{"index":2,"codec_name":"subrip","codec_long_name":"SubRip subtitle","codec_type":"subtitle","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","duration_ts":3530720,"duration":"3530.720000","disposition":{"default":0,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"eng","title":"English (SDH)","BPS-eng":"101","DURATION-eng":"00:58:08.800000000","NUMBER_OF_FRAMES-eng":"1067","NUMBER_OF_BYTES-eng":"44308","_STATISTICS_WRITING_APP-eng":"mkvmerge v51.0.0 ('I Wish') 64-bit","_STATISTICS_WRITING_DATE_UTC-eng":"2020-12-30 10:29:32","_STATISTICS_TAGS-eng":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}}],"format":{"filename":"/media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 WEBDL-720p.mkv","nb_streams":3,"nb_programs":0,"format_name":"matroska,webm","format_long_name":"Matroska / WebM","start_time":"0.000000","duration":"3530.720000","size":"2702997227","bit_rate":"6124523","probe_score":100,"tags":{"encoder":"libebml v1.4.0 + libmatroska v1.6.2"}}},"meta":{"SourceFile":"/media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 WEBDL-720p.mkv","errors":[],"Duration":3530.72,"DefaultDuration":0.032,"ExifToolVersion":12.4,"FileName":"Top Gear - S22E02 - Episode 2 WEBDL-720p.mkv","Directory":"/media/tvshows/Top Gear/Season 22","FileSize":"2.5 GiB","FileModifyDate":{"year":2023,"month":7,"day":4,"hour":22,"minute":1,"second":57,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:04 22:01:57+00:00"},"FileAccessDate":{"year":2023,"month":7,"day":5,"hour":22,"minute":16,"second":11,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:05 22:16:11+00:00"},"FileInodeChangeDate":{"year":2023,"month":7,"day":4,"hour":22,"minute":2,"second":58,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:04 22:02:58+00:00"},"FilePermissions":"-rw-rw-r--","FileType":"MKV","FileTypeExtension":"mkv","MIMEType":"video/x-matroska","EBMLVersion":1,"EBMLReadVersion":1,"DocType":"matroska","DocTypeVersion":4,"DocTypeReadVersion":2,"TimecodeScale":"1 ms","MuxingApp":"libebml v1.4.0 + libmatroska v1.6.2","WritingApp":"mkvmerge v51.0.0 ('I Wish') 64-bit","VideoCodecID":"V_MPEG4/ISO/AVC","VideoFrameRate":25,"ImageWidth":1280,"ImageHeight":720,"DisplayWidth":1280,"DisplayHeight":720,"AudioCodecID":"A_EAC3","AudioSampleRate":48000,"AudioChannels":2,"TrackNumber":3,"TrackType":"Subtitle","TrackDefault":"No","CodecID":"S_TEXT/UTF8","TrackName":"English (SDH)","ImageSize":"1280x720","Megapixels":0.922},"mediaInfo":{},"hasClosedCaptions":false,"DB":"4BaCjCxnf","bumped":false,"HealthCheck":"","TranscodeDecisionMaker":"","holdUntil":0,"fileMedium":"video","video_codec_name":"h264","audio_codec_name":"","video_resolution":"720p","lastHealthCheckDate":0,"lastTranscodeDate":0,"history":"","oldSize":0,"newSize":0,"videoStreamIndex":0,"duration":3530}}
+2023-07-06T08:50:04.769Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Source file to work on determined:/media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 WEBDL-720p.mkv
+2023-07-06T08:50:04.769Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[Step W02] [C1] Running pre-process file
+2023-07-06T08:50:04.769Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Checking files can be accessed
+2023-07-06T08:50:04.769Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Relevant paths can be accessed
+2023-07-06T08:50:04.770Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Source file: /media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 WEBDL-720p.mkv
+2023-07-06T08:50:04.770Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Cache folder: /temp
+2023-07-06T08:50:04.770Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[Step W03] [C1] Analysing file - running plugins
+2023-07-06T08:50:04.771Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:transcode task, scanning for extra file details before transcode
+2023-07-06T08:50:04.771Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Updating file properties using mkvpropedit
+2023-07-06T08:50:04.771Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Updated file properties using mkvpropedit
+2023-07-06T08:50:04.772Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Requesting Tdarr Server to scan file
+2023-07-06T08:50:05.774Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Scan complete
+2023-07-06T08:50:05.774Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Scan complete
+2023-07-06T08:50:05.775Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Updating Node relay: Processing
+2023-07-06T08:50:05.775Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[1/2] Checking file frame count
+2023-07-06T08:50:05.775Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[2/2] Frame count 0
+2023-07-06T08:50:05.776Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Transcode task, determining transcode settings
+2023-07-06T08:50:05.776Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Plugin stack selected
+2023-07-06T08:50:05.776Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Plugin: plugin1:  Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-06T08:50:05.777Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[1/5] Reading plugin
+2023-07-06T08:50:05.777Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[2/5] Plugin read finished
+2023-07-06T08:50:05.778Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[3/5] Installing dependencies
+2023-07-06T08:50:05.778Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[4/5] Running plugin
+2023-07-06T08:50:05.779Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:{"pluginInputs":{}}
+2023-07-06T08:50:05.779Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[5/5] Running plugin finished
+2023-07-06T08:50:05.779Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Plugin: plugin2:  Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-06T08:50:05.780Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[1/5] Reading plugin
+2023-07-06T08:50:05.780Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[2/5] Plugin read finished
+2023-07-06T08:50:05.780Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[3/5] Installing dependencies
+2023-07-06T08:50:05.780Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[4/5] Running plugin
+2023-07-06T08:50:05.781Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:{"pluginInputs":{}}
+2023-07-06T08:50:05.781Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[5/5] Running plugin finished
+2023-07-06T08:50:05.781Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Plugin: sxfFHmyyT:  Tdarr_Plugin_00td_action_standardise_audio_stream_codecs
+2023-07-06T08:50:05.782Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[1/5] Reading plugin
+2023-07-06T08:50:05.782Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[2/5] Plugin read finished
+2023-07-06T08:50:05.782Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[3/5] Installing dependencies
+2023-07-06T08:50:05.782Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[4/5] Running plugin
+2023-07-06T08:50:05.783Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:{"pluginInputs":{"audioCodec":"aac"}}
+2023-07-06T08:50:05.785Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[5/5] Running plugin finished
+2023-07-06T08:50:05.785Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Worker config: {
+2023-07-06T08:50:05.785Z   "processFile": true,
+2023-07-06T08:50:05.785Z   "preset": ",-map 0:v -map 0:a -map 0:s? -map 0:d? -c copy  -c:a:0 aac",
+2023-07-06T08:50:05.785Z   "container": ".mkv",
+2023-07-06T08:50:05.785Z   "handBrakeMode": false,
+2023-07-06T08:50:05.785Z   "FFmpegMode": false,
+2023-07-06T08:50:05.785Z   "reQueueAfter": true,
+2023-07-06T08:50:05.785Z   "infoLog": "File has audio streams which aren't in aac \n",
+2023-07-06T08:50:05.785Z   "handbrakeMode": false,
+2023-07-06T08:50:05.785Z   "ffmpegMode": true,
+2023-07-06T08:50:05.785Z   "lastPluginDetails": {
+2023-07-06T08:50:05.785Z     "source": "Community",
+2023-07-06T08:50:05.785Z     "id": "Tdarr_Plugin_00td_action_standardise_audio_stream_codecs",
+2023-07-06T08:50:05.785Z     "number": "3/7"
+2023-07-06T08:50:05.785Z   },
+2023-07-06T08:50:05.785Z   "cliToUse": "ffmpeg"
+2023-07-06T08:50:05.785Z }
+2023-07-06T08:50:05.785Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Worker log: 
+2023-07-06T08:50:05.785Z Pre-processing - Tdarr_Plugin_MC93_MigzImageRemoval
+2023-07-06T08:50:05.785Z ☑File doesn't contain any unwanted image format streams.
+2023-07-06T08:50:05.785Z 
+2023-07-06T08:50:05.785Z Pre-processing - Tdarr_Plugin_lmg1_Reorder_Streams
+2023-07-06T08:50:05.785Z File has video in first stream
+2023-07-06T08:50:05.785Z  File meets conditions!
+2023-07-06T08:50:05.785Z 
+2023-07-06T08:50:05.785Z Pre-processing - Tdarr_Plugin_00td_action_standardise_audio_stream_codecs
+2023-07-06T08:50:05.785Z File has audio streams which aren't in aac 
+2023-07-06T08:50:05.785Z 
+2023-07-06T08:50:05.786Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Worker will process
+2023-07-06T08:50:05.786Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[Step W04] [C1] Preparing command
+2023-07-06T08:50:05.787Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Cache file stem: /temp
+2023-07-06T08:50:05.788Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Cache file path: /temp/Top Gear - S22E02 - Episode 2 WEBDL-720p-TdarrCacheFile-1QpTehfuH.mkv
+2023-07-06T08:50:05.789Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Create transcode args
+2023-07-06T08:50:05.789Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Args:  -i "/media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 WEBDL-720p.mkv" -map 0:v -map 0:a -map 0:s? -map 0:d? -c copy -c:a:0 aac "/temp/Top Gear - S22E02 - Episode 2 WEBDL-720p-TdarrCacheFile-1QpTehfuH.mkv"
+2023-07-06T08:50:05.789Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Getting source file size
+2023-07-06T08:50:05.789Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Source file size: 2.517362336628139
+2023-07-06T08:50:05.790Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Performing safety check on worker config to see if old transcode args/container match new ones
+2023-07-06T08:50:05.790Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Safety check complete, all good
+2023-07-06T08:50:05.790Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[Step W05] [C1] Launching subworker
+2023-07-06T08:50:05.791Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Preparing to launch subworker
+2023-07-06T08:50:05.791Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Subworker launched
+2023-07-06T08:50:05.791Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[1/3] Sending command to subworker
+2023-07-06T08:50:05.791Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[2/3] tdarr-ffmpeg -i "/media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 WEBDL-720p.mkv" -map 0:v -map 0:a -map 0:s? -map 0:d? -c copy -c:a:0 aac "/temp/Top Gear - S22E02 - Episode 2 WEBDL-720p-TdarrCacheFile-1QpTehfuH.mkv"
+2023-07-06T08:50:05.792Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[3/3] Command sent
+2023-07-06T08:50:05.792Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:To see live CLI output, enable 'Log full FFmpeg/HandBrake output' in the staging section on the Tdarr tab before the job starts. Note this could increase the job report size substantially.
+2023-07-06T08:50:05.792Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Subworker:Online
+2023-07-06T08:50:05.792Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Subworker:Receiving transcode settings
+2023-07-06T08:50:05.792Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Subworker:Running CLI
+2023-07-06T08:52:12.869Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Subworker:a.Thread closed, code: 228
+2023-07-06T08:52:12.871Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Subworker exit approved, killing subworker
+2023-07-06T08:52:12.871Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Subworker killed
+2023-07-06T08:52:12.872Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:b.Thread closed, code: 228
+2023-07-06T08:52:12.872Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:CLI code: 228
+2023-07-06T08:52:12.872Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Last 200 lines of CLI log:
+2023-07-06T08:52:12.873Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:frame=21576 fps=769 q=-1.0 size=  629760kB time=00:14:23.23 bitrate=5976.4kbits/s speed=30.8x    
+2023-07-06T08:52:12.873Z frame=21918 fps=767 q=-1.0 size=  639232kB time=00:14:36.94 bitrate=5971.4kbits/s speed=30.7x    
+2023-07-06T08:52:12.873Z frame=22295 fps=767 q=-1.0 size=  652544kB time=00:14:51.84 bitrate=5993.9kbits/s speed=30.7x    
+2023-07-06T08:52:12.873Z frame=22694 fps=767 q=-1.0 size=  663808kB time=00:15:07.79 bitrate=5990.2kbits/s speed=30.7x    
+2023-07-06T08:52:12.873Z frame=23111 fps=769 q=-1.0 size=  677120kB time=00:15:24.67 bitrate=5998.8kbits/s speed=30.8x    
+2023-07-06T08:52:12.873Z frame=23477 fps=768 q=-1.0 size=  686592kB time=00:15:39.09 bitrate=5989.4kbits/s speed=30.7x    
+2023-07-06T08:52:12.873Z frame=23801 fps=766 q=-1.0 size=  696064kB time=00:15:52.19 bitrate=5988.5kbits/s speed=30.6x    
+2023-07-06T08:52:12.873Z frame=24120 fps=764 q=-1.0 size=  705792kB time=00:16:04.75 bitrate=5993.1kbits/s speed=30.6x    
+2023-07-06T08:52:12.873Z frame=24425 fps=762 q=-1.0 size=  715776kB time=00:16:17.04 bitrate=6001.4kbits/s speed=30.5x    
+2023-07-06T08:52:12.873Z frame=24763 fps=760 q=-1.0 size=  724992kB time=00:16:30.72 bitrate=5994.8kbits/s speed=30.4x    
+2023-07-06T08:52:12.873Z frame=25119 fps=759 q=-1.0 size=  735488kB time=00:16:44.82 bitrate=5996.2kbits/s speed=30.4x    
+2023-07-06T08:52:12.873Z frame=25551 fps=761 q=-1.0 size=  745984kB time=00:17:01.97 bitrate=5979.7kbits/s speed=30.4x    
+2023-07-06T08:52:12.873Z frame=25812 fps=758 q=-1.0 size=  754688kB time=00:17:12.57 bitrate=5987.4kbits/s speed=30.3x    
+2023-07-06T08:52:12.873Z frame=26117 fps=755 q=-1.0 size=  763392kB time=00:17:24.75 bitrate=5985.8kbits/s speed=30.2x    
+2023-07-06T08:52:12.873Z frame=26481 fps=755 q=-1.0 size=  777216kB time=00:17:39.45 bitrate=6009.6kbits/s speed=30.2x    
+2023-07-06T08:52:12.873Z frame=26763 fps=752 q=-1.0 size=  784128kB time=00:17:50.61 bitrate=5999.9kbits/s speed=30.1x    
+2023-07-06T08:52:12.873Z frame=26938 fps=747 q=-1.0 size=  788480kB time=00:17:57.71 bitrate=5993.4kbits/s speed=29.9x    
+2023-07-06T08:52:12.873Z frame=27154 fps=742 q=-1.0 size=  796160kB time=00:18:06.42 bitrate=6003.3kbits/s speed=29.7x    
+2023-07-06T08:52:12.873Z frame=27425 fps=740 q=-1.0 size=  803840kB time=00:18:17.04 bitrate=6002.5kbits/s speed=29.6x    
+2023-07-06T08:52:12.873Z frame=27817 fps=740 q=-1.0 size=  817664kB time=00:18:32.91 bitrate=6018.7kbits/s speed=29.6x    
+2023-07-06T08:52:12.873Z frame=28093 fps=738 q=-1.0 size=  824576kB time=00:18:43.86 bitrate=6010.5kbits/s speed=29.5x    
+2023-07-06T08:52:12.873Z frame=28401 fps=736 q=-1.0 size=  835840kB time=00:18:56.14 bitrate=6026.7kbits/s speed=29.4x    
+2023-07-06T08:52:12.873Z frame=28738 fps=735 q=-1.0 size=  844800kB time=00:19:09.52 bitrate=6020.4kbits/s speed=29.4x    
+2023-07-06T08:52:12.873Z frame=29039 fps=733 q=-1.0 size=  853504kB time=00:19:21.68 bitrate=6018.8kbits/s speed=29.3x    
+2023-07-06T08:52:12.873Z frame=29263 fps=730 q=-1.0 size=  860672kB time=00:19:30.62 bitrate=6023.0kbits/s speed=29.2x    
+2023-07-06T08:52:12.873Z frame=29491 fps=726 q=-1.0 size=  866560kB time=00:19:39.73 bitrate=6017.3kbits/s speed=29.1x    
+2023-07-06T08:52:12.873Z frame=29701 fps=723 q=-1.0 size=  872704kB time=00:19:48.16 bitrate=6017.0kbits/s speed=28.9x    
+2023-07-06T08:52:12.873Z frame=29920 fps=719 q=-1.0 size=  877056kB time=00:19:56.82 bitrate=6003.3kbits/s speed=28.8x    
+2023-07-06T08:52:12.873Z frame=30076 fps=714 q=-1.0 size=  883456kB time=00:20:03.22 bitrate=6014.9kbits/s speed=28.6x    
+2023-07-06T08:52:12.873Z frame=30364 fps=712 q=-1.0 size=  892416kB time=00:20:14.65 bitrate=6018.7kbits/s speed=28.5x    
+2023-07-06T08:52:12.873Z frame=30738 fps=713 q=-1.0 size=  904704kB time=00:20:29.52 bitrate=6027.8kbits/s speed=28.5x    
+2023-07-06T08:52:12.873Z frame=31010 fps=711 q=-1.0 size=  911872kB time=00:20:40.59 bitrate=6021.3kbits/s speed=28.4x    
+2023-07-06T08:52:12.873Z frame=31205 fps=707 q=-1.0 size=  917760kB time=00:20:48.44 bitrate=6022.1kbits/s speed=28.3x    
+2023-07-06T08:52:12.873Z frame=31389 fps=703 q=-1.0 size=  923904kB time=00:20:55.55 bitrate=6028.1kbits/s speed=28.1x    
+2023-07-06T08:52:12.873Z frame=31643 fps=701 q=-1.0 size=  931328kB time=00:21:05.87 bitrate=6027.0kbits/s speed=28.1x    
+2023-07-06T08:52:12.873Z frame=31861 fps=698 q=-1.0 size=  939264kB time=00:21:14.68 bitrate=6036.3kbits/s speed=27.9x    
+2023-07-06T08:52:12.873Z frame=32095 fps=696 q=-1.0 size=  944640kB time=00:21:23.86 bitrate=6027.5kbits/s speed=27.8x    
+2023-07-06T08:52:12.873Z frame=32420 fps=695 q=-1.0 size=  955392kB time=00:21:36.78 bitrate=6035.3kbits/s speed=27.8x    
+2023-07-06T08:52:12.873Z frame=32701 fps=694 q=-1.0 size=  961280kB time=00:21:48.16 bitrate=6019.8kbits/s speed=27.8x    
+2023-07-06T08:52:12.873Z frame=33020 fps=693 q=-1.0 size=  973568kB time=00:22:00.89 bitrate=6037.9kbits/s speed=27.7x    
+2023-07-06T08:52:12.873Z frame=33330 fps=693 q=-1.0 size=  982016kB time=00:22:13.26 bitrate=6033.8kbits/s speed=27.7x    
+2023-07-06T08:52:12.873Z frame=33519 fps=689 q=-1.0 size=  985088kB time=00:22:20.88 bitrate=6018.3kbits/s speed=27.6x    
+2023-07-06T08:52:12.873Z frame=33724 fps=686 q=-1.0 size=  990976kB time=00:22:29.01 bitrate=6017.8kbits/s speed=27.5x    
+2023-07-06T08:52:12.873Z frame=34005 fps=685 q=-1.0 size= 1001728kB time=00:22:40.27 bitrate=6032.7kbits/s speed=27.4x    
+2023-07-06T08:52:12.873Z frame=34293 fps=684 q=-1.0 size= 1010688kB time=00:22:51.79 bitrate=6035.6kbits/s speed=27.4x    
+2023-07-06T08:52:12.873Z frame=34625 fps=684 q=-1.0 size= 1021184kB time=00:23:05.15 bitrate=6039.4kbits/s speed=27.4x    
+2023-07-06T08:52:12.873Z frame=35006 fps=684 q=-1.0 size= 1031680kB time=00:23:20.44 bitrate=6034.9kbits/s speed=27.4x    
+2023-07-06T08:52:12.873Z frame=35325 fps=684 q=-1.0 size= 1042432kB time=00:23:33.12 bitrate=6043.1kbits/s speed=27.4x    
+2023-07-06T08:52:12.873Z frame=35520 fps=681 q=-1.0 size= 1046784kB time=00:23:40.88 bitrate=6035.2kbits/s speed=27.2x    
+2023-07-06T08:52:12.873Z frame=35801 fps=680 q=-1.0 size= 1054464kB time=00:23:52.00 bitrate=6032.2kbits/s speed=27.2x    
+2023-07-06T08:52:12.873Z frame=36169 fps=681 q=-1.0 size= 1066496kB time=00:24:06.97 bitrate=6037.9kbits/s speed=27.2x    
+2023-07-06T08:52:12.873Z frame=36512 fps=680 q=-1.0 size= 1077504kB time=00:24:20.56 bitrate=6043.5kbits/s speed=27.2x    
+2023-07-06T08:52:12.873Z frame=36801 fps=679 q=-1.0 size= 1085440kB time=00:24:32.08 bitrate=6040.4kbits/s speed=27.2x    
+2023-07-06T08:52:12.873Z frame=37076 fps=678 q=-1.0 size= 1092608kB time=00:24:43.02 bitrate=6035.4kbits/s speed=27.1x    
+2023-07-06T08:52:12.873Z frame=37331 fps=677 q=-1.0 size= 1101312kB time=00:24:53.39 bitrate=6041.2kbits/s speed=27.1x    
+2023-07-06T08:52:12.873Z frame=37637 fps=676 q=-1.0 size= 1108736kB time=00:25:05.68 bitrate=6032.3kbits/s speed=  27x    
+2023-07-06T08:52:12.873Z frame=37943 fps=676 q=-1.0 size= 1119232kB time=00:25:17.90 bitrate=6040.4kbits/s speed=  27x    
+2023-07-06T08:52:12.873Z frame=38213 fps=674 q=-1.0 size= 1128192kB time=00:25:28.70 bitrate=6045.7kbits/s speed=  27x    
+2023-07-06T08:52:12.873Z frame=38589 fps=675 q=-1.0 size= 1139456kB time=00:25:43.55 bitrate=6047.4kbits/s speed=  27x    
+2023-07-06T08:52:12.873Z frame=38905 fps=674 q=-1.0 size= 1147904kB time=00:25:56.35 bitrate=6042.1kbits/s speed=  27x    
+2023-07-06T08:52:12.873Z frame=39275 fps=675 q=-1.0 size= 1159680kB time=00:26:11.13 bitrate=6046.6kbits/s speed=  27x    
+2023-07-06T08:52:12.873Z frame=39618 fps=675 q=-1.0 size= 1168384kB time=00:26:24.78 bitrate=6039.5kbits/s speed=  27x    
+2023-07-06T08:52:12.873Z frame=39982 fps=675 q=-1.0 size= 1178624kB time=00:26:39.31 bitrate=6037.1kbits/s speed=  27x    
+2023-07-06T08:52:12.873Z frame=40355 fps=676 q=-1.0 size= 1191168kB time=00:26:54.33 bitrate=6044.6kbits/s speed=  27x    
+2023-07-06T08:52:12.873Z frame=40551 fps=674 q=-1.0 size= 1195776kB time=00:27:02.16 bitrate=6038.7kbits/s speed=26.9x    
+2023-07-06T08:52:12.873Z frame=40717 fps=671 q=-1.0 size= 1201152kB time=00:27:08.94 bitrate=6040.6kbits/s speed=26.8x    
+2023-07-06T08:52:12.873Z frame=41117 fps=672 q=-1.0 size= 1208576kB time=00:27:24.94 bitrate=6018.8kbits/s speed=26.9x    
+2023-07-06T08:52:12.873Z frame=41443 fps=672 q=-1.0 size= 1224448kB time=00:27:37.79 bitrate=6050.6kbits/s speed=26.9x    
+2023-07-06T08:52:12.873Z frame=41785 fps=672 q=-1.0 size= 1230336kB time=00:27:51.63 bitrate=6029.4kbits/s speed=26.9x    
+2023-07-06T08:52:12.873Z frame=42239 fps=674 q=-1.0 size= 1246720kB time=00:28:09.55 bitrate=6044.9kbits/s speed=26.9x    
+2023-07-06T08:52:12.873Z frame=42667 fps=675 q=-1.0 size= 1259776kB time=00:28:26.83 bitrate=6046.3kbits/s speed=  27x    
+2023-07-06T08:52:12.873Z frame=43128 fps=677 q=-1.0 size= 1272832kB time=00:28:45.20 bitrate=6043.9kbits/s speed=27.1x    
+2023-07-06T08:52:12.873Z frame=43504 fps=678 q=-1.0 size= 1283584kB time=00:29:00.18 bitrate=6042.5kbits/s speed=27.1x    
+2023-07-06T08:52:12.873Z frame=43895 fps=678 q=-1.0 size= 1296384kB time=00:29:15.77 bitrate=6048.6kbits/s speed=27.1x    
+2023-07-06T08:52:12.873Z frame=44313 fps=680 q=-1.0 size= 1303808kB time=00:29:32.54 bitrate=6025.7kbits/s speed=27.2x    
+2023-07-06T08:52:12.873Z frame=44701 fps=680 q=-1.0 size= 1320192kB time=00:29:48.18 bitrate=6048.1kbits/s speed=27.2x    
+2023-07-06T08:52:12.873Z frame=45067 fps=681 q=-1.0 size= 1331712kB time=00:30:02.83 bitrate=6051.2kbits/s speed=27.2x    
+2023-07-06T08:52:12.873Z frame=45367 fps=680 q=-1.0 size= 1339136kB time=00:30:14.78 bitrate=6044.9kbits/s speed=27.2x    
+2023-07-06T08:52:12.873Z frame=45751 fps=681 q=-1.0 size= 1350912kB time=00:30:30.20 bitrate=6046.7kbits/s speed=27.2x    
+2023-07-06T08:52:12.873Z frame=46080 fps=680 q=-1.0 size= 1358080kB time=00:30:43.47 bitrate=6035.0kbits/s speed=27.2x    
+2023-07-06T08:52:12.873Z frame=46418 fps=680 q=-1.0 size= 1372672kB time=00:30:56.78 bitrate=6056.1kbits/s speed=27.2x    
+2023-07-06T08:52:12.873Z frame=46957 fps=683 q=-1.0 size= 1389312kB time=00:31:18.29 bitrate=6059.4kbits/s speed=27.3x    
+2023-07-06T08:52:12.873Z frame=47470 fps=686 q=-1.0 size= 1402112kB time=00:31:38.77 bitrate=6049.2kbits/s speed=27.4x    
+2023-07-06T08:52:12.873Z frame=47783 fps=685 q=-1.0 size= 1411840kB time=00:31:51.31 bitrate=6051.2kbits/s speed=27.4x    
+2023-07-06T08:52:12.873Z frame=48101 fps=685 q=-1.0 size= 1420800kB time=00:32:04.05 bitrate=6049.3kbits/s speed=27.4x    
+2023-07-06T08:52:12.873Z frame=48387 fps=684 q=-1.0 size= 1428224kB time=00:32:15.70 bitrate=6044.3kbits/s speed=27.4x    
+2023-07-06T08:52:12.873Z frame=48681 fps=683 q=-1.0 size= 1439744kB time=00:32:27.45 bitrate=6056.3kbits/s speed=27.3x    
+2023-07-06T08:52:12.873Z frame=49077 fps=684 q=-1.0 size= 1451264kB time=00:32:43.22 bitrate=6055.7kbits/s speed=27.4x    
+2023-07-06T08:52:12.873Z frame=49525 fps=686 q=-1.0 size= 1464832kB time=00:33:01.14 bitrate=6057.1kbits/s speed=27.4x    
+2023-07-06T08:52:12.873Z frame=49882 fps=686 q=-1.0 size= 1468928kB time=00:33:15.45 bitrate=6030.4kbits/s speed=27.4x    
+2023-07-06T08:52:12.873Z frame=50367 fps=688 q=-1.0 size= 1486592kB time=00:33:34.78 bitrate=6044.4kbits/s speed=27.5x    
+2023-07-06T08:52:12.873Z frame=50682 fps=687 q=-1.0 size= 1496576kB time=00:33:47.47 bitrate=6046.9kbits/s speed=27.5x    
+2023-07-06T08:52:12.873Z frame=51155 fps=689 q=-1.0 size= 1510656kB time=00:34:06.35 bitrate=6047.5kbits/s speed=27.6x    
+2023-07-06T08:52:12.873Z frame=51636 fps=691 q=-1.0 size= 1525248kB time=00:34:25.66 bitrate=6048.8kbits/s speed=27.6x    
+2023-07-06T08:52:12.873Z frame=52101 fps=692 q=-1.0 size= 1537280kB time=00:34:44.16 bitrate=6042.4kbits/s speed=27.7x    
+2023-07-06T08:52:12.873Z frame=52374 fps=691 q=-1.0 size= 1547264kB time=00:34:55.12 bitrate=6049.8kbits/s speed=27.7x    
+2023-07-06T08:52:12.873Z frame=52651 fps=691 q=-1.0 size= 1555712kB time=00:35:06.00 bitrate=6051.5kbits/s speed=27.6x    
+2023-07-06T08:52:12.873Z frame=53051 fps=691 q=-1.0 size= 1567744kB time=00:35:22.13 bitrate=6051.9kbits/s speed=27.7x    
+2023-07-06T08:52:12.873Z frame=53451 fps=692 q=-1.0 size= 1575680kB time=00:35:38.06 bitrate=6037.2kbits/s speed=27.7x    
+2023-07-06T08:52:12.873Z frame=53779 fps=692 q=-1.0 size= 1584640kB time=00:35:51.23 bitrate=6034.4kbits/s speed=27.7x    
+2023-07-06T08:52:12.873Z frame=54157 fps=692 q=-1.0 size= 1601280kB time=00:36:06.29 bitrate=6055.4kbits/s speed=27.7x    
+2023-07-06T08:52:12.873Z frame=54530 fps=692 q=-1.0 size= 1612032kB time=00:36:21.44 bitrate=6053.7kbits/s speed=27.7x    
+2023-07-06T08:52:12.873Z frame=54768 fps=691 q=-1.0 size= 1617664kB time=00:36:30.84 bitrate=6048.8kbits/s speed=27.6x    
+2023-07-06T08:52:12.873Z frame=55001 fps=690 q=-1.0 size= 1625344kB time=00:36:40.02 bitrate=6052.1kbits/s speed=27.6x    
+2023-07-06T08:52:12.873Z frame=55251 fps=688 q=-1.0 size= 1631232kB time=00:36:50.19 bitrate=6046.1kbits/s speed=27.5x    
+2023-07-06T08:52:12.873Z frame=55562 fps=688 q=-1.0 size= 1641216kB time=00:37:02.67 bitrate=6048.9kbits/s speed=27.5x    
+2023-07-06T08:52:12.873Z frame=55855 fps=687 q=-1.0 size= 1651456kB time=00:37:14.32 bitrate=6055.0kbits/s speed=27.5x    
+2023-07-06T08:52:12.873Z frame=56232 fps=688 q=-1.0 size= 1662976kB time=00:37:29.34 bitrate=6056.5kbits/s speed=27.5x    
+2023-07-06T08:52:12.873Z frame=56695 fps=689 q=-1.0 size= 1674496kB time=00:37:47.84 bitrate=6048.7kbits/s speed=27.6x    
+2023-07-06T08:52:12.873Z frame=57043 fps=689 q=-1.0 size= 1684480kB time=00:38:01.81 bitrate=6047.5kbits/s speed=27.6x    
+2023-07-06T08:52:12.873Z frame=57383 fps=689 q=-1.0 size= 1696768kB time=00:38:15.38 bitrate=6055.6kbits/s speed=27.6x    
+2023-07-06T08:52:12.873Z frame=57743 fps=689 q=-1.0 size= 1701120kB time=00:38:29.90 bitrate=6033.0kbits/s speed=27.6x    
+2023-07-06T08:52:12.873Z frame=57982 fps=688 q=-1.0 size= 1713920kB time=00:38:39.44 bitrate=6053.4kbits/s speed=27.5x    
+2023-07-06T08:52:12.873Z frame=58220 fps=687 q=-1.0 size= 1721600kB time=00:38:48.89 bitrate=6055.8kbits/s speed=27.5x    
+2023-07-06T08:52:12.873Z frame=58564 fps=687 q=-1.0 size= 1729792kB time=00:39:02.72 bitrate=6048.7kbits/s speed=27.5x    
+2023-07-06T08:52:12.873Z frame=58913 fps=687 q=-1.0 size= 1742848kB time=00:39:16.62 bitrate=6058.4kbits/s speed=27.5x    
+2023-07-06T08:52:12.873Z frame=59242 fps=687 q=-1.0 size= 1751040kB time=00:39:29.94 bitrate=6052.7kbits/s speed=27.5x    
+2023-07-06T08:52:12.873Z frame=59511 fps=686 q=-1.0 size= 1756672kB time=00:39:40.69 bitrate=6044.7kbits/s speed=27.4x    
+2023-07-06T08:52:12.873Z frame=59913 fps=687 q=-1.0 size= 1770240kB time=00:39:56.54 bitrate=6051.1kbits/s speed=27.5x    
+2023-07-06T08:52:12.873Z frame=60151 fps=685 q=-1.0 size= 1775616kB time=00:40:06.10 bitrate=6045.4kbits/s speed=27.4x    
+2023-07-06T08:52:12.873Z frame=60404 fps=684 q=-1.0 size= 1785344kB time=00:40:16.44 bitrate=6052.5kbits/s speed=27.4x    
+2023-07-06T08:52:12.873Z frame=60586 fps=683 q=-1.0 size= 1788928kB time=00:40:23.57 bitrate=6046.8kbits/s speed=27.3x    
+2023-07-06T08:52:12.873Z frame=60998 fps=683 q=-1.0 size= 1800704kB time=00:40:39.93 bitrate=6045.8kbits/s speed=27.3x    
+2023-07-06T08:52:12.873Z frame=61337 fps=683 q=-1.0 size= 1812992kB time=00:40:53.56 bitrate=6053.2kbits/s speed=27.3x    
+2023-07-06T08:52:12.873Z frame=61682 fps=683 q=-1.0 size= 1822720kB time=00:41:07.47 bitrate=6051.4kbits/s speed=27.3x    
+2023-07-06T08:52:12.873Z frame=62089 fps=684 q=-1.0 size= 1833984kB time=00:41:23.66 bitrate=6049.1kbits/s speed=27.4x    
+2023-07-06T08:52:12.873Z frame=62340 fps=683 q=-1.0 size= 1840640kB time=00:41:33.76 bitrate=6046.5kbits/s speed=27.3x    
+2023-07-06T08:52:12.873Z frame=62776 fps=684 q=-1.0 size= 1852416kB time=00:41:51.23 bitrate=6042.8kbits/s speed=27.4x    
+2023-07-06T08:52:12.873Z frame=63174 fps=685 q=-1.0 size= 1864192kB time=00:42:07.23 bitrate=6042.8kbits/s speed=27.4x    
+2023-07-06T08:52:12.873Z frame=63477 fps=684 q=-1.0 size= 1875712kB time=00:42:19.22 bitrate=6051.4kbits/s speed=27.4x    
+2023-07-06T08:52:12.873Z frame=63739 fps=683 q=-1.0 size= 1883392kB time=00:42:29.71 bitrate=6051.2kbits/s speed=27.3x    
+2023-07-06T08:52:12.873Z frame=64045 fps=683 q=-1.0 size= 1892352kB time=00:42:41.87 bitrate=6051.1kbits/s speed=27.3x    
+2023-07-06T08:52:12.873Z frame=64348 fps=683 q=-1.0 size= 1901312kB time=00:42:53.95 bitrate=6051.2kbits/s speed=27.3x    
+2023-07-06T08:52:12.873Z frame=64655 fps=682 q=-1.0 size= 1909504kB time=00:43:06.30 bitrate=6048.3kbits/s speed=27.3x    
+2023-07-06T08:52:12.873Z frame=64989 fps=682 q=-1.0 size= 1918976kB time=00:43:19.63 bitrate=6047.1kbits/s speed=27.3x    
+2023-07-06T08:52:12.873Z frame=65282 fps=682 q=-1.0 size= 1929472kB time=00:43:31.34 bitrate=6052.9kbits/s speed=27.3x    
+2023-07-06T08:52:12.873Z frame=65663 fps=682 q=-1.0 size= 1938432kB time=00:43:46.56 bitrate=6045.8kbits/s speed=27.3x    
+2023-07-06T08:52:12.873Z frame=65951 fps=681 q=-1.0 size= 1948416kB time=00:43:58.16 bitrate=6050.2kbits/s speed=27.3x    
+2023-07-06T08:52:12.873Z frame=66130 fps=680 q=-1.0 size= 1954304kB time=00:44:05.39 bitrate=6051.9kbits/s speed=27.2x    
+2023-07-06T08:52:12.873Z frame=66405 fps=679 q=-1.0 size= 1961984kB time=00:44:16.27 bitrate=6050.8kbits/s speed=27.2x    
+2023-07-06T08:52:12.873Z frame=66628 fps=678 q=-1.0 size= 1967104kB time=00:44:25.21 bitrate=6046.2kbits/s speed=27.1x    
+2023-07-06T08:52:12.873Z frame=66863 fps=677 q=-1.0 size= 1974016kB time=00:44:34.70 bitrate=6045.9kbits/s speed=27.1x    
+2023-07-06T08:52:12.873Z frame=67067 fps=675 q=-1.0 size= 1980672kB time=00:44:42.90 bitrate=6047.8kbits/s speed=  27x    
+2023-07-06T08:52:12.873Z frame=67425 fps=676 q=-1.0 size= 1991680kB time=00:44:57.21 bitrate=6049.1kbits/s speed=  27x    
+2023-07-06T08:52:12.873Z frame=67807 fps=676 q=-1.0 size= 2005760kB time=00:45:12.44 bitrate=6057.7kbits/s speed=  27x    
+2023-07-06T08:52:12.873Z frame=68223 fps=677 q=-1.0 size= 2016000kB time=00:45:29.04 bitrate=6051.6kbits/s speed=27.1x    
+2023-07-06T08:52:12.873Z frame=68595 fps=677 q=-1.0 size= 2027008kB time=00:45:43.80 bitrate=6051.9kbits/s speed=27.1x    
+2023-07-06T08:52:12.873Z frame=69089 fps=679 q=-1.0 size= 2041856kB time=00:46:03.60 bitrate=6052.6kbits/s speed=27.1x    
+2023-07-06T08:52:12.873Z frame=69451 fps=679 q=-1.0 size= 2052864kB time=00:46:18.00 bitrate=6053.6kbits/s speed=27.2x    
+2023-07-06T08:52:12.873Z frame=69819 fps=679 q=-1.0 size= 2064640kB time=00:46:32.91 bitrate=6055.9kbits/s speed=27.2x    
+2023-07-06T08:52:12.873Z frame=70223 fps=680 q=-1.0 size= 2074368kB time=00:46:49.02 bitrate=6049.5kbits/s speed=27.2x    
+2023-07-06T08:52:12.873Z frame=70581 fps=680 q=-1.0 size= 2087168kB time=00:47:03.36 bitrate=6055.9kbits/s speed=27.2x    
+2023-07-06T08:52:12.873Z frame=71101 fps=682 q=-1.0 size= 2101760kB time=00:47:23.98 bitrate=6054.0kbits/s speed=27.3x    
+2023-07-06T08:52:12.873Z frame=71545 fps=683 q=-1.0 size= 2115584kB time=00:47:41.78 bitrate=6056.0kbits/s speed=27.3x    
+2023-07-06T08:52:12.873Z frame=71838 fps=682 q=-1.0 size= 2124544kB time=00:47:53.68 bitrate=6056.4kbits/s speed=27.3x    
+2023-07-06T08:52:12.873Z frame=72213 fps=683 q=-1.0 size= 2132480kB time=00:48:08.64 bitrate=6047.6kbits/s speed=27.3x    
+2023-07-06T08:52:12.873Z frame=72613 fps=683 q=-1.0 size= 2146304kB time=00:48:24.64 bitrate=6053.3kbits/s speed=27.3x    
+2023-07-06T08:52:12.873Z frame=73069 fps=684 q=-1.0 size= 2157824kB time=00:48:42.83 bitrate=6047.9kbits/s speed=27.4x    
+2023-07-06T08:52:12.873Z frame=73489 fps=685 q=-1.0 size= 2172672kB time=00:48:59.73 bitrate=6054.5kbits/s speed=27.4x    
+2023-07-06T08:52:12.873Z frame=73736 fps=684 q=-1.0 size= 2180864kB time=00:49:09.58 bitrate=6057.0kbits/s speed=27.4x    
+2023-07-06T08:52:12.873Z frame=74138 fps=685 q=-1.0 size= 2191360kB time=00:49:25.58 bitrate=6053.3kbits/s speed=27.4x    
+2023-07-06T08:52:12.873Z frame=74518 fps=685 q=-1.0 size= 2204672kB time=00:49:40.94 bitrate=6058.7kbits/s speed=27.4x    
+2023-07-06T08:52:12.873Z frame=75009 fps=686 q=-1.0 size= 2216960kB time=00:50:00.44 bitrate=6052.9kbits/s speed=27.5x    
+2023-07-06T08:52:12.873Z frame=75475 fps=687 q=-1.0 size= 2230016kB time=00:50:19.22 bitrate=6050.7kbits/s speed=27.5x    
+2023-07-06T08:52:12.873Z frame=75794 fps=687 q=-1.0 size= 2241024kB time=00:50:31.76 bitrate=6055.4kbits/s speed=27.5x    
+2023-07-06T08:52:12.873Z frame=76086 fps=687 q=-1.0 size= 2248448kB time=00:50:43.66 bitrate=6051.7kbits/s speed=27.5x    
+2023-07-06T08:52:12.873Z frame=76351 fps=686 q=-1.0 size= 2253568kB time=00:50:54.20 bitrate=6044.5kbits/s speed=27.4x    
+2023-07-06T08:52:12.873Z frame=76706 fps=686 q=-1.0 size= 2266624kB time=00:51:08.24 bitrate=6051.7kbits/s speed=27.4x    
+2023-07-06T08:52:12.873Z frame=77126 fps=687 q=-1.0 size= 2273792kB time=00:51:25.01 bitrate=6037.9kbits/s speed=27.5x    
+2023-07-06T08:52:12.873Z frame=77551 fps=687 q=-1.0 size= 2292736kB time=00:51:42.01 bitrate=6054.8kbits/s speed=27.5x    
+2023-07-06T08:52:12.873Z frame=77983 fps=688 q=-1.0 size= 2303488kB time=00:51:59.44 bitrate=6049.2kbits/s speed=27.5x    
+2023-07-06T08:52:12.873Z frame=78486 fps=690 q=-1.0 size= 2319104kB time=00:52:19.54 bitrate=6051.2kbits/s speed=27.6x    
+2023-07-06T08:52:12.873Z frame=78938 fps=691 q=-1.0 size= 2331392kB time=00:52:37.65 bitrate=6048.4kbits/s speed=27.6x    
+2023-07-06T08:52:12.873Z frame=79407 fps=692 q=-1.0 size= 2341120kB time=00:52:56.40 bitrate=6037.8kbits/s speed=27.7x    
+2023-07-06T08:52:12.873Z frame=79901 fps=693 q=-1.0 size= 2355456kB time=00:53:16.18 bitrate=6037.2kbits/s speed=27.7x    
+2023-07-06T08:52:12.873Z frame=80439 fps=695 q=-1.0 size= 2370048kB time=00:53:37.72 bitrate=6033.9kbits/s speed=27.8x    
+2023-07-06T08:52:12.873Z frame=80976 fps=696 q=-1.0 size= 2386176kB time=00:53:59.04 bitrate=6035.0kbits/s speed=27.8x    
+2023-07-06T08:52:12.873Z frame=81301 fps=696 q=-1.0 size= 2395648kB time=00:54:12.16 bitrate=6034.5kbits/s speed=27.8x    
+2023-07-06T08:52:12.873Z frame=81725 fps=697 q=-1.0 size= 2414336kB time=00:54:29.01 bitrate=6050.2kbits/s speed=27.9x    
+2023-07-06T08:52:12.873Z frame=82068 fps=697 q=-1.0 size= 2424832kB time=00:54:42.96 bitrate=6050.7kbits/s speed=27.9x    
+2023-07-06T08:52:12.873Z frame=82344 fps=696 q=-1.0 size= 2432000kB time=00:54:53.90 bitrate=6048.4kbits/s speed=27.8x    
+2023-07-06T08:52:12.873Z frame=82600 fps=695 q=-1.0 size= 2439680kB time=00:55:03.93 bitrate=6049.1kbits/s speed=27.8x    
+2023-07-06T08:52:12.873Z frame=82989 fps=695 q=-1.0 size= 2451456kB time=00:55:19.74 bitrate=6049.4kbits/s speed=27.8x    
+2023-07-06T08:52:12.873Z frame=83323 fps=695 q=-1.0 size= 2461952kB time=00:55:33.01 bitrate=6051.1kbits/s speed=27.8x    
+2023-07-06T08:52:12.873Z frame=83695 fps=696 q=-1.0 size= 2473728kB time=00:55:47.86 bitrate=6053.1kbits/s speed=27.8x    
+2023-07-06T08:52:12.873Z frame=84025 fps=695 q=-1.0 size= 2484736kB time=00:56:01.04 bitrate=6056.1kbits/s speed=27.8x    
+2023-07-06T08:52:12.873Z frame=84369 fps=695 q=-1.0 size= 2491648kB time=00:56:14.86 bitrate=6048.1kbits/s speed=27.8x    
+2023-07-06T08:52:12.873Z frame=84631 fps=695 q=-1.0 size= 2502144kB time=00:56:25.47 bitrate=6054.6kbits/s speed=27.8x    
+2023-07-06T08:52:12.873Z frame=85001 fps=695 q=-1.0 size= 2511360kB time=00:56:40.14 bitrate=6050.6kbits/s speed=27.8x    
+2023-07-06T08:52:12.873Z frame=85351 fps=695 q=-1.0 size= 2523392kB time=00:56:54.10 bitrate=6054.8kbits/s speed=27.8x    
+2023-07-06T08:52:12.873Z frame=85662 fps=695 q=-1.0 size= 2532608kB time=00:57:06.64 bitrate=6054.6kbits/s speed=27.8x    
+2023-07-06T08:52:12.873Z frame=85996 fps=694 q=-1.0 size= 2542592kB time=00:57:19.93 bitrate=6055.0kbits/s speed=27.8x    
+2023-07-06T08:52:12.873Z frame=86289 fps=694 q=-1.0 size= 2551296kB time=00:57:31.73 bitrate=6055.0kbits/s speed=27.8x    
+2023-07-06T08:52:12.873Z frame=86596 fps=694 q=-1.0 size= 2559232kB time=00:57:43.89 bitrate=6052.5kbits/s speed=27.7x    
+2023-07-06T08:52:12.873Z frame=86924 fps=694 q=-1.0 size= 2569984kB time=00:57:57.20 bitrate=6054.7kbits/s speed=27.7x    
+2023-07-06T08:52:12.873Z frame=87231 fps=693 q=-1.0 size= 2580480kB time=00:58:09.36 bitrate=6058.2kbits/s speed=27.7x    
+2023-07-06T08:52:12.873Z av_interleaved_write_frame(): No space left on device
+2023-07-06T08:52:12.873Z [out#0/matroska @ 0x560bfea5fc40] Error muxing a packet
+2023-07-06T08:52:12.873Z 
+2023-07-06T08:52:12.873Z [out#0/matroska @ 0x560bfea5fc40] Error writing trailer: No space left on device
+2023-07-06T08:52:12.873Z frame=87594 fps=694 q=-1.0 Lsize= 2583296kB time=00:58:24.02 bitrate=6039.5kbits/s speed=27.7x    
+2023-07-06T08:52:12.873Z video:2534538kB audio:55747kB subtitle:43kB other streams:0kB global headers:0kB muxing overhead: unknown
+2023-07-06T08:52:12.873Z 
+2023-07-06T08:52:12.873Z [aac @ 0x560bfea58740] Qavg: 658.021
+2023-07-06T08:52:12.873Z 
+2023-07-06T08:52:12.873Z Conversion failed!
+2023-07-06T08:52:12.873Z 
+2023-07-06T08:52:12.873Z 
+2023-07-06T08:52:12.874Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[-error-]
+2023-07-06T08:52:12.874Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[Step W07] [C1] Worker [-error-]
+2023-07-06T08:52:12.875Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Error encountered when processing /media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 WEBDL-720p.mkv
+2023-07-06T08:52:12.875Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[1/2] Trying to delete errored cache file /temp/Top Gear - S22E02 - Episode 2 WEBDL-720p-TdarrCacheFile-1QpTehfuH.mkv
+2023-07-06T08:52:12.878Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Subworker exited null
+2023-07-06T08:52:14.896Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[2/2] Delete success
+2023-07-06T08:52:14.897Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:pluginCycleLogJSONString:{"nodeName":"MyInternalNode","workerID":"musty-mutt","pluginCycle":1,"outcome":"error","workerLog":"\nPre-processing - Tdarr_Plugin_MC93_MigzImageRemoval\n☑File doesn't contain any unwanted image format streams.\n\nPre-processing - Tdarr_Plugin_lmg1_Reorder_Streams\nFile has video in first stream\n File meets conditions!\n\nPre-processing - Tdarr_Plugin_00td_action_standardise_audio_stream_codecs\nFile has audio streams which aren't in aac \n","lastCliCommand":"tdarr-ffmpeg -i \"/media/tvshows/Top Gear/Season 22/Top Gear - S22E02 - Episode 2 WEBDL-720p.mkv\" -map 0:v -map 0:a -map 0:s? -map 0:d? -c copy -c:a:0 aac \"/temp/Top Gear - S22E02 - Episode 2 WEBDL-720p-TdarrCacheFile-1QpTehfuH.mkv\""}
+2023-07-06T08:52:14.898Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Updating transcode stats
+2023-07-06T08:52:14.898Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[Step W09] [-error-] Job end
+2023-07-06T08:52:14.898Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Transcoding error encountered. Check sections above.
+2023-07-06T08:52:14.898Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:[Step W10] Worker processing end
+2023-07-06T08:52:14.899Z II42_UENG1_:Node[MyInternalNode]:Worker[musty-mutt]:Successfully updated server with verdict: transcodeError

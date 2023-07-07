@@ -1,0 +1,321 @@
+/videos/22c2e494-3c59-16fd-4472-e6a41f11f470/hls1/main/0.ts
+
+{"Protocol":0,"Id":"22c2e4943c5916fd4472e6a41f11f470","Path":"/data/tvshows/Top Gear/Season 22/Top Gear - S22E04 - Episode 4 WEBDL-720p.mkv","EncoderPath":null,"EncoderProtocol":null,"Type":0,"Container":"mkv,webm","Size":2811516160,"Name":"Top Gear - S22E04 - Episode 4 WEBDL-720p","IsRemote":false,"ETag":"9d682387ae1c9db606daab459553d553","RunTimeTicks":37516689408,"ReadAtNativeFramerate":false,"IgnoreDts":false,"IgnoreIndex":false,"GenPtsInput":false,"SupportsTranscoding":true,"SupportsDirectStream":true,"SupportsDirectPlay":true,"IsInfiniteStream":false,"RequiresOpening":false,"OpenToken":null,"RequiresClosing":false,"LiveStreamId":null,"BufferMs":null,"RequiresLooping":false,"SupportsProbing":true,"VideoType":0,"IsoType":null,"Video3DFormat":null,"MediaStreams":[{"Codec":"h264","CodecTag":null,"Language":"eng","ColorRange":null,"ColorSpace":"bt709","ColorTransfer":"bt709","ColorPrimaries":"bt709","DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/1000","CodecTimeBase":null,"Title":null,"VideoRange":"SDR","VideoRangeType":"SDR","VideoDoViTitle":null,"LocalizedUndefined":null,"LocalizedDefault":null,"LocalizedForced":null,"LocalizedExternal":null,"DisplayTitle":"720p H264 SDR","NalLengthSize":"4","IsInterlaced":false,"IsAVC":true,"ChannelLayout":null,"BitRate":5995232,"BitDepth":8,"RefFrames":1,"PacketLength":null,"Channels":null,"SampleRate":null,"IsDefault":true,"IsForced":false,"Height":720,"Width":1280,"AverageFrameRate":25,"RealFrameRate":25,"Profile":"High","Type":1,"AspectRatio":"16:9","Index":0,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Path":null,"PixelFormat":"yuv420p","Level":31,"IsAnamorphic":null},{"Codec":"aac","CodecTag":null,"Language":"eng","ColorRange":null,"ColorSpace":null,"ColorTransfer":null,"ColorPrimaries":null,"DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/1000","CodecTimeBase":null,"Title":"English","VideoRange":null,"VideoRangeType":null,"VideoDoViTitle":null,"LocalizedUndefined":null,"LocalizedDefault":null,"LocalizedForced":null,"LocalizedExternal":null,"DisplayTitle":"English - AAC - Stereo - Default","NalLengthSize":null,"IsInterlaced":false,"IsAVC":null,"ChannelLayout":"stereo","BitRate":224000,"BitDepth":null,"RefFrames":null,"PacketLength":null,"Channels":2,"SampleRate":48000,"IsDefault":true,"IsForced":false,"Height":null,"Width":null,"AverageFrameRate":null,"RealFrameRate":null,"Profile":"LC","Type":0,"AspectRatio":null,"Index":1,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Path":null,"PixelFormat":null,"Level":0,"IsAnamorphic":null},{"Codec":"subrip","CodecTag":null,"Language":"eng","ColorRange":null,"ColorSpace":null,"ColorTransfer":null,"ColorPrimaries":null,"DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/1000","CodecTimeBase":null,"Title":"English (SDH)","VideoRange":null,"VideoRangeType":null,"VideoDoViTitle":null,"LocalizedUndefined":"Undefined","LocalizedDefault":"Default","LocalizedForced":"Forced","LocalizedExternal":"External","DisplayTitle":"English (SDH) - SUBRIP","NalLengthSize":null,"IsInterlaced":false,"IsAVC":null,"ChannelLayout":null,"BitRate":null,"BitDepth":null,"RefFrames":null,"PacketLength":null,"Channels":null,"SampleRate":null,"IsDefault":false,"IsForced":false,"Height":null,"Width":null,"AverageFrameRate":null,"RealFrameRate":null,"Profile":null,"Type":2,"AspectRatio":null,"Index":2,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":true,"SupportsExternalStream":true,"Path":null,"PixelFormat":null,"Level":0,"IsAnamorphic":null}],"MediaAttachments":[],"Formats":[],"Bitrate":6219232,"Timestamp":null,"RequiredHttpHeaders":{},"TranscodingUrl":null,"TranscodingSubProtocol":null,"TranscodingContainer":null,"AnalyzeDurationMs":null,"DefaultAudioStreamIndex":null,"DefaultSubtitleStreamIndex":null}
+
+/usr/lib/jellyfin-ffmpeg/ffmpeg -analyzeduration 200M -fflags +genpts -f matroska,webm  -i file:"/data/tvshows/Top Gear/Season 22/Top Gear - S22E04 - Episode 4 WEBDL-720p.mkv" -map_metadata -1 -map_chapters -1 -threads 0 -map 0:0 -map 0:1 -map -0:s -codec:v:0 copy -bsf:v h264_mp4toannexb -start_at_zero -codec:a:0 copy -copyts -avoid_negative_ts disabled -max_muxing_queue_size 2048 -f hls -max_delay 5000000 -hls_time 6 -hls_segment_type mpegts -start_number 0 -hls_segment_filename "/data/transcodes/779e145855a97767322a2075029552e8%d.ts" -hls_playlist_type vod -hls_list_size 0 -y "/data/transcodes/779e145855a97767322a2075029552e8.m3u8"
+
+
+ffmpeg version 5.1.3-Jellyfin Copyright (c) 2000-2022 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.3.0-1ubuntu1~22.04.1)
+  configuration: --prefix=/usr/lib/jellyfin-ffmpeg --target-os=linux --extra-libs=-lfftw3f --extra-version=Jellyfin --disable-doc --disable-ffplay --disable-ptx-compression --disable-static --disable-libxcb --disable-sdl2 --disable-xlib --enable-lto --enable-gpl --enable-version3 --enable-shared --enable-gmp --enable-gnutls --enable-chromaprint --enable-libdrm --enable-libass --enable-libfreetype --enable-libfribidi --enable-libfontconfig --enable-libbluray --enable-libmp3lame --enable-libopus --enable-libtheora --enable-libvorbis --enable-libopenmpt --enable-libdav1d --enable-libwebp --enable-libvpx --enable-libx264 --enable-libx265 --enable-libzvbi --enable-libzimg --enable-libfdk-aac --arch=amd64 --enable-libsvtav1 --enable-libshaderc --enable-libplacebo --enable-vulkan --enable-opencl --enable-vaapi --enable-amf --enable-libmfx --enable-ffnvcodec --enable-cuda --enable-cuda-llvm --enable-cuvid --enable-nvdec --enable-nvenc
+  libavutil      57. 28.100 / 57. 28.100
+  libavcodec     59. 37.100 / 59. 37.100
+  libavformat    59. 27.100 / 59. 27.100
+  libavdevice    59.  7.100 / 59.  7.100
+  libavfilter     8. 44.100 /  8. 44.100
+  libswscale      6.  7.100 /  6.  7.100
+  libswresample   4.  7.100 /  4.  7.100
+  libpostproc    56.  6.100 / 56.  6.100
+Input #0, matroska,webm, from 'file:/data/tvshows/Top Gear/Season 22/Top Gear - S22E04 - Episode 4 WEBDL-720p.mkv':
+  Metadata:
+    ENCODER         : Lavf60.3.100
+  Duration: 01:02:31.67, start: -0.021000, bitrate: 5995 kb/s
+  Stream #0:0(eng): Video: h264 (High), yuv420p(tv, bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], 25 fps, 25 tbr, 1k tbn (default)
+    Metadata:
+      BPS-eng         : 5861208
+      DURATION-eng    : 01:02:31.600000000
+      NUMBER_OF_FRAMES-eng: 93790
+      NUMBER_OF_BYTES-eng: 2748613510
+      _STATISTICS_WRITING_APP-eng: mkvmerge v51.0.0 ('I Wish') 64-bit
+      _STATISTICS_WRITING_DATE_UTC-eng: 2020-12-30 10:31:06
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+      DURATION        : 01:02:31.600000000
+  Stream #0:1(eng): Audio: aac (LC), 48000 Hz, stereo, fltp (default)
+    Metadata:
+      title           : English
+      BPS-eng         : 224000
+      DURATION-eng    : 01:02:31.648000000
+      NUMBER_OF_FRAMES-eng: 117239
+      NUMBER_OF_BYTES-eng: 105046144
+      _STATISTICS_WRITING_APP-eng: mkvmerge v51.0.0 ('I Wish') 64-bit
+      _STATISTICS_WRITING_DATE_UTC-eng: 2020-12-30 10:31:06
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+      ENCODER         : Lavc60.3.100 aac
+      DURATION        : 01:02:31.669000000
+  Stream #0:2(eng): Subtitle: subrip
+    Metadata:
+      title           : English (SDH)
+      BPS-eng         : 99
+      DURATION-eng    : 01:01:52.167000000
+      NUMBER_OF_FRAMES-eng: 1214
+      NUMBER_OF_BYTES-eng: 46028
+      _STATISTICS_WRITING_APP-eng: mkvmerge v51.0.0 ('I Wish') 64-bit
+      _STATISTICS_WRITING_DATE_UTC-eng: 2020-12-30 10:31:06
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+      DURATION        : 01:01:59.267000000
+Output #0, hls, to '/data/transcodes/779e145855a97767322a2075029552e8.m3u8':
+  Metadata:
+    encoder         : Lavf59.27.100
+  Stream #0:0: Video: h264 (High), yuv420p(tv, bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 25 fps, 25 tbr, 90k tbn (default)
+  Stream #0:1: Audio: aac (LC), 48000 Hz, stereo, fltp (default)
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #0:1 -> #0:1 (copy)
+Press [q] to stop, [?] for help
+frame=    1 fps=0.0 q=-1.0 size=N/A time=00:00:00.00 bitrate=N/A speed=   0x    
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e80.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e81.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e82.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e83.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e84.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e85.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e86.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e87.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e88.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e89.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e810.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e811.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e812.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e813.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e814.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e815.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e816.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e817.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e818.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e819.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e820.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e821.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e822.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e823.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e824.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e825.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e826.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e827.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e828.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e829.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e830.ts' for writing
+frame= 4651 fps=0.0 q=-1.0 size=N/A time=-00:00:00.01 bitrate=N/A speed=N/A    
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e831.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e832.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e833.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e834.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e835.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e836.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e837.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e838.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e839.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e840.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e841.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e842.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e843.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e844.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e845.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e846.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e847.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e848.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e849.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e850.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e851.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e852.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e853.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e854.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e855.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e856.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e857.ts' for writing
+frame= 8820 fps=8818 q=-1.0 size=N/A time=00:02:46.74 bitrate=N/A speed= 167x    
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e858.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e859.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e860.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e861.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e862.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e863.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e864.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e865.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e866.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e867.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e868.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e869.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e870.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e871.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e872.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e873.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e874.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e875.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e876.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e877.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e878.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e879.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e880.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e881.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e882.ts' for writing
+frame=12451 fps=8275 q=-1.0 size=N/A time=00:05:12.00 bitrate=N/A speed= 207x    
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e883.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e884.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e885.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e886.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e887.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e888.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e889.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e890.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e891.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e892.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e893.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e894.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e895.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e896.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e897.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e898.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e899.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8100.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8101.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8102.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8103.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8104.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8105.ts' for writing
+frame=15901 fps=7902 q=-1.0 size=N/A time=00:07:30.00 bitrate=N/A speed= 224x    
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8106.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8107.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8108.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8109.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8110.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8111.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8112.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8113.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8114.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8115.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8116.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8117.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8118.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8119.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8120.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8121.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8122.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8123.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8124.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8125.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8126.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8127.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8128.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8129.ts' for writing
+frame=19513 fps=7767 q=-1.0 size=N/A time=00:09:54.49 bitrate=N/A speed= 237x    
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8130.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8131.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8132.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8133.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8134.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8135.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8136.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8137.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8138.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8139.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8140.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8141.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8142.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8143.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8144.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8145.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8146.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8147.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8148.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8149.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8150.ts' for writing
+frame=22651 fps=7518 q=-1.0 size=N/A time=00:12:00.00 bitrate=N/A speed= 239x    
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8151.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8152.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8153.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8154.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8155.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8156.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8157.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8158.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8159.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8160.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8161.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8162.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8163.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8164.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8165.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8166.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8167.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8168.ts' for writing
+frame=25351 fps=7216 q=-1.0 size=N/A time=00:13:48.01 bitrate=N/A speed= 236x    
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8169.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8170.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8171.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8172.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8173.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8174.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8175.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8176.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8177.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8178.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8179.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8180.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8181.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8182.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8183.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8184.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8185.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8186.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8187.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8188.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8189.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8190.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8191.ts' for writing
+frame=28801 fps=7165 q=-1.0 size=N/A time=00:16:06.01 bitrate=N/A speed= 240x    
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8192.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8193.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8194.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8195.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8196.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8197.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8198.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8199.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8200.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8201.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8202.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8203.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8204.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8205.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8206.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8207.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8208.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8209.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8210.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8211.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8212.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8213.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8214.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8215.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8216.ts' for writing
+frame=32638 fps=7221 q=-1.0 size=N/A time=00:18:39.49 bitrate=N/A speed= 248x    
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8217.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8218.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8219.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8220.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8221.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8222.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8223.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8224.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8225.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8226.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8227.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8228.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8229.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8230.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8231.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8232.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8233.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8234.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8235.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8236.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8237.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8238.ts' for writing
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8239.ts' for writing
+
+
+[q] command received. Exiting.
+
+[hls @ 0x55dd02d7db00] Opening '/data/transcodes/779e145855a97767322a2075029552e8240.ts' for writing
+frame=36095 fps=7250 q=-1.0 Lsize=N/A time=00:20:57.75 bitrate=N/A speed= 253x    
+video:1024076kB audio:22851kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown

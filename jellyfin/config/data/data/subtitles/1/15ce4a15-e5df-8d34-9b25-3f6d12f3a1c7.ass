@@ -1,0 +1,291 @@
+[Script Info]
+Title: HorribleSubs
+ScriptType: v4.00+
+WrapStyle: 0
+PlayResX: 848
+PlayResY: 480
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Baar Sophia,32,&H00FFFFFF,&H00FFFFFF,&H00020203,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,40,40,35,1
+Style: Default - Margin,Baar Sophia,32,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,0,2,0040,0040,0008,0
+Style: Default - italics,Baar Sophia,32,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,1,0,0,100,100,0,0,1,2,0,2,0040,0040,0018,0
+Style: Title,Baar Sophia,34,&H00000000,&H000000FF,&H00FCFFFC,&H00000000,1,0,0,0,100,100,0,0,1,2,0,8,0001,0001,0018,0
+Style: SignA,Baar Sophia,28,&H00FFFFFF,&H000000FF,&H00342F53,&H00000000,1,0,0,0,100,100,0,0,1,2,0,7,0030,0040,0086,0
+Style: SignB,Baar Sophia,28,&H00FFFFFF,&H000000FF,&H00342F53,&H00000000,1,0,0,0,100,100,0,0,1,2,0,9,0030,0030,0018,0
+Style: SignC,Baar Sophia,32,&H0029C1DF,&H000000FF,&H00032B44,&H00000000,1,0,0,0,100,100,0,0,1,2,0,9,0040,0080,0018,0
+Style: SignD,Baar Sophia,28,&H00FFFFFF,&H000000FF,&H00342F53,&H00000000,1,0,0,0,100,100,0,0,1,2,0,1,0030,0040,0015,0
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:07.72,0:00:09.48,Default,A,0000,0000,0000,,What do we do, Zaikahal?
+Dialogue: 0,0:01:36.99,0:01:42.03,Title,EpTitle,0000,0000,0000,,Evil x and x Terrible
+Dialogue: 0,0:01:47.36,0:01:49.24,Default,N,0000,0000,0000,,His name is Gyro.
+Dialogue: 0,0:01:49.24,0:01:52.04,Default,N,0000,0000,0000,,And he is the NGL's don in the shadows.
+Dialogue: 0,0:01:55.60,0:01:59.15,Default,N,0000,0000,0000,,Gyro spent his first twelve years
+Dialogue: 0,0:01:59.15,0:02:01.30,Default,,0000,0000,0000,,in a construction camp.
+Dialogue: 0,0:02:02.22,0:02:03.95,Default,N,0000,0000,0000,,By the time he said his first word,
+Dialogue: 0,0:02:03.95,0:02:08.80,Default,,0000,0000,0000,,he'd learned to lay bricks and mix concrete.
+Dialogue: 0,0:02:09.48,0:02:14.02,Default,N,0000,0000,0000,,His father forced him to slave away...
+Dialogue: 0,0:02:14.02,0:02:16.42,Default,N,0000,0000,0000,,until Gyro finally killed him and fled.
+Dialogue: 0,0:02:19.99,0:02:24.33,Default,N,0000,0000,0000,,His father, who raised Gyro \Nalone, was a silent man.
+Dialogue: 0,0:02:26.45,0:02:29.01,Default,N,0000,0000,0000,,When his father returned from work,
+Dialogue: 0,0:02:29.01,0:02:31.58,Default,,0000,0000,0000,,he drank cheap liquor by himself \Nuntil he went to bed.
+Dialogue: 0,0:02:32.08,0:02:37.74,Default,N,0000,0000,0000,,He very rarely talked to Gyro, \Nwho was on the upper bunk.
+Dialogue: 0,0:02:39.19,0:02:41.32,Default,N,0000,0000,0000,,Thus, Gyro barely knew
+Dialogue: 0,0:02:41.32,0:02:45.17,Default,,0000,0000,0000,,how to speak before the age of seven.
+Dialogue: 0,0:02:47.36,0:02:50.28,Default,N,0000,0000,0000,,When Gyro returned from work,
+Dialogue: 0,0:02:50.28,0:02:52.78,Default,,0000,0000,0000,,he was not permitted to leave his bed,
+Dialogue: 0,0:02:52.78,0:02:55.70,Default,,0000,0000,0000,,except when visiting the restroom.
+Dialogue: 0,0:02:56.65,0:03:01.81,Default,N,0000,0000,0000,,He was allowed to relieve himself twice \Na day, and only before 9 PM.
+Dialogue: 0,0:03:03.06,0:03:08.43,Default,N,0000,0000,0000,,The bed's rotting wood creaked loudly \Nwhenever he turned in his sleep.
+Dialogue: 0,0:03:08.88,0:03:11.42,Default,N,0000,0000,0000,,His father hated that sound.
+Dialogue: 0,0:03:14.35,0:03:19.54,Default,N,0000,0000,0000,,After his father once severely \Nbeat him because of that noise,
+Dialogue: 0,0:03:20.11,0:03:24.09,Default,N,0000,0000,0000,,Gyro learned to sleep without any motion.
+Dialogue: 0,0:03:25.60,0:03:30.72,Default,N,0000,0000,0000,,He also learned to control his bladder at night,
+Dialogue: 0,0:03:30.72,0:03:35.11,Default,N,0000,0000,0000,,keeping an empty liquor bottle \Nfor when he couldn't hold it.
+Dialogue: 0,0:03:36.92,0:03:39.80,Default,N,0000,0000,0000,,"Don't make trouble for others."
+Dialogue: 0,0:03:40.63,0:03:46.62,Default,N,0000,0000,0000,,That was the one lesson his \Nsilent father taught him.
+Dialogue: 0,0:03:47.87,0:03:52.43,Default,N,0000,0000,0000,,From a young age, Gyro did \Nhis best to adhere to it,
+Dialogue: 0,0:03:52.43,0:03:55.24,Default,,0000,0000,0000,,learning from his mistakes.
+Dialogue: 0,0:03:56.40,0:04:00.04,Default,N,0000,0000,0000,,Since his father had never \Nbought him even one toy,
+Dialogue: 0,0:04:00.65,0:04:05.14,Default,N,0000,0000,0000,,this lesson was his one and \Nonly gift from his father.
+Dialogue: 0,0:04:06.36,0:04:11.75,Default,N,0000,0000,0000,,Within his small world, \Nhis father was essentially God.
+Dialogue: 0,0:04:12.38,0:04:16.19,Default,N,0000,0000,0000,,And no matter how cruel his father could be,
+Dialogue: 0,0:04:16.70,0:04:19.42,Default,,0000,0000,0000,,Gyro continued to idolize him,
+Dialogue: 0,0:04:19.42,0:04:23.30,Default,N,0000,0000,0000,,believing that his father needed him.
+Dialogue: 0,0:04:23.93,0:04:26.16,Default,N,0000,0000,0000,,This belief stemmed from two facts...
+Dialogue: 0,0:04:27.23,0:04:29.66,Default,N,0000,0000,0000,,When Gyro was five,
+Dialogue: 0,0:04:29.66,0:04:32.25,Default,N,0000,0000,0000,,a terrible fever nearly killed him.
+Dialogue: 0,0:04:32.90,0:04:37.61,Default,N,0000,0000,0000,,All night, his father stayed up, \Nreplacing his towels with fresh ones.
+Dialogue: 0,0:04:40.08,0:04:41.67,Default,N,0000,0000,0000,,And the other reason was...
+Dialogue: 0,0:04:42.67,0:04:48.28,Default,N,0000,0000,0000,,that his father had never \Nonce ordered him to leave.
+Dialogue: 0,0:04:49.54,0:04:53.50,Default,N,0000,0000,0000,,Gyro was proud of these two facts.
+Dialogue: 0,0:04:54.69,0:04:56.54,Default,A,0000,0000,0000,,"Idiot...
+Dialogue: 0,0:04:56.54,0:05:00.94,Default,A,0000,0000,0000,,He hasn't kicked you out \Nbecause you bring in money!"
+Dialogue: 0,0:05:02.15,0:05:06.73,Default,N,0000,0000,0000,,Though he had previously kept that \Npossibility locked away deep in his mind,
+Dialogue: 0,0:05:07.33,0:05:12.79,Default,N,0000,0000,0000,,Gyro snapped when the older youth \Ninsensitively brought it to light.
+Dialogue: 0,0:05:13.52,0:05:19.57,Default,N,0000,0000,0000,,Regretting that he'd revealed his secret, \NGyro was furious with himself.
+Dialogue: 0,0:05:20.24,0:05:25.80,Default,N,0000,0000,0000,,His pride wounded, rage overcame \Nhim, and he attacked the youth.
+Dialogue: 0,0:05:27.21,0:05:30.83,Default,N,0000,0000,0000,,The youth had always mocked the timid boy,
+Dialogue: 0,0:05:30.83,0:05:34.52,Default,N,0000,0000,0000,,so when the boy fought back, \Nhe went mad with anger,
+Dialogue: 0,0:05:34.52,0:05:39.27,Default,N,0000,0000,0000,,to the point where not even \Nknocking him out would satisfy him.
+Dialogue: 0,0:05:40.32,0:05:43.28,Default,N,0000,0000,0000,,He stomped on the boy's face,
+Dialogue: 0,0:05:43.61,0:05:47.28,Default,N,0000,0000,0000,,spat on him, and uttered the finishing blow:
+Dialogue: 0,0:05:47.65,0:05:52.53,Default,A,0000,0000,0000,,"When you were sick, a neighbor took care of you!
+Dialogue: 0,0:05:52.93,0:05:57.41,Default,A,0000,0000,0000,,Your old man was drinking by himself as always.
+Dialogue: 0,0:05:59.30,0:06:02.37,Default,A,0000,0000,0000,,You were delirious, so you wouldn't know this.
+Dialogue: 0,0:06:03.10,0:06:06.96,Default,A,0000,0000,0000,,But that night, the neighbor had \Na fight with your old man.
+Dialogue: 0,0:06:07.58,0:06:11.00,Default,A,0000,0000,0000,,He asked your dad what he'd do if his kid died.
+Dialogue: 0,0:06:11.67,0:06:15.83,Default,A,0000,0000,0000,,Let me tell you what your old man said.
+Dialogue: 0,0:06:16.88,0:06:18.30,Default - italics,Dad,0000,0000,0000,,It wouldn't matter.
+Dialogue: 0,0:06:18.30,0:06:20.81,Default - italics,Dad,0000,0000,0000,,I don't care if he dies.
+Dialogue: 0,0:06:21.22,0:06:22.48,Default,A,0000,0000,0000,,You hear that?"
+Dialogue: 0,0:06:24.28,0:06:26.67,Default,N,0000,0000,0000,,As Gyro listened to the youth,
+Dialogue: 0,0:06:27.32,0:06:29.82,Default,N,0000,0000,0000,,he witnessed something inconceivable.
+Dialogue: 0,0:06:39.40,0:06:42.90,Default,N,0000,0000,0000,,His father looked him in the eye,
+Dialogue: 0,0:06:42.90,0:06:47.37,Default,N,0000,0000,0000,,paid him no attention, and then left.
+Dialogue: 0,0:06:48.81,0:06:52.18,Default,N,0000,0000,0000,,That was when Gyro finally understood.
+Dialogue: 0,0:06:54.97,0:06:58.41,Default - italics,N,0000,0000,0000,,The universe doesn't give a damn about me.
+Dialogue: 0,0:06:59.67,0:07:04.82,Default - italics,N,0000,0000,0000,,My father doesn't care if I live or die.
+Dialogue: 0,0:07:04.82,0:07:07.85,Default - italics,N,0000,0000,0000,,In other words, my life has no meaning.
+Dialogue: 0,0:07:09.86,0:07:12.38,Default - italics,N,0000,0000,0000,,If I live, I'll bring in money.
+Dialogue: 0,0:07:12.38,0:07:16.87,Default - italics,N,0000,0000,0000,,If I die, I'll just free up a little space. That's all.
+Dialogue: 0,0:07:17.44,0:07:23.88,Default - italics,N,0000,0000,0000,,My father told me not to \Nmake trouble for others
+Dialogue: 0,0:07:23.88,0:07:27.91,Default - italics,N,0000,0000,0000,,so as to avoid any inconvenience for himself.
+Dialogue: 0,0:07:28.35,0:07:32.09,Default - italics,N,0000,0000,0000,,It was never a lesson to help his son.
+Dialogue: 0,0:07:32.09,0:07:35.08,Default - italics,N,0000,0000,0000,,It was fully for his own benefit.
+Dialogue: 0,0:07:36.29,0:07:39.50,Default - italics,N,0000,0000,0000,,In that lesson, "others" meant my father.
+Dialogue: 0,0:07:39.50,0:07:40.40,Default - italics,N,0000,0000,0000,,No...
+Dialogue: 0,0:07:41.49,0:07:44.28,Default - italics,N,0000,0000,0000,,It meant "humans."
+Dialogue: 0,0:07:48.88,0:07:51.40,Default - italics,N,0000,0000,0000,,Don't make trouble for humans.
+Dialogue: 0,0:07:53.54,0:07:56.39,Default - italics,N,0000,0000,0000,,I must not be human...
+Dialogue: 0,0:07:59.00,0:08:01.80,Default,N,0000,0000,0000,,Eventually, the boy stood up,
+Dialogue: 0,0:08:01.80,0:08:05.05,Default,N,0000,0000,0000,,grabbing a nearby hammer.
+Dialogue: 0,0:08:13.30,0:08:17.02,Default,N,0000,0000,0000,,Nine years later, Gyro founded the NGL.
+Dialogue: 0,0:08:17.50,0:08:22.67,Default,N,0000,0000,0000,,Nine years after that, NGL became \Na nation, with him as its king.
+Dialogue: 0,0:08:24.84,0:08:29.02,Default,N,0000,0000,0000,,Gyro desired to ruin life for the entire world.
+Dialogue: 0,0:08:29.74,0:08:36.02,Default,N,0000,0000,0000,,The drug D² was merely the first step.
+Dialogue: 0,0:08:48.87,0:08:49.93,Default,A,0000,0000,0000,,Yunju!
+Dialogue: 0,0:08:50.62,0:08:54.22,Default,A,0000,0000,0000,,You handed those humans over to Colt so easily.
+Dialogue: 0,0:08:55.60,0:08:57.30,Default,Yun,0000,0000,0000,,I didn't feel like fighting.
+Dialogue: 0,0:08:57.86,0:09:00.47,Default,Yun,0000,0000,0000,,Either way, the food will reach the Queen.
+Dialogue: 0,0:09:01.19,0:09:03.56,Default,Yun,0000,0000,0000,,I just want to enjoy the hunt.
+Dialogue: 0,0:09:06.46,0:09:07.56,Default - italics,Yun,0000,0000,0000,,Gyro...
+Dialogue: 0,0:09:08.40,0:09:11.65,Default - italics,Yun,0000,0000,0000,,Damn, I should have just eaten him!
+Dialogue: 0,0:09:13.07,0:09:14.20,Default,Yun,0000,0000,0000,,Listen up!
+Dialogue: 0,0:09:14.20,0:09:16.07,Default,Yun,0000,0000,0000,,I'm taking over this factory!
+Dialogue: 0,0:09:16.70,0:09:19.31,Default,Yun,0000,0000,0000,,From today on, this is my fortress!
+Dialogue: 0,0:09:36.91,0:09:39.26,Default,Gyo,0000,0000,0000,,This is awesome!
+Dialogue: 0,0:09:55.89,0:09:57.04,Default - italics,Pokkle,0000,0000,0000,,This is bad.
+Dialogue: 0,0:09:57.04,0:09:59.71,Default - italics,Pokkle,0000,0000,0000,,These creatures are too dangerous!
+Dialogue: 0,0:10:00.03,0:10:00.77,Default,Ponzu,0000,0000,0000,,Look!
+Dialogue: 0,0:10:10.32,0:10:11.56,Default,Pokkle,0000,0000,0000,,What...
+Dialogue: 0,0:10:15.09,0:10:19.18,Default,Pokkle,0000,0000,0000,,What is happening in this place?
+Dialogue: 0,0:10:32.39,0:10:35.11,Default,Colt,0000,0000,0000,,What? More dead soldiers found?
+Dialogue: 0,0:10:35.49,0:10:38.86,Default,Chee,0000,0000,0000,,Yeah, three of Zazan's were discovered.
+Dialogue: 0,0:10:39.41,0:10:42.37,Default,Chee,0000,0000,0000,,Plus, one of mine is missing...
+Dialogue: 0,0:10:42.37,0:10:45.40,Default,Chee,0000,0000,0000,,Its communication has been cut \Noff, and it hasn't returned.
+Dialogue: 0,0:10:46.20,0:10:49.61,Default,Colt,0000,0000,0000,,Yunju's team dealt with the \Nhumans holding guns.
+Dialogue: 0,0:10:49.61,0:10:54.04,Default,Colt,0000,0000,0000,,Does this mean there are other \Nhumans who are resisting us?
+Dialogue: 0,0:10:54.38,0:10:56.58,Default,Chee,0000,0000,0000,,Sounds that way...
+Dialogue: 0,0:10:57.05,0:11:01.89,Default,Chee,0000,0000,0000,,But the dead soldiers were killed \Nby something that wasn't a gun.
+Dialogue: 0,0:11:02.24,0:11:03.21,Default,Colt,0000,0000,0000,,Something?
+Dialogue: 0,0:11:03.71,0:11:05.39,Default,Colt,0000,0000,0000,,What could it have been?
+Dialogue: 0,0:11:05.86,0:11:07.58,Default,Chee,0000,0000,0000,,How would I know?
+Dialogue: 0,0:11:07.58,0:11:10.39,Default,Chee,0000,0000,0000,,Probably some new weapon we haven't seen.
+Dialogue: 0,0:11:13.41,0:11:15.19,Default,Colt,0000,0000,0000,,Where are the corpses?
+Dialogue: 0,0:11:15.19,0:11:17.40,Default,Chee,0000,0000,0000,,Peggy's examining them above.
+Dialogue: 0,0:11:17.94,0:11:20.40,Default,Peg,0000,0000,0000,,This one was killed by a gun.
+Dialogue: 0,0:11:20.40,0:11:24.16,Default,Peg,0000,0000,0000,,I'm sure since bullets are still inside the body.
+Dialogue: 0,0:11:24.63,0:11:26.91,Default,Peg,0000,0000,0000,,But I'm not sure about the others.
+Dialogue: 0,0:11:28.08,0:11:30.43,Default,Colt,0000,0000,0000,,The skull was punctured.
+Dialogue: 0,0:11:30.43,0:11:32.92,Default,Peg,0000,0000,0000,,Yes, but not by a gun.
+Dialogue: 0,0:11:33.18,0:11:35.64,Default,Peg,0000,0000,0000,,And I had difficulty understanding
+Dialogue: 0,0:11:35.64,0:11:37.94,Default,,0000,0000,0000,,the soldiers' explanation of the events...
+Dialogue: 0,0:11:38.41,0:11:42.43,Default,Peg,0000,0000,0000,,As it is, the foot soldiers' communications \Nare simplistic and just to the point.
+Dialogue: 0,0:11:42.96,0:11:47.55,Default,Peg,0000,0000,0000,,They said one human mimicked firing \Na gun, and no projectile emerged,
+Dialogue: 0,0:11:47.55,0:11:50.93,Default,Peg,0000,0000,0000,,but something pierced the \Nsoldier's skulls and they fell, dead.
+Dialogue: 0,0:11:51.29,0:11:55.78,Default,Colt,0000,0000,0000,,Can't some soldiers both see \Nand feel what's happening?
+Dialogue: 0,0:11:55.78,0:11:57.38,Default,Peg,0000,0000,0000,,You're correct.
+Dialogue: 0,0:11:57.38,0:12:02.20,Default,Peg,0000,0000,0000,,Those soldiers said that they \Nfelt a projectile being fired.
+Dialogue: 0,0:12:04.71,0:12:07.65,Default,Peg,0000,0000,0000,,So they possess abilities that we do not...
+Dialogue: 0,0:12:08.17,0:12:11.08,Default,Peg,0000,0000,0000,,These humans could prove tougher \Nopponents than anticipated.
+Dialogue: 0,0:12:12.05,0:12:16.84,Default,Colt,0000,0000,0000,,If humans have this power, once we \Ninherit their genes, we also will.
+Dialogue: 0,0:12:17.19,0:12:18.55,Default,Colt,0000,0000,0000,,We only lack the trait.
+Dialogue: 0,0:12:19.84,0:12:21.84,Default,Peg,0000,0000,0000,,You don't understand...
+Dialogue: 0,0:12:21.84,0:12:25.34,Default,Peg,0000,0000,0000,,The humans' strength lies\Nin their ability to learn.
+Dialogue: 0,0:12:25.75,0:12:28.84,Default,Peg,0000,0000,0000,,If they learn that the Queen \Nis where we're vulnerable,
+Dialogue: 0,0:12:28.84,0:12:32.75,Default,,0000,0000,0000,,they'll do whatever it takes to kill her.
+Dialogue: 0,0:12:33.16,0:12:33.85,Default,,0000,0000,0000,,Hmm?
+Dialogue: 0,0:12:34.54,0:12:36.57,Default,Colt,0000,0000,0000,,You're the one who doesn't understand!
+Dialogue: 0,0:12:37.13,0:12:42.11,Default,Colt,0000,0000,0000,,That just means we need to do \Nwhatever it takes to keep her safe.
+Dialogue: 0,0:12:42.65,0:12:43.86,Default,Colt,0000,0000,0000,,Am I wrong?
+Dialogue: 0,0:12:46.31,0:12:48.87,Default,Peg,0000,0000,0000,,No, you're correct...
+Dialogue: 0,0:12:51.49,0:12:52.62,Default - italics,Colt,0000,0000,0000,,That's right.
+Dialogue: 0,0:12:53.21,0:12:54.73,Default - italics,Colt,0000,0000,0000,,I will protect her...
+Dialogue: 0,0:12:55.95,0:12:57.63,Default,Colt,0000,0000,0000,,I will protect Reina!
+Dialogue: 0,0:12:58.01,0:12:58.88,Default,Peg,0000,0000,0000,,Reina?
+Dialogue: 0,0:13:01.23,0:13:02.84,Default,Colt,0000,0000,0000,,Who's Reina?
+Dialogue: 0,0:13:02.84,0:13:05.52,Default,Peg,0000,0000,0000,,Uh, you're the one who said that name!
+Dialogue: 0,0:13:05.52,0:13:06.39,Default,Colt,0000,0000,0000,,I did?
+Dialogue: 0,0:13:06.84,0:13:08.78,Default,,0000,0000,0000,,I didn't say anything.
+Dialogue: 0,0:13:08.78,0:13:10.43,Default,Colt,0000,0000,0000,,You must be hearing things.
+Dialogue: 0,0:13:11.43,0:13:13.14,Default,Colt,0000,0000,0000,,Anyway,
+Dialogue: 0,0:13:13.14,0:13:16.96,Default,Colt,0000,0000,0000,,the problem is that humans \Npossess multiple weapons
+Dialogue: 0,0:13:16.96,0:13:19.18,Default,Colt,0000,0000,0000,,capable of defeating our foot soldiers.
+Dialogue: 0,0:13:21.07,0:13:22.15,Default,Peg,0000,0000,0000,,What should we do?
+Dialogue: 0,0:13:22.83,0:13:24.40,Default,Colt,0000,0000,0000,,Use their weapons against them.
+Dialogue: 0,0:13:25.21,0:13:29.16,Default,Colt,0000,0000,0000,,Give them a taste of their own medicine.
+Dialogue: 0,0:13:29.63,0:13:33.16,Default,Colt,0000,0000,0000,,Only soldiers of our rank have the capacity \Nto manipulate complex weaponry.
+Dialogue: 0,0:13:33.78,0:13:36.99,Default,Colt,0000,0000,0000,,But the humans don't know that.
+Dialogue: 0,0:13:37.43,0:13:39.60,Default,Colt,0000,0000,0000,,They must be very frightened.
+Dialogue: 0,0:13:40.07,0:13:41.17,Default,Peg,0000,0000,0000,,I understand...
+Dialogue: 0,0:13:43.60,0:13:47.68,Default,Peg,0000,0000,0000,,You're a better strategist than I am.
+Dialogue: 0,0:13:52.89,0:13:54.10,Default,Colt,0000,0000,0000,,Reina?
+Dialogue: 0,0:14:01.09,0:14:02.15,Default,Ponzu,0000,0000,0000,,It didn't work...
+Dialogue: 0,0:14:02.51,0:14:04.65,Default,Ponzu,0000,0000,0000,,No one received the message.
+Dialogue: 0,0:14:05.22,0:14:08.91,Default,Ponzu,0000,0000,0000,,That means all the other Hunters I was \Nin contact with have been taken out.
+Dialogue: 0,0:14:09.41,0:14:10.69,Default,Pokkle,0000,0000,0000,,Oh...
+Dialogue: 0,0:14:11.71,0:14:12.91,Default,Pokkle,0000,0000,0000,,We should leave.
+Dialogue: 0,0:14:14.26,0:14:17.41,Default,Pokkle,0000,0000,0000,,Those creatures are too much for us to handle.
+Dialogue: 0,0:14:17.80,0:14:21.67,Default,Pokkle,0000,0000,0000,,We need to leave NGL and tell \Nthe world what's happening...
+Dialogue: 0,0:14:22.35,0:14:24.22,Default,Pokkle,0000,0000,0000,,So that an extermination force can be formed.
+Dialogue: 0,0:14:24.22,0:14:27.18,Default,Pekuba,0000,0000,0000,,Whatever... Let's just run for it!
+Dialogue: 0,0:14:28.33,0:14:29.43,Default,Pekuba,0000,0000,0000,,Or we'll all be—
+Dialogue: 0,0:14:45.78,0:14:48.32,Default,Pekuba,0000,0000,0000,,I-It's here!
+Dialogue: 0,0:14:57.26,0:14:58.25,Default,Pokkle,0000,0000,0000,,Run!
+Dialogue: 0,0:14:58.25,0:14:59.93,Default,Pokkle,0000,0000,0000,,More will be coming!
+Dialogue: 0,0:14:59.93,0:15:01.23,Default,Pike,0000,0000,0000,,Hold on, now...
+Dialogue: 0,0:15:02.04,0:15:05.80,Default,Pike,0000,0000,0000,,I said to capture the humans alive.
+Dialogue: 0,0:15:06.29,0:15:09.51,Default,Pike,0000,0000,0000,,We're supposed to deliver \Nthem to the Queen fresh.
+Dialogue: 0,0:15:09.83,0:15:11.50,Default,Pokkle,0000,0000,0000,,A-A human face...
+Dialogue: 0,0:15:11.50,0:15:13.01,Default,Ponzu,0000,0000,0000,,What is that thing?!
+Dialogue: 0,0:15:13.33,0:15:14.15,Default,Balda,0000,0000,0000,,Fire...
+Dialogue: 0,0:15:14.15,0:15:15.76,Default,Balda,0000,0000,0000,,Open fire!
+Dialogue: 0,0:15:16.58,0:15:18.77,SignC,Caption,0000,0000,0000,,{\fad(211,185)}Orange Arrow
+Dialogue: 0,0:15:23.29,0:15:25.02,Default - italics,Pokkle,0000,0000,0000,,He grabbed my Orange Arrow,
+Dialogue: 0,0:15:25.02,0:15:27.86,Default - italics,,0000,0000,0000,,fastest of my Rainbow Arrows, with ease.
+Dialogue: 0,0:15:29.79,0:15:33.26,Default,Pike,0000,0000,0000,,Huh? This is clearly visible.
+Dialogue: 0,0:15:33.26,0:15:37.37,Default,Pike,0000,0000,0000,,The grunts couldn't see this?
+Dialogue: 0,0:15:37.94,0:15:40.39,Default,Pike,0000,0000,0000,,So the life energy
+Dialogue: 0,0:15:40.39,0:15:45.63,Default,Pike,0000,0000,0000,,that surrounds your body is \Nwhat fuels this weapon?
+Dialogue: 0,0:15:46.14,0:15:51.13,Default,Pike,0000,0000,0000,,You will make a magnificent \Nmeal for the Queen...
+Dialogue: 0,0:16:02.31,0:16:04.69,Default,Pokkle,0000,0000,0000,,Balda!
+Dialogue: 0,0:16:14.86,0:16:18.34,Default,Pike,0000,0000,0000,,O-Oh, no!
+Dialogue: 0,0:16:18.34,0:16:21.96,Default,Pike,0000,0000,0000,,I took a bite without thinking...
+Dialogue: 0,0:16:23.09,0:16:26.84,Default,Pike,0000,0000,0000,,Zazan-sama will be angry again!
+Dialogue: 0,0:16:27.25,0:16:28.55,Default,Pokkle,0000,0000,0000,,You bastard!
+Dialogue: 0,0:16:33.27,0:16:35.39,Default,Pike,0000,0000,0000,,O-One moment...
+Dialogue: 0,0:16:35.39,0:16:37.60,Default,Pike,0000,0000,0000,,My hands are full.
+Dialogue: 0,0:16:42.56,0:16:44.27,Default,Pokkle,0000,0000,0000,,Take this!
+Dialogue: 0,0:16:51.77,0:16:55.09,Default,Zazan,0000,0000,0000,,As always, you're a disgrace in battle.
+Dialogue: 0,0:16:55.09,0:16:56.28,Default,Pike,0000,0000,0000,,Zazan-sama...
+Dialogue: 0,0:16:56.83,0:16:59.45,Default,Zazan,0000,0000,0000,,Why don't you just drop what's in your hands?
+Dialogue: 0,0:16:59.79,0:17:00.87,Default,Pike,0000,0000,0000,,Oh!
+Dialogue: 0,0:17:00.87,0:17:02.13,Default,Pike,0000,0000,0000,,You're right.
+Dialogue: 0,0:17:02.50,0:17:03.80,Default,Zazan,0000,0000,0000,,We're going back.
+Dialogue: 0,0:17:03.80,0:17:04.46,Default,,0000,0000,0000,,Hmm?
+Dialogue: 0,0:17:04.88,0:17:07.96,Default,Zazan,0000,0000,0000,,Since we've obtained some excellent food.
+Dialogue: 0,0:17:08.72,0:17:13.68,Default,Zazan,0000,0000,0000,,He probably has the nutritional value \Nof a thousand normal humans.
+Dialogue: 0,0:17:15.06,0:17:17.09,Default,Zazan,0000,0000,0000,,Well done, Pike.
+Dialogue: 0,0:17:22.73,0:17:23.85,Default,Pike,0000,0000,0000,,Zazan-sama!
+Dialogue: 0,0:17:23.85,0:17:26.00,Default,Pike,0000,0000,0000,,I am most grateful for your praise...
+Dialogue: 0,0:17:26.00,0:17:28.47,Default,Pike,0000,0000,0000,,You honor me!
+Dialogue: 0,0:17:28.47,0:17:29.89,Default,Zazan,0000,0000,0000,,Don't forget the food.
+Dialogue: 0,0:17:30.74,0:17:31.99,Default,Pike,0000,0000,0000,,Oh, yes...
+Dialogue: 0,0:17:36.65,0:17:38.40,Default - italics,Ponzu,0000,0000,0000,,I can't save him myself...
+Dialogue: 0,0:17:38.40,0:17:39.72,Default - italics,Ponzu,0000,0000,0000,,I have to call for help!
+Dialogue: 0,0:17:44.23,0:17:46.35,Default - italics,Ponzu,0000,0000,0000,,There's still... There's still time!
+Dialogue: 0,0:17:46.35,0:17:49.91,Default - italics,Ponzu,0000,0000,0000,,Even if they take him, they \Nwon't eat him immediately...
+Dialogue: 0,0:18:01.30,0:18:02.18,Default - italics,Ponzu,0000,0000,0000,,Please...
+Dialogue: 0,0:18:02.75,0:18:06.04,Default - italics,Ponzu,0000,0000,0000,,Find a Hunter with a strong aura!
+Dialogue: 0,0:18:12.70,0:18:14.94,Default - italics,Ponzu,0000,0000,0000,,I must hurry back to the border!
+Dialogue: 0,0:18:15.65,0:18:17.07,Default - italics,Ponzu,0000,0000,0000,,Other Hunters should be there—
+Dialogue: 0,0:18:45.45,0:18:47.10,Default,Gyo,0000,0000,0000,,So much fun...
+Dialogue: 0,0:18:55.97,0:18:58.56,Default,Gyo,0000,0000,0000,,Hunting is so much fun!
+Dialogue: 0,0:19:02.74,0:19:04.74,SignA,Caption,0000,0000,0000,,Help!!
+Dialogue: 0,0:19:04.74,0:19:10.75,SignA,Caption,0000,0000,0000,,Help!!\N\NChimera Ant Nest
+Dialogue: 0,0:19:06.75,0:19:10.75,SignD,Caption,0000,0000,0000,,Rocky Area
+Dialogue: 0,0:19:08.75,0:19:10.75,SignB,Caption,0000,0000,0000,,Notify the Hunter Association!!
+Dialogue: 0,0:19:24.22,0:19:25.71,Default,Kite,0000,0000,0000,,It'll be dangerous.
+Dialogue: 0,0:19:27.86,0:19:29.52,Default,Kite,0000,0000,0000,,But could you accompany me?
+Dialogue: 0,0:19:29.52,0:19:30.61,Default,Gon,0000,0000,0000,,Of course.
+Dialogue: 0,0:19:31.07,0:19:32.62,Default,Kil,0000,0000,0000,,We're pros.
+Dialogue: 0,0:19:36.23,0:19:37.15,Default,Kite,0000,0000,0000,,Miss interpreter...
+Dialogue: 0,0:19:37.55,0:19:39.69,Default,Kite,0000,0000,0000,,Sorry, but we're in a hurry.
+Dialogue: 0,0:19:40.30,0:19:41.37,Default,A,0000,0000,0000,,Yes.
+Dialogue: 0,0:19:41.37,0:19:44.83,Default,A,0000,0000,0000,,The horses can move a bit faster.
+Dialogue: 0,0:19:45.59,0:19:47.52,Default,Kite,0000,0000,0000,,They won't be fast enough.
+Dialogue: 0,0:19:48.68,0:19:52.67,Default,,0000,0000,0000,,I want you two to return to \Nthe border, find the others,
+Dialogue: 0,0:19:52.67,0:19:54.67,Default,,0000,0000,0000,,and get word to the Association.
+Dialogue: 0,0:19:54.67,0:19:56.62,Default,Kite,0000,0000,0000,,These creatures are dangerous.
+Dialogue: 0,0:19:56.62,0:19:57.72,Default,Stick,0000,0000,0000,,Got it.
+Dialogue: 0,0:19:57.72,0:19:59.67,Default,Bodon,0000,0000,0000,,Be careful, Kite.
+Dialogue: 0,0:19:59.97,0:20:00.77,Default,Kite,0000,0000,0000,,Right.
+Dialogue: 0,0:20:02.21,0:20:04.18,Default,Kite,0000,0000,0000,,If you can't keep up, I'll leave you behind.
+Dialogue: 0,0:20:04.59,0:20:06.44,Default,Kil,0000,0000,0000,,Right back at you.
+Dialogue: 0,0:20:06.44,0:20:08.18,Default,Gon,0000,0000,0000,,All ready to go!
+Dialogue: 0,0:20:16.71,0:20:17.73,Default,Kite,0000,0000,0000,,Let's go.
+Dialogue: 0,0:20:49.61,0:20:52.10,Default,Kil,0000,0000,0000,,This is a bullet casing.
+Dialogue: 0,0:20:52.70,0:20:55.86,Default,Gon,0000,0000,0000,,Nothing mechanical is allowed here, right?
+Dialogue: 0,0:20:56.94,0:20:59.77,Default,Kite,0000,0000,0000,,So the underground rulers of NGL
+Dialogue: 0,0:21:00.30,0:21:03.26,Default,,0000,0000,0000,,were manufacturing guns in addition to drugs.
+Dialogue: 0,0:21:03.83,0:21:06.81,Default,Kil,0000,0000,0000,,But judging by this...
+Dialogue: 0,0:21:06.81,0:21:08.37,Default,Kite,0000,0000,0000,,It wasn't done by a human.
+Dialogue: 0,0:21:10.27,0:21:12.80,Default,Kite,0000,0000,0000,,Most likely, it was a Chimera Ant.
+Dialogue: 0,0:21:15.19,0:21:19.63,Default,Kite,0000,0000,0000,,If the Chimera Ants are using guns...
+Dialogue: 0,0:21:22.10,0:21:23.79,Default,Kite,0000,0000,0000,,I hate to consider the possibility,
+Dialogue: 0,0:21:24.29,0:21:26.50,Default,Kite,0000,0000,0000,,but it's possible that NGL's underground rulers
+Dialogue: 0,0:21:26.50,0:21:29.17,Default,,0000,0000,0000,,have already been fed to the queen...
+Dialogue: 0,0:21:31.34,0:21:36.06,Default,Kite,0000,0000,0000,,What will happen if Chimera Ants \Nare born with their genes?
+Dialogue: 0,0:21:38.99,0:21:41.49,Default,Kite,0000,0000,0000,,NGL and Chimera Ants...
+Dialogue: 0,0:21:41.89,0:21:44.92,Default,Kite,0000,0000,0000,,The worst combination imaginable.
+Dialogue: 0,0:21:46.30,0:21:49.17,Default,Kite,0000,0000,0000,,This could create an unprecedented biohazard.
+Dialogue: 0,0:21:52.49,0:21:57.84,Default,N,0000,0000,0000,,The situation has taken a sudden \Nturn for the absolute worst.
+Dialogue: 0,0:23:26.76,0:23:29.26,Default,Gon,0000,0000,0000,,Next time: The x Fight x Begins.
+Dialogue: 0,0:23:29.26,0:23:30.62,Default,Gon,0000,0000,0000,,Ready...
+Dialogue: 0,0:23:30.62,0:23:31.51,Default,Gon,0000,0000,0000,,Set...
+Dialogue: 0,0:23:31.51,0:23:32.55,Default,Gon,0000,0000,0000,,Gon!
+

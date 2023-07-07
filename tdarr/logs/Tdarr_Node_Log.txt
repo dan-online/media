@@ -1,0 +1,3863 @@
+[2023-06-22T10:34:28.259] [INFO] Tdarr_Node - /app/configs/Tdarr_Node_Config.json
+[2023-06-22T10:34:28.311] [INFO] Tdarr_Node - {
+  nodeName: 'MyInternalNode',
+  serverIP: '0.0.0.0',
+  serverPort: '8266',
+  handbrakePath: '',
+  ffmpegPath: '',
+  mkvpropeditPath: '',
+  pathTranslators: [ { server: '', node: '' } ],
+  logLevel: 'INFO',
+  priority: -1,
+  platform_arch_isdocker: 'linux_x64_docker_true',
+  processPid: 192,
+  nodeID: 'LBxeLjBNo'
+}
+[2023-06-22T10:34:29.072] [INFO] Tdarr_Node - version: 2.00.21
+[2023-06-22T10:34:29.074] [INFO] Tdarr_Node - platform_arch_isdocker: linux_x64_docker_true
+[2023-06-22T10:34:29.101] [INFO] Tdarr_Node - Starting Tdarr_Node
+[2023-06-22T10:34:29.102] [INFO] Tdarr_Node - Preparing environment
+[2023-06-22T10:34:30.531] [INFO] Tdarr_Node - Updating plugins
+[2023-06-22T10:34:31.687] [INFO] Tdarr_Node - ---------------Binary tests start----------------
+[2023-06-22T10:34:31.687] [INFO] Tdarr_Node - handbrakePath:HandBrakeCLI
+[2023-06-22T10:34:31.687] [INFO] Tdarr_Node - ffmpegPath:tdarr-ffmpeg
+[2023-06-22T10:34:31.688] [INFO] Tdarr_Node - mkvpropedit:mkvpropedit
+[2023-06-22T10:34:31.688] [INFO] Tdarr_Node - Binary test 1: handbrakePath working
+[2023-06-22T10:34:31.688] [INFO] Tdarr_Node - Binary test 2: ffmpegPath working
+[2023-06-22T10:34:31.688] [INFO] Tdarr_Node - Binary test 3: mkvpropeditPath working
+[2023-06-22T10:34:31.689] [INFO] Tdarr_Node - ---------------Binary tests end-------------------
+[2023-06-22T10:34:33.151] [INFO] Tdarr_Node - Cloning plugins
+[2023-06-22T10:34:33.194] [INFO] Tdarr_Node - Node connected & registered
+[2023-06-22T10:34:33.372] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-06-22T10:34:37.025] [INFO] Tdarr_Node - [3876ms]Plugin update finished
+[2023-06-22T10:36:00.286] [INFO] Tdarr_Node - /app/configs/Tdarr_Node_Config.json
+[2023-06-22T10:36:00.310] [INFO] Tdarr_Node - {
+  nodeName: 'MyInternalNode',
+  serverIP: '0.0.0.0',
+  serverPort: '8266',
+  handbrakePath: '',
+  ffmpegPath: '',
+  mkvpropeditPath: '',
+  pathTranslators: [ { server: '', node: '' } ],
+  logLevel: 'INFO',
+  priority: -1,
+  platform_arch_isdocker: 'linux_x64_docker_true',
+  processPid: 200,
+  nodeID: 'y3SxfCuWv'
+}
+[2023-06-22T10:36:00.658] [INFO] Tdarr_Node - version: 2.00.21
+[2023-06-22T10:36:00.665] [INFO] Tdarr_Node - platform_arch_isdocker: linux_x64_docker_true
+[2023-06-22T10:36:00.683] [INFO] Tdarr_Node - Starting Tdarr_Node
+[2023-06-22T10:36:00.683] [INFO] Tdarr_Node - Preparing environment
+[2023-06-22T10:36:01.953] [INFO] Tdarr_Node - Updating plugins
+[2023-06-22T10:36:02.194] [ERROR] Tdarr_Node - Node connection error to :0.0.0.0:8266
+[2023-06-22T10:36:02.209] [ERROR] Tdarr_Node - TransportError: xhr poll error
+    at Polling.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transport.js:45:37)
+    at Request.<anonymous> (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:251:18)
+    at Request.<anonymous> (/snapshot/node/node_modules/@socket.io/component-emitter/index.js:143:20)
+    at Request.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:352:14)
+    at Timeout._onTimeout (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:325:30)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  description: 0,
+  context: XMLHttpRequest {
+    UNSENT: 0,
+    OPENED: 1,
+    HEADERS_RECEIVED: 2,
+    LOADING: 3,
+    DONE: 4,
+    readyState: 4,
+    onreadystatechange: [Function (anonymous)],
+    responseText: 'Error: connect ECONNREFUSED 0.0.0.0:8266\n' +
+      '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)',
+    responseXML: '',
+    status: 0,
+    statusText: Error: connect ECONNREFUSED 0.0.0.0:8266
+        at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '0.0.0.0',
+      port: 8266
+    },
+    open: [Function (anonymous)],
+    setDisableHeaderCheck: [Function (anonymous)],
+    setRequestHeader: [Function (anonymous)],
+    getResponseHeader: [Function (anonymous)],
+    getAllResponseHeaders: [Function (anonymous)],
+    getRequestHeader: [Function (anonymous)],
+    send: [Function (anonymous)],
+    handleError: [Function (anonymous)],
+    abort: [Function (anonymous)],
+    addEventListener: [Function (anonymous)],
+    removeEventListener: [Function (anonymous)],
+    dispatchEvent: [Function (anonymous)]
+  },
+  type: 'TransportError'
+}
+[2023-06-22T10:36:02.552] [INFO] Tdarr_Node - ---------------Binary tests start----------------
+[2023-06-22T10:36:02.553] [INFO] Tdarr_Node - handbrakePath:HandBrakeCLI
+[2023-06-22T10:36:02.553] [INFO] Tdarr_Node - ffmpegPath:tdarr-ffmpeg
+[2023-06-22T10:36:02.553] [INFO] Tdarr_Node - mkvpropedit:mkvpropedit
+[2023-06-22T10:36:02.553] [INFO] Tdarr_Node - Binary test 1: handbrakePath working
+[2023-06-22T10:36:02.553] [INFO] Tdarr_Node - Binary test 2: ffmpegPath working
+[2023-06-22T10:36:02.554] [INFO] Tdarr_Node - Binary test 3: mkvpropeditPath working
+[2023-06-22T10:36:02.554] [INFO] Tdarr_Node - ---------------Binary tests end-------------------
+[2023-06-22T10:36:04.518] [INFO] Tdarr_Node - Cloning plugins
+[2023-06-22T10:36:04.547] [INFO] Tdarr_Node - Node connected & registered
+[2023-06-22T10:36:04.740] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-06-22T10:50:37.157] [INFO] Tdarr_Node - /app/configs/Tdarr_Node_Config.json
+[2023-06-22T10:50:37.178] [INFO] Tdarr_Node - {
+  nodeName: 'MyInternalNode',
+  serverIP: '0.0.0.0',
+  serverPort: '8266',
+  handbrakePath: '',
+  ffmpegPath: '',
+  mkvpropeditPath: '',
+  pathTranslators: [ { server: '', node: '' } ],
+  logLevel: 'INFO',
+  priority: -1,
+  platform_arch_isdocker: 'linux_x64_docker_true',
+  processPid: 199,
+  nodeID: 'PLE0g0dkb'
+}
+[2023-06-22T10:50:37.566] [INFO] Tdarr_Node - version: 2.00.21
+[2023-06-22T10:50:37.567] [INFO] Tdarr_Node - platform_arch_isdocker: linux_x64_docker_true
+[2023-06-22T10:50:37.578] [INFO] Tdarr_Node - Starting Tdarr_Node
+[2023-06-22T10:50:37.579] [INFO] Tdarr_Node - Preparing environment
+[2023-06-22T10:50:38.559] [INFO] Tdarr_Node - Updating plugins
+[2023-06-22T10:50:38.599] [ERROR] Tdarr_Node - Node connection error to :0.0.0.0:8266
+[2023-06-22T10:50:38.600] [ERROR] Tdarr_Node - TransportError: xhr poll error
+    at Polling.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transport.js:45:37)
+    at Request.<anonymous> (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:251:18)
+    at Request.<anonymous> (/snapshot/node/node_modules/@socket.io/component-emitter/index.js:143:20)
+    at Request.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:352:14)
+    at Timeout._onTimeout (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:325:30)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  description: 0,
+  context: XMLHttpRequest {
+    UNSENT: 0,
+    OPENED: 1,
+    HEADERS_RECEIVED: 2,
+    LOADING: 3,
+    DONE: 4,
+    readyState: 4,
+    onreadystatechange: [Function (anonymous)],
+    responseText: 'Error: connect ECONNREFUSED 0.0.0.0:8266\n' +
+      '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)',
+    responseXML: '',
+    status: 0,
+    statusText: Error: connect ECONNREFUSED 0.0.0.0:8266
+        at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '0.0.0.0',
+      port: 8266
+    },
+    open: [Function (anonymous)],
+    setDisableHeaderCheck: [Function (anonymous)],
+    setRequestHeader: [Function (anonymous)],
+    getResponseHeader: [Function (anonymous)],
+    getAllResponseHeaders: [Function (anonymous)],
+    getRequestHeader: [Function (anonymous)],
+    send: [Function (anonymous)],
+    handleError: [Function (anonymous)],
+    abort: [Function (anonymous)],
+    addEventListener: [Function (anonymous)],
+    removeEventListener: [Function (anonymous)],
+    dispatchEvent: [Function (anonymous)]
+  },
+  type: 'TransportError'
+}
+[2023-06-22T10:50:39.223] [INFO] Tdarr_Node - ---------------Binary tests start----------------
+[2023-06-22T10:50:39.223] [INFO] Tdarr_Node - handbrakePath:HandBrakeCLI
+[2023-06-22T10:50:39.228] [INFO] Tdarr_Node - ffmpegPath:tdarr-ffmpeg
+[2023-06-22T10:50:39.229] [INFO] Tdarr_Node - mkvpropedit:mkvpropedit
+[2023-06-22T10:50:39.229] [INFO] Tdarr_Node - Binary test 1: handbrakePath working
+[2023-06-22T10:50:39.229] [INFO] Tdarr_Node - Binary test 2: ffmpegPath working
+[2023-06-22T10:50:39.230] [INFO] Tdarr_Node - Binary test 3: mkvpropeditPath working
+[2023-06-22T10:50:39.230] [INFO] Tdarr_Node - ---------------Binary tests end-------------------
+[2023-06-22T10:50:39.779] [ERROR] Tdarr_Node - Node connection error to :0.0.0.0:8266
+[2023-06-22T10:50:39.779] [ERROR] Tdarr_Node - TransportError: xhr poll error
+    at Polling.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transport.js:45:37)
+    at Request.<anonymous> (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:251:18)
+    at Request.<anonymous> (/snapshot/node/node_modules/@socket.io/component-emitter/index.js:143:20)
+    at Request.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:352:14)
+    at Timeout._onTimeout (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:325:30)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  description: 0,
+  context: XMLHttpRequest {
+    UNSENT: 0,
+    OPENED: 1,
+    HEADERS_RECEIVED: 2,
+    LOADING: 3,
+    DONE: 4,
+    readyState: 4,
+    onreadystatechange: [Function (anonymous)],
+    responseText: 'Error: connect ECONNREFUSED 0.0.0.0:8266\n' +
+      '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)',
+    responseXML: '',
+    status: 0,
+    statusText: Error: connect ECONNREFUSED 0.0.0.0:8266
+        at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '0.0.0.0',
+      port: 8266
+    },
+    open: [Function (anonymous)],
+    setDisableHeaderCheck: [Function (anonymous)],
+    setRequestHeader: [Function (anonymous)],
+    getResponseHeader: [Function (anonymous)],
+    getAllResponseHeaders: [Function (anonymous)],
+    getRequestHeader: [Function (anonymous)],
+    send: [Function (anonymous)],
+    handleError: [Function (anonymous)],
+    abort: [Function (anonymous)],
+    addEventListener: [Function (anonymous)],
+    removeEventListener: [Function (anonymous)],
+    dispatchEvent: [Function (anonymous)]
+  },
+  type: 'TransportError'
+}
+[2023-06-22T10:50:40.111] [ERROR] Tdarr_Node - Failed to contact server, retrying...
+[2023-06-22T10:50:42.146] [INFO] Tdarr_Node - Cloning plugins
+[2023-06-22T10:50:42.347] [INFO] Tdarr_Node - Node connected & registered
+[2023-06-22T10:50:42.360] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-06-22T10:50:46.337] [INFO] Tdarr_Node - [4193ms]Plugin update finished
+[2023-07-05T14:06:40.584] [INFO] Tdarr_Node - /app/configs/Tdarr_Node_Config.json
+[2023-07-05T14:06:40.607] [INFO] Tdarr_Node - {
+  nodeName: 'MyInternalNode',
+  serverIP: '0.0.0.0',
+  serverPort: '8266',
+  handbrakePath: '',
+  ffmpegPath: '',
+  mkvpropeditPath: '',
+  pathTranslators: [ { server: '', node: '' } ],
+  logLevel: 'INFO',
+  priority: -1,
+  platform_arch_isdocker: 'linux_x64_docker_true',
+  processPid: 202,
+  nodeID: '4bz-5xGJu'
+}
+[2023-07-05T14:06:40.812] [INFO] Tdarr_Node - version: 2.00.21
+[2023-07-05T14:06:40.813] [INFO] Tdarr_Node - platform_arch_isdocker: linux_x64_docker_true
+[2023-07-05T14:06:40.816] [INFO] Tdarr_Node - Starting Tdarr_Node
+[2023-07-05T14:06:40.816] [INFO] Tdarr_Node - Preparing environment
+[2023-07-05T14:06:41.198] [INFO] Tdarr_Node - Updating plugins
+[2023-07-05T14:06:41.222] [ERROR] Tdarr_Node - Node connection error to :0.0.0.0:8266
+[2023-07-05T14:06:41.222] [ERROR] Tdarr_Node - TransportError: xhr poll error
+    at Polling.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transport.js:45:37)
+    at Request.<anonymous> (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:251:18)
+    at Request.<anonymous> (/snapshot/node/node_modules/@socket.io/component-emitter/index.js:143:20)
+    at Request.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:352:14)
+    at Timeout._onTimeout (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:325:30)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  description: 0,
+  context: XMLHttpRequest {
+    UNSENT: 0,
+    OPENED: 1,
+    HEADERS_RECEIVED: 2,
+    LOADING: 3,
+    DONE: 4,
+    readyState: 4,
+    onreadystatechange: [Function (anonymous)],
+    responseText: 'Error: connect ECONNREFUSED 0.0.0.0:8266\n' +
+      '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)',
+    responseXML: '',
+    status: 0,
+    statusText: Error: connect ECONNREFUSED 0.0.0.0:8266
+        at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '0.0.0.0',
+      port: 8266
+    },
+    open: [Function (anonymous)],
+    setDisableHeaderCheck: [Function (anonymous)],
+    setRequestHeader: [Function (anonymous)],
+    getResponseHeader: [Function (anonymous)],
+    getAllResponseHeaders: [Function (anonymous)],
+    getRequestHeader: [Function (anonymous)],
+    send: [Function (anonymous)],
+    handleError: [Function (anonymous)],
+    abort: [Function (anonymous)],
+    addEventListener: [Function (anonymous)],
+    removeEventListener: [Function (anonymous)],
+    dispatchEvent: [Function (anonymous)]
+  },
+  type: 'TransportError'
+}
+[2023-07-05T14:06:41.825] [INFO] Tdarr_Node - ---------------Binary tests start----------------
+[2023-07-05T14:06:41.825] [INFO] Tdarr_Node - handbrakePath:HandBrakeCLI
+[2023-07-05T14:06:41.825] [INFO] Tdarr_Node - ffmpegPath:tdarr-ffmpeg
+[2023-07-05T14:06:41.826] [INFO] Tdarr_Node - mkvpropedit:mkvpropedit
+[2023-07-05T14:06:41.826] [INFO] Tdarr_Node - Binary test 1: handbrakePath working
+[2023-07-05T14:06:41.826] [INFO] Tdarr_Node - Binary test 2: ffmpegPath working
+[2023-07-05T14:06:41.826] [INFO] Tdarr_Node - Binary test 3: mkvpropeditPath working
+[2023-07-05T14:06:41.827] [INFO] Tdarr_Node - ---------------Binary tests end-------------------
+[2023-07-05T14:06:43.085] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-05T14:06:43.175] [INFO] Tdarr_Node - Node connected & registered
+[2023-07-05T14:06:43.315] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-05T14:06:47.521] [INFO] Tdarr_Node - [4437ms]Plugin update finished
+[2023-07-05T14:15:32.739] [INFO] Tdarr_Node - The following external module needs to be installed for a plugin:import-fresh
+[2023-07-05T14:25:07.532] [WARN] Tdarr_Node - Cancelling
+[2023-07-05T14:25:13.018] [WARN] Tdarr_Node - Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+/temp/Kimi.wo.Aishita.Hitori.no.Boku.e.1080p.BDRip.10.bits.DD.x265-EMBER-TdarrCacheFile-g7j337vlg.mkv
+[2023-07-05T14:25:37.493] [WARN] Tdarr_Node - Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+/temp/Kimi.wo.Aishita.Hitori.no.Boku.e.1080p.BDRip.10.bits.DD.x265-EMBER-TdarrCacheFile-IoYcGcBSI.mkv
+[2023-07-05T14:27:38.208] [WARN] Tdarr_Node - Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+/temp/Kimi.wo.Aishita.Hitori.no.Boku.e.1080p.BDRip.10.bits.DD.x265-EMBER-TdarrCacheFile-kkcdI4V-q.mkv
+[2023-07-05T14:27:40.946] [WARN] Tdarr_Node - Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+/temp/To Every You I've Loved Before (2022) WEBDL-1080p-TdarrCacheFile-GNKswg2Hh.mkv
+[2023-07-05T14:27:43.497] [WARN] Tdarr_Node - Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+/temp/Everything Everywhere All at Once (2022) Bluray-1080p-TdarrCacheFile-MnB3fLy3k.mkv
+[2023-07-05T14:38:38.598] [INFO] Tdarr_Node - /app/configs/Tdarr_Node_Config.json
+[2023-07-05T14:38:38.642] [INFO] Tdarr_Node - {
+  nodeName: 'MyInternalNode',
+  serverIP: '0.0.0.0',
+  serverPort: '8266',
+  handbrakePath: '',
+  ffmpegPath: '',
+  mkvpropeditPath: '',
+  pathTranslators: [ { server: '', node: '' } ],
+  logLevel: 'INFO',
+  priority: -1,
+  platform_arch_isdocker: 'linux_x64_docker_true',
+  processPid: 199,
+  nodeID: '_VxSJ6fLa'
+}
+[2023-07-05T14:38:39.039] [INFO] Tdarr_Node - version: 2.00.21
+[2023-07-05T14:38:39.039] [INFO] Tdarr_Node - platform_arch_isdocker: linux_x64_docker_true
+[2023-07-05T14:38:39.055] [INFO] Tdarr_Node - Starting Tdarr_Node
+[2023-07-05T14:38:39.055] [INFO] Tdarr_Node - Preparing environment
+[2023-07-05T14:38:39.552] [INFO] Tdarr_Node - Updating plugins
+[2023-07-05T14:38:40.019] [INFO] Tdarr_Node - ---------------Binary tests start----------------
+[2023-07-05T14:38:40.021] [INFO] Tdarr_Node - handbrakePath:HandBrakeCLI
+[2023-07-05T14:38:40.022] [INFO] Tdarr_Node - ffmpegPath:tdarr-ffmpeg
+[2023-07-05T14:38:40.026] [INFO] Tdarr_Node - mkvpropedit:mkvpropedit
+[2023-07-05T14:38:40.026] [INFO] Tdarr_Node - Binary test 1: handbrakePath working
+[2023-07-05T14:38:40.035] [INFO] Tdarr_Node - Binary test 2: ffmpegPath working
+[2023-07-05T14:38:40.035] [INFO] Tdarr_Node - Binary test 3: mkvpropeditPath working
+[2023-07-05T14:38:40.035] [INFO] Tdarr_Node - ---------------Binary tests end-------------------
+[2023-07-05T14:38:40.999] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-05T14:38:41.076] [INFO] Tdarr_Node - Node connected & registered
+[2023-07-05T14:38:41.250] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-05T14:38:45.067] [INFO] Tdarr_Node - [4070ms]Plugin update finished
+[2023-07-05T14:39:03.550] [INFO] Tdarr_Node - The following external module needs to be installed for a plugin:import-fresh
+[2023-07-05T14:50:52.043] [WARN] Tdarr_Node - Cancelling
+[2023-07-05T14:52:04.707] [WARN] Tdarr_Node - Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+/temp/Everything Everywhere All at Once (2022) Bluray-1080p-TdarrCacheFile-Ex7O4COLn.mkv
+[2023-07-05T14:52:31.084] [WARN] Tdarr_Node - Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+/temp/To Every You I've Loved Before (2022) WEBDL-1080p-TdarrCacheFile-zMXKgUAMZ.mkv
+[2023-07-05T14:53:24.291] [WARN] Tdarr_Node - Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+/temp/Kimi.wo.Aishita.Hitori.no.Boku.e.1080p.BDRip.10.bits.DD.x265-EMBER-TdarrCacheFile-raoe2lPwT.mkv
+[2023-07-05T14:53:27.480] [WARN] Tdarr_Node - Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+/temp/To Every You I've Loved Before (2022) WEBDL-1080p-TdarrCacheFile-5NzkGTO92.mkv
+[2023-07-05T14:53:30.601] [WARN] Tdarr_Node - Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+/temp/Everything Everywhere All at Once (2022) Bluray-1080p-TdarrCacheFile-W98HSgnoF.mkv
+[2023-07-05T14:55:23.716] [WARN] Tdarr_Node - Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+/temp/Everything Everywhere All at Once (2022) Bluray-1080p-TdarrCacheFile-psbBt7Qev.mkv
+[2023-07-05T14:56:31.850] [WARN] Tdarr_Node - Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+/temp/Everything Everywhere All at Once (2022) Bluray-1080p-TdarrCacheFile-bDqNJy4KR.mkv
+[2023-07-05T15:08:44.007] [WARN] Tdarr_Node - Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+/temp/To Every You I've Loved Before (2022) WEBDL-1080p-TdarrCacheFile-MS-09FxKE.mkv
+[2023-07-05T15:08:46.967] [WARN] Tdarr_Node - Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+/temp/Everything Everywhere All at Once (2022) Bluray-1080p-TdarrCacheFile-sR6ddoNBz.mkv
+[2023-07-05T15:09:42.180] [WARN] Tdarr_Node - Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+/temp/Everything Everywhere All at Once (2022) Bluray-1080p-TdarrCacheFile-3dKybKsNd.mkv
+[2023-07-05T15:09:45.152] [WARN] Tdarr_Node - Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+/temp/To Every You I've Loved Before (2022) WEBDL-1080p-TdarrCacheFile-Ay-dUHR5P.mkv
+[2023-07-05T15:17:10.812] [WARN] Tdarr_Node - Cancelling
+[2023-07-05T15:38:39.559] [INFO] Tdarr_Node - Updating plugins
+[2023-07-05T15:38:40.622] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-05T15:38:40.882] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-05T15:38:44.728] [INFO] Tdarr_Node - [4108ms]Plugin update finished
+[2023-07-05T16:38:39.578] [INFO] Tdarr_Node - Updating plugins
+[2023-07-05T16:38:40.509] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-05T16:38:40.740] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-05T16:38:44.482] [INFO] Tdarr_Node - [3975ms]Plugin update finished
+[2023-07-05T17:27:58.196] [WARN] Tdarr_Node - Cancelling
+[2023-07-05T17:38:39.586] [INFO] Tdarr_Node - Updating plugins
+[2023-07-05T17:38:40.604] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-05T17:38:40.805] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-05T17:38:44.333] [INFO] Tdarr_Node - [3731ms]Plugin update finished
+[2023-07-05T18:08:17.639] [WARN] Tdarr_Node - Cancelling
+[2023-07-05T18:08:42.843] [WARN] Tdarr_Node - Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+/temp/Kimi.wo.Aishita.Hitori.no.Boku.e.1080p.BDRip.10.bits.DD.x265-EMBER-TdarrCacheFile-Sv87KMCuT.mp4
+[2023-07-05T18:09:04.673] [WARN] Tdarr_Node - Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+/temp/Kimi.wo.Aishita.Hitori.no.Boku.e.1080p.BDRip.10.bits.DD.x265-EMBER-TdarrCacheFile-ZvYpkwnom.mp4
+[2023-07-05T18:12:47.261] [WARN] Tdarr_Node - Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+/temp/Kimi.wo.Aishita.Hitori.no.Boku.e.1080p.BDRip.10.bits.DD.x265-EMBER-TdarrCacheFile-NkQl56ARh.mkv
+[2023-07-05T18:17:05.298] [WARN] Tdarr_Node - Cancelling
+[2023-07-05T18:23:20.937] [WARN] Tdarr_Node - Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+/temp/To Every You I've Loved Before (2022) WEBDL-1080p-TdarrCacheFile-0WdV7kV6p.mkv
+[2023-07-05T18:23:23.911] [WARN] Tdarr_Node - Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+/temp/Everything Everywhere All at Once (2022) Bluray-1080p-TdarrCacheFile-qQfztGdf5.mkv
+[2023-07-05T18:38:39.594] [INFO] Tdarr_Node - Updating plugins
+[2023-07-05T18:38:41.122] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-05T18:38:41.384] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-05T18:38:45.096] [INFO] Tdarr_Node - [3979ms]Plugin update finished
+[2023-07-05T18:45:57.722] [WARN] Tdarr_Node - Cancelling
+[2023-07-05T18:48:26.409] [WARN] Tdarr_Node - Cancelling
+[2023-07-05T19:38:39.603] [INFO] Tdarr_Node - Updating plugins
+[2023-07-05T19:38:41.217] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-05T19:38:41.610] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-05T19:38:45.548] [INFO] Tdarr_Node - [4334ms]Plugin update finished
+[2023-07-05T20:31:10.633] [WARN] Tdarr_Node - Cancelling
+[2023-07-05T20:32:20.467] [WARN] Tdarr_Node - Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+/temp/Secret Invasion - S01E02 - Promises WEBDL-2160p-TdarrCacheFile-C_X42uCIs.mkv
+[2023-07-05T20:32:30.220] [WARN] Tdarr_Node - Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+/temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-Q2g3eAEjs.mkv
+[2023-07-05T20:35:07.378] [WARN] Tdarr_Node - Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+/temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-DYkmTqevD.mkv
+[2023-07-05T20:36:55.548] [WARN] Tdarr_Node - Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+/temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-QgUSEuerW.mp4
+[2023-07-05T20:38:39.616] [INFO] Tdarr_Node - Updating plugins
+[2023-07-05T20:38:40.496] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-05T20:38:40.687] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-05T20:38:44.147] [INFO] Tdarr_Node - [3661ms]Plugin update finished
+[2023-07-05T20:39:44.125] [WARN] Tdarr_Node - Tdarr ALERT: NO OUTPUT FILE PRODUCED:  
+/temp/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile--2LGNMACX.mkv
+[2023-07-05T20:46:01.916] [DEBUG] Tdarr_Node - Updating server response error:27963ms
+[2023-07-05T20:46:01.967] [ERROR] Tdarr_Node - Error: timeout of 10000ms exceeded
+    at createError (/snapshot/node/node_modules/axios/lib/core/createError.js:16:15)
+    at RedirectableRequest.handleRequestTimeout (/snapshot/node/node_modules/axios/lib/adapters/http.js:369:16)
+    at RedirectableRequest.emit (events.js:400:28)
+    at Timeout.<anonymous> (/snapshot/node/node_modules/follow-redirects/index.js:169:12)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 10000,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/0.26.1',
+      'Content-Length': 2232
+    },
+    method: 'post',
+    url: 'http://0.0.0.0:8266/api/v2/update-node-relay',
+    data: `{"data":{"nodeID":"_VxSJ6fLa","resStats":{"process":{"uptime":22013,"heapUsedMB":"35.2","heapTotalMB":"46.6"},"os":{"cpuPerc":"72.70","memUsedGB":"7.6","memTotalGB":"7.8"}},"workers":{"deadly-dog":{"_id":"deadly-dog","workerType":"transcodecpu","created":true,"idle":false,"sourcefileSizeInGbytes":5.095143273472786,"originalfileSizeInGbytes":5.095143273472786,"preset":"-Z \\"H.264 MKV 2160p60 4K\\" -e x264 --all-subtitles --all-audio","file":"/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv","percentage":0.15,"fps":0,"ETA":"1:57:12","status":"Processing","statusTs":1688586333900,"job":{"version":"2.00.21","footprintId":"Yt7WrAkX3B","jobId":"gbGZNK5TJ","start":1688586313898,"type":"transcode","fileId":"Yt7WrAkX3B()2.00.21()transcode()gbGZNK5TJ()1688586313898.txt"},"process":{"_events":{},"_eventsCount":4,"_closesNeeded":2,"_closesGot":0,"connected":true,"signalCode":null,"exitCode":null,"killed":false,"spawnfile":"/app/Tdarr_Node/Tdarr_Node","_handle":{"pid":4446},"spawnargs":["/app/Tdarr_Node/Tdarr_Node","/snapshot/node/srcug/workers/worker1.js","deadly-dog","transcodecpu",false,"0.0.0.0","8266","{\\"config\\":{\\"nodeName\\":\\"MyInternalNode\\",\\"serverIP\\":\\"0.0.0.0\\",\\"serverPort\\":\\"8266\\",\\"handbrakePath\\":\\"\\",\\"ffmpegPath\\":\\"\\",\\"mkvpropeditPath\\":\\"\\",\\"pathTranslators\\":[{\\"server\\":\\"\\",\\"node\\":\\"\\"}],\\"logLevel\\":\\"INFO\\",\\"priority\\":-1,\\"platform_arch_isdocker\\":\\"linux_x64_docker_true\\",\\"processPid\\":199,\\"nodeID\\":\\"_VxSJ6fLa\\"}}","_VxSJ6fLa",false],"pid":4446,"stdin":null,"stdout":null,"stderr":null,"stdio":[null,null,null,null],"channel":{"_events":{},"_eventsCount":0},"_handleQueue":null,"_pendingMessage":null},"workerLog":"\\nPre-processing - Tdarr_Plugin_MC93_MigzImageRemoval\\n☑File doesn't contain any unwanted image format streams.\\n\\nPre-processing - Tdarr_Plugin_lmg1_Reorder_Streams\\nFile has video in first stream\\n File meets conditions!\\n\\nPre-processing - Tdarr_Plugin_075a_Transcode_Customisable\\n☒File is not in desired codec! \\n","startTime":1688586316748,"CLIType":"handbrake","lastPluginDetails":{"source":"Community","id":"Tdarr_Plugin_075a_Transcode_Customisable","number":"3/4"},"outputFileSizeInGbytes":0,"estSize":0}}}}`
+  },
+  code: 'ECONNABORTED',
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: null,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError],
+      socket: [Array]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      protocol: 'http:',
+      path: '/api/v2/update-node-relay',
+      method: 'POST',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: '0.0.0.0',
+      port: '8266',
+      nativeProtocols: [Object],
+      pathname: '/api/v2/update-node-relay'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 2232,
+    _requestBodyBuffers: [ [Object] ],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'POST /api/v2/update-node-relay HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: axios/0.26.1\r\n' +
+        'Content-Length: 2232\r\n' +
+        'Host: 0.0.0.0:8266\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/v2/update-node-relay',
+      _ended: false,
+      res: null,
+      aborted: true,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: [HTTPParser],
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: '0.0.0.0',
+      protocol: 'http:',
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://0.0.0.0:8266/api/v2/update-node-relay',
+    _timeout: null,
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+[2023-07-05T20:48:03.482] [DEBUG] Tdarr_Node - Updating server response error:99183ms
+[2023-07-05T20:49:01.165] [ERROR] Tdarr_Node - Error: timeout of 10000ms exceeded
+    at createError (/snapshot/node/node_modules/axios/lib/core/createError.js:16:15)
+    at RedirectableRequest.handleRequestTimeout (/snapshot/node/node_modules/axios/lib/adapters/http.js:369:16)
+    at RedirectableRequest.emit (events.js:400:28)
+    at Timeout.<anonymous> (/snapshot/node/node_modules/follow-redirects/index.js:169:12)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 10000,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/0.26.1',
+      'Content-Length': 2232
+    },
+    method: 'post',
+    url: 'http://0.0.0.0:8266/api/v2/update-node-relay',
+    data: `{"data":{"nodeID":"_VxSJ6fLa","resStats":{"process":{"uptime":22056,"heapUsedMB":"35.1","heapTotalMB":"46.6"},"os":{"cpuPerc":"99.24","memUsedGB":"7.7","memTotalGB":"7.8"}},"workers":{"deadly-dog":{"_id":"deadly-dog","workerType":"transcodecpu","created":true,"idle":false,"sourcefileSizeInGbytes":5.095143273472786,"originalfileSizeInGbytes":5.095143273472786,"preset":"-Z \\"H.264 MKV 2160p60 4K\\" -e x264 --all-subtitles --all-audio","file":"/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv","percentage":0.28,"fps":0,"ETA":"6:41:16","status":"Processing","statusTs":1688586381811,"job":{"version":"2.00.21","footprintId":"Yt7WrAkX3B","jobId":"gbGZNK5TJ","start":1688586313898,"type":"transcode","fileId":"Yt7WrAkX3B()2.00.21()transcode()gbGZNK5TJ()1688586313898.txt"},"process":{"_events":{},"_eventsCount":4,"_closesNeeded":2,"_closesGot":0,"connected":true,"signalCode":null,"exitCode":null,"killed":false,"spawnfile":"/app/Tdarr_Node/Tdarr_Node","_handle":{"pid":4446},"spawnargs":["/app/Tdarr_Node/Tdarr_Node","/snapshot/node/srcug/workers/worker1.js","deadly-dog","transcodecpu",false,"0.0.0.0","8266","{\\"config\\":{\\"nodeName\\":\\"MyInternalNode\\",\\"serverIP\\":\\"0.0.0.0\\",\\"serverPort\\":\\"8266\\",\\"handbrakePath\\":\\"\\",\\"ffmpegPath\\":\\"\\",\\"mkvpropeditPath\\":\\"\\",\\"pathTranslators\\":[{\\"server\\":\\"\\",\\"node\\":\\"\\"}],\\"logLevel\\":\\"INFO\\",\\"priority\\":-1,\\"platform_arch_isdocker\\":\\"linux_x64_docker_true\\",\\"processPid\\":199,\\"nodeID\\":\\"_VxSJ6fLa\\"}}","_VxSJ6fLa",false],"pid":4446,"stdin":null,"stdout":null,"stderr":null,"stdio":[null,null,null,null],"channel":{"_events":{},"_eventsCount":0},"_handleQueue":null,"_pendingMessage":null},"workerLog":"\\nPre-processing - Tdarr_Plugin_MC93_MigzImageRemoval\\n☑File doesn't contain any unwanted image format streams.\\n\\nPre-processing - Tdarr_Plugin_lmg1_Reorder_Streams\\nFile has video in first stream\\n File meets conditions!\\n\\nPre-processing - Tdarr_Plugin_075a_Transcode_Customisable\\n☒File is not in desired codec! \\n","startTime":1688586316748,"CLIType":"handbrake","lastPluginDetails":{"source":"Community","id":"Tdarr_Plugin_075a_Transcode_Customisable","number":"3/4"},"outputFileSizeInGbytes":0,"estSize":0}}}}`
+  },
+  code: 'ECONNABORTED',
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: null,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError],
+      socket: [Array]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      protocol: 'http:',
+      path: '/api/v2/update-node-relay',
+      method: 'POST',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: '0.0.0.0',
+      port: '8266',
+      nativeProtocols: [Object],
+      pathname: '/api/v2/update-node-relay'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 2232,
+    _requestBodyBuffers: [ [Object] ],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'POST /api/v2/update-node-relay HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: axios/0.26.1\r\n' +
+        'Content-Length: 2232\r\n' +
+        'Host: 0.0.0.0:8266\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/v2/update-node-relay',
+      _ended: false,
+      res: null,
+      aborted: true,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: [HTTPParser],
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: '0.0.0.0',
+      protocol: 'http:',
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://0.0.0.0:8266/api/v2/update-node-relay',
+    _timeout: null,
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+[2023-07-05T21:21:16.724] [WARN] Tdarr_Node - Cancelling
+[2023-07-05T21:38:39.641] [INFO] Tdarr_Node - Updating plugins
+[2023-07-05T21:38:40.768] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-05T21:38:41.172] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-05T21:38:45.075] [INFO] Tdarr_Node - [4310ms]Plugin update finished
+[2023-07-05T22:38:39.691] [INFO] Tdarr_Node - Updating plugins
+[2023-07-05T22:38:40.916] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-05T22:38:41.120] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-05T22:38:44.826] [INFO] Tdarr_Node - [3914ms]Plugin update finished
+[2023-07-05T23:38:39.748] [INFO] Tdarr_Node - Updating plugins
+[2023-07-05T23:38:41.003] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-05T23:38:41.409] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-05T23:38:45.342] [INFO] Tdarr_Node - [4342ms]Plugin update finished
+[2023-07-06T00:38:39.819] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T00:38:40.597] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T00:38:40.932] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T00:38:44.388] [INFO] Tdarr_Node - [3792ms]Plugin update finished
+[2023-07-06T01:38:39.831] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T01:38:40.613] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T01:38:40.790] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T01:38:44.327] [INFO] Tdarr_Node - [3717ms]Plugin update finished
+[2023-07-06T02:38:39.837] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T02:38:40.729] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T02:38:40.952] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T02:38:44.556] [INFO] Tdarr_Node - [3833ms]Plugin update finished
+[2023-07-06T03:38:39.842] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T03:38:40.619] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T03:38:41.386] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T03:38:44.957] [INFO] Tdarr_Node - [4340ms]Plugin update finished
+[2023-07-06T04:38:39.847] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T04:38:40.627] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T04:38:40.809] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T04:38:44.237] [INFO] Tdarr_Node - [3612ms]Plugin update finished
+[2023-07-06T05:38:39.852] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T05:38:40.714] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T05:38:40.919] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T05:38:44.459] [INFO] Tdarr_Node - [3747ms]Plugin update finished
+[2023-07-06T06:38:39.857] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T06:38:40.718] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T06:38:40.909] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T06:38:44.386] [INFO] Tdarr_Node - [3671ms]Plugin update finished
+[2023-07-06T07:38:39.863] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T07:38:40.998] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T07:38:41.186] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T07:38:44.740] [INFO] Tdarr_Node - [3745ms]Plugin update finished
+[2023-07-06T08:38:39.880] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T08:39:08.339] [DEBUG] Tdarr_Node - Updating server response error:26791ms
+[2023-07-06T08:39:08.354] [ERROR] Tdarr_Node - Error: timeout of 10000ms exceeded
+    at createError (/snapshot/node/node_modules/axios/lib/core/createError.js:16:15)
+    at RedirectableRequest.handleRequestTimeout (/snapshot/node/node_modules/axios/lib/adapters/http.js:369:16)
+    at RedirectableRequest.emit (events.js:400:28)
+    at Timeout.<anonymous> (/snapshot/node/node_modules/follow-redirects/index.js:169:12)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 10000,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/0.26.1',
+      'Content-Length': 2396
+    },
+    method: 'post',
+    url: 'http://0.0.0.0:8266/api/v2/update-node-relay',
+    data: `{"data":{"nodeID":"_VxSJ6fLa","resStats":{"process":{"uptime":64799,"heapUsedMB":"35.7","heapTotalMB":"48.4"},"os":{"cpuPerc":"98.99","memUsedGB":"7.7","memTotalGB":"7.8"}},"workers":{"musty-mutt":{"_id":"musty-mutt","workerType":"transcodecpu","created":true,"idle":false,"sourcefileSizeInGbytes":5.265711619518697,"originalfileSizeInGbytes":5.410117942839861,"preset":"-Z \\"H.264 MKV 2160p60 4K\\" -e x264 --all-subtitles --all-audio","file":"/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E02 - Promises WEBDL-2160p.mkv","percentage":5.96,"fps":322,"ETA":"4:39:20","status":"Processing","statusTs":1688629121367,"job":{"version":"2.00.21","footprintId":"ZEq0Po8y8a","jobId":"IZ9CzyB1d","start":1688627873464,"type":"transcode","fileId":"ZEq0Po8y8a()2.00.21()transcode()IZ9CzyB1d()1688627873464.txt"},"process":{"_events":{},"_eventsCount":4,"_closesNeeded":2,"_closesGot":0,"connected":true,"signalCode":null,"exitCode":null,"killed":false,"spawnfile":"/app/Tdarr_Node/Tdarr_Node","_handle":{"pid":5014},"spawnargs":["/app/Tdarr_Node/Tdarr_Node","/snapshot/node/srcug/workers/worker1.js","musty-mutt","transcodecpu",false,"0.0.0.0","8266","{\\"config\\":{\\"nodeName\\":\\"MyInternalNode\\",\\"serverIP\\":\\"0.0.0.0\\",\\"serverPort\\":\\"8266\\",\\"handbrakePath\\":\\"\\",\\"ffmpegPath\\":\\"\\",\\"mkvpropeditPath\\":\\"\\",\\"pathTranslators\\":[{\\"server\\":\\"\\",\\"node\\":\\"\\"}],\\"logLevel\\":\\"INFO\\",\\"priority\\":-1,\\"platform_arch_isdocker\\":\\"linux_x64_docker_true\\",\\"processPid\\":199,\\"nodeID\\":\\"_VxSJ6fLa\\"}}","_VxSJ6fLa",false],"pid":5014,"stdin":null,"stdout":null,"stderr":null,"stdio":[null,null,null,null],"channel":{"_events":{},"_eventsCount":0},"_handleQueue":null,"_pendingMessage":null},"workerLog":"\\nPre-processing - Tdarr_Plugin_MC93_MigzImageRemoval\\n☑File doesn't contain any unwanted image format streams.\\n\\nPre-processing - Tdarr_Plugin_lmg1_Reorder_Streams\\nFile has video in first stream\\n File meets conditions!\\n\\nPre-processing - Tdarr_Plugin_00td_action_standardise_audio_stream_codecs\\nFile does not have any audio streams which aren't in aac \\n\\nPre-processing - Tdarr_Plugin_075a_Transcode_Customisable\\n☒File is not in desired codec! \\n","startTime":1688628127652,"CLIType":"handbrake","lastPluginDetails":{"source":"Community","id":"Tdarr_Plugin_075a_Transcode_Customisable","number":"4/7"},"outputFileSizeInGbytes":0.124267578125,"estSize":2.1763148533274954}}}}`
+  },
+  code: 'ECONNABORTED',
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: null,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError],
+      socket: [Array]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      protocol: 'http:',
+      path: '/api/v2/update-node-relay',
+      method: 'POST',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: '0.0.0.0',
+      port: '8266',
+      nativeProtocols: [Object],
+      pathname: '/api/v2/update-node-relay'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 2396,
+    _requestBodyBuffers: [ [Object] ],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'POST /api/v2/update-node-relay HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: axios/0.26.1\r\n' +
+        'Content-Length: 2396\r\n' +
+        'Host: 0.0.0.0:8266\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/v2/update-node-relay',
+      _ended: false,
+      res: null,
+      aborted: true,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: [HTTPParser],
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: '0.0.0.0',
+      protocol: 'http:',
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://0.0.0.0:8266/api/v2/update-node-relay',
+    _timeout: null,
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+[2023-07-06T08:39:09.275] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T08:39:09.478] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T08:39:13.351] [INFO] Tdarr_Node - [4079ms]Plugin update finished
+[2023-07-06T09:38:40.040] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T09:38:40.926] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T09:38:41.114] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T09:38:44.645] [INFO] Tdarr_Node - [3720ms]Plugin update finished
+[2023-07-06T09:55:03.696] [WARN] Tdarr_Node - Cancelling
+[2023-07-06T10:38:40.049] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T10:38:40.918] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T10:38:41.117] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T10:38:44.638] [INFO] Tdarr_Node - [3722ms]Plugin update finished
+[2023-07-06T11:38:40.059] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T11:38:40.959] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T11:38:41.373] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T11:38:44.928] [INFO] Tdarr_Node - [3972ms]Plugin update finished
+[2023-07-06T12:38:40.075] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T12:38:41.382] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T12:38:41.926] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T12:38:45.785] [INFO] Tdarr_Node - [4405ms]Plugin update finished
+[2023-07-06T13:38:40.116] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T13:38:41.965] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T13:38:42.204] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T13:38:46.347] [INFO] Tdarr_Node - [4385ms]Plugin update finished
+[2023-07-06T14:38:40.152] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T14:38:41.235] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T14:38:41.457] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T14:38:45.517] [INFO] Tdarr_Node - [4285ms]Plugin update finished
+[2023-07-06T15:38:40.183] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T15:38:41.446] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T15:38:41.689] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T15:38:45.632] [INFO] Tdarr_Node - [4189ms]Plugin update finished
+[2023-07-06T16:38:40.200] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T16:38:41.141] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T16:38:41.351] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T16:38:45.265] [INFO] Tdarr_Node - [4126ms]Plugin update finished
+[2023-07-06T17:38:40.206] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T17:38:41.154] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T17:38:41.369] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T17:38:45.277] [INFO] Tdarr_Node - [4125ms]Plugin update finished
+[2023-07-06T18:38:40.212] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T18:38:41.377] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T18:38:41.552] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T18:38:45.252] [INFO] Tdarr_Node - [3877ms]Plugin update finished
+[2023-07-06T19:38:40.217] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T19:38:41.004] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T19:38:41.202] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T19:38:44.854] [INFO] Tdarr_Node - [3852ms]Plugin update finished
+[2023-07-06T20:38:40.222] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T20:38:41.030] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T20:38:41.214] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T20:38:44.664] [INFO] Tdarr_Node - [3636ms]Plugin update finished
+[2023-07-06T21:38:40.227] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T21:38:41.095] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T21:38:41.303] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T21:38:44.859] [INFO] Tdarr_Node - [3767ms]Plugin update finished
+[2023-07-06T21:42:25.902] [INFO] Tdarr_Node - /app/configs/Tdarr_Node_Config.json
+[2023-07-06T21:42:25.914] [INFO] Tdarr_Node - {
+  nodeName: 'MyInternalNode',
+  serverIP: '0.0.0.0',
+  serverPort: '8266',
+  handbrakePath: '',
+  ffmpegPath: '',
+  mkvpropeditPath: '',
+  pathTranslators: [ { server: '', node: '' } ],
+  logLevel: 'INFO',
+  priority: -1,
+  platform_arch_isdocker: 'linux_x64_docker_true',
+  processPid: 198,
+  nodeID: 'keoA0u5J0'
+}
+[2023-07-06T21:42:26.129] [INFO] Tdarr_Node - version: 2.00.21
+[2023-07-06T21:42:26.129] [INFO] Tdarr_Node - platform_arch_isdocker: linux_x64_docker_true
+[2023-07-06T21:42:26.133] [INFO] Tdarr_Node - Starting Tdarr_Node
+[2023-07-06T21:42:26.133] [INFO] Tdarr_Node - Preparing environment
+[2023-07-06T21:42:26.502] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T21:42:27.148] [INFO] Tdarr_Node - ---------------Binary tests start----------------
+[2023-07-06T21:42:27.149] [INFO] Tdarr_Node - handbrakePath:HandBrakeCLI
+[2023-07-06T21:42:27.149] [INFO] Tdarr_Node - ffmpegPath:tdarr-ffmpeg
+[2023-07-06T21:42:27.149] [INFO] Tdarr_Node - mkvpropedit:mkvpropedit
+[2023-07-06T21:42:27.149] [INFO] Tdarr_Node - Binary test 1: handbrakePath working
+[2023-07-06T21:42:27.149] [INFO] Tdarr_Node - Binary test 2: ffmpegPath working
+[2023-07-06T21:42:27.149] [INFO] Tdarr_Node - Binary test 3: mkvpropeditPath working
+[2023-07-06T21:42:27.149] [INFO] Tdarr_Node - ---------------Binary tests end-------------------
+[2023-07-06T21:42:28.460] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T21:42:28.622] [INFO] Tdarr_Node - Node connected & registered
+[2023-07-06T21:42:28.779] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T21:42:33.541] [INFO] Tdarr_Node - [5082ms]Plugin update finished
+[2023-07-06T21:50:49.165] [INFO] Tdarr_Node - /app/configs/Tdarr_Node_Config.json
+[2023-07-06T21:50:49.210] [INFO] Tdarr_Node - {
+  nodeName: 'MyInternalNode',
+  serverIP: '0.0.0.0',
+  serverPort: '8266',
+  handbrakePath: '',
+  ffmpegPath: '',
+  mkvpropeditPath: '',
+  pathTranslators: [ { server: '', node: '' } ],
+  logLevel: 'INFO',
+  priority: -1,
+  platform_arch_isdocker: 'linux_x64_docker_true',
+  processPid: 195,
+  nodeID: 'VbWptqTAk'
+}
+[2023-07-06T21:50:49.475] [INFO] Tdarr_Node - version: 2.00.21
+[2023-07-06T21:50:49.475] [INFO] Tdarr_Node - platform_arch_isdocker: linux_x64_docker_true
+[2023-07-06T21:50:49.480] [INFO] Tdarr_Node - Starting Tdarr_Node
+[2023-07-06T21:50:49.481] [INFO] Tdarr_Node - Preparing environment
+[2023-07-06T21:50:49.797] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T21:50:50.355] [INFO] Tdarr_Node - ---------------Binary tests start----------------
+[2023-07-06T21:50:50.355] [INFO] Tdarr_Node - handbrakePath:HandBrakeCLI
+[2023-07-06T21:50:50.355] [INFO] Tdarr_Node - ffmpegPath:tdarr-ffmpeg
+[2023-07-06T21:50:50.356] [INFO] Tdarr_Node - mkvpropedit:mkvpropedit
+[2023-07-06T21:50:50.356] [INFO] Tdarr_Node - Binary test 1: handbrakePath working
+[2023-07-06T21:50:50.356] [INFO] Tdarr_Node - Binary test 2: ffmpegPath working
+[2023-07-06T21:50:50.356] [INFO] Tdarr_Node - Binary test 3: mkvpropeditPath working
+[2023-07-06T21:50:50.357] [INFO] Tdarr_Node - ---------------Binary tests end-------------------
+[2023-07-06T21:50:51.394] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T21:50:51.615] [INFO] Tdarr_Node - Node connected & registered
+[2023-07-06T21:50:51.701] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T21:50:56.503] [INFO] Tdarr_Node - [5113ms]Plugin update finished
+[2023-07-06T22:02:10.897] [INFO] Tdarr_Node - /app/configs/Tdarr_Node_Config.json
+[2023-07-06T22:02:10.904] [INFO] Tdarr_Node - {
+  nodeName: 'MyInternalNode',
+  serverIP: '0.0.0.0',
+  serverPort: '8266',
+  handbrakePath: '',
+  ffmpegPath: '',
+  mkvpropeditPath: '',
+  pathTranslators: [ { server: '', node: '' } ],
+  logLevel: 'INFO',
+  priority: -1,
+  platform_arch_isdocker: 'linux_x64_docker_true',
+  processPid: 199,
+  nodeID: 'zlYdcv6wA'
+}
+[2023-07-06T22:02:11.034] [INFO] Tdarr_Node - version: 2.00.21
+[2023-07-06T22:02:11.035] [INFO] Tdarr_Node - platform_arch_isdocker: linux_x64_docker_true
+[2023-07-06T22:02:11.053] [INFO] Tdarr_Node - Starting Tdarr_Node
+[2023-07-06T22:02:11.053] [INFO] Tdarr_Node - Preparing environment
+[2023-07-06T22:02:11.472] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T22:02:11.493] [ERROR] Tdarr_Node - Node connection error to :0.0.0.0:8266
+[2023-07-06T22:02:11.494] [ERROR] Tdarr_Node - TransportError: xhr poll error
+    at Polling.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transport.js:45:37)
+    at Request.<anonymous> (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:251:18)
+    at Request.<anonymous> (/snapshot/node/node_modules/@socket.io/component-emitter/index.js:143:20)
+    at Request.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:352:14)
+    at Timeout._onTimeout (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:325:30)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  description: 0,
+  context: XMLHttpRequest {
+    UNSENT: 0,
+    OPENED: 1,
+    HEADERS_RECEIVED: 2,
+    LOADING: 3,
+    DONE: 4,
+    readyState: 4,
+    onreadystatechange: [Function (anonymous)],
+    responseText: 'Error: connect ECONNREFUSED 0.0.0.0:8266\n' +
+      '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)',
+    responseXML: '',
+    status: 0,
+    statusText: Error: connect ECONNREFUSED 0.0.0.0:8266
+        at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '0.0.0.0',
+      port: 8266
+    },
+    open: [Function (anonymous)],
+    setDisableHeaderCheck: [Function (anonymous)],
+    setRequestHeader: [Function (anonymous)],
+    getResponseHeader: [Function (anonymous)],
+    getAllResponseHeaders: [Function (anonymous)],
+    getRequestHeader: [Function (anonymous)],
+    send: [Function (anonymous)],
+    handleError: [Function (anonymous)],
+    abort: [Function (anonymous)],
+    addEventListener: [Function (anonymous)],
+    removeEventListener: [Function (anonymous)],
+    dispatchEvent: [Function (anonymous)]
+  },
+  type: 'TransportError'
+}
+[2023-07-06T22:02:11.925] [INFO] Tdarr_Node - ---------------Binary tests start----------------
+[2023-07-06T22:02:11.926] [INFO] Tdarr_Node - handbrakePath:HandBrakeCLI
+[2023-07-06T22:02:11.927] [INFO] Tdarr_Node - ffmpegPath:tdarr-ffmpeg
+[2023-07-06T22:02:11.928] [INFO] Tdarr_Node - mkvpropedit:mkvpropedit
+[2023-07-06T22:02:11.929] [INFO] Tdarr_Node - Binary test 1: handbrakePath working
+[2023-07-06T22:02:11.929] [INFO] Tdarr_Node - Binary test 2: ffmpegPath working
+[2023-07-06T22:02:11.930] [INFO] Tdarr_Node - Binary test 3: mkvpropeditPath working
+[2023-07-06T22:02:11.930] [INFO] Tdarr_Node - ---------------Binary tests end-------------------
+[2023-07-06T22:02:12.401] [ERROR] Tdarr_Node - Failed to contact server, retrying...
+[2023-07-06T22:02:12.491] [ERROR] Tdarr_Node - Node connection error to :0.0.0.0:8266
+[2023-07-06T22:02:12.492] [ERROR] Tdarr_Node - TransportError: xhr poll error
+    at Polling.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transport.js:45:37)
+    at Request.<anonymous> (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:251:18)
+    at Request.<anonymous> (/snapshot/node/node_modules/@socket.io/component-emitter/index.js:143:20)
+    at Request.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:352:14)
+    at Timeout._onTimeout (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:325:30)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  description: 0,
+  context: XMLHttpRequest {
+    UNSENT: 0,
+    OPENED: 1,
+    HEADERS_RECEIVED: 2,
+    LOADING: 3,
+    DONE: 4,
+    readyState: 4,
+    onreadystatechange: [Function (anonymous)],
+    responseText: 'Error: connect ECONNREFUSED 0.0.0.0:8266\n' +
+      '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)',
+    responseXML: '',
+    status: 0,
+    statusText: Error: connect ECONNREFUSED 0.0.0.0:8266
+        at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '0.0.0.0',
+      port: 8266
+    },
+    open: [Function (anonymous)],
+    setDisableHeaderCheck: [Function (anonymous)],
+    setRequestHeader: [Function (anonymous)],
+    getResponseHeader: [Function (anonymous)],
+    getAllResponseHeaders: [Function (anonymous)],
+    getRequestHeader: [Function (anonymous)],
+    send: [Function (anonymous)],
+    handleError: [Function (anonymous)],
+    abort: [Function (anonymous)],
+    addEventListener: [Function (anonymous)],
+    removeEventListener: [Function (anonymous)],
+    dispatchEvent: [Function (anonymous)]
+  },
+  type: 'TransportError'
+}
+[2023-07-06T22:02:13.974] [INFO] Tdarr_Node - Node connected & registered
+[2023-07-06T22:02:14.531] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T22:02:14.753] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T22:02:18.321] [INFO] Tdarr_Node - [3803ms]Plugin update finished
+[2023-07-06T23:19:59.494] [INFO] Tdarr_Node - /app/configs/Tdarr_Node_Config.json
+[2023-07-06T23:19:59.504] [INFO] Tdarr_Node - {
+  nodeName: 'MyInternalNode',
+  serverIP: '0.0.0.0',
+  serverPort: '8266',
+  handbrakePath: '',
+  ffmpegPath: '',
+  mkvpropeditPath: '',
+  pathTranslators: [ { server: '', node: '' } ],
+  logLevel: 'INFO',
+  priority: -1,
+  platform_arch_isdocker: 'linux_x64_docker_true',
+  processPid: 193,
+  nodeID: 'h6ff8DzpO'
+}
+[2023-07-06T23:19:59.669] [INFO] Tdarr_Node - version: 2.00.21
+[2023-07-06T23:19:59.670] [INFO] Tdarr_Node - platform_arch_isdocker: linux_x64_docker_true
+[2023-07-06T23:19:59.678] [INFO] Tdarr_Node - Starting Tdarr_Node
+[2023-07-06T23:19:59.678] [INFO] Tdarr_Node - Preparing environment
+[2023-07-06T23:20:00.009] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T23:20:00.034] [ERROR] Tdarr_Node - Node connection error to :0.0.0.0:8266
+[2023-07-06T23:20:00.034] [ERROR] Tdarr_Node - TransportError: xhr poll error
+    at Polling.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transport.js:45:37)
+    at Request.<anonymous> (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:251:18)
+    at Request.<anonymous> (/snapshot/node/node_modules/@socket.io/component-emitter/index.js:143:20)
+    at Request.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:352:14)
+    at Timeout._onTimeout (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:325:30)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  description: 0,
+  context: XMLHttpRequest {
+    UNSENT: 0,
+    OPENED: 1,
+    HEADERS_RECEIVED: 2,
+    LOADING: 3,
+    DONE: 4,
+    readyState: 4,
+    onreadystatechange: [Function (anonymous)],
+    responseText: 'Error: connect ECONNREFUSED 0.0.0.0:8266\n' +
+      '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)',
+    responseXML: '',
+    status: 0,
+    statusText: Error: connect ECONNREFUSED 0.0.0.0:8266
+        at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '0.0.0.0',
+      port: 8266
+    },
+    open: [Function (anonymous)],
+    setDisableHeaderCheck: [Function (anonymous)],
+    setRequestHeader: [Function (anonymous)],
+    getResponseHeader: [Function (anonymous)],
+    getAllResponseHeaders: [Function (anonymous)],
+    getRequestHeader: [Function (anonymous)],
+    send: [Function (anonymous)],
+    handleError: [Function (anonymous)],
+    abort: [Function (anonymous)],
+    addEventListener: [Function (anonymous)],
+    removeEventListener: [Function (anonymous)],
+    dispatchEvent: [Function (anonymous)]
+  },
+  type: 'TransportError'
+}
+[2023-07-06T23:20:00.535] [INFO] Tdarr_Node - ---------------Binary tests start----------------
+[2023-07-06T23:20:00.536] [INFO] Tdarr_Node - handbrakePath:HandBrakeCLI
+[2023-07-06T23:20:00.537] [INFO] Tdarr_Node - ffmpegPath:tdarr-ffmpeg
+[2023-07-06T23:20:00.537] [INFO] Tdarr_Node - mkvpropedit:mkvpropedit
+[2023-07-06T23:20:00.537] [INFO] Tdarr_Node - Binary test 1: handbrakePath working
+[2023-07-06T23:20:00.538] [INFO] Tdarr_Node - Binary test 2: ffmpegPath working
+[2023-07-06T23:20:00.538] [INFO] Tdarr_Node - Binary test 3: mkvpropeditPath working
+[2023-07-06T23:20:00.538] [INFO] Tdarr_Node - ---------------Binary tests end-------------------
+[2023-07-06T23:20:01.979] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T23:20:02.077] [INFO] Tdarr_Node - Node connected & registered
+[2023-07-06T23:20:02.251] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T23:20:06.217] [INFO] Tdarr_Node - [4243ms]Plugin update finished
+[2023-07-06T23:24:27.162] [INFO] Tdarr_Node - /app/configs/Tdarr_Node_Config.json
+[2023-07-06T23:24:27.173] [INFO] Tdarr_Node - {
+  nodeName: 'MyInternalNode',
+  serverIP: '0.0.0.0',
+  serverPort: '8266',
+  handbrakePath: '',
+  ffmpegPath: '',
+  mkvpropeditPath: '',
+  pathTranslators: [ { server: '', node: '' } ],
+  logLevel: 'INFO',
+  priority: -1,
+  platform_arch_isdocker: 'linux_x64_docker_true',
+  processPid: 192,
+  nodeID: 'TDA5HL2Vt'
+}
+[2023-07-06T23:24:27.336] [INFO] Tdarr_Node - version: 2.00.21
+[2023-07-06T23:24:27.336] [INFO] Tdarr_Node - platform_arch_isdocker: linux_x64_docker_true
+[2023-07-06T23:24:27.355] [INFO] Tdarr_Node - Starting Tdarr_Node
+[2023-07-06T23:24:27.355] [INFO] Tdarr_Node - Preparing environment
+[2023-07-06T23:24:27.666] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T23:24:27.684] [ERROR] Tdarr_Node - Node connection error to :0.0.0.0:8266
+[2023-07-06T23:24:27.685] [ERROR] Tdarr_Node - TransportError: xhr poll error
+    at Polling.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transport.js:45:37)
+    at Request.<anonymous> (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:251:18)
+    at Request.<anonymous> (/snapshot/node/node_modules/@socket.io/component-emitter/index.js:143:20)
+    at Request.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:352:14)
+    at Timeout._onTimeout (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:325:30)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  description: 0,
+  context: XMLHttpRequest {
+    UNSENT: 0,
+    OPENED: 1,
+    HEADERS_RECEIVED: 2,
+    LOADING: 3,
+    DONE: 4,
+    readyState: 4,
+    onreadystatechange: [Function (anonymous)],
+    responseText: 'Error: connect ECONNREFUSED 0.0.0.0:8266\n' +
+      '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)',
+    responseXML: '',
+    status: 0,
+    statusText: Error: connect ECONNREFUSED 0.0.0.0:8266
+        at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '0.0.0.0',
+      port: 8266
+    },
+    open: [Function (anonymous)],
+    setDisableHeaderCheck: [Function (anonymous)],
+    setRequestHeader: [Function (anonymous)],
+    getResponseHeader: [Function (anonymous)],
+    getAllResponseHeaders: [Function (anonymous)],
+    getRequestHeader: [Function (anonymous)],
+    send: [Function (anonymous)],
+    handleError: [Function (anonymous)],
+    abort: [Function (anonymous)],
+    addEventListener: [Function (anonymous)],
+    removeEventListener: [Function (anonymous)],
+    dispatchEvent: [Function (anonymous)]
+  },
+  type: 'TransportError'
+}
+[2023-07-06T23:24:28.043] [INFO] Tdarr_Node - ---------------Binary tests start----------------
+[2023-07-06T23:24:28.044] [INFO] Tdarr_Node - handbrakePath:HandBrakeCLI
+[2023-07-06T23:24:28.044] [INFO] Tdarr_Node - ffmpegPath:tdarr-ffmpeg
+[2023-07-06T23:24:28.045] [INFO] Tdarr_Node - mkvpropedit:mkvpropedit
+[2023-07-06T23:24:28.045] [INFO] Tdarr_Node - Binary test 1: handbrakePath working
+[2023-07-06T23:24:28.046] [INFO] Tdarr_Node - Binary test 2: ffmpegPath working
+[2023-07-06T23:24:28.046] [INFO] Tdarr_Node - Binary test 3: mkvpropeditPath working
+[2023-07-06T23:24:28.046] [INFO] Tdarr_Node - ---------------Binary tests end-------------------
+[2023-07-06T23:24:29.172] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T23:24:29.258] [INFO] Tdarr_Node - Node connected & registered
+[2023-07-06T23:24:29.370] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T23:24:33.048] [INFO] Tdarr_Node - [3878ms]Plugin update finished
+[2023-07-06T23:29:24.482] [INFO] Tdarr_Node - /app/configs/Tdarr_Node_Config.json
+[2023-07-06T23:29:24.522] [INFO] Tdarr_Node - {
+  nodeName: 'MyInternalNode',
+  serverIP: '0.0.0.0',
+  serverPort: '8266',
+  handbrakePath: '',
+  ffmpegPath: '',
+  mkvpropeditPath: '',
+  pathTranslators: [ { server: '', node: '' } ],
+  logLevel: 'INFO',
+  priority: -1,
+  platform_arch_isdocker: 'linux_x64_docker_true',
+  processPid: 181,
+  nodeID: 'ktyIkRzGZ'
+}
+[2023-07-06T23:29:25.093] [INFO] Tdarr_Node - version: 2.00.21
+[2023-07-06T23:29:25.094] [INFO] Tdarr_Node - platform_arch_isdocker: linux_x64_docker_true
+[2023-07-06T23:29:25.095] [INFO] Tdarr_Node - Starting Tdarr_Node
+[2023-07-06T23:29:25.095] [INFO] Tdarr_Node - Preparing environment
+[2023-07-06T23:29:25.097] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T23:29:25.253] [ERROR] Tdarr_Node - Node connection error to :0.0.0.0:8266
+[2023-07-06T23:29:25.272] [ERROR] Tdarr_Node - TransportError: xhr poll error
+    at Polling.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transport.js:45:37)
+    at Request.<anonymous> (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:251:18)
+    at Request.<anonymous> (/snapshot/node/node_modules/@socket.io/component-emitter/index.js:143:20)
+    at Request.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:352:14)
+    at Timeout._onTimeout (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:325:30)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  description: 0,
+  context: XMLHttpRequest {
+    UNSENT: 0,
+    OPENED: 1,
+    HEADERS_RECEIVED: 2,
+    LOADING: 3,
+    DONE: 4,
+    readyState: 4,
+    onreadystatechange: [Function (anonymous)],
+    responseText: 'Error: connect ECONNREFUSED 0.0.0.0:8266\n' +
+      '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)',
+    responseXML: '',
+    status: 0,
+    statusText: Error: connect ECONNREFUSED 0.0.0.0:8266
+        at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '0.0.0.0',
+      port: 8266
+    },
+    open: [Function (anonymous)],
+    setDisableHeaderCheck: [Function (anonymous)],
+    setRequestHeader: [Function (anonymous)],
+    getResponseHeader: [Function (anonymous)],
+    getAllResponseHeaders: [Function (anonymous)],
+    getRequestHeader: [Function (anonymous)],
+    send: [Function (anonymous)],
+    handleError: [Function (anonymous)],
+    abort: [Function (anonymous)],
+    addEventListener: [Function (anonymous)],
+    removeEventListener: [Function (anonymous)],
+    dispatchEvent: [Function (anonymous)]
+  },
+  type: 'TransportError'
+}
+[2023-07-06T23:29:26.250] [ERROR] Tdarr_Node - Node connection error to :0.0.0.0:8266
+[2023-07-06T23:29:26.265] [ERROR] Tdarr_Node - TransportError: xhr poll error
+    at Polling.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transport.js:45:37)
+    at Request.<anonymous> (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:251:18)
+    at Request.<anonymous> (/snapshot/node/node_modules/@socket.io/component-emitter/index.js:143:20)
+    at Request.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:352:14)
+    at Timeout._onTimeout (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:325:30)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  description: 0,
+  context: XMLHttpRequest {
+    UNSENT: 0,
+    OPENED: 1,
+    HEADERS_RECEIVED: 2,
+    LOADING: 3,
+    DONE: 4,
+    readyState: 4,
+    onreadystatechange: [Function (anonymous)],
+    responseText: 'Error: connect ECONNREFUSED 0.0.0.0:8266\n' +
+      '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)',
+    responseXML: '',
+    status: 0,
+    statusText: Error: connect ECONNREFUSED 0.0.0.0:8266
+        at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '0.0.0.0',
+      port: 8266
+    },
+    open: [Function (anonymous)],
+    setDisableHeaderCheck: [Function (anonymous)],
+    setRequestHeader: [Function (anonymous)],
+    getResponseHeader: [Function (anonymous)],
+    getAllResponseHeaders: [Function (anonymous)],
+    getRequestHeader: [Function (anonymous)],
+    send: [Function (anonymous)],
+    handleError: [Function (anonymous)],
+    abort: [Function (anonymous)],
+    addEventListener: [Function (anonymous)],
+    removeEventListener: [Function (anonymous)],
+    dispatchEvent: [Function (anonymous)]
+  },
+  type: 'TransportError'
+}
+[2023-07-06T23:29:26.943] [INFO] Tdarr_Node - ---------------Binary tests start----------------
+[2023-07-06T23:29:26.949] [INFO] Tdarr_Node - handbrakePath:HandBrakeCLI
+[2023-07-06T23:29:26.949] [INFO] Tdarr_Node - ffmpegPath:tdarr-ffmpeg
+[2023-07-06T23:29:26.950] [INFO] Tdarr_Node - mkvpropedit:mkvpropedit
+[2023-07-06T23:29:26.950] [INFO] Tdarr_Node - Binary test 1: handbrakePath working
+[2023-07-06T23:29:26.950] [INFO] Tdarr_Node - Binary test 2: ffmpegPath working
+[2023-07-06T23:29:26.950] [INFO] Tdarr_Node - Binary test 3: mkvpropeditPath working
+[2023-07-06T23:29:26.951] [INFO] Tdarr_Node - ---------------Binary tests end-------------------
+[2023-07-06T23:29:28.533] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T23:29:29.179] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T23:29:29.333] [INFO] Tdarr_Node - Node connected & registered
+[2023-07-06T23:29:33.744] [INFO] Tdarr_Node - [5213ms]Plugin update finished
+[2023-07-06T23:40:13.723] [INFO] Tdarr_Node - /app/configs/Tdarr_Node_Config.json
+[2023-07-06T23:40:13.747] [INFO] Tdarr_Node - {
+  nodeName: 'MyInternalNode',
+  serverIP: '0.0.0.0',
+  serverPort: '8266',
+  handbrakePath: '',
+  ffmpegPath: '',
+  mkvpropeditPath: '',
+  pathTranslators: [ { server: '', node: '' } ],
+  logLevel: 'INFO',
+  priority: -1,
+  platform_arch_isdocker: 'linux_x64_docker_true',
+  processPid: 199,
+  nodeID: 'Zvq3aXwUt'
+}
+[2023-07-06T23:40:13.998] [INFO] Tdarr_Node - version: 2.00.21
+[2023-07-06T23:40:13.998] [INFO] Tdarr_Node - platform_arch_isdocker: linux_x64_docker_true
+[2023-07-06T23:40:14.011] [INFO] Tdarr_Node - Starting Tdarr_Node
+[2023-07-06T23:40:14.012] [INFO] Tdarr_Node - Preparing environment
+[2023-07-06T23:40:14.417] [INFO] Tdarr_Node - Updating plugins
+[2023-07-06T23:40:14.444] [ERROR] Tdarr_Node - Node connection error to :0.0.0.0:8266
+[2023-07-06T23:40:14.445] [ERROR] Tdarr_Node - TransportError: xhr poll error
+    at Polling.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transport.js:45:37)
+    at Request.<anonymous> (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:251:18)
+    at Request.<anonymous> (/snapshot/node/node_modules/@socket.io/component-emitter/index.js:143:20)
+    at Request.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:352:14)
+    at Timeout._onTimeout (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:325:30)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  description: 0,
+  context: XMLHttpRequest {
+    UNSENT: 0,
+    OPENED: 1,
+    HEADERS_RECEIVED: 2,
+    LOADING: 3,
+    DONE: 4,
+    readyState: 4,
+    onreadystatechange: [Function (anonymous)],
+    responseText: 'Error: connect ECONNREFUSED 0.0.0.0:8266\n' +
+      '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)',
+    responseXML: '',
+    status: 0,
+    statusText: Error: connect ECONNREFUSED 0.0.0.0:8266
+        at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '0.0.0.0',
+      port: 8266
+    },
+    open: [Function (anonymous)],
+    setDisableHeaderCheck: [Function (anonymous)],
+    setRequestHeader: [Function (anonymous)],
+    getResponseHeader: [Function (anonymous)],
+    getAllResponseHeaders: [Function (anonymous)],
+    getRequestHeader: [Function (anonymous)],
+    send: [Function (anonymous)],
+    handleError: [Function (anonymous)],
+    abort: [Function (anonymous)],
+    addEventListener: [Function (anonymous)],
+    removeEventListener: [Function (anonymous)],
+    dispatchEvent: [Function (anonymous)]
+  },
+  type: 'TransportError'
+}
+[2023-07-06T23:40:14.648] [INFO] Tdarr_Node - ---------------Binary tests start----------------
+[2023-07-06T23:40:14.649] [INFO] Tdarr_Node - handbrakePath:HandBrakeCLI
+[2023-07-06T23:40:14.649] [INFO] Tdarr_Node - ffmpegPath:tdarr-ffmpeg
+[2023-07-06T23:40:14.649] [INFO] Tdarr_Node - mkvpropedit:mkvpropedit
+[2023-07-06T23:40:14.650] [INFO] Tdarr_Node - Binary test 1: handbrakePath working
+[2023-07-06T23:40:14.650] [INFO] Tdarr_Node - Binary test 2: ffmpegPath working
+[2023-07-06T23:40:14.650] [INFO] Tdarr_Node - Binary test 3: mkvpropeditPath working
+[2023-07-06T23:40:14.650] [INFO] Tdarr_Node - ---------------Binary tests end-------------------
+[2023-07-06T23:40:16.194] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-06T23:40:16.275] [INFO] Tdarr_Node - Node connected & registered
+[2023-07-06T23:40:16.446] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-06T23:40:20.029] [INFO] Tdarr_Node - [3837ms]Plugin update finished
+[2023-07-06T23:43:49.872] [INFO] Tdarr_Node - The following external module needs to be installed for a plugin:import-fresh
+[2023-07-06T23:43:50.718] [ERROR] Tdarr_Node - Error: ENOENT: no such file or directory, access '/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv'
+    at Object.accessSync (fs.js:228:3)
+    at Object.accessSync (pkg/prelude/bootstrap.js:1474:34)
+    at _0x865004 (/snapshot/node/srcug/workers/worker1.js:1:51575)
+    at /snapshot/node/srcug/workers/worker1.js:1:52052
+    at _0x55e6cc (/snapshot/node/srcug/workers/worker1.js:1:4835)
+    at Object.next (/snapshot/node/srcug/workers/worker1.js:1:3100)
+    at /snapshot/node/srcug/workers/worker1.js:1:2563
+    at new Promise (<anonymous>)
+    at __awaiter (/snapshot/node/srcug/workers/worker1.js:1:1924)
+    at preProcessFile (/snapshot/node/srcug/workers/worker1.js:1:50973) {
+  errno: -2,
+  syscall: 'access',
+  code: 'ENOENT',
+  path: '/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv'
+}
+[2023-07-06T23:43:52.445] [ERROR] Tdarr_Node - Error: ENOENT: no such file or directory, access '/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv'
+    at Object.accessSync (fs.js:228:3)
+    at Object.accessSync (pkg/prelude/bootstrap.js:1474:34)
+    at _0x865004 (/snapshot/node/srcug/workers/worker1.js:1:51575)
+    at /snapshot/node/srcug/workers/worker1.js:1:52052
+    at _0x55e6cc (/snapshot/node/srcug/workers/worker1.js:1:4835)
+    at Object.next (/snapshot/node/srcug/workers/worker1.js:1:3100)
+    at /snapshot/node/srcug/workers/worker1.js:1:2563
+    at new Promise (<anonymous>)
+    at __awaiter (/snapshot/node/srcug/workers/worker1.js:1:1924)
+    at preProcessFile (/snapshot/node/srcug/workers/worker1.js:1:50973)
+    at /snapshot/node/srcug/workers/worker1.js:1:60435
+    at _0x55e6cc (/snapshot/node/srcug/workers/worker1.js:1:4835)
+    at Object.next (/snapshot/node/srcug/workers/worker1.js:1:3100)
+    at _0x5dcf39 (/snapshot/node/srcug/workers/worker1.js:1:2111)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  errno: -2,
+  syscall: 'access',
+  code: 'ENOENT',
+  path: '/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv'
+}
+[2023-07-07T00:07:06.723] [INFO] Tdarr_Node - /app/configs/Tdarr_Node_Config.json
+[2023-07-07T00:07:06.731] [INFO] Tdarr_Node - {
+  nodeName: 'MyInternalNode',
+  serverIP: '0.0.0.0',
+  serverPort: '8266',
+  handbrakePath: '',
+  ffmpegPath: '',
+  mkvpropeditPath: '',
+  pathTranslators: [ { server: '', node: '' } ],
+  logLevel: 'INFO',
+  priority: -1,
+  platform_arch_isdocker: 'linux_x64_docker_true',
+  processPid: 200,
+  nodeID: 'DI7hE6ijr'
+}
+[2023-07-07T00:07:06.836] [INFO] Tdarr_Node - version: 2.00.21
+[2023-07-07T00:07:06.836] [INFO] Tdarr_Node - platform_arch_isdocker: linux_x64_docker_true
+[2023-07-07T00:07:06.840] [INFO] Tdarr_Node - Starting Tdarr_Node
+[2023-07-07T00:07:06.840] [INFO] Tdarr_Node - Preparing environment
+[2023-07-07T00:07:07.153] [INFO] Tdarr_Node - Updating plugins
+[2023-07-07T00:07:07.177] [ERROR] Tdarr_Node - Node connection error to :0.0.0.0:8266
+[2023-07-07T00:07:07.177] [ERROR] Tdarr_Node - TransportError: xhr poll error
+    at Polling.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transport.js:45:37)
+    at Request.<anonymous> (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:251:18)
+    at Request.<anonymous> (/snapshot/node/node_modules/@socket.io/component-emitter/index.js:143:20)
+    at Request.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:352:14)
+    at Timeout._onTimeout (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:325:30)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  description: 0,
+  context: XMLHttpRequest {
+    UNSENT: 0,
+    OPENED: 1,
+    HEADERS_RECEIVED: 2,
+    LOADING: 3,
+    DONE: 4,
+    readyState: 4,
+    onreadystatechange: [Function (anonymous)],
+    responseText: 'Error: connect ECONNREFUSED 0.0.0.0:8266\n' +
+      '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)',
+    responseXML: '',
+    status: 0,
+    statusText: Error: connect ECONNREFUSED 0.0.0.0:8266
+        at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '0.0.0.0',
+      port: 8266
+    },
+    open: [Function (anonymous)],
+    setDisableHeaderCheck: [Function (anonymous)],
+    setRequestHeader: [Function (anonymous)],
+    getResponseHeader: [Function (anonymous)],
+    getAllResponseHeaders: [Function (anonymous)],
+    getRequestHeader: [Function (anonymous)],
+    send: [Function (anonymous)],
+    handleError: [Function (anonymous)],
+    abort: [Function (anonymous)],
+    addEventListener: [Function (anonymous)],
+    removeEventListener: [Function (anonymous)],
+    dispatchEvent: [Function (anonymous)]
+  },
+  type: 'TransportError'
+}
+[2023-07-07T00:07:07.547] [INFO] Tdarr_Node - ---------------Binary tests start----------------
+[2023-07-07T00:07:07.548] [INFO] Tdarr_Node - handbrakePath:HandBrakeCLI
+[2023-07-07T00:07:07.548] [INFO] Tdarr_Node - ffmpegPath:tdarr-ffmpeg
+[2023-07-07T00:07:07.548] [INFO] Tdarr_Node - mkvpropedit:mkvpropedit
+[2023-07-07T00:07:07.548] [INFO] Tdarr_Node - Binary test 1: handbrakePath working
+[2023-07-07T00:07:07.549] [INFO] Tdarr_Node - Binary test 2: ffmpegPath working
+[2023-07-07T00:07:07.549] [INFO] Tdarr_Node - Binary test 3: mkvpropeditPath working
+[2023-07-07T00:07:07.549] [INFO] Tdarr_Node - ---------------Binary tests end-------------------
+[2023-07-07T00:07:08.657] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-07T00:07:08.755] [INFO] Tdarr_Node - Node connected & registered
+[2023-07-07T00:07:08.902] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-07T00:07:12.779] [INFO] Tdarr_Node - [4124ms]Plugin update finished
+[2023-07-07T00:07:37.677] [INFO] Tdarr_Node - The following external module needs to be installed for a plugin:import-fresh
+[2023-07-07T00:45:47.836] [DEBUG] Tdarr_Node - Polling worker response error:13713ms
+[2023-07-07T00:45:48.021] [ERROR] Tdarr_Node - Error: timeout of 10000ms exceeded
+    at createError (/snapshot/node/node_modules/axios/lib/core/createError.js:16:15)
+    at RedirectableRequest.handleRequestTimeout (/snapshot/node/node_modules/axios/lib/adapters/http.js:369:16)
+    at RedirectableRequest.emit (events.js:400:28)
+    at Timeout.<anonymous> (/snapshot/node/node_modules/follow-redirects/index.js:169:12)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 10000,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/0.26.1',
+      'Content-Length': 31
+    },
+    method: 'post',
+    url: 'http://0.0.0.0:8266/api/v2/poll-worker-limits',
+    data: '{"data":{"nodeID":"DI7hE6ijr"}}'
+  },
+  code: 'ECONNABORTED',
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: null,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError],
+      socket: [Array]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      protocol: 'http:',
+      path: '/api/v2/poll-worker-limits',
+      method: 'POST',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: '0.0.0.0',
+      port: '8266',
+      nativeProtocols: [Object],
+      pathname: '/api/v2/poll-worker-limits'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 31,
+    _requestBodyBuffers: [ [Object] ],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'POST /api/v2/poll-worker-limits HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: axios/0.26.1\r\n' +
+        'Content-Length: 31\r\n' +
+        'Host: 0.0.0.0:8266\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/v2/poll-worker-limits',
+      _ended: false,
+      res: null,
+      aborted: true,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: [HTTPParser],
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: '0.0.0.0',
+      protocol: 'http:',
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://0.0.0.0:8266/api/v2/poll-worker-limits',
+    _timeout: null,
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+[2023-07-07T00:46:11.799] [DEBUG] Tdarr_Node - Polling worker response error:10590ms
+[2023-07-07T00:46:12.682] [ERROR] Tdarr_Node - Error: timeout of 10000ms exceeded
+    at createError (/snapshot/node/node_modules/axios/lib/core/createError.js:16:15)
+    at RedirectableRequest.handleRequestTimeout (/snapshot/node/node_modules/axios/lib/adapters/http.js:369:16)
+    at RedirectableRequest.emit (events.js:400:28)
+    at Timeout.<anonymous> (/snapshot/node/node_modules/follow-redirects/index.js:169:12)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 10000,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/0.26.1',
+      'Content-Length': 31
+    },
+    method: 'post',
+    url: 'http://0.0.0.0:8266/api/v2/poll-worker-limits',
+    data: '{"data":{"nodeID":"DI7hE6ijr"}}'
+  },
+  code: 'ECONNABORTED',
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: null,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError],
+      socket: [Array]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      protocol: 'http:',
+      path: '/api/v2/poll-worker-limits',
+      method: 'POST',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: '0.0.0.0',
+      port: '8266',
+      nativeProtocols: [Object],
+      pathname: '/api/v2/poll-worker-limits'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 31,
+    _requestBodyBuffers: [ [Object] ],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'POST /api/v2/poll-worker-limits HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: axios/0.26.1\r\n' +
+        'Content-Length: 31\r\n' +
+        'Host: 0.0.0.0:8266\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/v2/poll-worker-limits',
+      _ended: false,
+      res: null,
+      aborted: true,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: [HTTPParser],
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: '0.0.0.0',
+      protocol: 'http:',
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://0.0.0.0:8266/api/v2/poll-worker-limits',
+    _timeout: null,
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+[2023-07-07T00:46:32.769] [DEBUG] Tdarr_Node - Polling worker response error:10644ms
+[2023-07-07T00:46:32.816] [ERROR] Tdarr_Node - Error: timeout of 10000ms exceeded
+    at createError (/snapshot/node/node_modules/axios/lib/core/createError.js:16:15)
+    at RedirectableRequest.handleRequestTimeout (/snapshot/node/node_modules/axios/lib/adapters/http.js:369:16)
+    at RedirectableRequest.emit (events.js:400:28)
+    at Timeout.<anonymous> (/snapshot/node/node_modules/follow-redirects/index.js:169:12)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 10000,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/0.26.1',
+      'Content-Length': 31
+    },
+    method: 'post',
+    url: 'http://0.0.0.0:8266/api/v2/poll-worker-limits',
+    data: '{"data":{"nodeID":"DI7hE6ijr"}}'
+  },
+  code: 'ECONNABORTED',
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: null,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError],
+      socket: [Array]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      protocol: 'http:',
+      path: '/api/v2/poll-worker-limits',
+      method: 'POST',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: '0.0.0.0',
+      port: '8266',
+      nativeProtocols: [Object],
+      pathname: '/api/v2/poll-worker-limits'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 31,
+    _requestBodyBuffers: [ [Object] ],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'POST /api/v2/poll-worker-limits HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: axios/0.26.1\r\n' +
+        'Content-Length: 31\r\n' +
+        'Host: 0.0.0.0:8266\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/v2/poll-worker-limits',
+      _ended: false,
+      res: null,
+      aborted: true,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: [HTTPParser],
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: '0.0.0.0',
+      protocol: 'http:',
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://0.0.0.0:8266/api/v2/poll-worker-limits',
+    _timeout: null,
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+[2023-07-07T00:47:01.517] [DEBUG] Tdarr_Node - Polling worker response error:10305ms
+[2023-07-07T00:47:01.962] [ERROR] Tdarr_Node - Error: timeout of 10000ms exceeded
+    at createError (/snapshot/node/node_modules/axios/lib/core/createError.js:16:15)
+    at RedirectableRequest.handleRequestTimeout (/snapshot/node/node_modules/axios/lib/adapters/http.js:369:16)
+    at RedirectableRequest.emit (events.js:400:28)
+    at Timeout.<anonymous> (/snapshot/node/node_modules/follow-redirects/index.js:169:12)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 10000,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/0.26.1',
+      'Content-Length': 31
+    },
+    method: 'post',
+    url: 'http://0.0.0.0:8266/api/v2/poll-worker-limits',
+    data: '{"data":{"nodeID":"DI7hE6ijr"}}'
+  },
+  code: 'ECONNABORTED',
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: null,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError],
+      socket: [Array]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      protocol: 'http:',
+      path: '/api/v2/poll-worker-limits',
+      method: 'POST',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: '0.0.0.0',
+      port: '8266',
+      nativeProtocols: [Object],
+      pathname: '/api/v2/poll-worker-limits'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 31,
+    _requestBodyBuffers: [ [Object] ],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'POST /api/v2/poll-worker-limits HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: axios/0.26.1\r\n' +
+        'Content-Length: 31\r\n' +
+        'Host: 0.0.0.0:8266\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/v2/poll-worker-limits',
+      _ended: false,
+      res: null,
+      aborted: true,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: [HTTPParser],
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: '0.0.0.0',
+      protocol: 'http:',
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://0.0.0.0:8266/api/v2/poll-worker-limits',
+    _timeout: null,
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+[2023-07-07T00:47:19.813] [DEBUG] Tdarr_Node - Updating server response error:14975ms
+[2023-07-07T00:47:20.364] [ERROR] Tdarr_Node - Error: timeout of 10000ms exceeded
+    at createError (/snapshot/node/node_modules/axios/lib/core/createError.js:16:15)
+    at RedirectableRequest.handleRequestTimeout (/snapshot/node/node_modules/axios/lib/adapters/http.js:369:16)
+    at RedirectableRequest.emit (events.js:400:28)
+    at Timeout.<anonymous> (/snapshot/node/node_modules/follow-redirects/index.js:169:12)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 10000,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/0.26.1',
+      'Content-Length': 2398
+    },
+    method: 'post',
+    url: 'http://0.0.0.0:8266/api/v2/update-node-relay',
+    data: `{"data":{"nodeID":"DI7hE6ijr","resStats":{"process":{"uptime":2391,"heapUsedMB":"37.2","heapTotalMB":"44.1"},"os":{"cpuPerc":"100.00","memUsedGB":"7.7","memTotalGB":"7.8"}},"workers":{"yellow-yak":{"_id":"yellow-yak","workerType":"transcodecpu","created":true,"idle":false,"sourcefileSizeInGbytes":4.957831430248916,"originalfileSizeInGbytes":5.095143273472786,"preset":"-Z \\"H.264 MKV 2160p60 4K\\" -e x264 --all-subtitles --all-audio","file":"/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv","percentage":6.12,"fps":181,"ETA":"15:19:08","status":"Processing","statusTs":1688687224797,"job":{"version":"2.00.21","footprintId":"nuzkxgBak","jobId":"-M6C3aifcY","start":1688685789529,"type":"transcode","fileId":"nuzkxgBak()2.00.21()transcode()-M6C3aifcY()1688685789529.txt"},"process":{"_events":{},"_eventsCount":4,"_closesNeeded":2,"_closesGot":0,"connected":true,"signalCode":null,"exitCode":null,"killed":false,"spawnfile":"/app/Tdarr_Node/Tdarr_Node","_handle":{"pid":305},"spawnargs":["/app/Tdarr_Node/Tdarr_Node","/snapshot/node/srcug/workers/worker1.js","yellow-yak","transcodecpu",false,"0.0.0.0","8266","{\\"config\\":{\\"nodeName\\":\\"MyInternalNode\\",\\"serverIP\\":\\"0.0.0.0\\",\\"serverPort\\":\\"8266\\",\\"handbrakePath\\":\\"\\",\\"ffmpegPath\\":\\"\\",\\"mkvpropeditPath\\":\\"\\",\\"pathTranslators\\":[{\\"server\\":\\"\\",\\"node\\":\\"\\"}],\\"logLevel\\":\\"INFO\\",\\"priority\\":-1,\\"platform_arch_isdocker\\":\\"linux_x64_docker_true\\",\\"processPid\\":200,\\"nodeID\\":\\"DI7hE6ijr\\"}}","DI7hE6ijr",false],"pid":305,"stdin":null,"stdout":null,"stderr":null,"stdio":[null,null,null,null],"channel":{"_events":{},"_eventsCount":0},"_handleQueue":null,"_pendingMessage":null},"workerLog":"\\nPre-processing - Tdarr_Plugin_MC93_MigzImageRemoval\\n☑File doesn't contain any unwanted image format streams.\\n\\nPre-processing - Tdarr_Plugin_lmg1_Reorder_Streams\\nFile has video in first stream\\n File meets conditions!\\n\\nPre-processing - Tdarr_Plugin_00td_action_standardise_audio_stream_codecs\\nFile does not have any audio streams which aren't in aac \\n\\nPre-processing - Tdarr_Plugin_075a_Transcode_Customisable\\n☒File is not in desired codec! \\n","startTime":1688686214135,"CLIType":"handbrake","lastPluginDetails":{"source":"Community","id":"Tdarr_Plugin_075a_Transcode_Customisable","number":"4/7"},"outputFileSizeInGbytes":0.101806640625,"estSize":1.671701816502463}}}}`
+  },
+  code: 'ECONNABORTED',
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: null,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError],
+      socket: [Array]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      protocol: 'http:',
+      path: '/api/v2/update-node-relay',
+      method: 'POST',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: '0.0.0.0',
+      port: '8266',
+      nativeProtocols: [Object],
+      pathname: '/api/v2/update-node-relay'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 2398,
+    _requestBodyBuffers: [ [Object] ],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'POST /api/v2/update-node-relay HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: axios/0.26.1\r\n' +
+        'Content-Length: 2398\r\n' +
+        'Host: 0.0.0.0:8266\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/v2/update-node-relay',
+      _ended: false,
+      res: null,
+      aborted: true,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: [HTTPParser],
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: '0.0.0.0',
+      protocol: 'http:',
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://0.0.0.0:8266/api/v2/update-node-relay',
+    _timeout: null,
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+[2023-07-07T00:47:43.257] [DEBUG] Tdarr_Node - Polling worker response error:12256ms
+[2023-07-07T00:47:43.988] [ERROR] Tdarr_Node - Error: timeout of 10000ms exceeded
+    at createError (/snapshot/node/node_modules/axios/lib/core/createError.js:16:15)
+    at RedirectableRequest.handleRequestTimeout (/snapshot/node/node_modules/axios/lib/adapters/http.js:369:16)
+    at RedirectableRequest.emit (events.js:400:28)
+    at Timeout.<anonymous> (/snapshot/node/node_modules/follow-redirects/index.js:169:12)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 10000,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/0.26.1',
+      'Content-Length': 31
+    },
+    method: 'post',
+    url: 'http://0.0.0.0:8266/api/v2/poll-worker-limits',
+    data: '{"data":{"nodeID":"DI7hE6ijr"}}'
+  },
+  code: 'ECONNABORTED',
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: null,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError],
+      socket: [Array]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      protocol: 'http:',
+      path: '/api/v2/poll-worker-limits',
+      method: 'POST',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: '0.0.0.0',
+      port: '8266',
+      nativeProtocols: [Object],
+      pathname: '/api/v2/poll-worker-limits'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 31,
+    _requestBodyBuffers: [ [Object] ],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'POST /api/v2/poll-worker-limits HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: axios/0.26.1\r\n' +
+        'Content-Length: 31\r\n' +
+        'Host: 0.0.0.0:8266\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/v2/poll-worker-limits',
+      _ended: false,
+      res: null,
+      aborted: true,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: [HTTPParser],
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: '0.0.0.0',
+      protocol: 'http:',
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://0.0.0.0:8266/api/v2/poll-worker-limits',
+    _timeout: null,
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+[2023-07-07T00:48:00.135] [DEBUG] Tdarr_Node - Updating server response error:11202ms
+[2023-07-07T00:48:00.322] [ERROR] Tdarr_Node - Error: timeout of 10000ms exceeded
+    at createError (/snapshot/node/node_modules/axios/lib/core/createError.js:16:15)
+    at RedirectableRequest.handleRequestTimeout (/snapshot/node/node_modules/axios/lib/adapters/http.js:369:16)
+    at RedirectableRequest.emit (events.js:400:28)
+    at Timeout.<anonymous> (/snapshot/node/node_modules/follow-redirects/index.js:169:12)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 10000,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/0.26.1',
+      'Content-Length': 2398
+    },
+    method: 'post',
+    url: 'http://0.0.0.0:8266/api/v2/update-node-relay',
+    data: `{"data":{"nodeID":"DI7hE6ijr","resStats":{"process":{"uptime":2429,"heapUsedMB":"37.3","heapTotalMB":"44.1"},"os":{"cpuPerc":"100.00","memUsedGB":"7.7","memTotalGB":"7.8"}},"workers":{"yellow-yak":{"_id":"yellow-yak","workerType":"transcodecpu","created":true,"idle":false,"sourcefileSizeInGbytes":4.957831430248916,"originalfileSizeInGbytes":5.095143273472786,"preset":"-Z \\"H.264 MKV 2160p60 4K\\" -e x264 --all-subtitles --all-audio","file":"/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p.mkv","percentage":6.13,"fps":181,"ETA":"17:22:44","status":"Processing","statusTs":1688687268780,"job":{"version":"2.00.21","footprintId":"nuzkxgBak","jobId":"-M6C3aifcY","start":1688685789529,"type":"transcode","fileId":"nuzkxgBak()2.00.21()transcode()-M6C3aifcY()1688685789529.txt"},"process":{"_events":{},"_eventsCount":4,"_closesNeeded":2,"_closesGot":0,"connected":true,"signalCode":null,"exitCode":null,"killed":false,"spawnfile":"/app/Tdarr_Node/Tdarr_Node","_handle":{"pid":305},"spawnargs":["/app/Tdarr_Node/Tdarr_Node","/snapshot/node/srcug/workers/worker1.js","yellow-yak","transcodecpu",false,"0.0.0.0","8266","{\\"config\\":{\\"nodeName\\":\\"MyInternalNode\\",\\"serverIP\\":\\"0.0.0.0\\",\\"serverPort\\":\\"8266\\",\\"handbrakePath\\":\\"\\",\\"ffmpegPath\\":\\"\\",\\"mkvpropeditPath\\":\\"\\",\\"pathTranslators\\":[{\\"server\\":\\"\\",\\"node\\":\\"\\"}],\\"logLevel\\":\\"INFO\\",\\"priority\\":-1,\\"platform_arch_isdocker\\":\\"linux_x64_docker_true\\",\\"processPid\\":200,\\"nodeID\\":\\"DI7hE6ijr\\"}}","DI7hE6ijr",false],"pid":305,"stdin":null,"stdout":null,"stderr":null,"stdio":[null,null,null,null],"channel":{"_events":{},"_eventsCount":0},"_handleQueue":null,"_pendingMessage":null},"workerLog":"\\nPre-processing - Tdarr_Plugin_MC93_MigzImageRemoval\\n☑File doesn't contain any unwanted image format streams.\\n\\nPre-processing - Tdarr_Plugin_lmg1_Reorder_Streams\\nFile has video in first stream\\n File meets conditions!\\n\\nPre-processing - Tdarr_Plugin_00td_action_standardise_audio_stream_codecs\\nFile does not have any audio streams which aren't in aac \\n\\nPre-processing - Tdarr_Plugin_075a_Transcode_Customisable\\n☒File is not in desired codec! \\n","startTime":1688686214135,"CLIType":"handbrake","lastPluginDetails":{"source":"Community","id":"Tdarr_Plugin_075a_Transcode_Customisable","number":"4/7"},"outputFileSizeInGbytes":0.101806640625,"estSize":1.671701816502463}}}}`
+  },
+  code: 'ECONNABORTED',
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: null,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError],
+      socket: [Array]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      protocol: 'http:',
+      path: '/api/v2/update-node-relay',
+      method: 'POST',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: '0.0.0.0',
+      port: '8266',
+      nativeProtocols: [Object],
+      pathname: '/api/v2/update-node-relay'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 2398,
+    _requestBodyBuffers: [ [Object] ],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'POST /api/v2/update-node-relay HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: axios/0.26.1\r\n' +
+        'Content-Length: 2398\r\n' +
+        'Host: 0.0.0.0:8266\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/v2/update-node-relay',
+      _ended: false,
+      res: null,
+      aborted: true,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: [HTTPParser],
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: '0.0.0.0',
+      protocol: 'http:',
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://0.0.0.0:8266/api/v2/update-node-relay',
+    _timeout: null,
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+[2023-07-07T00:48:09.515] [WARN] Tdarr_Node - Cancelling
+[2023-07-07T00:48:11.589] [DEBUG] Tdarr_Node - Polling worker response error:10779ms
+[2023-07-07T00:48:11.665] [ERROR] Tdarr_Node - Error: timeout of 10000ms exceeded
+    at createError (/snapshot/node/node_modules/axios/lib/core/createError.js:16:15)
+    at RedirectableRequest.handleRequestTimeout (/snapshot/node/node_modules/axios/lib/adapters/http.js:369:16)
+    at RedirectableRequest.emit (events.js:400:28)
+    at Timeout.<anonymous> (/snapshot/node/node_modules/follow-redirects/index.js:169:12)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 10000,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/0.26.1',
+      'Content-Length': 31
+    },
+    method: 'post',
+    url: 'http://0.0.0.0:8266/api/v2/poll-worker-limits',
+    data: '{"data":{"nodeID":"DI7hE6ijr"}}'
+  },
+  code: 'ECONNABORTED',
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: null,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError],
+      socket: [Array]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      protocol: 'http:',
+      path: '/api/v2/poll-worker-limits',
+      method: 'POST',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: '0.0.0.0',
+      port: '8266',
+      nativeProtocols: [Object],
+      pathname: '/api/v2/poll-worker-limits'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 31,
+    _requestBodyBuffers: [ [Object] ],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'POST /api/v2/poll-worker-limits HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: axios/0.26.1\r\n' +
+        'Content-Length: 31\r\n' +
+        'Host: 0.0.0.0:8266\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/v2/poll-worker-limits',
+      _ended: false,
+      res: null,
+      aborted: true,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: [HTTPParser],
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: '0.0.0.0',
+      protocol: 'http:',
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://0.0.0.0:8266/api/v2/poll-worker-limits',
+    _timeout: null,
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+[2023-07-07T01:07:07.161] [INFO] Tdarr_Node - Updating plugins
+[2023-07-07T01:07:08.425] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-07T01:07:08.716] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-07T01:07:12.402] [INFO] Tdarr_Node - [3978ms]Plugin update finished
+[2023-07-07T02:07:07.193] [INFO] Tdarr_Node - Updating plugins
+[2023-07-07T02:07:08.098] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-07T02:07:08.850] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-07T02:07:12.525] [INFO] Tdarr_Node - [4429ms]Plugin update finished
+[2023-07-07T03:07:07.203] [INFO] Tdarr_Node - Updating plugins
+[2023-07-07T03:07:08.117] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-07T03:07:08.481] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-07T04:07:07.208] [INFO] Tdarr_Node - Updating plugins
+[2023-07-07T04:07:08.241] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-07T04:07:08.439] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-07T04:07:12.196] [INFO] Tdarr_Node - [3958ms]Plugin update finished
+[2023-07-07T05:07:07.214] [INFO] Tdarr_Node - Updating plugins
+[2023-07-07T05:07:08.196] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-07T05:07:08.387] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-07T05:07:12.066] [INFO] Tdarr_Node - [3883ms]Plugin update finished
+[2023-07-07T06:07:07.221] [INFO] Tdarr_Node - Updating plugins
+[2023-07-07T06:07:08.244] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-07T06:07:08.430] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-07T06:07:12.304] [INFO] Tdarr_Node - [4062ms]Plugin update finished
+[2023-07-07T07:07:07.228] [INFO] Tdarr_Node - Updating plugins
+[2023-07-07T07:07:08.449] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-07T07:07:08.721] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-07T07:07:12.432] [INFO] Tdarr_Node - [3987ms]Plugin update finished
+[2023-07-07T08:07:07.267] [INFO] Tdarr_Node - Updating plugins
+[2023-07-07T08:07:08.979] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-07T08:07:09.647] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-07T08:07:16.383] [INFO] Tdarr_Node - [7408ms]Plugin update finished
+[2023-07-07T08:40:50.259] [DEBUG] Tdarr_Node - Updating server response error:83700ms
+[2023-07-07T08:40:50.280] [ERROR] Tdarr_Node - Error: timeout of 10000ms exceeded
+    at createError (/snapshot/node/node_modules/axios/lib/core/createError.js:16:15)
+    at RedirectableRequest.handleRequestTimeout (/snapshot/node/node_modules/axios/lib/adapters/http.js:369:16)
+    at RedirectableRequest.emit (events.js:400:28)
+    at Timeout.<anonymous> (/snapshot/node/node_modules/follow-redirects/index.js:169:12)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 10000,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/0.26.1',
+      'Content-Length': 3614
+    },
+    method: 'post',
+    url: 'http://0.0.0.0:8266/api/v2/update-node-relay',
+    data: `{"data":{"nodeID":"DI7hE6ijr","resStats":{"process":{"uptime":30735,"heapUsedMB":"40.6","heapTotalMB":"48.4"},"os":{"cpuPerc":"98.71","memUsedGB":"7.7","memTotalGB":"7.8"}},"workers":{"zany-zebu":{"_id":"zany-zebu","workerType":"transcodecpu","created":true,"idle":false,"sourcefileSizeInGbytes":5.265711619518697,"originalfileSizeInGbytes":5.410117942839861,"preset":"-Z \\"H.264 MKV 2160p60 4K\\" -e x264 --all-subtitles --all-audio  -x threads=2","file":"/media/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E02 - Promises WEBDL-2160p.mkv","percentage":31.88,"fps":297,"ETA":"3:04:18","status":"Processing","statusTs":1688715565987,"job":{"version":"2.00.21","footprintId":"NHdRMIQd4","jobId":"ZOb2y__3y7","start":1688709229606,"type":"transcode","fileId":"NHdRMIQd4()2.00.21()transcode()ZOb2y__3y7()1688709229606.txt"},"process":{"_events":{},"_eventsCount":4,"_closesNeeded":2,"_closesGot":0,"connected":true,"signalCode":null,"exitCode":null,"killed":false,"spawnfile":"/app/Tdarr_Node/Tdarr_Node","_handle":{"pid":956},"spawnargs":["/app/Tdarr_Node/Tdarr_Node","/snapshot/node/srcug/workers/worker1.js","zany-zebu","transcodecpu",false,"0.0.0.0","8266","{\\"config\\":{\\"nodeName\\":\\"MyInternalNode\\",\\"serverIP\\":\\"0.0.0.0\\",\\"serverPort\\":\\"8266\\",\\"handbrakePath\\":\\"\\",\\"ffmpegPath\\":\\"\\",\\"mkvpropeditPath\\":\\"\\",\\"pathTranslators\\":[{\\"server\\":\\"\\",\\"node\\":\\"\\"}],\\"logLevel\\":\\"INFO\\",\\"priority\\":-1,\\"platform_arch_isdocker\\":\\"linux_x64_docker_true\\",\\"processPid\\":200,\\"nodeID\\":\\"DI7hE6ijr\\"}}","DI7hE6ijr",false],"pid":956,"stdin":null,"stdout":null,"stderr":null,"stdio":[null,null,null,null],"channel":{"_events":{},"_eventsCount":0},"_handleQueue":null,"_pendingMessage":null},"workerLog":"\\nPre-processing - Tdarr_Plugin_MC93_MigzImageRemoval\\n☑File doesn't contain any unwanted image format streams.\\n\\nPre-processing - Tdarr_Plugin_lmg1_Reorder_Streams\\nFile has video in first stream\\n File meets conditions!\\n\\nPre-processing - Tdarr_Plugin_00td_action_standardise_audio_stream_codecs\\nFile does not have any audio streams which aren't in aac \\n\\nPre-processing - Tdarr_Plugin_075a_Transcode_Customisable\\n☒File is not in desired codec! \\n","startTime":1688709505137,"CLIType":"handbrake","lastPluginDetails":{"source":"Community","id":"Tdarr_Plugin_075a_Transcode_Customisable","number":"4/7"},"outputFileSizeInGbytes":1.2705078125,"estSize":4.009175804670242},"yellow-yak":{"_id":"yellow-yak","workerType":"healthcheckcpu","created":true,"idle":false,"sourcefileSizeInGbytes":0,"originalfileSizeInGbytes":0,"preset":"","file":"","percentage":-1,"fps":0,"ETA":"","status":"","statusTs":1688715565123,"job":{"version":"2.00.21","footprintId":"","jobId":"","start":0,"type":"","fileId":""},"process":{"_events":{},"_eventsCount":4,"_closesNeeded":2,"_closesGot":0,"connected":true,"signalCode":null,"exitCode":null,"killed":false,"spawnfile":"/app/Tdarr_Node/Tdarr_Node","_handle":{"pid":5303},"spawnargs":["/app/Tdarr_Node/Tdarr_Node","/snapshot/node/srcug/workers/worker1.js","yellow-yak","healthcheckcpu",false,"0.0.0.0","8266","{\\"config\\":{\\"nodeName\\":\\"MyInternalNode\\",\\"serverIP\\":\\"0.0.0.0\\",\\"serverPort\\":\\"8266\\",\\"handbrakePath\\":\\"\\",\\"ffmpegPath\\":\\"\\",\\"mkvpropeditPath\\":\\"\\",\\"pathTranslators\\":[{\\"server\\":\\"\\",\\"node\\":\\"\\"}],\\"logLevel\\":\\"INFO\\",\\"priority\\":-1,\\"platform_arch_isdocker\\":\\"linux_x64_docker_true\\",\\"processPid\\":200,\\"nodeID\\":\\"DI7hE6ijr\\"}}","DI7hE6ijr",false],"pid":5303,"stdin":null,"stdout":null,"stderr":null,"stdio":[null,null,null,null],"channel":{"_events":{},"_eventsCount":0},"_handleQueue":null,"_pendingMessage":null}}}}}`
+  },
+  code: 'ECONNABORTED',
+  request: <ref *1> Writable {
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: true,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: true,
+      autoDestroy: true,
+      errored: null,
+      closed: false
+    },
+    _events: [Object: null prototype] {
+      response: [Function: handleResponse],
+      error: [Function: handleRequestError],
+      socket: [Array]
+    },
+    _eventsCount: 3,
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: 10485760,
+      protocol: 'http:',
+      path: '/api/v2/update-node-relay',
+      method: 'POST',
+      headers: [Object],
+      agent: undefined,
+      agents: [Object],
+      auth: undefined,
+      hostname: '0.0.0.0',
+      port: '8266',
+      nativeProtocols: [Object],
+      pathname: '/api/v2/update-node-relay'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 3614,
+    _requestBodyBuffers: [ [Object] ],
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'POST /api/v2/update-node-relay HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: axios/0.26.1\r\n' +
+        'Content-Length: 3614\r\n' +
+        'Host: 0.0.0.0:8266\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/v2/update-node-relay',
+      _ended: false,
+      res: null,
+      aborted: true,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: [HTTPParser],
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: '0.0.0.0',
+      protocol: 'http:',
+      _redirectable: [Circular *1],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    _currentUrl: 'http://0.0.0.0:8266/api/v2/update-node-relay',
+    _timeout: null,
+    [Symbol(kCapture)]: false
+  },
+  response: undefined,
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+[2023-07-07T08:40:50.425] [INFO] Tdarr_Node - Node disconnected & deregistered
+[2023-07-07T08:40:50.665] [DEBUG] Tdarr_Node - Polling worker response error:313ms
+[2023-07-07T08:40:50.696] [ERROR] Tdarr_Node - Error: Request failed with status code 400
+    at createError (/snapshot/node/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/snapshot/node/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/snapshot/node/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (events.js:412:35)
+    at endReadableNT (internal/streams/readable.js:1334:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21) {
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [Function: httpAdapter],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 10000,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    validateStatus: [Function: validateStatus],
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'axios/0.26.1',
+      'Content-Length': 31
+    },
+    method: 'post',
+    url: 'http://0.0.0.0:8266/api/v2/poll-worker-limits',
+    data: '{"data":{"nodeID":"DI7hE6ijr"}}'
+  },
+  request: <ref *1> ClientRequest {
+    _events: [Object: null prototype] {
+      abort: [Function (anonymous)],
+      aborted: [Function (anonymous)],
+      connect: [Function (anonymous)],
+      error: [Function (anonymous)],
+      socket: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      prefinish: [Function: requestOnPrefinish]
+    },
+    _eventsCount: 7,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: false,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: true,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    _contentLength: null,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    socket: Socket {
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: null,
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: null,
+      _server: null,
+      parser: null,
+      _httpMessage: [Circular *1],
+      timeout: 10000,
+      [Symbol(async_id_symbol)]: 858723,
+      [Symbol(kHandle)]: [TCP],
+      [Symbol(kSetNoDelay)]: false,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: Timeout {
+        _idleTimeout: 10000,
+        _idlePrev: [TimersList],
+        _idleNext: [Timeout],
+        _idleStart: 30824526,
+        _onTimeout: [Function: bound ],
+        _timerArgs: undefined,
+        _repeat: null,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 858731,
+        [Symbol(triggerId)]: 858725
+      },
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(RequestTimeout)]: undefined
+    },
+    _header: 'POST /api/v2/poll-worker-limits HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'Content-Type: application/json\r\n' +
+      'User-Agent: axios/0.26.1\r\n' +
+      'Content-Length: 31\r\n' +
+      'Host: 0.0.0.0:8266\r\n' +
+      'Connection: close\r\n' +
+      '\r\n',
+    _keepAliveTimeout: 0,
+    _onPendingData: [Function: noopPendingOutput],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 80,
+      protocol: 'http:',
+      options: [Object],
+      requests: {},
+      sockets: [Object],
+      freeSockets: {},
+      keepAliveMsecs: 1000,
+      keepAlive: false,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      scheduling: 'lifo',
+      maxTotalSockets: Infinity,
+      totalSocketCount: 1,
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'POST',
+    maxHeaderSize: undefined,
+    insecureHTTPParser: undefined,
+    path: '/api/v2/poll-worker-limits',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      socket: [Socket],
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      headers: [Object],
+      rawHeaders: [Array],
+      trailers: {},
+      rawTrailers: [],
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 400,
+      statusMessage: 'Bad Request',
+      client: [Socket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular *1],
+      responseUrl: 'http://0.0.0.0:8266/api/v2/poll-worker-limits',
+      redirects: [],
+      [Symbol(kCapture)]: false,
+      [Symbol(RequestTimeout)]: undefined
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    host: '0.0.0.0',
+    protocol: 'http:',
+    _redirectable: Writable {
+      _writableState: [WritableState],
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      _options: [Object],
+      _ended: true,
+      _ending: true,
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 31,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function (anonymous)],
+      _currentRequest: [Circular *1],
+      _currentUrl: 'http://0.0.0.0:8266/api/v2/poll-worker-limits',
+      _timeout: null,
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(kCapture)]: false,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      'content-type': [Array],
+      'user-agent': [Array],
+      'content-length': [Array],
+      host: [Array]
+    }
+  },
+  response: {
+    status: 400,
+    statusText: 'Bad Request',
+    headers: {
+      'x-powered-by': 'Express',
+      'access-control-allow-origin': '*',
+      'access-control-allow-methods': 'GET,HEAD,OPTIONS,POST,PUT',
+      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept, Authorization',
+      'content-type': 'text/html; charset=utf-8',
+      'content-length': '20',
+      etag: 'W/"14-mZJk4CoSTJXF08k4r6T0zDM6o4I"',
+      date: 'Fri, 07 Jul 2023 07:40:50 GMT',
+      connection: 'close'
+    },
+    config: {
+      transitional: [Object],
+      adapter: [Function: httpAdapter],
+      transformRequest: [Array],
+      transformResponse: [Array],
+      timeout: 10000,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      validateStatus: [Function: validateStatus],
+      headers: [Object],
+      method: 'post',
+      url: 'http://0.0.0.0:8266/api/v2/poll-worker-limits',
+      data: '{"data":{"nodeID":"DI7hE6ijr"}}'
+    },
+    request: <ref *1> ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [Socket],
+      _header: 'POST /api/v2/poll-worker-limits HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: axios/0.26.1\r\n' +
+        'Content-Length: 31\r\n' +
+        'Host: 0.0.0.0:8266\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      path: '/api/v2/poll-worker-limits',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: '0.0.0.0',
+      protocol: 'http:',
+      _redirectable: [Writable],
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    data: 'Error during polling'
+  },
+  isAxiosError: true,
+  toJSON: [Function: toJSON]
+}
+[2023-07-07T08:40:51.012] [ERROR] Tdarr_Node - Failed to contact server, retrying...
+[2023-07-07T08:40:51.026] [ERROR] Tdarr_Node - Failed to contact server, retrying...
+[2023-07-07T08:40:51.028] [ERROR] Tdarr_Node - Failed to contact server, retrying...
+[2023-07-07T08:40:51.028] [ERROR] Tdarr_Node - Failed to contact server, retrying...
+[2023-07-07T08:40:51.028] [ERROR] Tdarr_Node - Failed to contact server, retrying...
+[2023-07-07T08:40:51.029] [ERROR] Tdarr_Node - Failed to contact server, retrying...
+[2023-07-07T08:40:51.029] [ERROR] Tdarr_Node - Failed to contact server, retrying...
+[2023-07-07T08:40:51.030] [ERROR] Tdarr_Node - Failed to contact server, retrying...
+[2023-07-07T08:40:51.030] [ERROR] Tdarr_Node - Failed to contact server, retrying...
+[2023-07-07T08:40:51.033] [ERROR] Tdarr_Node - Failed to contact server, retrying...
+[2023-07-07T08:40:51.034] [ERROR] Tdarr_Node - Failed to contact server, retrying...
+[2023-07-07T08:40:51.034] [ERROR] Tdarr_Node - Failed to contact server, retrying...
+[2023-07-07T08:40:56.748] [INFO] Tdarr_Node - /app/configs/Tdarr_Node_Config.json
+[2023-07-07T08:40:56.755] [INFO] Tdarr_Node - {
+  nodeName: 'MyInternalNode',
+  serverIP: '0.0.0.0',
+  serverPort: '8266',
+  handbrakePath: '',
+  ffmpegPath: '',
+  mkvpropeditPath: '',
+  pathTranslators: [ { server: '', node: '' } ],
+  logLevel: 'INFO',
+  priority: -1,
+  platform_arch_isdocker: 'linux_x64_docker_true',
+  processPid: 182,
+  nodeID: 'dGDzzUT6O'
+}
+[2023-07-07T08:40:56.908] [INFO] Tdarr_Node - version: 2.00.21
+[2023-07-07T08:40:56.908] [INFO] Tdarr_Node - platform_arch_isdocker: linux_x64_docker_true
+[2023-07-07T08:40:56.909] [INFO] Tdarr_Node - Starting Tdarr_Node
+[2023-07-07T08:40:56.910] [INFO] Tdarr_Node - Preparing environment
+[2023-07-07T08:40:56.912] [INFO] Tdarr_Node - Updating plugins
+[2023-07-07T08:40:56.936] [ERROR] Tdarr_Node - Node connection error to :0.0.0.0:8266
+[2023-07-07T08:40:56.936] [ERROR] Tdarr_Node - TransportError: xhr poll error
+    at Polling.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transport.js:45:37)
+    at Request.<anonymous> (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:251:18)
+    at Request.<anonymous> (/snapshot/node/node_modules/@socket.io/component-emitter/index.js:143:20)
+    at Request.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:352:14)
+    at Timeout._onTimeout (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:325:30)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  description: 0,
+  context: XMLHttpRequest {
+    UNSENT: 0,
+    OPENED: 1,
+    HEADERS_RECEIVED: 2,
+    LOADING: 3,
+    DONE: 4,
+    readyState: 4,
+    onreadystatechange: [Function (anonymous)],
+    responseText: 'Error: connect ECONNREFUSED 0.0.0.0:8266\n' +
+      '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)',
+    responseXML: '',
+    status: 0,
+    statusText: Error: connect ECONNREFUSED 0.0.0.0:8266
+        at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '0.0.0.0',
+      port: 8266
+    },
+    open: [Function (anonymous)],
+    setDisableHeaderCheck: [Function (anonymous)],
+    setRequestHeader: [Function (anonymous)],
+    getResponseHeader: [Function (anonymous)],
+    getAllResponseHeaders: [Function (anonymous)],
+    getRequestHeader: [Function (anonymous)],
+    send: [Function (anonymous)],
+    handleError: [Function (anonymous)],
+    abort: [Function (anonymous)],
+    addEventListener: [Function (anonymous)],
+    removeEventListener: [Function (anonymous)],
+    dispatchEvent: [Function (anonymous)]
+  },
+  type: 'TransportError'
+}
+[2023-07-07T08:40:57.422] [INFO] Tdarr_Node - ---------------Binary tests start----------------
+[2023-07-07T08:40:57.423] [INFO] Tdarr_Node - handbrakePath:HandBrakeCLI
+[2023-07-07T08:40:57.423] [INFO] Tdarr_Node - ffmpegPath:tdarr-ffmpeg
+[2023-07-07T08:40:57.423] [INFO] Tdarr_Node - mkvpropedit:mkvpropedit
+[2023-07-07T08:40:57.423] [INFO] Tdarr_Node - Binary test 1: handbrakePath working
+[2023-07-07T08:40:57.423] [INFO] Tdarr_Node - Binary test 2: ffmpegPath working
+[2023-07-07T08:40:57.424] [INFO] Tdarr_Node - Binary test 3: mkvpropeditPath working
+[2023-07-07T08:40:57.424] [INFO] Tdarr_Node - ---------------Binary tests end-------------------
+[2023-07-07T08:40:57.690] [ERROR] Tdarr_Node - Failed to contact server, retrying...
+[2023-07-07T08:40:58.607] [INFO] Tdarr_Node - Node connected & registered
+[2023-07-07T08:40:59.798] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-07T08:41:00.033] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-07T08:41:03.814] [INFO] Tdarr_Node - [4020ms]Plugin update finished
+[2023-07-07T08:41:52.766] [WARN] Tdarr_Node - Cancelling
+[2023-07-07T09:40:56.923] [INFO] Tdarr_Node - Updating plugins
+[2023-07-07T09:40:58.292] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-07T09:40:58.500] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-07T09:41:02.511] [INFO] Tdarr_Node - [4224ms]Plugin update finished
+[2023-07-07T10:40:56.986] [INFO] Tdarr_Node - Updating plugins
+[2023-07-07T10:40:57.852] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-07T10:40:58.051] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-07T10:41:01.730] [INFO] Tdarr_Node - [3879ms]Plugin update finished
+[2023-07-07T11:40:57.031] [INFO] Tdarr_Node - Updating plugins
+[2023-07-07T11:40:58.058] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-07T11:40:58.441] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-07T11:57:12.073] [INFO] Tdarr_Node - /app/configs/Tdarr_Node_Config.json
+[2023-07-07T11:57:12.092] [INFO] Tdarr_Node - {
+  nodeName: 'MyInternalNode',
+  serverIP: '0.0.0.0',
+  serverPort: '8266',
+  handbrakePath: '',
+  ffmpegPath: '',
+  mkvpropeditPath: '',
+  pathTranslators: [ { server: '', node: '' } ],
+  logLevel: 'INFO',
+  priority: -1,
+  platform_arch_isdocker: 'linux_x64_docker_true',
+  processPid: 198,
+  nodeID: 'PGiqJeCdV'
+}
+[2023-07-07T11:57:12.244] [INFO] Tdarr_Node - version: 2.00.21
+[2023-07-07T11:57:12.245] [INFO] Tdarr_Node - platform_arch_isdocker: linux_x64_docker_true
+[2023-07-07T11:57:12.248] [INFO] Tdarr_Node - Starting Tdarr_Node
+[2023-07-07T11:57:12.249] [INFO] Tdarr_Node - Preparing environment
+[2023-07-07T11:57:12.615] [INFO] Tdarr_Node - Updating plugins
+[2023-07-07T11:57:12.639] [ERROR] Tdarr_Node - Node connection error to :0.0.0.0:8266
+[2023-07-07T11:57:12.639] [ERROR] Tdarr_Node - TransportError: xhr poll error
+    at Polling.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transport.js:45:37)
+    at Request.<anonymous> (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:251:18)
+    at Request.<anonymous> (/snapshot/node/node_modules/@socket.io/component-emitter/index.js:143:20)
+    at Request.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:352:14)
+    at Timeout._onTimeout (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:325:30)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  description: 0,
+  context: XMLHttpRequest {
+    UNSENT: 0,
+    OPENED: 1,
+    HEADERS_RECEIVED: 2,
+    LOADING: 3,
+    DONE: 4,
+    readyState: 4,
+    onreadystatechange: [Function (anonymous)],
+    responseText: 'Error: connect ECONNREFUSED 0.0.0.0:8266\n' +
+      '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)',
+    responseXML: '',
+    status: 0,
+    statusText: Error: connect ECONNREFUSED 0.0.0.0:8266
+        at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '0.0.0.0',
+      port: 8266
+    },
+    open: [Function (anonymous)],
+    setDisableHeaderCheck: [Function (anonymous)],
+    setRequestHeader: [Function (anonymous)],
+    getResponseHeader: [Function (anonymous)],
+    getAllResponseHeaders: [Function (anonymous)],
+    getRequestHeader: [Function (anonymous)],
+    send: [Function (anonymous)],
+    handleError: [Function (anonymous)],
+    abort: [Function (anonymous)],
+    addEventListener: [Function (anonymous)],
+    removeEventListener: [Function (anonymous)],
+    dispatchEvent: [Function (anonymous)]
+  },
+  type: 'TransportError'
+}
+[2023-07-07T11:57:13.099] [INFO] Tdarr_Node - ---------------Binary tests start----------------
+[2023-07-07T11:57:13.099] [INFO] Tdarr_Node - handbrakePath:HandBrakeCLI
+[2023-07-07T11:57:13.099] [INFO] Tdarr_Node - ffmpegPath:tdarr-ffmpeg
+[2023-07-07T11:57:13.100] [INFO] Tdarr_Node - mkvpropedit:mkvpropedit
+[2023-07-07T11:57:13.100] [INFO] Tdarr_Node - Binary test 1: handbrakePath working
+[2023-07-07T11:57:13.100] [INFO] Tdarr_Node - Binary test 2: ffmpegPath working
+[2023-07-07T11:57:13.100] [INFO] Tdarr_Node - Binary test 3: mkvpropeditPath working
+[2023-07-07T11:57:13.107] [INFO] Tdarr_Node - ---------------Binary tests end-------------------
+[2023-07-07T11:57:13.247] [ERROR] Tdarr_Node - Node connection error to :0.0.0.0:8266
+[2023-07-07T11:57:13.247] [ERROR] Tdarr_Node - TransportError: xhr poll error
+    at Polling.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transport.js:45:37)
+    at Request.<anonymous> (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:251:18)
+    at Request.<anonymous> (/snapshot/node/node_modules/@socket.io/component-emitter/index.js:143:20)
+    at Request.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:352:14)
+    at Timeout._onTimeout (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:325:30)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  description: 0,
+  context: XMLHttpRequest {
+    UNSENT: 0,
+    OPENED: 1,
+    HEADERS_RECEIVED: 2,
+    LOADING: 3,
+    DONE: 4,
+    readyState: 4,
+    onreadystatechange: [Function (anonymous)],
+    responseText: 'Error: connect ECONNREFUSED 0.0.0.0:8266\n' +
+      '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)',
+    responseXML: '',
+    status: 0,
+    statusText: Error: connect ECONNREFUSED 0.0.0.0:8266
+        at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '0.0.0.0',
+      port: 8266
+    },
+    open: [Function (anonymous)],
+    setDisableHeaderCheck: [Function (anonymous)],
+    setRequestHeader: [Function (anonymous)],
+    getResponseHeader: [Function (anonymous)],
+    getAllResponseHeaders: [Function (anonymous)],
+    getRequestHeader: [Function (anonymous)],
+    send: [Function (anonymous)],
+    handleError: [Function (anonymous)],
+    abort: [Function (anonymous)],
+    addEventListener: [Function (anonymous)],
+    removeEventListener: [Function (anonymous)],
+    dispatchEvent: [Function (anonymous)]
+  },
+  type: 'TransportError'
+}
+[2023-07-07T11:57:14.704] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-07T11:57:14.857] [INFO] Tdarr_Node - Node connected & registered
+[2023-07-07T11:57:14.904] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-07T11:57:18.703] [INFO] Tdarr_Node - [4001ms]Plugin update finished
+[2023-07-07T11:58:00.662] [INFO] Tdarr_Node - The following external module needs to be installed for a plugin:import-fresh
+[2023-07-07T12:57:12.633] [INFO] Tdarr_Node - Updating plugins
+[2023-07-07T12:57:13.778] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-07T12:57:14.046] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-07T12:57:17.742] [INFO] Tdarr_Node - [3966ms]Plugin update finished
+[2023-07-07T13:57:12.664] [INFO] Tdarr_Node - Updating plugins
+[2023-07-07T13:57:13.657] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-07T13:57:13.851] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-07T13:57:17.594] [INFO] Tdarr_Node - [3942ms]Plugin update finished
+[2023-07-07T14:04:56.062] [INFO] Tdarr_Node - /app/configs/Tdarr_Node_Config.json
+[2023-07-07T14:04:56.072] [INFO] Tdarr_Node - {
+  nodeName: 'MyInternalNode',
+  serverIP: '0.0.0.0',
+  serverPort: '8266',
+  handbrakePath: '',
+  ffmpegPath: '',
+  mkvpropeditPath: '',
+  pathTranslators: [ { server: '', node: '' } ],
+  logLevel: 'INFO',
+  priority: -1,
+  platform_arch_isdocker: 'linux_x64_docker_true',
+  processPid: 182,
+  nodeID: 't7_kBrBAk'
+}
+[2023-07-07T14:04:56.302] [INFO] Tdarr_Node - version: 2.00.21
+[2023-07-07T14:04:56.303] [INFO] Tdarr_Node - platform_arch_isdocker: linux_x64_docker_true
+[2023-07-07T14:04:56.304] [INFO] Tdarr_Node - Starting Tdarr_Node
+[2023-07-07T14:04:56.304] [INFO] Tdarr_Node - Preparing environment
+[2023-07-07T14:04:56.307] [INFO] Tdarr_Node - Updating plugins
+[2023-07-07T14:04:56.412] [ERROR] Tdarr_Node - Node connection error to :0.0.0.0:8266
+[2023-07-07T14:04:56.416] [ERROR] Tdarr_Node - TransportError: xhr poll error
+    at Polling.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transport.js:45:37)
+    at Request.<anonymous> (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:251:18)
+    at Request.<anonymous> (/snapshot/node/node_modules/@socket.io/component-emitter/index.js:143:20)
+    at Request.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:352:14)
+    at Timeout._onTimeout (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:325:30)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  description: 0,
+  context: XMLHttpRequest {
+    UNSENT: 0,
+    OPENED: 1,
+    HEADERS_RECEIVED: 2,
+    LOADING: 3,
+    DONE: 4,
+    readyState: 4,
+    onreadystatechange: [Function (anonymous)],
+    responseText: 'Error: connect ECONNREFUSED 0.0.0.0:8266\n' +
+      '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)',
+    responseXML: '',
+    status: 0,
+    statusText: Error: connect ECONNREFUSED 0.0.0.0:8266
+        at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '0.0.0.0',
+      port: 8266
+    },
+    open: [Function (anonymous)],
+    setDisableHeaderCheck: [Function (anonymous)],
+    setRequestHeader: [Function (anonymous)],
+    getResponseHeader: [Function (anonymous)],
+    getAllResponseHeaders: [Function (anonymous)],
+    getRequestHeader: [Function (anonymous)],
+    send: [Function (anonymous)],
+    handleError: [Function (anonymous)],
+    abort: [Function (anonymous)],
+    addEventListener: [Function (anonymous)],
+    removeEventListener: [Function (anonymous)],
+    dispatchEvent: [Function (anonymous)]
+  },
+  type: 'TransportError'
+}
+[2023-07-07T14:04:56.944] [INFO] Tdarr_Node - ---------------Binary tests start----------------
+[2023-07-07T14:04:56.944] [INFO] Tdarr_Node - handbrakePath:HandBrakeCLI
+[2023-07-07T14:04:56.944] [INFO] Tdarr_Node - ffmpegPath:tdarr-ffmpeg
+[2023-07-07T14:04:56.944] [INFO] Tdarr_Node - mkvpropedit:mkvpropedit
+[2023-07-07T14:04:56.945] [INFO] Tdarr_Node - Binary test 1: handbrakePath working
+[2023-07-07T14:04:56.945] [INFO] Tdarr_Node - Binary test 2: ffmpegPath working
+[2023-07-07T14:04:56.945] [INFO] Tdarr_Node - Binary test 3: mkvpropeditPath working
+[2023-07-07T14:04:56.945] [INFO] Tdarr_Node - ---------------Binary tests end-------------------
+[2023-07-07T14:04:57.340] [ERROR] Tdarr_Node - Node connection error to :0.0.0.0:8266
+[2023-07-07T14:04:57.341] [ERROR] Tdarr_Node - TransportError: xhr poll error
+    at Polling.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transport.js:45:37)
+    at Request.<anonymous> (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:251:18)
+    at Request.<anonymous> (/snapshot/node/node_modules/@socket.io/component-emitter/index.js:143:20)
+    at Request.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:352:14)
+    at Timeout._onTimeout (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:325:30)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  description: 0,
+  context: XMLHttpRequest {
+    UNSENT: 0,
+    OPENED: 1,
+    HEADERS_RECEIVED: 2,
+    LOADING: 3,
+    DONE: 4,
+    readyState: 4,
+    onreadystatechange: [Function (anonymous)],
+    responseText: 'Error: connect ECONNREFUSED 0.0.0.0:8266\n' +
+      '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)',
+    responseXML: '',
+    status: 0,
+    statusText: Error: connect ECONNREFUSED 0.0.0.0:8266
+        at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '0.0.0.0',
+      port: 8266
+    },
+    open: [Function (anonymous)],
+    setDisableHeaderCheck: [Function (anonymous)],
+    setRequestHeader: [Function (anonymous)],
+    getResponseHeader: [Function (anonymous)],
+    getAllResponseHeaders: [Function (anonymous)],
+    getRequestHeader: [Function (anonymous)],
+    send: [Function (anonymous)],
+    handleError: [Function (anonymous)],
+    abort: [Function (anonymous)],
+    addEventListener: [Function (anonymous)],
+    removeEventListener: [Function (anonymous)],
+    dispatchEvent: [Function (anonymous)]
+  },
+  type: 'TransportError'
+}
+[2023-07-07T14:04:57.623] [ERROR] Tdarr_Node - Failed to contact server, retrying...
+[2023-07-07T14:05:01.128] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-07T14:05:01.638] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-07T14:05:06.100] [INFO] Tdarr_Node - Node connected & registered
+[2023-07-07T14:05:08.080] [INFO] Tdarr_Node - [6956ms]Plugin update finished
+[2023-07-07T14:09:18.817] [INFO] Tdarr_Node - /app/configs/Tdarr_Node_Config.json
+[2023-07-07T14:09:18.834] [INFO] Tdarr_Node - {
+  nodeName: 'MyInternalNode',
+  serverIP: '0.0.0.0',
+  serverPort: '8266',
+  handbrakePath: '',
+  ffmpegPath: '',
+  mkvpropeditPath: '',
+  pathTranslators: [ { server: '', node: '' } ],
+  logLevel: 'INFO',
+  priority: -1,
+  platform_arch_isdocker: 'linux_x64_docker_true',
+  processPid: 198,
+  nodeID: 'asFyIDlA4'
+}
+[2023-07-07T14:09:19.030] [INFO] Tdarr_Node - version: 2.00.21
+[2023-07-07T14:09:19.031] [INFO] Tdarr_Node - platform_arch_isdocker: linux_x64_docker_true
+[2023-07-07T14:09:19.037] [INFO] Tdarr_Node - Starting Tdarr_Node
+[2023-07-07T14:09:19.038] [INFO] Tdarr_Node - Preparing environment
+[2023-07-07T14:09:19.404] [INFO] Tdarr_Node - Updating plugins
+[2023-07-07T14:09:19.450] [ERROR] Tdarr_Node - Node connection error to :0.0.0.0:8266
+[2023-07-07T14:09:19.457] [ERROR] Tdarr_Node - TransportError: xhr poll error
+    at Polling.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transport.js:45:37)
+    at Request.<anonymous> (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:251:18)
+    at Request.<anonymous> (/snapshot/node/node_modules/@socket.io/component-emitter/index.js:143:20)
+    at Request.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:352:14)
+    at Timeout._onTimeout (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:325:30)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  description: 0,
+  context: XMLHttpRequest {
+    UNSENT: 0,
+    OPENED: 1,
+    HEADERS_RECEIVED: 2,
+    LOADING: 3,
+    DONE: 4,
+    readyState: 4,
+    onreadystatechange: [Function (anonymous)],
+    responseText: 'Error: connect ECONNREFUSED 0.0.0.0:8266\n' +
+      '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)',
+    responseXML: '',
+    status: 0,
+    statusText: Error: connect ECONNREFUSED 0.0.0.0:8266
+        at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '0.0.0.0',
+      port: 8266
+    },
+    open: [Function (anonymous)],
+    setDisableHeaderCheck: [Function (anonymous)],
+    setRequestHeader: [Function (anonymous)],
+    getResponseHeader: [Function (anonymous)],
+    getAllResponseHeaders: [Function (anonymous)],
+    getRequestHeader: [Function (anonymous)],
+    send: [Function (anonymous)],
+    handleError: [Function (anonymous)],
+    abort: [Function (anonymous)],
+    addEventListener: [Function (anonymous)],
+    removeEventListener: [Function (anonymous)],
+    dispatchEvent: [Function (anonymous)]
+  },
+  type: 'TransportError'
+}
+[2023-07-07T14:09:19.754] [INFO] Tdarr_Node - ---------------Binary tests start----------------
+[2023-07-07T14:09:19.754] [INFO] Tdarr_Node - handbrakePath:HandBrakeCLI
+[2023-07-07T14:09:19.754] [INFO] Tdarr_Node - ffmpegPath:tdarr-ffmpeg
+[2023-07-07T14:09:19.754] [INFO] Tdarr_Node - mkvpropedit:mkvpropedit
+[2023-07-07T14:09:19.755] [INFO] Tdarr_Node - Binary test 1: handbrakePath working
+[2023-07-07T14:09:19.755] [INFO] Tdarr_Node - Binary test 2: ffmpegPath working
+[2023-07-07T14:09:19.755] [INFO] Tdarr_Node - Binary test 3: mkvpropeditPath working
+[2023-07-07T14:09:19.755] [INFO] Tdarr_Node - ---------------Binary tests end-------------------
+[2023-07-07T14:09:21.367] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-07T14:09:21.472] [INFO] Tdarr_Node - Node connected & registered
+[2023-07-07T14:09:22.094] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-07T14:09:26.137] [INFO] Tdarr_Node - [4772ms]Plugin update finished
+[2023-07-07T14:11:05.721] [INFO] Tdarr_Node - The following external module needs to be installed for a plugin:import-fresh
+[2023-07-07T15:09:19.419] [INFO] Tdarr_Node - Updating plugins
+[2023-07-07T15:09:20.641] [INFO] Tdarr_Node - Cloning plugins
+[2023-07-07T15:09:20.850] [INFO] Tdarr_Node - Finished downloading plugins!
+[2023-07-07T15:09:24.636] [INFO] Tdarr_Node - [3998ms]Plugin update finished
