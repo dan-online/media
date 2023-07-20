@@ -196,17 +196,36 @@ services:
       - ./jellyfin/config:/config
       - ./jellyfin_web_intro_skip:/usr/share/jellyfin/web:ro
       - ./jellyfin/transcodes:/temp
-      - downloads:/data
+      - downloads_cache:/data
     ports:
       - 8096:8096
       - 7359:7359/udp
       - 8920:8920
     restart: unless-stopped
+
+#  unmanic:
+#    container_name: unmanic
+#    image: josh5/unmanic:latest
+#    ports:
+#      - 8887:8888
+#    environment:
+#      - PUID=1000
+#      - PGID=1000
+#    volumes:
+#      - ./unmanic/config:/config
+#      - downloads:/library
+#      - ./unmanic/cache:/tmp/unmanic
+
   tdarr:
     container_name: tdarr
     image: ghcr.io/haveagitgat/tdarr:latest
     restart: unless-stopped
-    network_mode: bridge
+    networks:
+      - internal_network
+    #deploy:
+    #  resources:
+    #    limits:
+    #      cpus: '3.5'
     ports:
       - 8265:8265 # webUI port
       - 8266:8266 # server port
@@ -216,18 +235,21 @@ services:
       - PUID=1000
       - PGID=1000
       - UMASK_SET=002
+      - CHOWN_ON_START=false
       - serverIP=0.0.0.0
       - serverPort=8266
       - webUIPort=8265
       - internalNode=true
       - inContainer=true
-      - nodeName=MyInternalNode
+      - nodeName='DANCODES-01'
+      - THREADS_WORKER_INIT_TIMEOUT=200000
     volumes:
       - ./tdarr/server:/app/server
       - ./tdarr/configs:/app/configs
       - ./tdarr/logs:/app/logs
       - downloads:/media
       - ./tdarr/transcode_cache:/temp
+
   heimdall:
     image: lscr.io/linuxserver/heimdall:latest
     restart: unless-stopped
@@ -241,15 +263,41 @@ services:
     ports:
       - 23552:80
 
+  #organizr:
+  #  container_name: organizr
+  #  image: organizr/organizr:latest
+  #  networks:
+  #    - internal_network
+  #  ports:
+  #    - 12131:80
+  #  environment:
+  #    - PGID=1000
+  #    - PUID=1000
+  #  volumes:
+  #    - ./organizr:/config
+
 volumes:
   tx-config:
   tx-watch:
+  downloads_cache:
+    driver: rclone
+    driver_opts:
+      remote: 'Seedbox01:downloads'
+      allow_other: 'true'
+      vfs_cache_max_size: '16G'
+      #buffer_size: '256M'
+      #drive_chunk_size: '32M'
+      #fast_list: 'true'
+      vfs_read_chunk_size: '128M'
+      vfs_read_chunk_size_limit: 'off'
+      vfs_cache_mode: full
+      poll_interval: 0
   downloads:
     driver: rclone
     driver_opts:
       remote: 'Seedbox01:downloads'
       allow_other: 'true'
-#      vfs_cache_mode: full
+      vfs_cache_mode: writes
       poll_interval: 0
 
 networks:

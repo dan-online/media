@@ -1,1 +1,1 @@
-{"StartTimeUtc":"2023-06-17T15:54:46.8929176Z","EndTimeUtc":"2023-06-17T15:54:54.4637367Z","Status":"Completed","Name":"Keyframe Extractor","Key":"KeyframeExtraction","Id":"f302d80f31bcacf76f979d277d448581"}
+{"StartTimeUtc":"2023-07-12T20:15:07.0036954Z","EndTimeUtc":"2023-07-12T22:00:37.0465055Z","Status":"Completed","Name":"Keyframe Extractor","Key":"KeyframeExtraction","Id":"f302d80f31bcacf76f979d277d448581"}

@@ -1,290 +1,0 @@
-2023-07-07T12:04:52.991Z 1Nae6Puys:[Step S01] [2.00.21] Server relay initialising job
-2023-07-07T12:04:52.993Z 1Nae6Puys:Server: linux_x64_docker_true
-2023-07-07T12:04:52.994Z 1Nae6Puys:Server relay adding file to staged files
-2023-07-07T12:04:52.995Z 1Nae6Puys:Server relay sending job to Node relay: MyInternalNode
-2023-07-07T12:04:52.996Z 1Nae6Puys:Node[MyInternalNode]:[Step N01] [2.00.21] Node relay received job
-2023-07-07T12:04:52.997Z 1Nae6Puys:Node[MyInternalNode]:{"nodeName":"MyInternalNode","serverIP":"0.0.0.0","serverPort":"8266","handbrakePath":"","ffmpegPath":"","mkvpropeditPath":"","pathTranslators":[{"server":"","node":""}],"logLevel":"INFO","priority":-1,"platform_arch_isdocker":"linux_x64_docker_true","processPid":198,"nodeID":"PGiqJeCdV"}
-2023-07-07T12:04:52.998Z 1Nae6Puys:Node[MyInternalNode]:Node relay sending job to worker:lean-leech
-2023-07-07T12:04:52.998Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:[Step W01] Received file, original: /media/tvshows/Top Gear/Season 22/Top Gear - S22E07 - Episode 7 WEBDL-720p.mkv
-2023-07-07T12:04:52.999Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:{"workerType":"healthcheckcpu"}
-2023-07-07T12:04:53.000Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:{"ffmpegPath":"tdarr-ffmpeg"}
-2023-07-07T12:04:53.001Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:{"handbrakePath":"HandBrakeCLI"}
-2023-07-07T12:04:53.002Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:{"mkvpropeditPath":"mkvpropedit"}
-2023-07-07T12:04:53.003Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:{"gpuSelect":"-"}
-2023-07-07T12:04:53.004Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:{"allowGpuDoCpu":false}
-2023-07-07T12:04:53.005Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:{"thoroughHealthCheckCpuExtraInputArgs":""}
-2023-07-07T12:04:53.006Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:{"thoroughHealthCheckGpuExtraInputArgs":""}
-2023-07-07T12:04:53.007Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:{"thoroughHealthCheckCpuExtraArgs":""}
-2023-07-07T12:04:53.007Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:{"thoroughHealthCheckGpuExtraArgs":""}
-2023-07-07T12:04:53.009Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:{"logFullCliOutput":false}
-2023-07-07T12:04:53.011Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Path translating objects
-2023-07-07T12:04:53.012Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:{"librarySettings":{"_id":"4BaCjCxnf","priority":1,"name":"TV","folder":"/media/tvshows","foldersToIgnore":"","folderWatchScanInterval":30,"scannerThreadCount":2,"cache":"/temp","output":".","folderToFolderConversion":false,"folderToFolderConversionDeleteSource":false,"folderToFolderRecordHistory":true,"copyIfConditionsMet":false,"container":".mkv","containerFilter":"mkv,mp4,mov,m4v,mpg,mpeg,avi,flv,webm,wmv,vob,evo,iso,m2ts,ts","createdAt":1675837380368,"folderWatching":true,"useFsEvents":false,"scheduledScanFindNew":false,"processLibrary":true,"scanOnStart":true,"exifToolScan":true,"mediaInfoScan":true,"closedCaptionScan":false,"scanButtons":true,"scanFound":"Files found:0","navItemSelected":"navSourceFolder","pluginIDs":[{"_id":"plugin1","id":"Tdarr_Plugin_MC93_MigzImageRemoval","checked":true,"source":"Community","priority":0,"InputsDB":{},"Stage":"Pre-processing","Name":"Migz-Remove image formats from file","Type":"Video","Operation":"Transcode","Description":"Identify any unwanted image formats in the file and remove those streams. MJPEG, PNG & GIF \n\n","Version":"1.4","Tags":"pre-processing,ffmpeg,video only","Inputs":[],"source_id":"Community::Tdarr_Plugin_MC93_MigzImageRemoval","Link":"Read error"},{"_id":"plugin2","id":"Tdarr_Plugin_lmg1_Reorder_Streams","checked":true,"source":"Community","priority":1,"InputsDB":{},"Stage":"Pre-processing","Name":"Tdarr_Plugin_lmg1_Reorder_Streams ","Type":"Video","Operation":"Transcode","Description":"[Contains built-in filter] This plugin will move the video stream to the front so Tdarr will recognize the codec correctly.\n\n","Version":"1.00","Tags":"pre-processing,ffmpeg","Inputs":[],"source_id":"Community::Tdarr_Plugin_lmg1_Reorder_Streams","Link":"Read error"},{"_id":"sxfFHmyyT","id":"Tdarr_Plugin_00td_action_standardise_audio_stream_codecs","checked":true,"source":"Community","priority":2,"InputsDB":{},"Stage":"Pre-processing","Name":"Standardise audio stream codecs","Type":"Video","Operation":"Transcode","Description":"\nThis action has a built-in filter. Additional filters can be added.\n\n\n\nAll audio tracks which are not in the specified codec will be transcoded\ninto the specified codec. Bitrate and channel count are kept the same.\n  ","Version":"1.00","Tags":"action","Inputs":[{"name":"audioCodec","type":"string","defaultValue":"aac","inputUI":{"type":"dropdown","options":["aac","ac3","eac3","dca","flac","mp2","libmp3lame","truehd"]},"tooltip":"Enter the desired audio codec"}],"source_id":"Community::Tdarr_Plugin_00td_action_standardise_audio_stream_codecs","Link":"Read error"},{"_id":"aEVldYMXA","id":"Tdarr_Plugin_075a_Transcode_Customisable","checked":true,"source":"Community","priority":3,"InputsDB":{"codecs_to_exclude":"h264","transcode_arguments":"-Z \"H.264 MKV 2160p60 4K\" -e x264 --all-subtitles --all-audio  -x threads=1"},"Stage":"Pre-processing","Name":"Video Transcode Customisable","Type":"Video","Operation":"Transcode","Description":"[Contains built-in filter] Specify codec filter and transcode arguments for HandBrake or FFmpeg  \n\n","Version":"1.00","Tags":"pre-processing,handbrake,ffmpeg,configurable","Inputs":[{"name":"codecs_to_exclude","type":"string","defaultValue":"hevc","inputUI":{"type":"text"},"tooltip":"Input codecs, separated by a comma, that should be excluded when processing.\n\n        \\nFor example, if you're transcoding into hevc (h265), then add a filter to prevent hevc being transcoded so your newly transcoded files won't be infinitely looped/processed. \\n\n\n        \n        \\nCommon video codecs:\n\n        \\nmpeg4\n        \\nhevc\n        \\nh264\n        \\nmpeg2video\n        \\ntheora\n        \\nvp8\n        \\nvp9\n        \n        \n        \\nExample:\\n\n\n        hevc\n\n        \\nYou can also enter multiple codecs:\n\n        \\nExample:\\n\n\n        mp3,aac,dts\n\n        \\nExample:\\n\n\n        h264,vp9\n \n        "},{"name":"cli","type":"string","defaultValue":"handbrake","inputUI":{"type":"text"},"tooltip":"Enter the CLI to use.\n        \n        \\nExample:\\n\n        handbrake\n\n        \\nExample:\\n\n        ffmpeg\n        \n        "},{"name":"transcode_arguments","type":"string","defaultValue":"-Z \"Very Fast 1080p30\" --all-subtitles --all-audio","inputUI":{"type":"text"},"tooltip":"\\nEnter HandBrake or FFmpeg transcode arguments.\n        \n        \\nHandBrake examples:\n\n        \\nExample:\\n\n        -e x264 -q 20 -B\n        \n        \\nExample:\\n\n        -Z \"Very Fast 1080p30\"\n        \n        \\nExample:\\n\n        -Z \"Fast 1080p30\" -e nvenc_h265\n        \n        \\nExample:\\n\n        -Z \"Very Fast 1080p30\" --all-subtitles --all-audio\n        \n        \\nExample:\\n\n        -Z \"Very Fast 480p30\"\n        \n        \\nExample:\\n\n        --preset-import-file \"C:UsersHaveAGitGatDesktop\testpreset.json\" -Z \"My Preset\"\n        \n        \\nYou can learn more about HandBrake presets here:\n\n        \\nhttps://handbrake.fr/docs/en/latest/technical/official-presets.html\n        \n\n        \\nWhen using FFmpeg, you need to separate the input and output parameters with a comma. FFmpeg Examples:\n\n        \\nExample:\\n\n-r 1,-r 24\n\n\\nExample:\\n\n,-sn -c:v copy -c:a copy\n\n\\nExample:\\n\n,-c:v lib265 -crf 23 -ac 6 -c:a aac -preset veryfast\n\n\\nExample:\\n\n,-map 0 -c copy -c:v libx265 -c:a aac\n\n\\nExample:\\n\n-c:v h264_cuvid,-c:v hevc_nvenc -preset slow -c:a copy\n\n\\nPlease see the following for help with creating FFmpeg commands:\n\n\\nhttps://opensource.com/article/17/6/ffmpeg-convert-media-file-formats\n        \n        \n        \n        \n        "},{"name":"output_container","type":"string","defaultValue":".mkv","inputUI":{"type":"text"},"tooltip":"\n        \\nEnter the output container of the new file\n\n        \\nExample:\\n\n        .mp4\n\n        \\nExample:\\n\n        .mp3\n\n        \\nExample:\\n\n        .mkv\n        \n        "}],"source_id":"Community::Tdarr_Plugin_075a_Transcode_Customisable","Link":"Read error"},{"_id":"plugin5","id":"Tdarr_Plugin_a9he_New_file_size_check","checked":true,"source":"Community","priority":4,"InputsDB":{"upperBound":"200"},"Stage":"Pre-processing","Name":"New file size check","Type":"Video","Operation":"Transcode","Description":"Give an error if new file is not within the specified upper and lower bound limits \n\n","Version":"1.00","Tags":"","Inputs":[{"name":"upperBound","type":"number","defaultValue":110,"inputUI":{"type":"text"},"tooltip":"Enter the upper bound % size for the new file. For example, if '110' is entered, \n        then if the new file size is 11% larger than the original, an error will be given."},{"name":"lowerBound","type":"number","defaultValue":40,"inputUI":{"type":"text"},"tooltip":"Enter the lower bound % size for the new file. For example, if '90' is entered, \n        then if the new file size is less than 90% of the original, an error will be given."}],"source_id":"Community::Tdarr_Plugin_a9he_New_file_size_check","Link":"Read error"},{"_id":"-XIe_rmCK","id":"Tdarr_Plugin_00td_filter_by_file_property","checked":true,"source":"Community","priority":5,"InputsDB":{"propertyValues":"mkv"},"Stage":"Pre-processing","Name":"Filter by file property","Type":"Video","Operation":"Filter","Description":"Filter by a top level file property.\n  For example, container, video_resolution, video_codec_name, fileMedium.\n  Click on a file name on the Tdarr tab or Search tab to see top-level file properties.\n  ","Version":"1.00","Tags":"filter","Inputs":[{"name":"propertyName","type":"string","defaultValue":"container","inputUI":{"type":"text"},"tooltip":"Enter the file property to check"},{"name":"propertyValues","type":"string","defaultValue":"mkv,mp4","inputUI":{"type":"text"},"tooltip":"Enter a comma separated list of values to check for."},{"name":"exactMatch","type":"boolean","defaultValue":true,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Specify true if the property value must be an exact match, false if the property value must contain the value."},{"name":"continueIfPropertyFound","type":"boolean","defaultValue":false,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Specify whether to continue the plugin stack if the property is found."}],"source_id":"Community::Tdarr_Plugin_00td_filter_by_file_property","Link":"Read error"},{"_id":"RZcj0lsWOB","id":"Tdarr_Plugin_00td_action_remux_container","checked":true,"source":"Community","priority":6,"InputsDB":{},"Name":"Remux container","Type":"Video","Operation":"Transcode","Description":"\n  This action has a built-in filter. Additional filters can be added.\n\n\n\n  If not in the specified container, the file will be remuxed.\n  ","Version":"1.00","Link":"Read error","Stage":"Pre-processing","Tags":"action","Inputs":[{"name":"container","type":"string","defaultValue":"mkv","inputUI":{"type":"text"},"tooltip":"Enter the desired container"}],"source_id":"Community::Tdarr_Plugin_00td_action_remux_container"}],"pluginCommunity":true,"handbrake":true,"ffmpeg":false,"handbrakescan":true,"ffmpegscan":false,"preset":"-Z \"Very Fast 1080p30\"","decisionMaker":{"settingsPlugin":true,"settingsVideo":false,"videoExcludeSwitch":true,"video_codec_names_exclude":[{"codec":"hevc","checked":false},{"codec":"h264","checked":true}],"video_size_range_include":{"min":0,"max":100000},"video_height_range_include":{"min":0,"max":3000},"video_width_range_include":{"min":0,"max":4000},"settingsAudio":false,"audioExcludeSwitch":true,"audio_codec_names_exclude":[{"codec":"mp3","checked":true},{"codec":"aac","checked":false}],"audio_size_range_include":{"min":0,"max":10}},"schedule":[{"_id":"Sun:00-01","checked":true},{"_id":"Sun:01-02","checked":true},{"_id":"Sun:02-03","checked":true},{"_id":"Sun:03-04","checked":true},{"_id":"Sun:04-05","checked":true},{"_id":"Sun:05-06","checked":true},{"_id":"Sun:06-07","checked":true},{"_id":"Sun:07-08","checked":true},{"_id":"Sun:08-09","checked":true},{"_id":"Sun:09-10","checked":true},{"_id":"Sun:10-11","checked":true},{"_id":"Sun:11-12","checked":true},{"_id":"Sun:12-13","checked":true},{"_id":"Sun:13-14","checked":true},{"_id":"Sun:14-15","checked":true},{"_id":"Sun:15-16","checked":true},{"_id":"Sun:16-17","checked":true},{"_id":"Sun:17-18","checked":true},{"_id":"Sun:18-19","checked":true},{"_id":"Sun:19-20","checked":true},{"_id":"Sun:20-21","checked":true},{"_id":"Sun:21-22","checked":true},{"_id":"Sun:22-23","checked":true},{"_id":"Sun:23-00","checked":true},{"_id":"Mon:00-01","checked":true},{"_id":"Mon:01-02","checked":true},{"_id":"Mon:02-03","checked":true},{"_id":"Mon:03-04","checked":true},{"_id":"Mon:04-05","checked":true},{"_id":"Mon:05-06","checked":true},{"_id":"Mon:06-07","checked":true},{"_id":"Mon:07-08","checked":true},{"_id":"Mon:08-09","checked":true},{"_id":"Mon:09-10","checked":true},{"_id":"Mon:10-11","checked":true},{"_id":"Mon:11-12","checked":true},{"_id":"Mon:12-13","checked":true},{"_id":"Mon:13-14","checked":true},{"_id":"Mon:14-15","checked":true},{"_id":"Mon:15-16","checked":true},{"_id":"Mon:16-17","checked":true},{"_id":"Mon:17-18","checked":true},{"_id":"Mon:18-19","checked":true},{"_id":"Mon:19-20","checked":true},{"_id":"Mon:20-21","checked":true},{"_id":"Mon:21-22","checked":true},{"_id":"Mon:22-23","checked":true},{"_id":"Mon:23-00","checked":true},{"_id":"Tue:00-01","checked":true},{"_id":"Tue:01-02","checked":true},{"_id":"Tue:02-03","checked":true},{"_id":"Tue:03-04","checked":true},{"_id":"Tue:04-05","checked":true},{"_id":"Tue:05-06","checked":true},{"_id":"Tue:06-07","checked":true},{"_id":"Tue:07-08","checked":true},{"_id":"Tue:08-09","checked":true},{"_id":"Tue:09-10","checked":true},{"_id":"Tue:10-11","checked":true},{"_id":"Tue:11-12","checked":true},{"_id":"Tue:12-13","checked":true},{"_id":"Tue:13-14","checked":true},{"_id":"Tue:14-15","checked":true},{"_id":"Tue:15-16","checked":true},{"_id":"Tue:16-17","checked":true},{"_id":"Tue:17-18","checked":true},{"_id":"Tue:18-19","checked":true},{"_id":"Tue:19-20","checked":true},{"_id":"Tue:20-21","checked":true},{"_id":"Tue:21-22","checked":true},{"_id":"Tue:22-23","checked":true},{"_id":"Tue:23-00","checked":true},{"_id":"Wed:00-01","checked":true},{"_id":"Wed:01-02","checked":true},{"_id":"Wed:02-03","checked":true},{"_id":"Wed:03-04","checked":true},{"_id":"Wed:04-05","checked":true},{"_id":"Wed:05-06","checked":true},{"_id":"Wed:06-07","checked":true},{"_id":"Wed:07-08","checked":true},{"_id":"Wed:08-09","checked":true},{"_id":"Wed:09-10","checked":true},{"_id":"Wed:10-11","checked":true},{"_id":"Wed:11-12","checked":true},{"_id":"Wed:12-13","checked":true},{"_id":"Wed:13-14","checked":true},{"_id":"Wed:14-15","checked":true},{"_id":"Wed:15-16","checked":true},{"_id":"Wed:16-17","checked":true},{"_id":"Wed:17-18","checked":true},{"_id":"Wed:18-19","checked":true},{"_id":"Wed:19-20","checked":true},{"_id":"Wed:20-21","checked":true},{"_id":"Wed:21-22","checked":true},{"_id":"Wed:22-23","checked":true},{"_id":"Wed:23-00","checked":true},{"_id":"Thur:00-01","checked":true},{"_id":"Thur:01-02","checked":true},{"_id":"Thur:02-03","checked":true},{"_id":"Thur:03-04","checked":true},{"_id":"Thur:04-05","checked":true},{"_id":"Thur:05-06","checked":true},{"_id":"Thur:06-07","checked":true},{"_id":"Thur:07-08","checked":true},{"_id":"Thur:08-09","checked":true},{"_id":"Thur:09-10","checked":true},{"_id":"Thur:10-11","checked":true},{"_id":"Thur:11-12","checked":true},{"_id":"Thur:12-13","checked":true},{"_id":"Thur:13-14","checked":true},{"_id":"Thur:14-15","checked":true},{"_id":"Thur:15-16","checked":true},{"_id":"Thur:16-17","checked":true},{"_id":"Thur:17-18","checked":true},{"_id":"Thur:18-19","checked":true},{"_id":"Thur:19-20","checked":true},{"_id":"Thur:20-21","checked":true},{"_id":"Thur:21-22","checked":true},{"_id":"Thur:22-23","checked":true},{"_id":"Thur:23-00","checked":true},{"_id":"Fri:00-01","checked":true},{"_id":"Fri:01-02","checked":true},{"_id":"Fri:02-03","checked":true},{"_id":"Fri:03-04","checked":true},{"_id":"Fri:04-05","checked":true},{"_id":"Fri:05-06","checked":true},{"_id":"Fri:06-07","checked":true},{"_id":"Fri:07-08","checked":true},{"_id":"Fri:08-09","checked":true},{"_id":"Fri:09-10","checked":true},{"_id":"Fri:10-11","checked":true},{"_id":"Fri:11-12","checked":true},{"_id":"Fri:12-13","checked":true},{"_id":"Fri:13-14","checked":true},{"_id":"Fri:14-15","checked":true},{"_id":"Fri:15-16","checked":true},{"_id":"Fri:16-17","checked":true},{"_id":"Fri:17-18","checked":true},{"_id":"Fri:18-19","checked":true},{"_id":"Fri:19-20","checked":true},{"_id":"Fri:20-21","checked":true},{"_id":"Fri:21-22","checked":true},{"_id":"Fri:22-23","checked":true},{"_id":"Fri:23-00","checked":true},{"_id":"Sat:00-01","checked":true},{"_id":"Sat:01-02","checked":true},{"_id":"Sat:02-03","checked":true},{"_id":"Sat:03-04","checked":true},{"_id":"Sat:04-05","checked":true},{"_id":"Sat:05-06","checked":true},{"_id":"Sat:06-07","checked":true},{"_id":"Sat:07-08","checked":true},{"_id":"Sat:08-09","checked":true},{"_id":"Sat:09-10","checked":true},{"_id":"Sat:10-11","checked":true},{"_id":"Sat:11-12","checked":true},{"_id":"Sat:12-13","checked":true},{"_id":"Sat:13-14","checked":true},{"_id":"Sat:14-15","checked":true},{"_id":"Sat:15-16","checked":true},{"_id":"Sat:16-17","checked":true},{"_id":"Sat:17-18","checked":true},{"_id":"Sat:18-19","checked":true},{"_id":"Sat:19-20","checked":true},{"_id":"Sat:20-21","checked":true},{"_id":"Sat:21-22","checked":true},{"_id":"Sat:22-23","checked":true},{"_id":"Sat:23-00","checked":true}],"totalHealthCheckCount":130,"totalTranscodeCount":142,"sizeDiff":2.696708295494318,"holdNewFiles":false,"holdFor":3600,"pluginStackOverview":true,"filterResolutionsSkip":"","filterCodecsSkip":"","processPluginsSequentially":true}}
-2023-07-07T12:04:53.013Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Scanning original library file
-2023-07-07T12:04:53.013Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:{
-2023-07-07T12:04:53.013Z   "exifToolScan": true,
-2023-07-07T12:04:53.013Z   "mediaInfoScan": false,
-2023-07-07T12:04:53.013Z   "closedCaptionScan": false
-2023-07-07T12:04:53.013Z }
-2023-07-07T12:04:53.014Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Requesting Tdarr Server to scan file
-2023-07-07T12:04:55.018Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Scan complete
-2023-07-07T12:04:55.020Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Original file scanned
-2023-07-07T12:04:55.020Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Source file to work on determined:/media/tvshows/Top Gear/Season 22/Top Gear - S22E07 - Episode 7 WEBDL-720p.mkv
-2023-07-07T12:04:55.021Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:[Step W02] [C1] Running pre-process file
-2023-07-07T12:04:55.021Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Checking files can be accessed
-2023-07-07T12:04:55.022Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Relevant paths can be accessed
-2023-07-07T12:04:55.022Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Source file: /media/tvshows/Top Gear/Season 22/Top Gear - S22E07 - Episode 7 WEBDL-720p.mkv
-2023-07-07T12:04:55.023Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:[Step W03] [C1] Analysing file - running plugins
-2023-07-07T12:04:55.023Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Handbrake healthcheck task, no need to scan for extra file details
-2023-07-07T12:04:55.024Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Updating Node relay: Processing
-2023-07-07T12:04:55.025Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:[1/2] Checking file frame count
-2023-07-07T12:04:55.025Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:[2/2] Frame count 0
-2023-07-07T12:04:55.026Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Determining healthcheck command
-2023-07-07T12:04:55.031Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:[Step W04] [C1] Preparing command
-2023-07-07T12:04:55.031Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Cache file stem: /temp
-2023-07-07T12:04:55.032Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Cache file path: /temp/Top Gear - S22E07 - Episode 7 WEBDL-720p-TdarrCacheFile-Swi05eHAd.mp4
-2023-07-07T12:04:55.033Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Create transcode args
-2023-07-07T12:04:55.033Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Args:  -i "/media/tvshows/Top Gear/Season 22/Top Gear - S22E07 - Episode 7 WEBDL-720p.mkv" -o "/temp/Top Gear - S22E07 - Episode 7 WEBDL-720p-TdarrCacheFile-Swi05eHAd.mp4" --scan
-2023-07-07T12:04:55.034Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Getting source file size
-2023-07-07T12:04:55.035Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Source file size: 2.568512711673975
-2023-07-07T12:04:55.035Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Performing safety check on worker config to see if old transcode args/container match new ones
-2023-07-07T12:04:55.036Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Safety check complete, all good
-2023-07-07T12:04:55.037Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:[Step W05] [C1] Launching subworker
-2023-07-07T12:04:55.037Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Preparing to launch subworker
-2023-07-07T12:04:55.037Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Subworker launched
-2023-07-07T12:04:55.038Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:[1/3] Sending command to subworker
-2023-07-07T12:04:55.038Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:[2/3] HandBrakeCLI -i "/media/tvshows/Top Gear/Season 22/Top Gear - S22E07 - Episode 7 WEBDL-720p.mkv" -o "/temp/Top Gear - S22E07 - Episode 7 WEBDL-720p-TdarrCacheFile-Swi05eHAd.mp4" --scan
-2023-07-07T12:04:55.039Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:[3/3] Command sent
-2023-07-07T12:04:55.039Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:To see live CLI output, enable 'Log full FFmpeg/HandBrake output' in the staging section on the Tdarr tab before the job starts. Note this could increase the job report size substantially.
-2023-07-07T12:04:55.040Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Subworker:Online
-2023-07-07T12:04:55.040Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Subworker:Receiving transcode settings
-2023-07-07T12:04:55.040Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Subworker:Running CLI
-2023-07-07T12:08:23.060Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Subworker:a.Thread closed, code: 0
-2023-07-07T12:08:23.062Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Subworker exit approved, killing subworker
-2023-07-07T12:08:23.063Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Subworker killed
-2023-07-07T12:08:23.063Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:b.Thread closed, code: 0
-2023-07-07T12:08:23.063Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:CLI code: 0
-2023-07-07T12:08:23.064Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Last 200 lines of CLI log:
-2023-07-07T12:08:23.064Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 8, 80.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 9, 90.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z [12:08:19] scan: 10 previews, 1280x720, 25.000 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1, color profile: 1-1-1, chroma location: left
-2023-07-07T12:08:23.064Z 
-2023-07-07T12:08:23.064Z Scanning title 1 of 1, preview 10, 100.00 %
-2023-07-07T12:08:23.064Z [12:08:19] libhb: scan thread found 1 valid title(s)
-2023-07-07T12:08:23.064Z 
-2023-07-07T12:08:23.064Z + title 1:
-2023-07-07T12:08:23.064Z   + stream: /media/tvshows/Top Gear/Season 22/Top Gear - S22E07 - Episode 7 WEBDL-720p.mkv
-2023-07-07T12:08:23.064Z   + duration: 01:02:02
-2023-07-07T12:08:23.064Z   + size: 1280x720, pixel aspect: 1/1, display aspect: 1.78, 25.000 fps
-2023-07-07T12:08:23.064Z   + autocrop: 0/0/0/0
-2023-07-07T12:08:23.064Z   + chapters:
-2023-07-07T12:08:23.064Z     + 1: duration 01:02:02
-2023-07-07T12:08:23.064Z   + audio tracks:
-2023-07-07T12:08:23.064Z     + 1, English (AAC LC) (2.0 ch) (iso639-2: eng)
-2023-07-07T12:08:23.064Z   + subtitle tracks:
-2023-07-07T12:08:23.064Z     + 1, English [UTF-8]
-2023-07-07T12:08:23.064Z 
-2023-07-07T12:08:23.064Z HandBrake has exited.
-2023-07-07T12:08:23.064Z 
-2023-07-07T12:08:23.064Z libdvdread: Encrypted DVD support unavailable.
-2023-07-07T12:08:23.064Z libdvdread: Can't open file VIDEO_TS.IFO.
-2023-07-07T12:08:23.064Z 
-2023-07-07T12:08:23.064Z 
-2023-07-07T12:08:23.064Z 
-2023-07-07T12:08:23.066Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:[Step W06] [C1] Worker [-success-]
-2023-07-07T12:08:23.066Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Worker success during processing
-2023-07-07T12:08:23.067Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Updating healthcheck stats
-2023-07-07T12:08:23.067Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:[Step W10] Worker processing end
-2023-07-07T12:08:23.067Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Subworker exited null
-2023-07-07T12:08:23.068Z 1Nae6Puys:Node[MyInternalNode]:Worker[lean-leech]:Successfully updated server with verdict: healthcheckSuccess

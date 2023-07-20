@@ -1,0 +1,260 @@
+/videos/2e416665-ec5a-b889-85b6-3636be4c1bfc/hls1/main/0.ts
+
+{"Protocol":0,"Id":"2e416665ec5ab88985b63636be4c1bfc","Path":"/data/tvshows/Jujutsu Kaisen/Season 2/Jujutsu Kaisen - S02E01 - Hidden Inventory WEBRip-1080p.mp4","EncoderPath":null,"EncoderProtocol":null,"Type":0,"Container":"mov,mp4,m4a,3gp,3g2,mj2","Size":340753248,"Name":"Jujutsu Kaisen - S02E01 - Hidden Inventory WEBRip-1080p","IsRemote":false,"ETag":"2046356a0fe94d803ac5197914b5edcb","RunTimeTicks":14350869504,"ReadAtNativeFramerate":false,"IgnoreDts":false,"IgnoreIndex":false,"GenPtsInput":false,"SupportsTranscoding":true,"SupportsDirectStream":true,"SupportsDirectPlay":true,"IsInfiniteStream":false,"RequiresOpening":false,"OpenToken":null,"RequiresClosing":false,"LiveStreamId":null,"BufferMs":null,"RequiresLooping":false,"SupportsProbing":true,"VideoType":0,"IsoType":null,"Video3DFormat":null,"MediaStreams":[{"Codec":"h264","CodecTag":"avc1","Language":"und","ColorRange":null,"ColorSpace":"bt709","ColorTransfer":"bt709","ColorPrimaries":"bt709","DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/24000","CodecTimeBase":null,"Title":null,"VideoRange":"SDR","VideoRangeType":"SDR","VideoDoViTitle":null,"LocalizedUndefined":null,"LocalizedDefault":null,"LocalizedForced":null,"LocalizedExternal":null,"DisplayTitle":"1080p H264 SDR","NalLengthSize":"4","IsInterlaced":false,"IsAVC":true,"ChannelLayout":null,"BitRate":1760777,"BitDepth":10,"RefFrames":1,"PacketLength":null,"Channels":null,"SampleRate":null,"IsDefault":true,"IsForced":false,"Height":1080,"Width":1920,"AverageFrameRate":23.976025,"RealFrameRate":23.976025,"Profile":"High 10","Type":1,"AspectRatio":"16:9","Index":0,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Path":null,"PixelFormat":"yuv420p10le","Level":40,"IsAnamorphic":null},{"Codec":"mov_text","CodecTag":"tx3g","Language":"eng","ColorRange":null,"ColorSpace":null,"ColorTransfer":null,"ColorPrimaries":null,"DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/1000000","CodecTimeBase":null,"Title":null,"VideoRange":null,"VideoRangeType":null,"VideoDoViTitle":null,"LocalizedUndefined":"Undefined","LocalizedDefault":"Default","LocalizedForced":"Forced","LocalizedExternal":"External","DisplayTitle":"English - Default - MOV_TEXT","NalLengthSize":null,"IsInterlaced":false,"IsAVC":null,"ChannelLayout":null,"BitRate":125,"BitDepth":null,"RefFrames":null,"PacketLength":null,"Channels":null,"SampleRate":null,"IsDefault":true,"IsForced":false,"Height":null,"Width":null,"AverageFrameRate":null,"RealFrameRate":null,"Profile":null,"Type":2,"AspectRatio":null,"Index":1,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":true,"SupportsExternalStream":true,"Path":null,"PixelFormat":null,"Level":0,"IsAnamorphic":null},{"Codec":"aac","CodecTag":"mp4a","Language":"jpn","ColorRange":null,"ColorSpace":null,"ColorTransfer":null,"ColorPrimaries":null,"DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/44100","CodecTimeBase":null,"Title":null,"VideoRange":null,"VideoRangeType":null,"VideoDoViTitle":null,"LocalizedUndefined":null,"LocalizedDefault":null,"LocalizedForced":null,"LocalizedExternal":null,"DisplayTitle":"Japanese - AAC - Stereo - Default","NalLengthSize":null,"IsInterlaced":false,"IsAVC":null,"ChannelLayout":"stereo","BitRate":130594,"BitDepth":null,"RefFrames":null,"PacketLength":null,"Channels":2,"SampleRate":44100,"IsDefault":true,"IsForced":false,"Height":null,"Width":null,"AverageFrameRate":null,"RealFrameRate":null,"Profile":"LC","Type":0,"AspectRatio":null,"Index":2,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Path":null,"PixelFormat":null,"Level":0,"IsAnamorphic":null},{"Codec":"bin_data","CodecTag":"text","Language":"eng","ColorRange":null,"ColorSpace":null,"ColorTransfer":null,"ColorPrimaries":null,"DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/1000","CodecTimeBase":null,"Title":null,"VideoRange":null,"VideoRangeType":null,"VideoDoViTitle":null,"LocalizedUndefined":null,"LocalizedDefault":null,"LocalizedForced":null,"LocalizedExternal":null,"DisplayTitle":null,"NalLengthSize":null,"IsInterlaced":false,"IsAVC":null,"ChannelLayout":null,"BitRate":null,"BitDepth":null,"RefFrames":null,"PacketLength":null,"Channels":null,"SampleRate":null,"IsDefault":false,"IsForced":false,"Height":null,"Width":null,"AverageFrameRate":null,"RealFrameRate":null,"Profile":null,"Type":4,"AspectRatio":null,"Index":3,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Path":null,"PixelFormat":null,"Level":0,"IsAnamorphic":null}],"MediaAttachments":[],"Formats":[],"Bitrate":1899554,"Timestamp":null,"RequiredHttpHeaders":{},"TranscodingUrl":null,"TranscodingSubProtocol":null,"TranscodingContainer":null,"AnalyzeDurationMs":null,"DefaultAudioStreamIndex":null,"DefaultSubtitleStreamIndex":null}
+
+/usr/lib/jellyfin-ffmpeg/ffmpeg -analyzeduration 200M -f mov,mp4,m4a,3gp,3g2,mj2 -autorotate 0 -i file:"/data/tvshows/Jujutsu Kaisen/Season 2/Jujutsu Kaisen - S02E01 - Hidden Inventory WEBRip-1080p.mp4" -map_metadata -1 -map_chapters -1 -threads 0 -map 0:0 -map 0:2 -map -0:s -codec:v:0 libx264 -preset veryfast -crf 23 -maxrate 4401942 -bufsize 8803884 -profile:v:0 high -level 40 -x264opts:0 subme=0:me_range=4:rc_lookahead=10:me=dia:no_chroma_me:8x8dct=0:partitions=none -force_key_frames:0 "expr:gte(t,0+n_forced*3)" -sc_threshold:v:0 0 -vf "setparams=color_primaries=bt709:color_trc=bt709:colorspace=bt709,scale=trunc(min(max(iw\,ih*a)\,min(1920\,1080*a))/2)*2:trunc(min(max(iw/a\,ih)\,min(1920/a\,1080))/2)*2,format=yuv420p" -start_at_zero -codec:a:0 copy -copyts -avoid_negative_ts disabled -max_muxing_queue_size 2048 -f hls -max_delay 5000000 -hls_time 3 -hls_segment_type mpegts -start_number 0 -hls_segment_filename "/config/data/transcodes/942995dc2eed694019e4a170fbbeec75%d.ts" -hls_playlist_type vod -hls_list_size 0 -y "/config/data/transcodes/942995dc2eed694019e4a170fbbeec75.m3u8"
+
+
+ffmpeg version 5.1.3-Jellyfin Copyright (c) 2000-2022 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.3.0-1ubuntu1~22.04.1)
+  configuration: --prefix=/usr/lib/jellyfin-ffmpeg --target-os=linux --extra-libs=-lfftw3f --extra-version=Jellyfin --disable-doc --disable-ffplay --disable-ptx-compression --disable-static --disable-libxcb --disable-sdl2 --disable-xlib --enable-lto --enable-gpl --enable-version3 --enable-shared --enable-gmp --enable-gnutls --enable-chromaprint --enable-libdrm --enable-libass --enable-libfreetype --enable-libfribidi --enable-libfontconfig --enable-libbluray --enable-libmp3lame --enable-libopus --enable-libtheora --enable-libvorbis --enable-libopenmpt --enable-libdav1d --enable-libwebp --enable-libvpx --enable-libx264 --enable-libx265 --enable-libzvbi --enable-libzimg --enable-libfdk-aac --arch=amd64 --enable-libsvtav1 --enable-libshaderc --enable-libplacebo --enable-vulkan --enable-opencl --enable-vaapi --enable-amf --enable-libmfx --enable-ffnvcodec --enable-cuda --enable-cuda-llvm --enable-cuvid --enable-nvdec --enable-nvenc
+  libavutil      57. 28.100 / 57. 28.100
+  libavcodec     59. 37.100 / 59. 37.100
+  libavformat    59. 27.100 / 59. 27.100
+  libavdevice    59.  7.100 / 59.  7.100
+  libavfilter     8. 44.100 /  8. 44.100
+  libswscale      6.  7.100 /  6.  7.100
+  libswresample   4.  7.100 /  4.  7.100
+  libpostproc    56.  6.100 / 56.  6.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'file:/data/tvshows/Jujutsu Kaisen/Season 2/Jujutsu Kaisen - S02E01 - Hidden Inventory WEBRip-1080p.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf60.3.100
+  Duration: 00:23:55.09, start: 0.000000, bitrate: 1899 kb/s
+  Chapters:
+    Chapter #0:0: start 0.000000, end 649.000000
+      Metadata:
+        title           : Intro
+    Chapter #0:1: start 649.000000, end 739.000000
+      Metadata:
+        title           : OP
+    Chapter #0:2: start 739.000000, end 1330.000000
+      Metadata:
+        title           : Main EP
+    Chapter #0:3: start 1330.000000, end 1420.000000
+      Metadata:
+        title           : ED
+    Chapter #0:4: start 1420.000000, end 1435.086000
+      Metadata:
+        title           : PV
+  Stream #0:0[0x1](und): Video: h264 (High 10) (avc1 / 0x31637661), yuv420p10le(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 1760 kb/s, 23.98 fps, 23.98 tbr, 24k tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc60.3.100 libx264
+  Stream #0:1[0x2](eng): Subtitle: mov_text (tx3g / 0x67337874), 0 kb/s (default)
+    Metadata:
+      handler_name    : SubtitleHandler
+  Stream #0:2[0x3](jpn): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 130 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+  Stream #0:3[0x4](eng): Data: bin_data (text / 0x74786574)
+    Metadata:
+      handler_name    : SubtitleHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+  Stream #0:2 -> #0:1 (copy)
+Press [q] to stop, [?] for help
+[libx264 @ 0x55a2266f7580] using SAR=1/1
+[libx264 @ 0x55a2266f7580] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x55a2266f7580] profile Main, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0x55a2266f7580] 264 - core 163 r3060 5db6aa6 - H.264/MPEG-4 AVC codec - Copyleft 2003-2021 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x1:0 me=dia subme=0 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=4 chroma_me=0 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=23 scenecut=0 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 vbv_maxrate=4401 vbv_bufsize=8803 crf_max=0.0 nal_hrd=none filler=0 ip_ratio=1.40 aq=1:1.00
+Output #0, hls, to '/config/data/transcodes/942995dc2eed694019e4a170fbbeec75.m3u8':
+  Metadata:
+    encoder         : Lavf59.27.100
+  Stream #0:0: Video: h264, yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 23.98 fps, 90k tbn (default)
+    Metadata:
+      encoder         : Lavc59.37.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 4401000/0/0 buffer size: 8803000 vbv_delay: N/A
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 130 kb/s (default)
+frame=    1 fps=0.0 q=0.0 size=N/A time=00:00:00.00 bitrate=N/A speed=   0x    
+frame=    1 fps=0.0 q=0.0 size=N/A time=00:00:00.02 bitrate=N/A speed=0.0354x    
+frame=    5 fps=3.4 q=0.0 size=N/A time=00:00:00.18 bitrate=N/A speed=0.128x    
+frame=   13 fps=6.5 q=0.0 size=N/A time=00:00:00.51 bitrate=N/A speed=0.256x    
+frame=   17 fps=6.5 q=0.0 size=N/A time=00:00:00.67 bitrate=N/A speed=0.258x    
+frame=   20 fps=5.9 q=0.0 size=N/A time=00:00:00.81 bitrate=N/A speed=0.24x    
+frame=   26 fps=6.7 q=28.0 size=N/A time=00:00:01.06 bitrate=N/A speed=0.274x    
+frame=   40 fps=9.1 q=28.0 size=N/A time=00:00:01.64 bitrate=N/A speed=0.375x    
+frame=   47 fps=9.4 q=28.0 size=N/A time=00:00:01.92 bitrate=N/A speed=0.387x    
+frame=   53 fps=9.7 q=28.0 size=N/A time=00:00:02.18 bitrate=N/A speed=0.398x    
+frame=   63 fps= 10 q=28.0 size=N/A time=00:00:02.59 bitrate=N/A speed=0.431x    
+frame=   82 fps= 12 q=28.0 size=N/A time=00:00:03.39 bitrate=N/A speed=0.514x    
+[hls @ 0x55a226654dc0] Opening '/config/data/transcodes/942995dc2eed694019e4a170fbbeec750.ts' for writing
+frame=   93 fps= 13 q=28.0 size=N/A time=00:00:03.85 bitrate=N/A speed=0.541x    
+frame=  103 fps= 14 q=28.0 size=N/A time=00:00:04.27 bitrate=N/A speed=0.561x    
+frame=  113 fps= 14 q=28.0 size=N/A time=00:00:04.69 bitrate=N/A speed=0.565x    
+frame=  125 fps= 14 q=28.0 size=N/A time=00:00:05.17 bitrate=N/A speed=0.587x    
+frame=  134 fps= 14 q=28.0 size=N/A time=00:00:05.57 bitrate=N/A speed=0.592x    
+frame=  142 fps= 14 q=28.0 size=N/A time=00:00:05.89 bitrate=N/A speed=0.594x    
+frame=  158 fps= 15 q=28.0 size=N/A time=00:00:06.57 bitrate=N/A speed=0.629x    
+[hls @ 0x55a226654dc0] Opening '/config/data/transcodes/942995dc2eed694019e4a170fbbeec751.ts' for writing
+frame=  169 fps= 15 q=28.0 size=N/A time=00:00:07.01 bitrate=N/A speed=0.636x    
+frame=  180 fps= 16 q=28.0 size=N/A time=00:00:07.47 bitrate=N/A speed=0.649x    
+frame=  195 fps= 16 q=28.0 size=N/A time=00:00:08.10 bitrate=N/A speed=0.674x    
+frame=  209 fps= 17 q=28.0 size=N/A time=00:00:08.68 bitrate=N/A speed=0.693x    
+frame=  220 fps= 17 q=28.0 size=N/A time=00:00:09.14 bitrate=N/A speed=0.697x    
+frame=  232 fps= 17 q=25.0 size=N/A time=00:00:09.66 bitrate=N/A speed=0.708x    
+[hls @ 0x55a226654dc0] Opening '/config/data/transcodes/942995dc2eed694019e4a170fbbeec752.ts' for writing
+frame=  244 fps= 17 q=28.0 size=N/A time=00:00:10.14 bitrate=N/A speed=0.718x    
+frame=  255 fps= 17 q=28.0 size=N/A time=00:00:10.61 bitrate=N/A speed=0.724x    
+frame=  266 fps= 18 q=28.0 size=N/A time=00:00:11.07 bitrate=N/A speed=0.731x    
+frame=  277 fps= 18 q=28.0 size=N/A time=00:00:11.51 bitrate=N/A speed=0.732x    
+frame=  293 fps= 18 q=28.0 size=N/A time=00:00:12.19 bitrate=N/A speed=0.746x    
+frame=  307 fps= 18 q=28.0 size=N/A time=00:00:12.77 bitrate=N/A speed=0.758x    
+[hls @ 0x55a226654dc0] Opening '/config/data/transcodes/942995dc2eed694019e4a170fbbeec753.ts' for writing
+frame=  318 fps= 18 q=28.0 size=N/A time=00:00:13.23 bitrate=N/A speed=0.763x    
+frame=  329 fps= 18 q=28.0 size=N/A time=00:00:13.70 bitrate=N/A speed=0.764x    
+frame=  345 fps= 19 q=28.0 size=N/A time=00:00:14.37 bitrate=N/A speed=0.779x    
+frame=  357 fps= 19 q=28.0 size=N/A time=00:00:14.86 bitrate=N/A speed=0.784x    
+frame=  369 fps= 19 q=28.0 size=N/A time=00:00:15.37 bitrate=N/A speed=0.79x    
+[hls @ 0x55a226654dc0] Opening '/config/data/transcodes/942995dc2eed694019e4a170fbbeec754.ts' for writing
+frame=  383 fps= 19 q=28.0 size=N/A time=00:00:15.95 bitrate=N/A speed=0.798x    
+frame=  398 fps= 19 q=28.0 size=N/A time=00:00:16.58 bitrate=N/A speed=0.806x    
+frame=  414 fps= 20 q=28.0 size=N/A time=00:00:17.25 bitrate=N/A speed=0.818x    
+frame=  426 fps= 20 q=28.0 size=N/A time=00:00:17.74 bitrate=N/A speed=0.819x    
+frame=  443 fps= 20 q=28.0 size=N/A time=00:00:18.46 bitrate=N/A speed=0.832x    
+frame=  452 fps= 20 q=28.0 size=N/A time=00:00:18.83 bitrate=N/A speed=0.827x    
+[hls @ 0x55a226654dc0] Opening '/config/data/transcodes/942995dc2eed694019e4a170fbbeec755.ts' for writing
+frame=  462 fps= 20 q=28.0 size=N/A time=00:00:19.24 bitrate=N/A speed=0.827x    
+frame=  475 fps= 20 q=28.0 size=N/A time=00:00:19.78 bitrate=N/A speed=0.831x    
+frame=  494 fps= 20 q=28.0 size=N/A time=00:00:20.57 bitrate=N/A speed=0.847x    
+frame=  510 fps= 21 q=28.0 size=N/A time=00:00:21.24 bitrate=N/A speed=0.855x    
+[hls @ 0x55a226654dc0] Opening '/config/data/transcodes/942995dc2eed694019e4a170fbbeec756.ts' for writing
+frame=  525 fps= 21 q=28.0 size=N/A time=00:00:21.87 bitrate=N/A speed=0.862x    
+frame=  543 fps= 21 q=28.0 size=N/A time=00:00:22.61 bitrate=N/A speed=0.874x    
+frame=  564 fps= 21 q=28.0 size=N/A time=00:00:23.49 bitrate=N/A speed=0.891x    
+frame=  584 fps= 22 q=28.0 size=N/A time=00:00:24.33 bitrate=N/A speed=0.904x    
+[hls @ 0x55a226654dc0] Opening '/config/data/transcodes/942995dc2eed694019e4a170fbbeec757.ts' for writing
+frame=  600 fps= 22 q=28.0 size=N/A time=00:00:25.00 bitrate=N/A speed=0.912x    
+frame=  617 fps= 22 q=28.0 size=N/A time=00:00:25.70 bitrate=N/A speed=0.919x    
+frame=  633 fps= 22 q=28.0 size=N/A time=00:00:26.37 bitrate=N/A speed=0.926x    
+frame=  651 fps= 22 q=28.0 size=N/A time=00:00:27.12 bitrate=N/A speed=0.935x    
+[hls @ 0x55a226654dc0] Opening '/config/data/transcodes/942995dc2eed694019e4a170fbbeec758.ts' for writing
+frame=  669 fps= 23 q=28.0 size=N/A time=00:00:27.88 bitrate=N/A speed=0.945x    
+frame=  686 fps= 23 q=28.0 size=N/A time=00:00:28.58 bitrate=N/A speed=0.952x    
+frame=  704 fps= 23 q=28.0 size=N/A time=00:00:29.32 bitrate=N/A speed=0.961x    
+frame=  713 fps= 23 q=28.0 size=N/A time=00:00:29.72 bitrate=N/A speed=0.956x    
+frame=  723 fps= 23 q=28.0 size=N/A time=00:00:30.13 bitrate=N/A speed=0.953x    
+[hls @ 0x55a226654dc0] Opening '/config/data/transcodes/942995dc2eed694019e4a170fbbeec759.ts' for writing
+frame=  741 fps= 23 q=28.0 size=N/A time=00:00:30.88 bitrate=N/A speed=0.962x    
+frame=  758 fps= 23 q=28.0 size=N/A time=00:00:31.57 bitrate=N/A speed=0.968x    
+frame=  770 fps= 23 q=28.0 size=N/A time=00:00:32.09 bitrate=N/A speed=0.967x    
+frame=  783 fps= 23 q=28.0 size=N/A time=00:00:32.62 bitrate=N/A speed=0.968x    
+frame=  793 fps= 23 q=28.0 size=N/A time=00:00:33.04 bitrate=N/A speed=0.963x    
+frame=  805 fps= 23 q=28.0 size=N/A time=00:00:33.55 bitrate=N/A speed=0.963x    
+[hls @ 0x55a226654dc0] Opening '/config/data/transcodes/942995dc2eed694019e4a170fbbeec7510.ts' for writing
+frame=  813 fps= 23 q=28.0 size=N/A time=00:00:33.87 bitrate=N/A speed=0.956x    
+frame=  823 fps= 23 q=28.0 size=N/A time=00:00:34.29 bitrate=N/A speed=0.954x    
+frame=  839 fps= 23 q=28.0 size=N/A time=00:00:34.96 bitrate=N/A speed=0.959x    
+frame=  859 fps= 23 q=28.0 size=N/A time=00:00:35.80 bitrate=N/A speed=0.967x    
+frame=  879 fps= 23 q=28.0 size=N/A time=00:00:36.64 bitrate=N/A speed=0.976x    
+[hls @ 0x55a226654dc0] Opening '/config/data/transcodes/942995dc2eed694019e4a170fbbeec7511.ts' for writing
+frame=  890 fps= 23 q=28.0 size=N/A time=00:00:37.10 bitrate=N/A speed=0.973x    
+frame=  900 fps= 23 q=28.0 size=N/A time=00:00:37.52 bitrate=N/A speed=0.971x    
+frame=  908 fps= 23 q=28.0 size=N/A time=00:00:37.85 bitrate=N/A speed=0.967x    
+frame=  918 fps= 23 q=28.0 size=N/A time=00:00:38.26 bitrate=N/A speed=0.965x    
+frame=  927 fps= 23 q=28.0 size=N/A time=00:00:38.63 bitrate=N/A speed=0.962x    
+frame=  933 fps= 23 q=28.0 size=N/A time=00:00:38.89 bitrate=N/A speed=0.957x    
+frame=  941 fps= 23 q=28.0 size=N/A time=00:00:39.21 bitrate=N/A speed=0.951x    
+frame=  953 fps= 23 q=28.0 size=N/A time=00:00:39.72 bitrate=N/A speed=0.952x    
+[hls @ 0x55a226654dc0] Opening '/config/data/transcodes/942995dc2eed694019e4a170fbbeec7512.ts' for writing
+frame=  961 fps= 23 q=28.0 size=N/A time=00:00:40.05 bitrate=N/A speed=0.946x    
+frame=  967 fps= 22 q=28.0 size=N/A time=00:00:40.31 bitrate=N/A speed=0.934x    
+frame=  972 fps= 22 q=28.0 size=N/A time=00:00:40.51 bitrate=N/A speed=0.926x    
+frame=  976 fps= 22 q=28.0 size=N/A time=00:00:40.68 bitrate=N/A speed=0.915x    
+frame=  983 fps= 22 q=28.0 size=N/A time=00:00:40.98 bitrate=N/A speed=0.911x    
+frame=  991 fps= 22 q=28.0 size=N/A time=00:00:41.30 bitrate=N/A speed=0.907x    
+frame=  998 fps= 22 q=28.0 size=N/A time=00:00:41.61 bitrate=N/A speed=0.902x    
+frame= 1003 fps= 21 q=28.0 size=N/A time=00:00:41.81 bitrate=N/A speed=0.896x    
+frame= 1009 fps= 21 q=28.0 size=N/A time=00:00:42.05 bitrate=N/A speed=0.891x    
+frame= 1017 fps= 21 q=28.0 size=N/A time=00:00:42.40 bitrate=N/A speed=0.889x    
+frame= 1024 fps= 21 q=28.0 size=N/A time=00:00:42.67 bitrate=N/A speed=0.884x    
+[hls @ 0x55a226654dc0] Opening '/config/data/transcodes/942995dc2eed694019e4a170fbbeec7513.ts' for writing
+frame= 1029 fps= 21 q=28.0 size=N/A time=00:00:42.88 bitrate=N/A speed=0.879x    
+frame= 1034 fps= 21 q=28.0 size=N/A time=00:00:43.09 bitrate=N/A speed=0.874x    
+frame= 1041 fps= 21 q=28.0 size=N/A time=00:00:43.39 bitrate=N/A speed=0.87x    
+frame= 1047 fps= 21 q=28.0 size=N/A time=00:00:43.65 bitrate=N/A speed=0.866x    
+frame= 1050 fps= 21 q=28.0 size=N/A time=00:00:43.76 bitrate=N/A speed=0.857x    
+frame= 1058 fps= 20 q=28.0 size=N/A time=00:00:44.09 bitrate=N/A speed=0.853x    
+frame= 1070 fps= 20 q=28.0 size=N/A time=00:00:44.60 bitrate=N/A speed=0.853x    
+frame= 1084 fps= 21 q=28.0 size=N/A time=00:00:45.18 bitrate=N/A speed=0.856x    
+[hls @ 0x55a226654dc0] Opening '/config/data/transcodes/942995dc2eed694019e4a170fbbeec7514.ts' for writing
+frame= 1100 fps= 21 q=28.0 size=N/A time=00:00:45.85 bitrate=N/A speed=0.86x    
+frame= 1118 fps= 21 q=28.0 size=N/A time=00:00:46.60 bitrate=N/A speed=0.865x    
+frame= 1136 fps= 21 q=28.0 size=N/A time=00:00:47.34 bitrate=N/A speed=0.87x    
+frame= 1152 fps= 21 q=28.0 size=N/A time=00:00:48.01 bitrate=N/A speed=0.875x    
+[hls @ 0x55a226654dc0] Opening '/config/data/transcodes/942995dc2eed694019e4a170fbbeec7515.ts' for writing
+frame= 1174 fps= 21 q=28.0 size=N/A time=00:00:48.94 bitrate=N/A speed=0.883x    
+frame= 1194 fps= 21 q=28.0 size=N/A time=00:00:49.78 bitrate=N/A speed=0.891x    
+frame= 1216 fps= 22 q=28.0 size=N/A time=00:00:50.68 bitrate=N/A speed=0.899x    
+frame= 1239 fps= 22 q=25.0 size=N/A time=00:00:51.64 bitrate=N/A speed=0.907x    
+[hls @ 0x55a226654dc0] Opening '/config/data/transcodes/942995dc2eed694019e4a170fbbeec7516.ts' for writing
+frame= 1252 fps= 22 q=28.0 size=N/A time=00:00:52.19 bitrate=N/A speed=0.909x    
+frame= 1266 fps= 22 q=28.0 size=N/A time=00:00:52.77 bitrate=N/A speed=0.91x    
+frame= 1281 fps= 22 q=28.0 size=N/A time=00:00:53.40 bitrate=N/A speed=0.913x    
+frame= 1289 fps= 22 q=28.0 size=N/A time=00:00:53.73 bitrate=N/A speed=0.909x    
+frame= 1298 fps= 22 q=28.0 size=N/A time=00:00:54.10 bitrate=N/A speed=0.907x    
+frame= 1309 fps= 22 q=32.0 size=N/A time=00:00:54.56 bitrate=N/A speed=0.906x    
+[hls @ 0x55a226654dc0] Opening '/config/data/transcodes/942995dc2eed694019e4a170fbbeec7517.ts' for writing
+frame= 1319 fps= 22 q=34.0 size=N/A time=00:00:54.98 bitrate=N/A speed=0.906x    
+frame= 1326 fps= 22 q=36.0 size=N/A time=00:00:55.28 bitrate=N/A speed=0.903x    
+frame= 1337 fps= 22 q=35.0 size=N/A time=00:00:55.72 bitrate=N/A speed=0.903x    
+frame= 1347 fps= 22 q=34.0 size=N/A time=00:00:56.14 bitrate=N/A speed=0.902x    
+frame= 1364 fps= 22 q=28.0 size=N/A time=00:00:56.86 bitrate=N/A speed=0.906x    
+frame= 1381 fps= 22 q=28.0 size=N/A time=00:00:57.56 bitrate=N/A speed=0.91x    
+[hls @ 0x55a226654dc0] Opening '/config/data/transcodes/942995dc2eed694019e4a170fbbeec7518.ts' for writing
+frame= 1388 fps= 22 q=28.0 size=N/A time=00:00:57.86 bitrate=N/A speed=0.906x    
+frame= 1402 fps= 22 q=33.0 size=N/A time=00:00:58.44 bitrate=N/A speed=0.908x    
+frame= 1420 fps= 22 q=30.0 size=N/A time=00:00:59.21 bitrate=N/A speed=0.912x    
+frame= 1430 fps= 22 q=28.0 size=N/A time=00:00:59.62 bitrate=N/A speed=0.911x    
+frame= 1439 fps= 22 q=28.0 size=N/A time=00:01:00.00 bitrate=N/A speed=0.909x    
+frame= 1455 fps= 22 q=26.0 size=N/A time=00:01:00.65 bitrate=N/A speed=0.912x    
+[hls @ 0x55a226654dc0] Opening '/config/data/transcodes/942995dc2eed694019e4a170fbbeec7519.ts' for writing
+frame= 1471 fps= 22 q=28.0 size=N/A time=00:01:01.32 bitrate=N/A speed=0.915x    
+frame= 1489 fps= 22 q=28.0 size=N/A time=00:01:02.06 bitrate=N/A speed=0.919x    
+frame= 1511 fps= 22 q=28.0 size=N/A time=00:01:02.99 bitrate=N/A speed=0.926x    
+frame= 1531 fps= 22 q=28.0 size=N/A time=00:01:03.83 bitrate=N/A speed=0.931x    
+[hls @ 0x55a226654dc0] Opening '/config/data/transcodes/942995dc2eed694019e4a170fbbeec7520.ts' for writing
+frame= 1550 fps= 22 q=28.0 size=N/A time=00:01:04.62 bitrate=N/A speed=0.936x    
+frame= 1571 fps= 23 q=28.0 size=N/A time=00:01:05.50 bitrate=N/A speed=0.942x    
+frame= 1596 fps= 23 q=28.0 size=N/A time=00:01:06.54 bitrate=N/A speed=0.95x    
+[hls @ 0x55a226654dc0] Opening '/config/data/transcodes/942995dc2eed694019e4a170fbbeec7521.ts' for writing
+frame= 1620 fps= 23 q=28.0 size=N/A time=00:01:07.54 bitrate=N/A speed=0.957x    
+frame= 1646 fps= 23 q=28.0 size=N/A time=00:01:08.63 bitrate=N/A speed=0.966x    
+frame= 1671 fps= 23 q=25.0 size=N/A time=00:01:09.66 bitrate=N/A speed=0.973x    
+[hls @ 0x55a226654dc0] Opening '/config/data/transcodes/942995dc2eed694019e4a170fbbeec7522.ts' for writing
+frame= 1686 fps= 23 q=28.0 size=N/A time=00:01:10.28 bitrate=N/A speed=0.974x    
+frame= 1700 fps= 23 q=28.0 size=N/A time=00:01:10.86 bitrate=N/A speed=0.975x    
+frame= 1713 fps= 23 q=28.0 size=N/A time=00:01:11.42 bitrate=N/A speed=0.976x    
+frame= 1727 fps= 23 q=28.0 size=N/A time=00:01:12.00 bitrate=N/A speed=0.977x    
+frame= 1741 fps= 23 q=28.0 size=N/A time=00:01:12.58 bitrate=N/A speed=0.978x    
+[hls @ 0x55a226654dc0] Opening '/config/data/transcodes/942995dc2eed694019e4a170fbbeec7523.ts' for writing
+frame= 1757 fps= 23 q=28.0 size=N/A time=00:01:13.25 bitrate=N/A speed=0.98x    
+frame= 1772 fps= 24 q=28.0 size=N/A time=00:01:13.88 bitrate=N/A speed=0.981x    
+frame= 1790 fps= 24 q=28.0 size=N/A time=00:01:14.62 bitrate=N/A speed=0.985x    
+frame= 1809 fps= 24 q=28.0 size=N/A time=00:01:15.41 bitrate=N/A speed=0.988x    
+[hls @ 0x55a226654dc0] Opening '/config/data/transcodes/942995dc2eed694019e4a170fbbeec7524.ts' for writing
+frame= 1825 fps= 24 q=28.0 size=N/A time=00:01:16.09 bitrate=N/A speed=0.99x    
+
+[q] command received. Exiting.
+
+[hls @ 0x55a226654dc0] Opening '/config/data/transcodes/942995dc2eed694019e4a170fbbeec7525.ts' for writing
+frame= 1835 fps= 24 q=-1.0 Lsize=N/A time=00:01:16.48 bitrate=N/A speed=0.989x    
+video:17443kB audio:1213kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+[libx264 @ 0x55a2266f7580] frame I:26    Avg QP:16.10  size: 68770
+[libx264 @ 0x55a2266f7580] frame P:619   Avg QP:20.16  size: 18384
+[libx264 @ 0x55a2266f7580] frame B:1190  Avg QP:21.90  size:  3944
+[libx264 @ 0x55a2266f7580] consecutive B-frames:  9.4% 10.8%  5.1% 74.8%
+[libx264 @ 0x55a2266f7580] mb I  I16..4: 54.3%  0.0% 45.7%
+[libx264 @ 0x55a2266f7580] mb P  I16..4: 31.8%  0.0%  0.0%  P16..4: 23.9%  0.0%  0.0%  0.0%  0.0%    skip:44.3%
+[libx264 @ 0x55a2266f7580] mb B  I16..4:  3.8%  0.0%  0.0%  B16..8:  9.4%  0.0%  0.0%  direct: 4.0%  skip:82.8%  L0:44.4% L1:50.5% BI: 5.2%
+[libx264 @ 0x55a2266f7580] coded y,uvDC,uvAC intra: 18.5% 20.1% 3.7% inter: 3.5% 7.6% 0.1%
+[libx264 @ 0x55a2266f7580] i16 v,h,dc,p: 41% 26% 14% 19%
+[libx264 @ 0x55a2266f7580] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 30% 19% 17%  8%  6%  6%  5%  5%  5%
+[libx264 @ 0x55a2266f7580] i8c dc,h,v,p: 70% 13% 13%  3%
+[libx264 @ 0x55a2266f7580] Weighted P-Frames: Y:20.2% UV:12.1%
+[libx264 @ 0x55a2266f7580] kb/s:1867.01

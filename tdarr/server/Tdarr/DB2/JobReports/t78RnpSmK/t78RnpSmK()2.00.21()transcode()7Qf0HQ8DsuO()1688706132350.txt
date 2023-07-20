@@ -1,908 +1,0 @@
-2023-07-07T06:02:15.317Z 7Qf0HQ8DsuO:[Step S01] [2.00.21] Server relay initialising job
-2023-07-07T06:02:15.318Z 7Qf0HQ8DsuO:Server: linux_x64_docker_true
-2023-07-07T06:02:15.319Z 7Qf0HQ8DsuO:Server relay adding file to staged files
-2023-07-07T06:02:15.319Z 7Qf0HQ8DsuO:Server relay sending job to Node relay: MyInternalNode
-2023-07-07T06:02:15.319Z 7Qf0HQ8DsuO:Node[MyInternalNode]:[Step N01] [2.00.21] Node relay received job
-2023-07-07T06:02:15.320Z 7Qf0HQ8DsuO:Node[MyInternalNode]:{"nodeName":"MyInternalNode","serverIP":"0.0.0.0","serverPort":"8266","handbrakePath":"","ffmpegPath":"","mkvpropeditPath":"","pathTranslators":[{"server":"","node":""}],"logLevel":"INFO","priority":-1,"platform_arch_isdocker":"linux_x64_docker_true","processPid":200,"nodeID":"DI7hE6ijr"}
-2023-07-07T06:02:15.320Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Node relay sending job to worker:zany-zebu
-2023-07-07T06:02:15.320Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[Step W01] Received file, original: /media/tvshows/The IT Crowd/Season 1/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper.mp4
-2023-07-07T06:02:15.321Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:{"workerType":"transcodecpu"}
-2023-07-07T06:02:15.321Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:{"ffmpegPath":"tdarr-ffmpeg"}
-2023-07-07T06:02:15.322Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:{"handbrakePath":"HandBrakeCLI"}
-2023-07-07T06:02:15.322Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:{"mkvpropeditPath":"mkvpropedit"}
-2023-07-07T06:02:15.323Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:{"gpuSelect":"-"}
-2023-07-07T06:02:15.323Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:{"allowGpuDoCpu":false}
-2023-07-07T06:02:15.323Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:{"thoroughHealthCheckCpuExtraInputArgs":""}
-2023-07-07T06:02:15.324Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:{"thoroughHealthCheckGpuExtraInputArgs":""}
-2023-07-07T06:02:15.325Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:{"thoroughHealthCheckCpuExtraArgs":""}
-2023-07-07T06:02:15.325Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:{"thoroughHealthCheckGpuExtraArgs":""}
-2023-07-07T06:02:15.326Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:{"logFullCliOutput":false}
-2023-07-07T06:02:15.326Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Path translating objects
-2023-07-07T06:02:15.327Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:{"librarySettings":{"_id":"4BaCjCxnf","priority":1,"name":"TV","folder":"/media/tvshows","foldersToIgnore":"","folderWatchScanInterval":30,"scannerThreadCount":2,"cache":"/temp","output":".","folderToFolderConversion":false,"folderToFolderConversionDeleteSource":false,"folderToFolderRecordHistory":true,"copyIfConditionsMet":false,"container":".mkv","containerFilter":"mkv,mp4,mov,m4v,mpg,mpeg,avi,flv,webm,wmv,vob,evo,iso,m2ts,ts","createdAt":1675837380368,"folderWatching":true,"useFsEvents":false,"scheduledScanFindNew":false,"processLibrary":true,"scanOnStart":true,"exifToolScan":true,"mediaInfoScan":true,"closedCaptionScan":false,"scanButtons":true,"scanFound":"Files found:0","navItemSelected":"navSourceFolder","pluginIDs":[{"_id":"plugin1","id":"Tdarr_Plugin_MC93_MigzImageRemoval","checked":true,"source":"Community","priority":0,"InputsDB":{},"Stage":"Pre-processing","Name":"Migz-Remove image formats from file","Type":"Video","Operation":"Transcode","Description":"Identify any unwanted image formats in the file and remove those streams. MJPEG, PNG & GIF \n\n","Version":"1.4","Tags":"pre-processing,ffmpeg,video only","Inputs":[],"source_id":"Community::Tdarr_Plugin_MC93_MigzImageRemoval","Link":"Read error"},{"_id":"plugin2","id":"Tdarr_Plugin_lmg1_Reorder_Streams","checked":true,"source":"Community","priority":1,"InputsDB":{},"Stage":"Pre-processing","Name":"Tdarr_Plugin_lmg1_Reorder_Streams ","Type":"Video","Operation":"Transcode","Description":"[Contains built-in filter] This plugin will move the video stream to the front so Tdarr will recognize the codec correctly.\n\n","Version":"1.00","Tags":"pre-processing,ffmpeg","Inputs":[],"source_id":"Community::Tdarr_Plugin_lmg1_Reorder_Streams","Link":"Read error"},{"_id":"sxfFHmyyT","id":"Tdarr_Plugin_00td_action_standardise_audio_stream_codecs","checked":true,"source":"Community","priority":2,"InputsDB":{},"Stage":"Pre-processing","Name":"Standardise audio stream codecs","Type":"Video","Operation":"Transcode","Description":"\nThis action has a built-in filter. Additional filters can be added.\n\n\n\nAll audio tracks which are not in the specified codec will be transcoded\ninto the specified codec. Bitrate and channel count are kept the same.\n  ","Version":"1.00","Tags":"action","Inputs":[{"name":"audioCodec","type":"string","defaultValue":"aac","inputUI":{"type":"dropdown","options":["aac","ac3","eac3","dca","flac","mp2","libmp3lame","truehd"]},"tooltip":"Enter the desired audio codec"}],"source_id":"Community::Tdarr_Plugin_00td_action_standardise_audio_stream_codecs","Link":"Read error"},{"_id":"aEVldYMXA","id":"Tdarr_Plugin_075a_Transcode_Customisable","checked":true,"source":"Community","priority":3,"InputsDB":{"codecs_to_exclude":"h264","transcode_arguments":"-Z \"H.264 MKV 2160p60 4K\" -e x264 --all-subtitles --all-audio  -x threads=2"},"Stage":"Pre-processing","Name":"Video Transcode Customisable","Type":"Video","Operation":"Transcode","Description":"[Contains built-in filter] Specify codec filter and transcode arguments for HandBrake or FFmpeg  \n\n","Version":"1.00","Tags":"pre-processing,handbrake,ffmpeg,configurable","Inputs":[{"name":"codecs_to_exclude","type":"string","defaultValue":"hevc","inputUI":{"type":"text"},"tooltip":"Input codecs, separated by a comma, that should be excluded when processing.\n\n        \\nFor example, if you're transcoding into hevc (h265), then add a filter to prevent hevc being transcoded so your newly transcoded files won't be infinitely looped/processed. \\n\n\n        \n        \\nCommon video codecs:\n\n        \\nmpeg4\n        \\nhevc\n        \\nh264\n        \\nmpeg2video\n        \\ntheora\n        \\nvp8\n        \\nvp9\n        \n        \n        \\nExample:\\n\n\n        hevc\n\n        \\nYou can also enter multiple codecs:\n\n        \\nExample:\\n\n\n        mp3,aac,dts\n\n        \\nExample:\\n\n\n        h264,vp9\n \n        "},{"name":"cli","type":"string","defaultValue":"handbrake","inputUI":{"type":"text"},"tooltip":"Enter the CLI to use.\n        \n        \\nExample:\\n\n        handbrake\n\n        \\nExample:\\n\n        ffmpeg\n        \n        "},{"name":"transcode_arguments","type":"string","defaultValue":"-Z \"Very Fast 1080p30\" --all-subtitles --all-audio","inputUI":{"type":"text"},"tooltip":"\\nEnter HandBrake or FFmpeg transcode arguments.\n        \n        \\nHandBrake examples:\n\n        \\nExample:\\n\n        -e x264 -q 20 -B\n        \n        \\nExample:\\n\n        -Z \"Very Fast 1080p30\"\n        \n        \\nExample:\\n\n        -Z \"Fast 1080p30\" -e nvenc_h265\n        \n        \\nExample:\\n\n        -Z \"Very Fast 1080p30\" --all-subtitles --all-audio\n        \n        \\nExample:\\n\n        -Z \"Very Fast 480p30\"\n        \n        \\nExample:\\n\n        --preset-import-file \"C:UsersHaveAGitGatDesktop\testpreset.json\" -Z \"My Preset\"\n        \n        \\nYou can learn more about HandBrake presets here:\n\n        \\nhttps://handbrake.fr/docs/en/latest/technical/official-presets.html\n        \n\n        \\nWhen using FFmpeg, you need to separate the input and output parameters with a comma. FFmpeg Examples:\n\n        \\nExample:\\n\n-r 1,-r 24\n\n\\nExample:\\n\n,-sn -c:v copy -c:a copy\n\n\\nExample:\\n\n,-c:v lib265 -crf 23 -ac 6 -c:a aac -preset veryfast\n\n\\nExample:\\n\n,-map 0 -c copy -c:v libx265 -c:a aac\n\n\\nExample:\\n\n-c:v h264_cuvid,-c:v hevc_nvenc -preset slow -c:a copy\n\n\\nPlease see the following for help with creating FFmpeg commands:\n\n\\nhttps://opensource.com/article/17/6/ffmpeg-convert-media-file-formats\n        \n        \n        \n        \n        "},{"name":"output_container","type":"string","defaultValue":".mkv","inputUI":{"type":"text"},"tooltip":"\n        \\nEnter the output container of the new file\n\n        \\nExample:\\n\n        .mp4\n\n        \\nExample:\\n\n        .mp3\n\n        \\nExample:\\n\n        .mkv\n        \n        "}],"source_id":"Community::Tdarr_Plugin_075a_Transcode_Customisable","Link":"Read error"},{"_id":"plugin5","id":"Tdarr_Plugin_a9he_New_file_size_check","checked":true,"source":"Community","priority":4,"InputsDB":{"upperBound":"200"},"Stage":"Pre-processing","Name":"New file size check","Type":"Video","Operation":"Transcode","Description":"Give an error if new file is not within the specified upper and lower bound limits \n\n","Version":"1.00","Tags":"","Inputs":[{"name":"upperBound","type":"number","defaultValue":110,"inputUI":{"type":"text"},"tooltip":"Enter the upper bound % size for the new file. For example, if '110' is entered, \n        then if the new file size is 11% larger than the original, an error will be given."},{"name":"lowerBound","type":"number","defaultValue":40,"inputUI":{"type":"text"},"tooltip":"Enter the lower bound % size for the new file. For example, if '90' is entered, \n        then if the new file size is less than 90% of the original, an error will be given."}],"source_id":"Community::Tdarr_Plugin_a9he_New_file_size_check","Link":"Read error"},{"_id":"-XIe_rmCK","id":"Tdarr_Plugin_00td_filter_by_file_property","checked":true,"source":"Community","priority":5,"InputsDB":{"propertyValues":"mkv"},"Stage":"Pre-processing","Name":"Filter by file property","Type":"Video","Operation":"Filter","Description":"Filter by a top level file property.\n  For example, container, video_resolution, video_codec_name, fileMedium.\n  Click on a file name on the Tdarr tab or Search tab to see top-level file properties.\n  ","Version":"1.00","Tags":"filter","Inputs":[{"name":"propertyName","type":"string","defaultValue":"container","inputUI":{"type":"text"},"tooltip":"Enter the file property to check"},{"name":"propertyValues","type":"string","defaultValue":"mkv,mp4","inputUI":{"type":"text"},"tooltip":"Enter a comma separated list of values to check for."},{"name":"exactMatch","type":"boolean","defaultValue":true,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Specify true if the property value must be an exact match, false if the property value must contain the value."},{"name":"continueIfPropertyFound","type":"boolean","defaultValue":false,"inputUI":{"type":"dropdown","options":["false","true"]},"tooltip":"Specify whether to continue the plugin stack if the property is found."}],"source_id":"Community::Tdarr_Plugin_00td_filter_by_file_property","Link":"Read error"},{"_id":"RZcj0lsWOB","id":"Tdarr_Plugin_00td_action_remux_container","checked":true,"source":"Community","priority":6,"InputsDB":{},"Name":"Remux container","Type":"Video","Operation":"Transcode","Description":"\n  This action has a built-in filter. Additional filters can be added.\n\n\n\n  If not in the specified container, the file will be remuxed.\n  ","Version":"1.00","Link":"Read error","Stage":"Pre-processing","Tags":"action","Inputs":[{"name":"container","type":"string","defaultValue":"mkv","inputUI":{"type":"text"},"tooltip":"Enter the desired container"}],"source_id":"Community::Tdarr_Plugin_00td_action_remux_container"}],"pluginCommunity":true,"handbrake":true,"ffmpeg":false,"handbrakescan":true,"ffmpegscan":false,"preset":"-Z \"Very Fast 1080p30\"","decisionMaker":{"settingsPlugin":true,"settingsVideo":false,"videoExcludeSwitch":true,"video_codec_names_exclude":[{"codec":"hevc","checked":false},{"codec":"h264","checked":true}],"video_size_range_include":{"min":0,"max":100000},"video_height_range_include":{"min":0,"max":3000},"video_width_range_include":{"min":0,"max":4000},"settingsAudio":false,"audioExcludeSwitch":true,"audio_codec_names_exclude":[{"codec":"mp3","checked":true},{"codec":"aac","checked":false}],"audio_size_range_include":{"min":0,"max":10}},"schedule":[{"_id":"Sun:00-01","checked":true},{"_id":"Sun:01-02","checked":true},{"_id":"Sun:02-03","checked":true},{"_id":"Sun:03-04","checked":true},{"_id":"Sun:04-05","checked":true},{"_id":"Sun:05-06","checked":true},{"_id":"Sun:06-07","checked":true},{"_id":"Sun:07-08","checked":true},{"_id":"Sun:08-09","checked":true},{"_id":"Sun:09-10","checked":true},{"_id":"Sun:10-11","checked":true},{"_id":"Sun:11-12","checked":true},{"_id":"Sun:12-13","checked":true},{"_id":"Sun:13-14","checked":true},{"_id":"Sun:14-15","checked":true},{"_id":"Sun:15-16","checked":true},{"_id":"Sun:16-17","checked":true},{"_id":"Sun:17-18","checked":true},{"_id":"Sun:18-19","checked":true},{"_id":"Sun:19-20","checked":true},{"_id":"Sun:20-21","checked":true},{"_id":"Sun:21-22","checked":true},{"_id":"Sun:22-23","checked":true},{"_id":"Sun:23-00","checked":true},{"_id":"Mon:00-01","checked":true},{"_id":"Mon:01-02","checked":true},{"_id":"Mon:02-03","checked":true},{"_id":"Mon:03-04","checked":true},{"_id":"Mon:04-05","checked":true},{"_id":"Mon:05-06","checked":true},{"_id":"Mon:06-07","checked":true},{"_id":"Mon:07-08","checked":true},{"_id":"Mon:08-09","checked":true},{"_id":"Mon:09-10","checked":true},{"_id":"Mon:10-11","checked":true},{"_id":"Mon:11-12","checked":true},{"_id":"Mon:12-13","checked":true},{"_id":"Mon:13-14","checked":true},{"_id":"Mon:14-15","checked":true},{"_id":"Mon:15-16","checked":true},{"_id":"Mon:16-17","checked":true},{"_id":"Mon:17-18","checked":true},{"_id":"Mon:18-19","checked":true},{"_id":"Mon:19-20","checked":true},{"_id":"Mon:20-21","checked":true},{"_id":"Mon:21-22","checked":true},{"_id":"Mon:22-23","checked":true},{"_id":"Mon:23-00","checked":true},{"_id":"Tue:00-01","checked":true},{"_id":"Tue:01-02","checked":true},{"_id":"Tue:02-03","checked":true},{"_id":"Tue:03-04","checked":true},{"_id":"Tue:04-05","checked":true},{"_id":"Tue:05-06","checked":true},{"_id":"Tue:06-07","checked":true},{"_id":"Tue:07-08","checked":true},{"_id":"Tue:08-09","checked":true},{"_id":"Tue:09-10","checked":true},{"_id":"Tue:10-11","checked":true},{"_id":"Tue:11-12","checked":true},{"_id":"Tue:12-13","checked":true},{"_id":"Tue:13-14","checked":true},{"_id":"Tue:14-15","checked":true},{"_id":"Tue:15-16","checked":true},{"_id":"Tue:16-17","checked":true},{"_id":"Tue:17-18","checked":true},{"_id":"Tue:18-19","checked":true},{"_id":"Tue:19-20","checked":true},{"_id":"Tue:20-21","checked":true},{"_id":"Tue:21-22","checked":true},{"_id":"Tue:22-23","checked":true},{"_id":"Tue:23-00","checked":true},{"_id":"Wed:00-01","checked":true},{"_id":"Wed:01-02","checked":true},{"_id":"Wed:02-03","checked":true},{"_id":"Wed:03-04","checked":true},{"_id":"Wed:04-05","checked":true},{"_id":"Wed:05-06","checked":true},{"_id":"Wed:06-07","checked":true},{"_id":"Wed:07-08","checked":true},{"_id":"Wed:08-09","checked":true},{"_id":"Wed:09-10","checked":true},{"_id":"Wed:10-11","checked":true},{"_id":"Wed:11-12","checked":true},{"_id":"Wed:12-13","checked":true},{"_id":"Wed:13-14","checked":true},{"_id":"Wed:14-15","checked":true},{"_id":"Wed:15-16","checked":true},{"_id":"Wed:16-17","checked":true},{"_id":"Wed:17-18","checked":true},{"_id":"Wed:18-19","checked":true},{"_id":"Wed:19-20","checked":true},{"_id":"Wed:20-21","checked":true},{"_id":"Wed:21-22","checked":true},{"_id":"Wed:22-23","checked":true},{"_id":"Wed:23-00","checked":true},{"_id":"Thur:00-01","checked":true},{"_id":"Thur:01-02","checked":true},{"_id":"Thur:02-03","checked":true},{"_id":"Thur:03-04","checked":true},{"_id":"Thur:04-05","checked":true},{"_id":"Thur:05-06","checked":true},{"_id":"Thur:06-07","checked":true},{"_id":"Thur:07-08","checked":true},{"_id":"Thur:08-09","checked":true},{"_id":"Thur:09-10","checked":true},{"_id":"Thur:10-11","checked":true},{"_id":"Thur:11-12","checked":true},{"_id":"Thur:12-13","checked":true},{"_id":"Thur:13-14","checked":true},{"_id":"Thur:14-15","checked":true},{"_id":"Thur:15-16","checked":true},{"_id":"Thur:16-17","checked":true},{"_id":"Thur:17-18","checked":true},{"_id":"Thur:18-19","checked":true},{"_id":"Thur:19-20","checked":true},{"_id":"Thur:20-21","checked":true},{"_id":"Thur:21-22","checked":true},{"_id":"Thur:22-23","checked":true},{"_id":"Thur:23-00","checked":true},{"_id":"Fri:00-01","checked":true},{"_id":"Fri:01-02","checked":true},{"_id":"Fri:02-03","checked":true},{"_id":"Fri:03-04","checked":true},{"_id":"Fri:04-05","checked":true},{"_id":"Fri:05-06","checked":true},{"_id":"Fri:06-07","checked":true},{"_id":"Fri:07-08","checked":true},{"_id":"Fri:08-09","checked":true},{"_id":"Fri:09-10","checked":true},{"_id":"Fri:10-11","checked":true},{"_id":"Fri:11-12","checked":true},{"_id":"Fri:12-13","checked":true},{"_id":"Fri:13-14","checked":true},{"_id":"Fri:14-15","checked":true},{"_id":"Fri:15-16","checked":true},{"_id":"Fri:16-17","checked":true},{"_id":"Fri:17-18","checked":true},{"_id":"Fri:18-19","checked":true},{"_id":"Fri:19-20","checked":true},{"_id":"Fri:20-21","checked":true},{"_id":"Fri:21-22","checked":true},{"_id":"Fri:22-23","checked":true},{"_id":"Fri:23-00","checked":true},{"_id":"Sat:00-01","checked":true},{"_id":"Sat:01-02","checked":true},{"_id":"Sat:02-03","checked":true},{"_id":"Sat:03-04","checked":true},{"_id":"Sat:04-05","checked":true},{"_id":"Sat:05-06","checked":true},{"_id":"Sat:06-07","checked":true},{"_id":"Sat:07-08","checked":true},{"_id":"Sat:08-09","checked":true},{"_id":"Sat:09-10","checked":true},{"_id":"Sat:10-11","checked":true},{"_id":"Sat:11-12","checked":true},{"_id":"Sat:12-13","checked":true},{"_id":"Sat:13-14","checked":true},{"_id":"Sat:14-15","checked":true},{"_id":"Sat:15-16","checked":true},{"_id":"Sat:16-17","checked":true},{"_id":"Sat:17-18","checked":true},{"_id":"Sat:18-19","checked":true},{"_id":"Sat:19-20","checked":true},{"_id":"Sat:20-21","checked":true},{"_id":"Sat:21-22","checked":true},{"_id":"Sat:22-23","checked":true},{"_id":"Sat:23-00","checked":true}],"totalHealthCheckCount":121,"totalTranscodeCount":128,"sizeDiff":2.8940374879166484,"holdNewFiles":false,"holdFor":3600,"pluginStackOverview":true,"filterResolutionsSkip":"","filterCodecsSkip":"","processPluginsSequentially":true}}
-2023-07-07T06:02:15.327Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Fetching plugin data from server
-2023-07-07T06:02:15.327Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Scanning original library file
-2023-07-07T06:02:15.328Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:{
-2023-07-07T06:02:15.328Z   "exifToolScan": true,
-2023-07-07T06:02:15.328Z   "mediaInfoScan": false,
-2023-07-07T06:02:15.328Z   "closedCaptionScan": false
-2023-07-07T06:02:15.328Z }
-2023-07-07T06:02:15.328Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Updating file properties using mkvpropedit
-2023-07-07T06:02:15.329Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Updated file properties using mkvpropedit
-2023-07-07T06:02:15.329Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Requesting Tdarr Server to scan file
-2023-07-07T06:02:16.415Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Scan complete
-2023-07-07T06:02:16.419Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Original file scanned
-2023-07-07T06:02:16.423Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:fileVersionOriginalLogJSONString:{"lastCliCommand":"","lastPluginId":"","sourceFile":{"_id":"/media/tvshows/The IT Crowd/Season 1/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper.mp4","footprintId":"t78RnpSmK","file":"/media/tvshows/The IT Crowd/Season 1/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper.mp4","container":"mp4","scannerReads":{"ffProbeRead":"success","exiftoolRead":"success","mediaInfoRead":"not enabled","closedCaptionRead":"not enabled"},"createdAt":1688706134265,"lastPluginDetails":"none","bit_rate":1004204,"statSync":{"dev":111,"mode":33188,"nlink":1,"uid":0,"gid":0,"rdev":0,"blksize":4096,"ino":16285682476441717000,"size":185403057,"blocks":362116,"atimeMs":1688680763000,"mtimeMs":1688680763000,"ctimeMs":1688680763000,"birthtimeMs":0,"atime":"2023-07-06T21:59:23.000Z","mtime":"2023-07-06T21:59:23.000Z","ctime":"2023-07-06T21:59:23.000Z","birthtime":"1970-01-01T00:00:00.000Z"},"file_size":176.814133644104,"ffProbeData":{"streams":[{"index":0,"codec_name":"hevc","codec_long_name":"H.265 / HEVC (High Efficiency Video Coding)","profile":"Main","codec_type":"video","codec_tag_string":"hvc1","codec_tag":"0x31637668","width":1258,"height":720,"coded_width":1264,"coded_height":720,"closed_captions":0,"has_b_frames":3,"sample_aspect_ratio":"1:1","display_aspect_ratio":"629:360","pix_fmt":"yuv420p","level":93,"color_range":"tv","color_space":"bt709","color_transfer":"bt709","color_primaries":"bt709","chroma_location":"left","refs":1,"r_frame_rate":"25/1","avg_frame_rate":"25/1","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":132930000,"duration":"1477.000000","bit_rate":"884923","nb_frames":"36925","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"creation_time":"2023-05-08T22:21:45.000000Z","language":"und","handler_name":"VideoHandler","vendor_id":"[0][0][0][0]"}},{"index":1,"codec_name":"aac","codec_long_name":"AAC (Advanced Audio Coding)","profile":"LC","codec_type":"audio","codec_tag_string":"mp4a","codec_tag":"0x6134706d","sample_fmt":"fltp","sample_rate":"48000","channels":2,"channel_layout":"stereo","bits_per_sample":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/48000","start_pts":0,"start_time":"0.000000","duration_ts":70896624,"duration":"1477.013000","bit_rate":"112721","nb_frames":"69236","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"creation_time":"2023-05-08T22:21:45.000000Z","language":"eng","handler_name":"English","vendor_id":"[0][0][0][0]"}},{"index":2,"codec_name":"mov_text","codec_long_name":"MOV text","codec_type":"subtitle","codec_tag_string":"tx3g","codec_tag":"0x67337874","width":1258,"height":108,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/90000","start_pts":0,"start_time":"0.000000","duration_ts":132408090,"duration":"1471.201000","bit_rate":"145","nb_frames":"943","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"creation_time":"2023-05-08T22:21:45.000000Z","language":"eng","handler_name":"English"}}],"format":{"filename":"/media/tvshows/The IT Crowd/Season 1/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper.mp4","nb_streams":3,"nb_programs":0,"format_name":"mov,mp4,m4a,3gp,3g2,mj2","format_long_name":"QuickTime / MOV","start_time":"0.000000","duration":"1477.014000","size":"185403057","bit_rate":"1004204","probe_score":100,"tags":{"major_brand":"mp42","minor_version":"512","compatible_brands":"mp42iso2mp41","creation_time":"2023-05-08T22:21:45.000000Z","encoder":"HandBrake 1.6.1 2023012300"}}},"meta":{"SourceFile":"/media/tvshows/The IT Crowd/Season 1/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper.mp4","errors":[],"Duration":1477.014,"PreviewDuration":0,"SelectionDuration":0,"TrackDuration":1477,"MediaDuration":1477,"ExifToolVersion":12.4,"FileName":"The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper.mp4","Directory":"/media/tvshows/The IT Crowd/Season 1","FileSize":"177 MiB","FileModifyDate":{"year":2023,"month":7,"day":6,"hour":21,"minute":59,"second":23,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:06 21:59:23+00:00"},"FileAccessDate":{"year":2023,"month":7,"day":6,"hour":21,"minute":59,"second":23,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:06 21:59:23+00:00"},"FileInodeChangeDate":{"year":2023,"month":7,"day":6,"hour":21,"minute":59,"second":23,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:06 21:59:23+00:00"},"FilePermissions":"-rw-r--r--","FileType":"MP4","FileTypeExtension":"mp4","MIMEType":"video/mp4","MajorBrand":"MP4 v2 [ISO 14496-14]","MinorVersion":"0.2.0","CompatibleBrands":["mp42","iso2","mp41"],"MediaDataSize":184217556,"MediaDataOffset":44,"MovieHeaderVersion":0,"CreateDate":{"year":2023,"month":5,"day":8,"hour":22,"minute":21,"second":45,"millisecond":0,"rawValue":"2023:05:08 22:21:45"},"ModifyDate":{"year":2023,"month":5,"day":8,"hour":22,"minute":21,"second":45,"millisecond":0,"rawValue":"2023:05:08 22:21:45"},"TimeScale":1000,"PreferredRate":1,"PreferredVolume":"100.00%","PreviewTime":"0 s","PosterTime":"0 s","SelectionTime":"0 s","CurrentTime":"0 s","NextTrackID":4,"TrackHeaderVersion":0,"TrackCreateDate":{"year":2023,"month":5,"day":8,"hour":22,"minute":21,"second":45,"millisecond":0,"rawValue":"2023:05:08 22:21:45"},"TrackModifyDate":{"year":2023,"month":5,"day":8,"hour":22,"minute":21,"second":45,"millisecond":0,"rawValue":"2023:05:08 22:21:45"},"TrackID":1,"TrackLayer":0,"TrackVolume":"0.00%","ImageWidth":1258,"ImageHeight":720,"GraphicsMode":"srcCopy","OpColor":"0 0 0","CompressorID":"hvc1","SourceImageWidth":1258,"SourceImageHeight":720,"XResolution":72,"YResolution":72,"BitDepth":24,"ColorRepresentation":"nclx 1 1 1","PixelAspectRatio":"1:1","BufferSize":0,"MaxBitrate":884923,"AverageBitrate":884923,"VideoFrameRate":25,"Balance":0,"AudioFormat":"mp4a","AudioChannels":2,"AudioBitsPerSample":16,"AudioSampleRate":48000,"Track2Name":"English","Track2Title":"English","MatrixStructure":"1 0 0 0 1 0 0 0 1","MediaHeaderVersion":0,"MediaCreateDate":{"year":2023,"month":5,"day":8,"hour":22,"minute":21,"second":45,"millisecond":0,"rawValue":"2023:05:08 22:21:45"},"MediaModifyDate":{"year":2023,"month":5,"day":8,"hour":22,"minute":21,"second":45,"millisecond":0,"rawValue":"2023:05:08 22:21:45"},"MediaTimeScale":90000,"MediaLanguageCode":"eng","HandlerDescription":"English","OtherFormat":"tx3g","FontTable":"Arial","Track3Name":"English","Track3Title":"English","HandlerType":"Metadata","HandlerVendorID":"Apple","Encoder":"HandBrake 1.6.1 2023012300","ImageSize":"1258x720","Megapixels":0.906,"AvgBitrate":"998 kbps","Rotation":0},"mediaInfo":{},"hasClosedCaptions":false,"DB":"4BaCjCxnf","bumped":false,"HealthCheck":"","TranscodeDecisionMaker":"","holdUntil":0,"fileMedium":"video","video_codec_name":"hevc","audio_codec_name":"","video_resolution":"720p","lastHealthCheckDate":0,"lastTranscodeDate":0,"history":"","oldSize":0,"newSize":0,"videoStreamIndex":0,"duration":1477}}
-2023-07-07T06:02:16.427Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Source file to work on determined:/media/tvshows/The IT Crowd/Season 1/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper.mp4
-2023-07-07T06:02:16.433Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[Step W02] [C1] Running pre-process file
-2023-07-07T06:02:16.438Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Checking files can be accessed
-2023-07-07T06:02:16.443Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Relevant paths can be accessed
-2023-07-07T06:02:16.446Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Source file: /media/tvshows/The IT Crowd/Season 1/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper.mp4
-2023-07-07T06:02:16.466Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Cache folder: /temp
-2023-07-07T06:02:16.468Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[Step W03] [C1] Analysing file - running plugins
-2023-07-07T06:02:16.470Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:transcode task, scanning for extra file details before transcode
-2023-07-07T06:02:16.471Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Updating file properties using mkvpropedit
-2023-07-07T06:02:16.472Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Updated file properties using mkvpropedit
-2023-07-07T06:02:16.473Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Requesting Tdarr Server to scan file
-2023-07-07T06:02:19.505Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Scan complete
-2023-07-07T06:02:19.506Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Scan complete
-2023-07-07T06:02:19.507Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Updating Node relay: Processing
-2023-07-07T06:02:19.508Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[1/2] Checking file frame count
-2023-07-07T06:02:19.508Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[2/2] Frame count 36925
-2023-07-07T06:02:19.509Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Transcode task, determining transcode settings
-2023-07-07T06:02:19.509Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Plugin stack selected
-2023-07-07T06:02:19.510Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Plugin: plugin1:  Tdarr_Plugin_MC93_MigzImageRemoval
-2023-07-07T06:02:19.515Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[1/5] Reading plugin
-2023-07-07T06:02:19.516Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[2/5] Plugin read finished
-2023-07-07T06:02:19.516Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[3/5] Installing dependencies
-2023-07-07T06:02:19.517Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[4/5] Running plugin
-2023-07-07T06:02:19.519Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:{"pluginInputs":{}}
-2023-07-07T06:02:19.520Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[5/5] Running plugin finished
-2023-07-07T06:02:19.520Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Plugin: plugin2:  Tdarr_Plugin_lmg1_Reorder_Streams
-2023-07-07T06:02:19.521Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[1/5] Reading plugin
-2023-07-07T06:02:19.522Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[2/5] Plugin read finished
-2023-07-07T06:02:19.522Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[3/5] Installing dependencies
-2023-07-07T06:02:19.523Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[4/5] Running plugin
-2023-07-07T06:02:19.523Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:{"pluginInputs":{}}
-2023-07-07T06:02:19.523Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[5/5] Running plugin finished
-2023-07-07T06:02:19.524Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Plugin: sxfFHmyyT:  Tdarr_Plugin_00td_action_standardise_audio_stream_codecs
-2023-07-07T06:02:19.524Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[1/5] Reading plugin
-2023-07-07T06:02:19.525Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[2/5] Plugin read finished
-2023-07-07T06:02:19.525Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[3/5] Installing dependencies
-2023-07-07T06:02:19.525Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[4/5] Running plugin
-2023-07-07T06:02:19.526Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:{"pluginInputs":{"audioCodec":"aac"}}
-2023-07-07T06:02:19.526Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[5/5] Running plugin finished
-2023-07-07T06:02:19.526Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Plugin: aEVldYMXA:  Tdarr_Plugin_075a_Transcode_Customisable
-2023-07-07T06:02:19.527Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[1/5] Reading plugin
-2023-07-07T06:02:19.527Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[2/5] Plugin read finished
-2023-07-07T06:02:19.528Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[3/5] Installing dependencies
-2023-07-07T06:02:19.528Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[4/5] Running plugin
-2023-07-07T06:02:19.529Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:{"pluginInputs":{"codecs_to_exclude":"h264","cli":"handbrake","transcode_arguments":"-Z \"H.264 MKV 2160p60 4K\" -e x264 --all-subtitles --all-audio  -x threads=2","output_container":".mkv"}}
-2023-07-07T06:02:19.529Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[5/5] Running plugin finished
-2023-07-07T06:02:19.531Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Worker config: {
-2023-07-07T06:02:19.531Z   "processFile": true,
-2023-07-07T06:02:19.531Z   "preset": "-Z \"H.264 MKV 2160p60 4K\" -e x264 --all-subtitles --all-audio  -x threads=2",
-2023-07-07T06:02:19.531Z   "container": ".mkv",
-2023-07-07T06:02:19.531Z   "handBrakeMode": true,
-2023-07-07T06:02:19.531Z   "FFmpegMode": false,
-2023-07-07T06:02:19.531Z   "reQueueAfter": true,
-2023-07-07T06:02:19.531Z   "infoLog": "☒File is not in desired codec! \n",
-2023-07-07T06:02:19.531Z   "lastPluginDetails": {
-2023-07-07T06:02:19.531Z     "source": "Community",
-2023-07-07T06:02:19.531Z     "id": "Tdarr_Plugin_075a_Transcode_Customisable",
-2023-07-07T06:02:19.531Z     "number": "4/7"
-2023-07-07T06:02:19.531Z   },
-2023-07-07T06:02:19.531Z   "handbrakeMode": true,
-2023-07-07T06:02:19.531Z   "cliToUse": "handbrake"
-2023-07-07T06:02:19.531Z }
-2023-07-07T06:02:19.532Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Worker log: 
-2023-07-07T06:02:19.532Z Pre-processing - Tdarr_Plugin_MC93_MigzImageRemoval
-2023-07-07T06:02:19.532Z ☑File doesn't contain any unwanted image format streams.
-2023-07-07T06:02:19.532Z 
-2023-07-07T06:02:19.532Z Pre-processing - Tdarr_Plugin_lmg1_Reorder_Streams
-2023-07-07T06:02:19.532Z File has video in first stream
-2023-07-07T06:02:19.532Z  File meets conditions!
-2023-07-07T06:02:19.532Z 
-2023-07-07T06:02:19.532Z Pre-processing - Tdarr_Plugin_00td_action_standardise_audio_stream_codecs
-2023-07-07T06:02:19.532Z File does not have any audio streams which aren't in aac 
-2023-07-07T06:02:19.532Z 
-2023-07-07T06:02:19.532Z Pre-processing - Tdarr_Plugin_075a_Transcode_Customisable
-2023-07-07T06:02:19.532Z ☒File is not in desired codec! 
-2023-07-07T06:02:19.532Z 
-2023-07-07T06:02:19.532Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Worker will process
-2023-07-07T06:02:19.533Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[Step W04] [C1] Preparing command
-2023-07-07T06:02:19.533Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Cache file stem: /temp
-2023-07-07T06:02:19.534Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Cache file path: /temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-ViKrJnzAl.mkv
-2023-07-07T06:02:19.534Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Create transcode args
-2023-07-07T06:02:19.534Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Args:  -i "/media/tvshows/The IT Crowd/Season 1/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper.mp4" -o "/temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-ViKrJnzAl.mkv" -Z "H.264 MKV 2160p60 4K" -e x264 --all-subtitles --all-audio -x threads=2
-2023-07-07T06:02:19.535Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Getting source file size
-2023-07-07T06:02:19.536Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Source file size: 0.17267005238682032
-2023-07-07T06:02:19.536Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Performing safety check on worker config to see if old transcode args/container match new ones
-2023-07-07T06:02:19.536Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Safety check complete, all good
-2023-07-07T06:02:19.537Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[Step W05] [C1] Launching subworker
-2023-07-07T06:02:19.539Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Preparing to launch subworker
-2023-07-07T06:02:19.542Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Subworker launched
-2023-07-07T06:02:19.543Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[1/3] Sending command to subworker
-2023-07-07T06:02:19.544Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[2/3] HandBrakeCLI -i "/media/tvshows/The IT Crowd/Season 1/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper.mp4" -o "/temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-ViKrJnzAl.mkv" -Z "H.264 MKV 2160p60 4K" -e x264 --all-subtitles --all-audio -x threads=2
-2023-07-07T06:02:19.545Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[3/3] Command sent
-2023-07-07T06:02:19.546Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:To see live CLI output, enable 'Log full FFmpeg/HandBrake output' in the staging section on the Tdarr tab before the job starts. Note this could increase the job report size substantially.
-2023-07-07T06:02:19.546Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Subworker:Online
-2023-07-07T06:02:19.547Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Subworker:Receiving transcode settings
-2023-07-07T06:02:19.548Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Subworker:Running CLI
-2023-07-07T06:16:55.393Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Subworker:a.Thread closed, code: 0
-2023-07-07T06:16:55.395Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Subworker exit approved, killing subworker
-2023-07-07T06:16:55.395Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Subworker killed
-2023-07-07T06:16:55.395Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:b.Thread closed, code: 0
-2023-07-07T06:16:55.396Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:CLI code: 0
-2023-07-07T06:16:55.396Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Last 200 lines of CLI log:
-2023-07-07T06:16:55.396Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Encoding: task 1 of 1, 92.50 % (40.82 fps, avg 41.89 fps, ETA 00h01m06s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 92.53 % (40.82 fps, avg 41.89 fps, ETA 00h01m06s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 92.56 % (40.82 fps, avg 41.89 fps, ETA 00h01m06s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 92.58 % (42.65 fps, avg 41.90 fps, ETA 00h01m05s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 92.61 % (42.65 fps, avg 41.90 fps, ETA 00h01m05s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 92.66 % (42.65 fps, avg 41.90 fps, ETA 00h01m05s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 92.68 % (41.05 fps, avg 41.89 fps, ETA 00h01m04s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 92.71 % (41.05 fps, avg 41.89 fps, ETA 00h01m04s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 92.76 % (41.05 fps, avg 41.89 fps, ETA 00h01m04s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 92.77 % (41.05 fps, avg 41.89 fps, ETA 00h01m04s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 92.80 % (38.23 fps, avg 41.88 fps, ETA 00h01m03s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 92.83 % (38.23 fps, avg 41.88 fps, ETA 00h01m03s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 92.85 % (38.23 fps, avg 41.88 fps, ETA 00h01m03s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 92.89 % (35.76 fps, avg 41.87 fps, ETA 00h01m02s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 92.94 % (35.76 fps, avg 41.87 fps, ETA 00h01m02s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 92.96 % (35.76 fps, avg 41.87 fps, ETA 00h01m02s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.01 % (35.76 fps, avg 41.87 fps, ETA 00h01m02s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.03 % (40.71 fps, avg 41.89 fps, ETA 00h01m01s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.08 % (40.71 fps, avg 41.89 fps, ETA 00h01m01s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.14 % (40.71 fps, avg 41.89 fps, ETA 00h01m01s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.15 % (44.43 fps, avg 41.89 fps, ETA 00h01m00s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.20 % (44.43 fps, avg 41.89 fps, ETA 00h01m00s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.21 % (44.43 fps, avg 41.89 fps, ETA 00h01m00s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.26 % (45.69 fps, avg 41.89 fps, ETA 00h00m59s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.29 % (45.69 fps, avg 41.89 fps, ETA 00h00m59s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.32 % (45.69 fps, avg 41.89 fps, ETA 00h00m59s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.38 % (45.69 fps, avg 41.89 fps, ETA 00h00m59s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.38 % (45.69 fps, avg 41.89 fps, ETA 00h00m59s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.42 % (40.71 fps, avg 41.88 fps, ETA 00h00m58s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.48 % (40.71 fps, avg 41.88 fps, ETA 00h00m58s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.52 % (40.71 fps, avg 41.88 fps, ETA 00h00m58s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.55 % (43.12 fps, avg 41.89 fps, ETA 00h00m57s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.60 % (43.12 fps, avg 41.89 fps, ETA 00h00m57s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.64 % (43.12 fps, avg 41.89 fps, ETA 00h00m57s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.66 % (43.12 fps, avg 41.89 fps, ETA 00h00m57s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.67 % (43.24 fps, avg 41.89 fps, ETA 00h00m55s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.71 % (43.24 fps, avg 41.89 fps, ETA 00h00m55s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.73 % (43.24 fps, avg 41.89 fps, ETA 00h00m55s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.74 % (43.24 fps, avg 41.89 fps, ETA 00h00m55s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.77 % (38.84 fps, avg 41.87 fps, ETA 00h00m55s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.78 % (38.84 fps, avg 41.87 fps, ETA 00h00m55s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.82 % (38.84 fps, avg 41.87 fps, ETA 00h00m55s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.86 % (34.00 fps, avg 41.86 fps, ETA 00h00m54s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.88 % (34.00 fps, avg 41.86 fps, ETA 00h00m54s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.93 % (34.00 fps, avg 41.86 fps, ETA 00h00m54s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 93.96 % (34.00 fps, avg 41.86 fps, ETA 00h00m54s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.00 % (34.25 fps, avg 41.86 fps, ETA 00h00m53s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.05 % (34.25 fps, avg 41.86 fps, ETA 00h00m53s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.09 % (34.25 fps, avg 41.86 fps, ETA 00h00m53s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.12 % (44.47 fps, avg 41.88 fps, ETA 00h00m51s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.16 % (44.47 fps, avg 41.88 fps, ETA 00h00m51s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.20 % (44.47 fps, avg 41.88 fps, ETA 00h00m51s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.24 % (44.47 fps, avg 41.88 fps, ETA 00h00m51s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.26 % (49.21 fps, avg 41.89 fps, ETA 00h00m50s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.29 % (49.21 fps, avg 41.89 fps, ETA 00h00m50s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.35 % (49.21 fps, avg 41.89 fps, ETA 00h00m50s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.37 % (47.63 fps, avg 41.89 fps, ETA 00h00m49s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.42 % (47.63 fps, avg 41.89 fps, ETA 00h00m49s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.45 % (47.63 fps, avg 41.89 fps, ETA 00h00m49s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.48 % (42.21 fps, avg 41.88 fps, ETA 00h00m48s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.52 % (42.21 fps, avg 41.88 fps, ETA 00h00m48s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.54 % (42.21 fps, avg 41.88 fps, ETA 00h00m48s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.59 % (42.21 fps, avg 41.88 fps, ETA 00h00m48s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.61 % (41.99 fps, avg 41.89 fps, ETA 00h00m47s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.67 % (41.99 fps, avg 41.89 fps, ETA 00h00m47s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.68 % (41.99 fps, avg 41.89 fps, ETA 00h00m47s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.73 % (39.52 fps, avg 41.88 fps, ETA 00h00m46s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.74 % (39.52 fps, avg 41.88 fps, ETA 00h00m46s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.77 % (39.52 fps, avg 41.88 fps, ETA 00h00m46s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.79 % (39.52 fps, avg 41.88 fps, ETA 00h00m46s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.84 % (41.12 fps, avg 41.88 fps, ETA 00h00m45s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.88 % (41.12 fps, avg 41.88 fps, ETA 00h00m45s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.92 % (41.12 fps, avg 41.88 fps, ETA 00h00m45s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.95 % (39.67 fps, avg 41.88 fps, ETA 00h00m44s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 94.97 % (39.67 fps, avg 41.88 fps, ETA 00h00m44s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.03 % (39.67 fps, avg 41.88 fps, ETA 00h00m44s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.05 % (41.87 fps, avg 41.88 fps, ETA 00h00m43s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.07 % (41.87 fps, avg 41.88 fps, ETA 00h00m43s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.11 % (41.87 fps, avg 41.88 fps, ETA 00h00m43s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.13 % (41.87 fps, avg 41.88 fps, ETA 00h00m43s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.18 % (40.67 fps, avg 41.87 fps, ETA 00h00m42s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.20 % (40.67 fps, avg 41.87 fps, ETA 00h00m42s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.23 % (40.67 fps, avg 41.87 fps, ETA 00h00m42s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.26 % (38.05 fps, avg 41.87 fps, ETA 00h00m42s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.29 % (38.05 fps, avg 41.87 fps, ETA 00h00m42s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.31 % (38.05 fps, avg 41.87 fps, ETA 00h00m42s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.35 % (37.18 fps, avg 41.86 fps, ETA 00h00m41s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.38 % (37.18 fps, avg 41.86 fps, ETA 00h00m41s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.41 % (37.18 fps, avg 41.86 fps, ETA 00h00m41s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.43 % (37.18 fps, avg 41.86 fps, ETA 00h00m41s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.47 % (37.26 fps, avg 41.86 fps, ETA 00h00m40s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.49 % (37.26 fps, avg 41.86 fps, ETA 00h00m40s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.55 % (37.26 fps, avg 41.86 fps, ETA 00h00m40s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.56 % (38.92 fps, avg 41.86 fps, ETA 00h00m39s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.62 % (38.92 fps, avg 41.86 fps, ETA 00h00m39s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.65 % (38.92 fps, avg 41.86 fps, ETA 00h00m39s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.69 % (41.65 fps, avg 41.86 fps, ETA 00h00m38s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.72 % (41.65 fps, avg 41.86 fps, ETA 00h00m38s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.78 % (41.65 fps, avg 41.86 fps, ETA 00h00m38s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.81 % (41.65 fps, avg 41.86 fps, ETA 00h00m38s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.87 % (48.28 fps, avg 41.88 fps, ETA 00h00m36s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.92 % (48.28 fps, avg 41.88 fps, ETA 00h00m36s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 95.95 % (48.28 fps, avg 41.88 fps, ETA 00h00m36s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 96.01 % (52.79 fps, avg 41.90 fps, ETA 00h00m35s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 96.06 % (52.79 fps, avg 41.90 fps, ETA 00h00m35s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 96.09 % (52.79 fps, avg 41.90 fps, ETA 00h00m35s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 96.14 % (52.79 fps, avg 41.90 fps, ETA 00h00m35s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 96.20 % (56.71 fps, avg 41.91 fps, ETA 00h00m33s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 96.23 % (56.71 fps, avg 41.91 fps, ETA 00h00m33s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 96.30 % (56.71 fps, avg 41.91 fps, ETA 00h00m33s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 96.35 % (56.13 fps, avg 41.93 fps, ETA 00h00m32s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 96.41 % (56.13 fps, avg 41.93 fps, ETA 00h00m32s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 96.43 % (56.13 fps, avg 41.93 fps, ETA 00h00m32s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 96.49 % (57.74 fps, avg 41.95 fps, ETA 00h00m31s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 96.49 % (57.74 fps, avg 41.95 fps, ETA 00h00m31s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 96.54 % (57.74 fps, avg 41.95 fps, ETA 00h00m31s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 96.57 % (57.74 fps, avg 41.95 fps, ETA 00h00m31s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 96.61 % (51.59 fps, avg 41.95 fps, ETA 00h00m30s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 96.64 % (51.59 fps, avg 41.95 fps, ETA 00h00m30s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 96.68 % (51.59 fps, avg 41.95 fps, ETA 00h00m30s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 96.71 % (46.50 fps, avg 41.95 fps, ETA 00h00m29s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 96.75 % (46.50 fps, avg 41.95 fps, ETA 00h00m29s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 96.77 % (46.50 fps, avg 41.95 fps, ETA 00h00m29s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 96.82 % (40.55 fps, avg 41.95 fps, ETA 00h00m28s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 96.84 % (40.55 fps, avg 41.95 fps, ETA 00h00m28s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 96.89 % (40.55 fps, avg 41.95 fps, ETA 00h00m28s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 96.93 % (40.55 fps, avg 41.95 fps, ETA 00h00m28s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 96.95 % (44.50 fps, avg 41.96 fps, ETA 00h00m26s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 96.97 % (44.50 fps, avg 41.96 fps, ETA 00h00m26s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 97.07 % (44.50 fps, avg 41.96 fps, ETA 00h00m26s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 97.16 % (44.50 fps, avg 41.96 fps, ETA 00h00m26s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 97.27 % (55.87 fps, avg 42.00 fps, ETA 00h00m24s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 97.35 % (55.87 fps, avg 42.00 fps, ETA 00h00m24s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 97.39 % (55.87 fps, avg 42.00 fps, ETA 00h00m24s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 97.44 % (72.61 fps, avg 42.06 fps, ETA 00h00m22s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 97.54 % (72.61 fps, avg 42.06 fps, ETA 00h00m22s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 97.58 % (72.61 fps, avg 42.06 fps, ETA 00h00m22s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 97.68 % (83.36 fps, avg 42.11 fps, ETA 00h00m20s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 97.68 % (83.36 fps, avg 42.11 fps, ETA 00h00m20s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 97.77 % (83.36 fps, avg 42.11 fps, ETA 00h00m20s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 97.85 % (83.36 fps, avg 42.11 fps, ETA 00h00m20s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 97.92 % (83.17 fps, avg 42.15 fps, ETA 00h00m18s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 97.99 % (83.17 fps, avg 42.15 fps, ETA 00h00m18s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 98.06 % (83.17 fps, avg 42.15 fps, ETA 00h00m18s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 98.10 % (77.65 fps, avg 42.19 fps, ETA 00h00m16s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 98.18 % (77.65 fps, avg 42.19 fps, ETA 00h00m16s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 98.24 % (77.65 fps, avg 42.19 fps, ETA 00h00m16s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 98.29 % (76.04 fps, avg 42.23 fps, ETA 00h00m15s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 98.35 % (76.04 fps, avg 42.23 fps, ETA 00h00m15s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 98.38 % (76.04 fps, avg 42.23 fps, ETA 00h00m15s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 98.45 % (76.04 fps, avg 42.23 fps, ETA 00h00m15s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 98.52 % (72.74 fps, avg 42.25 fps, ETA 00h00m13s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 98.53 % (72.74 fps, avg 42.25 fps, ETA 00h00m13s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 98.63 % (72.74 fps, avg 42.25 fps, ETA 00h00m13s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 98.71 % (74.77 fps, avg 42.31 fps, ETA 00h00m11s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 98.73 % (74.77 fps, avg 42.31 fps, ETA 00h00m11s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 98.78 % (74.77 fps, avg 42.31 fps, ETA 00h00m11s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 98.83 % (74.77 fps, avg 42.31 fps, ETA 00h00m11s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 98.92 % (67.21 fps, avg 42.32 fps, ETA 00h00m10s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 98.94 % (67.21 fps, avg 42.32 fps, ETA 00h00m10s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 99.02 % (67.21 fps, avg 42.32 fps, ETA 00h00m10s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 99.09 % (68.85 fps, avg 42.35 fps, ETA 00h00m08s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 99.15 % (68.85 fps, avg 42.35 fps, ETA 00h00m08s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 99.20 % (68.85 fps, avg 42.35 fps, ETA 00h00m08s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 99.23 % (68.85 fps, avg 42.35 fps, ETA 00h00m08s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 99.28 % (63.82 fps, avg 42.38 fps, ETA 00h00m06s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 99.38 % (63.82 fps, avg 42.38 fps, ETA 00h00m06s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 99.41 % (63.82 fps, avg 42.38 fps, ETA 00h00m06s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 99.48 % (73.11 fps, avg 42.43 fps, ETA 00h00m04s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 99.54 % (73.11 fps, avg 42.43 fps, ETA 00h00m04s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 99.58 % (73.11 fps, avg 42.43 fps, ETA 00h00m04s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 99.66 % (73.11 fps, avg 42.43 fps, ETA 00h00m04s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 99.70 % (72.82 fps, avg 42.46 fps, ETA 00h00m02s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 99.77 % (72.82 fps, avg 42.46 fps, ETA 00h00m02s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 99.81 % (72.82 fps, avg 42.46 fps, ETA 00h00m02s)
-2023-07-07T06:16:55.396Z [06:16:49] reader: done. 1 scr changes
-2023-07-07T06:16:55.396Z 
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 99.86 % (72.33 fps, avg 42.49 fps, ETA 00h00m01s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 99.88 % (72.33 fps, avg 42.49 fps, ETA 00h00m01s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 100.00 % (72.33 fps, avg 42.49 fps, ETA 00h00m01s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 100.00 % (72.33 fps, avg 42.49 fps, ETA 00h00m01s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 100.00 % (72.33 fps, avg 42.49 fps, ETA 00h00m01s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 100.00 % (72.33 fps, avg 42.49 fps, ETA 00h00m01s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 100.00 % (72.33 fps, avg 42.49 fps, ETA 00h00m01s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 100.00 % (72.33 fps, avg 42.49 fps, ETA 00h00m01s)
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 100.00 % (72.33 fps, avg 42.49 fps, ETA 00h00m01s)
-2023-07-07T06:16:55.396Z [06:16:52] work: average encoding speed for job is 42.492401 fps
-2023-07-07T06:16:55.396Z 
-2023-07-07T06:16:55.396Z Encoding: task 1 of 1, 100.00 % (72.33 fps, avg 42.49 fps, ETA 00h00m01s)
-2023-07-07T06:16:55.396Z [06:16:52] comb detect: heavy 317 | light 904 | uncombed 35704 | total 36925
-2023-07-07T06:16:55.396Z 
-2023-07-07T06:16:55.396Z [06:16:53] decomb: deinterlaced 317 | blended 904 | unfiltered 35704 | total 36925
-2023-07-07T06:16:55.396Z 
-2023-07-07T06:16:55.396Z [06:16:53] vfr: 36925 frames output, 0 dropped and 0 duped for CFR/PFR
-2023-07-07T06:16:55.396Z [06:16:53] vfr: lost time: 0 (0 frames)
-2023-07-07T06:16:55.396Z [06:16:53] vfr: gained time: 0 (0 frames) (0 not accounted for)
-2023-07-07T06:16:55.396Z 
-2023-07-07T06:16:55.396Z [06:16:53] aac-decoder done: 69235 frames, 0 decoder errors
-2023-07-07T06:16:55.396Z [06:16:53] hevc-decoder done: 36925 frames, 0 decoder errors
-2023-07-07T06:16:55.396Z 
-2023-07-07T06:16:55.396Z [06:16:53] sync: got 36925 frames, 36925 expected
-2023-07-07T06:16:55.396Z [06:16:53] sync: framerate min 25.000 fps, max 25.000 fps, avg 25.000 fps
-2023-07-07T06:16:55.396Z 
-2023-07-07T06:16:55.396Z x264 [info]: frame I:398   Avg QP:19.40  size: 53633
-2023-07-07T06:16:55.396Z x264 [info]: frame P:10933 Avg QP:22.75  size: 10611
-2023-07-07T06:16:55.396Z x264 [info]: frame B:25594 Avg QP:26.60  size:  2162
-2023-07-07T06:16:55.396Z x264 [info]: consecutive B-frames:  2.0% 15.7%  3.0% 79.3%
-2023-07-07T06:16:55.396Z x264 [info]: mb I  I16..4: 33.0%  0.0% 67.0%
-2023-07-07T06:16:55.396Z x264 [info]: 
-2023-07-07T06:16:55.396Z mb P  I16..4:  4.6%  0.0%  3.2%  P16..4: 37.0% 10.7%  4.9%  0.0%  0.0%    skip:39.6%
-2023-07-07T06:16:55.396Z x264 [info]: mb B  I16..4:  0.4%  0.0%  0.2%  B16..8: 25.2%  1.8%  0.2%  direct: 0.9%  skip:71.3%  L0:38.9% L1:56.4% BI: 4.7%
-2023-07-07T06:16:55.396Z x264 [info]: coded y,uvDC,uvAC intra: 42.8% 61.3% 24.8% inter: 5.1% 10.0% 0.3%
-2023-07-07T06:16:55.396Z x264 [info]: i16 v,h,dc,p: 43% 24% 10% 23%
-2023-07-07T06:16:55.396Z x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 29% 22% 15%  5%  7%  7%  6%  6%  4%
-2023-07-07T06:16:55.396Z x264 [info]: i8c dc,h,v,p: 44% 22% 26%  7%
-2023-07-07T06:16:55.396Z x264 [info]: Weighted P-Frames: Y:1.1% UV:0.9%
-2023-07-07T06:16:55.396Z x264 [info]: ref P L0: 62.1% 16.5% 16.1%  5.2%  0.0%
-2023-07-07T06:16:55.396Z x264 [info]: ref B L0: 90.9%  7.2%  1.8%
-2023-07-07T06:16:55.396Z x264 [info]: ref B L1: 97.9%  2.1%
-2023-07-07T06:16:55.396Z x264 [info]: kb/s:1043.75
-2023-07-07T06:16:55.396Z 
-2023-07-07T06:16:55.396Z [06:16:53] mux: track 0, 36925 frames, 192687194 bytes, 1043.64 kbps, fifo 4096
-2023-07-07T06:16:55.396Z [06:16:53] mux: track 1, 61543 frames, 29540640 bytes, 160.00 kbps, fifo 4096
-2023-07-07T06:16:55.396Z [06:16:53] mux: track 2, 469 frames, 38593 bytes, 0.21 kbps, fifo 64
-2023-07-07T06:16:55.396Z 
-2023-07-07T06:16:55.396Z [06:16:53] Finished work at: Fri Jul  7 06:16:53 2023
-2023-07-07T06:16:55.396Z 
-2023-07-07T06:16:55.396Z 
-2023-07-07T06:16:55.396Z [06:16:53] libhb: work result = 0
-2023-07-07T06:16:55.396Z 
-2023-07-07T06:16:55.396Z 
-2023-07-07T06:16:55.396Z Encode done!
-2023-07-07T06:16:55.396Z 
-2023-07-07T06:16:55.396Z HandBrake has exited.
-2023-07-07T06:16:55.396Z 
-2023-07-07T06:16:55.396Z 
-2023-07-07T06:16:55.396Z 
-2023-07-07T06:16:55.396Z 
-2023-07-07T06:16:55.397Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[Step W06] [C1] Worker [-success-]
-2023-07-07T06:16:55.399Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Worker success during processing
-2023-07-07T06:16:55.399Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Updating transcode stats
-2023-07-07T06:16:55.400Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Deleting non-latest cache file /media/tvshows/The IT Crowd/Season 1/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper.mp4
-2023-07-07T06:16:55.400Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Scanning new file: /temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-ViKrJnzAl.mkv
-2023-07-07T06:16:55.401Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Updating file properties using mkvpropedit
-2023-07-07T06:16:55.401Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Updated file properties using mkvpropedit
-2023-07-07T06:16:55.401Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Requesting Tdarr Server to scan file
-2023-07-07T06:16:55.403Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Subworker exited null
-2023-07-07T06:16:57.408Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Scan complete
-2023-07-07T06:16:57.409Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:pluginCycleLogJSONString:{"nodeName":"MyInternalNode","workerID":"zany-zebu","pluginCycle":1,"outcome":"success","workerLog":"\nPre-processing - Tdarr_Plugin_MC93_MigzImageRemoval\n☑File doesn't contain any unwanted image format streams.\n\nPre-processing - Tdarr_Plugin_lmg1_Reorder_Streams\nFile has video in first stream\n File meets conditions!\n\nPre-processing - Tdarr_Plugin_00td_action_standardise_audio_stream_codecs\nFile does not have any audio streams which aren't in aac \n\nPre-processing - Tdarr_Plugin_075a_Transcode_Customisable\n☒File is not in desired codec! \n","lastCliCommand":"HandBrakeCLI -i \"/media/tvshows/The IT Crowd/Season 1/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper.mp4\" -o \"/temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-ViKrJnzAl.mkv\" -Z \"H.264 MKV 2160p60 4K\" -e x264 --all-subtitles --all-audio -x threads=2"}
-2023-07-07T06:16:57.409Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:fileVersionLogJSONString:{"lastCliCommand":"HandBrakeCLI -i \"/media/tvshows/The IT Crowd/Season 1/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper.mp4\" -o \"/temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-ViKrJnzAl.mkv\" -Z \"H.264 MKV 2160p60 4K\" -e x264 --all-subtitles --all-audio -x threads=2","lastPluginId":"Tdarr_Plugin_075a_Transcode_Customisable","sourceFile":{"_id":"/temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-ViKrJnzAl.mkv","footprintId":"t78RnpSmK","file":"/temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-ViKrJnzAl.mkv","container":"mkv","scannerReads":{"ffProbeRead":"success","exiftoolRead":"success","mediaInfoRead":"not enabled","closedCaptionRead":"not enabled"},"createdAt":1688707014502,"lastPluginDetails":"none","bit_rate":1207795,"statSync":{"dev":2051,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":5923156,"size":222994087,"blocks":435544,"atimeMs":1688707013377.1147,"mtimeMs":1688707013065.1199,"ctimeMs":1688707013065.1199,"birthtimeMs":1688706142275.3113,"atime":"2023-07-07T05:16:53.377Z","mtime":"2023-07-07T05:16:53.065Z","ctime":"2023-07-07T05:16:53.065Z","birthtime":"2023-07-07T05:02:22.275Z"},"file_size":212.66373348236084,"ffProbeData":{"streams":[{"index":0,"codec_name":"h264","codec_long_name":"H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10","profile":"Main","codec_type":"video","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","width":1258,"height":720,"coded_width":1258,"coded_height":720,"closed_captions":0,"has_b_frames":2,"sample_aspect_ratio":"1:1","display_aspect_ratio":"629:360","pix_fmt":"yuv420p","level":52,"color_range":"tv","color_space":"bt709","color_transfer":"bt709","color_primaries":"bt709","chroma_location":"left","field_order":"progressive","refs":1,"is_avc":"true","nal_length_size":"4","r_frame_rate":"25/1","avg_frame_rate":"25/1","time_base":"1/1000","start_pts":23,"start_time":"0.023000","bits_per_raw_sample":"8","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"DURATION":"00:24:37.023000000"}},{"index":1,"codec_name":"mp3","codec_long_name":"MP3 (MPEG audio layer 3)","codec_type":"audio","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":"48000","channels":2,"channel_layout":"stereo","bits_per_sample":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","bit_rate":"160000","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"eng","title":"English","DURATION":"00:24:37.032000000"}},{"index":2,"codec_name":"ass","codec_long_name":"ASS (Advanced SSA) subtitle","codec_type":"subtitle","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","duration_ts":1477032,"duration":"1477.032000","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":1,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"eng","title":"English","DURATION":"00:24:31.223000000"}}],"format":{"filename":"/temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-ViKrJnzAl.mkv","nb_streams":3,"nb_programs":0,"format_name":"matroska,webm","format_long_name":"Matroska / WebM","start_time":"0.000000","duration":"1477.032000","size":"222994087","bit_rate":"1207795","probe_score":100,"tags":{"creation_time":"2023-07-07T05:02:22.000000Z","ENCODER":"Lavf59.27.100"}}},"meta":{"SourceFile":"/temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-ViKrJnzAl.mkv","errors":[],"Duration":1477.032,"ExifToolVersion":12.4,"FileName":"The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-ViKrJnzAl.mkv","Directory":"/temp","FileSize":"213 MiB","FileModifyDate":{"year":2023,"month":7,"day":7,"hour":5,"minute":16,"second":53,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:07 05:16:53+00:00"},"FileAccessDate":{"year":2023,"month":7,"day":7,"hour":5,"minute":16,"second":53,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:07 05:16:53+00:00"},"FileInodeChangeDate":{"year":2023,"month":7,"day":7,"hour":5,"minute":16,"second":53,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:07 05:16:53+00:00"},"FilePermissions":"-rw-rw-r--","FileType":"MKV","FileTypeExtension":"mkv","MIMEType":"video/x-matroska","EBMLVersion":1,"EBMLReadVersion":1,"DocType":"matroska","DocTypeVersion":4,"DocTypeReadVersion":2,"TimecodeScale":"1 ms","MuxingApp":"Lavf59.27.100","WritingApp":"HandBrake 1.6.1 2023061300","DateTimeOriginal":{"year":2023,"month":7,"day":7,"hour":5,"minute":2,"second":22,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:07 05:02:22Z"},"VideoFrameRate":25,"ImageWidth":1258,"ImageHeight":720,"AudioChannels":2,"AudioSampleRate":48000,"TrackNumber":3,"TrackName":"English","TrackLanguage":"eng","TrackForced":"Yes","CodecID":"S_TEXT/ASS","TrackType":"Subtitle","TagName":"DURATION","TagString":"00:24:31.223000000","ImageSize":"1258x720","Megapixels":0.906},"mediaInfo":{},"hasClosedCaptions":false,"DB":"4BaCjCxnf","bumped":false,"HealthCheck":"","TranscodeDecisionMaker":"","holdUntil":0,"fileMedium":"video","video_codec_name":"h264","audio_codec_name":"","video_resolution":"720p","lastHealthCheckDate":0,"lastTranscodeDate":0,"history":"","oldSize":0,"newSize":0,"videoStreamIndex":0,"duration":1477}}
-2023-07-07T06:16:57.410Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Transcodes during this job so far: 1
-2023-07-07T06:16:57.410Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[Step W02] [C2] Running pre-process file
-2023-07-07T06:16:57.411Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Checking files can be accessed
-2023-07-07T06:16:57.411Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Relevant paths can be accessed
-2023-07-07T06:16:57.411Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Source file: /temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-ViKrJnzAl.mkv
-2023-07-07T06:16:57.412Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Cache folder: /temp
-2023-07-07T06:16:57.412Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[Step W03] [C2] Analysing file - running plugins
-2023-07-07T06:16:57.413Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:New cache file has already been scanned, no need to scan again
-2023-07-07T06:16:57.413Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Updating Node relay: Processing
-2023-07-07T06:16:57.413Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[1/2] Checking file frame count
-2023-07-07T06:16:57.414Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[2/2] Frame count 0
-2023-07-07T06:16:57.414Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Transcode task, determining transcode settings
-2023-07-07T06:16:57.414Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Plugin stack selected
-2023-07-07T06:16:57.415Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Plugin: plugin1:  Tdarr_Plugin_MC93_MigzImageRemoval
-2023-07-07T06:16:57.415Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[1/5] Reading plugin
-2023-07-07T06:16:57.415Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[2/5] Plugin read finished
-2023-07-07T06:16:57.416Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[3/5] Installing dependencies
-2023-07-07T06:16:57.416Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[4/5] Running plugin
-2023-07-07T06:16:57.417Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:{"pluginInputs":{}}
-2023-07-07T06:16:57.417Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[5/5] Running plugin finished
-2023-07-07T06:16:57.417Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Plugin: plugin2:  Tdarr_Plugin_lmg1_Reorder_Streams
-2023-07-07T06:16:57.418Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[1/5] Reading plugin
-2023-07-07T06:16:57.418Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[2/5] Plugin read finished
-2023-07-07T06:16:57.418Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[3/5] Installing dependencies
-2023-07-07T06:16:57.419Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[4/5] Running plugin
-2023-07-07T06:16:57.419Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:{"pluginInputs":{}}
-2023-07-07T06:16:57.419Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[5/5] Running plugin finished
-2023-07-07T06:16:57.420Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Plugin: sxfFHmyyT:  Tdarr_Plugin_00td_action_standardise_audio_stream_codecs
-2023-07-07T06:16:57.420Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[1/5] Reading plugin
-2023-07-07T06:16:57.421Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[2/5] Plugin read finished
-2023-07-07T06:16:57.421Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[3/5] Installing dependencies
-2023-07-07T06:16:57.422Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[4/5] Running plugin
-2023-07-07T06:16:57.422Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:{"pluginInputs":{"audioCodec":"aac"}}
-2023-07-07T06:16:57.423Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[5/5] Running plugin finished
-2023-07-07T06:16:57.423Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Worker config: {
-2023-07-07T06:16:57.423Z   "processFile": true,
-2023-07-07T06:16:57.423Z   "preset": ",-map 0:v -map 0:a -map 0:s? -map 0:d? -c copy  -c:a:0 aac",
-2023-07-07T06:16:57.423Z   "container": ".mkv",
-2023-07-07T06:16:57.423Z   "handBrakeMode": false,
-2023-07-07T06:16:57.423Z   "FFmpegMode": false,
-2023-07-07T06:16:57.423Z   "reQueueAfter": true,
-2023-07-07T06:16:57.423Z   "infoLog": "File has audio streams which aren't in aac \n",
-2023-07-07T06:16:57.423Z   "handbrakeMode": false,
-2023-07-07T06:16:57.423Z   "ffmpegMode": true,
-2023-07-07T06:16:57.423Z   "lastPluginDetails": {
-2023-07-07T06:16:57.423Z     "source": "Community",
-2023-07-07T06:16:57.423Z     "id": "Tdarr_Plugin_00td_action_standardise_audio_stream_codecs",
-2023-07-07T06:16:57.423Z     "number": "3/7"
-2023-07-07T06:16:57.423Z   },
-2023-07-07T06:16:57.423Z   "cliToUse": "ffmpeg"
-2023-07-07T06:16:57.423Z }
-2023-07-07T06:16:57.424Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Worker log: 
-2023-07-07T06:16:57.424Z Pre-processing - Tdarr_Plugin_MC93_MigzImageRemoval
-2023-07-07T06:16:57.424Z ☑File doesn't contain any unwanted image format streams.
-2023-07-07T06:16:57.424Z 
-2023-07-07T06:16:57.424Z Pre-processing - Tdarr_Plugin_lmg1_Reorder_Streams
-2023-07-07T06:16:57.424Z File has video in first stream
-2023-07-07T06:16:57.424Z  File meets conditions!
-2023-07-07T06:16:57.424Z 
-2023-07-07T06:16:57.424Z Pre-processing - Tdarr_Plugin_00td_action_standardise_audio_stream_codecs
-2023-07-07T06:16:57.424Z File has audio streams which aren't in aac 
-2023-07-07T06:16:57.424Z 
-2023-07-07T06:16:57.424Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Worker will process
-2023-07-07T06:16:57.424Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[Step W04] [C2] Preparing command
-2023-07-07T06:16:57.425Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Cache file stem: /temp
-2023-07-07T06:16:57.425Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Cache file path: /temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-CGJ7RG39W.mkv
-2023-07-07T06:16:57.425Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Create transcode args
-2023-07-07T06:16:57.426Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Args:  -i "/temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-ViKrJnzAl.mkv" -map 0:v -map 0:a -map 0:s? -map 0:d? -c copy -c:a:0 aac "/temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-CGJ7RG39W.mkv"
-2023-07-07T06:16:57.426Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Getting source file size
-2023-07-07T06:16:57.426Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Source file size: 0.207679427228868
-2023-07-07T06:16:57.427Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Performing safety check on worker config to see if old transcode args/container match new ones
-2023-07-07T06:16:57.427Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Safety check complete, all good
-2023-07-07T06:16:57.427Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[Step W05] [C2] Launching subworker
-2023-07-07T06:16:57.428Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Preparing to launch subworker
-2023-07-07T06:16:57.428Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Subworker launched
-2023-07-07T06:16:57.428Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[1/3] Sending command to subworker
-2023-07-07T06:16:57.429Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[2/3] tdarr-ffmpeg -i "/temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-ViKrJnzAl.mkv" -map 0:v -map 0:a -map 0:s? -map 0:d? -c copy -c:a:0 aac "/temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-CGJ7RG39W.mkv"
-2023-07-07T06:16:57.429Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[3/3] Command sent
-2023-07-07T06:16:57.430Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:To see live CLI output, enable 'Log full FFmpeg/HandBrake output' in the staging section on the Tdarr tab before the job starts. Note this could increase the job report size substantially.
-2023-07-07T06:16:57.430Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Subworker:Online
-2023-07-07T06:16:57.430Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Subworker:Receiving transcode settings
-2023-07-07T06:16:57.431Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Subworker:Running CLI
-2023-07-07T06:17:39.456Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Subworker:a.Thread closed, code: 0
-2023-07-07T06:17:39.457Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Subworker exit approved, killing subworker
-2023-07-07T06:17:39.458Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Subworker killed
-2023-07-07T06:17:39.458Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:b.Thread closed, code: 0
-2023-07-07T06:17:39.459Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:CLI code: 0
-2023-07-07T06:17:39.459Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Last 200 lines of CLI log:
-2023-07-07T06:17:39.460Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Encoding: task 1 of 1, 95.65 % (38.92 fps, avg 41.86 fps, ETA 00h00m39s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 95.69 % (41.65 fps, avg 41.86 fps, ETA 00h00m38s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 95.72 % (41.65 fps, avg 41.86 fps, ETA 00h00m38s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 95.78 % (41.65 fps, avg 41.86 fps, ETA 00h00m38s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 95.81 % (41.65 fps, avg 41.86 fps, ETA 00h00m38s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 95.87 % (48.28 fps, avg 41.88 fps, ETA 00h00m36s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 95.92 % (48.28 fps, avg 41.88 fps, ETA 00h00m36s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 95.95 % (48.28 fps, avg 41.88 fps, ETA 00h00m36s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 96.01 % (52.79 fps, avg 41.90 fps, ETA 00h00m35s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 96.06 % (52.79 fps, avg 41.90 fps, ETA 00h00m35s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 96.09 % (52.79 fps, avg 41.90 fps, ETA 00h00m35s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 96.14 % (52.79 fps, avg 41.90 fps, ETA 00h00m35s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 96.20 % (56.71 fps, avg 41.91 fps, ETA 00h00m33s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 96.23 % (56.71 fps, avg 41.91 fps, ETA 00h00m33s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 96.30 % (56.71 fps, avg 41.91 fps, ETA 00h00m33s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 96.35 % (56.13 fps, avg 41.93 fps, ETA 00h00m32s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 96.41 % (56.13 fps, avg 41.93 fps, ETA 00h00m32s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 96.43 % (56.13 fps, avg 41.93 fps, ETA 00h00m32s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 96.49 % (57.74 fps, avg 41.95 fps, ETA 00h00m31s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 96.49 % (57.74 fps, avg 41.95 fps, ETA 00h00m31s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 96.54 % (57.74 fps, avg 41.95 fps, ETA 00h00m31s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 96.57 % (57.74 fps, avg 41.95 fps, ETA 00h00m31s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 96.61 % (51.59 fps, avg 41.95 fps, ETA 00h00m30s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 96.64 % (51.59 fps, avg 41.95 fps, ETA 00h00m30s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 96.68 % (51.59 fps, avg 41.95 fps, ETA 00h00m30s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 96.71 % (46.50 fps, avg 41.95 fps, ETA 00h00m29s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 96.75 % (46.50 fps, avg 41.95 fps, ETA 00h00m29s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 96.77 % (46.50 fps, avg 41.95 fps, ETA 00h00m29s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 96.82 % (40.55 fps, avg 41.95 fps, ETA 00h00m28s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 96.84 % (40.55 fps, avg 41.95 fps, ETA 00h00m28s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 96.89 % (40.55 fps, avg 41.95 fps, ETA 00h00m28s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 96.93 % (40.55 fps, avg 41.95 fps, ETA 00h00m28s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 96.95 % (44.50 fps, avg 41.96 fps, ETA 00h00m26s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 96.97 % (44.50 fps, avg 41.96 fps, ETA 00h00m26s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 97.07 % (44.50 fps, avg 41.96 fps, ETA 00h00m26s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 97.16 % (44.50 fps, avg 41.96 fps, ETA 00h00m26s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 97.27 % (55.87 fps, avg 42.00 fps, ETA 00h00m24s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 97.35 % (55.87 fps, avg 42.00 fps, ETA 00h00m24s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 97.39 % (55.87 fps, avg 42.00 fps, ETA 00h00m24s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 97.44 % (72.61 fps, avg 42.06 fps, ETA 00h00m22s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 97.54 % (72.61 fps, avg 42.06 fps, ETA 00h00m22s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 97.58 % (72.61 fps, avg 42.06 fps, ETA 00h00m22s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 97.68 % (83.36 fps, avg 42.11 fps, ETA 00h00m20s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 97.68 % (83.36 fps, avg 42.11 fps, ETA 00h00m20s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 97.77 % (83.36 fps, avg 42.11 fps, ETA 00h00m20s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 97.85 % (83.36 fps, avg 42.11 fps, ETA 00h00m20s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 97.92 % (83.17 fps, avg 42.15 fps, ETA 00h00m18s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 97.99 % (83.17 fps, avg 42.15 fps, ETA 00h00m18s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 98.06 % (83.17 fps, avg 42.15 fps, ETA 00h00m18s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 98.10 % (77.65 fps, avg 42.19 fps, ETA 00h00m16s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 98.18 % (77.65 fps, avg 42.19 fps, ETA 00h00m16s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 98.24 % (77.65 fps, avg 42.19 fps, ETA 00h00m16s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 98.29 % (76.04 fps, avg 42.23 fps, ETA 00h00m15s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 98.35 % (76.04 fps, avg 42.23 fps, ETA 00h00m15s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 98.38 % (76.04 fps, avg 42.23 fps, ETA 00h00m15s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 98.45 % (76.04 fps, avg 42.23 fps, ETA 00h00m15s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 98.52 % (72.74 fps, avg 42.25 fps, ETA 00h00m13s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 98.53 % (72.74 fps, avg 42.25 fps, ETA 00h00m13s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 98.63 % (72.74 fps, avg 42.25 fps, ETA 00h00m13s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 98.71 % (74.77 fps, avg 42.31 fps, ETA 00h00m11s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 98.73 % (74.77 fps, avg 42.31 fps, ETA 00h00m11s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 98.78 % (74.77 fps, avg 42.31 fps, ETA 00h00m11s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 98.83 % (74.77 fps, avg 42.31 fps, ETA 00h00m11s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 98.92 % (67.21 fps, avg 42.32 fps, ETA 00h00m10s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 98.94 % (67.21 fps, avg 42.32 fps, ETA 00h00m10s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 99.02 % (67.21 fps, avg 42.32 fps, ETA 00h00m10s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 99.09 % (68.85 fps, avg 42.35 fps, ETA 00h00m08s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 99.15 % (68.85 fps, avg 42.35 fps, ETA 00h00m08s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 99.20 % (68.85 fps, avg 42.35 fps, ETA 00h00m08s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 99.23 % (68.85 fps, avg 42.35 fps, ETA 00h00m08s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 99.28 % (63.82 fps, avg 42.38 fps, ETA 00h00m06s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 99.38 % (63.82 fps, avg 42.38 fps, ETA 00h00m06s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 99.41 % (63.82 fps, avg 42.38 fps, ETA 00h00m06s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 99.48 % (73.11 fps, avg 42.43 fps, ETA 00h00m04s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 99.54 % (73.11 fps, avg 42.43 fps, ETA 00h00m04s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 99.58 % (73.11 fps, avg 42.43 fps, ETA 00h00m04s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 99.66 % (73.11 fps, avg 42.43 fps, ETA 00h00m04s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 99.70 % (72.82 fps, avg 42.46 fps, ETA 00h00m02s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 99.77 % (72.82 fps, avg 42.46 fps, ETA 00h00m02s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 99.81 % (72.82 fps, avg 42.46 fps, ETA 00h00m02s)
-2023-07-07T06:17:39.460Z [06:16:49] reader: done. 1 scr changes
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 99.86 % (72.33 fps, avg 42.49 fps, ETA 00h00m01s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 99.88 % (72.33 fps, avg 42.49 fps, ETA 00h00m01s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 100.00 % (72.33 fps, avg 42.49 fps, ETA 00h00m01s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 100.00 % (72.33 fps, avg 42.49 fps, ETA 00h00m01s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 100.00 % (72.33 fps, avg 42.49 fps, ETA 00h00m01s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 100.00 % (72.33 fps, avg 42.49 fps, ETA 00h00m01s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 100.00 % (72.33 fps, avg 42.49 fps, ETA 00h00m01s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 100.00 % (72.33 fps, avg 42.49 fps, ETA 00h00m01s)
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 100.00 % (72.33 fps, avg 42.49 fps, ETA 00h00m01s)
-2023-07-07T06:17:39.460Z [06:16:52] work: average encoding speed for job is 42.492401 fps
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.460Z Encoding: task 1 of 1, 100.00 % (72.33 fps, avg 42.49 fps, ETA 00h00m01s)
-2023-07-07T06:17:39.460Z [06:16:52] comb detect: heavy 317 | light 904 | uncombed 35704 | total 36925
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.460Z [06:16:53] decomb: deinterlaced 317 | blended 904 | unfiltered 35704 | total 36925
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.460Z [06:16:53] vfr: 36925 frames output, 0 dropped and 0 duped for CFR/PFR
-2023-07-07T06:17:39.460Z [06:16:53] vfr: lost time: 0 (0 frames)
-2023-07-07T06:17:39.460Z [06:16:53] vfr: gained time: 0 (0 frames) (0 not accounted for)
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.460Z [06:16:53] aac-decoder done: 69235 frames, 0 decoder errors
-2023-07-07T06:17:39.460Z [06:16:53] hevc-decoder done: 36925 frames, 0 decoder errors
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.460Z [06:16:53] sync: got 36925 frames, 36925 expected
-2023-07-07T06:17:39.460Z [06:16:53] sync: framerate min 25.000 fps, max 25.000 fps, avg 25.000 fps
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.460Z x264 [info]: frame I:398   Avg QP:19.40  size: 53633
-2023-07-07T06:17:39.460Z x264 [info]: frame P:10933 Avg QP:22.75  size: 10611
-2023-07-07T06:17:39.460Z x264 [info]: frame B:25594 Avg QP:26.60  size:  2162
-2023-07-07T06:17:39.460Z x264 [info]: consecutive B-frames:  2.0% 15.7%  3.0% 79.3%
-2023-07-07T06:17:39.460Z x264 [info]: mb I  I16..4: 33.0%  0.0% 67.0%
-2023-07-07T06:17:39.460Z x264 [info]: 
-2023-07-07T06:17:39.460Z mb P  I16..4:  4.6%  0.0%  3.2%  P16..4: 37.0% 10.7%  4.9%  0.0%  0.0%    skip:39.6%
-2023-07-07T06:17:39.460Z x264 [info]: mb B  I16..4:  0.4%  0.0%  0.2%  B16..8: 25.2%  1.8%  0.2%  direct: 0.9%  skip:71.3%  L0:38.9% L1:56.4% BI: 4.7%
-2023-07-07T06:17:39.460Z x264 [info]: coded y,uvDC,uvAC intra: 42.8% 61.3% 24.8% inter: 5.1% 10.0% 0.3%
-2023-07-07T06:17:39.460Z x264 [info]: i16 v,h,dc,p: 43% 24% 10% 23%
-2023-07-07T06:17:39.460Z x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 29% 22% 15%  5%  7%  7%  6%  6%  4%
-2023-07-07T06:17:39.460Z x264 [info]: i8c dc,h,v,p: 44% 22% 26%  7%
-2023-07-07T06:17:39.460Z x264 [info]: Weighted P-Frames: Y:1.1% UV:0.9%
-2023-07-07T06:17:39.460Z x264 [info]: ref P L0: 62.1% 16.5% 16.1%  5.2%  0.0%
-2023-07-07T06:17:39.460Z x264 [info]: ref B L0: 90.9%  7.2%  1.8%
-2023-07-07T06:17:39.460Z x264 [info]: ref B L1: 97.9%  2.1%
-2023-07-07T06:17:39.460Z x264 [info]: kb/s:1043.75
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.460Z [06:16:53] mux: track 0, 36925 frames, 192687194 bytes, 1043.64 kbps, fifo 4096
-2023-07-07T06:17:39.460Z [06:16:53] mux: track 1, 61543 frames, 29540640 bytes, 160.00 kbps, fifo 4096
-2023-07-07T06:17:39.460Z [06:16:53] mux: track 2, 469 frames, 38593 bytes, 0.21 kbps, fifo 64
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.460Z [06:16:53] Finished work at: Fri Jul  7 06:16:53 2023
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.460Z [06:16:53] libhb: work result = 0
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.460Z Encode done!
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.460Z HandBrake has exited.
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.460Z ffmpeg version 6.0-Jellyfin Copyright (c) 2000-2023 the FFmpeg developers
-2023-07-07T06:17:39.460Z   built with gcc 9 (Ubuntu 9.4.0-1ubuntu1~20.04.1)
-2023-07-07T06:17:39.460Z   configuration: --prefix=/usr/lib/jellyfin-ffmpeg --target-os=linux --extra-version=Jellyfin --disable-doc --disable-ffplay --disable-ptx-compression --disable-static --disable-libxcb --disable-sdl2 --disable-xlib --enable-lto --enable-gpl --enable-version3 --enable-shared --enable-gmp --enable-gnutls --enable-chromaprint --enable-libdrm --enable-libass --enable-libfreetype --enable-libfribidi --enable-libfontconfig --enable-libbluray --enable-libmp3lame --enable-libopus --enable-libtheora --enable-libvorbis --enable-libdav1d --enable-libwebp --enable-libvpx --enable-libx264 --enable-libx265 --enable-libzvbi --enable-libzimg --enable-libfdk-aac --arch=amd64 --enable-libsvtav1 --enable-libshaderc --enable-libplacebo --enable-vulkan --enable-opencl --enable-vaapi --enable-amf --enable-libvpl --enable-ffnvcodec --enable-cuda --enable-cuda-llvm --enable-cuvid --enable-nvdec --enable-nvenc
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.460Z   libavutil      58.  2.100 / 58.  2.100
-2023-07-07T06:17:39.460Z   libavcodec     60.  3.100 / 60.  3.100
-2023-07-07T06:17:39.460Z   libavformat    60.  3.100 / 60.  3.100
-2023-07-07T06:17:39.460Z   libavdevice    60.  1.100 / 60.  1.100
-2023-07-07T06:17:39.460Z   libavfilter     9.  3.100 /  9.  3.100
-2023-07-07T06:17:39.460Z   libswscale      7.  1.100 /  7.  1.100
-2023-07-07T06:17:39.460Z   libswresample   4. 10.100 /  4. 10.100
-2023-07-07T06:17:39.460Z   libpostproc    57.  1.100 / 57.  1.100
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.460Z Input #0, matroska,webm, from '/temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-ViKrJnzAl.mkv':
-2023-07-07T06:17:39.460Z   Metadata:
-2023-07-07T06:17:39.460Z     creation_time   : 2023-07-07T05:02:22.000000Z
-2023-07-07T06:17:39.460Z     ENCODER         : Lavf59.27.100
-2023-07-07T06:17:39.460Z   Duration: 00:24:37.03, start: 0.000000, bitrate: 1207 kb/s
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.460Z   Stream #0:0: Video: h264 (Main), yuv420p(tv, bt709, progressive), 1258x720 [SAR 1:1 DAR 629:360], 25 fps, 25 tbr, 1k tbn (default)
-2023-07-07T06:17:39.460Z     Metadata:
-2023-07-07T06:17:39.460Z       DURATION        : 00:24:37.023000000
-2023-07-07T06:17:39.460Z   Stream #0:1(eng): Audio: mp3, 48000 Hz, stereo, fltp, 160 kb/s (default)
-2023-07-07T06:17:39.460Z     Metadata:
-2023-07-07T06:17:39.460Z       title           : English
-2023-07-07T06:17:39.460Z       DURATION        : 00:24:37.032000000
-2023-07-07T06:17:39.460Z   Stream #0:2(eng): Subtitle: ass (default) (forced)
-2023-07-07T06:17:39.460Z     Metadata:
-2023-07-07T06:17:39.460Z       title           : English
-2023-07-07T06:17:39.460Z       DURATION        : 00:24:31.223000000
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.460Z Multiple -c, -codec, -acodec, -vcodec, -scodec or -dcodec options specified for stream 1, only the last option '-c:a:0 aac' will be used.
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.460Z Stream mapping:
-2023-07-07T06:17:39.460Z   Stream #0:0 -> #0:0 (copy)
-2023-07-07T06:17:39.460Z   Stream #0:1 -> #0:1 (mp3 (mp3float) -> aac (native))
-2023-07-07T06:17:39.460Z   Stream #0:2 -> #0:2 (copy)
-2023-07-07T06:17:39.460Z Press [q] to stop, [?] for help
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.460Z Output #0, matroska, to '/temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-CGJ7RG39W.mkv':
-2023-07-07T06:17:39.460Z   Metadata:
-2023-07-07T06:17:39.460Z     encoder         : Lavf60.3.100
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.460Z   Stream #0:0: Video: h264 (Main) (H264 / 0x34363248), yuv420p(tv, bt709, progressive), 1258x720 [SAR 1:1 DAR 629:360], q=2-31, 25 fps, 25 tbr, 1k tbn (default)
-2023-07-07T06:17:39.460Z     Metadata:
-2023-07-07T06:17:39.460Z       DURATION        : 00:24:37.023000000
-2023-07-07T06:17:39.460Z   Stream #0:1(eng): Audio: aac (LC) ([255][0][0][0] / 0x00FF), 48000 Hz, stereo, fltp, 128 kb/s (default)
-2023-07-07T06:17:39.460Z     Metadata:
-2023-07-07T06:17:39.460Z       title           : English
-2023-07-07T06:17:39.460Z       DURATION        : 00:24:37.032000000
-2023-07-07T06:17:39.460Z       encoder         : Lavc60.3.100 aac
-2023-07-07T06:17:39.460Z   Stream #0:2(eng): Subtitle: ass (default)
-2023-07-07T06:17:39.460Z  (forced)
-2023-07-07T06:17:39.460Z     Metadata:
-2023-07-07T06:17:39.460Z       title           : English
-2023-07-07T06:17:39.460Z       DURATION        : 00:24:31.223000000
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.460Z frame=    0 fps=0.0 q=-1.0 size=       0kB time=-577014:32:22.77 bitrate=  -0.0kbits/s speed=N/A    
-2023-07-07T06:17:39.460Z frame=  455 fps=0.0 q=-1.0 size=    1024kB time=00:00:18.14 bitrate= 462.4kbits/s speed=36.3x    
-2023-07-07T06:17:39.460Z frame=  947 fps=947 q=-1.0 size=    4352kB time=00:00:37.82 bitrate= 942.6kbits/s speed=37.8x    
-2023-07-07T06:17:39.460Z frame= 1362 fps=904 q=-1.0 size=    6656kB time=00:00:54.42 bitrate=1001.9kbits/s speed=36.1x    
-2023-07-07T06:17:39.460Z frame= 1812 fps=902 q=-1.0 size=    8704kB time=00:01:12.38 bitrate= 985.1kbits/s speed=  36x    
-2023-07-07T06:17:39.460Z frame= 2248 fps=896 q=-1.0 size=   11008kB time=00:01:29.82 bitrate=1003.9kbits/s speed=35.8x    
-2023-07-07T06:17:39.460Z frame= 2776 fps=922 q=-1.0 size=   13568kB time=00:01:50.94 bitrate=1001.9kbits/s speed=36.9x    
-2023-07-07T06:17:39.460Z frame= 3237 fps=922 q=-1.0 size=   16640kB time=00:02:09.38 bitrate=1053.6kbits/s speed=36.9x    
-2023-07-07T06:17:39.460Z frame= 3703 fps=923 q=-1.0 size=   19200kB time=00:02:28.02 bitrate=1062.6kbits/s speed=36.9x    
-2023-07-07T06:17:39.460Z frame= 4142 fps=918 q=-1.0 size=   21760kB time=00:02:45.62 bitrate=1076.3kbits/s speed=36.7x    
-2023-07-07T06:17:39.460Z frame= 4572 fps=912 q=-1.0 size=   24832kB time=00:03:02.82 bitrate=1112.7kbits/s speed=36.5x    
-2023-07-07T06:17:39.460Z frame= 4985 fps=904 q=-1.0 size=   26880kB time=00:03:19.34 bitrate=1104.6kbits/s speed=36.2x    
-2023-07-07T06:17:39.460Z frame= 5411 fps=900 q=-1.0 size=   27904kB time=00:03:36.38 bitrate=1056.4kbits/s speed=  36x    
-2023-07-07T06:17:39.460Z frame= 5916 fps=908 q=-1.0 size=   32256kB time=00:03:56.54 bitrate=1117.1kbits/s speed=36.3x    
-2023-07-07T06:17:39.460Z frame= 6346 fps=905 q=-1.0 size=   34560kB time=00:04:13.74 bitrate=1115.8kbits/s speed=36.2x    
-2023-07-07T06:17:39.460Z frame= 6752 fps=898 q=-1.0 size=   37632kB time=00:04:30.02 bitrate=1141.7kbits/s speed=35.9x    
-2023-07-07T06:17:39.460Z frame= 7236 fps=903 q=-1.0 size=   40704kB time=00:04:49.38 bitrate=1152.3kbits/s speed=36.1x    
-2023-07-07T06:17:39.460Z frame= 7635 fps=896 q=-1.0 size=   44544kB time=00:05:05.34 bitrate=1195.1kbits/s speed=35.9x    
-2023-07-07T06:17:39.460Z frame= 8070 fps=895 q=-1.0 size=   46592kB time=00:05:22.74 bitrate=1182.6kbits/s speed=35.8x    
-2023-07-07T06:17:39.460Z frame= 8503 fps=893 q=-1.0 size=   49408kB time=00:05:40.02 bitrate=1190.4kbits/s speed=35.7x    
-2023-07-07T06:17:39.460Z frame= 8883 fps=887 q=-1.0 size=   51712kB time=00:05:55.26 bitrate=1192.4kbits/s speed=35.5x    
-2023-07-07T06:17:39.460Z frame= 9291 fps=883 q=-1.0 size=   54272kB time=00:06:11.54 bitrate=1196.6kbits/s speed=35.3x    
-2023-07-07T06:17:39.460Z frame= 9754 fps=885 q=-1.0 size=   56576kB time=00:06:30.06 bitrate=1188.2kbits/s speed=35.4x    
-2023-07-07T06:17:39.460Z frame=10209 fps=886 q=-1.0 size=   59648kB time=00:06:48.26 bitrate=1196.9kbits/s speed=35.4x    
-2023-07-07T06:17:39.460Z frame=10726 fps=892 q=-1.0 size=   62720kB time=00:07:08.94 bitrate=1197.8kbits/s speed=35.7x    
-2023-07-07T06:17:39.460Z frame=11156 fps=891 q=-1.0 size=   64768kB time=00:07:26.18 bitrate=1189.2kbits/s speed=35.6x    
-2023-07-07T06:17:39.460Z frame=11618 fps=892 q=-1.0 size=   67328kB time=00:07:44.66 bitrate=1187.0kbits/s speed=35.7x    
-2023-07-07T06:17:39.460Z frame=12130 fps=897 q=-1.0 size=   70144kB time=00:08:05.14 bitrate=1184.4kbits/s speed=35.9x    
-2023-07-07T06:17:39.460Z frame=12510 fps=892 q=-1.0 size=   72704kB time=00:08:20.34 bitrate=1190.4kbits/s speed=35.7x    
-2023-07-07T06:17:39.460Z frame=12897 fps=888 q=-1.0 size=   75520kB time=00:08:35.82 bitrate=1199.4kbits/s speed=35.5x    
-2023-07-07T06:17:39.460Z frame=13269 fps=883 q=-1.0 size=   77568kB time=00:08:50.66 bitrate=1197.4kbits/s speed=35.3x    
-2023-07-07T06:17:39.460Z frame=13705 fps=883 q=-1.0 size=   79872kB time=00:09:08.14 bitrate=1193.7kbits/s speed=35.3x    
-2023-07-07T06:17:39.460Z frame=14173 fps=884 q=-1.0 size=   82176kB time=00:09:26.86 bitrate=1187.6kbits/s speed=35.4x    
-2023-07-07T06:17:39.460Z frame=14640 fps=886 q=-1.0 size=   85760kB time=00:09:45.50 bitrate=1199.9kbits/s speed=35.4x    
-2023-07-07T06:17:39.460Z frame=15073 fps=885 q=-1.0 size=   87808kB time=00:10:02.82 bitrate=1193.3kbits/s speed=35.4x    
-2023-07-07T06:17:39.460Z frame=15520 fps=885 q=-1.0 size=   90624kB time=00:10:20.74 bitrate=1196.0kbits/s speed=35.4x    
-2023-07-07T06:17:39.460Z frame=15945 fps=884 q=-1.0 size=   92672kB time=00:10:37.74 bitrate=1190.4kbits/s speed=35.4x    
-2023-07-07T06:17:39.460Z frame=16387 fps=884 q=-1.0 size=   94720kB time=00:10:55.42 bitrate=1183.9kbits/s speed=35.4x    
-2023-07-07T06:17:39.460Z frame=16803 fps=883 q=-1.0 size=   97536kB time=00:11:12.06 bitrate=1188.9kbits/s speed=35.3x    
-2023-07-07T06:17:39.460Z frame=17217 fps=881 q=-1.0 size=   98816kB time=00:11:28.58 bitrate=1175.6kbits/s speed=35.2x    
-2023-07-07T06:17:39.460Z frame=17629 fps=880 q=-1.0 size=  102144kB time=00:11:45.10 bitrate=1186.7kbits/s speed=35.2x    
-2023-07-07T06:17:39.460Z frame=18104 fps=882 q=-1.0 size=  104448kB time=00:12:04.10 bitrate=1181.7kbits/s speed=35.3x    
-2023-07-07T06:17:39.460Z frame=18543 fps=881 q=-1.0 size=  107008kB time=00:12:21.66 bitrate=1182.0kbits/s speed=35.3x    
-2023-07-07T06:17:39.460Z frame=18987 fps=882 q=-1.0 size=  109312kB time=00:12:39.42 bitrate=1179.2kbits/s speed=35.3x    
-2023-07-07T06:17:39.460Z frame=19406 fps=881 q=-1.0 size=  111360kB time=00:12:56.18 bitrate=1175.3kbits/s speed=35.2x    
-2023-07-07T06:17:39.460Z frame=19852 fps=881 q=-1.0 size=  113664kB time=00:13:13.98 bitrate=1172.7kbits/s speed=35.2x    
-2023-07-07T06:17:39.460Z frame=20262 fps=879 q=-1.0 size=  115712kB time=00:13:30.42 bitrate=1169.7kbits/s speed=35.2x    
-2023-07-07T06:17:39.460Z frame=20697 fps=879 q=-1.0 size=  118272kB time=00:13:47.78 bitrate=1170.5kbits/s speed=35.2x    
-2023-07-07T06:17:39.460Z frame=21126 fps=879 q=-1.0 size=  120064kB time=00:14:04.98 bitrate=1164.0kbits/s speed=35.1x    
-2023-07-07T06:17:39.460Z frame=21572 fps=879 q=-1.0 size=  122112kB time=00:14:22.82 bitrate=1159.4kbits/s speed=35.2x    
-2023-07-07T06:17:39.460Z frame=22045 fps=880 q=-1.0 size=  123904kB time=00:14:41.74 bitrate=1151.2kbits/s speed=35.2x    
-2023-07-07T06:17:39.460Z frame=22519 fps=882 q=-1.0 size=  126720kB time=00:15:00.66 bitrate=1152.6kbits/s speed=35.3x    
-2023-07-07T06:17:39.460Z frame=22948 fps=881 q=-1.0 size=  128768kB time=00:15:17.82 bitrate=1149.3kbits/s speed=35.2x    
-2023-07-07T06:17:39.460Z frame=23304 fps=878 q=-1.0 size=  130048kB time=00:15:32.06 bitrate=1143.0kbits/s speed=35.1x    
-2023-07-07T06:17:39.460Z frame=23675 fps=876 q=-1.0 size=  132352kB time=00:15:46.94 bitrate=1145.0kbits/s speed=  35x    
-2023-07-07T06:17:39.460Z frame=24069 fps=874 q=-1.0 size=  135424kB time=00:16:02.66 bitrate=1152.4kbits/s speed=  35x    
-2023-07-07T06:17:39.460Z frame=24482 fps=873 q=-1.0 size=  138240kB time=00:16:19.22 bitrate=1156.5kbits/s speed=34.9x    
-2023-07-07T06:17:39.460Z frame=24829 fps=870 q=-1.0 size=  141056kB time=00:16:33.06 bitrate=1163.6kbits/s speed=34.8x    
-2023-07-07T06:17:39.460Z frame=25213 fps=868 q=-1.0 size=  143360kB time=00:16:48.46 bitrate=1164.5kbits/s speed=34.7x    
-2023-07-07T06:17:39.460Z frame=25659 fps=869 q=-1.0 size=  146176kB time=00:17:06.26 bitrate=1166.8kbits/s speed=34.7x    
-2023-07-07T06:17:39.460Z frame=26117 fps=869 q=-1.0 size=  148736kB time=00:17:24.62 bitrate=1166.4kbits/s speed=34.8x    
-2023-07-07T06:17:39.460Z frame=26649 fps=872 q=-1.0 size=  150784kB time=00:17:45.90 bitrate=1158.9kbits/s speed=34.9x    
-2023-07-07T06:17:39.460Z frame=27077 fps=872 q=-1.0 size=  153600kB time=00:18:03.02 bitrate=1161.8kbits/s speed=34.9x    
-2023-07-07T06:17:39.460Z frame=27516 fps=872 q=-1.0 size=  155904kB time=00:18:20.58 bitrate=1160.4kbits/s speed=34.9x    
-2023-07-07T06:17:39.460Z frame=27934 fps=872 q=-1.0 size=  158208kB time=00:18:37.30 bitrate=1160.0kbits/s speed=34.9x    
-2023-07-07T06:17:39.460Z frame=28355 fps=871 q=-1.0 size=  161280kB time=00:18:54.14 bitrate=1164.9kbits/s speed=34.8x    
-2023-07-07T06:17:39.460Z frame=28734 fps=870 q=-1.0 size=  164352kB time=00:19:09.30 bitrate=1171.5kbits/s speed=34.8x    
-2023-07-07T06:17:39.460Z frame=29121 fps=868 q=-1.0 size=  164864kB time=00:19:24.78 bitrate=1159.5kbits/s speed=34.7x    
-2023-07-07T06:17:39.460Z frame=29554 fps=868 q=-1.0 size=  168960kB time=00:19:42.10 bitrate=1170.9kbits/s speed=34.7x    
-2023-07-07T06:17:39.460Z frame=29994 fps=868 q=-1.0 size=  171776kB time=00:19:59.70 bitrate=1172.9kbits/s speed=34.7x    
-2023-07-07T06:17:39.460Z frame=30413 fps=868 q=-1.0 size=  174080kB time=00:20:16.42 bitrate=1172.3kbits/s speed=34.7x    
-2023-07-07T06:17:39.460Z frame=30853 fps=868 q=-1.0 size=  176384kB time=00:20:34.06 bitrate=1170.9kbits/s speed=34.7x    
-2023-07-07T06:17:39.460Z frame=31328 fps=869 q=-1.0 size=  179968kB time=00:20:53.06 bitrate=1176.6kbits/s speed=34.8x    
-2023-07-07T06:17:39.460Z frame=31856 fps=872 q=-1.0 size=  183808kB time=00:21:14.14 bitrate=1181.8kbits/s speed=34.9x    
-2023-07-07T06:17:39.460Z frame=32293 fps=872 q=-1.0 size=  186624kB time=00:21:31.62 bitrate=1183.6kbits/s speed=34.9x    
-2023-07-07T06:17:39.460Z frame=32657 fps=870 q=-1.0 size=  189440kB time=00:21:46.22 bitrate=1188.1kbits/s speed=34.8x    
-2023-07-07T06:17:39.460Z frame=33103 fps=870 q=-1.0 size=  191488kB time=00:22:04.06 bitrate=1184.7kbits/s speed=34.8x    
-2023-07-07T06:17:39.460Z frame=33574 fps=871 q=-1.0 size=  193536kB time=00:22:22.86 bitrate=1180.6kbits/s speed=34.8x    
-2023-07-07T06:17:39.460Z frame=34011 fps=871 q=-1.0 size=  198400kB time=00:22:40.38 bitrate=1194.7kbits/s speed=34.8x    
-2023-07-07T06:17:39.460Z frame=34427 fps=870 q=-1.0 size=  200960kB time=00:22:57.02 bitrate=1195.5kbits/s speed=34.8x    
-2023-07-07T06:17:39.460Z frame=34806 fps=869 q=-1.0 size=  203264kB time=00:23:12.18 bitrate=1196.1kbits/s speed=34.8x    
-2023-07-07T06:17:39.460Z frame=35118 fps=866 q=-1.0 size=  204544kB time=00:23:24.66 bitrate=1192.9kbits/s speed=34.6x    
-2023-07-07T06:17:39.460Z frame=35577 fps=867 q=-1.0 size=  207360kB time=00:23:43.02 bitrate=1193.7kbits/s speed=34.7x    
-2023-07-07T06:17:39.460Z frame=36058 fps=868 q=-1.0 size=  209152kB time=00:24:02.22 bitrate=1188.0kbits/s speed=34.7x    
-2023-07-07T06:17:39.460Z frame=36558 fps=869 q=-1.0 size=  210432kB time=00:24:22.26 bitrate=1178.9kbits/s speed=34.8x    
-2023-07-07T06:17:39.460Z frame=36925 fps=870 q=-1.0 Lsize=  212217kB time=00:24:37.01 bitrate=1177.0kbits/s speed=34.8x    
-2023-07-07T06:17:39.460Z video:188171kB audio:23245kB subtitle:38kB other streams:0kB global headers:1kB muxing overhead: 0.360872%
-2023-07-07T06:17:39.460Z [aac @ 0x5573df7dd6c0] Qavg: 834.837
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.460Z 
-2023-07-07T06:17:39.461Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[Step W06] [C2] Worker [-success-]
-2023-07-07T06:17:39.461Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Worker success during processing
-2023-07-07T06:17:39.462Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Updating transcode stats
-2023-07-07T06:17:39.464Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Deleting non-latest cache file /temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-ViKrJnzAl.mkv
-2023-07-07T06:17:39.465Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Subworker exited null
-2023-07-07T06:17:41.469Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Deleted successfully
-2023-07-07T06:17:41.471Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Scanning new file: /temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-CGJ7RG39W.mkv
-2023-07-07T06:17:41.472Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Updating file properties using mkvpropedit
-2023-07-07T06:17:41.472Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Updated file properties using mkvpropedit
-2023-07-07T06:17:41.473Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Requesting Tdarr Server to scan file
-2023-07-07T06:17:43.479Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Scan complete
-2023-07-07T06:17:43.480Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:pluginCycleLogJSONString:{"nodeName":"MyInternalNode","workerID":"zany-zebu","pluginCycle":2,"outcome":"success","workerLog":"\nPre-processing - Tdarr_Plugin_MC93_MigzImageRemoval\n☑File doesn't contain any unwanted image format streams.\n\nPre-processing - Tdarr_Plugin_lmg1_Reorder_Streams\nFile has video in first stream\n File meets conditions!\n\nPre-processing - Tdarr_Plugin_00td_action_standardise_audio_stream_codecs\nFile has audio streams which aren't in aac \n","lastCliCommand":"tdarr-ffmpeg -i \"/temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-ViKrJnzAl.mkv\" -map 0:v -map 0:a -map 0:s? -map 0:d? -c copy -c:a:0 aac \"/temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-CGJ7RG39W.mkv\""}
-2023-07-07T06:17:43.480Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:fileVersionLogJSONString:{"lastCliCommand":"tdarr-ffmpeg -i \"/temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-ViKrJnzAl.mkv\" -map 0:v -map 0:a -map 0:s? -map 0:d? -c copy -c:a:0 aac \"/temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-CGJ7RG39W.mkv\"","lastPluginId":"Tdarr_Plugin_00td_action_standardise_audio_stream_codecs","sourceFile":{"_id":"/temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-CGJ7RG39W.mkv","footprintId":"t78RnpSmK","file":"/temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-CGJ7RG39W.mkv","container":"mkv","scannerReads":{"ffProbeRead":"success","exiftoolRead":"success","mediaInfoRead":"not enabled","closedCaptionRead":"not enabled"},"createdAt":1688707060786,"lastPluginDetails":"none","bit_rate":1176992,"statSync":{"dev":2051,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":5922682,"size":217309966,"blocks":424448,"atimeMs":1688707059556.3728,"mtimeMs":1688707057352.4082,"ctimeMs":1688707057352.4082,"birthtimeMs":1688707014913.09,"atime":"2023-07-07T05:17:39.556Z","mtime":"2023-07-07T05:17:37.352Z","ctime":"2023-07-07T05:17:37.352Z","birthtime":"2023-07-07T05:16:54.913Z"},"file_size":207.24293327331543,"ffProbeData":{"streams":[{"index":0,"codec_name":"h264","codec_long_name":"H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10","profile":"Main","codec_type":"video","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","width":1258,"height":720,"coded_width":1258,"coded_height":720,"closed_captions":0,"has_b_frames":2,"sample_aspect_ratio":"1:1","display_aspect_ratio":"629:360","pix_fmt":"yuv420p","level":52,"color_range":"tv","color_space":"bt709","color_transfer":"bt709","color_primaries":"bt709","chroma_location":"left","field_order":"progressive","refs":1,"is_avc":"true","nal_length_size":"4","r_frame_rate":"25/1","avg_frame_rate":"25/1","time_base":"1/1000","start_pts":23,"start_time":"0.023000","bits_per_raw_sample":"8","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"DURATION":"00:24:37.023000000"}},{"index":1,"codec_name":"aac","codec_long_name":"AAC (Advanced Audio Coding)","profile":"LC","codec_type":"audio","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":"48000","channels":2,"channel_layout":"stereo","bits_per_sample":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":-21,"start_time":"-0.021000","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"eng","title":"English","ENCODER":"Lavc60.3.100 aac","DURATION":"00:24:37.053000000"}},{"index":2,"codec_name":"ass","codec_long_name":"ASS (Advanced SSA) subtitle","codec_type":"subtitle","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":-21,"start_time":"-0.021000","duration_ts":1477053,"duration":"1477.053000","disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":1,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0},"tags":{"language":"eng","title":"English","DURATION":"00:24:31.223000000"}}],"format":{"filename":"/temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-CGJ7RG39W.mkv","nb_streams":3,"nb_programs":0,"format_name":"matroska,webm","format_long_name":"Matroska / WebM","start_time":"-0.021000","duration":"1477.053000","size":"217309966","bit_rate":"1176992","probe_score":100,"tags":{"ENCODER":"Lavf60.3.100"}}},"meta":{"SourceFile":"/temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-CGJ7RG39W.mkv","errors":[],"Duration":1477.053,"ExifToolVersion":12.4,"FileName":"The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-CGJ7RG39W.mkv","Directory":"/temp","FileSize":"207 MiB","FileModifyDate":{"year":2023,"month":7,"day":7,"hour":5,"minute":17,"second":37,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:07 05:17:37+00:00"},"FileAccessDate":{"year":2023,"month":7,"day":7,"hour":5,"minute":17,"second":39,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:07 05:17:39+00:00"},"FileInodeChangeDate":{"year":2023,"month":7,"day":7,"hour":5,"minute":17,"second":37,"millisecond":0,"tzoffsetMinutes":0,"rawValue":"2023:07:07 05:17:37+00:00"},"FilePermissions":"-rw-rw-r--","FileType":"MKV","FileTypeExtension":"mkv","MIMEType":"video/x-matroska","EBMLVersion":1,"EBMLReadVersion":1,"DocType":"matroska","DocTypeVersion":4,"DocTypeReadVersion":2,"TimecodeScale":"1 ms","MuxingApp":"Lavf60.3.100","WritingApp":"Lavf60.3.100","VideoFrameRate":25,"ImageWidth":1258,"ImageHeight":720,"VideoScanType":"Unknown (2)","AudioChannels":2,"AudioSampleRate":48000,"AudioBitsPerSample":32,"TrackNumber":3,"TrackName":"English","TrackLanguage":"eng","TrackForced":"Yes","CodecID":"S_TEXT/ASS","TrackType":"Subtitle","TagName":"DURATION","TagString":"00:24:31.223000000","ImageSize":"1258x720","Megapixels":0.906},"mediaInfo":{},"hasClosedCaptions":false,"DB":"4BaCjCxnf","bumped":false,"HealthCheck":"","TranscodeDecisionMaker":"","holdUntil":0,"fileMedium":"video","video_codec_name":"h264","audio_codec_name":"","video_resolution":"720p","lastHealthCheckDate":0,"lastTranscodeDate":0,"history":"","oldSize":0,"newSize":0,"videoStreamIndex":0,"duration":1477}}
-2023-07-07T06:17:43.480Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Transcodes during this job so far: 2
-2023-07-07T06:17:43.481Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[Step W02] [C3] Running pre-process file
-2023-07-07T06:17:43.482Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Checking files can be accessed
-2023-07-07T06:17:43.482Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Relevant paths can be accessed
-2023-07-07T06:17:43.483Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Source file: /temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-CGJ7RG39W.mkv
-2023-07-07T06:17:43.485Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Cache folder: /temp
-2023-07-07T06:17:43.485Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[Step W03] [C3] Analysing file - running plugins
-2023-07-07T06:17:43.486Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:New cache file has already been scanned, no need to scan again
-2023-07-07T06:17:43.486Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Updating Node relay: Processing
-2023-07-07T06:17:43.487Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[1/2] Checking file frame count
-2023-07-07T06:17:43.487Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[2/2] Frame count 0
-2023-07-07T06:17:43.487Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Transcode task, determining transcode settings
-2023-07-07T06:17:43.488Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Plugin stack selected
-2023-07-07T06:17:43.488Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Plugin: plugin1:  Tdarr_Plugin_MC93_MigzImageRemoval
-2023-07-07T06:17:43.489Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[1/5] Reading plugin
-2023-07-07T06:17:43.489Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[2/5] Plugin read finished
-2023-07-07T06:17:43.489Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[3/5] Installing dependencies
-2023-07-07T06:17:43.490Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[4/5] Running plugin
-2023-07-07T06:17:43.490Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:{"pluginInputs":{}}
-2023-07-07T06:17:43.490Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[5/5] Running plugin finished
-2023-07-07T06:17:43.491Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Plugin: plugin2:  Tdarr_Plugin_lmg1_Reorder_Streams
-2023-07-07T06:17:43.491Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[1/5] Reading plugin
-2023-07-07T06:17:43.492Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[2/5] Plugin read finished
-2023-07-07T06:17:43.492Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[3/5] Installing dependencies
-2023-07-07T06:17:43.492Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[4/5] Running plugin
-2023-07-07T06:17:43.493Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:{"pluginInputs":{}}
-2023-07-07T06:17:43.493Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[5/5] Running plugin finished
-2023-07-07T06:17:43.493Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Plugin: sxfFHmyyT:  Tdarr_Plugin_00td_action_standardise_audio_stream_codecs
-2023-07-07T06:17:43.494Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[1/5] Reading plugin
-2023-07-07T06:17:43.494Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[2/5] Plugin read finished
-2023-07-07T06:17:43.494Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[3/5] Installing dependencies
-2023-07-07T06:17:43.495Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[4/5] Running plugin
-2023-07-07T06:17:43.495Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:{"pluginInputs":{"audioCodec":"aac"}}
-2023-07-07T06:17:43.495Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[5/5] Running plugin finished
-2023-07-07T06:17:43.495Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Plugin: aEVldYMXA:  Tdarr_Plugin_075a_Transcode_Customisable
-2023-07-07T06:17:43.496Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[1/5] Reading plugin
-2023-07-07T06:17:43.496Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[2/5] Plugin read finished
-2023-07-07T06:17:43.497Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[3/5] Installing dependencies
-2023-07-07T06:17:43.497Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[4/5] Running plugin
-2023-07-07T06:17:43.497Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:{"pluginInputs":{"codecs_to_exclude":"h264","cli":"handbrake","transcode_arguments":"-Z \"H.264 MKV 2160p60 4K\" -e x264 --all-subtitles --all-audio  -x threads=2","output_container":".mkv"}}
-2023-07-07T06:17:43.498Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[5/5] Running plugin finished
-2023-07-07T06:17:43.498Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Plugin: plugin5:  Tdarr_Plugin_a9he_New_file_size_check
-2023-07-07T06:17:43.498Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[1/5] Reading plugin
-2023-07-07T06:17:43.499Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[2/5] Plugin read finished
-2023-07-07T06:17:43.499Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[3/5] Installing dependencies
-2023-07-07T06:17:43.499Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[4/5] Running plugin
-2023-07-07T06:17:43.499Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:{"pluginInputs":{"upperBound":"200","lowerBound":40}}
-2023-07-07T06:17:43.499Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[5/5] Running plugin finished
-2023-07-07T06:17:43.500Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Plugin: -XIe_rmCK:  Tdarr_Plugin_00td_filter_by_file_property
-2023-07-07T06:17:43.500Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[1/5] Reading plugin
-2023-07-07T06:17:43.500Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[2/5] Plugin read finished
-2023-07-07T06:17:43.501Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[3/5] Installing dependencies
-2023-07-07T06:17:43.501Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[4/5] Running plugin
-2023-07-07T06:17:43.502Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:{"pluginInputs":{"propertyName":"container","propertyValues":"mkv","exactMatch":true,"continueIfPropertyFound":false}}
-2023-07-07T06:17:43.503Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[5/5] Running plugin finished
-2023-07-07T06:17:43.503Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Worker config: {
-2023-07-07T06:17:43.503Z   "processFile": false,
-2023-07-07T06:17:43.503Z   "infoLog": "File property container of mkv being one of mkv has been found, breaking out of stack  \n"
-2023-07-07T06:17:43.503Z }
-2023-07-07T06:17:43.503Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Worker log: 
-2023-07-07T06:17:43.503Z Pre-processing - Tdarr_Plugin_MC93_MigzImageRemoval
-2023-07-07T06:17:43.503Z ☑File doesn't contain any unwanted image format streams.
-2023-07-07T06:17:43.503Z 
-2023-07-07T06:17:43.503Z Pre-processing - Tdarr_Plugin_lmg1_Reorder_Streams
-2023-07-07T06:17:43.503Z File has video in first stream
-2023-07-07T06:17:43.503Z  File meets conditions!
-2023-07-07T06:17:43.503Z 
-2023-07-07T06:17:43.503Z Pre-processing - Tdarr_Plugin_00td_action_standardise_audio_stream_codecs
-2023-07-07T06:17:43.503Z File does not have any audio streams which aren't in aac 
-2023-07-07T06:17:43.503Z 
-2023-07-07T06:17:43.503Z Pre-processing - Tdarr_Plugin_075a_Transcode_Customisable
-2023-07-07T06:17:43.503Z ☑File is already in h264! 
-2023-07-07T06:17:43.503Z 
-2023-07-07T06:17:43.503Z Pre-processing - Tdarr_Plugin_a9he_New_file_size_check
-2023-07-07T06:17:43.503Z New file has size 207.243 MB which is 117% of original file size:  176.814 MB
-2023-07-07T06:17:43.503Z Pre-processing - Tdarr_Plugin_00td_filter_by_file_property
-2023-07-07T06:17:43.503Z File property container of mkv being one of mkv has been found, breaking out of stack  
-2023-07-07T06:17:43.503Z 
-2023-07-07T06:17:43.504Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[Step W08] [-success-] Job end
-2023-07-07T06:17:43.504Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Transcoding successful. Finished job.
-2023-07-07T06:17:43.505Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:[Step W10] Worker processing end
-2023-07-07T06:17:43.505Z 7Qf0HQ8DsuO:Node[MyInternalNode]:Worker[zany-zebu]:Successfully updated server with verdict: transcodeSuccess
-2023-07-07T06:17:44.526Z 7Qf0HQ8DsuO:[Step S02] Beginning move/copy operation
-2023-07-07T06:17:44.531Z 7Qf0HQ8DsuO:Calculating old and new sizes of the following files
-2023-07-07T06:17:44.535Z 7Qf0HQ8DsuO:/media/tvshows/The IT Crowd/Season 1/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper.mp4
-2023-07-07T06:17:44.543Z 7Qf0HQ8DsuO:/temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-CGJ7RG39W.mkv
-2023-07-07T06:17:44.547Z 7Qf0HQ8DsuO:Old size 0.17267005238682032. New size 0.2023856770247221
-2023-07-07T06:17:44.551Z 7Qf0HQ8DsuO:Folder to folder conversion is off
-2023-07-07T06:17:44.556Z 7Qf0HQ8DsuO:New file path /media/tvshows/The IT Crowd/Season 1/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-1zdO2HHHYX.mkv
-2023-07-07T06:17:44.558Z 7Qf0HQ8DsuO:Ensuring output folder path exists /media/tvshows/The IT Crowd/Season 1
-2023-07-07T06:17:45.567Z 7Qf0HQ8DsuO:Calculating cache file size in bytes
-2023-07-07T06:17:45.577Z 7Qf0HQ8DsuO:217309966
-2023-07-07T06:17:45.578Z 7Qf0HQ8DsuO:Attempting to move cache file to output folder, method 1
-2023-07-07T06:17:45.580Z 7Qf0HQ8DsuO:File move error: Error: EXDEV: cross-device link not permitted, rename '/temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-CGJ7RG39W.mkv' -> '/media/tvshows/The IT Crowd/Season 1/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-1zdO2HHHYX.mkv'
-2023-07-07T06:17:45.580Z 7Qf0HQ8DsuO:File move error: Cache file /temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-CGJ7RG39W.mkv (217309966 bytes) does not match size of new cache file /media/tvshows/The IT Crowd/Season 1/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-1zdO2HHHYX.mkv (0 bytes)
-2023-07-07T06:17:45.580Z 7Qf0HQ8DsuO:Attempting to move/copy cache file to output folder, method 2
-2023-07-07T06:17:45.586Z 7Qf0HQ8DsuO:File move error: Error: EBADF: bad file descriptor, copyfile '/temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-CGJ7RG39W.mkv' -> '/media/tvshows/The IT Crowd/Season 1/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-1zdO2HHHYX.mkv'
-2023-07-07T06:17:45.587Z 7Qf0HQ8DsuO:File move error: Cache file /temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-CGJ7RG39W.mkv (217309966 bytes) does not match size of new cache file /media/tvshows/The IT Crowd/Season 1/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-1zdO2HHHYX.mkv (0 bytes)
-2023-07-07T06:17:45.587Z 7Qf0HQ8DsuO:Attempting to copy
-2023-07-07T06:17:57.670Z 7Qf0HQ8DsuO:Move/Copy succeeded
-2023-07-07T06:17:58.674Z 7Qf0HQ8DsuO:Deleting cache file /temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-CGJ7RG39W.mkv
-2023-07-07T06:17:58.674Z 7Qf0HQ8DsuO:Deleting cache file /temp/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-CGJ7RG39W.mkv success
-2023-07-07T06:17:58.675Z 7Qf0HQ8DsuO:Deleting original file: /media/tvshows/The IT Crowd/Season 1/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper.mp4
-2023-07-07T06:17:59.677Z 7Qf0HQ8DsuO:New file name: /media/tvshows/The IT Crowd/Season 1/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper.mkv
-2023-07-07T06:17:59.682Z 7Qf0HQ8DsuO:Renaming cache file to new name
-2023-07-07T06:17:59.682Z 7Qf0HQ8DsuO:/media/tvshows/The IT Crowd/Season 1/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper-TdarrCacheFile-1zdO2HHHYX.mkv
-2023-07-07T06:17:59.684Z 7Qf0HQ8DsuO:/media/tvshows/The IT Crowd/Season 1/The IT Crowd - S01E03 - Fifty-Fifty WEBDL-720p Proper.mkv
-2023-07-07T06:17:59.684Z 7Qf0HQ8DsuO:Removing item from staging section
-2023-07-07T06:17:59.685Z 7Qf0HQ8DsuO:Scanning new file
-2023-07-07T06:17:59.686Z 7Qf0HQ8DsuO:Running new file through post processing plugins
-2023-07-07T06:17:59.687Z 7Qf0HQ8DsuO:Getting enabled plugins
-2023-07-07T06:17:59.687Z 7Qf0HQ8DsuO:Sorting plugins by priority
-2023-07-07T06:17:59.688Z 7Qf0HQ8DsuO:Plugins selected: 7, checking which ones are Post-processing
-2023-07-07T06:17:59.688Z 7Qf0HQ8DsuO:Plugin 1: path=/app/server/Tdarr/Plugins/Community/Tdarr_Plugin_MC93_MigzImageRemoval.js
-2023-07-07T06:17:59.689Z 7Qf0HQ8DsuO:Plugin 1: importing plugin
-2023-07-07T06:17:59.691Z 7Qf0HQ8DsuO:Plugin 2: path=/app/server/Tdarr/Plugins/Community/Tdarr_Plugin_lmg1_Reorder_Streams.js
-2023-07-07T06:17:59.691Z 7Qf0HQ8DsuO:Plugin 2: importing plugin
-2023-07-07T06:17:59.692Z 7Qf0HQ8DsuO:Plugin 3: path=/app/server/Tdarr/Plugins/Community/Tdarr_Plugin_00td_action_standardise_audio_stream_codecs.js
-2023-07-07T06:17:59.694Z 7Qf0HQ8DsuO:Plugin 3: importing plugin
-2023-07-07T06:17:59.695Z 7Qf0HQ8DsuO:Plugin 4: path=/app/server/Tdarr/Plugins/Community/Tdarr_Plugin_075a_Transcode_Customisable.js
-2023-07-07T06:17:59.697Z 7Qf0HQ8DsuO:Plugin 4: importing plugin
-2023-07-07T06:17:59.699Z 7Qf0HQ8DsuO:Plugin 5: path=/app/server/Tdarr/Plugins/Community/Tdarr_Plugin_a9he_New_file_size_check.js
-2023-07-07T06:17:59.699Z 7Qf0HQ8DsuO:Plugin 5: importing plugin
-2023-07-07T06:17:59.700Z 7Qf0HQ8DsuO:Plugin 6: path=/app/server/Tdarr/Plugins/Community/Tdarr_Plugin_00td_filter_by_file_property.js
-2023-07-07T06:17:59.700Z 7Qf0HQ8DsuO:Plugin 6: importing plugin
-2023-07-07T06:17:59.700Z 7Qf0HQ8DsuO:Plugin 7: path=/app/server/Tdarr/Plugins/Community/Tdarr_Plugin_00td_action_remux_container.js
-2023-07-07T06:17:59.700Z 7Qf0HQ8DsuO:Plugin 7: importing plugin
-2023-07-07T06:17:59.701Z 7Qf0HQ8DsuO:
-2023-07-07T06:17:59.701Z 7Qf0HQ8DsuO:Removing original item from database
-2023-07-07T06:17:59.701Z 7Qf0HQ8DsuO:Adding new file to database
-2023-07-07T06:17:59.702Z 7Qf0HQ8DsuO:Updating size stats
-2023-07-07T06:17:59.702Z 7Qf0HQ8DsuO:[Step S03] Item processing end. [-success-]

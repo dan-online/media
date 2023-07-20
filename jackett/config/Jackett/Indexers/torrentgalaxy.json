@@ -9,13 +9,13 @@
     "id": "cookieheader",
     "type": "hiddendata",
     "name": "CookieHeader",
-    "value": "PHPSESSID=gg19jj2b405t2el1ce2br86gfu"
+    "value": "PHPSESSID=o537lhhbkkea7thj0942u48g53"
   },
   {
     "id": "lasterror",
     "type": "hiddendata",
     "name": "LastError",
-    "value": null
+    "value": "Got captcha during automatic login, please reconfigure manually"
   },
   {
     "id": "excluderesultswhichincludeadvertisements",
@@ -44,6 +44,12 @@
       "desc": "desc",
       "asc": "asc"
     }
+  },
+  {
+    "id": "captchatext",
+    "type": "inputstring",
+    "name": "Captcha Text",
+    "value": null
   },
   {
     "id": "tags",
