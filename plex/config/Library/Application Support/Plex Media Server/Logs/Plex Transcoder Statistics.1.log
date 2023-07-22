@@ -1,0 +1,66 @@
+<SessionReport version="2" startTime="0" startTimestamp="Jul 22, 2023 22:13:02.500" key="/library/metadata/39" session="azac27eoqpi33y3mzfdzjlnt" transcode="3dpp4ty5rbidq6xnkta9c52b">
+<User id="1" thumb="https://plex.tv/users/a199be9e645384c9/avatar?c=1690060238" title="dancodes" />
+<Player address="127.0.0.1" device="Windows" machineIdentifier="ev4y071kmruc0bp27x4fyg5a" model="bundled" platform="Chrome" platformVersion="114.0" product="Plex Web" remotePublicAddress="127.0.0.1" title="Chrome" version="4.108.0" local="0" relayed="1" secure="1" userID="1" />
+<Variants>
+<Variant id="bf3df046-3d45-4e38-ad2f-7a87cce6a029" targetBitrate="712" context="streaming" sourceVideoCodec="h264" sourceAudioCodec="aac" videoDecision="transcode" audioDecision="transcode" protocol="dash" container="mp4" videoCodec="h264" audioCodec="aac" audioChannels="2" transcodeHwRequested="0" transcodeHwFullPipeline="0">
+<Media audioProfile="lc" id="35" videoProfile="high 10" audioChannels="2" audioCodec="aac" bitrate="678" container="mp4" duration="1735008" height="270" optimizedForStreaming="1" protocol="dash" videoCodec="h264" videoFrameRate="PAL" videoResolution="SD" width="480" selected="1">
+<Part audioProfile="lc" id="35" videoProfile="high 10" bitrate="678" container="mp4" duration="1735008" height="270" optimizedForStreaming="1" protocol="dash" width="480" decision="transcode" selected="1">
+<Stream bitrate="553" codec="h264" default="1" displayTitle="1080p (H.264 High 10)" extendedDisplayTitle="1080p (H.264 High 10)" frameRate="25" height="270" id="76" streamType="1" width="480" decision="transcode" location="segments-video" />
+<Stream bitrate="125" bitrateMode="cbr" channels="2" codec="aac" default="1" displayTitle="English (AAC Stereo)" extendedDisplayTitle="English (AAC Stereo)" id="77" language="English" languageCode="eng" languageTag="en" selected="1" streamType="2" decision="transcode" location="segments-audio" />
+</Part>
+</Media>
+</Variant>
+</Variants>
+<SegmentList>
+<Segment duration="8000" startOffset="0" endOffset="8000">
+<File name="chunk-stream0-00001.m4s" type="video">
+<FileVariant size="419312" variant="bf3df046-3d45-4e38-ad2f-7a87cce6a029" />
+</File>
+<File name="chunk-stream1-00001.m4s" type="audio">
+<FileVariant size="123913" variant="bf3df046-3d45-4e38-ad2f-7a87cce6a029" />
+</File>
+<Timelines>
+<Transcode startTime="586" endTime="14742" complete="1" fileType="video" variant="bf3df046-3d45-4e38-ad2f-7a87cce6a029" />
+<Transcode startTime="586" endTime="14742" complete="1" fileType="audio" variant="bf3df046-3d45-4e38-ad2f-7a87cce6a029" />
+<Download startTime="15071" endTime="15143" complete="1" fileType="video" variant="bf3df046-3d45-4e38-ad2f-7a87cce6a029" />
+<Download startTime="15356" endTime="15358" complete="1" fileType="audio" variant="bf3df046-3d45-4e38-ad2f-7a87cce6a029" />
+</Timelines>
+</Segment>
+<Segment duration="8000" startOffset="8000" endOffset="16000">
+<File name="chunk-stream0-00002.m4s" type="video">
+<FileVariant size="394235" variant="bf3df046-3d45-4e38-ad2f-7a87cce6a029" />
+</File>
+<File name="chunk-stream1-00002.m4s" type="audio">
+<FileVariant size="130484" variant="bf3df046-3d45-4e38-ad2f-7a87cce6a029" />
+</File>
+<Timelines>
+<Download startTime="16247" endTime="27086" complete="1" fileType="video" variant="bf3df046-3d45-4e38-ad2f-7a87cce6a029">
+<Pause type="segmentWait" startTime="16247" endTime="27083" />
+</Download>
+<Download startTime="16571" endTime="27084" complete="1" fileType="audio" variant="bf3df046-3d45-4e38-ad2f-7a87cce6a029">
+<Pause type="segmentWait" startTime="16571" endTime="27083" />
+</Download>
+<Transcode startTime="14742" endTime="27006" complete="1" fileType="video" variant="bf3df046-3d45-4e38-ad2f-7a87cce6a029" />
+<Transcode startTime="14742" endTime="27006" complete="1" fileType="audio" variant="bf3df046-3d45-4e38-ad2f-7a87cce6a029" />
+<Download startTime="28094" endTime="28096" complete="1" fileType="video" variant="bf3df046-3d45-4e38-ad2f-7a87cce6a029" />
+<Download startTime="28491" endTime="28492" complete="1" fileType="audio" variant="bf3df046-3d45-4e38-ad2f-7a87cce6a029" />
+</Timelines>
+</Segment>
+<Segment duration="0" startOffset="-1" endOffset="-1">
+<Timelines>
+<Download startTime="29096" fileType="video" variant="bf3df046-3d45-4e38-ad2f-7a87cce6a029" />
+<Download startTime="29399" fileType="audio" variant="bf3df046-3d45-4e38-ad2f-7a87cce6a029" />
+</Timelines>
+</Segment>
+</SegmentList>
+<PlaybackReports>
+<Playback startTime="5008" endTime="17163" state="playing" progress="0" />
+<Playback startTime="17163" endTime="26685" state="buffering" progress="0" />
+<Playback startTime="26685" endTime="29500" state="buffering" progress="0" />
+<Playback startTime="29500" endTime="33643" state="playing" progress="0" />
+<Playback startTime="33643" endTime="35427" state="paused" progress="3000" />
+<Playback startTime="35427" endTime="35431" state="stopped" progress="3000" />
+</PlaybackReports>
+<StateReports />
+<StateReports />
+</SessionReport>

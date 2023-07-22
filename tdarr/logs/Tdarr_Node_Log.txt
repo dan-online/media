@@ -24625,3 +24625,301 @@
     at Timeout.<anonymous> (/snapshot/node/node_modules/socket.io-client/build/cjs/manager.js:173:38)
     at listOnTimeout (internal/timers.js:557:17)
     at processTimers (internal/timers.js:500:7)
+[2023-07-22T22:04:57.030] [INFO] Tdarr_Node - /app/configs/Tdarr_Node_Config.json
+[2023-07-22T22:04:57.528] [INFO] Tdarr_Node - {
+  nodeName: "'DANCODES-01'",
+  serverIP: '0.0.0.0',
+  serverPort: '8266',
+  handbrakePath: '',
+  ffmpegPath: '',
+  mkvpropeditPath: '',
+  pathTranslators: [ { server: '', node: '' } ],
+  logLevel: 'INFO',
+  priority: -1,
+  platform_arch_isdocker: 'linux_x64_docker_true',
+  processPid: 183,
+  nodeID: 'sDRqZfH7H'
+}
+[2023-07-22T22:04:59.935] [INFO] Tdarr_Node - version: 2.00.21
+[2023-07-22T22:04:59.935] [INFO] Tdarr_Node - platform_arch_isdocker: linux_x64_docker_true
+[2023-07-22T22:04:59.936] [INFO] Tdarr_Node - Starting Tdarr_Node
+[2023-07-22T22:04:59.936] [INFO] Tdarr_Node - Preparing environment
+[2023-07-22T22:04:59.938] [INFO] Tdarr_Node - Updating plugins
+[2023-07-22T22:05:00.654] [ERROR] Tdarr_Node - Node connection error to :0.0.0.0:8266
+[2023-07-22T22:05:00.656] [ERROR] Tdarr_Node - TransportError: xhr poll error
+    at Polling.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transport.js:45:37)
+    at Request.<anonymous> (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:251:18)
+    at Request.<anonymous> (/snapshot/node/node_modules/@socket.io/component-emitter/index.js:143:20)
+    at Request.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:352:14)
+    at Timeout._onTimeout (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:325:30)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  description: 0,
+  context: XMLHttpRequest {
+    UNSENT: 0,
+    OPENED: 1,
+    HEADERS_RECEIVED: 2,
+    LOADING: 3,
+    DONE: 4,
+    readyState: 4,
+    onreadystatechange: [Function (anonymous)],
+    responseText: 'Error: connect ECONNREFUSED 0.0.0.0:8266\n' +
+      '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)',
+    responseXML: '',
+    status: 0,
+    statusText: Error: connect ECONNREFUSED 0.0.0.0:8266
+        at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '0.0.0.0',
+      port: 8266
+    },
+    open: [Function (anonymous)],
+    setDisableHeaderCheck: [Function (anonymous)],
+    setRequestHeader: [Function (anonymous)],
+    getResponseHeader: [Function (anonymous)],
+    getAllResponseHeaders: [Function (anonymous)],
+    getRequestHeader: [Function (anonymous)],
+    send: [Function (anonymous)],
+    handleError: [Function (anonymous)],
+    abort: [Function (anonymous)],
+    addEventListener: [Function (anonymous)],
+    removeEventListener: [Function (anonymous)],
+    dispatchEvent: [Function (anonymous)]
+  },
+  type: 'TransportError'
+}
+[2023-07-22T22:05:01.551] [ERROR] Tdarr_Node - Node connection error to :0.0.0.0:8266
+[2023-07-22T22:05:01.551] [ERROR] Tdarr_Node - TransportError: xhr poll error
+    at Polling.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transport.js:45:37)
+    at Request.<anonymous> (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:251:18)
+    at Request.<anonymous> (/snapshot/node/node_modules/@socket.io/component-emitter/index.js:143:20)
+    at Request.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:352:14)
+    at Timeout._onTimeout (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:325:30)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  description: 0,
+  context: XMLHttpRequest {
+    UNSENT: 0,
+    OPENED: 1,
+    HEADERS_RECEIVED: 2,
+    LOADING: 3,
+    DONE: 4,
+    readyState: 4,
+    onreadystatechange: [Function (anonymous)],
+    responseText: 'Error: connect ECONNREFUSED 0.0.0.0:8266\n' +
+      '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)',
+    responseXML: '',
+    status: 0,
+    statusText: Error: connect ECONNREFUSED 0.0.0.0:8266
+        at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '0.0.0.0',
+      port: 8266
+    },
+    open: [Function (anonymous)],
+    setDisableHeaderCheck: [Function (anonymous)],
+    setRequestHeader: [Function (anonymous)],
+    getResponseHeader: [Function (anonymous)],
+    getAllResponseHeaders: [Function (anonymous)],
+    getRequestHeader: [Function (anonymous)],
+    send: [Function (anonymous)],
+    handleError: [Function (anonymous)],
+    abort: [Function (anonymous)],
+    addEventListener: [Function (anonymous)],
+    removeEventListener: [Function (anonymous)],
+    dispatchEvent: [Function (anonymous)]
+  },
+  type: 'TransportError'
+}
+[2023-07-22T22:05:04.357] [ERROR] Tdarr_Node - Node connection error to :0.0.0.0:8266
+[2023-07-22T22:05:04.357] [ERROR] Tdarr_Node - TransportError: xhr poll error
+    at Polling.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transport.js:45:37)
+    at Request.<anonymous> (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:251:18)
+    at Request.<anonymous> (/snapshot/node/node_modules/@socket.io/component-emitter/index.js:143:20)
+    at Request.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:352:14)
+    at Timeout._onTimeout (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:325:30)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  description: 0,
+  context: XMLHttpRequest {
+    UNSENT: 0,
+    OPENED: 1,
+    HEADERS_RECEIVED: 2,
+    LOADING: 3,
+    DONE: 4,
+    readyState: 4,
+    onreadystatechange: [Function (anonymous)],
+    responseText: 'Error: connect ECONNREFUSED 0.0.0.0:8266\n' +
+      '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)',
+    responseXML: '',
+    status: 0,
+    statusText: Error: connect ECONNREFUSED 0.0.0.0:8266
+        at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '0.0.0.0',
+      port: 8266
+    },
+    open: [Function (anonymous)],
+    setDisableHeaderCheck: [Function (anonymous)],
+    setRequestHeader: [Function (anonymous)],
+    getResponseHeader: [Function (anonymous)],
+    getAllResponseHeaders: [Function (anonymous)],
+    getRequestHeader: [Function (anonymous)],
+    send: [Function (anonymous)],
+    handleError: [Function (anonymous)],
+    abort: [Function (anonymous)],
+    addEventListener: [Function (anonymous)],
+    removeEventListener: [Function (anonymous)],
+    dispatchEvent: [Function (anonymous)]
+  },
+  type: 'TransportError'
+}
+[2023-07-22T22:05:07.082] [ERROR] Tdarr_Node - Node connection error to :0.0.0.0:8266
+[2023-07-22T22:05:07.087] [ERROR] Tdarr_Node - TransportError: xhr poll error
+    at Polling.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transport.js:45:37)
+    at Request.<anonymous> (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:251:18)
+    at Request.<anonymous> (/snapshot/node/node_modules/@socket.io/component-emitter/index.js:143:20)
+    at Request.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:352:14)
+    at Timeout._onTimeout (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:325:30)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  description: 0,
+  context: XMLHttpRequest {
+    UNSENT: 0,
+    OPENED: 1,
+    HEADERS_RECEIVED: 2,
+    LOADING: 3,
+    DONE: 4,
+    readyState: 4,
+    onreadystatechange: [Function (anonymous)],
+    responseText: 'Error: connect ECONNREFUSED 0.0.0.0:8266\n' +
+      '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)',
+    responseXML: '',
+    status: 0,
+    statusText: Error: connect ECONNREFUSED 0.0.0.0:8266
+        at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '0.0.0.0',
+      port: 8266
+    },
+    open: [Function (anonymous)],
+    setDisableHeaderCheck: [Function (anonymous)],
+    setRequestHeader: [Function (anonymous)],
+    getResponseHeader: [Function (anonymous)],
+    getAllResponseHeaders: [Function (anonymous)],
+    getRequestHeader: [Function (anonymous)],
+    send: [Function (anonymous)],
+    handleError: [Function (anonymous)],
+    abort: [Function (anonymous)],
+    addEventListener: [Function (anonymous)],
+    removeEventListener: [Function (anonymous)],
+    dispatchEvent: [Function (anonymous)]
+  },
+  type: 'TransportError'
+}
+[2023-07-22T22:05:12.207] [ERROR] Tdarr_Node - Node connection error to :0.0.0.0:8266
+[2023-07-22T22:05:12.207] [ERROR] Tdarr_Node - TransportError: xhr poll error
+    at Polling.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transport.js:45:37)
+    at Request.<anonymous> (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:251:18)
+    at Request.<anonymous> (/snapshot/node/node_modules/@socket.io/component-emitter/index.js:143:20)
+    at Request.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:352:14)
+    at Timeout._onTimeout (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:325:30)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  description: 0,
+  context: XMLHttpRequest {
+    UNSENT: 0,
+    OPENED: 1,
+    HEADERS_RECEIVED: 2,
+    LOADING: 3,
+    DONE: 4,
+    readyState: 4,
+    onreadystatechange: [Function (anonymous)],
+    responseText: 'Error: connect ECONNREFUSED 0.0.0.0:8266\n' +
+      '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)',
+    responseXML: '',
+    status: 0,
+    statusText: Error: connect ECONNREFUSED 0.0.0.0:8266
+        at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '0.0.0.0',
+      port: 8266
+    },
+    open: [Function (anonymous)],
+    setDisableHeaderCheck: [Function (anonymous)],
+    setRequestHeader: [Function (anonymous)],
+    getResponseHeader: [Function (anonymous)],
+    getAllResponseHeaders: [Function (anonymous)],
+    getRequestHeader: [Function (anonymous)],
+    send: [Function (anonymous)],
+    handleError: [Function (anonymous)],
+    abort: [Function (anonymous)],
+    addEventListener: [Function (anonymous)],
+    removeEventListener: [Function (anonymous)],
+    dispatchEvent: [Function (anonymous)]
+  },
+  type: 'TransportError'
+}
+[2023-07-22T22:05:17.223] [ERROR] Tdarr_Node - Node connection error to :0.0.0.0:8266
+[2023-07-22T22:05:17.223] [ERROR] Tdarr_Node - TransportError: xhr poll error
+    at Polling.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transport.js:45:37)
+    at Request.<anonymous> (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:251:18)
+    at Request.<anonymous> (/snapshot/node/node_modules/@socket.io/component-emitter/index.js:143:20)
+    at Request.onError (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:352:14)
+    at Timeout._onTimeout (/snapshot/node/node_modules/engine.io-client/build/cjs/transports/polling.js:325:30)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  description: 0,
+  context: XMLHttpRequest {
+    UNSENT: 0,
+    OPENED: 1,
+    HEADERS_RECEIVED: 2,
+    LOADING: 3,
+    DONE: 4,
+    readyState: 4,
+    onreadystatechange: [Function (anonymous)],
+    responseText: 'Error: connect ECONNREFUSED 0.0.0.0:8266\n' +
+      '    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)',
+    responseXML: '',
+    status: 0,
+    statusText: Error: connect ECONNREFUSED 0.0.0.0:8266
+        at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+      errno: -111,
+      code: 'ECONNREFUSED',
+      syscall: 'connect',
+      address: '0.0.0.0',
+      port: 8266
+    },
+    open: [Function (anonymous)],
+    setDisableHeaderCheck: [Function (anonymous)],
+    setRequestHeader: [Function (anonymous)],
+    getResponseHeader: [Function (anonymous)],
+    getAllResponseHeaders: [Function (anonymous)],
+    getRequestHeader: [Function (anonymous)],
+    send: [Function (anonymous)],
+    handleError: [Function (anonymous)],
+    abort: [Function (anonymous)],
+    addEventListener: [Function (anonymous)],
+    removeEventListener: [Function (anonymous)],
+    dispatchEvent: [Function (anonymous)]
+  },
+  type: 'TransportError'
+}
+[2023-07-22T22:05:26.882] [INFO] Tdarr_Node - ---------------Binary tests start----------------
+[2023-07-22T22:05:26.882] [INFO] Tdarr_Node - handbrakePath:HandBrakeCLI
+[2023-07-22T22:05:26.883] [INFO] Tdarr_Node - ffmpegPath:tdarr-ffmpeg
+[2023-07-22T22:05:26.887] [INFO] Tdarr_Node - mkvpropedit:mkvpropedit
+[2023-07-22T22:05:26.889] [INFO] Tdarr_Node - Binary test 1: handbrakePath working
+[2023-07-22T22:05:26.908] [INFO] Tdarr_Node - Binary test 2: ffmpegPath working
+[2023-07-22T22:05:26.909] [INFO] Tdarr_Node - Binary test 3: mkvpropeditPath working
+[2023-07-22T22:05:26.910] [INFO] Tdarr_Node - ---------------Binary tests end-------------------

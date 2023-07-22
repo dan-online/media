@@ -1,0 +1,152 @@
+Jul 22, 2023 22:07:44.011 [139872084110080] INFO - Plex Media Scanner v1.32.5.7328-2632c9d3a - Docker Docker Container x86_64 - build: linux-x86_64 - GMT 00:00
+Jul 22, 2023 22:07:44.011 [139872084110080] INFO - Linux version: 5.15.0-71-generic, language: en-US
+Jul 22, 2023 22:07:44.011 [139872084110080] INFO - Processor: 4-core AMD EPYC 7282 16-Core Processor                
+Jul 22, 2023 22:07:44.011 [139872084110080] INFO - /usr/lib/plexmediaserver/Plex Media Scanner --match --type 2 --log-file-suffix  Matcher --item 60
+Jul 22, 2023 22:07:44.211 [139872084605760] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.39.4, threadsafe=1
+Jul 22, 2023 22:07:45.519 [139872084605760] DEBUG - Matcher: found 2 auxiliary files for Season 2
+Jul 22, 2023 22:07:45.521 [139872084605760] DEBUG - [MI] Opening input file: "/data/tvshows/Jujutsu Kaisen/Season 2/Jujutsu Kaisen - S02E01 - Hidden Inventory WEBRip-1080p.mp4"
+Jul 22, 2023 22:07:45.522 [139872084605760] DEBUG - [FFMPEG] - Opening '/data/tvshows/Jujutsu Kaisen/Season 2/Jujutsu Kaisen - S02E01 - Hidden Inventory WEBRip-1080p.mp4' for reading
+Jul 22, 2023 22:07:45.522 [139872084605760] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:07:45.526 [139872084605760] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Jul 22, 2023 22:07:45.528 [139872084605760] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Jul 22, 2023 22:07:45.528 [139872084605760] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:07:45.633 [139872084605760] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 2002, duration: 34440408
+Jul 22, 2023 22:07:45.635 [139872084605760] DEBUG - [FFMPEG] - Offset DTS by 2002 to make first pts zero.
+Jul 22, 2023 22:07:45.636 [139872084605760] DEBUG - [FFMPEG] - Setting codecpar->delay to 2 for stream st: 0
+Jul 22, 2023 22:07:45.636 [139872084605760] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:07:45.636 [139872084605760] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 0, duration: 1432700000
+Jul 22, 2023 22:07:45.636 [139872084605760] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:07:45.841 [139872084605760] DEBUG - [FFMPEG] - Processing st: 2, edit list 0 - media time: 1024, duration: 63287293
+Jul 22, 2023 22:07:45.841 [139872084605760] DEBUG - [FFMPEG] - drop a frame at curr_cts: 0 @ 0
+Jul 22, 2023 22:07:45.845 [139872084605760] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:07:45.845 [139872084605760] DEBUG - [FFMPEG] - Processing st: 3, edit list 0 - media time: -1, duration: 649000
+Jul 22, 2023 22:07:45.845 [139872084605760] DEBUG - [FFMPEG] - Processing st: 3, edit list 1 - media time: 0, duration: 786086
+Jul 22, 2023 22:07:45.846 [139872084605760] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:07:45.846 [139872084605760] DEBUG - [FFMPEG] - Processing st: 4, edit list 0 - media time: 0, duration: 1435086
+Jul 22, 2023 22:07:45.846 [139872084605760] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 1461654 bytes read:1485272 seeks:0 nb_streams:5
+Jul 22, 2023 22:07:45.921 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:07:45.921 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:07:45.925 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:07:45.925 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:07:45.925 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:07:45.926 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:07:45.926 [139872084605760] DEBUG - [FFMPEG] - Format yuv420p10le chosen by get_format().
+Jul 22, 2023 22:07:45.930 [139872084605760] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:07:45.945 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:07:46.344 [139872084605760] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:07:46.447 [139872084605760] DEBUG - [FFMPEG] - demuxer injecting skip 1024 / discard 0
+Jul 22, 2023 22:07:46.447 [139872084605760] DEBUG - [FFMPEG] - skip 1024 / discard 0 samples due to side data
+Jul 22, 2023 22:07:46.447 [139872084605760] DEBUG - [FFMPEG] - All info found
+Jul 22, 2023 22:07:46.516 [139872084605760] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 1495785 bytes read:1518040 seeks:0 frames:3
+Jul 22, 2023 22:07:46.516 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:07:46.516 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:07:46.517 [139872084605760] DEBUG - [MI] Closing input file: "/data/tvshows/Jujutsu Kaisen/Season 2/Jujutsu Kaisen - S02E01 - Hidden Inventory WEBRip-1080p.mp4"
+Jul 22, 2023 22:07:46.517 [139872084605760] DEBUG - Scanner: found local sidecar subtitle "/data/tvshows/Jujutsu Kaisen/Season 2/Jujutsu Kaisen - S02E01 - Hidden Inventory WEBRip-1080p.en.srt"
+Jul 22, 2023 22:07:46.517 [139872084605760] DEBUG - [FFMPEG] - Opening '/data/tvshows/Jujutsu Kaisen/Season 2/Jujutsu Kaisen - S02E01 - Hidden Inventory WEBRip-1080p.en.srt' for reading
+Jul 22, 2023 22:07:46.517 [139872084605760] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:07:46.926 [139872084605760] DEBUG - [FFMPEG] - Format srt probed with size=2048 and score=100
+Jul 22, 2023 22:07:46.936 [139872084605760] DEBUG - [MI] Opening input file: "/data/tvshows/Jujutsu Kaisen/Season 2/Jujutsu Kaisen - S02E02 - Hidden Inventory 2 WEBDL-2160p.mp4"
+Jul 22, 2023 22:07:46.937 [139872084605760] DEBUG - [FFMPEG] - Opening '/data/tvshows/Jujutsu Kaisen/Season 2/Jujutsu Kaisen - S02E02 - Hidden Inventory 2 WEBDL-2160p.mp4' for reading
+Jul 22, 2023 22:07:46.937 [139872084605760] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:07:47.035 [139872084605760] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Jul 22, 2023 22:07:47.036 [139872084605760] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Jul 22, 2023 22:07:47.036 [139872084605760] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:07:47.042 [139872084605760] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 2002, duration: 22959632
+Jul 22, 2023 22:07:47.044 [139872084605760] DEBUG - [FFMPEG] - Offset DTS by 2002 to make first pts zero.
+Jul 22, 2023 22:07:47.045 [139872084605760] DEBUG - [FFMPEG] - Setting codecpar->delay to 3 for stream st: 0
+Jul 22, 2023 22:07:47.045 [139872084605760] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:07:47.045 [139872084605760] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 0, duration: 1434095000
+Jul 22, 2023 22:07:47.045 [139872084605760] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:07:47.046 [139872084605760] DEBUG - [FFMPEG] - Processing st: 2, edit list 0 - media time: 0, duration: 1436026000
+Jul 22, 2023 22:07:47.046 [139872084605760] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:07:47.046 [139872084605760] DEBUG - [FFMPEG] - Processing st: 3, edit list 0 - media time: 0, duration: 1435002000
+Jul 22, 2023 22:07:47.046 [139872084605760] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:07:47.046 [139872084605760] DEBUG - [FFMPEG] - Processing st: 4, edit list 0 - media time: 0, duration: 1434003000
+Jul 22, 2023 22:07:47.046 [139872084605760] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:07:47.123 [139872084605760] DEBUG - [FFMPEG] - Processing st: 5, edit list 0 - media time: 0, duration: 68883456
+Jul 22, 2023 22:07:47.127 [139872084605760] DEBUG - [FFMPEG] - rfps: 23.916667 0.004854
+Jul 22, 2023 22:07:47.127 [139872084605760] DEBUG - [FFMPEG] - rfps: 23.916667 0.004854
+Jul 22, 2023 22:07:47.127 [139872084605760] DEBUG - [FFMPEG] - rfps: 24.000000 0.000908
+Jul 22, 2023 22:07:47.127 [139872084605760] DEBUG - [FFMPEG] - rfps: 24.083333 0.016298
+Jul 22, 2023 22:07:47.127 [139872084605760] DEBUG - [FFMPEG] - rfps: 48.000000 0.003632
+Jul 22, 2023 22:07:47.127 [139872084605760] DEBUG - [FFMPEG] - rfps: 23.976024 0.000062
+Jul 22, 2023 22:07:47.127 [139872084605760] DEBUG - [FFMPEG] - rfps: 47.952048 0.000247
+Jul 22, 2023 22:07:47.130 [139872084605760] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 1210737 bytes read:1234626 seeks:0 nb_streams:6
+Jul 22, 2023 22:07:47.130 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:07:47.131 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:07:47.137 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:07:47.137 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:07:47.137 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 9(AUD), nal_ref_idc: 0
+Jul 22, 2023 22:07:47.137 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:07:47.137 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:07:47.138 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:07:47.138 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:07:47.138 [139872084605760] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Jul 22, 2023 22:07:47.838 [139872084605760] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:07:48.225 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 9(AUD), nal_ref_idc: 0
+Jul 22, 2023 22:07:48.225 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:07:50.543 [139872084605760] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:07:50.834 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 9(AUD), nal_ref_idc: 0
+Jul 22, 2023 22:07:50.834 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:07:53.358 [139872084605760] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:07:53.463 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 9(AUD), nal_ref_idc: 0
+Jul 22, 2023 22:07:53.463 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:07:54.362 [139872084605760] DEBUG - [FFMPEG] - All info found
+Jul 22, 2023 22:07:54.461 [139872084605760] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 1507416 bytes read:1508730 seeks:0 frames:9
+Jul 22, 2023 22:07:54.462 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:07:54.462 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:07:54.462 [139872084605760] DEBUG - [MI] Closing input file: "/data/tvshows/Jujutsu Kaisen/Season 2/Jujutsu Kaisen - S02E02 - Hidden Inventory 2 WEBDL-2160p.mp4"
+Jul 22, 2023 22:07:54.479 [139872084605760] DEBUG - Matcher: no sidecar subtitle files found for /data/tvshows/Jujutsu Kaisen/Season 2/Jujutsu Kaisen - S02E02 - Hidden Inventory 2 WEBDL-2160p.mp4
+Jul 22, 2023 22:07:54.570 [139872084605760] DEBUG - [MI] Opening input file: "/data/tvshows/Jujutsu Kaisen/Season 2/Jujutsu Kaisen - S02E03 - Hidden Inventory 3 WEBDL-2160p.mp4"
+Jul 22, 2023 22:07:54.571 [139872084605760] DEBUG - [FFMPEG] - Opening '/data/tvshows/Jujutsu Kaisen/Season 2/Jujutsu Kaisen - S02E03 - Hidden Inventory 3 WEBDL-2160p.mp4' for reading
+Jul 22, 2023 22:07:54.571 [139872084605760] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:07:54.574 [139872084605760] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Jul 22, 2023 22:07:54.575 [139872084605760] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Jul 22, 2023 22:07:54.575 [139872084605760] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:07:54.676 [139872084605760] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 2002, duration: 22960944
+Jul 22, 2023 22:07:54.678 [139872084605760] DEBUG - [FFMPEG] - Offset DTS by 2002 to make first pts zero.
+Jul 22, 2023 22:07:54.678 [139872084605760] DEBUG - [FFMPEG] - Setting codecpar->delay to 3 for stream st: 0
+Jul 22, 2023 22:07:54.678 [139872084605760] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:07:54.678 [139872084605760] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 0, duration: 1434610000
+Jul 22, 2023 22:07:54.679 [139872084605760] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:07:54.679 [139872084605760] DEBUG - [FFMPEG] - Processing st: 2, edit list 0 - media time: 0, duration: 1434250000
+Jul 22, 2023 22:07:54.679 [139872084605760] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:07:54.679 [139872084605760] DEBUG - [FFMPEG] - Processing st: 3, edit list 0 - media time: 0, duration: 1436710000
+Jul 22, 2023 22:07:54.679 [139872084605760] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:07:54.679 [139872084605760] DEBUG - [FFMPEG] - Processing st: 4, edit list 0 - media time: 0, duration: 1436720000
+Jul 22, 2023 22:07:54.679 [139872084605760] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:07:55.056 [139872084605760] DEBUG - [FFMPEG] - Processing st: 5, edit list 0 - media time: 0, duration: 68887536
+Jul 22, 2023 22:07:55.058 [139872084605760] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:07:55.058 [139872084605760] DEBUG - [FFMPEG] - Processing st: 6, edit list 0 - media time: 0, duration: 1436720
+Jul 22, 2023 22:07:55.058 [139872084605760] DEBUG - [FFMPEG] - rfps: 23.916667 0.004854
+Jul 22, 2023 22:07:55.058 [139872084605760] DEBUG - [FFMPEG] - rfps: 23.916667 0.004854
+Jul 22, 2023 22:07:55.058 [139872084605760] DEBUG - [FFMPEG] - rfps: 24.000000 0.000908
+Jul 22, 2023 22:07:55.058 [139872084605760] DEBUG - [FFMPEG] - rfps: 24.083333 0.016298
+Jul 22, 2023 22:07:55.058 [139872084605760] DEBUG - [FFMPEG] - rfps: 48.000000 0.003632
+Jul 22, 2023 22:07:55.058 [139872084605760] DEBUG - [FFMPEG] - rfps: 23.976024 0.000062
+Jul 22, 2023 22:07:55.058 [139872084605760] DEBUG - [FFMPEG] - rfps: 47.952048 0.000247
+Jul 22, 2023 22:07:55.059 [139872084605760] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 1413224 bytes read:1436885 seeks:0 nb_streams:7
+Jul 22, 2023 22:07:55.059 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:07:55.059 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:07:55.060 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:07:55.060 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:07:55.060 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:07:55.060 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:07:55.060 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:07:55.060 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:07:55.060 [139872084605760] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Jul 22, 2023 22:07:55.068 [139872084605760] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:07:55.158 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:07:55.473 [139872084605760] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:07:55.555 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:07:57.679 [139872084605760] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:07:57.771 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:07:59.105 [139872084605760] DEBUG - [FFMPEG] - All info found
+Jul 22, 2023 22:07:59.214 [139872084605760] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 1415753 bytes read:1436885 seeks:0 frames:5
+Jul 22, 2023 22:07:59.214 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:07:59.214 [139872084605760] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:07:59.223 [139872084605760] DEBUG - [MI] Closing input file: "/data/tvshows/Jujutsu Kaisen/Season 2/Jujutsu Kaisen - S02E03 - Hidden Inventory 3 WEBDL-2160p.mp4"
+Jul 22, 2023 22:07:59.292 [139872084605760] DEBUG - Scanner: found local sidecar subtitle "/data/tvshows/Jujutsu Kaisen/Season 2/Jujutsu Kaisen - S02E03 - Hidden Inventory 3 WEBDL-2160p.en.srt"
+Jul 22, 2023 22:07:59.292 [139872084605760] DEBUG - [FFMPEG] - Opening '/data/tvshows/Jujutsu Kaisen/Season 2/Jujutsu Kaisen - S02E03 - Hidden Inventory 3 WEBDL-2160p.en.srt' for reading
+Jul 22, 2023 22:07:59.292 [139872084605760] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:07:59.719 [139872084605760] DEBUG - [FFMPEG] - Format srt probed with size=2048 and score=100

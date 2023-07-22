@@ -1,0 +1,581 @@
+Jul 22, 2023 21:53:28.615 [139689498741560] INFO - Plex Media Server v1.32.5.7328-2632c9d3a - Docker Docker Container x86_64 - build: linux-x86_64 debian - GMT 00:00
+Jul 22, 2023 21:53:28.616 [139689498741560] INFO - Linux version: 5.15.0-71-generic, language: en-US
+Jul 22, 2023 21:53:28.616 [139689498741560] INFO - Processor: 4-core AMD EPYC 7282 16-Core Processor                
+Jul 22, 2023 21:53:28.616 [139689498741560] INFO - Compiler is - Clang 11.0.1 (https://plex.tv 9b997da8e5b47bdb4a9425b3a3b290be393b4b1f)
+Jul 22, 2023 21:53:28.616 [139689498741560] INFO - /usr/lib/plexmediaserver/Plex Media Server
+Jul 22, 2023 21:53:28.616 [139689501285008] DEBUG - BPQ: [Idle] -> [Starting]
+Jul 22, 2023 21:53:28.617 [139689501285008] DEBUG - FeatureManager: Using cached data for features list
+Jul 22, 2023 21:53:28.824 [139689501285008] DEBUG - HttpServer: Listening on IPv6 as well as IPv4.
+Jul 22, 2023 21:53:28.824 [139689501285008] DEBUG - HttpServer: Listening on port 32400.
+Jul 22, 2023 21:53:28.824 [139689501285008] DEBUG - HttpServer: Listening on port 32401.
+Jul 22, 2023 21:53:28.824 [139689501285008] DEBUG - Running server...
+Jul 22, 2023 21:53:28.825 [139689501285008] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.39.4, threadsafe=1
+Jul 22, 2023 21:53:28.825 [139689488644920] DEBUG - HttpServer: Set up a thread pool with 2 threads.
+Jul 22, 2023 21:53:29.016 [139689501285008] INFO - Running migrations. (EPG 0)
+Jul 22, 2023 21:53:29.016 [139689501285008] DEBUG - Captured session 0.
+Jul 22, 2023 21:53:29.016 [139689501285008] DEBUG - Captured session 1.
+Jul 22, 2023 21:53:29.016 [139689501285008] DEBUG - Captured session 2.
+Jul 22, 2023 21:53:29.016 [139689501285008] DEBUG - Captured session 3.
+Jul 22, 2023 21:53:29.016 [139689501285008] DEBUG - Captured session 4.
+Jul 22, 2023 21:53:29.016 [139689501285008] DEBUG - Captured session 5.
+Jul 22, 2023 21:53:29.016 [139689501285008] DEBUG - Captured session 6.
+Jul 22, 2023 21:53:29.016 [139689501285008] DEBUG - Captured session 7.
+Jul 22, 2023 21:53:29.016 [139689501285008] DEBUG - Captured session 8.
+Jul 22, 2023 21:53:29.016 [139689501285008] DEBUG - Captured session 9.
+Jul 22, 2023 21:53:29.016 [139689501285008] DEBUG - Captured session 10.
+Jul 22, 2023 21:53:29.016 [139689501285008] DEBUG - Captured session 11.
+Jul 22, 2023 21:53:29.016 [139689501285008] DEBUG - Captured session 12.
+Jul 22, 2023 21:53:29.016 [139689501285008] DEBUG - Captured session 13.
+Jul 22, 2023 21:53:29.016 [139689501285008] DEBUG - Captured session 14.
+Jul 22, 2023 21:53:29.016 [139689501285008] DEBUG - Captured session 15.
+Jul 22, 2023 21:53:29.016 [139689501285008] DEBUG - Captured session 16.
+Jul 22, 2023 21:53:29.016 [139689501285008] DEBUG - Captured session 17.
+Jul 22, 2023 21:53:29.016 [139689501285008] DEBUG - Captured session 18.
+Jul 22, 2023 21:53:29.016 [139689501285008] DEBUG - Captured session 19.
+Jul 22, 2023 21:53:29.020 [139689501285008] DEBUG - ChangestampAllocator: initialized to 0
+Jul 22, 2023 21:53:29.020 [139689501285008] DEBUG - Opening 2 database sessions to library (com.plexapp.plugins.library.blobs), SQLite 3.39.4, threadsafe=1
+Jul 22, 2023 21:53:29.027 [139689501285008] INFO - Running migrations. (EPG 0)
+Jul 22, 2023 21:53:29.027 [139689501285008] DEBUG - Captured session 0.
+Jul 22, 2023 21:53:29.027 [139689501285008] DEBUG - Captured session 1.
+Jul 22, 2023 21:53:29.134 [139689480538936] DEBUG - Grabber: Cleaning up orphaned grabs.
+Jul 22, 2023 21:53:29.134 [139689480538936] DEBUG - Grabber: Cleaned up 0 decrepit directories in 0.0 sec.
+Jul 22, 2023 21:53:29.212 [139689501285008] DEBUG - Media Provider: Registering provider com.plexapp.plugins.library
+Jul 22, 2023 21:53:29.213 [139689501285008] DEBUG - Auth: Refreshing tokens inside the token-based authentication filter.
+Jul 22, 2023 21:53:29.213 [139689501285008] DEBUG - MyPlex: mapping state set to 'Unknown'.
+Jul 22, 2023 21:53:29.213 [139689501285008] DEBUG - Relay: read 0 cached entries from hosts file
+Jul 22, 2023 21:53:29.215 [139689480538936] DEBUG - Auth: Refreshing tokens inside the token-based authentication filter.
+Jul 22, 2023 21:53:29.217 [139689501285008] DEBUG - Opening 1 database sessions to library (), SQLite 3.39.4, threadsafe=1
+Jul 22, 2023 21:53:29.227 [139689472920376] DEBUG - File "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a" changed: -1 => 2023-07-18 19:31:34 (1689708694).
+Jul 22, 2023 21:53:29.227 [139689472920376] DEBUG - File "/config/Library/Application Support/Plex Media Server/Plug-ins" changed: -1 => 2023-07-22 21:24:26 (1690061066).
+Jul 22, 2023 21:53:29.227 [139689472920376] DEBUG - Scanning for plug-ins in "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a"
+Jul 22, 2023 21:53:29.229 [139689472920376] DEBUG - Scanning for plug-ins in "/config/Library/Application Support/Plex Media Server/Plug-ins"
+Jul 22, 2023 21:53:29.230 [139689472920376] DEBUG - PluginRepository::setStartState: 1, startingSystem
+Jul 22, 2023 21:53:29.230 [139689472920376] DEBUG - Starting plug-in /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/System.bundle.
+Jul 22, 2023 21:53:29.230 [139689472920376] DEBUG - [com.plexapp.system] Setting plug-in to always running (daemon mode).
+Jul 22, 2023 21:53:29.231 [139689472920376] DEBUG - Starting file watcher for com.plexapp.system
+Jul 22, 2023 21:53:29.231 [139689472920376] DEBUG - Plugin: setting environment variable: 'PYTHONHOME=/usr/lib/plexmediaserver/Resources/Python'
+Jul 22, 2023 21:53:29.231 [139689472920376] DEBUG - Plugin: setting environment variable: 'PYTHONPATH=/usr/lib/plexmediaserver/Resources/Python/python27.zip:/usr/lib/plexmediaserver/Resources/Python/lib/python2.7/site-packages'
+Jul 22, 2023 21:53:29.231 [139689472920376] DEBUG - Spawned plug-in com.plexapp.system with PID 284
+Jul 22, 2023 21:53:29.231 [139689472920376] DEBUG - [com.plexapp.system] Sending command: GET /:/prefixes
+Jul 22, 2023 21:53:30.314 [139689477368632] WARN - [MediaProviderManager] Unrecognized MediaProvider feature: availability
+Jul 22, 2023 21:53:30.314 [139689477368632] WARN - [MediaProviderManager] Unrecognized MediaProvider feature: availability-platforms
+Jul 22, 2023 21:53:30.314 [139689477368632] DEBUG - [MediaProviderManager] we had 0 cloud providers online, we now have 1
+Jul 22, 2023 21:53:30.314 [139689477368632] DEBUG - [MediaProviderManager] cloud provider (Metadata) is online and available
+Jul 22, 2023 21:53:30.614 [139689480538936] DEBUG - [JobRunner] Job running: /usr/lib/plexmediaserver/CrashUploader "--directory=/config/Library/Application Support/Plex Media Server/Crash Reports/1.32.5.7328-2632c9d3a" --version=1.32.5.7328-2632c9d3a --platform=Linux --platformVersion=5.15.0-71-generic --serverUuid=116d3cf71c23c6a4bedab1b2230981fd4d4bc8d5 --userId=NOUSERID --sentryUrl=https://o17675.ingest.sentry.io/api/1233455/minidump/ --sentryKey=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --vendor=Docker --model=x86_64 "--device=Docker Container"
+Jul 22, 2023 21:53:30.619 [139689480538936] DEBUG - [JobRunner] Jobs: Starting child process with pid 287
+Jul 22, 2023 21:53:30.724 [139689496542008] DEBUG - Jobs: '/usr/lib/plexmediaserver/CrashUploader' exit code for process 287 is 0 (success)
+Jul 22, 2023 21:53:32.023 [139689464335160] DEBUG - Request: [127.0.0.1:36206 (Loopback)] GET /identity (2 live) #1
+Jul 22, 2023 21:53:32.024 [139689494068024] DEBUG - Completed: [127.0.0.1:36206] 503 GET /identity (2 live) #1 2ms 375 bytes (pipelined: 1)
+Jul 22, 2023 21:53:33.836 [139689464335160] DEBUG - Request: [127.0.0.1:36220 (Loopback)] GET /:/plugins/com.plexapp.system/messaging/function/X0J1bmRsZVNlcnZpY2U6QWxsU2VydmljZXM_/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxCmRpY3QKMApyMAo_ (2 live) #3 GZIP Token ()
+Jul 22, 2023 21:53:33.836 [139689494068024] DEBUG - Completed: [127.0.0.1:36220] 503 GET /:/plugins/com.plexapp.system/messaging/function/X0J1bmRsZVNlcnZpY2U6QWxsU2VydmljZXM_/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxCmRpY3QKMApyMAo_ (2 live) #3 GZIP 0ms 436 bytes
+Jul 22, 2023 21:53:33.926 [139689464335160] DEBUG - Request: [127.0.0.1:36226 (Loopback)] GET / (2 live) #7 GZIP Token ()
+Jul 22, 2023 21:53:33.927 [139689494068024] DEBUG - Completed: [127.0.0.1:36226] 503 GET / (2 live) #7 GZIP 0ms 436 bytes
+Jul 22, 2023 21:53:34.732 [139689464335160] DEBUG - Request: [100.121.43.111:57488 (Subnet)] GET /web/index.html (3 live) #9 GZIP
+Jul 22, 2023 21:53:34.733 [139689494068024] DEBUG - Completed: [100.121.43.111:57488] 503 GET /web/index.html (3 live) #9 GZIP 0ms 465 bytes (pipelined: 1)
+Jul 22, 2023 21:53:35.135 [139689464335160] DEBUG - Request: [100.121.43.111:57488 (Subnet)] GET /favicon.ico (3 live) #d GZIP
+Jul 22, 2023 21:53:35.136 [139689494068024] DEBUG - Completed: [100.121.43.111:57488] 503 GET /favicon.ico (3 live) #d GZIP 0ms 465 bytes (pipelined: 2)
+Jul 22, 2023 21:53:37.547 [139689464335160] DEBUG - Request: [127.0.0.1:36232 (Loopback)] GET /servers (4 live) #c GZIP Token ()
+Jul 22, 2023 21:53:37.547 [139689494068024] DEBUG - Completed: [127.0.0.1:36232] 503 GET /servers (4 live) #c GZIP 0ms 436 bytes
+Jul 22, 2023 21:53:37.664 [139689472920376] DEBUG - Reading 486 bytes in the body, code is 200
+Jul 22, 2023 21:53:37.665 [139689472920376] DEBUG - [com.plexapp.system] Plug-in running on port 33761.
+Jul 22, 2023 21:53:37.665 [139689472920376] DEBUG -  * Plug-in handles prefix: /system
+Jul 22, 2023 21:53:37.665 [139689472920376] DEBUG -  * Plug-in handles prefix: /player
+Jul 22, 2023 21:53:37.665 [139689472920376] DEBUG - Read configuration for [com.plexapp.system], had 2 prefixes
+Jul 22, 2023 21:53:37.665 [139689472920376] DEBUG - Done with 1 synchronous plug-in starts, starting the rest in parallel.
+Jul 22, 2023 21:53:37.665 [139689472920376] DEBUG - PluginRepository::setStartState: 2, startingPlugins
+Jul 22, 2023 21:53:37.665 [139689472920376] DEBUG - Updating the list of agents known by the system.
+Jul 22, 2023 21:53:37.665 [139689472920376] DEBUG - [com.plexapp.system] Sending command over HTTP (GET): /system/agents
+Jul 22, 2023 21:53:37.666 [139689472920376] DEBUG - [HCl#3] HTTP requesting GET http://127.0.0.1:33761/system/agents
+Jul 22, 2023 21:53:37.738 [139689501285008] DEBUG - Image transcode cache directory: "/config/Library/Application Support/Plex Media Server/Cache/PhotoTranscoder"
+Jul 22, 2023 21:53:37.739 [139689501285008] DEBUG - Transcoder: Cleaning old transcode directories.
+Jul 22, 2023 21:53:37.740 [139689501285008] DEBUG - MyPlex: stop public ip check and mapping - current mapped state: 'Unknown'.
+Jul 22, 2023 21:53:37.741 [139689501285008] DEBUG - NetworkInterface: Starting watch thread.
+Jul 22, 2023 21:53:37.741 [139689501285008] DEBUG - Network change.
+Jul 22, 2023 21:53:37.741 [139689501285008] DEBUG - NetworkInterface: Notified of network changed (force=0)
+Jul 22, 2023 21:53:37.741 [139689457769272] DEBUG - NetworkInterface: Watching for changes on the interfaces.
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG - Detected primary interface: 38.242.213.213
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG - Network interfaces:
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG -  * 1 lo (127.0.0.1) (00-00-00-00-00-00) (loopback: 1)
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG -  * 2 eth0 (38.242.213.213) (00-50-56-4A-40-60) (loopback: 0)
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG -  * 4 br-844ab54f0308 (172.21.0.1) (02-42-AB-16-03-27) (loopback: 0)
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG -  * 5 br-b4ba4a5c9881 (192.168.48.1) (02-42-8A-87-7C-4F) (loopback: 0)
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG -  * 6 br-decd4b9c8a37 (192.168.128.1) (02-42-CD-D7-46-41) (loopback: 0)
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG -  * 8 br-67792296b534 (192.168.144.1) (02-42-9C-EB-56-AD) (loopback: 0)
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG -  * 9 br-6be3b9425618 (172.18.0.1) (02-42-41-96-0D-2F) (loopback: 0)
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG -  * 96 br-dde10875367f (172.28.0.1) (02-42-5E-9B-97-2B) (loopback: 0)
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG -  * 97 br-6fb8d94ae783 (172.29.0.1) (02-42-A5-52-0D-46) (loopback: 0)
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG - Creating NetworkServices singleton.
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG - NetworkServices: Initializing...
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG - NetworkService: Creating new service.
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG - NetworkService: Got notification of changed network (first change: 1)
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG - NetworkService: Quick dispatch of network change.
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG - NetworkService: Creating new service.
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG - NetworkService: Got notification of changed network (first change: 1)
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG - NetworkService: Quick dispatch of network change.
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG - NetworkService: Creating new service.
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG - NetworkService: Got notification of changed network (first change: 1)
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG - NetworkService: Quick dispatch of network change.
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG - NetworkService: Creating new service.
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG - NetworkService: Got notification of changed network (first change: 1)
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG - NetworkService: Quick dispatch of network change.
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG - NetworkService: Creating new service.
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG - NetworkService: Got notification of changed network (first change: 1)
+Jul 22, 2023 21:53:37.742 [139689501285008] DEBUG - NetworkService: Quick dispatch of network change.
+Jul 22, 2023 21:53:37.751 [139689455659832] DEBUG - Network change for advertiser.
+Jul 22, 2023 21:53:37.751 [139689455659832] DEBUG - NetworkService: Setting up multicast listener on 0.0.0.0:32414
+Jul 22, 2023 21:53:37.752 [139689501285008] DEBUG - NetworkService: Creating new service.
+Jul 22, 2023 21:53:37.752 [139689501285008] DEBUG - NetworkService: Got notification of changed network (first change: 1)
+Jul 22, 2023 21:53:37.752 [139689501285008] DEBUG - NetworkService: Quick dispatch of network change.
+Jul 22, 2023 21:53:37.752 [139689455659832] DEBUG - Network change for advertiser.
+Jul 22, 2023 21:53:37.752 [139689455659832] DEBUG - NetworkService: Setting up multicast listener on 0.0.0.0:32410
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - Network change for advertiser.
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Setting up multicast listener on 0.0.0.0:32412
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Network change for browser (polled=0), closing 0 browse sockets.
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Setting up multicast listener on 0.0.0.0:32413
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Browsing on interface 127.0.0.1 on broadcast address 127.255.255.255 (index: 0)
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Browsing on interface 38.242.213.213 on broadcast address 38.242.223.255 (index: 1)
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Browsing on interface 172.21.0.1 on broadcast address 172.21.255.255 (index: 2)
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Browsing on interface 192.168.48.1 on broadcast address 192.168.63.255 (index: 3)
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Browsing on interface 192.168.128.1 on broadcast address 192.168.143.255 (index: 4)
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Browsing on interface 192.168.144.1 on broadcast address 192.168.159.255 (index: 5)
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Browsing on interface 172.18.0.1 on broadcast address 172.18.255.255 (index: 6)
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Browsing on interface 172.28.0.1 on broadcast address 172.28.255.255 (index: 7)
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Browsing on interface 172.29.0.1 on broadcast address 172.29.255.255 (index: 8)
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Network change for browser (polled=1), closing 0 browse sockets.
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Browsing on interface 127.0.0.1 on broadcast address 127.255.255.255 (index: 0)
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Browsing on interface 38.242.213.213 on broadcast address 38.242.223.255 (index: 1)
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Browsing on interface 172.21.0.1 on broadcast address 172.21.255.255 (index: 2)
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Browsing on interface 192.168.48.1 on broadcast address 192.168.63.255 (index: 3)
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Browsing on interface 192.168.128.1 on broadcast address 192.168.143.255 (index: 4)
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Browsing on interface 192.168.144.1 on broadcast address 192.168.159.255 (index: 5)
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Browsing on interface 172.18.0.1 on broadcast address 172.18.255.255 (index: 6)
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Browsing on interface 172.28.0.1 on broadcast address 172.28.255.255 (index: 7)
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Browsing on interface 172.29.0.1 on broadcast address 172.29.255.255 (index: 8)
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Network change for browser (polled=0), closing 0 browse sockets.
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Setting up multicast listener on 0.0.0.0:1901
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Browsing on interface 38.242.213.213 on broadcast address 239.255.255.250 (index: 0)
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Browsing on interface 172.21.0.1 on broadcast address 239.255.255.250 (index: 1)
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Browsing on interface 192.168.48.1 on broadcast address 239.255.255.250 (index: 2)
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Browsing on interface 192.168.128.1 on broadcast address 239.255.255.250 (index: 3)
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Browsing on interface 192.168.144.1 on broadcast address 239.255.255.250 (index: 4)
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Browsing on interface 172.18.0.1 on broadcast address 239.255.255.250 (index: 5)
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Browsing on interface 172.28.0.1 on broadcast address 239.255.255.250 (index: 6)
+Jul 22, 2023 21:53:37.753 [139689455659832] DEBUG - NetworkService: Browsing on interface 172.29.0.1 on broadcast address 239.255.255.250 (index: 7)
+Jul 22, 2023 21:53:37.758 [139689464335160] DEBUG - Request: [127.0.0.1:36240 (Loopback)] GET /identity (4 live) #f
+Jul 22, 2023 21:53:37.758 [139689494068024] DEBUG - Completed: [127.0.0.1:36240] 503 GET /identity (4 live) #f 0ms 375 bytes (pipelined: 1)
+Jul 22, 2023 21:53:37.768 [139689451440952] DEBUG - [ChildProcessMonitor] Plex Tuner Service starting.
+Jul 22, 2023 21:53:37.769 [139689451440952] DEBUG - [ChildProcessMonitor/JobRunner] Job running: "/usr/lib/plexmediaserver/Plex Tuner Service" /usr/lib/plexmediaserver/Resources/Tuner/Private /usr/lib/plexmediaserver/Resources/Tuner/Shared 1.32.5.7328-2632c9d3a 32600
+Jul 22, 2023 21:53:37.839 [139689451440952] DEBUG - [ChildProcessMonitor/JobRunner] Jobs: Starting child process with pid 349
+Jul 22, 2023 21:53:38.065 [139689475242808] DEBUG - [HttpClient/HCl#3] HTTP/1.1 (0.4s) 200 response from GET http://127.0.0.1:33761/system/agents
+Jul 22, 2023 21:53:38.067 [139689472920376] DEBUG - [com.plexapp.system] HTTP reply status 200, with 9087 bytes of content.
+Jul 22, 2023 21:53:38.070 [139689472920376] DEBUG - The system knows about 13 agents.
+Jul 22, 2023 21:53:38.070 [139689449331512] DEBUG - Starting plug-in /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/LocalMedia.bundle.
+Jul 22, 2023 21:53:38.139 [139689445112632] DEBUG - Starting plug-in /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/Musicbrainz.bundle.
+Jul 22, 2023 21:53:38.139 [139689447222072] DEBUG - Starting plug-in /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/Fanart-TV.bundle.
+Jul 22, 2023 21:53:38.144 [139689445112632] DEBUG - Perfect cache hit, we don't need to start [org.musicbrainz.agents.music] yet.
+Jul 22, 2023 21:53:38.144 [139689447222072] DEBUG - Perfect cache hit, we don't need to start [com.plexapp.agents.fanarttv] yet.
+Jul 22, 2023 21:53:38.146 [139689447222072] DEBUG - Starting plug-in /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle.
+Jul 22, 2023 21:53:38.146 [139689449331512] DEBUG - Perfect cache hit, we don't need to start [com.plexapp.agents.localmedia] yet.
+Jul 22, 2023 21:53:38.146 [139689449331512] DEBUG - Starting plug-in /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/Scanners.bundle.
+Jul 22, 2023 21:53:38.148 [139689445112632] DEBUG - Starting plug-in /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/HTbackdrops.bundle.
+Jul 22, 2023 21:53:38.150 [139689445112632] DEBUG - Perfect cache hit, we don't need to start [com.plexapp.agents.htbackdrops] yet.
+Jul 22, 2023 21:53:38.162 [139689472920376] DEBUG - Waiting for 12 plug-ins to finish starting.
+Jul 22, 2023 21:53:38.162 [139689447222072] DEBUG - Starting plug-in /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/Framework.bundle.
+Jul 22, 2023 21:53:38.162 [139689445112632] DEBUG - Starting plug-in /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/Media-Flags.bundle.
+Jul 22, 2023 21:53:38.163 [139689447222072] DEBUG - Starting plug-in /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/PlexMovie.bundle.
+Jul 22, 2023 21:53:38.164 [139689447222072] DEBUG - Perfect cache hit, we don't need to start [com.plexapp.agents.imdb] yet.
+Jul 22, 2023 21:53:38.164 [139689447222072] DEBUG - Starting plug-in /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/TheTVDB.bundle.
+Jul 22, 2023 21:53:38.164 [139689447222072] DEBUG - Perfect cache hit, we don't need to start [com.plexapp.agents.thetvdb] yet.
+Jul 22, 2023 21:53:38.164 [139689447222072] DEBUG - Starting plug-in /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/PersonalMedia.bundle.
+Jul 22, 2023 21:53:38.165 [139689447222072] DEBUG - Perfect cache hit, we don't need to start [com.plexapp.agents.none] yet.
+Jul 22, 2023 21:53:38.165 [139689447222072] DEBUG - Starting plug-in /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/OpenSubtitles.bundle.
+Jul 22, 2023 21:53:38.165 [139689447222072] DEBUG - Perfect cache hit, we don't need to start [com.plexapp.agents.opensubtitles] yet.
+Jul 22, 2023 21:53:38.165 [139689447222072] DEBUG - Starting plug-in /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/TheMovieDB.bundle.
+Jul 22, 2023 21:53:38.166 [139689447222072] DEBUG - Perfect cache hit, we don't need to start [com.plexapp.agents.themoviedb] yet.
+Jul 22, 2023 21:53:38.166 [139689447222072] DEBUG - Starting plug-in /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/LastFM.bundle.
+Jul 22, 2023 21:53:38.166 [139689445112632] DEBUG - Starting plug-in /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/LyricFind.bundle.
+Jul 22, 2023 21:53:38.167 [139689445112632] DEBUG - Perfect cache hit, we don't need to start [com.plexapp.agents.lyricfind] yet.
+Jul 22, 2023 21:53:38.167 [139689445112632] DEBUG - Starting plug-in /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/PlexThemeMusic.bundle.
+Jul 22, 2023 21:53:38.168 [139689445112632] DEBUG - Perfect cache hit, we don't need to start [com.plexapp.agents.plexthememusic] yet.
+Jul 22, 2023 21:53:38.168 [139689445112632] DEBUG - Starting plug-in /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/MoviePosterDB.bundle.
+Jul 22, 2023 21:53:38.169 [139689445112632] DEBUG - Perfect cache hit, we don't need to start [com.plexapp.agents.movieposterdb] yet.
+Jul 22, 2023 21:53:38.169 [139689447222072] DEBUG - Perfect cache hit, we don't need to start [com.plexapp.agents.lastfm] yet.
+Jul 22, 2023 21:53:38.243 [139689472920376] DEBUG - Starting scheduled updates, every 3600 seconds
+Jul 22, 2023 21:53:38.243 [139689472920376] INFO - LibraryUpdateManager path watching is disabled
+Jul 22, 2023 21:53:38.243 [139689472920376] DEBUG - Done waiting for all plug-ins to start.
+Jul 22, 2023 21:53:38.243 [139689472920376] DEBUG - PluginRepository::setStartState: 3, complete
+Jul 22, 2023 21:53:38.244 [139689428237112] DEBUG - Downloading document http://127.0.0.1:32400/:/plugins/com.plexapp.agents.imdb/prefs
+Jul 22, 2023 21:53:38.247 [139689428237112] DEBUG - Translator: Found locale da
+Jul 22, 2023 21:53:38.247 [139689428237112] DEBUG - Translator: Found locale cs_CZ
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale ja_JP
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale nl_BE
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale hr_HR
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale af
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale sl
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale hu
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale no
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale en
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale pl
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale ru
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale pt_BR
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale sr
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale zh_CN
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale ko
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale ro
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale sv
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale it
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale lt
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale pt
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale he
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale fr
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale nl
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale uk
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale hu_HU
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale de
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale fi
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale et_EE
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale ar
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale es
+Jul 22, 2023 21:53:38.248 [139689428237112] DEBUG - Translator: Found locale sk
+Jul 22, 2023 21:53:38.262 [139689494068024] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:38.263 [139689494068024] DEBUG - Request: [100.121.43.111:57488 (Subnet)] GET / (3 live) #e GZIP
+Jul 22, 2023 21:53:38.263 [139689494068024] DEBUG - Completed: [100.121.43.111:57488] 401 GET / (3 live) #e GZIP 0ms 435 bytes
+Jul 22, 2023 21:53:38.355 [139689428237112] DEBUG - [Req#14] Starting file watcher for com.plexapp.agents.imdb
+Jul 22, 2023 21:53:38.355 [139689428237112] DEBUG - [Req#14] Plugin: setting environment variable: 'PYTHONHOME=/usr/lib/plexmediaserver/Resources/Python'
+Jul 22, 2023 21:53:38.355 [139689428237112] DEBUG - [Req#14] Plugin: setting environment variable: 'PYTHONPATH=/usr/lib/plexmediaserver/Resources/Python/python27.zip:/usr/lib/plexmediaserver/Resources/Python/lib/python2.7/site-packages'
+Jul 22, 2023 21:53:38.359 [139689428237112] DEBUG - [Req#14] Spawned plug-in com.plexapp.agents.imdb with PID 377
+Jul 22, 2023 21:53:38.359 [139689428237112] DEBUG - [Req#14] [com.plexapp.agents.imdb] Sending command: GET /:/prefixes
+Jul 22, 2023 21:53:38.367 [139689491958584] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:38.367 [139689464335160] DEBUG - Request: [100.121.43.111:57489 (Subnet)] GET /web/index.html (2 live) #b GZIP
+Jul 22, 2023 21:53:38.370 [139689464335160] DEBUG - [Req#b] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/index.html"
+Jul 22, 2023 21:53:38.370 [139689464335160] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/index.html is 12383 (of total: 12383).
+Jul 22, 2023 21:53:38.370 [139689494068024] DEBUG - Completed: [100.121.43.111:57489] 200 GET /web/index.html (2 live) #b GZIP 3ms 12383 bytes (pipelined: 1)
+Jul 22, 2023 21:53:38.562 [139689491958584] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:38.562 [139689464335160] DEBUG - Request: [100.121.43.111:57493 (Subnet)] GET /web/3519-3519-35b03a3b034aaa63bb09-plex-4.108.0.32184-ffafb0d.css (3 live) #11 GZIP
+Jul 22, 2023 21:53:38.562 [139689464335160] DEBUG - [Req#11] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/3519-3519-35b03a3b034aaa63bb09-plex-4.108.0.32184-ffafb0d.css"
+Jul 22, 2023 21:53:38.562 [139689464335160] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/3519-3519-35b03a3b034aaa63bb09-plex-4.108.0.32184-ffafb0d.css is 80610 (of total: 80610).
+Jul 22, 2023 21:53:38.650 [139689491958584] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:38.650 [139689464335160] DEBUG - Request: [100.121.43.111:57494 (Subnet)] GET /web/main-179-69d37121295f158388fa-plex-4.108.0.32184-ffafb0d.css (4 live) #17 GZIP
+Jul 22, 2023 21:53:38.650 [139689464335160] DEBUG - [Req#17] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/main-179-69d37121295f158388fa-plex-4.108.0.32184-ffafb0d.css"
+Jul 22, 2023 21:53:38.650 [139689464335160] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/main-179-69d37121295f158388fa-plex-4.108.0.32184-ffafb0d.css is 458076 (of total: 458076).
+Jul 22, 2023 21:53:38.651 [139689491958584] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:38.652 [139689464335160] DEBUG - Request: [100.121.43.111:57489 (Subnet)] GET /web/js/3519-3519-35b03a3b034aaa63bb09-plex-4.108.0.32184-ffafb0d.js (4 live) #16 GZIP
+Jul 22, 2023 21:53:38.652 [139689464335160] DEBUG - [Req#16] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/3519-3519-35b03a3b034aaa63bb09-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:38.652 [139689464335160] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/3519-3519-35b03a3b034aaa63bb09-plex-4.108.0.32184-ffafb0d.js is 1820156 (of total: 1820156).
+Jul 22, 2023 21:53:38.753 [139689491958584] DEBUG - Completed: [100.121.43.111:57493] 200 GET /web/3519-3519-35b03a3b034aaa63bb09-plex-4.108.0.32184-ffafb0d.css (4 live) #11 GZIP 191ms 80610 bytes (pipelined: 1)
+Jul 22, 2023 21:53:38.753 [139689491958584] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:38.754 [139689464335160] DEBUG - Request: [100.121.43.111:57495 (Subnet)] GET /web/js/main-179-69d37121295f158388fa-plex-4.108.0.32184-ffafb0d.js (5 live) #18 GZIP
+Jul 22, 2023 21:53:38.755 [139689464335160] DEBUG - [Req#18] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/main-179-69d37121295f158388fa-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:38.755 [139689464335160] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/main-179-69d37121295f158388fa-plex-4.108.0.32184-ffafb0d.js is 3120893 (of total: 3120893).
+Jul 22, 2023 21:53:38.847 [139689430346552] DEBUG - DVR: Starting up.
+Jul 22, 2023 21:53:38.847 [139689501285008] DEBUG - [HCl#4] HTTP requesting GET https://plex.tv/api/v2/user/privacy?X-Plex-Token=
+Jul 22, 2023 21:53:38.848 [139689430346552] DEBUG - Activity: registered new activity 94c708e4-d48c-42fd-8dee-d6b0fc6190c0 - "Processing subscriptions"
+Jul 22, 2023 21:53:38.866 [139689430346552] DEBUG - [MediaProviderManager] we had 1 cloud providers online, we now have 1
+Jul 22, 2023 21:53:38.866 [139689430346552] DEBUG - [MediaProviderManager] cloud provider (Metadata) is online and available
+Jul 22, 2023 21:53:39.067 [139689494068024] DEBUG - Completed: [100.121.43.111:57494] 200 GET /web/main-179-69d37121295f158388fa-plex-4.108.0.32184-ffafb0d.css (5 live) #17 GZIP 416ms 458076 bytes (pipelined: 1)
+Jul 22, 2023 21:53:39.163 [139689443003192] DEBUG - DVR:Device: Discovering and refreshing all devices.
+Jul 22, 2023 21:53:39.163 [139689443003192] DEBUG - Grabber: HDHomerun discovered 0 compatible devices.
+Jul 22, 2023 21:53:39.163 [139689443003192] DEBUG - [HCl#6] HTTP requesting POST http://127.0.0.1:32600/devices/discover
+Jul 22, 2023 21:53:39.347 [139689475242808] DEBUG - [HttpClient/HCl#4] HTTP/2.0 (0.5s) 200 response from GET https://plex.tv/api/v2/user/privacy?X-Plex-Token=
+Jul 22, 2023 21:53:39.349 [139689501285008] DEBUG - [DatabaseFixups] Running fix-ups.
+Jul 22, 2023 21:53:39.349 [139689501285008] DEBUG - [DatabaseFixups] Destroyed 0 transient items.
+Jul 22, 2023 21:53:39.351 [139689501285008] DEBUG - [DatabaseFixups] Running database fix-ups completed in 0.0 seconds.
+Jul 22, 2023 21:53:39.351 [139689501285008] DEBUG - [HCl#7] HTTP requesting GET https://plex.tv/api/v2/release_channels?X-Plex-Token=
+Jul 22, 2023 21:53:39.444 [139689475242808] DEBUG - [HttpClient/HCl#7] HTTP/2.0 (0.1s) 200 response from GET https://plex.tv/api/v2/release_channels?X-Plex-Token=xxxxxxxxx
+Jul 22, 2023 21:53:39.445 [139689501285008] DEBUG - [HCl#8] HTTP requesting GET https://plex.tv/api/v2/features?X-Plex-Token=
+Jul 22, 2023 21:53:39.545 [139689475242808] DEBUG - [HttpClient/HCl#8] HTTP/2.0 (0.1s) 200 response from GET https://plex.tv/api/v2/features?X-Plex-Token=xxxxxxxxx
+Jul 22, 2023 21:53:39.548 [139689501285008] DEBUG - MyPlex: Sending unclaimed device connections
+Jul 22, 2023 21:53:39.548 [139689501285008] DEBUG - [HCl#9] HTTP requesting POST https://plex.tv/devices/116d3cf71c23c6a4bedab1b2230981fd4d4bc8d5/unclaimed?Connection[][uri]=http://172.21.0.1:32400&Connection[][uri]=http://192.168.48.1:32400&Connection[][uri]=http://192.168.128.1:32400&Connection[][uri]=http://192.168.144.1:32400&Connection[][uri]=http://172.18.0.1:32400&Connection[][uri]=http://172.28.0.1:32400&Connection[][uri]=http://172.29.0.1:32400
+Jul 22, 2023 21:53:39.646 [139689475242808] DEBUG - [HttpClient/HCl#9] HTTP/2.0 (0.1s) 200 response from POST https://plex.tv/devices/116d3cf71c23c6a4bedab1b2230981fd4d4bc8d5/unclaimed?Connection[][uri]=http://172.21.0.1:32400&Connection[][uri]=http://192.168.48.1:32400&Connection[][uri]=http://192.168.128.1:32400&Connection[][uri]=http://192.168.144.1:32400&Connection[][uri]=http://172.18.0.1:32400&Connection[][uri]=http://172.28.0.1:32400&Connection[][uri]=http://172.29.0.1:32400 (reused)
+Jul 22, 2023 21:53:39.647 [139689501285008] DEBUG - Waiting for server condition to be signaled.
+Jul 22, 2023 21:53:40.048 [139689491958584] DEBUG - Completed: [100.121.43.111:57489] 200 GET /web/js/3519-3519-35b03a3b034aaa63bb09-plex-4.108.0.32184-ffafb0d.js (5 live) #16 GZIP 1396ms 1820156 bytes (pipelined: 2)
+Jul 22, 2023 21:53:40.474 [139689491958584] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:40.475 [139689464335160] DEBUG - Request: [100.121.43.111:57497 (Subnet)] GET /web/js/3519-3519-35b03a3b034aaa63bb09-plex-4.108.0.32184-ffafb0d.js (6 live) #1a GZIP
+Jul 22, 2023 21:53:40.475 [139689464335160] DEBUG - [Req#1a] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/3519-3519-35b03a3b034aaa63bb09-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:40.475 [139689464335160] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/3519-3519-35b03a3b034aaa63bb09-plex-4.108.0.32184-ffafb0d.js is 1820156 (of total: 1820156).
+Jul 22, 2023 21:53:41.773 [139689475242808] DEBUG - [HttpClient/HCl#6] HTTP/1.1 (2.5s) 200 response from POST http://127.0.0.1:32600/devices/discover
+Jul 22, 2023 21:53:42.055 [139689464335160] DEBUG - Request: [127.0.0.1:55918 (Loopback)] GET /system/messaging/clear_events/com.plexapp.agents.imdb (7 live) #1d GZIP Token ()
+Jul 22, 2023 21:53:42.055 [139689464335160] DEBUG - [Req#1d] [com.plexapp.system] Sending command over HTTP (GET): /system/messaging/clear_events/com.plexapp.agents.imdb
+Jul 22, 2023 21:53:42.055 [139689464335160] DEBUG - [Req#1d/HCl#a] HTTP requesting GET http://127.0.0.1:33761/system/messaging/clear_events/com.plexapp.agents.imdb
+Jul 22, 2023 21:53:42.463 [139689475242808] DEBUG - [HttpClient/HCl#a] HTTP/1.1 (0.4s) 200 response from GET http://127.0.0.1:33761/system/messaging/clear_events/com.plexapp.agents.imdb (reused)
+Jul 22, 2023 21:53:42.467 [139689464335160] DEBUG - [Req#1d] [com.plexapp.system] HTTP reply status 200, with 0 bytes of content.
+Jul 22, 2023 21:53:42.470 [139689491958584] DEBUG - Completed: [127.0.0.1:55918] 200 GET /system/messaging/clear_events/com.plexapp.agents.imdb (7 live) #1d GZIP 415ms 280 bytes
+Jul 22, 2023 21:53:42.659 [139689464335160] DEBUG - Request: [127.0.0.1:55920 (Loopback)] GET /:/plugins/com.plexapp.system/resourceHashes (7 live) #1e GZIP Token ()
+Jul 22, 2023 21:53:42.659 [139689464335160] DEBUG - [Req#1e] [com.plexapp.system] Sending command over HTTP (GET): /:/plugins/com.plexapp.system/resourceHashes
+Jul 22, 2023 21:53:42.659 [139689464335160] DEBUG - [Req#1e/HCl#e] HTTP requesting GET http://127.0.0.1:33761/:/plugins/com.plexapp.system/resourceHashes
+Jul 22, 2023 21:53:42.759 [139689455659832] DEBUG - [NSB] NetworkServiceBrowser: SERVER arrived: 127.0.0.1 (dancodes-01)
+Jul 22, 2023 21:53:42.759 [139689455659832] DEBUG - [NSB] Notifying the system bundle an update to server /system/notify/serverUpdated?host=127.0.0.1
+Jul 22, 2023 21:53:42.759 [139689455659832] DEBUG - [NSB] [com.plexapp.system] Sending command over HTTP (GET): /system/notify/serverUpdated?host=127.0.0.1
+Jul 22, 2023 21:53:42.759 [139689455659832] DEBUG - [NSB/HCl#f] HTTP requesting GET http://127.0.0.1:33761/system/notify/serverUpdated?host=127.0.0.1
+Jul 22, 2023 21:53:43.075 [139689494068024] DEBUG - Completed: [100.121.43.111:57497] 200 GET /web/js/3519-3519-35b03a3b034aaa63bb09-plex-4.108.0.32184-ffafb0d.js (7 live) #1a GZIP 2600ms 1820156 bytes (pipelined: 1)
+Jul 22, 2023 21:53:43.271 [139689424018232] DEBUG - Request: [127.0.0.1:55926 (Loopback)] GET /servers (8 live) #22 GZIP Token ()
+Jul 22, 2023 21:53:43.272 [139689491958584] DEBUG - Completed: [127.0.0.1:55926] 200 GET /servers (8 live) #22 GZIP 0ms 492 bytes
+Jul 22, 2023 21:53:43.276 [139689475242808] DEBUG - [HttpClient/HCl#f] HTTP/1.1 (0.1s) 200 response from GET http://127.0.0.1:33761/system/notify/serverUpdated?host=127.0.0.1
+Jul 22, 2023 21:53:43.276 [139689455659832] DEBUG - [NSB] [com.plexapp.system] HTTP reply status 200, with 0 bytes of content.
+Jul 22, 2023 21:53:43.466 [139689424018232] DEBUG - Request: [127.0.0.1:55930 (Loopback)] GET /identity (8 live) #24
+Jul 22, 2023 21:53:43.469 [139689494068024] DEBUG - Completed: [127.0.0.1:55930] 200 GET /identity (8 live) #24 3ms 398 bytes (pipelined: 1)
+Jul 22, 2023 21:53:43.669 [139689475242808] DEBUG - [HttpClient/HCl#e] HTTP/1.1 (0.4s) 404 response from GET http://127.0.0.1:33761/:/plugins/com.plexapp.system/resourceHashes
+Jul 22, 2023 21:53:43.669 [139689464335160] DEBUG - [Req#1e] [com.plexapp.system] HTTP reply status 404, with 0 bytes of content.
+Jul 22, 2023 21:53:43.669 [139689494068024] DEBUG - Completed: [127.0.0.1:55920] 404 GET /:/plugins/com.plexapp.system/resourceHashes (7 live) #1e GZIP 1010ms 261 bytes
+Jul 22, 2023 21:53:43.778 [139689464335160] DEBUG - Request: [127.0.0.1:55936 (Loopback)] GET /:/plugins/com.plexapp.system/messaging/function/X0J1bmRsZVNlcnZpY2U6QWxsU2VydmljZXM_/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxCmRpY3QKMApyMAo_ (8 live) #26 GZIP Token ()
+Jul 22, 2023 21:53:43.779 [139689464335160] DEBUG - [Req#26] [com.plexapp.system] Sending command over HTTP (GET): /:/plugins/com.plexapp.system/messaging/function/X0J1bmRsZVNlcnZpY2U6QWxsU2VydmljZXM_/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxCmRpY3QKMApyMAo_
+Jul 22, 2023 21:53:43.779 [139689464335160] DEBUG - [Req#26/HCl#10] HTTP requesting GET http://127.0.0.1:33761/:/plugins/com.plexapp.system/messaging/function/X0J1bmRsZVNlcnZpY2U6QWxsU2VydmljZXM_/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxCmRpY3QKMApyMAo_
+Jul 22, 2023 21:53:43.783 [139689424018232] DEBUG - Request: [127.0.0.1:55950 (Loopback)] GET / (8 live) #2a GZIP Token ()
+Jul 22, 2023 21:53:43.784 [139689494068024] DEBUG - Completed: [127.0.0.1:55950] 200 GET / (8 live) #2a GZIP 5ms 2207 bytes
+Jul 22, 2023 21:53:43.889 [139689475242808] DEBUG - [HttpClient/HCl#10] HTTP/1.1 (0.1s) 200 response from GET http://127.0.0.1:33761/:/plugins/com.plexapp.system/messaging/function/X0J1bmRsZVNlcnZpY2U6QWxsU2VydmljZXM_/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxCmRpY3QKMApyMAo_ (reused)
+Jul 22, 2023 21:53:43.889 [139689464335160] DEBUG - [Req#26] [com.plexapp.system] HTTP reply status 200, with 516 bytes of content.
+Jul 22, 2023 21:53:43.889 [139689494068024] DEBUG - Completed: [127.0.0.1:55936] 200 GET /:/plugins/com.plexapp.system/messaging/function/X0J1bmRsZVNlcnZpY2U6QWxsU2VydmljZXM_/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxCmRpY3QKMApyMAo_ (7 live) #26 GZIP 112ms 746 bytes
+Jul 22, 2023 21:53:47.079 [139689424018232] DEBUG - Request: [127.0.0.1:55952 (Loopback)] GET /:/plugins/com.plexapp.system/messaging/function/X0FnZW50U2VydmljZTpVcGRhdGVJbmZv/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQo3CmRpY3QKbGlzdApkaWN0Cmxpc3QKbGlzdApsaXN0Cmxpc3QKMgpzMjMKY29tLnBsZXhhcHAuYWdlbnRzLmltZGJzMTAKaWRlbnRpZmllcnIxCnMxMAphZ2VudF9pbmZvMQpyMgoxMApyMwpzMTEKbWVkaWFfdHlwZXNyNApzMTIKYWNjZXB0c19mcm9tbnMxNApmYWxsYmFja19hZ2VudHI1CnMxNApjb250cmlidXRlc190b3I2CnM5Cmxhbmd1YWdlc2IxczIwCnBlcnNpc3Rfc3RvcmVkX2ZpbGVzaTAKczcKdmVyc2lvbmIxczE2CnByaW1hcnlfcHJvdmlkZXJiMXM1CnByZWZzczE5ClBsZXggTW92aWUgKExlZ2FjeSlzNApuYW1lMQpzNQpNb3ZpZTEKczI5CmNvbS5wbGV4YXBwLmFnZW50cy5sb2NhbG1lZGlhMQpzMjkKY29tLnBsZXhhcHAuYWdlbnRzLnRoZW1vdmllZGIzMwpzMgplbnMyCnN2czIKZnJzMgplc3MyCm5sczIKZGVzMgppdHMyCmRhczIKYXJzMgpjYXMyCnpoczIKY3NzMgpldHMyCmZpczIKZWxzMgpoZXMyCmhpczIKaHVzMgppZHMyCmphczIKa29zMgpsdnMyCm5vczIKZmFzMgpwbHMyCnB0czIKcm9zMgpydXMyCnNrczIKdGhzMgp0cnMyCnVrczIKdmlyMAo_ (7 live) #2b GZIP Token ()
+Jul 22, 2023 21:53:47.079 [139689424018232] DEBUG - [Req#2b] [com.plexapp.system] Sending command over HTTP (GET): /:/plugins/com.plexapp.system/messaging/function/X0FnZW50U2VydmljZTpVcGRhdGVJbmZv/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQo3CmRpY3QKbGlzdApkaWN0Cmxpc3QKbGlzdApsaXN0Cmxpc3QKMgpzMjMKY29tLnBsZXhhcHAuYWdlbnRzLmltZGJzMTAKaWRlbnRpZmllcnIxCnMxMAphZ2VudF9pbmZvMQpyMgoxMApyMwpzMTEKbWVkaWFfdHlwZXNyNApzMTIKYWNjZXB0c19mcm9tbnMxNApmYWxsYmFja19hZ2VudHI1CnMxNApjb250cmlidXRlc190b3I2CnM5Cmxhbmd1YWdlc2IxczIwCnBlcnNpc3Rfc3RvcmVkX2ZpbGVzaTAKczcKdmVyc2lvbmIxczE2CnByaW1hcnlfcHJvdmlkZXJiMXM1CnByZWZzczE5ClBsZXggTW92aWUgKExlZ2FjeSlzNApuYW1lMQpzNQpNb3ZpZTEKczI5CmNvbS5wbGV4YXBwLmFnZW50cy5sb2NhbG1lZGlhMQpzMjkKY29tLnBsZXhhcHAuYWdlbnRzLnRoZW1vdmllZGIzMwpzMgplbnMyCnN2czIKZnJzMgplc3MyCm5sczIKZGVzMgppdHMyCmRhczIKYXJzMgpjYXMyCnpoczIKY3NzMgpldHMyCmZpczIKZWxzMgpoZXMyCmhpczIKaHVzMgppZHMyCmphczIKa29zMgpsdnMyCm5vczIKZmFzMgpwbHMyCnB0czIKcm9zMgpydXMyCnNrczIKdGhzMgp0cnMyCnVrczIKdmlyMAo_
+Jul 22, 2023 21:53:47.079 [139689424018232] DEBUG - [Req#2b/HCl#11] HTTP requesting GET http://127.0.0.1:33761/:/plugins/com.plexapp.system/messaging/function/X0FnZW50U2VydmljZTpVcGRhdGVJbmZv/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQo3CmRpY3QKbGlzdApkaWN0Cmxpc3QKbGlzdApsaXN0Cmxpc3QKMgpzMjMKY29tLnBsZXhhcHAuYWdlbnRzLmltZGJzMTAKaWRlbnRpZmllcnIxCnMxMAphZ2VudF9pbmZvMQpyMgoxMApyMwpzMTEKbWVkaWFfdHlwZXNyNApzMTIKYWNjZXB0c19mcm9tbnMxNApmYWxsYmFja19hZ2VudHI1CnMxNApjb250cmlidXRlc190b3I2CnM5Cmxhbmd1YWdlc2IxczIwCnBlcnNpc3Rfc3RvcmVkX2ZpbGVzaTAKczcKdmVyc2lvbmIxczE2CnByaW1hcnlfcHJvdmlkZXJiMXM1CnByZWZzczE5ClBsZXggTW92aWUgKExlZ2FjeSlzNApuYW1lMQpzNQpNb3ZpZTEKczI5CmNvbS5wbGV4YXBwLmFnZW50cy5sb2NhbG1lZGlhMQpzMjkKY29tLnBsZXhhcHAuYWdlbnRzLnRoZW1vdmllZGIzMwpzMgplbnMyCnN2czIKZnJzMgplc3MyCm5sczIKZGVzMgppdHMyCmRhczIKYXJzMgpjYXMyCnpoczIKY3NzMgpldHMyCmZpczIKZWxzMgpoZXMyCmhpczIKaHVzMgppZHMyCmphczIKa29zMgpsdnMyCm5vczIKZmFzMgpwbHMyCnB0czIKcm9zMgpydXMyCnNrczIKdGhzMgp0cnMyCnVrczIKdmlyMAo_
+Jul 22, 2023 21:53:47.092 [139689475242808] DEBUG - [HttpClient/HCl#11] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:33761/:/plugins/com.plexapp.system/messaging/function/X0FnZW50U2VydmljZTpVcGRhdGVJbmZv/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQo3CmRpY3QKbGlzdApkaWN0Cmxpc3QKbGlzdApsaXN0Cmxpc3QKMgpzMjMKY29tLnBsZXhhcHAuYWdlbnRzLmltZGJzMTAKaWRlbnRpZmllcnIxCnMxMAphZ2VudF9pbmZvMQpyMgoxMApyMwpzMTEKbWVkaWFfdHlwZXNyNApzMTIKYWNjZXB0c19mcm9tbnMxNApmYWxsYmFja19hZ2VudHI1CnMxNApjb250cmlidXRlc190b3I2CnM5Cmxhbmd1YWdlc2IxczIwCnBlcnNpc3Rfc3RvcmVkX2ZpbGVzaTAKczcKdmVyc2lvbmIxczE2CnByaW1hcnlfcHJvdmlkZXJiMXM1CnByZWZzczE5ClBsZXggTW92aWUgKExlZ2FjeSlzNApuYW1lMQpzNQpNb3ZpZTEKczI5CmNvbS5wbGV4YXBwLmFnZW50cy5sb2NhbG1lZGlhMQpzMjkKY29tLnBsZXhhcHAuYWdlbnRzLnRoZW1vdmllZGIzMwpzMgplbnMyCnN2czIKZnJzMgplc3MyCm5sczIKZGVzMgppdHMyCmRhczIKYXJzMgpjYXMyCnpoczIKY3NzMgpldHMyCmZpczIKZWxzMgpoZXMyCmhpczIKaHVzMgppZHMyCmphczIKa29zMgpsdnMyCm5vczIKZmFzMgpwbHMyCnB0czIKcm9zMgpydXMyCnNrczIKdGhzMgp0cnMyCnVrczIKdmlyMAo_
+Jul 22, 2023 21:53:47.092 [139689424018232] DEBUG - [Req#2b] [com.plexapp.system] HTTP reply status 200, with 16 bytes of content.
+Jul 22, 2023 21:53:47.093 [139689491958584] DEBUG - Completed: [127.0.0.1:55952] 200 GET /:/plugins/com.plexapp.system/messaging/function/X0FnZW50U2VydmljZTpVcGRhdGVJbmZv/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQo3CmRpY3QKbGlzdApkaWN0Cmxpc3QKbGlzdApsaXN0Cmxpc3QKMgpzMjMKY29tLnBsZXhhcHAuYWdlbnRzLmltZGJzMTAKaWRlbnRpZmllcnIxCnMxMAphZ2VudF9pbmZvMQpyMgoxMApyMwpzMTEKbWVkaWFfdHlwZXNyNApzMTIKYWNjZXB0c19mcm9tbnMxNApmYWxsYmFja19hZ2VudHI1CnMxNApjb250cmlidXRlc190b3I2CnM5Cmxhbmd1YWdlc2IxczIwCnBlcnNpc3Rfc3RvcmVkX2ZpbGVzaTAKczcKdmVyc2lvbmIxczE2CnByaW1hcnlfcHJvdmlkZXJiMXM1CnByZWZzczE5ClBsZXggTW92aWUgKExlZ2FjeSlzNApuYW1lMQpzNQpNb3ZpZTEKczI5CmNvbS5wbGV4YXBwLmFnZW50cy5sb2NhbG1lZGlhMQpzMjkKY29tLnBsZXhhcHAuYWdlbnRzLnRoZW1vdmllZGIzMwpzMgplbnMyCnN2czIKZnJzMgplc3MyCm5sczIKZGVzMgppdHMyCmRhczIKYXJzMgpjYXMyCnpoczIKY3NzMgpldHMyCmZpczIKZWxzMgpoZXMyCmhpczIKaHVzMgppZHMyCmphczIKa29zMgpsdnMyCm5vczIKZmFzMgpwbHMyCnB0czIKcm9zMgpydXMyCnNrczIKdGhzMgp0cnMyCnVrczIKdmlyMAo_ (7 live) #2b GZIP 14ms 415 bytes
+Jul 22, 2023 21:53:47.175 [139689428237112] DEBUG - [Req#14] Reading 148 bytes in the body, code is 200
+Jul 22, 2023 21:53:47.175 [139689428237112] DEBUG - [Req#14] [com.plexapp.agents.imdb] Plug-in running on port 37723.
+Jul 22, 2023 21:53:47.175 [139689428237112] DEBUG - [Req#14] Read configuration for [com.plexapp.agents.imdb], had 0 prefixes
+Jul 22, 2023 21:53:47.175 [139689428237112] DEBUG - [Req#14] [com.plexapp.agents.imdb] Sending command over HTTP (GET): /:/plugins/com.plexapp.agents.imdb/prefs
+Jul 22, 2023 21:53:47.175 [139689428237112] DEBUG - [Req#14/HCl#12] HTTP requesting GET http://127.0.0.1:37723/:/plugins/com.plexapp.agents.imdb/prefs
+Jul 22, 2023 21:53:47.279 [139689475242808] DEBUG - [HttpClient/HCl#12] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:37723/:/plugins/com.plexapp.agents.imdb/prefs
+Jul 22, 2023 21:53:47.279 [139689428237112] DEBUG - [Req#14] [com.plexapp.agents.imdb] HTTP reply status 200, with 2224 bytes of content.
+Jul 22, 2023 21:53:47.280 [139689428237112] DEBUG - Caching document http://127.0.0.1:32400/:/plugins/com.plexapp.agents.imdb/prefs as a93776f728b5d64a46edfbe655554103060474bf
+Jul 22, 2023 21:53:47.280 [139689428237112] DEBUG - IVA: Downloading trailer lists.
+Jul 22, 2023 21:53:47.784 [139689466501944] ERROR - downloadContainer: expected MediaContainer element, found Error
+Jul 22, 2023 21:53:47.784 [139689428237112] ERROR - IVA: Error downloading trailers for source 1.
+Jul 22, 2023 21:53:47.988 [139689426127672] ERROR - downloadContainer: expected MediaContainer element, found Error
+Jul 22, 2023 21:53:47.988 [139689428237112] ERROR - IVA: Error downloading trailers for source 2.
+Jul 22, 2023 21:53:48.699 [139689464335160] DEBUG - Request: [127.0.0.1:55960 (Loopback)] GET /identity (7 live) #2e
+Jul 22, 2023 21:53:48.699 [139689491958584] DEBUG - Completed: [127.0.0.1:55960] 200 GET /identity (7 live) #2e 0ms 398 bytes (pipelined: 1)
+Jul 22, 2023 21:53:48.882 [139689428237112] DEBUG - Grabber: Cleaning up orphaned grabs.
+Jul 22, 2023 21:53:48.883 [139689428237112] DEBUG - Grabber: Cleaned up 0 decrepit directories in 0.0 sec.
+Jul 22, 2023 21:53:48.883 [139689428237112] DEBUG - Activity: registered new activity e0de8b37-3835-4d86-addc-76f439b8d8ad - "Processing subscriptions"
+Jul 22, 2023 21:53:48.883 [139689428237112] DEBUG - Subscription: Scheduling subscriptions.
+Jul 22, 2023 21:53:48.883 [139689428237112] DEBUG - Subscription: Initialized 0 schedulers.
+Jul 22, 2023 21:53:48.883 [139689428237112] DEBUG - Subscription: Starting with 0 grabs, scheduled 0 active ones preemptively.
+Jul 22, 2023 21:53:48.883 [139689428237112] DEBUG - Subscription: Scheduled all subscriptions in 0 ms.
+Jul 22, 2023 21:53:48.883 [139689428237112] DEBUG - Activity: Ended activity e0de8b37-3835-4d86-addc-76f439b8d8ad.
+Jul 22, 2023 21:53:48.883 [139689428237112] DEBUG - Subscription: There are 0 active grabs at the end.
+Jul 22, 2023 21:53:48.884 [139689428237112] DEBUG - Activity: Ended activity 94c708e4-d48c-42fd-8dee-d6b0fc6190c0.
+Jul 22, 2023 21:53:48.884 [139689428237112] DEBUG - Subscription: Refreshed all content in 1 ms.
+Jul 22, 2023 21:53:50.213 [139689494068024] DEBUG - Completed: [100.121.43.111:57495] 200 GET /web/js/main-179-69d37121295f158388fa-plex-4.108.0.32184-ffafb0d.js (6 live) #18 GZIP 11459ms 3120893 bytes (pipelined: 1)
+Jul 22, 2023 21:53:50.494 [139689494068024] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:50.494 [139689464335160] DEBUG - Request: [100.121.43.111:57497 (Subnet)] GET /web/js/main-179-69d37121295f158388fa-plex-4.108.0.32184-ffafb0d.js (6 live) #23 GZIP
+Jul 22, 2023 21:53:50.494 [139689464335160] DEBUG - [Req#23] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/main-179-69d37121295f158388fa-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:50.495 [139689464335160] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/main-179-69d37121295f158388fa-plex-4.108.0.32184-ffafb0d.js is 3120893 (of total: 3120893).
+Jul 22, 2023 21:53:50.911 [139689494068024] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:50.911 [139689424018232] DEBUG - Request: [100.121.43.111:57495 (Subnet)] GET /web/js/chunk-5081-850ab72e0ef704bf073c-plex-4.108.0.32184-ffafb0d.js (6 live) #34 GZIP
+Jul 22, 2023 21:53:50.911 [139689424018232] DEBUG - [Req#34] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-5081-850ab72e0ef704bf073c-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:50.911 [139689424018232] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-5081-850ab72e0ef704bf073c-plex-4.108.0.32184-ffafb0d.js is 3198 (of total: 3198).
+Jul 22, 2023 21:53:50.912 [139689491958584] DEBUG - Completed: [100.121.43.111:57495] 200 GET /web/js/chunk-5081-850ab72e0ef704bf073c-plex-4.108.0.32184-ffafb0d.js (6 live) #34 GZIP 0ms 3198 bytes (pipelined: 2)
+Jul 22, 2023 21:53:50.913 [139689494068024] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:50.913 [139689494068024] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:50.913 [139689494068024] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:50.913 [139689464335160] DEBUG - Request: [100.121.43.111:57494 (Subnet)] GET /web/js/chunk-8111-1a0362c3593945860679-plex-4.108.0.32184-ffafb0d.js (6 live) #1b GZIP
+Jul 22, 2023 21:53:50.914 [139689464335160] DEBUG - [Req#1b] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-8111-1a0362c3593945860679-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:50.914 [139689424018232] DEBUG - Request: [100.121.43.111:57493 (Subnet)] GET /web/js/chunk-6693-652b850b03f806e0089c-plex-4.108.0.32184-ffafb0d.js (6 live) #19 GZIP
+Jul 22, 2023 21:53:50.914 [139689464335160] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-8111-1a0362c3593945860679-plex-4.108.0.32184-ffafb0d.js is 44715 (of total: 44715).
+Jul 22, 2023 21:53:50.914 [139689424018232] DEBUG - [Req#19] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-6693-652b850b03f806e0089c-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:50.914 [139689424018232] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-6693-652b850b03f806e0089c-plex-4.108.0.32184-ffafb0d.js is 111216 (of total: 111216).
+Jul 22, 2023 21:53:50.914 [139689421908792] DEBUG - Request: [100.121.43.111:57489 (Subnet)] GET /web/js/chunk-7790-d4d9ef82e27a5667d6d9-plex-4.108.0.32184-ffafb0d.js (6 live) #1c GZIP
+Jul 22, 2023 21:53:50.914 [139689491958584] DEBUG - Completed: [100.121.43.111:57494] 200 GET /web/js/chunk-8111-1a0362c3593945860679-plex-4.108.0.32184-ffafb0d.js (6 live) #1b GZIP 1ms 44715 bytes (pipelined: 2)
+Jul 22, 2023 21:53:50.914 [139689421908792] DEBUG - [Req#1c] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-7790-d4d9ef82e27a5667d6d9-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:50.914 [139689421908792] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-7790-d4d9ef82e27a5667d6d9-plex-4.108.0.32184-ffafb0d.js is 24961 (of total: 24961).
+Jul 22, 2023 21:53:50.915 [139689494068024] DEBUG - Completed: [100.121.43.111:57493] 200 GET /web/js/chunk-6693-652b850b03f806e0089c-plex-4.108.0.32184-ffafb0d.js (6 live) #19 GZIP 2ms 111216 bytes (pipelined: 2)
+Jul 22, 2023 21:53:50.917 [139689494068024] DEBUG - Completed: [100.121.43.111:57489] 200 GET /web/js/chunk-7790-d4d9ef82e27a5667d6d9-plex-4.108.0.32184-ffafb0d.js (6 live) #1c GZIP 3ms 24961 bytes (pipelined: 3)
+Jul 22, 2023 21:53:50.999 [139689494068024] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:51.000 [139689464335160] DEBUG - Request: [100.121.43.111:57495 (Subnet)] GET /web/js/chunk-800-f16fffe537518fbe08ea-plex-4.108.0.32184-ffafb0d.js (6 live) #35 GZIP
+Jul 22, 2023 21:53:51.000 [139689464335160] DEBUG - [Req#35] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-800-f16fffe537518fbe08ea-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:51.000 [139689464335160] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-800-f16fffe537518fbe08ea-plex-4.108.0.32184-ffafb0d.js is 53885 (of total: 53885).
+Jul 22, 2023 21:53:51.001 [139689491958584] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:51.001 [139689424018232] DEBUG - Request: [100.121.43.111:57512 (Subnet)] GET /web/js/chunk-61-54bfab7b098635795e78-plex-4.108.0.32184-ffafb0d.js (7 live) #31 GZIP
+Jul 22, 2023 21:53:51.001 [139689424018232] DEBUG - [Req#31] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-61-54bfab7b098635795e78-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:51.001 [139689424018232] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-61-54bfab7b098635795e78-plex-4.108.0.32184-ffafb0d.js is 33804 (of total: 33804).
+Jul 22, 2023 21:53:51.001 [139689491958584] DEBUG - Completed: [100.121.43.111:57512] 200 GET /web/js/chunk-61-54bfab7b098635795e78-plex-4.108.0.32184-ffafb0d.js (7 live) #31 GZIP 0ms 33804 bytes (pipelined: 1)
+Jul 22, 2023 21:53:51.002 [139689494068024] DEBUG - Completed: [100.121.43.111:57495] 200 GET /web/js/chunk-800-f16fffe537518fbe08ea-plex-4.108.0.32184-ffafb0d.js (7 live) #35 GZIP 2ms 53885 bytes (pipelined: 3)
+Jul 22, 2023 21:53:51.012 [139689491958584] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:51.012 [139689421908792] DEBUG - Request: [100.121.43.111:57513 (Subnet)] GET /web/translations/en-GB.json (8 live) #39 GZIP
+Jul 22, 2023 21:53:51.012 [139689421908792] DEBUG - [Req#39] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/translations/en-GB.json"
+Jul 22, 2023 21:53:51.012 [139689421908792] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/translations/en-GB.json is 15294 (of total: 15294).
+Jul 22, 2023 21:53:51.013 [139689494068024] DEBUG - Completed: [100.121.43.111:57513] 200 GET /web/translations/en-GB.json (8 live) #39 GZIP 0ms 15294 bytes (pipelined: 1)
+Jul 22, 2023 21:53:51.089 [139689491958584] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:51.089 [139689464335160] DEBUG - Request: [100.121.43.111:57489 (Subnet)] GET /web/js/chunk-7317-f2507b3551d127ecad10-plex-4.108.0.32184-ffafb0d.js (8 live) #37 GZIP
+Jul 22, 2023 21:53:51.090 [139689464335160] DEBUG - [Req#37] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-7317-f2507b3551d127ecad10-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:51.090 [139689464335160] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-7317-f2507b3551d127ecad10-plex-4.108.0.32184-ffafb0d.js is 14977 (of total: 14977).
+Jul 22, 2023 21:53:51.091 [139689491958584] DEBUG - Completed: [100.121.43.111:57489] 200 GET /web/js/chunk-7317-f2507b3551d127ecad10-plex-4.108.0.32184-ffafb0d.js (8 live) #37 GZIP 1ms 14977 bytes (pipelined: 4)
+Jul 22, 2023 21:53:51.192 [139689494068024] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:51.193 [139689494068024] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:51.193 [139689494068024] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:51.193 [139689464335160] DEBUG - Request: [100.121.43.111:57494 (Subnet)] GET /web/js/chunk-3931-06bf4a32f8780de93ebe-plex-4.108.0.32184-ffafb0d.js (8 live) #38 GZIP
+Jul 22, 2023 21:53:51.193 [139689494068024] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:51.193 [139689464335160] DEBUG - [Req#38] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-3931-06bf4a32f8780de93ebe-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:51.193 [139689464335160] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-3931-06bf4a32f8780de93ebe-plex-4.108.0.32184-ffafb0d.js is 3274 (of total: 3274).
+Jul 22, 2023 21:53:51.193 [139689424018232] DEBUG - Request: [100.121.43.111:57513 (Subnet)] GET /web/js/chunk-8254-9931f7df7b505a096834-plex-4.108.0.32184-ffafb0d.js (8 live) #3d GZIP
+Jul 22, 2023 21:53:51.193 [139689419799352] DEBUG - Request: [100.121.43.111:57512 (Subnet)] GET /web/js/chunk-6251-2d35dd24bfcab1696078-plex-4.108.0.32184-ffafb0d.js (8 live) #3a GZIP
+Jul 22, 2023 21:53:51.193 [139689491958584] DEBUG - Completed: [100.121.43.111:57494] 200 GET /web/js/chunk-3931-06bf4a32f8780de93ebe-plex-4.108.0.32184-ffafb0d.js (8 live) #38 GZIP 0ms 3274 bytes (pipelined: 3)
+Jul 22, 2023 21:53:51.194 [139689421908792] DEBUG - Request: [100.121.43.111:57489 (Subnet)] GET /web/js/chunk-7636-416fa1bbfa08d8db851d-plex-4.108.0.32184-ffafb0d.js (8 live) #3e GZIP
+Jul 22, 2023 21:53:51.194 [139689419799352] DEBUG - [Req#3a] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-6251-2d35dd24bfcab1696078-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:51.194 [139689419799352] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-6251-2d35dd24bfcab1696078-plex-4.108.0.32184-ffafb0d.js is 10407 (of total: 10407).
+Jul 22, 2023 21:53:51.194 [139689424018232] DEBUG - [Req#3d] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-8254-9931f7df7b505a096834-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:51.194 [139689424018232] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-8254-9931f7df7b505a096834-plex-4.108.0.32184-ffafb0d.js is 101018 (of total: 101018).
+Jul 22, 2023 21:53:51.195 [139689491958584] DEBUG - Completed: [100.121.43.111:57512] 200 GET /web/js/chunk-6251-2d35dd24bfcab1696078-plex-4.108.0.32184-ffafb0d.js (8 live) #3a GZIP 1ms 10407 bytes (pipelined: 2)
+Jul 22, 2023 21:53:51.199 [139689421908792] DEBUG - [Req#3e] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-7636-416fa1bbfa08d8db851d-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:51.199 [139689421908792] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-7636-416fa1bbfa08d8db851d-plex-4.108.0.32184-ffafb0d.js is 89426 (of total: 89426).
+Jul 22, 2023 21:53:51.200 [139689491958584] DEBUG - Completed: [100.121.43.111:57489] 200 GET /web/js/chunk-7636-416fa1bbfa08d8db851d-plex-4.108.0.32184-ffafb0d.js (8 live) #3e GZIP 6ms 89426 bytes (pipelined: 5)
+Jul 22, 2023 21:53:51.291 [139689491958584] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:51.291 [139689491958584] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:51.291 [139689491958584] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:51.291 [139689424018232] DEBUG - Request: [100.121.43.111:57495 (Subnet)] GET /web/js/chunk-9670-a24bf11f59eac1c85739-plex-4.108.0.32184-ffafb0d.js (8 live) #3b GZIP
+Jul 22, 2023 21:53:51.291 [139689424018232] DEBUG - [Req#3b] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-9670-a24bf11f59eac1c85739-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:51.291 [139689424018232] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-9670-a24bf11f59eac1c85739-plex-4.108.0.32184-ffafb0d.js is 968 (of total: 968).
+Jul 22, 2023 21:53:51.291 [139689424018232] DEBUG - Request: [100.121.43.111:57494 (Subnet)] GET /web/js/chunk-4980-ec875207cbb68be12a72-plex-4.108.0.32184-ffafb0d.js (8 live) #3f GZIP
+Jul 22, 2023 21:53:51.292 [139689424018232] DEBUG - [Req#3f] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-4980-ec875207cbb68be12a72-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:51.292 [139689424018232] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-4980-ec875207cbb68be12a72-plex-4.108.0.32184-ffafb0d.js is 24024 (of total: 24024).
+Jul 22, 2023 21:53:51.292 [139689424018232] DEBUG - Request: [100.121.43.111:57493 (Subnet)] GET /web/js/chunk-2613-620bd842a2a7228eff14-plex-4.108.0.32184-ffafb0d.js (8 live) #36 GZIP
+Jul 22, 2023 21:53:51.292 [139689424018232] DEBUG - [Req#36] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-2613-620bd842a2a7228eff14-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:51.292 [139689424018232] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-2613-620bd842a2a7228eff14-plex-4.108.0.32184-ffafb0d.js is 77754 (of total: 77754).
+Jul 22, 2023 21:53:51.293 [139689494068024] DEBUG - Completed: [100.121.43.111:57495] 200 GET /web/js/chunk-9670-a24bf11f59eac1c85739-plex-4.108.0.32184-ffafb0d.js (8 live) #3b GZIP 1ms 968 bytes (pipelined: 4)
+Jul 22, 2023 21:53:51.293 [139689491958584] DEBUG - Completed: [100.121.43.111:57494] 200 GET /web/js/chunk-4980-ec875207cbb68be12a72-plex-4.108.0.32184-ffafb0d.js (8 live) #3f GZIP 1ms 24024 bytes (pipelined: 4)
+Jul 22, 2023 21:53:51.293 [139689494068024] DEBUG - Completed: [100.121.43.111:57493] 200 GET /web/js/chunk-2613-620bd842a2a7228eff14-plex-4.108.0.32184-ffafb0d.js (8 live) #36 GZIP 1ms 77754 bytes (pipelined: 3)
+Jul 22, 2023 21:53:51.304 [139689491958584] DEBUG - Completed: [100.121.43.111:57513] 200 GET /web/js/chunk-8254-9931f7df7b505a096834-plex-4.108.0.32184-ffafb0d.js (8 live) #3d GZIP 111ms 101018 bytes (pipelined: 2)
+Jul 22, 2023 21:53:51.305 [139689494068024] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:51.305 [139689424018232] DEBUG - Request: [100.121.43.111:57512 (Subnet)] GET /web/js/chunk-8592-7616fe4b640e4a23a66b-plex-4.108.0.32184-ffafb0d.js (8 live) #40 GZIP
+Jul 22, 2023 21:53:51.305 [139689424018232] DEBUG - [Req#40] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-8592-7616fe4b640e4a23a66b-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:51.306 [139689424018232] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-8592-7616fe4b640e4a23a66b-plex-4.108.0.32184-ffafb0d.js is 2381 (of total: 2381).
+Jul 22, 2023 21:53:51.306 [139689491958584] DEBUG - Completed: [100.121.43.111:57512] 200 GET /web/js/chunk-8592-7616fe4b640e4a23a66b-plex-4.108.0.32184-ffafb0d.js (8 live) #40 GZIP 0ms 2381 bytes (pipelined: 3)
+Jul 22, 2023 21:53:51.405 [139689491958584] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:51.405 [139689494068024] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:51.405 [139689494068024] DEBUG - Request: [100.121.43.111:57495 (Subnet)] GET /media/providers (8 live) #42 GZIP
+Jul 22, 2023 21:53:51.405 [139689491958584] DEBUG - Request: [100.121.43.111:57494 (Subnet)] GET / (8 live) #43 GZIP
+Jul 22, 2023 21:53:51.406 [139689491958584] DEBUG - Completed: [100.121.43.111:57494] 401 GET / (8 live) #43 GZIP 0ms 435 bytes
+Jul 22, 2023 21:53:51.406 [139689494068024] DEBUG - Completed: [100.121.43.111:57495] 401 GET /media/providers (8 live) #42 GZIP 0ms 357 bytes
+Jul 22, 2023 21:53:51.499 [139689494068024] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:51.501 [139689464335160] DEBUG - Request: [100.121.43.111:57489 (Subnet)] GET /web/favicon.ico (6 live) #41 GZIP
+Jul 22, 2023 21:53:51.502 [139689464335160] DEBUG - [Req#41] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/favicon.ico"
+Jul 22, 2023 21:53:51.502 [139689464335160] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/favicon.ico is 5430 (of total: 5430).
+Jul 22, 2023 21:53:51.502 [139689494068024] DEBUG - Completed: [100.121.43.111:57489] 200 GET /web/favicon.ico (6 live) #41 GZIP 0ms 5430 bytes (pipelined: 6)
+Jul 22, 2023 21:53:51.598 [139689491958584] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:51.599 [139689419799352] DEBUG - Request: [100.121.43.111:57512 (Subnet)] GET /web/js/chunk-4774-8ce9b17327a6890aef31-plex-4.108.0.32184-ffafb0d.js (6 live) #46 GZIP
+Jul 22, 2023 21:53:51.599 [139689419799352] DEBUG - [Req#46] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-4774-8ce9b17327a6890aef31-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:51.599 [139689419799352] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-4774-8ce9b17327a6890aef31-plex-4.108.0.32184-ffafb0d.js is 1572 (of total: 1572).
+Jul 22, 2023 21:53:51.600 [139689491958584] DEBUG - Completed: [100.121.43.111:57512] 200 GET /web/js/chunk-4774-8ce9b17327a6890aef31-plex-4.108.0.32184-ffafb0d.js (6 live) #46 GZIP 1ms 1572 bytes (pipelined: 4)
+Jul 22, 2023 21:53:51.600 [139689494068024] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:51.601 [139689421908792] DEBUG - Request: [100.121.43.111:57513 (Subnet)] GET /web/js/chunk-3111-e97ebfde39ff03fb05e8-plex-4.108.0.32184-ffafb0d.js (6 live) #45 GZIP
+Jul 22, 2023 21:53:51.601 [139689421908792] DEBUG - [Req#45] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-3111-e97ebfde39ff03fb05e8-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:51.601 [139689421908792] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-3111-e97ebfde39ff03fb05e8-plex-4.108.0.32184-ffafb0d.js is 30645 (of total: 30645).
+Jul 22, 2023 21:53:51.601 [139689491958584] DEBUG - Completed: [100.121.43.111:57513] 200 GET /web/js/chunk-3111-e97ebfde39ff03fb05e8-plex-4.108.0.32184-ffafb0d.js (6 live) #45 GZIP 0ms 30645 bytes (pipelined: 3)
+Jul 22, 2023 21:53:51.602 [139689494068024] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:51.602 [139689424018232] DEBUG - Request: [100.121.43.111:57493 (Subnet)] GET /web/js/chunk-2832-ae58f6058c2459402773-plex-4.108.0.32184-ffafb0d.js (6 live) #44 GZIP
+Jul 22, 2023 21:53:51.602 [139689424018232] DEBUG - [Req#44] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-2832-ae58f6058c2459402773-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:51.602 [139689424018232] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-2832-ae58f6058c2459402773-plex-4.108.0.32184-ffafb0d.js is 134034 (of total: 134034).
+Jul 22, 2023 21:53:51.603 [139689491958584] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:51.604 [139689464335160] DEBUG - Request: [100.121.43.111:57489 (Subnet)] GET /web/js/chunk-1400-ec00b983fae90efb8308-plex-4.108.0.32184-ffafb0d.js (6 live) #49 GZIP
+Jul 22, 2023 21:53:51.604 [139689464335160] DEBUG - [Req#49] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-1400-ec00b983fae90efb8308-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:51.604 [139689464335160] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-1400-ec00b983fae90efb8308-plex-4.108.0.32184-ffafb0d.js is 26441 (of total: 26441).
+Jul 22, 2023 21:53:51.604 [139689491958584] DEBUG - Completed: [100.121.43.111:57489] 200 GET /web/js/chunk-1400-ec00b983fae90efb8308-plex-4.108.0.32184-ffafb0d.js (6 live) #49 GZIP 0ms 26441 bytes (pipelined: 7)
+Jul 22, 2023 21:53:51.701 [139689494068024] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:51.702 [139689491958584] DEBUG - Completed: [100.121.43.111:57493] 200 GET /web/js/chunk-2832-ae58f6058c2459402773-plex-4.108.0.32184-ffafb0d.js (7 live) #44 GZIP 100ms 134034 bytes (pipelined: 4)
+Jul 22, 2023 21:53:51.702 [139689419799352] DEBUG - Request: [100.121.43.111:57516 (Subnet)] GET /identity (7 live) #3c GZIP
+Jul 22, 2023 21:53:51.704 [139689494068024] DEBUG - Completed: [100.121.43.111:57516] 200 GET /identity (7 live) #3c GZIP 1ms 480 bytes (pipelined: 1)
+Jul 22, 2023 21:53:51.707 [139689491958584] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:51.707 [139689421908792] DEBUG - Request: [100.121.43.111:57517 (Subnet)] GET /web/js/chunk-3654-03a88ec102920cc676f9-plex-4.108.0.32184-ffafb0d.js (8 live) #4d GZIP
+Jul 22, 2023 21:53:51.708 [139689421908792] DEBUG - [Req#4d] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-3654-03a88ec102920cc676f9-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:51.708 [139689421908792] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-3654-03a88ec102920cc676f9-plex-4.108.0.32184-ffafb0d.js is 26721 (of total: 26721).
+Jul 22, 2023 21:53:51.708 [139689494068024] DEBUG - Completed: [100.121.43.111:57517] 200 GET /web/js/chunk-3654-03a88ec102920cc676f9-plex-4.108.0.32184-ffafb0d.js (8 live) #4d GZIP 0ms 26721 bytes (pipelined: 1)
+Jul 22, 2023 21:53:51.709 [139689491958584] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:51.709 [139689424018232] DEBUG - Request: [100.121.43.111:57489 (Subnet)] GET /web/js/chunk-3735-4d01c627ff0cff9a2c9e-plex-4.108.0.32184-ffafb0d.js (8 live) #4c GZIP
+Jul 22, 2023 21:53:51.709 [139689424018232] DEBUG - [Req#4c] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-3735-4d01c627ff0cff9a2c9e-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:51.709 [139689424018232] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-3735-4d01c627ff0cff9a2c9e-plex-4.108.0.32184-ffafb0d.js is 4689 (of total: 4689).
+Jul 22, 2023 21:53:51.709 [139689491958584] DEBUG - Completed: [100.121.43.111:57489] 200 GET /web/js/chunk-3735-4d01c627ff0cff9a2c9e-plex-4.108.0.32184-ffafb0d.js (8 live) #4c GZIP 0ms 4689 bytes (pipelined: 8)
+Jul 22, 2023 21:53:51.709 [139689491958584] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:51.710 [139689491958584] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:51.710 [139689464335160] DEBUG - Request: [100.121.43.111:57513 (Subnet)] GET /web/js/chunk-8145-777861eb5aabb68e41e4-plex-4.108.0.32184-ffafb0d.js (8 live) #4b GZIP
+Jul 22, 2023 21:53:51.710 [139689464335160] DEBUG - [Req#4b] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-8145-777861eb5aabb68e41e4-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:51.711 [139689464335160] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-8145-777861eb5aabb68e41e4-plex-4.108.0.32184-ffafb0d.js is 31504 (of total: 31504).
+Jul 22, 2023 21:53:51.711 [139689464335160] DEBUG - Request: [100.121.43.111:57512 (Subnet)] GET /web/js/chunk-9434-7f0a899023a2d7d6f9a8-plex-4.108.0.32184-ffafb0d.js (8 live) #4a GZIP
+Jul 22, 2023 21:53:51.711 [139689464335160] DEBUG - [Req#4a] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-9434-7f0a899023a2d7d6f9a8-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:51.711 [139689464335160] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-9434-7f0a899023a2d7d6f9a8-plex-4.108.0.32184-ffafb0d.js is 666982 (of total: 666982).
+Jul 22, 2023 21:53:51.712 [139689494068024] DEBUG - Completed: [100.121.43.111:57513] 200 GET /web/js/chunk-8145-777861eb5aabb68e41e4-plex-4.108.0.32184-ffafb0d.js (8 live) #4b GZIP 2ms 31504 bytes (pipelined: 4)
+Jul 22, 2023 21:53:51.807 [139689491958584] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:51.807 [139689421908792] DEBUG - Request: [100.121.43.111:57516 (Subnet)] GET /web/js/chunk-5519-0b3268fb69eead6105d6-plex-4.108.0.32184-ffafb0d.js (8 live) #4f GZIP
+Jul 22, 2023 21:53:51.807 [139689421908792] DEBUG - [Req#4f] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-5519-0b3268fb69eead6105d6-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:51.807 [139689421908792] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-5519-0b3268fb69eead6105d6-plex-4.108.0.32184-ffafb0d.js is 4608 (of total: 4608).
+Jul 22, 2023 21:53:51.808 [139689494068024] DEBUG - Completed: [100.121.43.111:57516] 200 GET /web/js/chunk-5519-0b3268fb69eead6105d6-plex-4.108.0.32184-ffafb0d.js (8 live) #4f GZIP 1ms 4608 bytes (pipelined: 2)
+Jul 22, 2023 21:53:51.994 [139689491958584] DEBUG - Completed: [100.121.43.111:57512] 200 GET /web/js/chunk-9434-7f0a899023a2d7d6f9a8-plex-4.108.0.32184-ffafb0d.js (8 live) #4a GZIP 284ms 666982 bytes (pipelined: 5)
+Jul 22, 2023 21:53:53.202 [139689494068024] DEBUG - Completed: [100.121.43.111:57497] 200 GET /web/js/main-179-69d37121295f158388fa-plex-4.108.0.32184-ffafb0d.js (8 live) #23 GZIP 2708ms 3120893 bytes (pipelined: 2)
+Jul 22, 2023 21:53:53.496 [139689494068024] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:53.496 [139689424018232] DEBUG - Request: [100.121.43.111:57512 (Subnet)] GET /web/static/e08a95a990fd1490487f.woff2 (8 live) #55 GZIP
+Jul 22, 2023 21:53:53.497 [139689424018232] DEBUG - [Req#55] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/static/e08a95a990fd1490487f.woff2"
+Jul 22, 2023 21:53:53.497 [139689424018232] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/static/e08a95a990fd1490487f.woff2 is 48344 (of total: 48344).
+Jul 22, 2023 21:53:53.497 [139689491958584] DEBUG - Completed: [100.121.43.111:57512] 200 GET /web/static/e08a95a990fd1490487f.woff2 (8 live) #55 GZIP 0ms 48344 bytes (pipelined: 6)
+Jul 22, 2023 21:53:54.219 [139689424018232] DEBUG - Request: [127.0.0.1:39728 (Loopback)] GET /identity (9 live) #50
+Jul 22, 2023 21:53:54.220 [139689491958584] DEBUG - Completed: [127.0.0.1:39728] 200 GET /identity (9 live) #50 1ms 398 bytes (pipelined: 1)
+Jul 22, 2023 21:53:57.720 [139689491958584] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:57.720 [139689491958584] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:57.721 [139689424018232] DEBUG - Request: [100.121.43.111:57512 (Subnet)] GET /web/chunk-6693-652b850b03f806e0089c-plex-4.108.0.32184-ffafb0d.css (8 live) #57 GZIP
+Jul 22, 2023 21:53:57.722 [139689424018232] DEBUG - [Req#57] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/chunk-6693-652b850b03f806e0089c-plex-4.108.0.32184-ffafb0d.css"
+Jul 22, 2023 21:53:57.722 [139689424018232] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/chunk-6693-652b850b03f806e0089c-plex-4.108.0.32184-ffafb0d.css is 21636 (of total: 21636).
+Jul 22, 2023 21:53:57.722 [139689424018232] DEBUG - Request: [100.121.43.111:57516 (Subnet)] GET /web/chunk-800-f16fffe537518fbe08ea-plex-4.108.0.32184-ffafb0d.css (8 live) #54 GZIP
+Jul 22, 2023 21:53:57.722 [139689424018232] DEBUG - [Req#54] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/chunk-800-f16fffe537518fbe08ea-plex-4.108.0.32184-ffafb0d.css"
+Jul 22, 2023 21:53:57.722 [139689424018232] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/chunk-800-f16fffe537518fbe08ea-plex-4.108.0.32184-ffafb0d.css is 4379 (of total: 4379).
+Jul 22, 2023 21:53:57.723 [139689494068024] DEBUG - Completed: [100.121.43.111:57512] 200 GET /web/chunk-6693-652b850b03f806e0089c-plex-4.108.0.32184-ffafb0d.css (8 live) #57 GZIP 2ms 21636 bytes (pipelined: 7)
+Jul 22, 2023 21:53:57.723 [139689494068024] DEBUG - Completed: [100.121.43.111:57516] 200 GET /web/chunk-800-f16fffe537518fbe08ea-plex-4.108.0.32184-ffafb0d.css (8 live) #54 GZIP 2ms 4379 bytes (pipelined: 3)
+Jul 22, 2023 21:53:58.111 [139689491958584] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:58.111 [139689419799352] DEBUG - Request: [100.121.43.111:57497 (Subnet)] GET /web/js/chunk-8111-1a0362c3593945860679-plex-4.108.0.32184-ffafb0d.js (8 live) #56 GZIP
+Jul 22, 2023 21:53:58.111 [139689419799352] DEBUG - [Req#56] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-8111-1a0362c3593945860679-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:58.111 [139689419799352] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-8111-1a0362c3593945860679-plex-4.108.0.32184-ffafb0d.js is 44715 (of total: 44715).
+Jul 22, 2023 21:53:58.112 [139689494068024] DEBUG - Completed: [100.121.43.111:57497] 200 GET /web/js/chunk-8111-1a0362c3593945860679-plex-4.108.0.32184-ffafb0d.js (8 live) #56 GZIP 0ms 44715 bytes (pipelined: 3)
+Jul 22, 2023 21:53:58.211 [139689491958584] DEBUG - Request came in with unrecognized domain / IP '100.67.184.90' in header Host; treating as non-local
+Jul 22, 2023 21:53:58.212 [139689424018232] DEBUG - Request: [100.121.43.111:57533 (Subnet)] GET /web/js/chunk-7790-d4d9ef82e27a5667d6d9-plex-4.108.0.32184-ffafb0d.js (9 live) #58 GZIP
+Jul 22, 2023 21:53:58.212 [139689424018232] DEBUG - [Req#58] Final path: "/usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-7790-d4d9ef82e27a5667d6d9-plex-4.108.0.32184-ffafb0d.js"
+Jul 22, 2023 21:53:58.212 [139689424018232] DEBUG - Content-Length of /usr/lib/plexmediaserver/Resources/Plug-ins-2632c9d3a/WebClient.bundle/Contents/Resources/js/chunk-7790-d4d9ef82e27a5667d6d9-plex-4.108.0.32184-ffafb0d.js is 24961 (of total: 24961).
+Jul 22, 2023 21:53:58.212 [139689494068024] DEBUG - Completed: [100.121.43.111:57533] 200 GET /web/js/chunk-7790-d4d9ef82e27a5667d6d9-plex-4.108.0.32184-ffafb0d.js (9 live) #58 GZIP 0ms 24961 bytes (pipelined: 1)
+Jul 22, 2023 21:53:59.634 [139689464335160] DEBUG - Request: [127.0.0.1:47446 (Loopback)] GET /identity (10 live) #5e
+Jul 22, 2023 21:53:59.634 [139689494068024] DEBUG - Completed: [127.0.0.1:47446] 200 GET /identity (10 live) #5e 0ms 398 bytes (pipelined: 1)
+Jul 22, 2023 21:54:04.964 [139689419799352] DEBUG - Request: [127.0.0.1:47458 (Loopback)] GET /identity (10 live) #60
+Jul 22, 2023 21:54:04.965 [139689494068024] DEBUG - Completed: [127.0.0.1:47458] 200 GET /identity (10 live) #60 0ms 398 bytes (pipelined: 1)
+Jul 22, 2023 21:54:10.585 [139689419799352] DEBUG - Request: [127.0.0.1:58940 (Loopback)] GET /identity (10 live) #63
+Jul 22, 2023 21:54:10.586 [139689494068024] DEBUG - Completed: [127.0.0.1:58940] 200 GET /identity (10 live) #63 5ms 398 bytes (pipelined: 1)
+Jul 22, 2023 21:54:16.381 [139689419799352] DEBUG - Request: [127.0.0.1:58956 (Loopback)] GET /identity (6 live) #66
+Jul 22, 2023 21:54:16.382 [139689494068024] DEBUG - Completed: [127.0.0.1:58956] 200 GET /identity (6 live) #66 3ms 398 bytes (pipelined: 1)
+Jul 22, 2023 21:54:22.106 [139689419799352] DEBUG - Request: [127.0.0.1:32918 (Loopback)] GET /identity (2 live) #6d
+Jul 22, 2023 21:54:22.109 [139689494068024] DEBUG - Completed: [127.0.0.1:32918] 200 GET /identity (2 live) #6d 2ms 398 bytes (pipelined: 1)
+Jul 22, 2023 21:54:27.659 [139689419799352] DEBUG - Request: [127.0.0.1:32934 (Loopback)] GET /identity (2 live) #74
+Jul 22, 2023 21:54:27.660 [139689491958584] DEBUG - Completed: [127.0.0.1:32934] 200 GET /identity (2 live) #74 1ms 398 bytes (pipelined: 1)
+Jul 22, 2023 21:54:33.076 [139689419799352] DEBUG - Request: [127.0.0.1:58808 (Loopback)] GET /identity (2 live) #77
+Jul 22, 2023 21:54:33.077 [139689491958584] DEBUG - Completed: [127.0.0.1:58808] 200 GET /identity (2 live) #77 1ms 398 bytes (pipelined: 1)
+Jul 22, 2023 21:54:38.501 [139689419799352] DEBUG - Request: [127.0.0.1:58824 (Loopback)] GET /identity (2 live) #7a
+Jul 22, 2023 21:54:38.501 [139689491958584] DEBUG - Completed: [127.0.0.1:58824] 200 GET /identity (2 live) #7a 0ms 398 bytes (pipelined: 1)
+Jul 22, 2023 21:54:43.896 [139689419799352] DEBUG - Request: [127.0.0.1:38118 (Loopback)] GET /identity (2 live) #7d
+Jul 22, 2023 21:54:43.897 [139689494068024] DEBUG - Completed: [127.0.0.1:38118] 200 GET /identity (2 live) #7d 0ms 398 bytes (pipelined: 1)
+Jul 22, 2023 21:54:49.444 [139689419799352] DEBUG - Request: [127.0.0.1:47970 (Loopback)] GET /identity (2 live) #80
+Jul 22, 2023 21:54:49.445 [139689494068024] DEBUG - Completed: [127.0.0.1:47970] 200 GET /identity (2 live) #80 1ms 398 bytes (pipelined: 1)
+Jul 22, 2023 21:54:54.863 [139689419799352] DEBUG - Request: [127.0.0.1:47980 (Loopback)] GET /identity (2 live) #83
+Jul 22, 2023 21:54:54.864 [139689491958584] DEBUG - Completed: [127.0.0.1:47980] 200 GET /identity (2 live) #83 1ms 398 bytes (pipelined: 1)
+Jul 22, 2023 21:55:00.361 [139689419799352] DEBUG - Request: [127.0.0.1:46526 (Loopback)] GET /identity (2 live) #86
+Jul 22, 2023 21:55:00.362 [139689491958584] DEBUG - Completed: [127.0.0.1:46526] 200 GET /identity (2 live) #86 1ms 398 bytes (pipelined: 1)
+Jul 22, 2023 21:55:05.997 [139689419799352] DEBUG - Request: [127.0.0.1:46532 (Loopback)] GET /identity (2 live) #89
+Jul 22, 2023 21:55:05.998 [139689494068024] DEBUG - Completed: [127.0.0.1:46532] 200 GET /identity (2 live) #89 1ms 398 bytes (pipelined: 1)
+Jul 22, 2023 21:55:11.827 [139689419799352] DEBUG - Request: [127.0.0.1:51390 (Loopback)] GET /identity (2 live) #8c
+Jul 22, 2023 21:55:11.828 [139689494068024] DEBUG - Completed: [127.0.0.1:51390] 200 GET /identity (2 live) #8c 1ms 398 bytes (pipelined: 1)
+Jul 22, 2023 21:55:17.424 [139689419799352] DEBUG - Request: [127.0.0.1:51392 (Loopback)] GET /identity (2 live) #8f
+Jul 22, 2023 21:55:17.426 [139689491958584] DEBUG - Completed: [127.0.0.1:51392] 200 GET /identity (2 live) #8f 2ms 398 bytes (pipelined: 1)
+Jul 22, 2023 21:55:18.625 [139689496542008] DEBUG - Shutting down with signal 15 (Terminated)
+Jul 22, 2023 21:55:18.625 [139689496542008] DEBUG - Ordered to stop server.
+Jul 22, 2023 21:55:18.625 [139689501285008] DEBUG - Stopping server...
+Jul 22, 2023 21:55:18.625 [139689501285008] DEBUG - HttpServer: Stopping server.
+Jul 22, 2023 21:55:18.625 [139689488644920] DEBUG - MetadataItemClusterRequestHandler: a shutdown event has been received
+Jul 22, 2023 21:55:18.625 [139689488644920] DEBUG - TranscodeJobManager: [Running] onServerShutdown
+Jul 22, 2023 21:55:18.625 [139689488644920] DEBUG - TranscodeJobManager: [Running] -> [Shutdown]
+Jul 22, 2023 21:55:18.625 [139689501285008] DEBUG - Server stopped.
+Jul 22, 2023 21:55:18.626 [139689501285008] DEBUG - NetworkService: Stopping advertisement.
+Jul 22, 2023 21:55:18.626 [139689501285008] DEBUG - Killing plug-ins.
+Jul 22, 2023 21:55:18.649 [139689501285008] DEBUG - [com.plexapp.agents.imdb] Killing.
+Jul 22, 2023 21:55:18.727 [139689501285008] DEBUG - [com.plexapp.system] Killing.
+Jul 22, 2023 21:55:18.736 [139689501285008] DEBUG - ChildProcessMonitor: Waiting for Plex Tuner Service to exit.
+Jul 22, 2023 21:55:18.739 [139689501285008] DEBUG - [JobRunner] Signalling job ID 349 with 2
+Jul 22, 2023 21:55:18.744 [139689496542008] WARN - JobManager: Could not find job for handle 377
+Jul 22, 2023 21:55:18.750 [139689496542008] WARN - JobManager: Could not find job for handle 284
+Jul 22, 2023 21:55:18.829 [139689496542008] DEBUG - Jobs: '/usr/lib/plexmediaserver/Plex Tuner Service' exit code for process 349 is 0 (success)
+Jul 22, 2023 21:55:18.829 [139689451440952] DEBUG - [ChildProcessMonitor] Plex Tuner Service exited.
+Jul 22, 2023 21:55:18.830 [139689501285008] DEBUG - Database: Shutting down.
+Jul 22, 2023 21:55:18.848 [139689501285008] DEBUG - Database: Shutting down.

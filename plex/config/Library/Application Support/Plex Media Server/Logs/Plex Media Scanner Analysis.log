@@ -1,0 +1,178 @@
+Jul 22, 2023 22:16:34.469 [140050427976448] INFO - Plex Media Scanner v1.32.5.7328-2632c9d3a - Docker Docker Container x86_64 - build: linux-x86_64 - GMT 00:00
+Jul 22, 2023 22:16:34.470 [140050427976448] INFO - Linux version: 5.15.0-71-generic, language: en-US
+Jul 22, 2023 22:16:34.470 [140050427976448] INFO - Processor: 4-core AMD EPYC 7282 16-Core Processor                
+Jul 22, 2023 22:16:34.470 [140050427976448] INFO - /usr/lib/plexmediaserver/Plex Media Scanner --analyze --log-file-suffix  Analysis --item 100
+Jul 22, 2023 22:16:34.471 [140050428472128] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.39.4, threadsafe=1
+Jul 22, 2023 22:16:34.565 [140050428472128] DEBUG - Analyzing media parts for item 100 (OPERATION STRIX): 87
+Jul 22, 2023 22:16:34.569 [140050428472128] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:16:34.570 [140050428472128] DEBUG - [HCl#1] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:16:34.583 [140050410052352] DEBUG - [HttpClient/HCl#1] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:16:34.583 [140050428472128] DEBUG - Updating metadata item (save) (OPERATION STRIX) with ID 100
+Jul 22, 2023 22:16:34.585 [140050409020160] DEBUG - [HCl#2] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=98
+Jul 22, 2023 22:16:34.585 [140050428472128] DEBUG - [ID 87] Media part analysis: /data/tvshows/SPY x FAMILY/Season 1/SPY x FAMILY - S01E01 - OPERATION STRIX HDTV-2160p.mp4
+Jul 22, 2023 22:16:34.585 [140050428472128] DEBUG - [MI] Opening input file: "/data/tvshows/SPY x FAMILY/Season 1/SPY x FAMILY - S01E01 - OPERATION STRIX HDTV-2160p.mp4"
+Jul 22, 2023 22:16:34.585 [140050428472128] DEBUG - [FFMPEG] - Opening '/data/tvshows/SPY x FAMILY/Season 1/SPY x FAMILY - S01E01 - OPERATION STRIX HDTV-2160p.mp4' for reading
+Jul 22, 2023 22:16:34.585 [140050428472128] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:16:34.586 [140050410052352] DEBUG - [HttpClient/HCl#2] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=98 (reused)
+Jul 22, 2023 22:16:34.683 [140050428472128] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Jul 22, 2023 22:16:34.683 [140050428472128] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Jul 22, 2023 22:16:34.683 [140050428472128] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:16:34.689 [140050428472128] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: -1, duration: 2000
+Jul 22, 2023 22:16:34.689 [140050428472128] DEBUG - [FFMPEG] - Processing st: 0, edit list 1 - media time: 2002, duration: 23197888
+Jul 22, 2023 22:16:34.691 [140050428472128] DEBUG - [FFMPEG] - Offset DTS by 2002 to make first pts zero.
+Jul 22, 2023 22:16:34.691 [140050428472128] DEBUG - [FFMPEG] - Setting codecpar->delay to 3 for stream st: 0
+Jul 22, 2023 22:16:34.691 [140050428472128] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:16:34.692 [140050428472128] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 0, duration: 1449880000
+Jul 22, 2023 22:16:34.692 [140050428472128] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:16:34.692 [140050428472128] DEBUG - [FFMPEG] - Processing st: 2, edit list 0 - media time: 0, duration: 1450370000
+Jul 22, 2023 22:16:34.692 [140050428472128] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:16:34.692 [140050428472128] DEBUG - [FFMPEG] - Processing st: 3, edit list 0 - media time: 0, duration: 1450370000
+Jul 22, 2023 22:16:34.692 [140050428472128] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:16:34.692 [140050428472128] DEBUG - [FFMPEG] - Processing st: 4, edit list 0 - media time: 0, duration: 1450509000
+Jul 22, 2023 22:16:34.692 [140050428472128] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:16:34.692 [140050428472128] DEBUG - [FFMPEG] - Processing st: 5, edit list 0 - media time: 0, duration: 1449880000
+Jul 22, 2023 22:16:34.692 [140050428472128] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:16:34.693 [140050428472128] DEBUG - [FFMPEG] - Processing st: 6, edit list 0 - media time: 0, duration: 1449365000
+Jul 22, 2023 22:16:34.693 [140050428472128] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:16:34.696 [140050428472128] DEBUG - [FFMPEG] - Processing st: 7, edit list 0 - media time: 0, duration: 69599232
+Jul 22, 2023 22:16:34.698 [140050428472128] DEBUG - [FFMPEG] - rfps: 23.916667 0.004854
+Jul 22, 2023 22:16:34.698 [140050428472128] DEBUG - [FFMPEG] - rfps: 23.916667 0.004854
+Jul 22, 2023 22:16:34.698 [140050428472128] DEBUG - [FFMPEG] - rfps: 24.000000 0.000908
+Jul 22, 2023 22:16:34.698 [140050428472128] DEBUG - [FFMPEG] - rfps: 24.083333 0.016298
+Jul 22, 2023 22:16:34.698 [140050428472128] DEBUG - [FFMPEG] - rfps: 48.000000 0.003632
+Jul 22, 2023 22:16:34.699 [140050428472128] DEBUG - [FFMPEG] - rfps: 23.976024 0.000062
+Jul 22, 2023 22:16:34.699 [140050428472128] DEBUG - [FFMPEG] - rfps: 47.952048 0.000247
+Jul 22, 2023 22:16:34.699 [140050428472128] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 1492997 bytes read:1512806 seeks:0 nb_streams:8
+Jul 22, 2023 22:16:34.699 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:16:34.699 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:16:34.701 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:16:34.701 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:16:34.702 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:16:34.702 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:16:34.702 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:16:34.702 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:16:34.702 [140050428472128] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Jul 22, 2023 22:16:34.718 [140050428472128] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:16:34.779 [140050428472128] DEBUG - [FFMPEG] - All info found
+Jul 22, 2023 22:16:34.781 [140050428472128] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 1878100 bytes read:1910848 seeks:0 frames:8
+Jul 22, 2023 22:16:34.782 [140050428472128] DEBUG - [MI] Opening "/data/tvshows/SPY x FAMILY/Season 1/SPY x FAMILY - S01E01 - OPERATION STRIX HDTV-2160p.mp4" for MP4 atom parsing
+Jul 22, 2023 22:16:34.783 [140050428472128] DEBUG - Mp4AtomParser: Skipping ftyp atom of size 32 at offset 0
+Jul 22, 2023 22:16:34.783 [140050428472128] DEBUG - Mp4AtomParser: Found moov atom of size 1492949 at offset 32
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found trak atom of size 718290 at offset 148
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found trak atom of size 12000 at offset 718438
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found trak atom of size 10144 at offset 730438
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found trak atom of size 10032 at offset 740582
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found trak atom of size 10796 at offset 750614
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found trak atom of size 10640 at offset 761410
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found trak atom of size 19236 at offset 772050
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found trak atom of size 701598 at offset 791286
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found mdia atom of size 718142 at offset 296
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found minf atom of size 718057 at offset 381
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found stbl atom of size 717993 at offset 445
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found mdia atom of size 11864 at offset 718574
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found minf atom of size 11776 at offset 718662
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found stbl atom of size 11720 at offset 718718
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found mdia atom of size 10008 at offset 730574
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found minf atom of size 9920 at offset 730662
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found stbl atom of size 9864 at offset 730718
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found mdia atom of size 9896 at offset 740718
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found minf atom of size 9808 at offset 740806
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found stbl atom of size 9752 at offset 740862
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found mdia atom of size 10660 at offset 750750
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found minf atom of size 10572 at offset 750838
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found stbl atom of size 10516 at offset 750894
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found mdia atom of size 10504 at offset 761546
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found minf atom of size 10416 at offset 761634
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found stbl atom of size 10360 at offset 761690
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found mdia atom of size 19100 at offset 772186
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found minf atom of size 19012 at offset 772274
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found stbl atom of size 18956 at offset 772330
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found mdia atom of size 701462 at offset 791422
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found minf atom of size 701377 at offset 791507
+Jul 22, 2023 22:16:34.787 [140050428472128] DEBUG - Mp4AtomParser: Found stbl atom of size 701317 at offset 791567
+Jul 22, 2023 22:16:34.793 [140050428472128] DEBUG - [MI]  * 63e1e72fb46e363155b54675590ba6c60fee6925 [mp4 h264/aac] Duration: 1450509ms, 3840x2160 (1.777778) 23.977fps, bitrate=6504kbps, audio channels=2, optimizedForStreaming=1 ("/data/tvshows/SPY x FAMILY/Season 1/SPY x FAMILY - S01E01 - OPERATION STRIX HDTV-2160p.mp4")
+Jul 22, 2023 22:16:34.793 [140050428472128] DEBUG - [MI] Chapters had generic titles, clearing.
+Jul 22, 2023 22:16:34.794 [140050428472128] DEBUG - [MI] Closing input file: "/data/tvshows/SPY x FAMILY/Season 1/SPY x FAMILY - S01E01 - OPERATION STRIX HDTV-2160p.mp4"
+Jul 22, 2023 22:16:34.796 [140050428472128] DEBUG - Committing media stream changes for part 87
+Jul 22, 2023 22:16:34.797 [140050428472128] DEBUG - Updating media item 87, size=1179400400, metadata_item_id=100
+Jul 22, 2023 22:16:34.797 [140050428472128] DEBUG - Updating part with ID=87 [/data/tvshows/SPY x FAMILY/Season 1/SPY x FAMILY - S01E01 - OPERATION STRIX HDTV-2160p.mp4]
+Jul 22, 2023 22:16:34.798 [140050409020160] DEBUG - [HCl#3] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=100&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=analyzing
+Jul 22, 2023 22:16:34.799 [140050428472128] DEBUG - [MI] Opening input file: "/data/tvshows/SPY x FAMILY/Season 1/SPY x FAMILY - S01E01 - OPERATION STRIX HDTV-2160p.mp4"
+Jul 22, 2023 22:16:34.799 [140050428472128] DEBUG - [FFMPEG] - Opening '/data/tvshows/SPY x FAMILY/Season 1/SPY x FAMILY - S01E01 - OPERATION STRIX HDTV-2160p.mp4' for reading
+Jul 22, 2023 22:16:34.799 [140050428472128] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:16:34.799 [140050410052352] DEBUG - [HttpClient/HCl#3] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=100&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=analyzing (reused)
+Jul 22, 2023 22:16:34.799 [140050409020160] DEBUG - [HCl#4] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=100&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=thumbnailing
+Jul 22, 2023 22:16:34.800 [140050410052352] DEBUG - [HttpClient/HCl#4] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=100&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=thumbnailing (reused)
+Jul 22, 2023 22:16:34.925 [140050428472128] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Jul 22, 2023 22:16:34.925 [140050428472128] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Jul 22, 2023 22:16:34.925 [140050428472128] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:16:34.929 [140050428472128] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: -1, duration: 2000
+Jul 22, 2023 22:16:34.929 [140050428472128] DEBUG - [FFMPEG] - Processing st: 0, edit list 1 - media time: 2002, duration: 23197888
+Jul 22, 2023 22:16:34.930 [140050428472128] DEBUG - [FFMPEG] - Offset DTS by 2002 to make first pts zero.
+Jul 22, 2023 22:16:34.931 [140050428472128] DEBUG - [FFMPEG] - Setting codecpar->delay to 3 for stream st: 0
+Jul 22, 2023 22:16:34.931 [140050428472128] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:16:34.931 [140050428472128] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 0, duration: 1449880000
+Jul 22, 2023 22:16:34.931 [140050428472128] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:16:34.931 [140050428472128] DEBUG - [FFMPEG] - Processing st: 2, edit list 0 - media time: 0, duration: 1450370000
+Jul 22, 2023 22:16:34.931 [140050428472128] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:16:34.931 [140050428472128] DEBUG - [FFMPEG] - Processing st: 3, edit list 0 - media time: 0, duration: 1450370000
+Jul 22, 2023 22:16:34.931 [140050428472128] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:16:34.931 [140050428472128] DEBUG - [FFMPEG] - Processing st: 4, edit list 0 - media time: 0, duration: 1450509000
+Jul 22, 2023 22:16:34.931 [140050428472128] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:16:34.931 [140050428472128] DEBUG - [FFMPEG] - Processing st: 5, edit list 0 - media time: 0, duration: 1449880000
+Jul 22, 2023 22:16:34.931 [140050428472128] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:16:34.931 [140050428472128] DEBUG - [FFMPEG] - Processing st: 6, edit list 0 - media time: 0, duration: 1449365000
+Jul 22, 2023 22:16:34.932 [140050428472128] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:16:34.935 [140050428472128] DEBUG - [FFMPEG] - Processing st: 7, edit list 0 - media time: 0, duration: 69599232
+Jul 22, 2023 22:16:34.937 [140050428472128] DEBUG - [FFMPEG] - rfps: 23.916667 0.004854
+Jul 22, 2023 22:16:34.937 [140050428472128] DEBUG - [FFMPEG] - rfps: 23.916667 0.004854
+Jul 22, 2023 22:16:34.937 [140050428472128] DEBUG - [FFMPEG] - rfps: 24.000000 0.000908
+Jul 22, 2023 22:16:34.937 [140050428472128] DEBUG - [FFMPEG] - rfps: 24.083333 0.016298
+Jul 22, 2023 22:16:34.937 [140050428472128] DEBUG - [FFMPEG] - rfps: 48.000000 0.003632
+Jul 22, 2023 22:16:34.937 [140050428472128] DEBUG - [FFMPEG] - rfps: 23.976024 0.000062
+Jul 22, 2023 22:16:34.937 [140050428472128] DEBUG - [FFMPEG] - rfps: 47.952048 0.000247
+Jul 22, 2023 22:16:34.937 [140050428472128] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 1492997 bytes read:1512806 seeks:0 nb_streams:8
+Jul 22, 2023 22:16:34.938 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:16:34.938 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:16:34.939 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:16:34.939 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:16:34.940 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:16:34.940 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:16:34.940 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:16:34.940 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:16:34.940 [140050428472128] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Jul 22, 2023 22:16:34.952 [140050428472128] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:16:35.011 [140050428472128] DEBUG - [FFMPEG] - All info found
+Jul 22, 2023 22:16:35.015 [140050428472128] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 1878100 bytes read:1910848 seeks:0 frames:8
+Jul 22, 2023 22:16:35.015 [140050428472128] DEBUG - Creating /config/Library/Application Support/Plex Media Server/Media/localhost/6/3e1e72fb46e363155b54675590ba6c60fee6925.bundle/Contents/Thumbnails/thumb1.jpg (50.0%, 720x512).
+Jul 22, 2023 22:16:35.016 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:16:35.016 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:16:35.370 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:16:35.371 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:16:35.371 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:16:35.371 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:16:35.371 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:16:35.371 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:16:35.372 [140050428472128] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Jul 22, 2023 22:16:35.382 [140050428472128] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:16:35.427 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:16:35.447 [140050428472128] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:16:35.478 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:16:35.496 [140050428472128] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:16:35.514 [140050428472128] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:16:40.295 [140050428472128] DEBUG - Loaded memory image of size 3840x2160.
+Jul 22, 2023 22:16:40.556 [140050428472128] DEBUG - [MI] Closing input file: "/data/tvshows/SPY x FAMILY/Season 1/SPY x FAMILY - S01E01 - OPERATION STRIX HDTV-2160p.mp4"
+Jul 22, 2023 22:16:40.559 [140050428472128] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:16:40.559 [140050428472128] DEBUG - [HCl#5] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:16:40.561 [140050410052352] DEBUG - [HttpClient/HCl#5] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Jul 22, 2023 22:16:40.561 [140050428472128] DEBUG - Updating metadata item (save) (OPERATION STRIX) with ID 100
+Jul 22, 2023 22:16:40.562 [140050409020160] DEBUG - [HCl#6] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=98
+Jul 22, 2023 22:16:40.562 [140050410052352] DEBUG - [HttpClient/HCl#6] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=98 (reused)
+Jul 22, 2023 22:16:40.563 [140050409020160] DEBUG - [HCl#7] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=100&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=idle
+Jul 22, 2023 22:16:40.563 [140050410052352] DEBUG - [HttpClient/HCl#7] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=100&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=idle (reused)
+Jul 22, 2023 22:16:40.566 [140050428472128] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:16:40.566 [140050428472128] DEBUG - [HCl#8] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:16:40.566 [140050410052352] DEBUG - [HttpClient/HCl#8] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Jul 22, 2023 22:16:40.567 [140050428472128] DEBUG - Updating metadata item (save) (OPERATION STRIX) with ID 100
+Jul 22, 2023 22:16:40.567 [140050409020160] DEBUG - [HCl#9] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=98
+Jul 22, 2023 22:16:40.568 [140050410052352] DEBUG - [HttpClient/HCl#9] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=98 (reused)

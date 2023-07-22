@@ -1,0 +1,278 @@
+Jul 22, 2023 22:08:25.349 [139718845274880] INFO - Plex Media Scanner v1.32.5.7328-2632c9d3a - Docker Docker Container x86_64 - build: linux-x86_64 - GMT 00:00
+Jul 22, 2023 22:08:25.417 [139718845274880] INFO - Linux version: 5.15.0-71-generic, language: en-US
+Jul 22, 2023 22:08:25.417 [139718845274880] INFO - Processor: 4-core AMD EPYC 7282 16-Core Processor                
+Jul 22, 2023 22:08:25.417 [139718845274880] INFO - /usr/lib/plexmediaserver/Plex Media Scanner --match --type 2 --log-file-suffix  Matcher --item 65
+Jul 22, 2023 22:08:25.435 [139718845770560] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.39.4, threadsafe=1
+Jul 22, 2023 22:08:27.557 [139718845770560] DEBUG - Matcher: found 8 auxiliary files for Season 1
+Jul 22, 2023 22:08:27.559 [139718845770560] DEBUG - [MI] Opening input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E01 - Bath of Beans DVD.mp4"
+Jul 22, 2023 22:08:27.560 [139718845770560] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 1/Little Britain - S01E01 - Bath of Beans DVD.mp4' for reading
+Jul 22, 2023 22:08:27.560 [139718845770560] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:27.640 [139718845770560] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Jul 22, 2023 22:08:27.648 [139718845770560] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Jul 22, 2023 22:08:27.649 [139718845770560] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:27.656 [139718845770560] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 1024, duration: 21891072
+Jul 22, 2023 22:08:27.851 [139718845770560] DEBUG - [FFMPEG] - Offset DTS by 1024 to make first pts zero.
+Jul 22, 2023 22:08:27.853 [139718845770560] DEBUG - [FFMPEG] - Setting codecpar->delay to 2 for stream st: 0
+Jul 22, 2023 22:08:27.853 [139718845770560] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:28.039 [139718845770560] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 1024, duration: 82089360
+Jul 22, 2023 22:08:28.039 [139718845770560] DEBUG - [FFMPEG] - drop a frame at curr_cts: 0 @ 0
+Jul 22, 2023 22:08:28.052 [139718845770560] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 1297233 bytes read:1322638 seeks:0 nb_streams:2
+Jul 22, 2023 22:08:28.053 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:28.053 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:28.054 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:28.054 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:28.054 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:08:28.054 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:08:28.055 [139718845770560] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Jul 22, 2023 22:08:28.056 [139718845770560] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:28.154 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:08:28.233 [139718845770560] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:28.244 [139718845770560] DEBUG - [FFMPEG] - demuxer injecting skip 1024 / discard 0
+Jul 22, 2023 22:08:28.244 [139718845770560] DEBUG - [FFMPEG] - skip 1024 / discard 0 samples due to side data
+Jul 22, 2023 22:08:28.244 [139718845770560] DEBUG - [FFMPEG] - All info found
+Jul 22, 2023 22:08:28.244 [139718845770560] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 1298401 bytes read:1322638 seeks:0 frames:3
+Jul 22, 2023 22:08:28.251 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:28.251 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:28.251 [139718845770560] DEBUG - [MI] Closing input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E01 - Bath of Beans DVD.mp4"
+Jul 22, 2023 22:08:28.345 [139718845770560] DEBUG - Scanner: found local sidecar subtitle "/data/tvshows/Little Britain/Season 1/Little Britain - S01E01 - Bath of Beans DVD.en.srt"
+Jul 22, 2023 22:08:28.346 [139718845770560] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 1/Little Britain - S01E01 - Bath of Beans DVD.en.srt' for reading
+Jul 22, 2023 22:08:28.346 [139718845770560] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:29.839 [139718845770560] DEBUG - [FFMPEG] - Format srt probed with size=2048 and score=100
+Jul 22, 2023 22:08:29.942 [139718845770560] DEBUG - [MI] Opening input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E02 - Tallest Man DVD.mp4"
+Jul 22, 2023 22:08:29.942 [139718845770560] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 1/Little Britain - S01E02 - Tallest Man DVD.mp4' for reading
+Jul 22, 2023 22:08:29.942 [139718845770560] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:29.945 [139718845770560] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Jul 22, 2023 22:08:29.946 [139718845770560] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Jul 22, 2023 22:08:29.946 [139718845770560] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:29.964 [139718845770560] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 1024, duration: 21888512
+Jul 22, 2023 22:08:30.034 [139718845770560] DEBUG - [FFMPEG] - Offset DTS by 1024 to make first pts zero.
+Jul 22, 2023 22:08:30.036 [139718845770560] DEBUG - [FFMPEG] - Setting codecpar->delay to 2 for stream st: 0
+Jul 22, 2023 22:08:30.036 [139718845770560] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:30.234 [139718845770560] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 1024, duration: 82080144
+Jul 22, 2023 22:08:30.234 [139718845770560] DEBUG - [FFMPEG] - drop a frame at curr_cts: 0 @ 0
+Jul 22, 2023 22:08:30.239 [139718845770560] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 1295085 bytes read:1320510 seeks:0 nb_streams:2
+Jul 22, 2023 22:08:30.240 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:30.240 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:30.240 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:30.240 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:30.240 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:08:30.240 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:08:30.240 [139718845770560] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Jul 22, 2023 22:08:30.241 [139718845770560] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:30.241 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:08:30.241 [139718845770560] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:30.242 [139718845770560] DEBUG - [FFMPEG] - demuxer injecting skip 1024 / discard 0
+Jul 22, 2023 22:08:30.242 [139718845770560] DEBUG - [FFMPEG] - skip 1024 / discard 0 samples due to side data
+Jul 22, 2023 22:08:30.242 [139718845770560] DEBUG - [FFMPEG] - All info found
+Jul 22, 2023 22:08:30.242 [139718845770560] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 1296204 bytes read:1320510 seeks:0 frames:3
+Jul 22, 2023 22:08:30.243 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:30.243 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:30.243 [139718845770560] DEBUG - [MI] Closing input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E02 - Tallest Man DVD.mp4"
+Jul 22, 2023 22:08:30.249 [139718845770560] DEBUG - Scanner: found local sidecar subtitle "/data/tvshows/Little Britain/Season 1/Little Britain - S01E02 - Tallest Man DVD.en.srt"
+Jul 22, 2023 22:08:30.249 [139718845770560] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 1/Little Britain - S01E02 - Tallest Man DVD.en.srt' for reading
+Jul 22, 2023 22:08:30.249 [139718845770560] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:31.356 [139718845770560] DEBUG - [FFMPEG] - Format srt probed with size=2048 and score=100
+Jul 22, 2023 22:08:31.446 [139718845770560] DEBUG - [MI] Opening input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E03 - Hard-Boiled Egg Eating DVD.mp4"
+Jul 22, 2023 22:08:31.446 [139718845770560] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 1/Little Britain - S01E03 - Hard-Boiled Egg Eating DVD.mp4' for reading
+Jul 22, 2023 22:08:31.446 [139718845770560] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:31.451 [139718845770560] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Jul 22, 2023 22:08:31.452 [139718845770560] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Jul 22, 2023 22:08:31.452 [139718845770560] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:31.549 [139718845770560] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 1024, duration: 21835264
+Jul 22, 2023 22:08:31.551 [139718845770560] DEBUG - [FFMPEG] - Offset DTS by 1024 to make first pts zero.
+Jul 22, 2023 22:08:31.552 [139718845770560] DEBUG - [FFMPEG] - Setting codecpar->delay to 2 for stream st: 0
+Jul 22, 2023 22:08:31.552 [139718845770560] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:32.772 [139718845770560] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 1024, duration: 81880464
+Jul 22, 2023 22:08:32.772 [139718845770560] DEBUG - [FFMPEG] - drop a frame at curr_cts: 0 @ 0
+Jul 22, 2023 22:08:33.602 [139718845770560] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 1293997 bytes read:1319838 seeks:0 nb_streams:2
+Jul 22, 2023 22:08:33.680 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:33.680 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:33.681 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:33.681 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:33.681 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:08:33.681 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:08:33.681 [139718845770560] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Jul 22, 2023 22:08:33.682 [139718845770560] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:33.692 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:08:33.692 [139718845770560] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:33.693 [139718845770560] DEBUG - [FFMPEG] - demuxer injecting skip 1024 / discard 0
+Jul 22, 2023 22:08:33.693 [139718845770560] DEBUG - [FFMPEG] - skip 1024 / discard 0 samples due to side data
+Jul 22, 2023 22:08:33.693 [139718845770560] DEBUG - [FFMPEG] - All info found
+Jul 22, 2023 22:08:33.693 [139718845770560] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 1295101 bytes read:1319838 seeks:0 frames:3
+Jul 22, 2023 22:08:33.694 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:33.694 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:33.773 [139718845770560] DEBUG - [MI] Closing input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E03 - Hard-Boiled Egg Eating DVD.mp4"
+Jul 22, 2023 22:08:33.780 [139718845770560] DEBUG - Scanner: found local sidecar subtitle "/data/tvshows/Little Britain/Season 1/Little Britain - S01E03 - Hard-Boiled Egg Eating DVD.en.srt"
+Jul 22, 2023 22:08:33.780 [139718845770560] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 1/Little Britain - S01E03 - Hard-Boiled Egg Eating DVD.en.srt' for reading
+Jul 22, 2023 22:08:33.780 [139718845770560] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:34.583 [139718845770560] DEBUG - [FFMPEG] - Format srt probed with size=2048 and score=100
+Jul 22, 2023 22:08:34.595 [139718845770560] DEBUG - [MI] Opening input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E04 - Most Cigarettes in a Mouth DVD.mp4"
+Jul 22, 2023 22:08:34.596 [139718845770560] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 1/Little Britain - S01E04 - Most Cigarettes in a Mouth DVD.mp4' for reading
+Jul 22, 2023 22:08:34.596 [139718845770560] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:34.598 [139718845770560] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Jul 22, 2023 22:08:34.598 [139718845770560] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Jul 22, 2023 22:08:34.598 [139718845770560] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:34.695 [139718845770560] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 1024, duration: 21852160
+Jul 22, 2023 22:08:34.897 [139718845770560] DEBUG - [FFMPEG] - Offset DTS by 1024 to make first pts zero.
+Jul 22, 2023 22:08:34.897 [139718845770560] DEBUG - [FFMPEG] - Setting codecpar->delay to 2 for stream st: 0
+Jul 22, 2023 22:08:34.897 [139718845770560] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:34.997 [139718845770560] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 1024, duration: 81942960
+Jul 22, 2023 22:08:34.997 [139718845770560] DEBUG - [FFMPEG] - drop a frame at curr_cts: 0 @ 0
+Jul 22, 2023 22:08:35.077 [139718845770560] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 1293817 bytes read:1319526 seeks:0 nb_streams:2
+Jul 22, 2023 22:08:35.077 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:35.077 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:35.078 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:35.078 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:35.078 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:08:35.078 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:08:35.083 [139718845770560] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Jul 22, 2023 22:08:35.084 [139718845770560] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:35.084 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:08:35.085 [139718845770560] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:35.085 [139718845770560] DEBUG - [FFMPEG] - demuxer injecting skip 1024 / discard 0
+Jul 22, 2023 22:08:35.085 [139718845770560] DEBUG - [FFMPEG] - skip 1024 / discard 0 samples due to side data
+Jul 22, 2023 22:08:35.085 [139718845770560] DEBUG - [FFMPEG] - All info found
+Jul 22, 2023 22:08:35.086 [139718845770560] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 1294910 bytes read:1319526 seeks:0 frames:3
+Jul 22, 2023 22:08:35.086 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:35.086 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:35.086 [139718845770560] DEBUG - [MI] Closing input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E04 - Most Cigarettes in a Mouth DVD.mp4"
+Jul 22, 2023 22:08:35.099 [139718845770560] DEBUG - Scanner: found local sidecar subtitle "/data/tvshows/Little Britain/Season 1/Little Britain - S01E04 - Most Cigarettes in a Mouth DVD.en.srt"
+Jul 22, 2023 22:08:35.099 [139718845770560] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 1/Little Britain - S01E04 - Most Cigarettes in a Mouth DVD.en.srt' for reading
+Jul 22, 2023 22:08:35.099 [139718845770560] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:35.508 [139718845770560] DEBUG - [FFMPEG] - Format srt probed with size=2048 and score=100
+Jul 22, 2023 22:08:35.580 [139718845770560] DEBUG - [MI] Opening input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E05 - Biggest House of Cards DVD.mp4"
+Jul 22, 2023 22:08:35.580 [139718845770560] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 1/Little Britain - S01E05 - Biggest House of Cards DVD.mp4' for reading
+Jul 22, 2023 22:08:35.580 [139718845770560] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:35.584 [139718845770560] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Jul 22, 2023 22:08:35.585 [139718845770560] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Jul 22, 2023 22:08:35.585 [139718845770560] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:35.598 [139718845770560] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 1024, duration: 21808128
+Jul 22, 2023 22:08:35.601 [139718845770560] DEBUG - [FFMPEG] - Offset DTS by 1024 to make first pts zero.
+Jul 22, 2023 22:08:35.602 [139718845770560] DEBUG - [FFMPEG] - Setting codecpar->delay to 2 for stream st: 0
+Jul 22, 2023 22:08:35.602 [139718845770560] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:35.684 [139718845770560] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 1024, duration: 81779088
+Jul 22, 2023 22:08:35.684 [139718845770560] DEBUG - [FFMPEG] - drop a frame at curr_cts: 0 @ 0
+Jul 22, 2023 22:08:35.689 [139718845770560] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 1289649 bytes read:1315702 seeks:0 nb_streams:2
+Jul 22, 2023 22:08:35.690 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:35.690 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:35.691 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:35.691 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:35.691 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:08:35.691 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:08:35.691 [139718845770560] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Jul 22, 2023 22:08:35.692 [139718845770560] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:35.693 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:08:35.693 [139718845770560] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:35.693 [139718845770560] DEBUG - [FFMPEG] - demuxer injecting skip 1024 / discard 0
+Jul 22, 2023 22:08:35.693 [139718845770560] DEBUG - [FFMPEG] - skip 1024 / discard 0 samples due to side data
+Jul 22, 2023 22:08:35.693 [139718845770560] DEBUG - [FFMPEG] - All info found
+Jul 22, 2023 22:08:35.694 [139718845770560] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 1290778 bytes read:1315702 seeks:0 frames:3
+Jul 22, 2023 22:08:35.694 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:35.694 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:35.694 [139718845770560] DEBUG - [MI] Closing input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E05 - Biggest House of Cards DVD.mp4"
+Jul 22, 2023 22:08:35.695 [139718845770560] DEBUG - Scanner: found local sidecar subtitle "/data/tvshows/Little Britain/Season 1/Little Britain - S01E05 - Biggest House of Cards DVD.en.srt"
+Jul 22, 2023 22:08:35.695 [139718845770560] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 1/Little Britain - S01E05 - Biggest House of Cards DVD.en.srt' for reading
+Jul 22, 2023 22:08:35.695 [139718845770560] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:36.392 [139718845770560] DEBUG - [FFMPEG] - Format srt probed with size=2048 and score=100
+Jul 22, 2023 22:08:36.394 [139718845770560] DEBUG - [MI] Opening input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E06 - Smallest Ant DVD.mp4"
+Jul 22, 2023 22:08:36.395 [139718845770560] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 1/Little Britain - S01E06 - Smallest Ant DVD.mp4' for reading
+Jul 22, 2023 22:08:36.395 [139718845770560] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:36.396 [139718845770560] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Jul 22, 2023 22:08:36.396 [139718845770560] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Jul 22, 2023 22:08:36.396 [139718845770560] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:36.405 [139718845770560] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 1024, duration: 21532160
+Jul 22, 2023 22:08:36.412 [139718845770560] DEBUG - [FFMPEG] - Offset DTS by 1024 to make first pts zero.
+Jul 22, 2023 22:08:36.412 [139718845770560] DEBUG - [FFMPEG] - Setting codecpar->delay to 2 for stream st: 0
+Jul 22, 2023 22:08:36.413 [139718845770560] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:36.494 [139718845770560] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 1024, duration: 80743824
+Jul 22, 2023 22:08:36.494 [139718845770560] DEBUG - [FFMPEG] - drop a frame at curr_cts: 0 @ 0
+Jul 22, 2023 22:08:36.499 [139718845770560] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 1275577 bytes read:1303786 seeks:0 nb_streams:2
+Jul 22, 2023 22:08:36.500 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:36.500 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:36.500 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:36.500 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:36.501 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:08:36.501 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:08:36.501 [139718845770560] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Jul 22, 2023 22:08:36.501 [139718845770560] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:36.502 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:08:36.502 [139718845770560] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:36.503 [139718845770560] DEBUG - [FFMPEG] - demuxer injecting skip 1024 / discard 0
+Jul 22, 2023 22:08:36.503 [139718845770560] DEBUG - [FFMPEG] - skip 1024 / discard 0 samples due to side data
+Jul 22, 2023 22:08:36.503 [139718845770560] DEBUG - [FFMPEG] - All info found
+Jul 22, 2023 22:08:36.503 [139718845770560] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 1277666 bytes read:1303786 seeks:0 frames:3
+Jul 22, 2023 22:08:36.504 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:36.504 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:36.504 [139718845770560] DEBUG - [MI] Closing input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E06 - Smallest Ant DVD.mp4"
+Jul 22, 2023 22:08:36.505 [139718845770560] DEBUG - Scanner: found local sidecar subtitle "/data/tvshows/Little Britain/Season 1/Little Britain - S01E06 - Smallest Ant DVD.en.srt"
+Jul 22, 2023 22:08:36.505 [139718845770560] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 1/Little Britain - S01E06 - Smallest Ant DVD.en.srt' for reading
+Jul 22, 2023 22:08:36.505 [139718845770560] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:37.413 [139718845770560] DEBUG - [FFMPEG] - Format srt probed with size=2048 and score=100
+Jul 22, 2023 22:08:37.488 [139718845770560] DEBUG - [MI] Opening input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E07 - Largest Mince Pie DVD.mp4"
+Jul 22, 2023 22:08:37.488 [139718845770560] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 1/Little Britain - S01E07 - Largest Mince Pie DVD.mp4' for reading
+Jul 22, 2023 22:08:37.488 [139718845770560] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:37.489 [139718845770560] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Jul 22, 2023 22:08:37.490 [139718845770560] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Jul 22, 2023 22:08:37.490 [139718845770560] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:37.496 [139718845770560] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 1024, duration: 21846528
+Jul 22, 2023 22:08:37.499 [139718845770560] DEBUG - [FFMPEG] - Offset DTS by 1024 to make first pts zero.
+Jul 22, 2023 22:08:37.500 [139718845770560] DEBUG - [FFMPEG] - Setting codecpar->delay to 2 for stream st: 0
+Jul 22, 2023 22:08:37.500 [139718845770560] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:37.512 [139718845770560] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 1024, duration: 81921456
+Jul 22, 2023 22:08:37.512 [139718845770560] DEBUG - [FFMPEG] - drop a frame at curr_cts: 0 @ 0
+Jul 22, 2023 22:08:37.514 [139718845770560] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 1293461 bytes read:1319214 seeks:0 nb_streams:2
+Jul 22, 2023 22:08:37.515 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:37.515 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:37.516 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:37.516 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:37.516 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:08:37.516 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:08:37.516 [139718845770560] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Jul 22, 2023 22:08:37.585 [139718845770560] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:37.586 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:08:37.589 [139718845770560] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:37.589 [139718845770560] DEBUG - [FFMPEG] - demuxer injecting skip 1024 / discard 0
+Jul 22, 2023 22:08:37.589 [139718845770560] DEBUG - [FFMPEG] - skip 1024 / discard 0 samples due to side data
+Jul 22, 2023 22:08:37.589 [139718845770560] DEBUG - [FFMPEG] - All info found
+Jul 22, 2023 22:08:37.590 [139718845770560] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 1295385 bytes read:1319214 seeks:0 frames:3
+Jul 22, 2023 22:08:37.590 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:37.590 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:37.590 [139718845770560] DEBUG - [MI] Closing input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E07 - Largest Mince Pie DVD.mp4"
+Jul 22, 2023 22:08:37.591 [139718845770560] DEBUG - Scanner: found local sidecar subtitle "/data/tvshows/Little Britain/Season 1/Little Britain - S01E07 - Largest Mince Pie DVD.en.srt"
+Jul 22, 2023 22:08:37.591 [139718845770560] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 1/Little Britain - S01E07 - Largest Mince Pie DVD.en.srt' for reading
+Jul 22, 2023 22:08:37.591 [139718845770560] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:37.806 [139718845770560] DEBUG - [FFMPEG] - Format srt probed with size=2048 and score=100
+Jul 22, 2023 22:08:37.810 [139718845770560] DEBUG - [MI] Opening input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E08 - Most People in a Mini DVD.mp4"
+Jul 22, 2023 22:08:37.810 [139718845770560] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 1/Little Britain - S01E08 - Most People in a Mini DVD.mp4' for reading
+Jul 22, 2023 22:08:37.810 [139718845770560] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:37.812 [139718845770560] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Jul 22, 2023 22:08:37.813 [139718845770560] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Jul 22, 2023 22:08:37.813 [139718845770560] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:37.820 [139718845770560] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 1024, duration: 21796864
+Jul 22, 2023 22:08:37.888 [139718845770560] DEBUG - [FFMPEG] - Offset DTS by 1024 to make first pts zero.
+Jul 22, 2023 22:08:37.888 [139718845770560] DEBUG - [FFMPEG] - Setting codecpar->delay to 2 for stream st: 0
+Jul 22, 2023 22:08:37.889 [139718845770560] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:37.895 [139718845770560] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 1024, duration: 81734064
+Jul 22, 2023 22:08:37.895 [139718845770560] DEBUG - [FFMPEG] - drop a frame at curr_cts: 0 @ 0
+Jul 22, 2023 22:08:37.899 [139718845770560] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 1291372 bytes read:1317513 seeks:0 nb_streams:2
+Jul 22, 2023 22:08:37.900 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:37.900 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:37.900 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:37.900 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:37.900 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:08:37.900 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:08:37.900 [139718845770560] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Jul 22, 2023 22:08:37.901 [139718845770560] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:37.901 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:08:37.903 [139718845770560] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:37.903 [139718845770560] DEBUG - [FFMPEG] - demuxer injecting skip 1024 / discard 0
+Jul 22, 2023 22:08:37.903 [139718845770560] DEBUG - [FFMPEG] - skip 1024 / discard 0 samples due to side data
+Jul 22, 2023 22:08:37.903 [139718845770560] DEBUG - [FFMPEG] - All info found
+Jul 22, 2023 22:08:37.904 [139718845770560] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 1292433 bytes read:1317513 seeks:0 frames:3
+Jul 22, 2023 22:08:37.905 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:37.905 [139718845770560] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:37.905 [139718845770560] DEBUG - [MI] Closing input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E08 - Most People in a Mini DVD.mp4"
+Jul 22, 2023 22:08:37.906 [139718845770560] DEBUG - Scanner: found local sidecar subtitle "/data/tvshows/Little Britain/Season 1/Little Britain - S01E08 - Most People in a Mini DVD.en.srt"
+Jul 22, 2023 22:08:37.907 [139718845770560] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 1/Little Britain - S01E08 - Most People in a Mini DVD.en.srt' for reading
+Jul 22, 2023 22:08:37.907 [139718845770560] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:38.295 [139718845770560] DEBUG - [FFMPEG] - Format srt probed with size=2048 and score=100

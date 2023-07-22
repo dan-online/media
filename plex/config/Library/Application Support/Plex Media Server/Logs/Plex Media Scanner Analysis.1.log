@@ -1,0 +1,20 @@
+Jul 22, 2023 22:10:28.813 [140311705066240] INFO - Plex Media Scanner v1.32.5.7328-2632c9d3a - Docker Docker Container x86_64 - build: linux-x86_64 - GMT 00:00
+Jul 22, 2023 22:10:28.813 [140311705066240] INFO - Linux version: 5.15.0-71-generic, language: en-US
+Jul 22, 2023 22:10:28.813 [140311705066240] INFO - Processor: 4-core AMD EPYC 7282 16-Core Processor                
+Jul 22, 2023 22:10:28.813 [140311705066240] INFO - /usr/lib/plexmediaserver/Plex Media Scanner --analyze --log-file-suffix  Analysis --no-thumbs --item 93,94,95,96,97
+Jul 22, 2023 22:10:28.837 [140311705561920] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.39.4, threadsafe=1
+Jul 22, 2023 22:10:29.423 [140311705561920] DEBUG - Analyzing media parts for item 93 (Resurrection): 81,82
+Jul 22, 2023 22:10:29.429 [140311705561920] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:10:29.429 [140311705561920] DEBUG - [HCl#1] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:10:29.433 [140311687142144] DEBUG - [HttpClient/HCl#1] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:10:29.437 [140311705561920] DEBUG - Updating metadata item (save) (Resurrection) with ID 93
+Jul 22, 2023 22:10:39.456 [140311705561920] ERROR - Waited over 10 seconds for a busy database; giving up.
+Jul 22, 2023 22:10:39.457 [140311705561920] ERROR - Failed to begin transaction (/data/jenkins/server/3532460254/Library/MetadataItem.cpp:1099) (tries=1): Cannot begin transaction. database is locked
+Jul 22, 2023 22:10:49.804 [140311705561920] ERROR - Waited over 10 seconds for a busy database; giving up.
+Jul 22, 2023 22:10:49.804 [140311705561920] ERROR - Failed to begin transaction (/data/jenkins/server/3532460254/Library/MetadataItem.cpp:1099) (tries=2): Cannot begin transaction. database is locked
+Jul 22, 2023 22:10:57.749 [140311686634240] DEBUG - [HCl#2] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=91
+Jul 22, 2023 22:10:57.751 [140311687142144] DEBUG - [HttpClient/HCl#2] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=91
+Jul 22, 2023 22:10:57.752 [140311705561920] DEBUG - [ID 81] Media part analysis: /data/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-Ew1DE7TT8U.mp4
+Jul 22, 2023 22:10:57.754 [140311705561920] DEBUG - [MI] Opening input file: "/data/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-Ew1DE7TT8U.mp4"
+Jul 22, 2023 22:10:57.757 [140311705561920] DEBUG - [FFMPEG] - Opening '/data/tvshows/Secret Invasion/Season 1/Secret Invasion - S01E01 - Resurrection WEBDL-2160p-TdarrCacheFile-Ew1DE7TT8U.mp4' for reading
+Jul 22, 2023 22:10:57.758 [140311705561920] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'

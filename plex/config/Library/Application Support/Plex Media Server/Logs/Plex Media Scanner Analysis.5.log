@@ -1,0 +1,353 @@
+Jul 22, 2023 22:07:44.019 [139959998630656] INFO - Plex Media Scanner v1.32.5.7328-2632c9d3a - Docker Docker Container x86_64 - build: linux-x86_64 - GMT 00:00
+Jul 22, 2023 22:07:44.109 [139959998630656] INFO - Linux version: 5.15.0-71-generic, language: en-US
+Jul 22, 2023 22:07:44.109 [139959998630656] INFO - Processor: 4-core AMD EPYC 7282 16-Core Processor                
+Jul 22, 2023 22:07:44.109 [139959998630656] INFO - /usr/lib/plexmediaserver/Plex Media Scanner --analyze --log-file-suffix  Analysis --no-thumbs --item 66,68,69,71,72,73,74,75
+Jul 22, 2023 22:07:44.219 [139959999126336] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.39.4, threadsafe=1
+Jul 22, 2023 22:07:45.520 [139959999126336] DEBUG - Analyzing media parts for item 66 (Bath of Beans): 55
+Jul 22, 2023 22:07:45.615 [139959999126336] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:07:45.615 [139959999126336] DEBUG - [HCl#1] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:07:45.616 [139959980706560] DEBUG - [HttpClient/HCl#1] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:07:45.618 [139959999126336] DEBUG - Updating metadata item (save) (Bath of Beans) with ID 66
+Jul 22, 2023 22:07:50.746 [139959999126336] DEBUG - [ID 55] Media part analysis: /data/tvshows/Little Britain/Season 1/Little Britain - S01E01 - Bath of Beans DVD.mp4
+Jul 22, 2023 22:07:50.746 [139959999126336] DEBUG - [MI] Opening input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E01 - Bath of Beans DVD.mp4"
+Jul 22, 2023 22:07:50.746 [139959999126336] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 1/Little Britain - S01E01 - Bath of Beans DVD.mp4' for reading
+Jul 22, 2023 22:07:50.747 [139959999126336] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:07:50.755 [139959999126336] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Jul 22, 2023 22:07:50.756 [139959999126336] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Jul 22, 2023 22:07:50.756 [139959999126336] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:07:50.833 [139959979674368] DEBUG - [HCl#2] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64
+Jul 22, 2023 22:07:50.940 [139959980706560] DEBUG - [HttpClient/HCl#2] HTTP/1.1 (0.1s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64 (reused)
+Jul 22, 2023 22:07:50.960 [139959999126336] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 1024, duration: 21891072
+Jul 22, 2023 22:07:51.153 [139959999126336] DEBUG - [FFMPEG] - Offset DTS by 1024 to make first pts zero.
+Jul 22, 2023 22:07:51.153 [139959999126336] DEBUG - [FFMPEG] - Setting codecpar->delay to 2 for stream st: 0
+Jul 22, 2023 22:07:51.153 [139959999126336] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:07:51.647 [139959999126336] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 1024, duration: 82089360
+Jul 22, 2023 22:07:51.647 [139959999126336] DEBUG - [FFMPEG] - drop a frame at curr_cts: 0 @ 0
+Jul 22, 2023 22:07:52.243 [139959999126336] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 1297233 bytes read:1322638 seeks:0 nb_streams:2
+Jul 22, 2023 22:07:52.650 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:07:52.650 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:07:52.944 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:07:52.944 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:07:52.944 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:07:52.944 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:07:52.944 [139959999126336] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Jul 22, 2023 22:07:52.952 [139959999126336] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:07:52.954 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:07:53.069 [139959999126336] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:07:53.143 [139959999126336] DEBUG - [FFMPEG] - demuxer injecting skip 1024 / discard 0
+Jul 22, 2023 22:07:53.143 [139959999126336] DEBUG - [FFMPEG] - skip 1024 / discard 0 samples due to side data
+Jul 22, 2023 22:07:53.143 [139959999126336] DEBUG - [FFMPEG] - All info found
+Jul 22, 2023 22:07:53.144 [139959999126336] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 1298401 bytes read:1322638 seeks:0 frames:3
+Jul 22, 2023 22:07:53.144 [139959999126336] DEBUG - [MI] Opening "/data/tvshows/Little Britain/Season 1/Little Britain - S01E01 - Bath of Beans DVD.mp4" for MP4 atom parsing
+Jul 22, 2023 22:07:53.455 [139959999126336] DEBUG - Mp4AtomParser: Skipping ftyp atom of size 32 at offset 0
+Jul 22, 2023 22:07:53.455 [139959999126336] DEBUG - Mp4AtomParser: Found moov atom of size 1297185 at offset 32
+Jul 22, 2023 22:07:53.762 [139959999126336] DEBUG - Mp4AtomParser: Found trak atom of size 676445 at offset 148
+Jul 22, 2023 22:07:53.762 [139959999126336] DEBUG - Mp4AtomParser: Found trak atom of size 620527 at offset 676593
+Jul 22, 2023 22:07:53.762 [139959999126336] DEBUG - Mp4AtomParser: Found mdia atom of size 676309 at offset 284
+Jul 22, 2023 22:07:53.762 [139959999126336] DEBUG - Mp4AtomParser: Found minf atom of size 676224 at offset 369
+Jul 22, 2023 22:07:53.762 [139959999126336] DEBUG - Mp4AtomParser: Found stbl atom of size 676160 at offset 433
+Jul 22, 2023 22:07:53.762 [139959999126336] DEBUG - Mp4AtomParser: Found mdia atom of size 620391 at offset 676729
+Jul 22, 2023 22:07:53.762 [139959999126336] DEBUG - Mp4AtomParser: Found minf atom of size 620312 at offset 676808
+Jul 22, 2023 22:07:53.762 [139959999126336] DEBUG - Mp4AtomParser: Found stbl atom of size 620252 at offset 676868
+Jul 22, 2023 22:07:54.080 [139959999126336] DEBUG - [MI]  * 2423f8c7de134f0d63c779d9033c58fdff68543f [mp4 h264/aac] Duration: 1710240ms, 710x400 (1.775000) 25.000fps, bitrate=657kbps, audio channels=2, optimizedForStreaming=1 ("/data/tvshows/Little Britain/Season 1/Little Britain - S01E01 - Bath of Beans DVD.mp4")
+Jul 22, 2023 22:07:54.080 [139959999126336] DEBUG - [MI] Chapters had generic titles, clearing.
+Jul 22, 2023 22:07:54.081 [139959999126336] DEBUG - [MI] Closing input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E01 - Bath of Beans DVD.mp4"
+Jul 22, 2023 22:07:54.457 [139959999126336] DEBUG - Committing media stream changes for part 55
+Jul 22, 2023 22:07:54.458 [139959999126336] DEBUG - Updating media item 55, size=140559560, metadata_item_id=66
+Jul 22, 2023 22:07:54.459 [139959999126336] DEBUG - Updating part with ID=55 [/data/tvshows/Little Britain/Season 1/Little Britain - S01E01 - Bath of Beans DVD.mp4]
+Jul 22, 2023 22:07:54.474 [139959999126336] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:07:54.474 [139959999126336] DEBUG - [HCl#3] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:07:54.475 [139959980706560] DEBUG - [HttpClient/HCl#3] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Jul 22, 2023 22:07:54.475 [139959999126336] DEBUG - Updating metadata item (save) (Bath of Beans) with ID 66
+Jul 22, 2023 22:07:54.555 [139959979674368] DEBUG - [HCl#4] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=66&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=analyzing
+Jul 22, 2023 22:07:54.650 [139959980706560] DEBUG - [HttpClient/HCl#4] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=66&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=analyzing (reused)
+Jul 22, 2023 22:07:54.650 [139959979674368] DEBUG - [HCl#5] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=66&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=idle
+Jul 22, 2023 22:07:54.651 [139959980706560] DEBUG - [HttpClient/HCl#5] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=66&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=idle (reused)
+Jul 22, 2023 22:07:58.096 [139959999126336] DEBUG - Analyzing media parts for item 68 (Tallest Man): 57
+Jul 22, 2023 22:07:58.096 [139959979674368] DEBUG - [HCl#6] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64
+Jul 22, 2023 22:07:58.097 [139959980706560] DEBUG - [HttpClient/HCl#6] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64 (reused)
+Jul 22, 2023 22:07:58.199 [139959999126336] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:07:58.199 [139959999126336] DEBUG - [HCl#7] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:07:58.282 [139959980706560] DEBUG - [HttpClient/HCl#7] HTTP/1.1 (0.1s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Jul 22, 2023 22:07:58.283 [139959999126336] DEBUG - Updating metadata item (save) (Tallest Man) with ID 68
+Jul 22, 2023 22:08:01.201 [139959999126336] DEBUG - [ID 57] Media part analysis: /data/tvshows/Little Britain/Season 1/Little Britain - S01E02 - Tallest Man DVD.mp4
+Jul 22, 2023 22:08:01.202 [139959999126336] DEBUG - [MI] Opening input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E02 - Tallest Man DVD.mp4"
+Jul 22, 2023 22:08:01.202 [139959999126336] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 1/Little Britain - S01E02 - Tallest Man DVD.mp4' for reading
+Jul 22, 2023 22:08:01.202 [139959999126336] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:01.208 [139959979674368] DEBUG - [HCl#8] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64
+Jul 22, 2023 22:08:01.305 [139959980706560] DEBUG - [HttpClient/HCl#8] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64 (reused)
+Jul 22, 2023 22:08:01.699 [139959999126336] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Jul 22, 2023 22:08:01.729 [139959999126336] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Jul 22, 2023 22:08:01.729 [139959999126336] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:01.811 [139959999126336] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 1024, duration: 21888512
+Jul 22, 2023 22:08:01.814 [139959999126336] DEBUG - [FFMPEG] - Offset DTS by 1024 to make first pts zero.
+Jul 22, 2023 22:08:01.818 [139959999126336] DEBUG - [FFMPEG] - Setting codecpar->delay to 2 for stream st: 0
+Jul 22, 2023 22:08:01.819 [139959999126336] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:01.904 [139959999126336] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 1024, duration: 82080144
+Jul 22, 2023 22:08:01.904 [139959999126336] DEBUG - [FFMPEG] - drop a frame at curr_cts: 0 @ 0
+Jul 22, 2023 22:08:01.915 [139959999126336] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 1295085 bytes read:1320510 seeks:0 nb_streams:2
+Jul 22, 2023 22:08:01.922 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:01.922 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:01.923 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:01.923 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:01.923 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:08:01.923 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:08:01.923 [139959999126336] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Jul 22, 2023 22:08:01.924 [139959999126336] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:01.925 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:08:01.925 [139959999126336] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:01.926 [139959999126336] DEBUG - [FFMPEG] - demuxer injecting skip 1024 / discard 0
+Jul 22, 2023 22:08:01.926 [139959999126336] DEBUG - [FFMPEG] - skip 1024 / discard 0 samples due to side data
+Jul 22, 2023 22:08:01.926 [139959999126336] DEBUG - [FFMPEG] - All info found
+Jul 22, 2023 22:08:01.926 [139959999126336] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 1296204 bytes read:1320510 seeks:0 frames:3
+Jul 22, 2023 22:08:01.926 [139959999126336] DEBUG - [MI] Opening "/data/tvshows/Little Britain/Season 1/Little Britain - S01E02 - Tallest Man DVD.mp4" for MP4 atom parsing
+Jul 22, 2023 22:08:02.004 [139959999126336] DEBUG - Mp4AtomParser: Skipping ftyp atom of size 32 at offset 0
+Jul 22, 2023 22:08:02.004 [139959999126336] DEBUG - Mp4AtomParser: Found moov atom of size 1295037 at offset 32
+Jul 22, 2023 22:08:02.018 [139959999126336] DEBUG - Mp4AtomParser: Found trak atom of size 674377 at offset 148
+Jul 22, 2023 22:08:02.018 [139959999126336] DEBUG - Mp4AtomParser: Found trak atom of size 620447 at offset 674525
+Jul 22, 2023 22:08:02.018 [139959999126336] DEBUG - Mp4AtomParser: Found mdia atom of size 674241 at offset 284
+Jul 22, 2023 22:08:02.018 [139959999126336] DEBUG - Mp4AtomParser: Found minf atom of size 674156 at offset 369
+Jul 22, 2023 22:08:02.018 [139959999126336] DEBUG - Mp4AtomParser: Found stbl atom of size 674092 at offset 433
+Jul 22, 2023 22:08:02.018 [139959999126336] DEBUG - Mp4AtomParser: Found mdia atom of size 620311 at offset 674661
+Jul 22, 2023 22:08:02.018 [139959999126336] DEBUG - Mp4AtomParser: Found minf atom of size 620232 at offset 674740
+Jul 22, 2023 22:08:02.018 [139959999126336] DEBUG - Mp4AtomParser: Found stbl atom of size 620172 at offset 674800
+Jul 22, 2023 22:08:02.023 [139959999126336] DEBUG - [MI]  * d78171182c7008bf1aa458d367f01595c64b49a3 [mp4 h264/aac] Duration: 1710040ms, 712x400 (1.780000) 25.000fps, bitrate=702kbps, audio channels=2, optimizedForStreaming=1 ("/data/tvshows/Little Britain/Season 1/Little Britain - S01E02 - Tallest Man DVD.mp4")
+Jul 22, 2023 22:08:02.023 [139959999126336] DEBUG - [MI] Chapters had generic titles, clearing.
+Jul 22, 2023 22:08:02.024 [139959999126336] DEBUG - [MI] Closing input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E02 - Tallest Man DVD.mp4"
+Jul 22, 2023 22:08:03.616 [139959999126336] DEBUG - Committing media stream changes for part 57
+Jul 22, 2023 22:08:03.622 [139959999126336] DEBUG - Updating media item 57, size=150225444, metadata_item_id=68
+Jul 22, 2023 22:08:03.622 [139959999126336] DEBUG - Updating part with ID=57 [/data/tvshows/Little Britain/Season 1/Little Britain - S01E02 - Tallest Man DVD.mp4]
+Jul 22, 2023 22:08:03.624 [139959979674368] DEBUG - [HCl#9] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=68&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=analyzing
+Jul 22, 2023 22:08:03.629 [139959980706560] DEBUG - [HttpClient/HCl#9] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=68&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=analyzing (reused)
+Jul 22, 2023 22:08:03.636 [139959979674368] DEBUG - [HCl#a] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=68&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=idle
+Jul 22, 2023 22:08:03.813 [139959999126336] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:03.813 [139959999126336] DEBUG - [HCl#b] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:03.817 [139959980706560] DEBUG - [HttpClient/HCl#a] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=68&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=idle (reused)
+Jul 22, 2023 22:08:03.817 [139959980706560] DEBUG - [HttpClient/HCl#b] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:03.817 [139959999126336] DEBUG - Updating metadata item (save) (Tallest Man) with ID 68
+Jul 22, 2023 22:08:03.820 [139959999126336] DEBUG - Analyzing media parts for item 69 (Hard-Boiled Egg Eating): 58
+Jul 22, 2023 22:08:03.910 [139959979674368] DEBUG - [HCl#c] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64
+Jul 22, 2023 22:08:03.914 [139959980706560] DEBUG - [HttpClient/HCl#c] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64 (reused)
+Jul 22, 2023 22:08:04.219 [139959999126336] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:04.219 [139959999126336] DEBUG - [HCl#d] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:04.315 [139959980706560] DEBUG - [HttpClient/HCl#d] HTTP/1.1 (0.1s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Jul 22, 2023 22:08:04.315 [139959999126336] DEBUG - Updating metadata item (save) (Hard-Boiled Egg Eating) with ID 69
+Jul 22, 2023 22:08:04.316 [139959979674368] DEBUG - [HCl#e] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64
+Jul 22, 2023 22:08:04.316 [139959999126336] DEBUG - [ID 58] Media part analysis: /data/tvshows/Little Britain/Season 1/Little Britain - S01E03 - Hard-Boiled Egg Eating DVD.mp4
+Jul 22, 2023 22:08:04.317 [139959980706560] DEBUG - [HttpClient/HCl#e] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64 (reused)
+Jul 22, 2023 22:08:04.331 [139959999126336] DEBUG - [MI] Opening input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E03 - Hard-Boiled Egg Eating DVD.mp4"
+Jul 22, 2023 22:08:04.331 [139959999126336] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 1/Little Britain - S01E03 - Hard-Boiled Egg Eating DVD.mp4' for reading
+Jul 22, 2023 22:08:04.331 [139959999126336] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:04.424 [139959999126336] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Jul 22, 2023 22:08:04.424 [139959999126336] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Jul 22, 2023 22:08:04.424 [139959999126336] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:04.616 [139959999126336] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 1024, duration: 21835264
+Jul 22, 2023 22:08:04.838 [139959999126336] DEBUG - [FFMPEG] - Offset DTS by 1024 to make first pts zero.
+Jul 22, 2023 22:08:04.838 [139959999126336] DEBUG - [FFMPEG] - Setting codecpar->delay to 2 for stream st: 0
+Jul 22, 2023 22:08:04.838 [139959999126336] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:06.124 [139959999126336] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 1024, duration: 81880464
+Jul 22, 2023 22:08:06.124 [139959999126336] DEBUG - [FFMPEG] - drop a frame at curr_cts: 0 @ 0
+Jul 22, 2023 22:08:06.525 [139959999126336] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 1293997 bytes read:1319838 seeks:0 nb_streams:2
+Jul 22, 2023 22:08:06.636 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:06.636 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:06.933 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:06.933 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:06.961 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:08:06.962 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:08:06.962 [139959999126336] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Jul 22, 2023 22:08:07.743 [139959999126336] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:07.744 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:08:07.847 [139959999126336] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:07.847 [139959999126336] DEBUG - [FFMPEG] - demuxer injecting skip 1024 / discard 0
+Jul 22, 2023 22:08:07.847 [139959999126336] DEBUG - [FFMPEG] - skip 1024 / discard 0 samples due to side data
+Jul 22, 2023 22:08:07.848 [139959999126336] DEBUG - [FFMPEG] - All info found
+Jul 22, 2023 22:08:07.855 [139959999126336] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 1295101 bytes read:1319838 seeks:0 frames:3
+Jul 22, 2023 22:08:07.855 [139959999126336] DEBUG - [MI] Opening "/data/tvshows/Little Britain/Season 1/Little Britain - S01E03 - Hard-Boiled Egg Eating DVD.mp4" for MP4 atom parsing
+Jul 22, 2023 22:08:07.957 [139959999126336] DEBUG - Mp4AtomParser: Skipping ftyp atom of size 32 at offset 0
+Jul 22, 2023 22:08:07.957 [139959999126336] DEBUG - Mp4AtomParser: Found moov atom of size 1293949 at offset 32
+Jul 22, 2023 22:08:08.265 [139959999126336] DEBUG - Mp4AtomParser: Found trak atom of size 674797 at offset 148
+Jul 22, 2023 22:08:08.265 [139959999126336] DEBUG - Mp4AtomParser: Found trak atom of size 618939 at offset 674945
+Jul 22, 2023 22:08:08.265 [139959999126336] DEBUG - Mp4AtomParser: Found mdia atom of size 674661 at offset 284
+Jul 22, 2023 22:08:08.265 [139959999126336] DEBUG - Mp4AtomParser: Found minf atom of size 674576 at offset 369
+Jul 22, 2023 22:08:08.265 [139959999126336] DEBUG - Mp4AtomParser: Found stbl atom of size 674512 at offset 433
+Jul 22, 2023 22:08:08.265 [139959999126336] DEBUG - Mp4AtomParser: Found mdia atom of size 618803 at offset 675081
+Jul 22, 2023 22:08:08.265 [139959999126336] DEBUG - Mp4AtomParser: Found minf atom of size 618724 at offset 675160
+Jul 22, 2023 22:08:08.265 [139959999126336] DEBUG - Mp4AtomParser: Found stbl atom of size 618664 at offset 675220
+Jul 22, 2023 22:08:08.265 [139959999126336] DEBUG - [MI]  * 345f49f9aba3e111a909c77e23ee954214b53740 [mp4 h264/aac] Duration: 1705880ms, 712x400 (1.780000) 25.000fps, bitrate=631kbps, audio channels=2, optimizedForStreaming=1 ("/data/tvshows/Little Britain/Season 1/Little Britain - S01E03 - Hard-Boiled Egg Eating DVD.mp4")
+Jul 22, 2023 22:08:08.265 [139959999126336] DEBUG - [MI] Chapters had generic titles, clearing.
+Jul 22, 2023 22:08:08.266 [139959999126336] DEBUG - [MI] Closing input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E03 - Hard-Boiled Egg Eating DVD.mp4"
+Jul 22, 2023 22:08:08.267 [139959999126336] DEBUG - Committing media stream changes for part 58
+Jul 22, 2023 22:08:08.267 [139959999126336] DEBUG - Updating media item 58, size=134660717, metadata_item_id=69
+Jul 22, 2023 22:08:08.267 [139959999126336] DEBUG - Updating part with ID=58 [/data/tvshows/Little Britain/Season 1/Little Britain - S01E03 - Hard-Boiled Egg Eating DVD.mp4]
+Jul 22, 2023 22:08:08.267 [139959979674368] DEBUG - [HCl#f] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=69&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=analyzing
+Jul 22, 2023 22:08:08.270 [139959980706560] DEBUG - [HttpClient/HCl#f] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=69&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=analyzing (reused)
+Jul 22, 2023 22:08:08.270 [139959979674368] DEBUG - [HCl#10] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=69&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=idle
+Jul 22, 2023 22:08:08.271 [139959980706560] DEBUG - [HttpClient/HCl#10] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=69&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=idle (reused)
+Jul 22, 2023 22:08:08.359 [139959999126336] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:08.359 [139959999126336] DEBUG - [HCl#11] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:08.443 [139959980706560] DEBUG - [HttpClient/HCl#11] HTTP/1.1 (0.1s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Jul 22, 2023 22:08:08.443 [139959999126336] DEBUG - Updating metadata item (save) (Hard-Boiled Egg Eating) with ID 69
+Jul 22, 2023 22:08:08.444 [139959979674368] DEBUG - [HCl#12] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64
+Jul 22, 2023 22:08:08.445 [139959980706560] DEBUG - [HttpClient/HCl#12] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64 (reused)
+Jul 22, 2023 22:08:08.446 [139959999126336] DEBUG - Analyzing media parts for item 71 (Most Cigarettes in a Mouth): 62
+Jul 22, 2023 22:08:08.461 [139959999126336] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:08.461 [139959999126336] DEBUG - [HCl#13] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:08.463 [139959980706560] DEBUG - [HttpClient/HCl#13] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Jul 22, 2023 22:08:08.467 [139959999126336] DEBUG - Updating metadata item (save) (Most Cigarettes in a Mouth) with ID 71
+Jul 22, 2023 22:08:08.550 [139959999126336] DEBUG - [ID 62] Media part analysis: /data/tvshows/Little Britain/Season 1/Little Britain - S01E04 - Most Cigarettes in a Mouth DVD.mp4
+Jul 22, 2023 22:08:08.550 [139959999126336] DEBUG - [MI] Opening input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E04 - Most Cigarettes in a Mouth DVD.mp4"
+Jul 22, 2023 22:08:08.550 [139959999126336] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 1/Little Britain - S01E04 - Most Cigarettes in a Mouth DVD.mp4' for reading
+Jul 22, 2023 22:08:08.550 [139959999126336] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:08.552 [139959979674368] DEBUG - [HCl#14] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64
+Jul 22, 2023 22:08:08.555 [139959980706560] DEBUG - [HttpClient/HCl#14] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64 (reused)
+Jul 22, 2023 22:08:09.652 [139959999126336] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Jul 22, 2023 22:08:09.652 [139959999126336] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Jul 22, 2023 22:08:09.652 [139959999126336] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:09.662 [139959999126336] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 1024, duration: 21852160
+Jul 22, 2023 22:08:09.670 [139959999126336] DEBUG - [FFMPEG] - Offset DTS by 1024 to make first pts zero.
+Jul 22, 2023 22:08:09.671 [139959999126336] DEBUG - [FFMPEG] - Setting codecpar->delay to 2 for stream st: 0
+Jul 22, 2023 22:08:09.671 [139959999126336] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:09.965 [139959999126336] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 1024, duration: 81942960
+Jul 22, 2023 22:08:09.965 [139959999126336] DEBUG - [FFMPEG] - drop a frame at curr_cts: 0 @ 0
+Jul 22, 2023 22:08:10.049 [139959999126336] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 1293817 bytes read:1319526 seeks:0 nb_streams:2
+Jul 22, 2023 22:08:10.050 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:10.050 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:10.050 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:10.050 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:10.051 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:08:10.051 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:08:10.051 [139959999126336] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Jul 22, 2023 22:08:10.051 [139959999126336] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:10.051 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:08:10.052 [139959999126336] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:10.052 [139959999126336] DEBUG - [FFMPEG] - demuxer injecting skip 1024 / discard 0
+Jul 22, 2023 22:08:10.052 [139959999126336] DEBUG - [FFMPEG] - skip 1024 / discard 0 samples due to side data
+Jul 22, 2023 22:08:10.052 [139959999126336] DEBUG - [FFMPEG] - All info found
+Jul 22, 2023 22:08:10.052 [139959999126336] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 1294910 bytes read:1319526 seeks:0 frames:3
+Jul 22, 2023 22:08:10.052 [139959999126336] DEBUG - [MI] Opening "/data/tvshows/Little Britain/Season 1/Little Britain - S01E04 - Most Cigarettes in a Mouth DVD.mp4" for MP4 atom parsing
+Jul 22, 2023 22:08:10.453 [139959999126336] DEBUG - Mp4AtomParser: Skipping ftyp atom of size 32 at offset 0
+Jul 22, 2023 22:08:10.453 [139959999126336] DEBUG - Mp4AtomParser: Found moov atom of size 1293769 at offset 32
+Jul 22, 2023 22:08:10.471 [139959999126336] DEBUG - Mp4AtomParser: Found trak atom of size 674145 at offset 148
+Jul 22, 2023 22:08:10.471 [139959999126336] DEBUG - Mp4AtomParser: Found trak atom of size 619411 at offset 674293
+Jul 22, 2023 22:08:10.471 [139959999126336] DEBUG - Mp4AtomParser: Found mdia atom of size 674009 at offset 284
+Jul 22, 2023 22:08:10.471 [139959999126336] DEBUG - Mp4AtomParser: Found minf atom of size 673924 at offset 369
+Jul 22, 2023 22:08:10.471 [139959999126336] DEBUG - Mp4AtomParser: Found stbl atom of size 673860 at offset 433
+Jul 22, 2023 22:08:10.471 [139959999126336] DEBUG - Mp4AtomParser: Found mdia atom of size 619275 at offset 674429
+Jul 22, 2023 22:08:10.471 [139959999126336] DEBUG - Mp4AtomParser: Found minf atom of size 619196 at offset 674508
+Jul 22, 2023 22:08:10.471 [139959999126336] DEBUG - Mp4AtomParser: Found stbl atom of size 619136 at offset 674568
+Jul 22, 2023 22:08:10.472 [139959999126336] DEBUG - [MI]  * abbe200825ed180a49b5e1a3da91afd13dfedd49 [mp4 h264/aac] Duration: 1707200ms, 712x400 (1.780000) 25.000fps, bitrate=652kbps, audio channels=2, optimizedForStreaming=1 ("/data/tvshows/Little Britain/Season 1/Little Britain - S01E04 - Most Cigarettes in a Mouth DVD.mp4")
+Jul 22, 2023 22:08:10.472 [139959999126336] DEBUG - [MI] Chapters had generic titles, clearing.
+Jul 22, 2023 22:08:10.472 [139959999126336] DEBUG - [MI] Closing input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E04 - Most Cigarettes in a Mouth DVD.mp4"
+Jul 22, 2023 22:08:10.473 [139959999126336] DEBUG - Committing media stream changes for part 62
+Jul 22, 2023 22:08:10.474 [139959999126336] DEBUG - Updating media item 62, size=139196682, metadata_item_id=71
+Jul 22, 2023 22:08:10.474 [139959999126336] DEBUG - Updating part with ID=62 [/data/tvshows/Little Britain/Season 1/Little Britain - S01E04 - Most Cigarettes in a Mouth DVD.mp4]
+Jul 22, 2023 22:08:10.474 [139959979674368] DEBUG - [HCl#15] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=71&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=analyzing
+Jul 22, 2023 22:08:10.476 [139959999126336] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:10.476 [139959999126336] DEBUG - [HCl#16] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:10.477 [139959980706560] DEBUG - [HttpClient/HCl#15] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=71&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=analyzing (reused)
+Jul 22, 2023 22:08:10.478 [139959979674368] DEBUG - [HCl#17] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=71&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=idle
+Jul 22, 2023 22:08:10.479 [139959980706560] DEBUG - [HttpClient/HCl#17] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=71&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=idle (reused)
+Jul 22, 2023 22:08:10.479 [139959980706560] DEBUG - [HttpClient/HCl#16] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Jul 22, 2023 22:08:10.479 [139959999126336] DEBUG - Updating metadata item (save) (Most Cigarettes in a Mouth) with ID 71
+Jul 22, 2023 22:08:10.480 [139959979674368] DEBUG - [HCl#18] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64
+Jul 22, 2023 22:08:10.481 [139959980706560] DEBUG - [HttpClient/HCl#18] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64 (reused)
+Jul 22, 2023 22:08:10.552 [139959999126336] DEBUG - Analyzing media parts for item 72 (Biggest House of Cards): 63
+Jul 22, 2023 22:08:10.562 [139959999126336] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:10.562 [139959999126336] DEBUG - [HCl#19] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:10.564 [139959980706560] DEBUG - [HttpClient/HCl#19] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Jul 22, 2023 22:08:10.564 [139959999126336] DEBUG - Updating metadata item (save) (Biggest House of Cards) with ID 72
+Jul 22, 2023 22:08:10.565 [139959979674368] DEBUG - [HCl#1a] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64
+Jul 22, 2023 22:08:10.566 [139959999126336] DEBUG - [ID 63] Media part analysis: /data/tvshows/Little Britain/Season 1/Little Britain - S01E05 - Biggest House of Cards DVD.mp4
+Jul 22, 2023 22:08:10.566 [139959999126336] DEBUG - [MI] Opening input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E05 - Biggest House of Cards DVD.mp4"
+Jul 22, 2023 22:08:10.566 [139959999126336] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 1/Little Britain - S01E05 - Biggest House of Cards DVD.mp4' for reading
+Jul 22, 2023 22:08:10.566 [139959999126336] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:10.567 [139959980706560] DEBUG - [HttpClient/HCl#1a] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64 (reused)
+Jul 22, 2023 22:08:11.375 [139959999126336] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Jul 22, 2023 22:08:11.380 [139959999126336] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Jul 22, 2023 22:08:11.381 [139959999126336] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:11.465 [139959999126336] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 1024, duration: 21808128
+Jul 22, 2023 22:08:11.469 [139959999126336] DEBUG - [FFMPEG] - Offset DTS by 1024 to make first pts zero.
+Jul 22, 2023 22:08:11.469 [139959999126336] DEBUG - [FFMPEG] - Setting codecpar->delay to 2 for stream st: 0
+Jul 22, 2023 22:08:11.469 [139959999126336] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:11.480 [139959999126336] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 1024, duration: 81779088
+Jul 22, 2023 22:08:11.480 [139959999126336] DEBUG - [FFMPEG] - drop a frame at curr_cts: 0 @ 0
+Jul 22, 2023 22:08:11.582 [139959999126336] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 1289649 bytes read:1315702 seeks:0 nb_streams:2
+Jul 22, 2023 22:08:11.759 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:11.760 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:11.760 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:11.760 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:11.761 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:08:11.761 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:08:11.761 [139959999126336] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Jul 22, 2023 22:08:11.762 [139959999126336] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:11.764 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:08:11.771 [139959999126336] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:11.772 [139959999126336] DEBUG - [FFMPEG] - demuxer injecting skip 1024 / discard 0
+Jul 22, 2023 22:08:11.772 [139959999126336] DEBUG - [FFMPEG] - skip 1024 / discard 0 samples due to side data
+Jul 22, 2023 22:08:11.772 [139959999126336] DEBUG - [FFMPEG] - All info found
+Jul 22, 2023 22:08:11.773 [139959999126336] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 1290778 bytes read:1315702 seeks:0 frames:3
+Jul 22, 2023 22:08:11.773 [139959999126336] DEBUG - [MI] Opening "/data/tvshows/Little Britain/Season 1/Little Britain - S01E05 - Biggest House of Cards DVD.mp4" for MP4 atom parsing
+Jul 22, 2023 22:08:11.774 [139959999126336] DEBUG - Mp4AtomParser: Skipping ftyp atom of size 32 at offset 0
+Jul 22, 2023 22:08:11.774 [139959999126336] DEBUG - Mp4AtomParser: Found moov atom of size 1289601 at offset 32
+Jul 22, 2023 22:08:11.776 [139959999126336] DEBUG - Mp4AtomParser: Found trak atom of size 671225 at offset 148
+Jul 22, 2023 22:08:11.776 [139959999126336] DEBUG - Mp4AtomParser: Found trak atom of size 618163 at offset 671373
+Jul 22, 2023 22:08:11.776 [139959999126336] DEBUG - Mp4AtomParser: Found mdia atom of size 671089 at offset 284
+Jul 22, 2023 22:08:11.776 [139959999126336] DEBUG - Mp4AtomParser: Found minf atom of size 671004 at offset 369
+Jul 22, 2023 22:08:11.776 [139959999126336] DEBUG - Mp4AtomParser: Found stbl atom of size 670940 at offset 433
+Jul 22, 2023 22:08:11.776 [139959999126336] DEBUG - Mp4AtomParser: Found mdia atom of size 618027 at offset 671509
+Jul 22, 2023 22:08:11.776 [139959999126336] DEBUG - Mp4AtomParser: Found minf atom of size 617948 at offset 671588
+Jul 22, 2023 22:08:11.776 [139959999126336] DEBUG - Mp4AtomParser: Found stbl atom of size 617888 at offset 671648
+Jul 22, 2023 22:08:11.776 [139959999126336] DEBUG - [MI]  * a754937085ad828ee0767b602f60273cdd89e224 [mp4 h264/aac] Duration: 1703760ms, 712x400 (1.780000) 25.000fps, bitrate=697kbps, audio channels=2, optimizedForStreaming=1 ("/data/tvshows/Little Britain/Season 1/Little Britain - S01E05 - Biggest House of Cards DVD.mp4")
+Jul 22, 2023 22:08:11.777 [139959999126336] DEBUG - [MI] Chapters had generic titles, clearing.
+Jul 22, 2023 22:08:11.777 [139959999126336] DEBUG - [MI] Closing input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E05 - Biggest House of Cards DVD.mp4"
+Jul 22, 2023 22:08:11.778 [139959999126336] DEBUG - Committing media stream changes for part 63
+Jul 22, 2023 22:08:11.778 [139959999126336] DEBUG - Updating media item 63, size=148482477, metadata_item_id=72
+Jul 22, 2023 22:08:11.778 [139959999126336] DEBUG - Updating part with ID=63 [/data/tvshows/Little Britain/Season 1/Little Britain - S01E05 - Biggest House of Cards DVD.mp4]
+Jul 22, 2023 22:08:11.779 [139959979674368] DEBUG - [HCl#1b] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=72&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=analyzing
+Jul 22, 2023 22:08:11.780 [139959980706560] DEBUG - [HttpClient/HCl#1b] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=72&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=analyzing (reused)
+Jul 22, 2023 22:08:11.780 [139959979674368] DEBUG - [HCl#1c] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=72&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=idle
+Jul 22, 2023 22:08:11.781 [139959999126336] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:11.781 [139959999126336] DEBUG - [HCl#1d] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:11.781 [139959980706560] DEBUG - [HttpClient/HCl#1c] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=72&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=idle (reused)
+Jul 22, 2023 22:08:11.861 [139959980706560] DEBUG - [HttpClient/HCl#1d] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Jul 22, 2023 22:08:11.862 [139959999126336] DEBUG - Updating metadata item (save) (Biggest House of Cards) with ID 72
+Jul 22, 2023 22:08:11.863 [139959979674368] DEBUG - [HCl#1e] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64
+Jul 22, 2023 22:08:11.864 [139959980706560] DEBUG - [HttpClient/HCl#1e] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64 (reused)
+Jul 22, 2023 22:08:11.865 [139959999126336] DEBUG - Analyzing media parts for item 73 (Smallest Ant): 64
+Jul 22, 2023 22:08:11.867 [139959999126336] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:11.867 [139959999126336] DEBUG - [HCl#1f] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:11.870 [139959980706560] DEBUG - [HttpClient/HCl#1f] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Jul 22, 2023 22:08:11.870 [139959999126336] DEBUG - Updating metadata item (save) (Smallest Ant) with ID 73
+Jul 22, 2023 22:08:11.965 [139959999126336] DEBUG - [ID 64] Media part analysis: /data/tvshows/Little Britain/Season 1/Little Britain - S01E06 - Smallest Ant DVD.mp4
+Jul 22, 2023 22:08:11.971 [139959979674368] DEBUG - [HCl#20] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64
+Jul 22, 2023 22:08:11.972 [139959999126336] DEBUG - [MI] Opening input file: "/data/tvshows/Little Britain/Season 1/Little Britain - S01E06 - Smallest Ant DVD.mp4"
+Jul 22, 2023 22:08:11.972 [139959999126336] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 1/Little Britain - S01E06 - Smallest Ant DVD.mp4' for reading
+Jul 22, 2023 22:08:11.972 [139959999126336] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:11.975 [139959980706560] DEBUG - [HttpClient/HCl#20] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64 (reused)
+Jul 22, 2023 22:08:12.582 [139959999126336] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Jul 22, 2023 22:08:12.583 [139959999126336] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Jul 22, 2023 22:08:12.583 [139959999126336] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:12.658 [139959999126336] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 1024, duration: 21532160
+Jul 22, 2023 22:08:12.660 [139959999126336] DEBUG - [FFMPEG] - Offset DTS by 1024 to make first pts zero.
+Jul 22, 2023 22:08:12.660 [139959999126336] DEBUG - [FFMPEG] - Setting codecpar->delay to 2 for stream st: 0
+Jul 22, 2023 22:08:12.660 [139959999126336] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:12.686 [139959999126336] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 1024, duration: 80743824
+Jul 22, 2023 22:08:12.686 [139959999126336] DEBUG - [FFMPEG] - drop a frame at curr_cts: 0 @ 0
+Jul 22, 2023 22:08:12.975 [139959999126336] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 1275577 bytes read:1303786 seeks:0 nb_streams:2
+Jul 22, 2023 22:08:12.976 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:12.976 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:12.976 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:12.976 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:12.977 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:08:12.977 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:08:12.977 [139959999126336] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Jul 22, 2023 22:08:13.071 [139959999126336] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:13.072 [139959999126336] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:08:13.091 [139959999126336] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:13.092 [139959999126336] DEBUG - [FFMPEG] - demuxer injecting skip 1024 / discard 0
+Jul 22, 2023 22:08:13.092 [139959999126336] DEBUG - [FFMPEG] - skip 1024 / discard 0 samples due to side data
+Jul 22, 2023 22:08:13.093 [139959999126336] DEBUG - [FFMPEG] - All info found
+Jul 22, 2023 22:08:13.176 [139959999126336] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 1277666 bytes read:1303786 seeks:0 frames:3
+Jul 22, 2023 22:08:13.176 [139959999126336] DEBUG - [MI] Opening "/data/tvshows/Little Britain/Season 1/Little Britain - S01E06 - Smallest Ant DVD.mp4" for MP4 atom parsing
+Jul 22, 2023 22:08:13.367 [139959999126336] DEBUG - Mp4AtomParser: Skipping ftyp atom of size 32 at offset 0
+Jul 22, 2023 22:08:13.367 [139959999126336] DEBUG - Mp4AtomParser: Found moov atom of size 1275529 at offset 32

@@ -18,3 +18,15 @@
 [19-Jul-2023 17:17:11] NOTICE: exiting, bye-bye!
 [19-Jul-2023 17:21:12] NOTICE: fpm is running, pid 251
 [19-Jul-2023 17:21:12] NOTICE: ready to handle connections
+[21-Jul-2023 18:39:59] NOTICE: Terminating ...
+[21-Jul-2023 18:39:59] NOTICE: exiting, bye-bye!
+[21-Jul-2023 18:40:13] NOTICE: fpm is running, pid 256
+[21-Jul-2023 18:40:13] NOTICE: ready to handle connections
+[22-Jul-2023 11:15:18] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[22-Jul-2023 11:15:40] WARNING: [pool www] child 275 exited on signal 9 (SIGKILL) after 59727.325374 seconds from start
+[22-Jul-2023 11:15:40] NOTICE: [pool www] child 473 started
+[22-Jul-2023 21:04:29] NOTICE: Terminating ...
+[22-Jul-2023 21:04:31] NOTICE: exiting, bye-bye!
+[22-Jul-2023 21:05:46] NOTICE: fpm is running, pid 254
+[22-Jul-2023 21:05:46] NOTICE: ready to handle connections
+[22-Jul-2023 22:04:27] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it

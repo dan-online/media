@@ -182,6 +182,25 @@ services:
   #     - ./prowlarr/config:/config
   #   restart: unless-stopped
 
+  #plex:
+  #  image: plexinc/pms-docker
+  #  container_name: plex
+  ##  network_mode: host
+  #  environment:
+  #    - PUID=1000
+  #    - PGID=1000
+  #    - TZ=Etc/UTC
+  #    - VERSION=docker
+  #    - PLEX_CLAIM=claim-9yXZrxH2vn2TzPu2yLqK
+  #    #- ADVERTISE_IP=https://media.dancodes.online/plex
+  #  hostname: media.dancodes.online
+  #  ports:
+  #    - 32400:32400
+  #  volumes:
+  #    - ./plex/config:/config
+  #    - downloads_cache:/data
+  #  restart: unless-stopped
+
   jellyfin:
     image: linuxserver/jellyfin:10.8.10
     container_name: jellyfin

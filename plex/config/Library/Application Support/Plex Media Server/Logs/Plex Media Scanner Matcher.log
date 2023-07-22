@@ -1,0 +1,57 @@
+Jul 22, 2023 22:16:25.047 [140482414451456] INFO - Plex Media Scanner v1.32.5.7328-2632c9d3a - Docker Docker Container x86_64 - build: linux-x86_64 - GMT 00:00
+Jul 22, 2023 22:16:25.048 [140482414451456] INFO - Linux version: 5.15.0-71-generic, language: en-US
+Jul 22, 2023 22:16:25.048 [140482414451456] INFO - Processor: 4-core AMD EPYC 7282 16-Core Processor                
+Jul 22, 2023 22:16:25.048 [140482414451456] INFO - /usr/lib/plexmediaserver/Plex Media Scanner --match --type 2 --log-file-suffix  Matcher --item 100
+Jul 22, 2023 22:16:25.049 [140482414947136] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.39.4, threadsafe=1
+Jul 22, 2023 22:16:25.240 [140482414947136] DEBUG - Matcher: found 49 auxiliary files for OPERATION STRIX
+Jul 22, 2023 22:16:25.240 [140482414947136] DEBUG - [MI] Opening input file: "/data/tvshows/SPY x FAMILY/Season 1/SPY x FAMILY - S01E01 - OPERATION STRIX HDTV-2160p.mp4"
+Jul 22, 2023 22:16:25.241 [140482414947136] DEBUG - [FFMPEG] - Opening '/data/tvshows/SPY x FAMILY/Season 1/SPY x FAMILY - S01E01 - OPERATION STRIX HDTV-2160p.mp4' for reading
+Jul 22, 2023 22:16:25.241 [140482414947136] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:16:34.106 [140482414947136] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Jul 22, 2023 22:16:34.109 [140482414947136] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Jul 22, 2023 22:16:34.109 [140482414947136] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:16:34.138 [140482414947136] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: -1, duration: 2000
+Jul 22, 2023 22:16:34.138 [140482414947136] DEBUG - [FFMPEG] - Processing st: 0, edit list 1 - media time: 2002, duration: 23197888
+Jul 22, 2023 22:16:34.141 [140482414947136] DEBUG - [FFMPEG] - Offset DTS by 2002 to make first pts zero.
+Jul 22, 2023 22:16:34.141 [140482414947136] DEBUG - [FFMPEG] - Setting codecpar->delay to 3 for stream st: 0
+Jul 22, 2023 22:16:34.142 [140482414947136] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:16:34.142 [140482414947136] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 0, duration: 1449880000
+Jul 22, 2023 22:16:34.142 [140482414947136] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:16:34.142 [140482414947136] DEBUG - [FFMPEG] - Processing st: 2, edit list 0 - media time: 0, duration: 1450370000
+Jul 22, 2023 22:16:34.142 [140482414947136] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:16:34.142 [140482414947136] DEBUG - [FFMPEG] - Processing st: 3, edit list 0 - media time: 0, duration: 1450370000
+Jul 22, 2023 22:16:34.142 [140482414947136] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:16:34.142 [140482414947136] DEBUG - [FFMPEG] - Processing st: 4, edit list 0 - media time: 0, duration: 1450509000
+Jul 22, 2023 22:16:34.143 [140482414947136] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:16:34.143 [140482414947136] DEBUG - [FFMPEG] - Processing st: 5, edit list 0 - media time: 0, duration: 1449880000
+Jul 22, 2023 22:16:34.143 [140482414947136] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:16:34.143 [140482414947136] DEBUG - [FFMPEG] - Processing st: 6, edit list 0 - media time: 0, duration: 1449365000
+Jul 22, 2023 22:16:34.143 [140482414947136] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:16:34.155 [140482414947136] DEBUG - [FFMPEG] - Processing st: 7, edit list 0 - media time: 0, duration: 69599232
+Jul 22, 2023 22:16:34.160 [140482414947136] DEBUG - [FFMPEG] - rfps: 23.916667 0.004854
+Jul 22, 2023 22:16:34.160 [140482414947136] DEBUG - [FFMPEG] - rfps: 23.916667 0.004854
+Jul 22, 2023 22:16:34.160 [140482414947136] DEBUG - [FFMPEG] - rfps: 24.000000 0.000908
+Jul 22, 2023 22:16:34.160 [140482414947136] DEBUG - [FFMPEG] - rfps: 24.083333 0.016298
+Jul 22, 2023 22:16:34.160 [140482414947136] DEBUG - [FFMPEG] - rfps: 48.000000 0.003632
+Jul 22, 2023 22:16:34.160 [140482414947136] DEBUG - [FFMPEG] - rfps: 23.976024 0.000062
+Jul 22, 2023 22:16:34.160 [140482414947136] DEBUG - [FFMPEG] - rfps: 47.952048 0.000247
+Jul 22, 2023 22:16:34.160 [140482414947136] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 1492997 bytes read:1512806 seeks:0 nb_streams:8
+Jul 22, 2023 22:16:34.162 [140482414947136] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:16:34.162 [140482414947136] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:16:34.172 [140482414947136] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:16:34.172 [140482414947136] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:16:34.175 [140482414947136] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:16:34.175 [140482414947136] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:16:34.175 [140482414947136] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:16:34.175 [140482414947136] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:16:34.176 [140482414947136] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Jul 22, 2023 22:16:34.201 [140482414947136] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:16:34.263 [140482414947136] DEBUG - [FFMPEG] - All info found
+Jul 22, 2023 22:16:34.267 [140482414947136] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 1878100 bytes read:1910848 seeks:0 frames:8
+Jul 22, 2023 22:16:34.268 [140482414947136] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:16:34.268 [140482414947136] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:16:34.268 [140482414947136] DEBUG - [MI] Closing input file: "/data/tvshows/SPY x FAMILY/Season 1/SPY x FAMILY - S01E01 - OPERATION STRIX HDTV-2160p.mp4"
+Jul 22, 2023 22:16:34.270 [140482414947136] DEBUG - Scanner: found local sidecar subtitle "/data/tvshows/SPY x FAMILY/Season 1/SPY x FAMILY - S01E01 - OPERATION STRIX HDTV-2160p.en.srt"
+Jul 22, 2023 22:16:34.270 [140482414947136] DEBUG - [FFMPEG] - Opening '/data/tvshows/SPY x FAMILY/Season 1/SPY x FAMILY - S01E01 - OPERATION STRIX HDTV-2160p.en.srt' for reading
+Jul 22, 2023 22:16:34.270 [140482414947136] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:16:34.411 [140482414947136] DEBUG - [FFMPEG] - Format srt probed with size=2048 and score=100

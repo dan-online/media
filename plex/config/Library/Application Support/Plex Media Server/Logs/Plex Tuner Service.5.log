@@ -1,0 +1,21 @@
+Jul 22, 2023 21:50:07.474 [0x7f4823d04b38] INFO - Plex Tuner Service v1.32.5.7328-2632c9d3a - Docker Docker Container x86_64 - build: 
+Jul 22, 2023 21:50:07.474 [0x7f4823d04b38] INFO - Linux version: 5.15.0-71-generic (#78-Ubuntu SMP Tue Apr 18 09:00:29 UTC 2023), language: en-US
+Jul 22, 2023 21:50:07.474 [0x7f4823d04b38] INFO - Processor AMD EPYC 7282 16-Core Processor                
+Jul 22, 2023 21:50:07.474 [0x7f4823d04b38] INFO - /usr/lib/plexmediaserver/Plex Tuner Service /usr/lib/plexmediaserver/Resources/Tuner/Private /usr/lib/plexmediaserver/Resources/Tuner/Shared 1.32.5.7328-2632c9d3a 32600
+Jul 22, 2023 21:50:07.296 [0x7f482579f808] INFO - [I] broker_t::start...
+Jul 22, 2023 21:50:07.472 [0x7f482579f808] INFO - [I] device_manager_t::init.
+Jul 22, 2023 21:50:07.472 [0x7f482579f808] INFO - [I] device_manager_t::init. Initialize provider manager
+Jul 22, 2023 21:50:07.472 [0x7f482579f808] INFO - [I] device_manager_t::init. Initialize all device auxes
+Jul 22, 2023 21:50:07.472 [0x7f482579f808] INFO - [I] dvb_device_factory_t::get_aux_list
+Jul 22, 2023 21:50:07.472 [0x7f482579f808] INFO - [I] tvbutler_aux_t::init
+Jul 22, 2023 21:50:07.477 [0x7f482579f808] INFO - [I] web_server_t::start. Starting web server on port 32600
+Jul 22, 2023 21:51:18.344 [0x7f482579f808] INFO - Received SIGINT: Interrupt from keyboard.
+Jul 22, 2023 21:51:18.425 [0x7f482579f808] INFO - [I] device_manager_t::term
+Jul 22, 2023 21:51:18.425 [0x7f482579f808] INFO - [I] device_manager_t::term. Stop all devices
+Jul 22, 2023 21:51:18.425 [0x7f482579f808] INFO - [I] device_manager_t::term. Shut down all device auxes
+Jul 22, 2023 21:51:18.425 [0x7f482579f808] INFO - [I] tvbutler_aux_t::term
+Jul 22, 2023 21:51:18.427 [0x7f482579f808] INFO - [I] web_server_t::stop. Web server is stopped
+Jul 22, 2023 21:51:18.427 [0x7f482579f808] INFO - [I] device_manager_t::term
+Jul 22, 2023 21:51:18.427 [0x7f482579f808] INFO - [I] device_manager_t::term. Stop all devices
+Jul 22, 2023 21:51:18.427 [0x7f482579f808] INFO - [I] device_manager_t::term. Shut down all device auxes
+Jul 22, 2023 21:51:18.428 [0x7f482579f808] INFO - [I] broker_t::shutdown. Shutdown is completed.

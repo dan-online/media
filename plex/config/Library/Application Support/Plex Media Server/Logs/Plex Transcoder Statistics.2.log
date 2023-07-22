@@ -1,0 +1,42 @@
+<SessionReport version="2" startTime="0" startTimestamp="Jul 22, 2023 22:11:00.442" key="/library/metadata/39" session="8rrb2hia6ambnbq8v5llnveu" transcode="cy5896dazmvpqh3bpfco4avw">
+<User id="1" thumb="https://plex.tv/users/a199be9e645384c9/avatar?c=1690060238" title="dancodes" />
+<Player address="127.0.0.1" device="Windows" machineIdentifier="ev4y071kmruc0bp27x4fyg5a" model="bundled" platform="Chrome" platformVersion="114.0" product="Plex Web" remotePublicAddress="127.0.0.1" title="Chrome" version="4.108.0" local="0" relayed="1" secure="1" userID="1" />
+<Variants>
+<Variant id="b8c96b9d-539a-4d3e-bac1-fef8a4c5ada0" targetBitrate="712" context="streaming" sourceVideoCodec="h264" sourceAudioCodec="aac" videoDecision="transcode" audioDecision="transcode" protocol="dash" container="mp4" videoCodec="h264" audioCodec="aac" audioChannels="2" transcodeHwRequested="0" transcodeHwFullPipeline="0">
+<Media audioProfile="lc" id="35" videoProfile="high 10" audioChannels="2" audioCodec="aac" bitrate="678" container="mp4" duration="1735008" height="270" optimizedForStreaming="1" protocol="dash" videoCodec="h264" videoFrameRate="PAL" videoResolution="SD" width="480" selected="1">
+<Part audioProfile="lc" id="35" videoProfile="high 10" bitrate="678" container="mp4" duration="1735008" height="270" optimizedForStreaming="1" protocol="dash" width="480" decision="transcode" selected="1">
+<Stream bitrate="553" codec="h264" default="1" displayTitle="1080p (H.264 High 10)" extendedDisplayTitle="1080p (H.264 High 10)" frameRate="25" height="270" id="76" streamType="1" width="480" decision="transcode" location="segments-video" />
+<Stream bitrate="125" bitrateMode="cbr" channels="2" codec="aac" default="1" displayTitle="English (AAC Stereo)" extendedDisplayTitle="English (AAC Stereo)" id="77" language="English" languageCode="eng" languageTag="en" selected="1" streamType="2" decision="transcode" location="segments-audio" />
+</Part>
+</Media>
+</Variant>
+</Variants>
+<SegmentList>
+<Segment duration="8000" startOffset="0" endOffset="8000">
+<File name="chunk-stream0-00001.m4s" type="video">
+<FileVariant size="418480" variant="b8c96b9d-539a-4d3e-bac1-fef8a4c5ada0" />
+</File>
+<File name="chunk-stream1-00001.m4s" type="audio">
+<FileVariant size="123913" variant="b8c96b9d-539a-4d3e-bac1-fef8a4c5ada0" />
+</File>
+<Timelines>
+<Transcode startTime="10041" endTime="47202" complete="1" fileType="video" variant="b8c96b9d-539a-4d3e-bac1-fef8a4c5ada0" />
+<Transcode startTime="10041" endTime="47203" complete="1" fileType="audio" variant="b8c96b9d-539a-4d3e-bac1-fef8a4c5ada0" />
+<Download startTime="47604" endTime="47605" complete="1" fileType="video" variant="b8c96b9d-539a-4d3e-bac1-fef8a4c5ada0" />
+<Download startTime="47710" endTime="47712" complete="1" fileType="audio" variant="b8c96b9d-539a-4d3e-bac1-fef8a4c5ada0" />
+</Timelines>
+</Segment>
+<Segment duration="0" startOffset="-1" endOffset="-1">
+<Timelines>
+<Download startTime="48805" fileType="audio" variant="b8c96b9d-539a-4d3e-bac1-fef8a4c5ada0" />
+<Download startTime="48907" fileType="video" variant="b8c96b9d-539a-4d3e-bac1-fef8a4c5ada0" />
+</Timelines>
+</Segment>
+</SegmentList>
+<PlaybackReports>
+<Playback startTime="49535" endTime="50130" state="playing" progress="0" />
+<Playback startTime="50130" endTime="52146" state="buffering" progress="0" />
+</PlaybackReports>
+<StateReports />
+<StateReports />
+</SessionReport>

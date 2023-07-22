@@ -1,0 +1,14 @@
+Jul 22, 2023 22:08:34.801 [140403099765504] INFO - Plex Media Scanner v1.32.5.7328-2632c9d3a - Docker Docker Container x86_64 - build: linux-x86_64 - GMT 00:00
+Jul 22, 2023 22:08:34.801 [140403099765504] INFO - Linux version: 5.15.0-71-generic, language: en-US
+Jul 22, 2023 22:08:34.876 [140403099765504] INFO - Processor: 4-core AMD EPYC 7282 16-Core Processor                
+Jul 22, 2023 22:08:34.876 [140403099765504] INFO - /usr/lib/plexmediaserver/Plex Media Scanner --analyze --log-file-suffix  Analysis --no-thumbs --item 84,85,87,88,89,90
+Jul 22, 2023 22:08:34.880 [140403100261184] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.39.4, threadsafe=1
+Jul 22, 2023 22:08:35.492 [140403100261184] DEBUG - Analyzing media parts for item 84 (Episode 1): 73
+Jul 22, 2023 22:08:35.496 [140403100261184] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:35.496 [140403100261184] DEBUG - [HCl#1] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:35.497 [140403081841408] DEBUG - [HttpClient/HCl#1] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:35.498 [140403100261184] DEBUG - Updating metadata item (save) (Episode 1) with ID 84
+Jul 22, 2023 22:08:45.522 [140403100261184] ERROR - Waited over 10 seconds for a busy database; giving up.
+Jul 22, 2023 22:08:45.524 [140403100261184] ERROR - Failed to begin transaction (/data/jenkins/server/3532460254/Library/MetadataItem.cpp:1099) (tries=1): Cannot begin transaction. database is locked
+Jul 22, 2023 22:08:55.855 [140403100261184] ERROR - Waited over 10 seconds for a busy database; giving up.
+Jul 22, 2023 22:08:55.855 [140403100261184] ERROR - Failed to begin transaction (/data/jenkins/server/3532460254/Library/MetadataItem.cpp:1099) (tries=2): Cannot begin transaction. database is locked

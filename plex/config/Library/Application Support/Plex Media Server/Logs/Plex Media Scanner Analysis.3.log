@@ -1,0 +1,378 @@
+Jul 22, 2023 22:08:14.479 [139711866350336] INFO - Plex Media Scanner v1.32.5.7328-2632c9d3a - Docker Docker Container x86_64 - build: linux-x86_64 - GMT 00:00
+Jul 22, 2023 22:08:14.479 [139711866350336] INFO - Linux version: 5.15.0-71-generic, language: en-US
+Jul 22, 2023 22:08:14.480 [139711866350336] INFO - Processor: 4-core AMD EPYC 7282 16-Core Processor                
+Jul 22, 2023 22:08:14.480 [139711866350336] INFO - /usr/lib/plexmediaserver/Plex Media Scanner --analyze --log-file-suffix  Analysis --no-thumbs --item 77,78,79,80,81,82
+Jul 22, 2023 22:08:14.283 [139711866846016] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.39.4, threadsafe=1
+Jul 22, 2023 22:08:14.984 [139711866846016] DEBUG - Analyzing media parts for item 77 (Episode 1): 67
+Jul 22, 2023 22:08:15.172 [139711866846016] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:15.173 [139711866846016] DEBUG - [HCl#1] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:15.176 [139711848397568] DEBUG - [HttpClient/HCl#1] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:15.177 [139711866846016] DEBUG - Updating metadata item (save) (Episode 1) with ID 77
+Jul 22, 2023 22:08:16.093 [139711866846016] DEBUG - [ID 67] Media part analysis: /data/tvshows/Little Britain/Season 2/Little Britain - S02E01 - Episode 1 DVD.mp4
+Jul 22, 2023 22:08:16.094 [139711866846016] DEBUG - [MI] Opening input file: "/data/tvshows/Little Britain/Season 2/Little Britain - S02E01 - Episode 1 DVD.mp4"
+Jul 22, 2023 22:08:16.094 [139711866846016] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 2/Little Britain - S02E01 - Episode 1 DVD.mp4' for reading
+Jul 22, 2023 22:08:16.094 [139711866846016] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:16.096 [139711866846016] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Jul 22, 2023 22:08:16.096 [139711866846016] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Jul 22, 2023 22:08:16.096 [139711866846016] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:16.097 [139711847394048] DEBUG - [HCl#2] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64
+Jul 22, 2023 22:08:16.099 [139711848397568] DEBUG - [HttpClient/HCl#2] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64 (reused)
+Jul 22, 2023 22:08:16.178 [139711866846016] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 1024, duration: 21790720
+Jul 22, 2023 22:08:16.181 [139711866846016] DEBUG - [FFMPEG] - Offset DTS by 1024 to make first pts zero.
+Jul 22, 2023 22:08:16.181 [139711866846016] DEBUG - [FFMPEG] - Setting codecpar->delay to 2 for stream st: 0
+Jul 22, 2023 22:08:16.182 [139711866846016] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:16.388 [139711866846016] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 1024, duration: 81705360
+Jul 22, 2023 22:08:16.388 [139711866846016] DEBUG - [FFMPEG] - drop a frame at curr_cts: 0 @ 0
+Jul 22, 2023 22:08:16.675 [139711866846016] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 1291049 bytes read:1317250 seeks:0 nb_streams:2
+Jul 22, 2023 22:08:16.675 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:16.675 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:16.677 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:16.677 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:16.677 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:08:16.677 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:08:16.677 [139711866846016] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Jul 22, 2023 22:08:16.678 [139711866846016] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:16.678 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:08:16.891 [139711866846016] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:16.892 [139711866846016] DEBUG - [FFMPEG] - demuxer injecting skip 1024 / discard 0
+Jul 22, 2023 22:08:16.892 [139711866846016] DEBUG - [FFMPEG] - skip 1024 / discard 0 samples due to side data
+Jul 22, 2023 22:08:16.892 [139711866846016] DEBUG - [FFMPEG] - All info found
+Jul 22, 2023 22:08:16.893 [139711866846016] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 1291905 bytes read:1317250 seeks:0 frames:3
+Jul 22, 2023 22:08:16.893 [139711866846016] DEBUG - [MI] Opening "/data/tvshows/Little Britain/Season 2/Little Britain - S02E01 - Episode 1 DVD.mp4" for MP4 atom parsing
+Jul 22, 2023 22:08:16.987 [139711866846016] DEBUG - Mp4AtomParser: Skipping ftyp atom of size 32 at offset 0
+Jul 22, 2023 22:08:16.987 [139711866846016] DEBUG - Mp4AtomParser: Found moov atom of size 1291001 at offset 32
+Jul 22, 2023 22:08:17.376 [139711866846016] DEBUG - Mp4AtomParser: Found trak atom of size 673169 at offset 148
+Jul 22, 2023 22:08:17.376 [139711866846016] DEBUG - Mp4AtomParser: Found trak atom of size 617619 at offset 673317
+Jul 22, 2023 22:08:17.376 [139711866846016] DEBUG - Mp4AtomParser: Found mdia atom of size 673033 at offset 284
+Jul 22, 2023 22:08:17.376 [139711866846016] DEBUG - Mp4AtomParser: Found minf atom of size 672948 at offset 369
+Jul 22, 2023 22:08:17.376 [139711866846016] DEBUG - Mp4AtomParser: Found stbl atom of size 672884 at offset 433
+Jul 22, 2023 22:08:17.376 [139711866846016] DEBUG - Mp4AtomParser: Found mdia atom of size 617483 at offset 673453
+Jul 22, 2023 22:08:17.376 [139711866846016] DEBUG - Mp4AtomParser: Found minf atom of size 617404 at offset 673532
+Jul 22, 2023 22:08:17.376 [139711866846016] DEBUG - Mp4AtomParser: Found stbl atom of size 617344 at offset 673592
+Jul 22, 2023 22:08:17.389 [139711866846016] DEBUG - [MI]  * 594947bba5f41c9c96a5958a705e09f0570879ef [mp4 h264/aac] Duration: 1702400ms, 700x394 (1.776650) 25.000fps, bitrate=721kbps, audio channels=2, optimizedForStreaming=1 ("/data/tvshows/Little Britain/Season 2/Little Britain - S02E01 - Episode 1 DVD.mp4")
+Jul 22, 2023 22:08:17.389 [139711866846016] DEBUG - [MI] Chapters had generic titles, clearing.
+Jul 22, 2023 22:08:17.389 [139711866846016] DEBUG - [MI] Closing input file: "/data/tvshows/Little Britain/Season 2/Little Britain - S02E01 - Episode 1 DVD.mp4"
+Jul 22, 2023 22:08:19.598 [139711866846016] DEBUG - Committing media stream changes for part 67
+Jul 22, 2023 22:08:19.599 [139711866846016] DEBUG - Updating media item 67, size=153463658, metadata_item_id=77
+Jul 22, 2023 22:08:19.600 [139711866846016] DEBUG - Updating part with ID=67 [/data/tvshows/Little Britain/Season 2/Little Britain - S02E01 - Episode 1 DVD.mp4]
+Jul 22, 2023 22:08:19.600 [139711847394048] DEBUG - [HCl#3] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=77&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=analyzing
+Jul 22, 2023 22:08:19.601 [139711848397568] DEBUG - [HttpClient/HCl#3] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=77&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=analyzing (reused)
+Jul 22, 2023 22:08:19.602 [139711847394048] DEBUG - [HCl#4] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=77&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=idle
+Jul 22, 2023 22:08:19.602 [139711848397568] DEBUG - [HttpClient/HCl#4] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=77&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=idle (reused)
+Jul 22, 2023 22:08:19.621 [139711866846016] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:19.688 [139711866846016] DEBUG - [HCl#5] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:19.691 [139711848397568] DEBUG - [HttpClient/HCl#5] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Jul 22, 2023 22:08:19.692 [139711866846016] DEBUG - Updating metadata item (save) (Episode 1) with ID 77
+Jul 22, 2023 22:08:24.944 [139711847394048] DEBUG - [HCl#6] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64
+Jul 22, 2023 22:08:24.946 [139711848397568] DEBUG - [HttpClient/HCl#6] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64 (reused)
+Jul 22, 2023 22:08:24.947 [139711866846016] DEBUG - Analyzing media parts for item 78 (Episode 2): 68
+Jul 22, 2023 22:08:25.044 [139711866846016] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:25.044 [139711866846016] DEBUG - [HCl#7] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:25.045 [139711848397568] DEBUG - [HttpClient/HCl#7] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Jul 22, 2023 22:08:25.045 [139711866846016] DEBUG - Updating metadata item (save) (Episode 2) with ID 78
+Jul 22, 2023 22:08:25.046 [139711847394048] DEBUG - [HCl#8] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64
+Jul 22, 2023 22:08:25.047 [139711848397568] DEBUG - [HttpClient/HCl#8] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64 (reused)
+Jul 22, 2023 22:08:25.047 [139711866846016] DEBUG - [ID 68] Media part analysis: /data/tvshows/Little Britain/Season 2/Little Britain - S02E02 - Episode 2 DVD.mp4
+Jul 22, 2023 22:08:25.048 [139711866846016] DEBUG - [MI] Opening input file: "/data/tvshows/Little Britain/Season 2/Little Britain - S02E02 - Episode 2 DVD.mp4"
+Jul 22, 2023 22:08:25.048 [139711866846016] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 2/Little Britain - S02E02 - Episode 2 DVD.mp4' for reading
+Jul 22, 2023 22:08:25.048 [139711866846016] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:25.521 [139711866846016] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Jul 22, 2023 22:08:25.523 [139711866846016] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Jul 22, 2023 22:08:25.523 [139711866846016] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:25.534 [139711866846016] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 1024, duration: 21709824
+Jul 22, 2023 22:08:25.628 [139711866846016] DEBUG - [FFMPEG] - Offset DTS by 1024 to make first pts zero.
+Jul 22, 2023 22:08:25.628 [139711866846016] DEBUG - [FFMPEG] - Setting codecpar->delay to 2 for stream st: 0
+Jul 22, 2023 22:08:25.628 [139711866846016] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:25.726 [139711866846016] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 1024, duration: 81402288
+Jul 22, 2023 22:08:25.726 [139711866846016] DEBUG - [FFMPEG] - drop a frame at curr_cts: 0 @ 0
+Jul 22, 2023 22:08:25.729 [139711866846016] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 1285577 bytes read:1312410 seeks:0 nb_streams:2
+Jul 22, 2023 22:08:25.729 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:25.730 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:25.731 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:25.731 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:25.731 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:08:25.731 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:08:25.732 [139711866846016] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Jul 22, 2023 22:08:25.732 [139711866846016] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:25.733 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:08:25.733 [139711866846016] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:25.734 [139711866846016] DEBUG - [FFMPEG] - demuxer injecting skip 1024 / discard 0
+Jul 22, 2023 22:08:25.734 [139711866846016] DEBUG - [FFMPEG] - skip 1024 / discard 0 samples due to side data
+Jul 22, 2023 22:08:25.734 [139711866846016] DEBUG - [FFMPEG] - All info found
+Jul 22, 2023 22:08:25.735 [139711866846016] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 1286433 bytes read:1312410 seeks:0 frames:3
+Jul 22, 2023 22:08:25.735 [139711866846016] DEBUG - [MI] Opening "/data/tvshows/Little Britain/Season 2/Little Britain - S02E02 - Episode 2 DVD.mp4" for MP4 atom parsing
+Jul 22, 2023 22:08:25.736 [139711866846016] DEBUG - Mp4AtomParser: Skipping ftyp atom of size 32 at offset 0
+Jul 22, 2023 22:08:25.736 [139711866846016] DEBUG - Mp4AtomParser: Found moov atom of size 1285529 at offset 32
+Jul 22, 2023 22:08:25.738 [139711866846016] DEBUG - Mp4AtomParser: Found trak atom of size 669993 at offset 148
+Jul 22, 2023 22:08:25.738 [139711866846016] DEBUG - Mp4AtomParser: Found trak atom of size 615323 at offset 670141
+Jul 22, 2023 22:08:25.738 [139711866846016] DEBUG - Mp4AtomParser: Found mdia atom of size 669857 at offset 284
+Jul 22, 2023 22:08:25.738 [139711866846016] DEBUG - Mp4AtomParser: Found minf atom of size 669772 at offset 369
+Jul 22, 2023 22:08:25.739 [139711866846016] DEBUG - Mp4AtomParser: Found stbl atom of size 669708 at offset 433
+Jul 22, 2023 22:08:25.739 [139711866846016] DEBUG - Mp4AtomParser: Found mdia atom of size 615187 at offset 670277
+Jul 22, 2023 22:08:25.739 [139711866846016] DEBUG - Mp4AtomParser: Found minf atom of size 615108 at offset 670356
+Jul 22, 2023 22:08:25.739 [139711866846016] DEBUG - Mp4AtomParser: Found stbl atom of size 615048 at offset 670416
+Jul 22, 2023 22:08:25.739 [139711866846016] DEBUG - [MI]  * b4aff486202169a07c8d3c42f9dc6b102fc44c21 [mp4 h264/aac] Duration: 1696080ms, 700x394 (1.776650) 25.000fps, bitrate=679kbps, audio channels=2, optimizedForStreaming=1 ("/data/tvshows/Little Britain/Season 2/Little Britain - S02E02 - Episode 2 DVD.mp4")
+Jul 22, 2023 22:08:25.739 [139711866846016] DEBUG - [MI] Chapters had generic titles, clearing.
+Jul 22, 2023 22:08:25.739 [139711866846016] DEBUG - [MI] Closing input file: "/data/tvshows/Little Britain/Season 2/Little Britain - S02E02 - Episode 2 DVD.mp4"
+Jul 22, 2023 22:08:25.740 [139711866846016] DEBUG - Committing media stream changes for part 68
+Jul 22, 2023 22:08:25.741 [139711866846016] DEBUG - Updating media item 68, size=144157595, metadata_item_id=78
+Jul 22, 2023 22:08:25.741 [139711866846016] DEBUG - Updating part with ID=68 [/data/tvshows/Little Britain/Season 2/Little Britain - S02E02 - Episode 2 DVD.mp4]
+Jul 22, 2023 22:08:25.741 [139711847394048] DEBUG - [HCl#9] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=78&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=analyzing
+Jul 22, 2023 22:08:25.742 [139711848397568] DEBUG - [HttpClient/HCl#9] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=78&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=analyzing (reused)
+Jul 22, 2023 22:08:25.743 [139711847394048] DEBUG - [HCl#a] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=78&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=idle
+Jul 22, 2023 22:08:25.743 [139711866846016] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:25.743 [139711866846016] DEBUG - [HCl#b] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:25.824 [139711848397568] DEBUG - [HttpClient/HCl#b] HTTP/1.1 (0.1s) 200 response from GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:25.824 [139711866846016] DEBUG - Updating metadata item (save) (Episode 2) with ID 78
+Jul 22, 2023 22:08:25.825 [139711848397568] DEBUG - [HttpClient/HCl#a] HTTP/1.1 (0.1s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=78&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=idle (reused)
+Jul 22, 2023 22:08:25.826 [139711847394048] DEBUG - [HCl#c] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64
+Jul 22, 2023 22:08:25.827 [139711848397568] DEBUG - [HttpClient/HCl#c] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64 (reused)
+Jul 22, 2023 22:08:25.830 [139711866846016] DEBUG - Analyzing media parts for item 79 (Episode 3): 69
+Jul 22, 2023 22:08:25.839 [139711866846016] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:25.839 [139711866846016] DEBUG - [HCl#d] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:25.842 [139711848397568] DEBUG - [HttpClient/HCl#d] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Jul 22, 2023 22:08:25.842 [139711866846016] DEBUG - Updating metadata item (save) (Episode 3) with ID 79
+Jul 22, 2023 22:08:25.843 [139711847394048] DEBUG - [HCl#e] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64
+Jul 22, 2023 22:08:25.844 [139711848397568] DEBUG - [HttpClient/HCl#e] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64 (reused)
+Jul 22, 2023 22:08:25.845 [139711866846016] DEBUG - [ID 69] Media part analysis: /data/tvshows/Little Britain/Season 2/Little Britain - S02E03 - Episode 3 DVD.mp4
+Jul 22, 2023 22:08:25.846 [139711866846016] DEBUG - [MI] Opening input file: "/data/tvshows/Little Britain/Season 2/Little Britain - S02E03 - Episode 3 DVD.mp4"
+Jul 22, 2023 22:08:25.846 [139711866846016] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 2/Little Britain - S02E03 - Episode 3 DVD.mp4' for reading
+Jul 22, 2023 22:08:25.846 [139711866846016] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:27.127 [139711866846016] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Jul 22, 2023 22:08:27.128 [139711866846016] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Jul 22, 2023 22:08:27.128 [139711866846016] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:27.448 [139711866846016] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 1024, duration: 21637120
+Jul 22, 2023 22:08:27.450 [139711866846016] DEBUG - [FFMPEG] - Offset DTS by 1024 to make first pts zero.
+Jul 22, 2023 22:08:27.450 [139711866846016] DEBUG - [FFMPEG] - Setting codecpar->delay to 2 for stream st: 0
+Jul 22, 2023 22:08:27.454 [139711866846016] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:27.462 [139711866846016] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 1024, duration: 81128880
+Jul 22, 2023 22:08:27.462 [139711866846016] DEBUG - [FFMPEG] - drop a frame at curr_cts: 0 @ 0
+Jul 22, 2023 22:08:27.641 [139711866846016] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 1282085 bytes read:1309486 seeks:0 nb_streams:2
+Jul 22, 2023 22:08:27.642 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:27.642 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:27.643 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:27.643 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:27.643 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:08:27.643 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:08:27.643 [139711866846016] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Jul 22, 2023 22:08:27.644 [139711866846016] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:27.644 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:08:27.645 [139711866846016] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:27.645 [139711866846016] DEBUG - [FFMPEG] - demuxer injecting skip 1024 / discard 0
+Jul 22, 2023 22:08:27.645 [139711866846016] DEBUG - [FFMPEG] - skip 1024 / discard 0 samples due to side data
+Jul 22, 2023 22:08:27.645 [139711866846016] DEBUG - [FFMPEG] - All info found
+Jul 22, 2023 22:08:27.645 [139711866846016] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 1282941 bytes read:1309486 seeks:0 frames:3
+Jul 22, 2023 22:08:27.646 [139711866846016] DEBUG - [MI] Opening "/data/tvshows/Little Britain/Season 2/Little Britain - S02E03 - Episode 3 DVD.mp4" for MP4 atom parsing
+Jul 22, 2023 22:08:27.649 [139711866846016] DEBUG - Mp4AtomParser: Skipping ftyp atom of size 32 at offset 0
+Jul 22, 2023 22:08:27.649 [139711866846016] DEBUG - Mp4AtomParser: Found moov atom of size 1282037 at offset 32
+Jul 22, 2023 22:08:27.657 [139711866846016] DEBUG - Mp4AtomParser: Found trak atom of size 668557 at offset 148
+Jul 22, 2023 22:08:27.657 [139711866846016] DEBUG - Mp4AtomParser: Found trak atom of size 613267 at offset 668705
+Jul 22, 2023 22:08:27.657 [139711866846016] DEBUG - Mp4AtomParser: Found mdia atom of size 668421 at offset 284
+Jul 22, 2023 22:08:27.657 [139711866846016] DEBUG - Mp4AtomParser: Found minf atom of size 668336 at offset 369
+Jul 22, 2023 22:08:27.657 [139711866846016] DEBUG - Mp4AtomParser: Found stbl atom of size 668272 at offset 433
+Jul 22, 2023 22:08:27.657 [139711866846016] DEBUG - Mp4AtomParser: Found mdia atom of size 613131 at offset 668841
+Jul 22, 2023 22:08:27.657 [139711866846016] DEBUG - Mp4AtomParser: Found minf atom of size 613052 at offset 668920
+Jul 22, 2023 22:08:27.657 [139711866846016] DEBUG - Mp4AtomParser: Found stbl atom of size 612992 at offset 668980
+Jul 22, 2023 22:08:27.658 [139711866846016] DEBUG - [MI]  * 20f9d12254d1a1ebfdd7bbf202969a2644d43b07 [mp4 h264/aac] Duration: 1690400ms, 700x394 (1.776650) 25.000fps, bitrate=724kbps, audio channels=2, optimizedForStreaming=1 ("/data/tvshows/Little Britain/Season 2/Little Britain - S02E03 - Episode 3 DVD.mp4")
+Jul 22, 2023 22:08:27.658 [139711866846016] DEBUG - [MI] Chapters had generic titles, clearing.
+Jul 22, 2023 22:08:27.659 [139711866846016] DEBUG - [MI] Closing input file: "/data/tvshows/Little Britain/Season 2/Little Britain - S02E03 - Episode 3 DVD.mp4"
+Jul 22, 2023 22:08:27.661 [139711866846016] DEBUG - Committing media stream changes for part 69
+Jul 22, 2023 22:08:27.662 [139711866846016] DEBUG - Updating media item 69, size=153161696, metadata_item_id=79
+Jul 22, 2023 22:08:27.662 [139711866846016] DEBUG - Updating part with ID=69 [/data/tvshows/Little Britain/Season 2/Little Britain - S02E03 - Episode 3 DVD.mp4]
+Jul 22, 2023 22:08:27.825 [139711847394048] DEBUG - [HCl#f] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=79&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=analyzing
+Jul 22, 2023 22:08:27.838 [139711848397568] DEBUG - [HttpClient/HCl#f] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=79&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=analyzing (reused)
+Jul 22, 2023 22:08:27.841 [139711847394048] DEBUG - [HCl#10] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=79&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=idle
+Jul 22, 2023 22:08:27.841 [139711848397568] DEBUG - [HttpClient/HCl#10] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=79&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=idle (reused)
+Jul 22, 2023 22:08:27.856 [139711866846016] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:27.856 [139711866846016] DEBUG - [HCl#11] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:28.043 [139711848397568] DEBUG - [HttpClient/HCl#11] HTTP/1.1 (0.2s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Jul 22, 2023 22:08:28.044 [139711866846016] DEBUG - Updating metadata item (save) (Episode 3) with ID 79
+Jul 22, 2023 22:08:28.136 [139711847394048] DEBUG - [HCl#12] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64
+Jul 22, 2023 22:08:28.231 [139711848397568] DEBUG - [HttpClient/HCl#12] HTTP/1.1 (0.1s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64 (reused)
+Jul 22, 2023 22:08:28.327 [139711866846016] DEBUG - It took 70.000000 ms to retrieve 1 items.
+Jul 22, 2023 22:08:28.327 [139711866846016] DEBUG - Analyzing media parts for item 80 (Episode 4): 70
+Jul 22, 2023 22:08:28.935 [139711866846016] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:28.935 [139711866846016] DEBUG - [HCl#13] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:28.937 [139711848397568] DEBUG - [HttpClient/HCl#13] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Jul 22, 2023 22:08:28.937 [139711866846016] DEBUG - Updating metadata item (save) (Episode 4) with ID 80
+Jul 22, 2023 22:08:28.938 [139711847394048] DEBUG - [HCl#14] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64
+Jul 22, 2023 22:08:28.939 [139711866846016] DEBUG - [ID 70] Media part analysis: /data/tvshows/Little Britain/Season 2/Little Britain - S02E04 - Episode 4 DVD.mp4
+Jul 22, 2023 22:08:28.939 [139711848397568] DEBUG - [HttpClient/HCl#14] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64 (reused)
+Jul 22, 2023 22:08:29.030 [139711866846016] DEBUG - [MI] Opening input file: "/data/tvshows/Little Britain/Season 2/Little Britain - S02E04 - Episode 4 DVD.mp4"
+Jul 22, 2023 22:08:29.031 [139711866846016] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 2/Little Britain - S02E04 - Episode 4 DVD.mp4' for reading
+Jul 22, 2023 22:08:29.031 [139711866846016] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:29.136 [139711866846016] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Jul 22, 2023 22:08:29.138 [139711866846016] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Jul 22, 2023 22:08:29.138 [139711866846016] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:29.146 [139711866846016] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 1024, duration: 21378048
+Jul 22, 2023 22:08:29.238 [139711866846016] DEBUG - [FFMPEG] - Offset DTS by 1024 to make first pts zero.
+Jul 22, 2023 22:08:29.239 [139711866846016] DEBUG - [FFMPEG] - Setting codecpar->delay to 2 for stream st: 0
+Jul 22, 2023 22:08:29.239 [139711866846016] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:29.253 [139711866846016] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 1024, duration: 80158128
+Jul 22, 2023 22:08:29.253 [139711866846016] DEBUG - [FFMPEG] - drop a frame at curr_cts: 0 @ 0
+Jul 22, 2023 22:08:29.333 [139711866846016] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 1265253 bytes read:1294678 seeks:0 nb_streams:2
+Jul 22, 2023 22:08:29.334 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:29.334 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:29.335 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:29.335 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:29.335 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:08:29.335 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:08:29.335 [139711866846016] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Jul 22, 2023 22:08:29.335 [139711866846016] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:29.336 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:08:29.336 [139711866846016] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:29.337 [139711866846016] DEBUG - [FFMPEG] - demuxer injecting skip 1024 / discard 0
+Jul 22, 2023 22:08:29.337 [139711866846016] DEBUG - [FFMPEG] - skip 1024 / discard 0 samples due to side data
+Jul 22, 2023 22:08:29.337 [139711866846016] DEBUG - [FFMPEG] - All info found
+Jul 22, 2023 22:08:29.337 [139711866846016] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 1266109 bytes read:1294678 seeks:0 frames:3
+Jul 22, 2023 22:08:29.337 [139711866846016] DEBUG - [MI] Opening "/data/tvshows/Little Britain/Season 2/Little Britain - S02E04 - Episode 4 DVD.mp4" for MP4 atom parsing
+Jul 22, 2023 22:08:29.342 [139711866846016] DEBUG - Mp4AtomParser: Skipping ftyp atom of size 32 at offset 0
+Jul 22, 2023 22:08:29.342 [139711866846016] DEBUG - Mp4AtomParser: Found moov atom of size 1265205 at offset 32
+Jul 22, 2023 22:08:29.435 [139711866846016] DEBUG - Mp4AtomParser: Found trak atom of size 659065 at offset 148
+Jul 22, 2023 22:08:29.435 [139711866846016] DEBUG - Mp4AtomParser: Found trak atom of size 605927 at offset 659213
+Jul 22, 2023 22:08:29.435 [139711866846016] DEBUG - Mp4AtomParser: Found mdia atom of size 658929 at offset 284
+Jul 22, 2023 22:08:29.435 [139711866846016] DEBUG - Mp4AtomParser: Found minf atom of size 658844 at offset 369
+Jul 22, 2023 22:08:29.435 [139711866846016] DEBUG - Mp4AtomParser: Found stbl atom of size 658780 at offset 433
+Jul 22, 2023 22:08:29.435 [139711866846016] DEBUG - Mp4AtomParser: Found mdia atom of size 605791 at offset 659349
+Jul 22, 2023 22:08:29.435 [139711866846016] DEBUG - Mp4AtomParser: Found minf atom of size 605712 at offset 659428
+Jul 22, 2023 22:08:29.435 [139711866846016] DEBUG - Mp4AtomParser: Found stbl atom of size 605652 at offset 659488
+Jul 22, 2023 22:08:29.436 [139711866846016] DEBUG - [MI]  * b742e8a1f354a35734950a2ae96c2dcfffe3377f [mp4 h264/aac] Duration: 1670160ms, 700x394 (1.776650) 25.000fps, bitrate=662kbps, audio channels=2, optimizedForStreaming=1 ("/data/tvshows/Little Britain/Season 2/Little Britain - S02E04 - Episode 4 DVD.mp4")
+Jul 22, 2023 22:08:29.436 [139711866846016] DEBUG - [MI] Chapters had generic titles, clearing.
+Jul 22, 2023 22:08:29.436 [139711866846016] DEBUG - [MI] Closing input file: "/data/tvshows/Little Britain/Season 2/Little Britain - S02E04 - Episode 4 DVD.mp4"
+Jul 22, 2023 22:08:29.439 [139711866846016] DEBUG - Committing media stream changes for part 70
+Jul 22, 2023 22:08:29.440 [139711866846016] DEBUG - Updating media item 70, size=138379717, metadata_item_id=80
+Jul 22, 2023 22:08:29.440 [139711866846016] DEBUG - Updating part with ID=70 [/data/tvshows/Little Britain/Season 2/Little Britain - S02E04 - Episode 4 DVD.mp4]
+Jul 22, 2023 22:08:29.440 [139711847394048] DEBUG - [HCl#15] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=80&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=analyzing
+Jul 22, 2023 22:08:29.448 [139711848397568] DEBUG - [HttpClient/HCl#15] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=80&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=analyzing (reused)
+Jul 22, 2023 22:08:29.449 [139711847394048] DEBUG - [HCl#16] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=80&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=idle
+Jul 22, 2023 22:08:29.452 [139711848397568] DEBUG - [HttpClient/HCl#16] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=80&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=idle (reused)
+Jul 22, 2023 22:08:29.533 [139711866846016] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:29.533 [139711866846016] DEBUG - [HCl#17] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:29.534 [139711848397568] DEBUG - [HttpClient/HCl#17] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Jul 22, 2023 22:08:29.535 [139711866846016] DEBUG - Updating metadata item (save) (Episode 4) with ID 80
+Jul 22, 2023 22:08:29.536 [139711847394048] DEBUG - [HCl#18] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64
+Jul 22, 2023 22:08:29.536 [139711848397568] DEBUG - [HttpClient/HCl#18] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64 (reused)
+Jul 22, 2023 22:08:29.538 [139711866846016] DEBUG - Analyzing media parts for item 81 (Episode 5): 71
+Jul 22, 2023 22:08:29.542 [139711866846016] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:29.542 [139711866846016] DEBUG - [HCl#19] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:29.641 [139711848397568] DEBUG - [HttpClient/HCl#19] HTTP/1.1 (0.1s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Jul 22, 2023 22:08:29.642 [139711866846016] DEBUG - Updating metadata item (save) (Episode 5) with ID 81
+Jul 22, 2023 22:08:29.643 [139711866846016] DEBUG - [ID 71] Media part analysis: /data/tvshows/Little Britain/Season 2/Little Britain - S02E05 - Episode 5 DVD.mp4
+Jul 22, 2023 22:08:29.646 [139711847394048] DEBUG - [HCl#1a] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64
+Jul 22, 2023 22:08:29.647 [139711866846016] DEBUG - [MI] Opening input file: "/data/tvshows/Little Britain/Season 2/Little Britain - S02E05 - Episode 5 DVD.mp4"
+Jul 22, 2023 22:08:29.647 [139711866846016] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 2/Little Britain - S02E05 - Episode 5 DVD.mp4' for reading
+Jul 22, 2023 22:08:29.647 [139711866846016] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:29.655 [139711848397568] DEBUG - [HttpClient/HCl#1a] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64 (reused)
+Jul 22, 2023 22:08:29.740 [139711866846016] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Jul 22, 2023 22:08:29.740 [139711866846016] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Jul 22, 2023 22:08:29.740 [139711866846016] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:29.755 [139711866846016] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 1024, duration: 21327360
+Jul 22, 2023 22:08:29.841 [139711866846016] DEBUG - [FFMPEG] - Offset DTS by 1024 to make first pts zero.
+Jul 22, 2023 22:08:29.842 [139711866846016] DEBUG - [FFMPEG] - Setting codecpar->delay to 2 for stream st: 0
+Jul 22, 2023 22:08:29.843 [139711866846016] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:29.852 [139711866846016] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 1024, duration: 79966608
+Jul 22, 2023 22:08:29.852 [139711866846016] DEBUG - [FFMPEG] - drop a frame at curr_cts: 0 @ 0
+Jul 22, 2023 22:08:29.858 [139711866846016] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 1262389 bytes read:1292210 seeks:0 nb_streams:2
+Jul 22, 2023 22:08:29.859 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:29.859 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:29.860 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:29.860 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:29.860 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:08:29.860 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:08:29.860 [139711866846016] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Jul 22, 2023 22:08:29.861 [139711866846016] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:29.861 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:08:30.134 [139711866846016] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:30.134 [139711866846016] DEBUG - [FFMPEG] - demuxer injecting skip 1024 / discard 0
+Jul 22, 2023 22:08:30.134 [139711866846016] DEBUG - [FFMPEG] - skip 1024 / discard 0 samples due to side data
+Jul 22, 2023 22:08:30.135 [139711866846016] DEBUG - [FFMPEG] - All info found
+Jul 22, 2023 22:08:30.135 [139711866846016] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 1263227 bytes read:1292210 seeks:0 frames:3
+Jul 22, 2023 22:08:30.135 [139711866846016] DEBUG - [MI] Opening "/data/tvshows/Little Britain/Season 2/Little Britain - S02E05 - Episode 5 DVD.mp4" for MP4 atom parsing
+Jul 22, 2023 22:08:30.259 [139711866846016] DEBUG - Mp4AtomParser: Skipping ftyp atom of size 32 at offset 0
+Jul 22, 2023 22:08:30.259 [139711866846016] DEBUG - Mp4AtomParser: Found moov atom of size 1262341 at offset 32
+Jul 22, 2023 22:08:31.356 [139711866846016] DEBUG - Mp4AtomParser: Found trak atom of size 657621 at offset 148
+Jul 22, 2023 22:08:31.356 [139711866846016] DEBUG - Mp4AtomParser: Found trak atom of size 604507 at offset 657769
+Jul 22, 2023 22:08:31.356 [139711866846016] DEBUG - Mp4AtomParser: Found mdia atom of size 657485 at offset 284
+Jul 22, 2023 22:08:31.356 [139711866846016] DEBUG - Mp4AtomParser: Found minf atom of size 657400 at offset 369
+Jul 22, 2023 22:08:31.356 [139711866846016] DEBUG - Mp4AtomParser: Found stbl atom of size 657336 at offset 433
+Jul 22, 2023 22:08:31.356 [139711866846016] DEBUG - Mp4AtomParser: Found mdia atom of size 604371 at offset 657905
+Jul 22, 2023 22:08:31.356 [139711866846016] DEBUG - Mp4AtomParser: Found minf atom of size 604292 at offset 657984
+Jul 22, 2023 22:08:31.356 [139711866846016] DEBUG - Mp4AtomParser: Found stbl atom of size 604232 at offset 658044
+Jul 22, 2023 22:08:31.357 [139711866846016] DEBUG - [MI]  * deb594a332362ca042b9f4c89c3ce2bc73279482 [mp4 h264/aac] Duration: 1666200ms, 712x400 (1.780000) 25.000fps, bitrate=664kbps, audio channels=2, optimizedForStreaming=1 ("/data/tvshows/Little Britain/Season 2/Little Britain - S02E05 - Episode 5 DVD.mp4")
+Jul 22, 2023 22:08:31.357 [139711866846016] DEBUG - [MI] Chapters had generic titles, clearing.
+Jul 22, 2023 22:08:31.358 [139711866846016] DEBUG - [MI] Closing input file: "/data/tvshows/Little Britain/Season 2/Little Britain - S02E05 - Episode 5 DVD.mp4"
+Jul 22, 2023 22:08:31.438 [139711866846016] DEBUG - Committing media stream changes for part 71
+Jul 22, 2023 22:08:31.538 [139711866846016] DEBUG - Updating media item 71, size=138408882, metadata_item_id=81
+Jul 22, 2023 22:08:31.538 [139711866846016] DEBUG - Updating part with ID=71 [/data/tvshows/Little Britain/Season 2/Little Britain - S02E05 - Episode 5 DVD.mp4]
+Jul 22, 2023 22:08:31.544 [139711866846016] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:31.544 [139711866846016] DEBUG - [HCl#1c] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:31.545 [139711848397568] DEBUG - [HttpClient/HCl#1c] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Jul 22, 2023 22:08:31.545 [139711866846016] DEBUG - Updating metadata item (save) (Episode 5) with ID 81
+Jul 22, 2023 22:08:31.546 [139711847394048] DEBUG - [HCl#1b] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=81&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=analyzing
+Jul 22, 2023 22:08:31.546 [139711848397568] DEBUG - [HttpClient/HCl#1b] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=81&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=analyzing (reused)
+Jul 22, 2023 22:08:31.546 [139711847394048] DEBUG - [HCl#1d] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=81&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=idle
+Jul 22, 2023 22:08:31.547 [139711848397568] DEBUG - [HttpClient/HCl#1d] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=81&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=idle (reused)
+Jul 22, 2023 22:08:31.547 [139711847394048] DEBUG - [HCl#1e] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64
+Jul 22, 2023 22:08:31.549 [139711866846016] DEBUG - Analyzing media parts for item 82 (Episode 6): 72
+Jul 22, 2023 22:08:31.557 [139711848397568] DEBUG - [HttpClient/HCl#1e] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64 (reused)
+Jul 22, 2023 22:08:33.182 [139711866846016] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:33.182 [139711866846016] DEBUG - [HCl#1f] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:33.183 [139711848397568] DEBUG - [HttpClient/HCl#1f] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Jul 22, 2023 22:08:33.183 [139711866846016] DEBUG - Updating metadata item (save) (Episode 6) with ID 82
+Jul 22, 2023 22:08:33.185 [139711866846016] DEBUG - [ID 72] Media part analysis: /data/tvshows/Little Britain/Season 2/Little Britain - S02E06 - Episode 6 DVD.mp4
+Jul 22, 2023 22:08:33.185 [139711866846016] DEBUG - [MI] Opening input file: "/data/tvshows/Little Britain/Season 2/Little Britain - S02E06 - Episode 6 DVD.mp4"
+Jul 22, 2023 22:08:33.185 [139711866846016] DEBUG - [FFMPEG] - Opening '/data/tvshows/Little Britain/Season 2/Little Britain - S02E06 - Episode 6 DVD.mp4' for reading
+Jul 22, 2023 22:08:33.185 [139711866846016] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Jul 22, 2023 22:08:33.186 [139711847394048] DEBUG - [HCl#20] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64
+Jul 22, 2023 22:08:33.186 [139711848397568] DEBUG - [HttpClient/HCl#20] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64 (reused)
+Jul 22, 2023 22:08:33.591 [139711866846016] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Jul 22, 2023 22:08:33.601 [139711866846016] DEBUG - [FFMPEG] - ISO: File Type Major Brand: isom
+Jul 22, 2023 22:08:33.601 [139711866846016] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:33.875 [139711866846016] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 1024, duration: 20314112
+Jul 22, 2023 22:08:33.878 [139711866846016] DEBUG - [FFMPEG] - Offset DTS by 1024 to make first pts zero.
+Jul 22, 2023 22:08:33.878 [139711866846016] DEBUG - [FFMPEG] - Setting codecpar->delay to 2 for stream st: 0
+Jul 22, 2023 22:08:33.878 [139711866846016] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Jul 22, 2023 22:08:33.973 [139711866846016] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 1024, duration: 76167600
+Jul 22, 2023 22:08:33.973 [139711866846016] DEBUG - [FFMPEG] - drop a frame at curr_cts: 0 @ 0
+Jul 22, 2023 22:08:33.981 [139711866846016] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 1202393 bytes read:1207362 seeks:0 nb_streams:2
+Jul 22, 2023 22:08:33.982 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:33.982 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:33.982 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:33.983 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Jul 22, 2023 22:08:33.983 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Jul 22, 2023 22:08:33.983 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Jul 22, 2023 22:08:33.983 [139711866846016] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Jul 22, 2023 22:08:33.983 [139711866846016] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:33.983 [139711866846016] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Jul 22, 2023 22:08:33.984 [139711866846016] DEBUG - [FFMPEG] - no picture 
+Jul 22, 2023 22:08:33.984 [139711866846016] DEBUG - [FFMPEG] - demuxer injecting skip 1024 / discard 0
+Jul 22, 2023 22:08:33.984 [139711866846016] DEBUG - [FFMPEG] - skip 1024 / discard 0 samples due to side data
+Jul 22, 2023 22:08:33.984 [139711866846016] DEBUG - [FFMPEG] - All info found
+Jul 22, 2023 22:08:33.985 [139711866846016] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 1203252 bytes read:1207362 seeks:0 frames:3
+Jul 22, 2023 22:08:33.985 [139711866846016] DEBUG - [MI] Opening "/data/tvshows/Little Britain/Season 2/Little Britain - S02E06 - Episode 6 DVD.mp4" for MP4 atom parsing
+Jul 22, 2023 22:08:33.996 [139711866846016] DEBUG - Mp4AtomParser: Skipping ftyp atom of size 32 at offset 0
+Jul 22, 2023 22:08:33.996 [139711866846016] DEBUG - Mp4AtomParser: Found moov atom of size 1202345 at offset 32
+Jul 22, 2023 22:08:34.188 [139711866846016] DEBUG - Mp4AtomParser: Found trak atom of size 626333 at offset 148
+Jul 22, 2023 22:08:34.188 [139711866846016] DEBUG - Mp4AtomParser: Found trak atom of size 575799 at offset 626481
+Jul 22, 2023 22:08:34.188 [139711866846016] DEBUG - Mp4AtomParser: Found mdia atom of size 626197 at offset 284
+Jul 22, 2023 22:08:34.188 [139711866846016] DEBUG - Mp4AtomParser: Found minf atom of size 626112 at offset 369
+Jul 22, 2023 22:08:34.188 [139711866846016] DEBUG - Mp4AtomParser: Found stbl atom of size 626048 at offset 433
+Jul 22, 2023 22:08:34.188 [139711866846016] DEBUG - Mp4AtomParser: Found mdia atom of size 575663 at offset 626617
+Jul 22, 2023 22:08:34.188 [139711866846016] DEBUG - Mp4AtomParser: Found minf atom of size 575584 at offset 626696
+Jul 22, 2023 22:08:34.188 [139711866846016] DEBUG - Mp4AtomParser: Found stbl atom of size 575524 at offset 626756
+Jul 22, 2023 22:08:34.191 [139711866846016] DEBUG - [MI]  * d6f6c715d8bc26d6228e765fcb555d25bd4fcb12 [mp4 h264/aac] Duration: 1587040ms, 700x394 (1.776650) 25.000fps, bitrate=704kbps, audio channels=2, optimizedForStreaming=1 ("/data/tvshows/Little Britain/Season 2/Little Britain - S02E06 - Episode 6 DVD.mp4")
+Jul 22, 2023 22:08:34.191 [139711866846016] DEBUG - [MI] Chapters had generic titles, clearing.
+Jul 22, 2023 22:08:34.191 [139711866846016] DEBUG - [MI] Closing input file: "/data/tvshows/Little Britain/Season 2/Little Britain - S02E06 - Episode 6 DVD.mp4"
+Jul 22, 2023 22:08:34.192 [139711866846016] DEBUG - Committing media stream changes for part 72
+Jul 22, 2023 22:08:34.193 [139711866846016] DEBUG - Updating media item 72, size=139793271, metadata_item_id=82
+Jul 22, 2023 22:08:34.193 [139711866846016] DEBUG - Updating part with ID=72 [/data/tvshows/Little Britain/Season 2/Little Britain - S02E06 - Episode 6 DVD.mp4]
+Jul 22, 2023 22:08:34.193 [139711847394048] DEBUG - [HCl#21] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=82&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=analyzing
+Jul 22, 2023 22:08:34.277 [139711848397568] DEBUG - [HttpClient/HCl#21] HTTP/1.1 (0.1s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=82&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=analyzing (reused)
+Jul 22, 2023 22:08:34.281 [139711847394048] DEBUG - [HCl#22] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=82&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=idle
+Jul 22, 2023 22:08:34.287 [139711848397568] DEBUG - [HttpClient/HCl#22] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=2&metadataItemID=82&metadataType=4&state=-1&parentID=-1&rootID=-1&mediaState=idle (reused)
+Jul 22, 2023 22:08:34.298 [139711866846016] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:34.298 [139711866846016] DEBUG - [HCl#23] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Jul 22, 2023 22:08:34.388 [139711848397568] DEBUG - [HttpClient/HCl#23] HTTP/1.1 (0.1s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Jul 22, 2023 22:08:34.388 [139711866846016] DEBUG - Updating metadata item (save) (Episode 6) with ID 82
+Jul 22, 2023 22:08:34.390 [139711847394048] DEBUG - [HCl#24] HTTP requesting GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64
+Jul 22, 2023 22:08:34.399 [139711848397568] DEBUG - [HttpClient/HCl#24] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/flushMetadataCounterCache?metadataItemID=64 (reused)
