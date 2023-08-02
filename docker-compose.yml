@@ -155,7 +155,7 @@ services:
 
   jackett:
     container_name: jackett
-    image: linuxserver/jackett:0.21.424
+    image: linuxserver/jackett:0.21.574
     networks:
       - internal_network
     environment:
