@@ -455,3 +455,1057 @@
 2023-07-22 22:24:08.7|Info|RssSyncService|Starting RSS Sync
 2023-07-22 22:24:15.5|Info|DownloadDecisionMaker|Processing 277 releases
 2023-07-22 22:24:16.1|Info|RssSyncService|RSS Sync Completed. Reports found: 277, Reports grabbed: 0
+2023-07-22 22:43:40.7|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2023-07-22 23:06:54.9|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr - Version 4.6.4.7568
+2023-07-22 23:06:56.0|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2023-07-22 23:06:59.9|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2023-07-22 23:07:52.6|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2023-07-22 23:08:32.3|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2023-07-22 23:08:51.8|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2023-07-22 23:10:47.3|Warn|Microsoft.AspNetCore.Server.Kestrel|As of "07/22/2023 23:10:43 +00:00", the heartbeat has been running for "00:00:01.2989774" which is longer than "00:00:01". This could be caused by thread pool starvation.
+2023-07-22 23:10:57.8|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:7878
+2023-07-22 23:11:38.4|Info|CommandExecutor|Starting 2 threads for tasks.
+2023-07-22 23:11:46.7|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-07-22 23:11:46.8|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2023-07-22 23:11:46.8|Info|Microsoft.Hosting.Lifetime|Content root path: /app/radarr/bin
+2023-07-22 23:13:23.9|Error|CommandExecutor|Error occurred while executing task ApplicationCheckUpdate
+
+[v4.6.4.7568] System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellation(CancellationToken cancellationToken)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpMessageHandlerStage.Send(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpMessageHandlerStage.Send(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.SocketsHttpHandler.Send(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpMessageInvoker.Send(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.Send(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in ./Radarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 101
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in ./Radarr.Common/Http/HttpClient.cs:line 141
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Radarr.Common/Http/HttpClient.cs:line 59
+   at NzbDrone.Common.Http.HttpClient.Get(HttpRequest request) in ./Radarr.Common/Http/HttpClient.cs:line 299
+   at NzbDrone.Common.Http.HttpClient.Get[T](HttpRequest request) in ./Radarr.Common/Http/HttpClient.cs:line 305
+   at NzbDrone.Core.Update.UpdatePackageProvider.GetLatestUpdate(String branch, Version currentVersion) in ./Radarr.Core/Update/UpdatePackageProvider.cs:line 53
+   at NzbDrone.Core.Update.CheckUpdateService.AvailableUpdate() in ./Radarr.Core/Update/UpdateCheckService.cs:line 25
+   at NzbDrone.Core.Update.InstallUpdateService.GetUpdatePackage(CommandTrigger updateTrigger) in ./Radarr.Core/Update/InstallUpdateService.cs:line 232
+   at NzbDrone.Core.Update.InstallUpdateService.Execute(ApplicationCheckUpdateCommand message) in ./Radarr.Core/Update/InstallUpdateService.cs:line 269
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommand[TCommand](TCommand command, CommandModel commandModel) in ./Radarr.Core/Messaging/Commands/CommandExecutor.cs:line 81
+   at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid3[T0,T1,T2](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommands() in ./Radarr.Core/Messaging/Commands/CommandExecutor.cs:line 44
+
+
+2023-07-22 23:14:03.3|Info|DiskScanService|Scanning disk for Minions: The Rise of Gru
+2023-07-22 23:14:07.2|Info|DiskScanService|Completed scanning disk for Minions: The Rise of Gru
+2023-07-22 23:14:08.7|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2023-07-22 23:14:08.7|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2023-07-22 23:14:08.8|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2023-07-22 23:14:08.8|Info|ExistingExtraFileService|Found 1 possible extra files, imported 1 files.
+2023-07-22 23:14:09.3|Info|DiskScanService|Scanning disk for To Every You I've Loved Before
+2023-07-22 23:14:09.5|Info|DiskScanService|Completed scanning disk for To Every You I've Loved Before
+2023-07-22 23:14:09.9|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2023-07-22 23:14:09.9|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2023-07-22 23:14:10.3|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2023-07-22 23:14:10.3|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2023-07-22 23:14:11.4|Info|DiskScanService|Scanning disk for To Me, the One Who Loved You
+2023-07-22 23:14:11.7|Info|DiskScanService|Completed scanning disk for To Me, the One Who Loved You
+2023-07-22 23:14:11.8|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2023-07-22 23:14:11.8|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2023-07-22 23:14:11.8|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2023-07-22 23:14:11.8|Info|ExistingExtraFileService|Found 1 possible extra files, imported 1 files.
+2023-07-22 23:14:12.0|Info|DiskScanService|Scanning disk for VGHS: The Movie
+2023-07-22 23:14:12.0|Info|DiskScanService|Completed scanning disk for VGHS: The Movie
+2023-07-22 23:14:12.0|Info|MetadataService|Movie folder does not exist, skipping metadata creation
+2023-07-22 23:22:19.7|Warn|Microsoft.AspNetCore.Server.Kestrel|As of "07/22/2023 23:22:15 +00:00", the heartbeat has been running for "00:00:01.1043386" which is longer than "00:00:01". This could be caused by thread pool starvation.
+2023-07-22 23:24:39.8|Info|RssSyncService|Starting RSS Sync
+2023-07-22 23:25:29.1|Info|DownloadDecisionMaker|Processing 275 releases
+2023-07-22 23:25:32.4|Info|RssSyncService|RSS Sync Completed. Reports found: 275, Reports grabbed: 0
+2023-07-22 23:39:40.7|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2023-07-22 23:39:47.0|Info|ConsoleApp|Exiting main.
+2023-07-22 23:40:09.7|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr - Version 4.6.4.7568
+2023-07-22 23:40:11.6|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2023-07-22 23:40:12.3|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2023-07-22 23:40:23.6|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2023-07-22 23:40:27.2|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2023-07-22 23:40:29.3|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2023-07-22 23:40:38.1|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:7878
+2023-07-22 23:40:43.4|Info|CommandExecutor|Starting 2 threads for tasks.
+2023-07-22 23:40:45.7|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-07-22 23:40:45.7|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2023-07-22 23:40:45.8|Info|Microsoft.Hosting.Lifetime|Content root path: /app/radarr/bin
+2023-07-23 00:26:00.1|Info|RssSyncService|Starting RSS Sync
+2023-07-23 00:26:07.6|Info|DownloadDecisionMaker|Processing 279 releases
+2023-07-23 00:26:08.2|Info|RssSyncService|RSS Sync Completed. Reports found: 279, Reports grabbed: 0
+2023-07-23 01:26:31.7|Info|RssSyncService|Starting RSS Sync
+2023-07-23 01:26:39.9|Info|DownloadDecisionMaker|Processing 280 releases
+2023-07-23 01:26:40.6|Info|RssSyncService|RSS Sync Completed. Reports found: 280, Reports grabbed: 0
+2023-07-23 02:27:02.7|Info|RssSyncService|Starting RSS Sync
+2023-07-23 02:27:09.2|Info|DownloadDecisionMaker|Processing 280 releases
+2023-07-23 02:27:09.9|Info|RssSyncService|RSS Sync Completed. Reports found: 280, Reports grabbed: 0
+2023-07-23 03:27:33.6|Info|RssSyncService|Starting RSS Sync
+2023-07-23 03:27:40.8|Info|DownloadDecisionMaker|Processing 275 releases
+2023-07-23 03:27:41.4|Info|RssSyncService|RSS Sync Completed. Reports found: 275, Reports grabbed: 0
+2023-07-23 04:28:04.3|Info|RssSyncService|Starting RSS Sync
+2023-07-23 04:28:11.7|Info|DownloadDecisionMaker|Processing 276 releases
+2023-07-23 04:28:13.7|Info|RssSyncService|RSS Sync Completed. Reports found: 276, Reports grabbed: 0
+2023-07-23 05:28:35.1|Info|RssSyncService|Starting RSS Sync
+2023-07-23 05:28:42.5|Info|DownloadDecisionMaker|Processing 277 releases
+2023-07-23 05:28:43.1|Info|RssSyncService|RSS Sync Completed. Reports found: 277, Reports grabbed: 0
+2023-07-23 06:29:05.9|Info|RssSyncService|Starting RSS Sync
+2023-07-23 06:29:13.4|Info|DownloadDecisionMaker|Processing 268 releases
+2023-07-23 06:29:13.9|Info|RssSyncService|RSS Sync Completed. Reports found: 268, Reports grabbed: 0
+2023-07-23 07:29:36.7|Info|RssSyncService|Starting RSS Sync
+2023-07-23 07:29:38.4|Warn|Torznab|Indexer Jackett (TorrentGalaxy) rss sync didn't cover the period between 07/23/2023 06:28:07 and 07/23/2023 06:29:38 UTC. Search may be required.
+2023-07-23 07:29:43.3|Info|DownloadDecisionMaker|Processing 268 releases
+2023-07-23 07:29:43.7|Info|RssSyncService|RSS Sync Completed. Reports found: 268, Reports grabbed: 0
+2023-07-23 08:30:07.2|Info|RssSyncService|Starting RSS Sync
+2023-07-23 08:30:39.5|Info|DownloadDecisionMaker|Processing 266 releases
+2023-07-23 08:30:40.1|Info|RssSyncService|RSS Sync Completed. Reports found: 266, Reports grabbed: 0
+2023-07-23 09:31:09.0|Info|RssSyncService|Starting RSS Sync
+2023-07-23 09:31:16.8|Info|DownloadDecisionMaker|Processing 265 releases
+2023-07-23 09:31:17.4|Info|RssSyncService|RSS Sync Completed. Reports found: 265, Reports grabbed: 0
+2023-07-23 10:31:39.9|Info|RssSyncService|Starting RSS Sync
+2023-07-23 10:31:47.1|Info|DownloadDecisionMaker|Processing 260 releases
+2023-07-23 10:31:47.6|Info|RssSyncService|RSS Sync Completed. Reports found: 260, Reports grabbed: 0
+2023-07-23 10:37:40.3|Info|RecycleBinProvider|Recycle Bin has not been configured, cannot cleanup.
+2023-07-23 10:38:10.4|Info|ImportListSyncService|No auto enabled lists, skipping sync and cleaning
+2023-07-23 10:38:40.3|Info|HousekeepingService|Running housecleaning tasks
+2023-07-23 10:38:40.6|Info|Database|Vacuuming Log database
+2023-07-23 10:38:40.6|Info|Database|Log database compressed
+2023-07-23 10:38:40.6|Info|Database|Vacuuming Main database
+2023-07-23 10:38:40.6|Info|Database|Main database compressed
+2023-07-23 11:32:11.0|Info|RssSyncService|Starting RSS Sync
+2023-07-23 11:32:17.8|Info|DownloadDecisionMaker|Processing 267 releases
+2023-07-23 11:32:18.3|Info|RssSyncService|RSS Sync Completed. Reports found: 267, Reports grabbed: 0
+2023-07-23 12:32:41.9|Info|RssSyncService|Starting RSS Sync
+2023-07-23 12:32:50.6|Warn|HttpClient|HTTP Error - Res: [GET] http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100: 400.BadRequest (1394 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (torrentgalaxy): Relogin failed&#xA; ---&gt; System.Exception: Parse error&#xA; ---&gt; System.Exception: Relogin failed&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1719&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.OnParseError(String results, Exception ex) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 732&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1878&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 709&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 469" />
+2023-07-23 12:32:51.1|Warn|Torznab|Jackett (TorrentGalaxy) HTTP request failed: [400:BadRequest] [GET] at [http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100]
+2023-07-23 12:32:51.1|Info|DownloadDecisionMaker|Processing 219 releases
+2023-07-23 12:32:51.6|Info|RssSyncService|RSS Sync Completed. Reports found: 219, Reports grabbed: 0
+2023-07-23 13:33:12.8|Info|RssSyncService|Starting RSS Sync
+2023-07-23 13:33:13.1|Warn|HttpClient|HTTP Error - Res: [GET] http://jackett:9117/api/v2.0/indexers/yts/results/torznab/api?t=movie&cat=2040,100044,100045&extended=1&apikey=(removed)&offset=0&limit=100: 400.BadRequest (1707 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (yts): Request to https://yts.mx/api/v2/list_movies.json?limit=50&amp;sort_by=date_added&amp;order_by=desc failed (Error BadGateway) - The tracker seems to be down.&#xA; ---&gt; System.Exception: Request to https://yts.mx/api/v2/list_movies.json?limit=50&amp;sort_by=date_added&amp;order_by=desc failed (Error BadGateway) - The tracker seems to be down.&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.CheckSiteDown(WebResult response) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 579&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.RequestWithCookiesAsync(String url, String cookieOverride, RequestType method, String referer, IEnumerable`1 data, Dictionary`2 headers, String rawbody, Nullable`1 emulateBrowser) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 535&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1505&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 709&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 469" />
+2023-07-23 13:33:13.1|Warn|Torznab|Jackett (YTS) HTTP request failed: [400:BadRequest] [GET] at [http://jackett:9117/api/v2.0/indexers/yts/results/torznab/api?t=movie&cat=2040,100044,100045&extended=1&apikey=(removed)&offset=0&limit=100]
+2023-07-23 13:33:16.7|Warn|Torznab|Indexer Jackett (TorrentGalaxy) rss sync didn't cover the period between 07/23/2023 11:31:12 and 07/23/2023 12:33:16 UTC. Search may be required.
+2023-07-23 13:33:19.1|Info|DownloadDecisionMaker|Processing 183 releases
+2023-07-23 13:33:19.4|Info|RssSyncService|RSS Sync Completed. Reports found: 183, Reports grabbed: 0
+2023-07-23 14:33:43.6|Info|RssSyncService|Starting RSS Sync
+2023-07-23 14:33:52.3|Warn|HttpClient|HTTP Error - Res: [GET] http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100: 400.BadRequest (1394 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (torrentgalaxy): Relogin failed&#xA; ---&gt; System.Exception: Parse error&#xA; ---&gt; System.Exception: Relogin failed&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1719&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.OnParseError(String results, Exception ex) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 732&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1878&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 709&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 469" />
+2023-07-23 14:33:52.3|Warn|Torznab|Jackett (TorrentGalaxy) HTTP request failed: [400:BadRequest] [GET] at [http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100]
+2023-07-23 14:33:52.3|Info|DownloadDecisionMaker|Processing 232 releases
+2023-07-23 14:33:52.7|Info|RssSyncService|RSS Sync Completed. Reports found: 232, Reports grabbed: 0
+2023-07-23 15:34:20.4|Info|RssSyncService|Starting RSS Sync
+2023-07-23 15:34:35.3|Warn|HttpClient|HTTP Error - Res: [GET] http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100: 400.BadRequest (1394 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (torrentgalaxy): Relogin failed&#xA; ---&gt; System.Exception: Parse error&#xA; ---&gt; System.Exception: Relogin failed&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1719&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.OnParseError(String results, Exception ex) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 732&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1878&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 709&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 469" />
+2023-07-23 15:34:35.3|Warn|Torznab|Jackett (TorrentGalaxy) HTTP request failed: [400:BadRequest] [GET] at [http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100]
+2023-07-23 15:34:35.3|Info|DownloadDecisionMaker|Processing 207 releases
+2023-07-23 15:34:35.8|Info|RssSyncService|RSS Sync Completed. Reports found: 207, Reports grabbed: 0
+2023-07-23 16:34:51.5|Info|RssSyncService|Starting RSS Sync
+2023-07-23 16:34:53.5|Warn|HttpClient|HTTP Error - Res: [GET] http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100: 400.BadRequest (1394 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (torrentgalaxy): Relogin failed&#xA; ---&gt; System.Exception: Parse error&#xA; ---&gt; System.Exception: Relogin failed&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1719&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.OnParseError(String results, Exception ex) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 732&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1878&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 709&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 469" />
+2023-07-23 16:34:53.5|Warn|Torznab|Jackett (TorrentGalaxy) HTTP request failed: [400:BadRequest] [GET] at [http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100]
+2023-07-23 16:34:58.7|Info|DownloadDecisionMaker|Processing 205 releases
+2023-07-23 16:34:59.3|Info|RssSyncService|RSS Sync Completed. Reports found: 205, Reports grabbed: 0
+2023-07-23 17:07:49.6|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2023-07-23 17:07:50.6|Info|ConsoleApp|Exiting main.
+2023-07-23 17:07:58.5|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr - Version 4.6.4.7568
+2023-07-23 17:07:58.6|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2023-07-23 17:07:58.6|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2023-07-23 17:07:59.1|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2023-07-23 17:07:59.3|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2023-07-23 17:07:59.5|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+2023-07-23 17:08:00.0|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:7878
+2023-07-23 17:08:00.3|Info|CommandExecutor|Starting 2 threads for tasks.
+2023-07-23 17:08:00.4|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-07-23 17:08:00.4|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2023-07-23 17:08:00.4|Info|Microsoft.Hosting.Lifetime|Content root path: /app/radarr/bin
+2023-07-23 17:35:00.8|Info|RssSyncService|Starting RSS Sync
+2023-07-23 17:35:01.5|Warn|HttpClient|HTTP Error - Res: [GET] http://jackett:9117/api/v2.0/indexers/yts/results/torznab/api?t=movie&cat=2040,100044,100045&extended=1&apikey=(removed)&offset=0&limit=100: 400.BadRequest (4100 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (yts): Name does not resolve&#xA; ---&gt; System.Net.Http.HttpRequestException: Name does not resolve (yts.mx:443)&#xA; ---&gt; System.Net.Sockets.SocketException (0xFFFDFFFF): Name does not resolve&#xA;   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)&#xA;   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)&#xA;   at System.Net.Sockets.Socket.&lt;ConnectAsync&gt;g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)&#xA;   --- End of inner exception stack trace ---&#xA;   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)&#xA;   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)&#xA;   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at FlareSolverrSharp.ClearanceHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpClient.&lt;SendAsync&gt;g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)&#xA;   at Jackett.Common.Utils.Clients.HttpWebClient2.Run(WebRequest webRequest) in ./Jackett.Common/Utils/Clients/HttpWebClient2.cs:line 178&#xA;   at Jackett.Common.Utils.Clients.WebClient.GetResultAsync(WebRequest request) in ./Jackett.Common/Utils/Clients/WebClient.cs:line 219&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.RequestWithCookiesAsync(String url, String cookieOverride, RequestType method, String referer, IEnumerable`1 data, Dictionary`2 headers, String rawbody, Nullable`1 emulateBrowser) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 535&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1505&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 709&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 469" />
+2023-07-23 17:35:01.6|Warn|Torznab|Jackett (YTS) HTTP request failed: [400:BadRequest] [GET] at [http://jackett:9117/api/v2.0/indexers/yts/results/torznab/api?t=movie&cat=2040,100044,100045&extended=1&apikey=(removed)&offset=0&limit=100]
+2023-07-23 17:35:02.8|Warn|Torznab|Indexer Jackett (TorrentGalaxy) rss sync didn't cover the period between 07/23/2023 13:32:16 and 07/23/2023 15:35:02 UTC. Search may be required.
+2023-07-23 17:35:08.0|Info|DownloadDecisionMaker|Processing 156 releases
+2023-07-23 17:35:08.3|Info|RssSyncService|RSS Sync Completed. Reports found: 156, Reports grabbed: 0
+2023-07-23 18:35:31.7|Info|RssSyncService|Starting RSS Sync
+2023-07-23 18:35:48.7|Info|DownloadDecisionMaker|Processing 215 releases
+2023-07-23 18:35:51.6|Info|RssSyncService|RSS Sync Completed. Reports found: 215, Reports grabbed: 0
+2023-07-23 19:36:02.8|Info|RssSyncService|Starting RSS Sync
+2023-07-23 19:37:08.1|Warn|Torznab|Indexer Jackett (TorrentGalaxy) rss sync didn't cover the period between 07/23/2023 17:31:02 and 07/23/2023 17:37:08 UTC. Search may be required.
+2023-07-23 19:37:08.1|Info|DownloadDecisionMaker|Processing 275 releases
+2023-07-23 19:37:09.6|Info|RssSyncService|RSS Sync Completed. Reports found: 275, Reports grabbed: 0
+2023-07-23 20:37:33.6|Info|RssSyncService|Starting RSS Sync
+2023-07-23 20:37:40.3|Info|DownloadDecisionMaker|Processing 282 releases
+2023-07-23 20:37:40.8|Info|RssSyncService|RSS Sync Completed. Reports found: 282, Reports grabbed: 0
+2023-07-23 21:38:04.3|Info|RssSyncService|Starting RSS Sync
+2023-07-23 21:38:11.3|Info|DownloadDecisionMaker|Processing 283 releases
+2023-07-23 21:38:11.7|Info|RssSyncService|RSS Sync Completed. Reports found: 283, Reports grabbed: 0
+2023-07-23 22:38:35.2|Info|RssSyncService|Starting RSS Sync
+2023-07-23 22:38:37.3|Warn|Torznab|Indexer Jackett (TorrentGalaxy) rss sync didn't cover the period between 07/23/2023 21:37:07 and 07/23/2023 21:51:37 UTC. Search may be required.
+2023-07-23 22:38:42.5|Info|DownloadDecisionMaker|Processing 283 releases
+2023-07-23 22:38:42.9|Info|RssSyncService|RSS Sync Completed. Reports found: 283, Reports grabbed: 0
+2023-07-23 23:14:36.1|Info|DiskScanService|Scanning disk for Minions: The Rise of Gru
+2023-07-23 23:14:36.2|Info|DiskScanService|Completed scanning disk for Minions: The Rise of Gru
+2023-07-23 23:14:36.3|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2023-07-23 23:14:36.3|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2023-07-23 23:14:36.3|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2023-07-23 23:14:36.3|Info|ExistingExtraFileService|Found 1 possible extra files, imported 1 files.
+2023-07-23 23:14:36.3|Info|DiskScanService|Scanning disk for To Every You I've Loved Before
+2023-07-23 23:14:36.3|Info|DiskScanService|Completed scanning disk for To Every You I've Loved Before
+2023-07-23 23:14:36.3|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2023-07-23 23:14:36.3|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2023-07-23 23:14:36.3|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2023-07-23 23:14:36.3|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2023-07-23 23:14:36.4|Info|DiskScanService|Scanning disk for To Me, the One Who Loved You
+2023-07-23 23:14:36.4|Info|DiskScanService|Completed scanning disk for To Me, the One Who Loved You
+2023-07-23 23:14:36.4|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2023-07-23 23:14:36.4|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2023-07-23 23:14:36.4|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2023-07-23 23:14:36.4|Info|ExistingExtraFileService|Found 1 possible extra files, imported 1 files.
+2023-07-23 23:14:36.4|Info|DiskScanService|Scanning disk for VGHS: The Movie
+2023-07-23 23:14:36.4|Info|DiskScanService|Completed scanning disk for VGHS: The Movie
+2023-07-23 23:14:36.4|Info|MetadataService|Movie folder does not exist, skipping metadata creation
+2023-07-23 23:39:06.2|Info|RssSyncService|Starting RSS Sync
+2023-07-23 23:39:39.2|Info|DownloadDecisionMaker|Processing 283 releases
+2023-07-23 23:39:39.7|Info|RssSyncService|RSS Sync Completed. Reports found: 283, Reports grabbed: 0
+2023-07-24 00:40:07.8|Info|RssSyncService|Starting RSS Sync
+2023-07-24 00:41:13.8|Info|DownloadDecisionMaker|Processing 281 releases
+2023-07-24 00:41:14.3|Info|RssSyncService|RSS Sync Completed. Reports found: 281, Reports grabbed: 0
+2023-07-24 01:41:38.5|Info|RssSyncService|Starting RSS Sync
+2023-07-24 01:41:45.0|Info|DownloadDecisionMaker|Processing 267 releases
+2023-07-24 01:41:45.5|Info|RssSyncService|RSS Sync Completed. Reports found: 267, Reports grabbed: 0
+2023-07-24 02:42:09.2|Info|RssSyncService|Starting RSS Sync
+2023-07-24 02:42:15.6|Info|DownloadDecisionMaker|Processing 266 releases
+2023-07-24 02:42:16.0|Info|RssSyncService|RSS Sync Completed. Reports found: 266, Reports grabbed: 0
+2023-07-24 03:42:40.0|Info|RssSyncService|Starting RSS Sync
+2023-07-24 03:42:47.1|Info|DownloadDecisionMaker|Processing 262 releases
+2023-07-24 03:42:47.5|Info|RssSyncService|RSS Sync Completed. Reports found: 262, Reports grabbed: 0
+2023-07-24 04:43:10.8|Info|RssSyncService|Starting RSS Sync
+2023-07-24 04:43:18.0|Info|DownloadDecisionMaker|Processing 257 releases
+2023-07-24 04:43:18.4|Info|RssSyncService|RSS Sync Completed. Reports found: 257, Reports grabbed: 0
+2023-07-24 05:43:41.8|Info|RssSyncService|Starting RSS Sync
+2023-07-24 05:43:49.1|Info|DownloadDecisionMaker|Processing 254 releases
+2023-07-24 05:43:49.7|Info|RssSyncService|RSS Sync Completed. Reports found: 254, Reports grabbed: 0
+2023-07-24 06:44:13.1|Info|RssSyncService|Starting RSS Sync
+2023-07-24 06:44:22.4|Info|DownloadDecisionMaker|Processing 249 releases
+2023-07-24 06:44:23.0|Info|RssSyncService|RSS Sync Completed. Reports found: 249, Reports grabbed: 0
+2023-07-24 07:44:43.9|Info|RssSyncService|Starting RSS Sync
+2023-07-24 07:44:51.0|Info|DownloadDecisionMaker|Processing 247 releases
+2023-07-24 07:44:51.4|Info|RssSyncService|RSS Sync Completed. Reports found: 247, Reports grabbed: 0
+2023-07-24 08:45:14.7|Info|RssSyncService|Starting RSS Sync
+2023-07-24 08:45:21.6|Info|DownloadDecisionMaker|Processing 247 releases
+2023-07-24 08:45:22.1|Info|RssSyncService|RSS Sync Completed. Reports found: 247, Reports grabbed: 0
+2023-07-24 09:45:45.3|Info|RssSyncService|Starting RSS Sync
+2023-07-24 09:45:52.4|Info|DownloadDecisionMaker|Processing 250 releases
+2023-07-24 09:45:53.1|Info|RssSyncService|RSS Sync Completed. Reports found: 250, Reports grabbed: 0
+2023-07-24 10:37:46.2|Info|RecycleBinProvider|Recycle Bin has not been configured, cannot cleanup.
+2023-07-24 10:38:16.2|Info|ImportListSyncService|No auto enabled lists, skipping sync and cleaning
+2023-07-24 10:38:46.2|Info|HousekeepingService|Running housecleaning tasks
+2023-07-24 10:38:46.3|Info|Database|Vacuuming Log database
+2023-07-24 10:38:46.3|Info|Database|Log database compressed
+2023-07-24 10:38:46.3|Info|Database|Vacuuming Main database
+2023-07-24 10:38:46.4|Info|Database|Main database compressed
+2023-07-24 10:46:17.5|Info|RssSyncService|Starting RSS Sync
+2023-07-24 10:46:43.3|Info|DownloadDecisionMaker|Processing 254 releases
+2023-07-24 10:46:57.9|Info|RssSyncService|RSS Sync Completed. Reports found: 254, Reports grabbed: 0
+2023-07-24 11:47:18.8|Info|RssSyncService|Starting RSS Sync
+2023-07-24 11:47:25.6|Info|DownloadDecisionMaker|Processing 252 releases
+2023-07-24 11:47:26.1|Info|RssSyncService|RSS Sync Completed. Reports found: 252, Reports grabbed: 0
+2023-07-24 12:47:49.6|Info|RssSyncService|Starting RSS Sync
+2023-07-24 12:47:56.3|Info|DownloadDecisionMaker|Processing 249 releases
+2023-07-24 12:47:56.9|Info|RssSyncService|RSS Sync Completed. Reports found: 249, Reports grabbed: 0
+2023-07-24 13:48:20.5|Info|RssSyncService|Starting RSS Sync
+2023-07-24 13:48:28.0|Info|DownloadDecisionMaker|Processing 243 releases
+2023-07-24 13:48:28.6|Info|RssSyncService|RSS Sync Completed. Reports found: 243, Reports grabbed: 0
+2023-07-24 14:48:51.2|Info|RssSyncService|Starting RSS Sync
+2023-07-24 14:48:55.3|Warn|HttpClient|HTTP Error - Res: [GET] http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100: 400.BadRequest (1394 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (torrentgalaxy): Relogin failed&#xA; ---&gt; System.Exception: Parse error&#xA; ---&gt; System.Exception: Relogin failed&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1719&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.OnParseError(String results, Exception ex) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 732&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1878&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 709&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 469" />
+2023-07-24 14:48:55.3|Warn|Torznab|Jackett (TorrentGalaxy) HTTP request failed: [400:BadRequest] [GET] at [http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100]
+2023-07-24 14:48:58.7|Info|DownloadDecisionMaker|Processing 184 releases
+2023-07-24 14:48:59.1|Info|RssSyncService|RSS Sync Completed. Reports found: 184, Reports grabbed: 0
+2023-07-24 15:49:22.1|Info|RssSyncService|Starting RSS Sync
+2023-07-24 15:49:25.4|Warn|Torznab|Indexer Jackett (TorrentGalaxy) rss sync didn't cover the period between 07/24/2023 13:47:21 and 07/24/2023 14:49:25 UTC. Search may be required.
+2023-07-24 15:49:29.4|Info|DownloadDecisionMaker|Processing 238 releases
+2023-07-24 15:49:29.9|Info|RssSyncService|RSS Sync Completed. Reports found: 238, Reports grabbed: 0
+2023-07-24 16:49:52.7|Info|RssSyncService|Starting RSS Sync
+2023-07-24 16:49:59.4|Info|DownloadDecisionMaker|Processing 193 releases
+2023-07-24 16:50:00.0|Info|RssSyncService|RSS Sync Completed. Reports found: 193, Reports grabbed: 0
+2023-07-24 17:19:43.0|Info|DiskScanService|Scanning disk for To Every You I've Loved Before
+2023-07-24 17:19:43.2|Info|DiskScanService|Completed scanning disk for To Every You I've Loved Before
+2023-07-24 17:19:43.2|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2023-07-24 17:19:43.2|Info|ExistingSubtitleImporter|Found 1 existing subtitle files
+2023-07-24 17:19:43.2|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2023-07-24 17:19:43.2|Info|ExistingExtraFileService|Found 1 possible extra files, imported 1 files.
+2023-07-24 17:50:23.5|Info|RssSyncService|Starting RSS Sync
+2023-07-24 17:50:25.2|Warn|Torznab|Indexer Jackett (TorrentGalaxy) rss sync didn't cover the period between 07/24/2023 15:48:25 and 07/24/2023 16:50:25 UTC. Search may be required.
+2023-07-24 17:50:30.1|Info|DownloadDecisionMaker|Processing 247 releases
+2023-07-24 17:50:30.5|Info|RssSyncService|RSS Sync Completed. Reports found: 247, Reports grabbed: 0
+2023-07-24 18:50:54.1|Info|RssSyncService|Starting RSS Sync
+2023-07-24 18:51:01.1|Info|DownloadDecisionMaker|Processing 256 releases
+2023-07-24 18:51:01.7|Info|RssSyncService|RSS Sync Completed. Reports found: 256, Reports grabbed: 0
+2023-07-24 19:51:24.8|Info|RssSyncService|Starting RSS Sync
+2023-07-24 19:51:25.7|Warn|HttpClient|HTTP Error - Res: [GET] http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100: 400.BadRequest (1394 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (torrentgalaxy): Relogin failed&#xA; ---&gt; System.Exception: Parse error&#xA; ---&gt; System.Exception: Relogin failed&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1719&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.OnParseError(String results, Exception ex) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 732&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1878&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 709&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 469" />
+2023-07-24 19:51:25.7|Warn|Torznab|Jackett (TorrentGalaxy) HTTP request failed: [400:BadRequest] [GET] at [http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100]
+2023-07-24 19:51:31.9|Info|DownloadDecisionMaker|Processing 209 releases
+2023-07-24 19:51:32.3|Info|RssSyncService|RSS Sync Completed. Reports found: 209, Reports grabbed: 0
+2023-07-24 20:51:55.8|Info|RssSyncService|Starting RSS Sync
+2023-07-24 20:52:03.5|Info|DownloadDecisionMaker|Processing 258 releases
+2023-07-24 20:52:04.0|Info|RssSyncService|RSS Sync Completed. Reports found: 258, Reports grabbed: 0
+2023-07-24 21:52:26.5|Info|RssSyncService|Starting RSS Sync
+2023-07-24 21:52:32.8|Info|DownloadDecisionMaker|Processing 256 releases
+2023-07-24 21:52:33.3|Info|RssSyncService|RSS Sync Completed. Reports found: 256, Reports grabbed: 0
+2023-07-24 22:52:57.2|Info|RssSyncService|Starting RSS Sync
+2023-07-24 22:53:03.6|Info|DownloadDecisionMaker|Processing 202 releases
+2023-07-24 22:53:04.0|Info|RssSyncService|RSS Sync Completed. Reports found: 202, Reports grabbed: 0
+2023-07-24 23:14:57.7|Info|DiskScanService|Scanning disk for Minions: The Rise of Gru
+2023-07-24 23:14:57.8|Info|DiskScanService|Completed scanning disk for Minions: The Rise of Gru
+2023-07-24 23:14:57.8|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2023-07-24 23:14:57.8|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2023-07-24 23:14:57.8|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2023-07-24 23:14:57.8|Info|ExistingExtraFileService|Found 1 possible extra files, imported 1 files.
+2023-07-24 23:14:57.8|Info|DiskScanService|Scanning disk for To Every You I've Loved Before
+2023-07-24 23:14:57.8|Info|DiskScanService|Completed scanning disk for To Every You I've Loved Before
+2023-07-24 23:14:57.8|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2023-07-24 23:14:57.8|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2023-07-24 23:14:57.8|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2023-07-24 23:14:57.8|Info|ExistingExtraFileService|Found 1 possible extra files, imported 1 files.
+2023-07-24 23:14:57.8|Info|DiskScanService|Scanning disk for To Me, the One Who Loved You
+2023-07-24 23:14:57.9|Info|DiskScanService|Completed scanning disk for To Me, the One Who Loved You
+2023-07-24 23:14:57.9|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2023-07-24 23:14:57.9|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2023-07-24 23:14:57.9|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2023-07-24 23:14:57.9|Info|ExistingExtraFileService|Found 1 possible extra files, imported 1 files.
+2023-07-24 23:14:57.9|Info|DiskScanService|Scanning disk for VGHS: The Movie
+2023-07-24 23:14:57.9|Info|DiskScanService|Completed scanning disk for VGHS: The Movie
+2023-07-24 23:14:57.9|Info|MetadataService|Movie folder does not exist, skipping metadata creation
+2023-07-24 23:53:28.0|Info|RssSyncService|Starting RSS Sync
+2023-07-24 23:53:29.5|Warn|Torznab|Indexer Jackett (TorrentGalaxy) rss sync didn't cover the period between 07/24/2023 21:51:27 and 07/24/2023 22:53:29 UTC. Search may be required.
+2023-07-24 23:53:34.9|Info|DownloadDecisionMaker|Processing 262 releases
+2023-07-24 23:53:35.3|Info|RssSyncService|RSS Sync Completed. Reports found: 262, Reports grabbed: 0
+2023-07-25 00:53:58.7|Info|RssSyncService|Starting RSS Sync
+2023-07-25 00:54:05.8|Info|DownloadDecisionMaker|Processing 260 releases
+2023-07-25 00:54:06.3|Info|RssSyncService|RSS Sync Completed. Reports found: 260, Reports grabbed: 0
+2023-07-25 01:54:29.4|Info|RssSyncService|Starting RSS Sync
+2023-07-25 01:54:39.3|Info|DownloadDecisionMaker|Processing 261 releases
+2023-07-25 01:54:39.7|Info|RssSyncService|RSS Sync Completed. Reports found: 261, Reports grabbed: 0
+2023-07-25 02:55:00.3|Info|RssSyncService|Starting RSS Sync
+2023-07-25 02:55:06.9|Info|DownloadDecisionMaker|Processing 259 releases
+2023-07-25 02:55:07.3|Info|RssSyncService|RSS Sync Completed. Reports found: 259, Reports grabbed: 0
+2023-07-25 03:55:31.1|Info|RssSyncService|Starting RSS Sync
+2023-07-25 03:55:38.0|Info|DownloadDecisionMaker|Processing 257 releases
+2023-07-25 03:55:38.5|Info|RssSyncService|RSS Sync Completed. Reports found: 257, Reports grabbed: 0
+2023-07-25 04:56:01.6|Info|RssSyncService|Starting RSS Sync
+2023-07-25 04:56:08.4|Info|DownloadDecisionMaker|Processing 254 releases
+2023-07-25 04:56:09.0|Info|RssSyncService|RSS Sync Completed. Reports found: 254, Reports grabbed: 0
+2023-07-25 05:56:32.6|Info|RssSyncService|Starting RSS Sync
+2023-07-25 05:56:39.8|Info|DownloadDecisionMaker|Processing 244 releases
+2023-07-25 05:56:40.2|Info|RssSyncService|RSS Sync Completed. Reports found: 244, Reports grabbed: 0
+2023-07-25 06:57:03.4|Info|RssSyncService|Starting RSS Sync
+2023-07-25 06:57:10.1|Info|DownloadDecisionMaker|Processing 243 releases
+2023-07-25 06:57:10.5|Info|RssSyncService|RSS Sync Completed. Reports found: 243, Reports grabbed: 0
+2023-07-25 07:57:34.1|Info|RssSyncService|Starting RSS Sync
+2023-07-25 07:57:41.9|Info|DownloadDecisionMaker|Processing 240 releases
+2023-07-25 07:57:42.3|Info|RssSyncService|RSS Sync Completed. Reports found: 240, Reports grabbed: 0
+2023-07-25 08:58:04.7|Info|RssSyncService|Starting RSS Sync
+2023-07-25 08:58:11.1|Info|DownloadDecisionMaker|Processing 239 releases
+2023-07-25 08:58:11.6|Info|RssSyncService|RSS Sync Completed. Reports found: 239, Reports grabbed: 0
+2023-07-25 09:58:35.3|Info|RssSyncService|Starting RSS Sync
+2023-07-25 09:58:42.1|Info|DownloadDecisionMaker|Processing 234 releases
+2023-07-25 09:58:42.5|Info|RssSyncService|RSS Sync Completed. Reports found: 234, Reports grabbed: 0
+2023-07-25 10:38:05.6|Info|RecycleBinProvider|Recycle Bin has not been configured, cannot cleanup.
+2023-07-25 10:38:35.6|Info|ImportListSyncService|No auto enabled lists, skipping sync and cleaning
+2023-07-25 10:39:05.6|Info|HousekeepingService|Running housecleaning tasks
+2023-07-25 10:39:05.7|Info|Database|Vacuuming Log database
+2023-07-25 10:39:05.7|Info|Database|Log database compressed
+2023-07-25 10:39:05.7|Info|Database|Vacuuming Main database
+2023-07-25 10:39:05.8|Info|Database|Main database compressed
+2023-07-25 10:59:06.0|Info|RssSyncService|Starting RSS Sync
+2023-07-25 10:59:13.0|Info|DownloadDecisionMaker|Processing 232 releases
+2023-07-25 10:59:13.3|Info|RssSyncService|RSS Sync Completed. Reports found: 232, Reports grabbed: 0
+2023-07-25 11:59:36.8|Info|RssSyncService|Starting RSS Sync
+2023-07-25 11:59:43.5|Info|DownloadDecisionMaker|Processing 234 releases
+2023-07-25 11:59:44.0|Info|RssSyncService|RSS Sync Completed. Reports found: 234, Reports grabbed: 0
+2023-07-25 13:00:07.7|Info|RssSyncService|Starting RSS Sync
+2023-07-25 13:00:14.7|Info|DownloadDecisionMaker|Processing 181 releases
+2023-07-25 13:00:15.0|Info|RssSyncService|RSS Sync Completed. Reports found: 181, Reports grabbed: 0
+2023-07-25 14:00:38.5|Info|RssSyncService|Starting RSS Sync
+2023-07-25 14:01:40.1|Warn|HttpClient|HTTP Error - Res: [GET] http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100: 400.BadRequest (2291 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (torrentgalaxy): Request to https://torrentgalaxy.to/galaxyfence.php?f failed (Error GatewayTimeout) - The tracker seems to be down.&#xA; ---&gt; System.Exception: Parse error&#xA; ---&gt; System.Exception: Request to https://torrentgalaxy.to/galaxyfence.php?f failed (Error GatewayTimeout) - The tracker seems to be down.&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.CheckSiteDown(WebResult response) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 579&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.RequestWithCookiesAsync(String url, String cookieOverride, RequestType method, String referer, IEnumerable`1 data, Dictionary`2 headers, String rawbody, Nullable`1 emulateBrowser) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 535&#xA;   at Jackett.Common.Indexers.CardigannIndexer.GetConfigurationForSetup(Boolean automaticlogin) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 966&#xA;   at Jackett.Common.Indexers.CardigannIndexer.DoLogin() in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 593&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1715&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.OnParseError(String results, Exception ex) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 732&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1878&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 709&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 469" />
+2023-07-25 14:01:40.1|Warn|Torznab|Jackett (TorrentGalaxy) HTTP request failed: [400:BadRequest] [GET] at [http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100]
+2023-07-25 14:01:40.1|Info|DownloadDecisionMaker|Processing 180 releases
+2023-07-25 14:01:40.5|Info|RssSyncService|RSS Sync Completed. Reports found: 180, Reports grabbed: 0
+2023-07-25 15:02:09.3|Info|RssSyncService|Starting RSS Sync
+2023-07-25 15:02:13.7|Warn|Torznab|Indexer Jackett (TorrentGalaxy) rss sync didn't cover the period between 07/25/2023 11:58:38 and 07/25/2023 13:02:13 UTC. Search may be required.
+2023-07-25 15:02:15.9|Info|DownloadDecisionMaker|Processing 230 releases
+2023-07-25 15:02:16.4|Info|RssSyncService|RSS Sync Completed. Reports found: 230, Reports grabbed: 0
+2023-07-25 16:02:40.0|Info|RssSyncService|Starting RSS Sync
+2023-07-25 16:02:46.7|Info|DownloadDecisionMaker|Processing 237 releases
+2023-07-25 16:02:47.1|Info|RssSyncService|RSS Sync Completed. Reports found: 237, Reports grabbed: 0
+2023-07-25 17:03:11.0|Info|RssSyncService|Starting RSS Sync
+2023-07-25 17:03:17.4|Info|DownloadDecisionMaker|Processing 232 releases
+2023-07-25 17:03:17.8|Info|RssSyncService|RSS Sync Completed. Reports found: 232, Reports grabbed: 0
+2023-07-25 18:03:41.7|Info|RssSyncService|Starting RSS Sync
+2023-07-25 18:03:48.2|Info|DownloadDecisionMaker|Processing 237 releases
+2023-07-25 18:03:48.7|Info|RssSyncService|RSS Sync Completed. Reports found: 237, Reports grabbed: 0
+2023-07-25 19:04:12.4|Info|RssSyncService|Starting RSS Sync
+2023-07-25 19:04:18.9|Info|DownloadDecisionMaker|Processing 242 releases
+2023-07-25 19:04:19.3|Info|RssSyncService|RSS Sync Completed. Reports found: 242, Reports grabbed: 0
+2023-07-25 20:04:43.3|Info|RssSyncService|Starting RSS Sync
+2023-07-25 20:04:49.9|Info|DownloadDecisionMaker|Processing 238 releases
+2023-07-25 20:04:50.4|Info|RssSyncService|RSS Sync Completed. Reports found: 238, Reports grabbed: 0
+2023-07-25 21:05:14.1|Info|RssSyncService|Starting RSS Sync
+2023-07-25 21:05:20.9|Info|DownloadDecisionMaker|Processing 244 releases
+2023-07-25 21:05:21.4|Info|RssSyncService|RSS Sync Completed. Reports found: 244, Reports grabbed: 0
+2023-07-25 22:05:44.9|Info|RssSyncService|Starting RSS Sync
+2023-07-25 22:06:02.6|Info|DownloadDecisionMaker|Processing 244 releases
+2023-07-25 22:06:03.1|Info|RssSyncService|RSS Sync Completed. Reports found: 244, Reports grabbed: 0
+2023-07-25 23:06:15.6|Info|RssSyncService|Starting RSS Sync
+2023-07-25 23:06:22.1|Info|DownloadDecisionMaker|Processing 250 releases
+2023-07-25 23:06:22.5|Info|RssSyncService|RSS Sync Completed. Reports found: 250, Reports grabbed: 0
+2023-07-25 23:15:16.0|Info|DiskScanService|Scanning disk for Minions: The Rise of Gru
+2023-07-25 23:15:16.1|Info|DiskScanService|Completed scanning disk for Minions: The Rise of Gru
+2023-07-25 23:15:16.1|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2023-07-25 23:15:16.1|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2023-07-25 23:15:16.1|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2023-07-25 23:15:16.1|Info|ExistingExtraFileService|Found 1 possible extra files, imported 1 files.
+2023-07-25 23:15:16.1|Info|DiskScanService|Scanning disk for To Every You I've Loved Before
+2023-07-25 23:15:16.1|Info|DiskScanService|Completed scanning disk for To Every You I've Loved Before
+2023-07-25 23:15:16.1|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2023-07-25 23:15:16.1|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2023-07-25 23:15:16.1|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2023-07-25 23:15:16.1|Info|ExistingExtraFileService|Found 1 possible extra files, imported 1 files.
+2023-07-25 23:15:16.1|Info|DiskScanService|Scanning disk for To Me, the One Who Loved You
+2023-07-25 23:15:16.2|Info|DiskScanService|Completed scanning disk for To Me, the One Who Loved You
+2023-07-25 23:15:16.2|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2023-07-25 23:15:16.2|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2023-07-25 23:15:16.2|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2023-07-25 23:15:16.2|Info|ExistingExtraFileService|Found 1 possible extra files, imported 1 files.
+2023-07-25 23:15:16.2|Info|DiskScanService|Scanning disk for VGHS: The Movie
+2023-07-25 23:15:16.2|Info|DiskScanService|Completed scanning disk for VGHS: The Movie
+2023-07-25 23:15:16.2|Info|MetadataService|Movie folder does not exist, skipping metadata creation
+2023-07-26 00:06:46.4|Info|RssSyncService|Starting RSS Sync
+2023-07-26 00:06:53.0|Info|DownloadDecisionMaker|Processing 252 releases
+2023-07-26 00:06:53.5|Info|RssSyncService|RSS Sync Completed. Reports found: 252, Reports grabbed: 0
+2023-07-26 01:07:17.2|Info|RssSyncService|Starting RSS Sync
+2023-07-26 01:07:24.0|Info|DownloadDecisionMaker|Processing 252 releases
+2023-07-26 01:07:24.5|Info|RssSyncService|RSS Sync Completed. Reports found: 252, Reports grabbed: 0
+2023-07-26 02:07:48.0|Info|RssSyncService|Starting RSS Sync
+2023-07-26 02:07:55.2|Info|DownloadDecisionMaker|Processing 252 releases
+2023-07-26 02:07:55.6|Info|RssSyncService|RSS Sync Completed. Reports found: 252, Reports grabbed: 0
+2023-07-26 03:08:18.8|Info|RssSyncService|Starting RSS Sync
+2023-07-26 03:08:25.1|Info|DownloadDecisionMaker|Processing 246 releases
+2023-07-26 03:08:25.7|Info|RssSyncService|RSS Sync Completed. Reports found: 246, Reports grabbed: 0
+2023-07-26 04:08:49.4|Info|RssSyncService|Starting RSS Sync
+2023-07-26 04:08:56.1|Info|DownloadDecisionMaker|Processing 246 releases
+2023-07-26 04:08:56.7|Info|RssSyncService|RSS Sync Completed. Reports found: 246, Reports grabbed: 0
+2023-07-26 05:09:20.1|Info|RssSyncService|Starting RSS Sync
+2023-07-26 05:09:26.9|Info|DownloadDecisionMaker|Processing 244 releases
+2023-07-26 05:09:27.3|Info|RssSyncService|RSS Sync Completed. Reports found: 244, Reports grabbed: 0
+2023-07-26 06:09:50.9|Info|RssSyncService|Starting RSS Sync
+2023-07-26 06:09:57.8|Info|DownloadDecisionMaker|Processing 240 releases
+2023-07-26 06:09:58.2|Info|RssSyncService|RSS Sync Completed. Reports found: 240, Reports grabbed: 0
+2023-07-26 07:10:21.7|Info|RssSyncService|Starting RSS Sync
+2023-07-26 07:10:54.7|Info|DownloadDecisionMaker|Processing 185 releases
+2023-07-26 07:10:55.0|Info|RssSyncService|RSS Sync Completed. Reports found: 185, Reports grabbed: 0
+2023-07-26 08:11:22.1|Info|RssSyncService|Starting RSS Sync
+2023-07-26 08:11:23.4|Warn|HttpClient|HTTP Error - Res: [GET] http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100: 400.BadRequest (1777 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (torrentgalaxy): Login failed: No form found on https://torrentgalaxy.to/galaxyfence.php?f using form selector form[action=&quot;/galaxyfence.php&quot;]&#xA; ---&gt; System.Exception: Parse error&#xA; ---&gt; Jackett.Common.ExceptionWithConfigData: Login failed: No form found on https://torrentgalaxy.to/galaxyfence.php?f using form selector form[action=&quot;/galaxyfence.php&quot;]&#xA;   at Jackett.Common.Indexers.CardigannIndexer.DoLogin() in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 603&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1715&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.OnParseError(String results, Exception ex) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 732&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1878&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 709&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 469" />
+2023-07-26 08:11:23.4|Warn|Torznab|Jackett (TorrentGalaxy) HTTP request failed: [400:BadRequest] [GET] at [http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100]
+2023-07-26 08:11:29.2|Info|DownloadDecisionMaker|Processing 185 releases
+2023-07-26 08:11:29.5|Info|RssSyncService|RSS Sync Completed. Reports found: 185, Reports grabbed: 0
+2023-07-26 09:11:52.9|Info|RssSyncService|Starting RSS Sync
+2023-07-26 09:11:54.5|Warn|Torznab|Indexer Jackett (TorrentGalaxy) rss sync didn't cover the period between 07/26/2023 06:07:52 and 07/26/2023 08:11:54 UTC. Search may be required.
+2023-07-26 09:11:59.6|Info|DownloadDecisionMaker|Processing 234 releases
+2023-07-26 09:11:59.9|Info|RssSyncService|RSS Sync Completed. Reports found: 234, Reports grabbed: 0
+2023-07-26 10:12:23.5|Info|RssSyncService|Starting RSS Sync
+2023-07-26 10:12:30.8|Info|DownloadDecisionMaker|Processing 234 releases
+2023-07-26 10:12:31.3|Info|RssSyncService|RSS Sync Completed. Reports found: 234, Reports grabbed: 0
+2023-07-26 10:38:23.8|Info|RecycleBinProvider|Recycle Bin has not been configured, cannot cleanup.
+2023-07-26 10:38:53.8|Info|ImportListSyncService|No auto enabled lists, skipping sync and cleaning
+2023-07-26 10:39:23.9|Info|HousekeepingService|Running housecleaning tasks
+2023-07-26 10:39:23.9|Info|RefreshCollectionService|Updating info for Minions Collection
+2023-07-26 10:39:24.0|Info|Database|Vacuuming Log database
+2023-07-26 10:39:24.0|Info|Database|Log database compressed
+2023-07-26 10:39:24.0|Info|Database|Vacuuming Main database
+2023-07-26 10:39:24.0|Info|Database|Main database compressed
+2023-07-26 11:12:54.2|Info|RssSyncService|Starting RSS Sync
+2023-07-26 11:13:01.4|Info|DownloadDecisionMaker|Processing 233 releases
+2023-07-26 11:13:01.8|Info|RssSyncService|RSS Sync Completed. Reports found: 233, Reports grabbed: 0
+2023-07-26 12:13:25.0|Info|RssSyncService|Starting RSS Sync
+2023-07-26 12:13:31.7|Info|DownloadDecisionMaker|Processing 231 releases
+2023-07-26 12:13:32.3|Info|RssSyncService|RSS Sync Completed. Reports found: 231, Reports grabbed: 0
+2023-07-26 13:13:55.7|Info|RssSyncService|Starting RSS Sync
+2023-07-26 13:13:57.1|Warn|HttpClient|HTTP Error - Res: [GET] http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100: 400.BadRequest (1777 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (torrentgalaxy): Login failed: No form found on https://torrentgalaxy.to/galaxyfence.php?f using form selector form[action=&quot;/galaxyfence.php&quot;]&#xA; ---&gt; System.Exception: Parse error&#xA; ---&gt; Jackett.Common.ExceptionWithConfigData: Login failed: No form found on https://torrentgalaxy.to/galaxyfence.php?f using form selector form[action=&quot;/galaxyfence.php&quot;]&#xA;   at Jackett.Common.Indexers.CardigannIndexer.DoLogin() in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 603&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1715&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.OnParseError(String results, Exception ex) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 732&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1878&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 709&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 469" />
+2023-07-26 13:13:57.1|Warn|Torznab|Jackett (TorrentGalaxy) HTTP request failed: [400:BadRequest] [GET] at [http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100]
+2023-07-26 13:14:02.0|Info|DownloadDecisionMaker|Processing 178 releases
+2023-07-26 13:14:02.3|Info|RssSyncService|RSS Sync Completed. Reports found: 178, Reports grabbed: 0
+2023-07-26 14:14:26.4|Info|RssSyncService|Starting RSS Sync
+2023-07-26 14:14:29.8|Warn|HttpClient|HTTP Error - Res: [GET] http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100: 400.BadRequest (1777 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (torrentgalaxy): Login failed: No form found on https://torrentgalaxy.to/galaxyfence.php?f using form selector form[action=&quot;/galaxyfence.php&quot;]&#xA; ---&gt; System.Exception: Parse error&#xA; ---&gt; Jackett.Common.ExceptionWithConfigData: Login failed: No form found on https://torrentgalaxy.to/galaxyfence.php?f using form selector form[action=&quot;/galaxyfence.php&quot;]&#xA;   at Jackett.Common.Indexers.CardigannIndexer.DoLogin() in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 603&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1715&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.OnParseError(String results, Exception ex) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 732&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1878&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 709&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 469" />
+2023-07-26 14:14:29.9|Warn|Torznab|Jackett (TorrentGalaxy) HTTP request failed: [400:BadRequest] [GET] at [http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100]
+2023-07-26 14:14:32.8|Info|DownloadDecisionMaker|Processing 179 releases
+2023-07-26 14:14:33.1|Info|RssSyncService|RSS Sync Completed. Reports found: 179, Reports grabbed: 0
+2023-07-26 15:14:57.2|Info|RssSyncService|Starting RSS Sync
+2023-07-26 15:14:58.7|Warn|Torznab|Indexer Jackett (TorrentGalaxy) rss sync didn't cover the period between 07/26/2023 12:09:26 and 07/26/2023 14:14:58 UTC. Search may be required.
+2023-07-26 15:15:04.1|Info|DownloadDecisionMaker|Processing 231 releases
+2023-07-26 15:15:04.5|Info|RssSyncService|RSS Sync Completed. Reports found: 231, Reports grabbed: 0
+2023-07-26 16:15:33.1|Info|RssSyncService|Starting RSS Sync
+2023-07-26 16:15:45.4|Info|DownloadDecisionMaker|Processing 244 releases
+2023-07-26 16:15:47.8|Info|RssSyncService|RSS Sync Completed. Reports found: 244, Reports grabbed: 0
+2023-07-26 17:16:09.9|Info|RssSyncService|Starting RSS Sync
+2023-07-26 17:16:11.5|Warn|HttpClient|HTTP Error - Res: [GET] http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100: 400.BadRequest (1777 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (torrentgalaxy): Login failed: No form found on https://torrentgalaxy.to/galaxyfence.php?f using form selector form[action=&quot;/galaxyfence.php&quot;]&#xA; ---&gt; System.Exception: Parse error&#xA; ---&gt; Jackett.Common.ExceptionWithConfigData: Login failed: No form found on https://torrentgalaxy.to/galaxyfence.php?f using form selector form[action=&quot;/galaxyfence.php&quot;]&#xA;   at Jackett.Common.Indexers.CardigannIndexer.DoLogin() in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 603&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1715&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.OnParseError(String results, Exception ex) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 732&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1878&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 709&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 469" />
+2023-07-26 17:16:11.5|Warn|Torznab|Jackett (TorrentGalaxy) HTTP request failed: [400:BadRequest] [GET] at [http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100]
+2023-07-26 17:16:17.0|Info|DownloadDecisionMaker|Processing 205 releases
+2023-07-26 17:16:17.4|Info|RssSyncService|RSS Sync Completed. Reports found: 205, Reports grabbed: 0
+2023-07-26 18:16:40.8|Info|RssSyncService|Starting RSS Sync
+2023-07-26 18:16:47.6|Info|DownloadDecisionMaker|Processing 255 releases
+2023-07-26 18:16:48.1|Info|RssSyncService|RSS Sync Completed. Reports found: 255, Reports grabbed: 0
+2023-07-26 19:17:11.6|Info|RssSyncService|Starting RSS Sync
+2023-07-26 19:17:18.2|Info|DownloadDecisionMaker|Processing 253 releases
+2023-07-26 19:17:18.6|Info|RssSyncService|RSS Sync Completed. Reports found: 253, Reports grabbed: 0
+2023-07-26 20:17:42.5|Info|RssSyncService|Starting RSS Sync
+2023-07-26 20:17:42.7|Warn|HttpClient|HTTP Error - Res: [GET] http://jackett:9117/api/v2.0/indexers/nyaasi/results/torznab/api?t=movie&cat=2000,2020,127720,5000&extended=1&apikey=(removed)&offset=0&limit=100: 400.BadRequest (4104 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (nyaasi): Name does not resolve&#xA; ---&gt; System.Net.Http.HttpRequestException: Name does not resolve (nyaa.si:443)&#xA; ---&gt; System.Net.Sockets.SocketException (0xFFFDFFFF): Name does not resolve&#xA;   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)&#xA;   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)&#xA;   at System.Net.Sockets.Socket.&lt;ConnectAsync&gt;g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)&#xA;   --- End of inner exception stack trace ---&#xA;   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)&#xA;   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)&#xA;   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at FlareSolverrSharp.ClearanceHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpClient.&lt;SendAsync&gt;g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)&#xA;   at Jackett.Common.Utils.Clients.HttpWebClient2.Run(WebRequest webRequest) in ./Jackett.Common/Utils/Clients/HttpWebClient2.cs:line 178&#xA;   at Jackett.Common.Utils.Clients.WebClient.GetResultAsync(WebRequest request) in ./Jackett.Common/Utils/Clients/WebClient.cs:line 219&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.RequestWithCookiesAsync(String url, String cookieOverride, RequestType method, String referer, IEnumerable`1 data, Dictionary`2 headers, String rawbody, Nullable`1 emulateBrowser) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 535&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1505&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 709&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 469" />
+2023-07-26 20:17:42.8|Warn|Torznab|Jackett (NyaaSi) HTTP request failed: [400:BadRequest] [GET] at [http://jackett:9117/api/v2.0/indexers/nyaasi/results/torznab/api?t=movie&cat=2000,2020,127720,5000&extended=1&apikey=(removed)&offset=0&limit=100]
+2023-07-26 20:17:49.2|Info|DownloadDecisionMaker|Processing 170 releases
+2023-07-26 20:17:49.7|Info|RssSyncService|RSS Sync Completed. Reports found: 170, Reports grabbed: 0
+2023-07-26 21:18:13.4|Info|RssSyncService|Starting RSS Sync
+2023-07-26 21:18:20.6|Info|DownloadDecisionMaker|Processing 246 releases
+2023-07-26 21:18:21.0|Info|RssSyncService|RSS Sync Completed. Reports found: 246, Reports grabbed: 0
+2023-07-26 22:18:44.5|Info|RssSyncService|Starting RSS Sync
+2023-07-26 22:19:00.4|Info|DownloadDecisionMaker|Processing 246 releases
+2023-07-26 22:19:00.8|Info|RssSyncService|RSS Sync Completed. Reports found: 246, Reports grabbed: 0
+2023-07-26 23:15:45.6|Info|DiskScanService|Scanning disk for Minions: The Rise of Gru
+2023-07-26 23:15:45.7|Info|DiskScanService|Completed scanning disk for Minions: The Rise of Gru
+2023-07-26 23:15:45.7|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2023-07-26 23:15:45.7|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2023-07-26 23:15:45.7|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2023-07-26 23:15:45.7|Info|ExistingExtraFileService|Found 1 possible extra files, imported 1 files.
+2023-07-26 23:15:45.7|Info|DiskScanService|Scanning disk for To Every You I've Loved Before
+2023-07-26 23:15:45.7|Info|DiskScanService|Completed scanning disk for To Every You I've Loved Before
+2023-07-26 23:15:45.7|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2023-07-26 23:15:45.7|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2023-07-26 23:15:45.7|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2023-07-26 23:15:45.7|Info|ExistingExtraFileService|Found 1 possible extra files, imported 1 files.
+2023-07-26 23:15:45.7|Info|DiskScanService|Scanning disk for To Me, the One Who Loved You
+2023-07-26 23:15:45.8|Info|DiskScanService|Completed scanning disk for To Me, the One Who Loved You
+2023-07-26 23:15:45.8|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2023-07-26 23:15:45.8|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2023-07-26 23:15:45.8|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2023-07-26 23:15:45.8|Info|ExistingExtraFileService|Found 1 possible extra files, imported 1 files.
+2023-07-26 23:15:45.8|Info|DiskScanService|Scanning disk for VGHS: The Movie
+2023-07-26 23:15:45.8|Info|DiskScanService|Completed scanning disk for VGHS: The Movie
+2023-07-26 23:15:45.8|Info|MetadataService|Movie folder does not exist, skipping metadata creation
+2023-07-26 23:19:15.3|Info|RssSyncService|Starting RSS Sync
+2023-07-26 23:19:21.8|Info|DownloadDecisionMaker|Processing 245 releases
+2023-07-26 23:19:22.2|Info|RssSyncService|RSS Sync Completed. Reports found: 245, Reports grabbed: 0
+2023-07-27 00:19:46.1|Info|RssSyncService|Starting RSS Sync
+2023-07-27 00:19:53.5|Info|DownloadDecisionMaker|Processing 245 releases
+2023-07-27 00:19:53.9|Info|RssSyncService|RSS Sync Completed. Reports found: 245, Reports grabbed: 0
+2023-07-27 01:20:16.8|Info|RssSyncService|Starting RSS Sync
+2023-07-27 01:20:23.1|Info|DownloadDecisionMaker|Processing 240 releases
+2023-07-27 01:20:23.6|Info|RssSyncService|RSS Sync Completed. Reports found: 240, Reports grabbed: 0
+2023-07-27 02:20:47.5|Info|RssSyncService|Starting RSS Sync
+2023-07-27 02:20:53.9|Info|DownloadDecisionMaker|Processing 236 releases
+2023-07-27 02:20:54.3|Info|RssSyncService|RSS Sync Completed. Reports found: 236, Reports grabbed: 0
+2023-07-27 03:21:18.1|Info|RssSyncService|Starting RSS Sync
+2023-07-27 03:21:24.9|Info|DownloadDecisionMaker|Processing 239 releases
+2023-07-27 03:21:25.3|Info|RssSyncService|RSS Sync Completed. Reports found: 239, Reports grabbed: 0
+2023-07-27 04:21:49.0|Info|RssSyncService|Starting RSS Sync
+2023-07-27 04:21:55.7|Info|DownloadDecisionMaker|Processing 238 releases
+2023-07-27 04:21:56.2|Info|RssSyncService|RSS Sync Completed. Reports found: 238, Reports grabbed: 0
+2023-07-27 05:22:19.7|Info|RssSyncService|Starting RSS Sync
+2023-07-27 05:22:26.5|Info|DownloadDecisionMaker|Processing 235 releases
+2023-07-27 05:22:27.0|Info|RssSyncService|RSS Sync Completed. Reports found: 235, Reports grabbed: 0
+2023-07-27 06:22:50.4|Info|RssSyncService|Starting RSS Sync
+2023-07-27 06:22:56.2|Warn|HttpClient|HTTP Error - Res: [GET] http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100: 400.BadRequest (1394 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (torrentgalaxy): Relogin failed&#xA; ---&gt; System.Exception: Parse error&#xA; ---&gt; System.Exception: Relogin failed&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1719&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.OnParseError(String results, Exception ex) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 732&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1878&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 709&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 469" />
+2023-07-27 06:22:56.2|Warn|Torznab|Jackett (TorrentGalaxy) HTTP request failed: [400:BadRequest] [GET] at [http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100]
+2023-07-27 06:22:56.9|Info|DownloadDecisionMaker|Processing 181 releases
+2023-07-27 06:22:57.3|Info|RssSyncService|RSS Sync Completed. Reports found: 181, Reports grabbed: 0
+2023-07-27 07:23:21.2|Info|RssSyncService|Starting RSS Sync
+2023-07-27 07:23:53.8|Warn|HttpClient|HTTP Error - Res: [GET] http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100: 400.BadRequest (1394 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (torrentgalaxy): Relogin failed&#xA; ---&gt; System.Exception: Parse error&#xA; ---&gt; System.Exception: Relogin failed&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1719&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.OnParseError(String results, Exception ex) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 732&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1878&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 709&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 469" />
+2023-07-27 07:23:53.8|Warn|Torznab|Jackett (TorrentGalaxy) HTTP request failed: [400:BadRequest] [GET] at [http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100]
+2023-07-27 07:23:53.8|Info|DownloadDecisionMaker|Processing 178 releases
+2023-07-27 07:23:54.3|Info|RssSyncService|RSS Sync Completed. Reports found: 178, Reports grabbed: 0
+2023-07-27 08:24:21.9|Info|RssSyncService|Starting RSS Sync
+2023-07-27 08:24:30.4|Warn|HttpClient|HTTP Error - Res: [GET] http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100: 400.BadRequest (1394 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (torrentgalaxy): Relogin failed&#xA; ---&gt; System.Exception: Parse error&#xA; ---&gt; System.Exception: Relogin failed&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1719&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.OnParseError(String results, Exception ex) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 732&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1878&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 709&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 469" />
+2023-07-27 08:24:30.4|Warn|Torznab|Jackett (TorrentGalaxy) HTTP request failed: [400:BadRequest] [GET] at [http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100]
+2023-07-27 08:24:30.4|Info|DownloadDecisionMaker|Processing 179 releases
+2023-07-27 08:24:30.8|Info|RssSyncService|RSS Sync Completed. Reports found: 179, Reports grabbed: 0
+2023-07-27 09:24:52.8|Info|RssSyncService|Starting RSS Sync
+2023-07-27 09:24:54.6|Warn|HttpClient|HTTP Error - Res: [GET] http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100: 400.BadRequest (1394 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (torrentgalaxy): Relogin failed&#xA; ---&gt; System.Exception: Parse error&#xA; ---&gt; System.Exception: Relogin failed&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1719&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.OnParseError(String results, Exception ex) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 732&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1878&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 709&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 469" />
+2023-07-27 09:24:54.6|Warn|Torznab|Jackett (TorrentGalaxy) HTTP request failed: [400:BadRequest] [GET] at [http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100]
+2023-07-27 09:24:59.9|Info|DownloadDecisionMaker|Processing 175 releases
+2023-07-27 09:25:00.3|Info|RssSyncService|RSS Sync Completed. Reports found: 175, Reports grabbed: 0
+2023-07-27 10:17:40.3|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission (Seedbox)
+
+[v4.6.4.7568] System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.Send(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in ./Radarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 101
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in ./Radarr.Common/Http/HttpClient.cs:line 141
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Radarr.Common/Http/HttpClient.cs:line 59
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 316
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 193
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in ./Radarr.Core/Download/Clients/Transmission/TransmissionBase.cs:line 38
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in ./Radarr.Core/Download/TrackedDownloads/DownloadMonitoringService.cs:line 90
+
+
+2023-07-27 10:20:40.0|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission (Seedbox)
+
+[v4.6.4.7568] System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.Send(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in ./Radarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 101
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in ./Radarr.Common/Http/HttpClient.cs:line 141
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Radarr.Common/Http/HttpClient.cs:line 59
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 316
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 193
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in ./Radarr.Core/Download/Clients/Transmission/TransmissionBase.cs:line 38
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in ./Radarr.Core/Download/TrackedDownloads/DownloadMonitoringService.cs:line 90
+
+
+2023-07-27 10:23:40.1|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission (Seedbox)
+
+[v4.6.4.7568] System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.Send(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in ./Radarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 101
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in ./Radarr.Common/Http/HttpClient.cs:line 141
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Radarr.Common/Http/HttpClient.cs:line 59
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 316
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 193
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in ./Radarr.Core/Download/Clients/Transmission/TransmissionBase.cs:line 38
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in ./Radarr.Core/Download/TrackedDownloads/DownloadMonitoringService.cs:line 90
+
+
+2023-07-27 10:25:30.1|Info|RssSyncService|Starting RSS Sync
+2023-07-27 10:25:35.2|Warn|HttpClient|HTTP Error - Res: [GET] http://jackett:9117/api/v2.0/indexers/1337x/results/torznab/api?t=movie&cat=2030,2040,100051,100054,5000&extended=1&apikey=(removed)&offset=0&limit=100: 400.BadRequest (4129 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (1337x): Resource temporarily unavailable&#xA; ---&gt; System.Net.Http.HttpRequestException: Resource temporarily unavailable (1337x.to:443)&#xA; ---&gt; System.Net.Sockets.SocketException (11): Resource temporarily unavailable&#xA;   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)&#xA;   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)&#xA;   at System.Net.Sockets.Socket.&lt;ConnectAsync&gt;g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)&#xA;   --- End of inner exception stack trace ---&#xA;   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)&#xA;   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)&#xA;   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at FlareSolverrSharp.ClearanceHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpClient.&lt;SendAsync&gt;g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)&#xA;   at Jackett.Common.Utils.Clients.HttpWebClient2.Run(WebRequest webRequest) in ./Jackett.Common/Utils/Clients/HttpWebClient2.cs:line 178&#xA;   at Jackett.Common.Utils.Clients.WebClient.GetResultAsync(WebRequest request) in ./Jackett.Common/Utils/Clients/WebClient.cs:line 219&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.RequestWithCookiesAsync(String url, String cookieOverride, RequestType method, String referer, IEnumerable`1 data, Dictionary`2 headers, String rawbody, Nullable`1 emulateBrowser) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 535&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1505&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 709&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 469" />
+2023-07-27 10:25:35.3|Warn|Torznab|Jackett (1337x) HTTP request failed: [400:BadRequest] [GET] at [http://jackett:9117/api/v2.0/indexers/1337x/results/torznab/api?t=movie&cat=2030,2040,100051,100054,5000&extended=1&apikey=(removed)&offset=0&limit=100]
+2023-07-27 10:25:35.3|Warn|HttpClient|HTTP Error - Res: [GET] http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100: 400.BadRequest (4145 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (torrentgalaxy): Resource temporarily unavailable&#xA; ---&gt; System.Net.Http.HttpRequestException: Resource temporarily unavailable (torrentgalaxy.to:443)&#xA; ---&gt; System.Net.Sockets.SocketException (11): Resource temporarily unavailable&#xA;   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)&#xA;   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)&#xA;   at System.Net.Sockets.Socket.&lt;ConnectAsync&gt;g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)&#xA;   --- End of inner exception stack trace ---&#xA;   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)&#xA;   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)&#xA;   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at FlareSolverrSharp.ClearanceHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpClient.&lt;SendAsync&gt;g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)&#xA;   at Jackett.Common.Utils.Clients.HttpWebClient2.Run(WebRequest webRequest) in ./Jackett.Common/Utils/Clients/HttpWebClient2.cs:line 178&#xA;   at Jackett.Common.Utils.Clients.WebClient.GetResultAsync(WebRequest request) in ./Jackett.Common/Utils/Clients/WebClient.cs:line 219&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.RequestWithCookiesAsync(String url, String cookieOverride, RequestType method, String referer, IEnumerable`1 data, Dictionary`2 headers, String rawbody, Nullable`1 emulateBrowser) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 535&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1505&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 709&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 469" />
+2023-07-27 10:25:35.3|Warn|Torznab|Jackett (TorrentGalaxy) HTTP request failed: [400:BadRequest] [GET] at [http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100]
+2023-07-27 10:25:35.3|Warn|HttpClient|HTTP Error - Res: [GET] http://jackett:9117/api/v2.0/indexers/yts/results/torznab/api?t=movie&cat=2040,100044,100045&extended=1&apikey=(removed)&offset=0&limit=100: 400.BadRequest (4125 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (yts): Resource temporarily unavailable&#xA; ---&gt; System.Net.Http.HttpRequestException: Resource temporarily unavailable (yts.mx:443)&#xA; ---&gt; System.Net.Sockets.SocketException (11): Resource temporarily unavailable&#xA;   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)&#xA;   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)&#xA;   at System.Net.Sockets.Socket.&lt;ConnectAsync&gt;g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)&#xA;   --- End of inner exception stack trace ---&#xA;   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)&#xA;   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)&#xA;   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at FlareSolverrSharp.ClearanceHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpClient.&lt;SendAsync&gt;g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)&#xA;   at Jackett.Common.Utils.Clients.HttpWebClient2.Run(WebRequest webRequest) in ./Jackett.Common/Utils/Clients/HttpWebClient2.cs:line 178&#xA;   at Jackett.Common.Utils.Clients.WebClient.GetResultAsync(WebRequest request) in ./Jackett.Common/Utils/Clients/WebClient.cs:line 219&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.RequestWithCookiesAsync(String url, String cookieOverride, RequestType method, String referer, IEnumerable`1 data, Dictionary`2 headers, String rawbody, Nullable`1 emulateBrowser) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 535&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1505&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 709&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 469" />
+2023-07-27 10:25:35.3|Warn|Torznab|Jackett (YTS) HTTP request failed: [400:BadRequest] [GET] at [http://jackett:9117/api/v2.0/indexers/yts/results/torznab/api?t=movie&cat=2040,100044,100045&extended=1&apikey=(removed)&offset=0&limit=100]
+2023-07-27 10:25:35.4|Warn|HttpClient|HTTP Error - Res: [GET] http://jackett:9117/api/v2.0/indexers/nyaasi/results/torznab/api?t=movie&cat=2000,2020,127720,5000&extended=1&apikey=(removed)&offset=0&limit=100: 400.BadRequest (4129 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (nyaasi): Resource temporarily unavailable&#xA; ---&gt; System.Net.Http.HttpRequestException: Resource temporarily unavailable (nyaa.si:443)&#xA; ---&gt; System.Net.Sockets.SocketException (11): Resource temporarily unavailable&#xA;   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)&#xA;   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)&#xA;   at System.Net.Sockets.Socket.&lt;ConnectAsync&gt;g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)&#xA;   --- End of inner exception stack trace ---&#xA;   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)&#xA;   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)&#xA;   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)&#xA;   at FlareSolverrSharp.ClearanceHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpClient.&lt;SendAsync&gt;g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)&#xA;   at Jackett.Common.Utils.Clients.HttpWebClient2.Run(WebRequest webRequest) in ./Jackett.Common/Utils/Clients/HttpWebClient2.cs:line 178&#xA;   at Jackett.Common.Utils.Clients.WebClient.GetResultAsync(WebRequest request) in ./Jackett.Common/Utils/Clients/WebClient.cs:line 219&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.RequestWithCookiesAsync(String url, String cookieOverride, RequestType method, String referer, IEnumerable`1 data, Dictionary`2 headers, String rawbody, Nullable`1 emulateBrowser) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 535&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1505&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 709&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 469" />
+2023-07-27 10:25:35.4|Warn|Torznab|Jackett (NyaaSi) HTTP request failed: [400:BadRequest] [GET] at [http://jackett:9117/api/v2.0/indexers/nyaasi/results/torznab/api?t=movie&cat=2000,2020,127720,5000&extended=1&apikey=(removed)&offset=0&limit=100]
+2023-07-27 10:25:35.4|Info|DownloadDecisionMaker|No results found
+2023-07-27 10:25:35.4|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2023-07-27 10:38:30.2|Info|RecycleBinProvider|Recycle Bin has not been configured, cannot cleanup.
+2023-07-27 10:39:00.3|Info|ImportListSyncService|No auto enabled lists, skipping sync and cleaning
+2023-07-27 10:39:30.3|Info|HousekeepingService|Running housecleaning tasks
+2023-07-27 10:39:30.4|Info|Database|Vacuuming Log database
+2023-07-27 10:39:30.4|Info|Database|Log database compressed
+2023-07-27 10:39:30.4|Info|Database|Vacuuming Main database
+2023-07-27 10:39:30.5|Info|Database|Main database compressed
+2023-07-27 10:42:10.5|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission (Seedbox)
+
+[v4.6.4.7568] System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Connection aborted.
+ ---> System.Net.Sockets.SocketException (103): Connection aborted
+   at System.Net.Sockets.NetworkStream.Read(Span`1 buffer)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Span`1 buffer)
+   at System.Net.Http.HttpConnection.InitialFillAsync(Boolean async)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.Send(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in ./Radarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 101
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in ./Radarr.Common/Http/HttpClient.cs:line 141
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Radarr.Common/Http/HttpClient.cs:line 59
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 316
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 193
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in ./Radarr.Core/Download/Clients/Transmission/TransmissionBase.cs:line 38
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in ./Radarr.Core/Download/TrackedDownloads/DownloadMonitoringService.cs:line 90
+
+
+2023-07-27 11:00:10.8|Warn|DownloadMonitoringService|Unable to retrieve queue and history items from Transmission (Seedbox)
+
+[v4.6.4.7568] System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.Send(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in ./Radarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 101
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in ./Radarr.Common/Http/HttpClient.cs:line 141
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Radarr.Common/Http/HttpClient.cs:line 59
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest(String action, Object arguments, TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 316
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrentStatus(IEnumerable`1 hashStrings, TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 193
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetTorrents(TransmissionSettings settings) in ./Radarr.Core/Download/Clients/Transmission/TransmissionProxy.cs:line 43
+   at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.GetItems() in ./Radarr.Core/Download/Clients/Transmission/TransmissionBase.cs:line 38
+   at NzbDrone.Core.Download.TrackedDownloads.DownloadMonitoringService.ProcessClientDownloads(IDownloadClient downloadClient) in ./Radarr.Core/Download/TrackedDownloads/DownloadMonitoringService.cs:line 90
+
+
+2023-07-27 11:16:36.0|Error|CommandExecutor|Error occurred while executing task ApplicationCheckUpdate
+
+[v4.6.4.7568] System.Net.Http.HttpRequestException: Resource temporarily unavailable (radarr.servarr.com:443)
+ ---> System.Net.Sockets.SocketException (11): Resource temporarily unavailable
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./Radarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 296
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./Radarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 272
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellation(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpMessageHandlerStage.Send(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpMessageHandlerStage.Send(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.SocketsHttpHandler.Send(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpMessageInvoker.Send(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.Send(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse(HttpRequest request, CookieContainer cookies) in ./Radarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 101
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequest(HttpRequest request, CookieContainer cookieContainer) in ./Radarr.Common/Http/HttpClient.cs:line 141
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Radarr.Common/Http/HttpClient.cs:line 59
+   at NzbDrone.Common.Http.HttpClient.Get[T](HttpRequest request) in ./Radarr.Common/Http/HttpClient.cs:line 307
+   at NzbDrone.Core.Update.UpdatePackageProvider.GetLatestUpdate(String branch, Version currentVersion) in ./Radarr.Core/Update/UpdatePackageProvider.cs:line 37
+   at NzbDrone.Core.Update.InstallUpdateService.GetUpdatePackage(CommandTrigger updateTrigger) in ./Radarr.Core/Update/InstallUpdateService.cs:line 232
+   at NzbDrone.Core.Update.InstallUpdateService.Execute(ApplicationCheckUpdateCommand message) in ./Radarr.Core/Update/InstallUpdateService.cs:line 269
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommand[TCommand](TCommand command, CommandModel commandModel) in ./Radarr.Core/Messaging/Commands/CommandExecutor.cs:line 113
+   at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid3[T0,T1,T2](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at NzbDrone.Core.Messaging.Commands.CommandExecutor.ExecuteCommands() in ./Radarr.Core/Messaging/Commands/CommandExecutor.cs:line 44
+
+
+2023-07-27 11:26:01.1|Info|RssSyncService|Starting RSS Sync
+2023-07-27 11:26:07.9|Info|DownloadDecisionMaker|Processing 178 releases
+2023-07-27 11:26:08.4|Info|RssSyncService|RSS Sync Completed. Reports found: 178, Reports grabbed: 0
+2023-07-27 12:26:31.8|Info|RssSyncService|Starting RSS Sync
+2023-07-27 12:26:38.1|Info|DownloadDecisionMaker|Processing 174 releases
+2023-07-27 12:26:38.6|Info|RssSyncService|RSS Sync Completed. Reports found: 174, Reports grabbed: 0
+2023-07-27 13:27:02.6|Info|RssSyncService|Starting RSS Sync
+2023-07-27 13:27:10.6|Warn|HttpClient|HTTP Error - Res: [GET] http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100: 400.BadRequest (1394 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (torrentgalaxy): Relogin failed&#xA; ---&gt; System.Exception: Parse error&#xA; ---&gt; System.Exception: Relogin failed&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1719&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.OnParseError(String results, Exception ex) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 732&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1878&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 709&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 469" />
+2023-07-27 13:27:10.7|Warn|Torznab|Jackett (TorrentGalaxy) HTTP request failed: [400:BadRequest] [GET] at [http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100]
+2023-07-27 13:27:10.7|Info|DownloadDecisionMaker|Processing 172 releases
+2023-07-27 13:27:11.0|Info|RssSyncService|RSS Sync Completed. Reports found: 172, Reports grabbed: 0
+2023-07-27 14:27:33.2|Info|RssSyncService|Starting RSS Sync
+2023-07-27 14:27:39.8|Info|DownloadDecisionMaker|Processing 189 releases
+2023-07-27 14:27:40.1|Info|RssSyncService|RSS Sync Completed. Reports found: 189, Reports grabbed: 0
+2023-07-27 15:28:03.9|Info|RssSyncService|Starting RSS Sync
+2023-07-27 15:28:11.2|Info|DownloadDecisionMaker|Processing 199 releases
+2023-07-27 15:28:11.5|Info|RssSyncService|RSS Sync Completed. Reports found: 199, Reports grabbed: 0
+2023-07-27 16:28:37.4|Info|RssSyncService|Starting RSS Sync
+2023-07-27 16:28:44.5|Info|DownloadDecisionMaker|Processing 213 releases
+2023-07-27 16:28:44.9|Info|RssSyncService|RSS Sync Completed. Reports found: 213, Reports grabbed: 0
+2023-07-27 17:29:12.6|Info|RssSyncService|Starting RSS Sync
+2023-07-27 17:29:19.9|Info|DownloadDecisionMaker|Processing 218 releases
+2023-07-27 17:29:20.3|Info|RssSyncService|RSS Sync Completed. Reports found: 218, Reports grabbed: 0
+2023-07-27 18:29:46.8|Info|RssSyncService|Starting RSS Sync
+2023-07-27 18:29:53.6|Info|DownloadDecisionMaker|Processing 220 releases
+2023-07-27 18:29:54.0|Info|RssSyncService|RSS Sync Completed. Reports found: 220, Reports grabbed: 0
+2023-07-27 19:30:17.8|Info|RssSyncService|Starting RSS Sync
+2023-07-27 19:30:21.9|Warn|HttpClient|HTTP Error - Res: [GET] http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100: 400.BadRequest (1394 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (torrentgalaxy): Relogin failed&#xA; ---&gt; System.Exception: Parse error&#xA; ---&gt; System.Exception: Relogin failed&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1719&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.OnParseError(String results, Exception ex) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 732&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1878&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 709&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 469" />
+2023-07-27 19:30:22.0|Warn|Torznab|Jackett (TorrentGalaxy) HTTP request failed: [400:BadRequest] [GET] at [http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100]
+2023-07-27 19:30:24.9|Info|DownloadDecisionMaker|Processing 217 releases
+2023-07-27 19:30:25.4|Info|RssSyncService|RSS Sync Completed. Reports found: 217, Reports grabbed: 0
+2023-07-27 20:30:48.6|Info|RssSyncService|Starting RSS Sync
+2023-07-27 20:30:55.2|Info|DownloadDecisionMaker|Processing 217 releases
+2023-07-27 20:30:55.6|Info|RssSyncService|RSS Sync Completed. Reports found: 217, Reports grabbed: 0
+2023-07-27 21:31:19.3|Info|RssSyncService|Starting RSS Sync
+2023-07-27 21:31:25.8|Info|DownloadDecisionMaker|Processing 218 releases
+2023-07-27 21:31:26.2|Info|RssSyncService|RSS Sync Completed. Reports found: 218, Reports grabbed: 0
+2023-07-27 22:31:50.0|Info|RssSyncService|Starting RSS Sync
+2023-07-27 22:31:56.5|Info|DownloadDecisionMaker|Processing 213 releases
+2023-07-27 22:31:56.9|Info|RssSyncService|RSS Sync Completed. Reports found: 213, Reports grabbed: 0
+2023-07-27 23:15:50.7|Info|DiskScanService|Scanning disk for Minions: The Rise of Gru
+2023-07-27 23:15:50.8|Info|DiskScanService|Completed scanning disk for Minions: The Rise of Gru
+2023-07-27 23:15:50.8|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2023-07-27 23:15:50.8|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2023-07-27 23:15:50.8|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2023-07-27 23:15:50.8|Info|ExistingExtraFileService|Found 1 possible extra files, imported 1 files.
+2023-07-27 23:15:50.8|Info|DiskScanService|Scanning disk for To Every You I've Loved Before
+2023-07-27 23:15:50.8|Info|DiskScanService|Completed scanning disk for To Every You I've Loved Before
+2023-07-27 23:15:50.8|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2023-07-27 23:15:50.8|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2023-07-27 23:15:50.8|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2023-07-27 23:15:50.8|Info|ExistingExtraFileService|Found 1 possible extra files, imported 1 files.
+2023-07-27 23:15:50.9|Info|DiskScanService|Scanning disk for To Me, the One Who Loved You
+2023-07-27 23:15:50.9|Info|DiskScanService|Completed scanning disk for To Me, the One Who Loved You
+2023-07-27 23:15:50.9|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2023-07-27 23:15:50.9|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2023-07-27 23:15:50.9|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2023-07-27 23:15:50.9|Info|ExistingExtraFileService|Found 1 possible extra files, imported 1 files.
+2023-07-27 23:15:50.9|Info|DiskScanService|Scanning disk for VGHS: The Movie
+2023-07-27 23:15:50.9|Info|DiskScanService|Completed scanning disk for VGHS: The Movie
+2023-07-27 23:15:50.9|Info|MetadataService|Movie folder does not exist, skipping metadata creation
+2023-07-27 23:32:20.7|Info|RssSyncService|Starting RSS Sync
+2023-07-27 23:32:27.7|Info|DownloadDecisionMaker|Processing 211 releases
+2023-07-27 23:32:28.2|Info|RssSyncService|RSS Sync Completed. Reports found: 211, Reports grabbed: 0
+2023-07-28 00:32:51.7|Info|RssSyncService|Starting RSS Sync
+2023-07-28 00:32:58.9|Info|DownloadDecisionMaker|Processing 214 releases
+2023-07-28 00:32:59.4|Info|RssSyncService|RSS Sync Completed. Reports found: 214, Reports grabbed: 0
+2023-07-28 01:33:22.5|Info|RssSyncService|Starting RSS Sync
+2023-07-28 01:33:29.3|Info|DownloadDecisionMaker|Processing 212 releases
+2023-07-28 01:33:29.6|Info|RssSyncService|RSS Sync Completed. Reports found: 212, Reports grabbed: 0
+2023-07-28 02:33:53.1|Info|RssSyncService|Starting RSS Sync
+2023-07-28 02:33:59.9|Info|DownloadDecisionMaker|Processing 206 releases
+2023-07-28 02:34:00.3|Info|RssSyncService|RSS Sync Completed. Reports found: 206, Reports grabbed: 0
+2023-07-28 03:34:23.8|Info|RssSyncService|Starting RSS Sync
+2023-07-28 03:34:30.6|Info|DownloadDecisionMaker|Processing 205 releases
+2023-07-28 03:34:31.0|Info|RssSyncService|RSS Sync Completed. Reports found: 205, Reports grabbed: 0
+2023-07-28 04:34:54.6|Info|RssSyncService|Starting RSS Sync
+2023-07-28 04:35:01.6|Info|DownloadDecisionMaker|Processing 211 releases
+2023-07-28 04:35:02.1|Info|RssSyncService|RSS Sync Completed. Reports found: 211, Reports grabbed: 0
+2023-07-28 05:35:25.2|Info|RssSyncService|Starting RSS Sync
+2023-07-28 05:35:31.9|Info|DownloadDecisionMaker|Processing 205 releases
+2023-07-28 05:35:32.2|Info|RssSyncService|RSS Sync Completed. Reports found: 205, Reports grabbed: 0
+2023-07-28 06:35:55.9|Info|RssSyncService|Starting RSS Sync
+2023-07-28 06:36:02.3|Info|DownloadDecisionMaker|Processing 205 releases
+2023-07-28 06:36:02.9|Info|RssSyncService|RSS Sync Completed. Reports found: 205, Reports grabbed: 0
+2023-07-28 07:36:26.9|Info|RssSyncService|Starting RSS Sync
+2023-07-28 07:36:27.9|Warn|HttpClient|HTTP Error - Res: [GET] http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100: 400.BadRequest (1394 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (torrentgalaxy): Relogin failed&#xA; ---&gt; System.Exception: Parse error&#xA; ---&gt; System.Exception: Relogin failed&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1719&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.OnParseError(String results, Exception ex) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 732&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1878&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 332&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 709&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 469" />
+2023-07-28 07:36:27.9|Warn|Torznab|Jackett (TorrentGalaxy) HTTP request failed: [400:BadRequest] [GET] at [http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100]
+2023-07-28 07:36:33.2|Warn|Torznab|Indexer Jackett (1337x) rss sync didn't cover the period between 07/28/2023 06:36:02 and 07/28/2023 06:48:00 UTC. Search may be required.
+2023-07-28 07:36:33.2|Info|DownloadDecisionMaker|Processing 201 releases
+2023-07-28 07:36:33.7|Info|RssSyncService|RSS Sync Completed. Reports found: 201, Reports grabbed: 0
+2023-07-28 08:36:57.7|Info|RssSyncService|Starting RSS Sync
+2023-07-28 08:37:04.2|Warn|Torznab|Indexer Jackett (1337x) rss sync didn't cover the period between 07/28/2023 07:36:33 and 07/28/2023 07:41:00 UTC. Search may be required.
+2023-07-28 08:37:04.2|Info|DownloadDecisionMaker|Processing 212 releases
+2023-07-28 08:37:04.6|Info|RssSyncService|RSS Sync Completed. Reports found: 212, Reports grabbed: 0
+2023-07-28 09:37:28.2|Info|RssSyncService|Starting RSS Sync
+2023-07-28 09:37:35.1|Info|DownloadDecisionMaker|Processing 214 releases
+2023-07-28 09:37:35.5|Info|RssSyncService|RSS Sync Completed. Reports found: 214, Reports grabbed: 0
+2023-07-28 10:37:58.9|Info|RssSyncService|Starting RSS Sync
+2023-07-28 10:38:06.4|Info|DownloadDecisionMaker|Processing 215 releases
+2023-07-28 10:38:06.7|Info|RssSyncService|RSS Sync Completed. Reports found: 215, Reports grabbed: 0
+2023-07-28 10:38:59.0|Info|RecycleBinProvider|Recycle Bin has not been configured, cannot cleanup.
+2023-07-28 10:39:29.0|Info|ImportListSyncService|No auto enabled lists, skipping sync and cleaning
+2023-07-28 10:39:59.0|Info|HousekeepingService|Running housecleaning tasks
+2023-07-28 10:39:59.1|Info|Database|Vacuuming Log database
+2023-07-28 10:39:59.1|Info|Database|Log database compressed
+2023-07-28 10:39:59.1|Info|Database|Vacuuming Main database
+2023-07-28 10:39:59.2|Info|Database|Main database compressed
+2023-07-28 11:38:29.8|Info|RssSyncService|Starting RSS Sync
+2023-07-28 11:38:36.7|Info|DownloadDecisionMaker|Processing 211 releases
+2023-07-28 11:38:37.2|Info|RssSyncService|RSS Sync Completed. Reports found: 211, Reports grabbed: 0
+2023-07-28 12:39:00.4|Info|RssSyncService|Starting RSS Sync
+2023-07-28 12:39:07.6|Info|DownloadDecisionMaker|Processing 211 releases
+2023-07-28 12:39:07.9|Info|RssSyncService|RSS Sync Completed. Reports found: 211, Reports grabbed: 0
+2023-07-28 13:39:31.3|Info|RssSyncService|Starting RSS Sync
+2023-07-28 13:39:38.5|Info|DownloadDecisionMaker|Processing 216 releases
+2023-07-28 13:39:38.8|Info|RssSyncService|RSS Sync Completed. Reports found: 216, Reports grabbed: 0
+2023-07-28 14:40:02.1|Info|RssSyncService|Starting RSS Sync
+2023-07-28 14:40:08.9|Info|DownloadDecisionMaker|Processing 210 releases
+2023-07-28 14:40:09.3|Info|RssSyncService|RSS Sync Completed. Reports found: 210, Reports grabbed: 0
+2023-07-28 15:40:32.9|Info|RssSyncService|Starting RSS Sync
+2023-07-28 15:40:40.6|Info|DownloadDecisionMaker|Processing 211 releases
+2023-07-28 15:40:40.9|Info|RssSyncService|RSS Sync Completed. Reports found: 211, Reports grabbed: 0
+2023-07-28 15:46:46.3|Info|Auth|Auth-Success ip 172.*.*.15 username 'dancodes'
+2023-07-28 15:47:21.9|Info|AddMovieService|Adding Movie [Avengers: Endgame (2019)][tt4154796, 299534] Path: [/downloads/movies/Avengers Endgame (2019)]
+2023-07-28 15:47:21.9|Info|RefreshMovieService|Updating info for Avengers: Endgame
+2023-07-28 15:47:22.0|Warn|MediaCoverMapper|File /config/MediaCover/8/poster.jpg not found
+2023-07-28 15:47:22.0|Info|AddMovieCollectionService|Adding Collection The Avengers Collection[86311]
+2023-07-28 15:47:22.0|Info|RefreshCollectionService|Updating info for The Avengers Collection
+2023-07-28 15:47:22.1|Info|DiskScanService|Scanning disk for Avengers: Endgame
+2023-07-28 15:47:22.1|Info|DiskScanService|Completed scanning disk for Avengers: Endgame
+2023-07-28 15:47:22.1|Info|MovieScannedHandler|[Avengers: Endgame] was recently added, performing post-add actions
+2023-07-28 15:47:22.1|Info|MediaCoverService|Downloading Poster for [Avengers: Endgame (2019)][tt4154796, 299534] https://image.tmdb.org/t/p/original/or06FN3Dka5tukK1e9sl16pB3iy.jpg
+2023-07-28 15:47:22.2|Info|MetadataService|Movie folder does not exist, skipping metadata creation
+2023-07-28 15:47:22.2|Info|MediaCoverService|Downloading Fanart for [Avengers: Endgame (2019)][tt4154796, 299534] https://image.tmdb.org/t/p/original/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg
+2023-07-28 15:47:23.7|Info|MetadataService|Movie folder does not exist, skipping metadata image creation
+2023-07-28 15:47:29.2|Info|ReleaseSearchService|Searching indexers for [Avengers: Endgame]. 3 active indexers
+2023-07-28 15:47:36.6|Info|DownloadDecisionMaker|Processing 42 releases
+2023-07-28 15:47:49.9|Info|DownloadService|Report for Avengers: Endgame (2019) sent to Transmission (Seedbox) from indexer Jackett (YTS). Avengers Endgame (2019) 1080p BRRip x264 -YTS
+2023-07-28 16:11:53.1|Info|MovieService|Assigning file [Avengers Endgame (2019) Bluray-1080p.mp4] to movie [[Avengers: Endgame (2019)][tt4154796, 299534]]
+2023-07-28 16:40:51.3|Info|RssSyncService|Starting RSS Sync
+2023-07-28 16:40:59.0|Info|DownloadDecisionMaker|Processing 212 releases
+2023-07-28 16:40:59.3|Info|RssSyncService|RSS Sync Completed. Reports found: 212, Reports grabbed: 0
+2023-07-28 17:41:22.3|Info|RssSyncService|Starting RSS Sync
+2023-07-28 17:41:29.1|Info|DownloadDecisionMaker|Processing 213 releases
+2023-07-28 17:41:29.4|Info|RssSyncService|RSS Sync Completed. Reports found: 213, Reports grabbed: 0
+2023-07-28 18:41:53.2|Info|RssSyncService|Starting RSS Sync
+2023-07-28 18:42:00.0|Info|DownloadDecisionMaker|Processing 215 releases
+2023-07-28 18:42:00.3|Info|RssSyncService|RSS Sync Completed. Reports found: 215, Reports grabbed: 0
+2023-07-28 19:42:24.1|Info|RssSyncService|Starting RSS Sync
+2023-07-28 19:42:31.0|Info|DownloadDecisionMaker|Processing 216 releases
+2023-07-28 19:42:31.5|Info|RssSyncService|RSS Sync Completed. Reports found: 216, Reports grabbed: 0
+2023-07-28 20:42:55.0|Info|RssSyncService|Starting RSS Sync
+2023-07-28 20:43:01.8|Info|DownloadDecisionMaker|Processing 215 releases
+2023-07-28 20:43:02.3|Info|RssSyncService|RSS Sync Completed. Reports found: 215, Reports grabbed: 0
+2023-07-28 21:43:25.7|Info|RssSyncService|Starting RSS Sync
+2023-07-28 21:43:32.6|Info|DownloadDecisionMaker|Processing 217 releases
+2023-07-28 21:43:33.1|Info|RssSyncService|RSS Sync Completed. Reports found: 217, Reports grabbed: 0
+2023-07-28 22:43:56.7|Info|RssSyncService|Starting RSS Sync
+2023-07-28 22:44:04.0|Info|DownloadDecisionMaker|Processing 216 releases
+2023-07-28 22:44:04.4|Info|RssSyncService|RSS Sync Completed. Reports found: 216, Reports grabbed: 0
+2023-07-28 23:15:57.8|Info|DiskScanService|Scanning disk for Avengers: Endgame
+2023-07-28 23:15:57.9|Info|DiskScanService|Completed scanning disk for Avengers: Endgame
+2023-07-28 23:15:57.9|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2023-07-28 23:15:57.9|Info|ExistingSubtitleImporter|Found 1 existing subtitle files
+2023-07-28 23:15:57.9|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2023-07-28 23:15:57.9|Info|ExistingExtraFileService|Found 1 possible extra files, imported 1 files.
+2023-07-28 23:15:57.9|Info|DiskScanService|Scanning disk for Minions: The Rise of Gru
+2023-07-28 23:15:58.0|Info|DiskScanService|Completed scanning disk for Minions: The Rise of Gru
+2023-07-28 23:15:58.0|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2023-07-28 23:15:58.0|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2023-07-28 23:15:58.0|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2023-07-28 23:15:58.0|Info|ExistingExtraFileService|Found 1 possible extra files, imported 1 files.
+2023-07-28 23:15:58.0|Info|DiskScanService|Scanning disk for To Every You I've Loved Before
+2023-07-28 23:15:58.0|Info|DiskScanService|Completed scanning disk for To Every You I've Loved Before
+2023-07-28 23:15:58.0|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2023-07-28 23:15:58.0|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2023-07-28 23:15:58.0|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2023-07-28 23:15:58.0|Info|ExistingExtraFileService|Found 1 possible extra files, imported 1 files.
+2023-07-28 23:15:58.0|Info|DiskScanService|Scanning disk for To Me, the One Who Loved You
+2023-07-28 23:15:58.1|Info|DiskScanService|Completed scanning disk for To Me, the One Who Loved You
+2023-07-28 23:15:58.1|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2023-07-28 23:15:58.1|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2023-07-28 23:15:58.1|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2023-07-28 23:15:58.1|Info|ExistingExtraFileService|Found 1 possible extra files, imported 1 files.
+2023-07-28 23:15:58.1|Info|DiskScanService|Scanning disk for VGHS: The Movie
+2023-07-28 23:15:58.1|Info|DiskScanService|Completed scanning disk for VGHS: The Movie
+2023-07-28 23:15:58.1|Info|MetadataService|Movie folder does not exist, skipping metadata creation
+2023-07-28 23:44:27.5|Info|RssSyncService|Starting RSS Sync
+2023-07-28 23:44:34.0|Info|DownloadDecisionMaker|Processing 219 releases
+2023-07-28 23:44:34.5|Info|RssSyncService|RSS Sync Completed. Reports found: 219, Reports grabbed: 0
+2023-07-29 00:44:58.3|Info|RssSyncService|Starting RSS Sync
+2023-07-29 00:45:04.8|Info|DownloadDecisionMaker|Processing 216 releases
+2023-07-29 00:45:05.2|Info|RssSyncService|RSS Sync Completed. Reports found: 216, Reports grabbed: 0
+2023-07-29 01:45:29.1|Info|RssSyncService|Starting RSS Sync
+2023-07-29 01:45:35.5|Info|DownloadDecisionMaker|Processing 216 releases
+2023-07-29 01:45:35.8|Info|RssSyncService|RSS Sync Completed. Reports found: 216, Reports grabbed: 0
+2023-07-29 02:46:00.6|Info|RssSyncService|Starting RSS Sync
+2023-07-29 02:46:07.5|Info|DownloadDecisionMaker|Processing 212 releases
+2023-07-29 02:46:07.8|Info|RssSyncService|RSS Sync Completed. Reports found: 212, Reports grabbed: 0
+2023-07-29 03:46:31.4|Info|RssSyncService|Starting RSS Sync
+2023-07-29 03:46:37.7|Info|DownloadDecisionMaker|Processing 216 releases
+2023-07-29 03:46:38.1|Info|RssSyncService|RSS Sync Completed. Reports found: 216, Reports grabbed: 0
+2023-07-29 04:47:02.2|Info|RssSyncService|Starting RSS Sync
+2023-07-29 04:47:09.3|Info|DownloadDecisionMaker|Processing 218 releases
+2023-07-29 04:47:09.7|Info|RssSyncService|RSS Sync Completed. Reports found: 218, Reports grabbed: 0
+2023-07-29 05:47:33.1|Info|RssSyncService|Starting RSS Sync
+2023-07-29 05:47:40.0|Info|DownloadDecisionMaker|Processing 217 releases
+2023-07-29 05:47:40.4|Info|RssSyncService|RSS Sync Completed. Reports found: 217, Reports grabbed: 0
+2023-07-29 06:48:04.0|Info|RssSyncService|Starting RSS Sync
+2023-07-29 06:48:11.0|Info|DownloadDecisionMaker|Processing 204 releases
+2023-07-29 06:48:11.4|Info|RssSyncService|RSS Sync Completed. Reports found: 204, Reports grabbed: 0
+2023-07-29 07:48:34.8|Info|RssSyncService|Starting RSS Sync
+2023-07-29 07:48:39.7|Warn|HttpClient|HTTP Error - Res: [GET] http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100: 400.BadRequest (1394 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (torrentgalaxy): Relogin failed&#xA; ---&gt; System.Exception: Parse error&#xA; ---&gt; System.Exception: Relogin failed&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1719&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.OnParseError(String results, Exception ex) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 732&#xA;   at Jackett.Common.Indexers.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/CardigannIndexer.cs:line 1878&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 312&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 330&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 706&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 414" />
+2023-07-29 07:48:39.7|Warn|Torznab|Jackett (TorrentGalaxy) HTTP request failed: [400:BadRequest] [GET] at [http://jackett:9117/api/v2.0/indexers/torrentgalaxy/results/torznab/api?t=movie&cat=2010,2020,2030,2040,100028,100041,100042,5030,5040,5050,5060,5070,5080&extended=1&apikey=(removed)&offset=0&limit=100]
+2023-07-29 07:48:42.2|Info|DownloadDecisionMaker|Processing 204 releases
+2023-07-29 07:48:42.5|Info|RssSyncService|RSS Sync Completed. Reports found: 204, Reports grabbed: 0
+2023-07-29 08:49:05.5|Info|RssSyncService|Starting RSS Sync
+2023-07-29 08:49:12.6|Info|DownloadDecisionMaker|Processing 204 releases
+2023-07-29 08:49:12.9|Info|RssSyncService|RSS Sync Completed. Reports found: 204, Reports grabbed: 0
+2023-07-29 09:49:36.2|Info|RssSyncService|Starting RSS Sync
+2023-07-29 09:49:43.1|Info|DownloadDecisionMaker|Processing 213 releases
+2023-07-29 09:49:43.4|Info|RssSyncService|RSS Sync Completed. Reports found: 213, Reports grabbed: 0
+2023-07-29 10:29:36.9|Info|BackupService|Starting Backup
+2023-07-29 10:39:06.9|Info|RecycleBinProvider|Recycle Bin has not been configured, cannot cleanup.
+2023-07-29 10:39:37.0|Info|ImportListSyncService|No auto enabled lists, skipping sync and cleaning
+2023-07-29 10:40:07.0|Info|HousekeepingService|Running housecleaning tasks
+2023-07-29 10:40:07.0|Info|Database|Vacuuming Log database
+2023-07-29 10:40:07.0|Info|Database|Log database compressed
+2023-07-29 10:40:07.0|Info|Database|Vacuuming Main database
+2023-07-29 10:40:07.0|Info|Database|Main database compressed
+2023-07-29 10:50:07.3|Info|RssSyncService|Starting RSS Sync
+2023-07-29 10:50:13.8|Info|DownloadDecisionMaker|Processing 219 releases
+2023-07-29 10:50:14.3|Info|RssSyncService|RSS Sync Completed. Reports found: 219, Reports grabbed: 0
+2023-07-29 11:50:38.0|Info|RssSyncService|Starting RSS Sync
+2023-07-29 11:50:45.5|Info|DownloadDecisionMaker|Processing 223 releases
+2023-07-29 11:50:46.0|Info|RssSyncService|RSS Sync Completed. Reports found: 223, Reports grabbed: 0
+2023-07-29 12:51:08.7|Info|RssSyncService|Starting RSS Sync
+2023-07-29 12:51:15.3|Info|DownloadDecisionMaker|Processing 217 releases
+2023-07-29 12:51:15.8|Info|RssSyncService|RSS Sync Completed. Reports found: 217, Reports grabbed: 0
+2023-07-29 13:51:39.5|Info|RssSyncService|Starting RSS Sync
+2023-07-29 13:51:46.3|Info|DownloadDecisionMaker|Processing 217 releases
+2023-07-29 13:51:46.7|Info|RssSyncService|RSS Sync Completed. Reports found: 217, Reports grabbed: 0
+2023-07-29 14:11:22.3|Info|AddMovieService|Adding Movie [Barbie (2023)][tt1517268, 346698] Path: [/downloads/movies/Barbie (2023)]
+2023-07-29 14:11:22.3|Info|RefreshMovieService|Updating info for Barbie
+2023-07-29 14:11:22.4|Info|AddMovieCollectionService|Adding Collection Barbie The Movie Collection[1135086]
+2023-07-29 14:11:22.4|Info|RefreshCollectionService|Updating info for Barbie The Movie Collection
+2023-07-29 14:11:22.4|Info|MediaCoverService|Downloading Poster for [Barbie (2023)][tt1517268, 346698] https://image.tmdb.org/t/p/original/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg
+2023-07-29 14:11:22.4|Info|DiskScanService|Scanning disk for Barbie
+2023-07-29 14:11:22.4|Info|DiskScanService|Completed scanning disk for Barbie
+2023-07-29 14:11:22.4|Info|MovieScannedHandler|[Barbie] was recently added, performing post-add actions
+2023-07-29 14:11:22.4|Info|MetadataService|Movie folder does not exist, skipping metadata creation
+2023-07-29 14:11:22.4|Warn|MediaCoverMapper|File /config/MediaCover/9/poster.jpg not found
+2023-07-29 14:11:22.5|Info|ReleaseSearchService|Searching indexers for [Barbie]. 3 active indexers
+2023-07-29 14:11:22.5|Info|MediaCoverService|Downloading Fanart for [Barbie (2023)][tt1517268, 346698] https://image.tmdb.org/t/p/original/nHf61UzkfFno5X1ofIhugCPus2R.jpg
+2023-07-29 14:11:24.2|Info|MetadataService|Movie folder does not exist, skipping metadata image creation
+2023-07-29 14:11:28.9|Info|AddMovieService|Adding Movie [Oppenheimer (2023)][tt15398776, 872585] Path: [/downloads/movies/Oppenheimer (2023)]
+2023-07-29 14:11:28.9|Info|RefreshMovieService|Updating info for Oppenheimer
+2023-07-29 14:11:29.0|Info|DownloadDecisionMaker|Processing 8 releases
+2023-07-29 14:11:29.0|Info|MediaCoverService|Downloading Poster for [Oppenheimer (2023)][tt15398776, 872585] https://image.tmdb.org/t/p/original/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg
+2023-07-29 14:11:29.0|Info|DiskScanService|Scanning disk for Oppenheimer
+2023-07-29 14:11:29.0|Info|DiskScanService|Completed scanning disk for Oppenheimer
+2023-07-29 14:11:29.0|Info|MovieScannedHandler|[Oppenheimer] was recently added, performing post-add actions
+2023-07-29 14:11:29.0|Info|MetadataService|Movie folder does not exist, skipping metadata creation
+2023-07-29 14:11:29.0|Info|MovieSearchService|Movie search completed. 0 reports downloaded.
+2023-07-29 14:11:29.1|Info|ReleaseSearchService|Searching indexers for [Oppenheimer]. 3 active indexers
+2023-07-29 14:11:29.1|Warn|MediaCoverMapper|File /config/MediaCover/10/poster.jpg not found
+2023-07-29 14:11:29.3|Info|MediaCoverService|Downloading Fanart for [Oppenheimer (2023)][tt15398776, 872585] https://image.tmdb.org/t/p/original/fm6KqXpk3M2HVveHwCrBSSBaO0V.jpg
+2023-07-29 14:11:30.3|Info|MetadataService|Movie folder does not exist, skipping metadata image creation
+2023-07-29 14:11:37.4|Info|DownloadDecisionMaker|Processing 7 releases
+2023-07-29 14:11:37.5|Info|MovieSearchService|Movie search completed. 0 reports downloaded.
+2023-07-29 14:12:39.5|Info|ReleaseSearchService|Searching indexers for [Barbie]. 3 active indexers
+2023-07-29 14:12:41.5|Info|DownloadDecisionMaker|Processing 8 releases
+2023-07-29 14:13:02.9|Info|DownloadService|Report for Barbie (2023) sent to Transmission (Seedbox) from indexer Jackett (1337x). Barbie (2023) NEW 1080p HDTS x264 ESub AAC   HushRips
+2023-07-29 14:13:09.2|Info|ReleaseSearchService|Searching indexers for [Oppenheimer]. 3 active indexers
+2023-07-29 14:13:11.2|Info|DownloadDecisionMaker|Processing 7 releases
+2023-07-29 14:13:32.1|Info|DownloadService|Report for Oppenheimer (2023) sent to Transmission (Seedbox) from indexer Jackett (1337x). Oppenheimer (2023) NEW ENG 1080p HQ CAM x264 AAC   HushRips
+2023-07-29 14:22:05.5|Info|BackupService|Starting Backup
+2023-07-29 14:29:37.0|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2023-07-29 14:29:44.7|Info|ConsoleApp|Exiting main.

@@ -1,0 +1,353 @@
+/videos/cf74c6c4-468d-c51d-935b-df1fe29f7f4c/hls1/main/0.ts
+
+{"Protocol":0,"Id":"cf74c6c4468dc51d935bdf1fe29f7f4c","Path":"/data/movies/Oppenheimer (2023)/Oppenheimer (2023) CAM Proper.mkv","EncoderPath":null,"EncoderProtocol":null,"Type":0,"Container":"mkv,webm","Size":5589638656,"Name":"Oppenheimer (2023) CAM Proper","IsRemote":false,"ETag":"ac9cdf8b614f7f696f069abd882d0bcb","RunTimeTicks":105082806272,"ReadAtNativeFramerate":false,"IgnoreDts":false,"IgnoreIndex":false,"GenPtsInput":false,"SupportsTranscoding":true,"SupportsDirectStream":true,"SupportsDirectPlay":true,"IsInfiniteStream":false,"RequiresOpening":false,"OpenToken":null,"RequiresClosing":false,"LiveStreamId":null,"BufferMs":null,"RequiresLooping":false,"SupportsProbing":true,"VideoType":0,"IsoType":null,"Video3DFormat":null,"MediaStreams":[{"Codec":"h264","CodecTag":null,"Language":null,"ColorRange":null,"ColorSpace":"bt709","ColorTransfer":"bt709","ColorPrimaries":"bt709","DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/1000","CodecTimeBase":null,"Title":null,"VideoRange":"SDR","VideoRangeType":"SDR","VideoDoViTitle":null,"LocalizedUndefined":null,"LocalizedDefault":null,"LocalizedForced":null,"LocalizedExternal":null,"DisplayTitle":"1080p H264 SDR","NalLengthSize":"4","IsInterlaced":false,"IsAVC":true,"ChannelLayout":null,"BitRate":4255416,"BitDepth":8,"RefFrames":1,"PacketLength":null,"Channels":null,"SampleRate":null,"IsDefault":true,"IsForced":false,"Height":858,"Width":1920,"AverageFrameRate":24,"RealFrameRate":24,"Profile":"High","Type":1,"AspectRatio":"320:143","Index":0,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Path":null,"PixelFormat":"yuv420p","Level":51,"IsAnamorphic":null},{"Codec":"aac","CodecTag":null,"Language":"hin","ColorRange":null,"ColorSpace":null,"ColorTransfer":null,"ColorPrimaries":null,"DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/1000","CodecTimeBase":null,"Title":null,"VideoRange":null,"VideoRangeType":null,"VideoDoViTitle":null,"LocalizedUndefined":null,"LocalizedDefault":null,"LocalizedForced":null,"LocalizedExternal":null,"DisplayTitle":"Hindi - AAC - Stereo - Default","NalLengthSize":null,"IsInterlaced":false,"IsAVC":null,"ChannelLayout":"stereo","BitRate":128000,"BitDepth":null,"RefFrames":null,"PacketLength":null,"Channels":2,"SampleRate":44100,"IsDefault":true,"IsForced":false,"Height":null,"Width":null,"AverageFrameRate":null,"RealFrameRate":null,"Profile":"LC","Type":0,"AspectRatio":null,"Index":1,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Path":null,"PixelFormat":null,"Level":0,"IsAnamorphic":null},{"Codec":"mp3","CodecTag":null,"Language":"eng","ColorRange":null,"ColorSpace":null,"ColorTransfer":null,"ColorPrimaries":null,"DvVersionMajor":null,"DvVersionMinor":null,"DvProfile":null,"DvLevel":null,"RpuPresentFlag":null,"ElPresentFlag":null,"BlPresentFlag":null,"DvBlSignalCompatibilityId":null,"Comment":null,"TimeBase":"1/1000","CodecTimeBase":null,"Title":null,"VideoRange":null,"VideoRangeType":null,"VideoDoViTitle":null,"LocalizedUndefined":null,"LocalizedDefault":null,"LocalizedForced":null,"LocalizedExternal":null,"DisplayTitle":"English - MP3 - Stereo","NalLengthSize":null,"IsInterlaced":false,"IsAVC":null,"ChannelLayout":"stereo","BitRate":128000,"BitDepth":null,"RefFrames":null,"PacketLength":null,"Channels":2,"SampleRate":48000,"IsDefault":false,"IsForced":false,"Height":null,"Width":null,"AverageFrameRate":null,"RealFrameRate":null,"Profile":null,"Type":0,"AspectRatio":null,"Index":2,"Score":null,"IsExternal":false,"DeliveryMethod":null,"DeliveryUrl":null,"IsExternalUrl":null,"IsTextSubtitleStream":false,"SupportsExternalStream":false,"Path":null,"PixelFormat":null,"Level":0,"IsAnamorphic":null}],"MediaAttachments":[],"Formats":[],"Bitrate":4511416,"Timestamp":null,"RequiredHttpHeaders":{},"TranscodingUrl":null,"TranscodingSubProtocol":null,"TranscodingContainer":null,"AnalyzeDurationMs":null,"DefaultAudioStreamIndex":null,"DefaultSubtitleStreamIndex":null}
+
+/usr/lib/jellyfin-ffmpeg/ffmpeg -analyzeduration 200M -fflags +genpts -f matroska,webm  -i file:"/data/movies/Oppenheimer (2023)/Oppenheimer (2023) CAM Proper.mkv" -map_metadata -1 -map_chapters -1 -threads 0 -map 0:0 -map 0:2 -map -0:s -codec:v:0 copy -bsf:v h264_mp4toannexb -start_at_zero -codec:a:0 copy -copyts -avoid_negative_ts disabled -max_muxing_queue_size 2048 -f hls -max_delay 5000000 -hls_time 6 -hls_segment_type mpegts -start_number 0 -hls_segment_filename "/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e%d.ts" -hls_playlist_type vod -hls_list_size 0 -y "/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e.m3u8"
+
+
+ffmpeg version 5.1.3-Jellyfin Copyright (c) 2000-2022 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.3.0-1ubuntu1~22.04.1)
+  configuration: --prefix=/usr/lib/jellyfin-ffmpeg --target-os=linux --extra-libs=-lfftw3f --extra-version=Jellyfin --disable-doc --disable-ffplay --disable-ptx-compression --disable-static --disable-libxcb --disable-sdl2 --disable-xlib --enable-lto --enable-gpl --enable-version3 --enable-shared --enable-gmp --enable-gnutls --enable-chromaprint --enable-libdrm --enable-libass --enable-libfreetype --enable-libfribidi --enable-libfontconfig --enable-libbluray --enable-libmp3lame --enable-libopus --enable-libtheora --enable-libvorbis --enable-libopenmpt --enable-libdav1d --enable-libwebp --enable-libvpx --enable-libx264 --enable-libx265 --enable-libzvbi --enable-libzimg --enable-libfdk-aac --arch=amd64 --enable-libsvtav1 --enable-libshaderc --enable-libplacebo --enable-vulkan --enable-opencl --enable-vaapi --enable-amf --enable-libmfx --enable-ffnvcodec --enable-cuda --enable-cuda-llvm --enable-cuvid --enable-nvdec --enable-nvenc
+  libavutil      57. 28.100 / 57. 28.100
+  libavcodec     59. 37.100 / 59. 37.100
+  libavformat    59. 27.100 / 59. 27.100
+  libavdevice    59.  7.100 / 59.  7.100
+  libavfilter     8. 44.100 /  8. 44.100
+  libswscale      6.  7.100 /  6.  7.100
+  libswresample   4.  7.100 /  4.  7.100
+  libpostproc    56.  6.100 / 56.  6.100
+Input #0, matroska,webm, from 'file:/data/movies/Oppenheimer (2023)/Oppenheimer (2023) CAM Proper.mkv':
+  Metadata:
+    encoder         : libebml v1.3.7 + libmatroska v1.5.0
+    creation_time   : 2023-07-23T08:48:57.000000Z
+  Duration: 02:55:08.28, start: 0.000000, bitrate: 4255 kb/s
+  Stream #0:0: Video: h264 (High), yuv420p(tv, bt709, progressive), 1920x858 [SAR 1:1 DAR 320:143], 24 fps, 24 tbr, 1k tbn (default)
+    Metadata:
+      BPS-eng         : 3996560
+      DURATION-eng    : 02:55:08.250000000
+      NUMBER_OF_FRAMES-eng: 252198
+      NUMBER_OF_BYTES-eng: 5249606730
+      _STATISTICS_WRITING_APP-eng: mkvmerge v32.0.0 ('Astral Progressions') 64-bit
+      _STATISTICS_WRITING_DATE_UTC-eng: 2023-07-23 08:48:57
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+  Stream #0:1(hin): Audio: aac (LC), 44100 Hz, stereo, fltp (default)
+    Metadata:
+      BPS-eng         : 128000
+      DURATION-eng    : 02:55:08.278000000
+      NUMBER_OF_FRAMES-eng: 452554
+      NUMBER_OF_BYTES-eng: 168132651
+      _STATISTICS_WRITING_APP-eng: mkvmerge v32.0.0 ('Astral Progressions') 64-bit
+      _STATISTICS_WRITING_DATE_UTC-eng: 2023-07-23 08:48:57
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+  Stream #0:2(eng): Audio: mp3, 48000 Hz, stereo, fltp, 128 kb/s
+    Metadata:
+      BPS-eng         : 128000
+      DURATION-eng    : 02:55:08.256000000
+      NUMBER_OF_FRAMES-eng: 437844
+      NUMBER_OF_BYTES-eng: 168132096
+      _STATISTICS_WRITING_APP-eng: mkvmerge v32.0.0 ('Astral Progressions') 64-bit
+      _STATISTICS_WRITING_DATE_UTC-eng: 2023-07-23 08:48:57
+      _STATISTICS_TAGS-eng: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+Output #0, hls, to '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e.m3u8':
+  Metadata:
+    encoder         : Lavf59.27.100
+  Stream #0:0: Video: h264 (High), yuv420p(tv, bt709, progressive), 1920x858 [SAR 1:1 DAR 320:143], q=2-31, 24 fps, 24 tbr, 90k tbn (default)
+  Stream #0:1: Audio: mp3, 48000 Hz, stereo, fltp, 128 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #0:2 -> #0:1 (copy)
+Press [q] to stop, [?] for help
+frame=    1 fps=0.0 q=-1.0 size=N/A time=-00:00:00.04 bitrate=N/A speed=N/A    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e0.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e1.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e2.ts' for writing
+frame=  586 fps=0.0 q=-1.0 size=N/A time=00:00:24.37 bitrate=N/A speed=48.3x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e3.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e4.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e5.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e6.ts' for writing
+frame= 1009 fps=957 q=-1.0 size=N/A time=00:00:42.01 bitrate=N/A speed=39.8x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e7.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e8.ts' for writing
+frame= 1300 fps=797 q=-1.0 size=N/A time=00:00:54.13 bitrate=N/A speed=33.2x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e9.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e10.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e11.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e12.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e13.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e14.ts' for writing
+frame= 2165 fps=1015 q=-1.0 size=N/A time=00:01:30.18 bitrate=N/A speed=42.3x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e15.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e16.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e17.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e18.ts' for writing
+frame= 2761 fps=1049 q=-1.0 size=N/A time=00:01:55.02 bitrate=N/A speed=43.7x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e19.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e20.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e21.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e22.ts' for writing
+frame= 3382 fps=1078 q=-1.0 size=N/A time=00:02:20.87 bitrate=N/A speed=44.9x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e23.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e24.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e25.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e26.ts' for writing
+frame= 3904 fps=1071 q=-1.0 size=N/A time=00:02:42.64 bitrate=N/A speed=44.6x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e27.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e28.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e29.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e30.ts' for writing
+frame= 4513 fps=1086 q=-1.0 size=N/A time=00:03:07.98 bitrate=N/A speed=45.2x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e31.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e32.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e33.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e34.ts' for writing
+frame= 5061 fps=1085 q=-1.0 size=N/A time=00:03:30.85 bitrate=N/A speed=45.2x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e35.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e36.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e37.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e38.ts' for writing
+frame= 5675 fps=1095 q=-1.0 size=N/A time=00:03:56.41 bitrate=N/A speed=45.6x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e39.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e40.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e41.ts' for writing
+frame= 6080 fps=1064 q=-1.0 size=N/A time=00:04:13.36 bitrate=N/A speed=44.4x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e42.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e43.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e44.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e45.ts' for writing
+frame= 6646 fps=1068 q=-1.0 size=N/A time=00:04:36.90 bitrate=N/A speed=44.5x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e46.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e47.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e48.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e49.ts' for writing
+frame= 7213 fps=1073 q=-1.0 size=N/A time=00:05:00.47 bitrate=N/A speed=44.7x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e50.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e51.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e52.ts' for writing
+frame= 7720 fps=1066 q=-1.0 size=N/A time=00:05:21.61 bitrate=N/A speed=44.4x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e53.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e54.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e55.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e56.ts' for writing
+frame= 8209 fps=1059 q=-1.0 size=N/A time=00:05:42.01 bitrate=N/A speed=44.1x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e57.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e58.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e59.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e60.ts' for writing
+frame= 8823 fps=1069 q=-1.0 size=N/A time=00:06:07.57 bitrate=N/A speed=44.5x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e61.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e62.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e63.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e64.ts' for writing
+frame= 9392 fps=1071 q=-1.0 size=N/A time=00:06:31.26 bitrate=N/A speed=44.6x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e65.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e66.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e67.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e68.ts' for writing
+frame= 9945 fps=1070 q=-1.0 size=N/A time=00:06:54.35 bitrate=N/A speed=44.6x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e69.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e70.ts' for writing
+frame=10246 fps=1029 q=-1.0 size=N/A time=00:07:06.88 bitrate=N/A speed=42.9x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e71.ts' for writing
+frame=10418 fps=996 q=-1.0 size=N/A time=00:07:14.03 bitrate=N/A speed=41.5x    
+frame=10478 fps=955 q=-1.0 size=N/A time=00:07:16.55 bitrate=N/A speed=39.8x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e72.ts' for writing
+frame=10513 fps=916 q=-1.0 size=N/A time=00:07:18.01 bitrate=N/A speed=38.2x    
+frame=10589 fps=865 q=-1.0 size=N/A time=00:07:21.23 bitrate=N/A speed=36.1x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e73.ts' for writing
+frame=10790 fps=845 q=-1.0 size=N/A time=00:07:29.53 bitrate=N/A speed=35.2x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e74.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e75.ts' for writing
+frame=10951 fps=822 q=-1.0 size=N/A time=00:07:36.25 bitrate=N/A speed=34.2x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e76.ts' for writing
+frame=11160 fps=807 q=-1.0 size=N/A time=00:07:44.94 bitrate=N/A speed=33.6x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e77.ts' for writing
+frame=11371 fps=793 q=-1.0 size=N/A time=00:07:53.77 bitrate=N/A speed=  33x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e78.ts' for writing
+frame=11401 fps=767 q=-1.0 size=N/A time=00:07:55.00 bitrate=N/A speed=  32x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e79.ts' for writing
+frame=11526 fps=744 q=-1.0 size=N/A time=00:08:00.23 bitrate=N/A speed=  31x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e80.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e81.ts' for writing
+frame=11821 fps=730 q=-1.0 size=N/A time=00:08:12.47 bitrate=N/A speed=30.4x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e82.ts' for writing
+frame=11965 fps=704 q=-1.0 size=N/A time=00:08:18.52 bitrate=N/A speed=29.3x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e83.ts' for writing
+frame=12102 fps=692 q=-1.0 size=N/A time=00:08:24.21 bitrate=N/A speed=28.8x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e84.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e85.ts' for writing
+frame=12455 fps=692 q=-1.0 size=N/A time=00:08:38.92 bitrate=N/A speed=28.8x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e86.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e87.ts' for writing
+frame=12681 fps=680 q=-1.0 size=N/A time=00:08:48.35 bitrate=N/A speed=28.3x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e88.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e89.ts' for writing
+frame=12966 fps=671 q=-1.0 size=N/A time=00:09:00.23 bitrate=N/A speed=  28x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e90.ts' for writing
+frame=13195 fps=666 q=-1.0 size=N/A time=00:09:09.81 bitrate=N/A speed=27.7x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e91.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e92.ts' for writing
+frame=13404 fps=657 q=-1.0 size=N/A time=00:09:18.47 bitrate=N/A speed=27.4x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e93.ts' for writing
+frame=13691 fps=655 q=-1.0 size=N/A time=00:09:30.37 bitrate=N/A speed=27.3x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e94.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e95.ts' for writing
+frame=13836 fps=644 q=-1.0 size=N/A time=00:09:36.47 bitrate=N/A speed=26.8x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e96.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e97.ts' for writing
+frame=14122 fps=643 q=-1.0 size=N/A time=00:09:48.40 bitrate=N/A speed=26.8x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e98.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e99.ts' for writing
+frame=14404 fps=639 q=-1.0 size=N/A time=00:10:00.13 bitrate=N/A speed=26.6x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e100.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e101.ts' for writing
+frame=14701 fps=635 q=-1.0 size=N/A time=00:10:12.52 bitrate=N/A speed=26.5x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e102.ts' for writing
+frame=14845 fps=626 q=-1.0 size=N/A time=00:10:18.52 bitrate=N/A speed=26.1x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e103.ts' for writing
+frame=14989 fps=602 q=-1.0 size=N/A time=00:10:24.52 bitrate=N/A speed=25.1x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e104.ts' for writing
+frame=15204 fps=599 q=-1.0 size=N/A time=00:10:33.45 bitrate=N/A speed=24.9x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e105.ts' for writing
+frame=15372 fps=593 q=-1.0 size=N/A time=00:10:40.45 bitrate=N/A speed=24.7x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e106.ts' for writing
+frame=15476 fps=585 q=-1.0 size=N/A time=00:10:44.85 bitrate=N/A speed=24.4x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e107.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e108.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e109.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e110.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e111.ts' for writing
+frame=16171 fps=600 q=-1.0 size=N/A time=00:11:13.77 bitrate=N/A speed=  25x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e112.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e113.ts' for writing
+frame=16441 fps=599 q=-1.0 size=N/A time=00:11:25.00 bitrate=N/A speed=24.9x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e114.ts' for writing
+frame=16627 fps=595 q=-1.0 size=N/A time=00:11:32.85 bitrate=N/A speed=24.8x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e115.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e116.ts' for writing
+frame=16855 fps=592 q=-1.0 size=N/A time=00:11:42.25 bitrate=N/A speed=24.7x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e117.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e118.ts' for writing
+frame=17157 fps=590 q=-1.0 size=N/A time=00:11:54.85 bitrate=N/A speed=24.6x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e119.ts' for writing
+frame=17429 fps=589 q=-1.0 size=N/A time=00:12:06.23 bitrate=N/A speed=24.6x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e120.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e121.ts' for writing
+frame=17571 fps=581 q=-1.0 size=N/A time=00:12:12.09 bitrate=N/A speed=24.2x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e122.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e123.ts' for writing
+frame=17865 fps=580 q=-1.0 size=N/A time=00:12:24.35 bitrate=N/A speed=24.2x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e124.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e125.ts' for writing
+frame=18151 fps=577 q=-1.0 size=N/A time=00:12:36.25 bitrate=N/A speed=24.1x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e126.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e127.ts' for writing
+frame=18438 fps=575 q=-1.0 size=N/A time=00:12:48.23 bitrate=N/A speed=  24x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e128.ts' for writing
+frame=18670 fps=574 q=-1.0 size=N/A time=00:12:57.85 bitrate=N/A speed=23.9x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e129.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e130.ts' for writing
+frame=18886 fps=570 q=-1.0 size=N/A time=00:13:06.88 bitrate=N/A speed=23.7x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e131.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e132.ts' for writing
+frame=19171 fps=569 q=-1.0 size=N/A time=00:13:18.76 bitrate=N/A speed=23.7x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e133.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e134.ts' for writing
+frame=19579 fps=572 q=-1.0 size=N/A time=00:13:35.75 bitrate=N/A speed=23.9x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e135.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e136.ts' for writing
+frame=19793 fps=570 q=-1.0 size=N/A time=00:13:44.75 bitrate=N/A speed=23.8x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e137.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e138.ts' for writing
+frame=20104 fps=571 q=-1.0 size=N/A time=00:13:57.59 bitrate=N/A speed=23.8x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e139.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e140.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e141.ts' for writing
+frame=20469 fps=572 q=-1.0 size=N/A time=00:14:12.85 bitrate=N/A speed=23.8x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e142.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e143.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e144.ts' for writing
+frame=20947 fps=577 q=-1.0 size=N/A time=00:14:32.77 bitrate=N/A speed=  24x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e145.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e146.ts' for writing
+frame=21172 fps=574 q=-1.0 size=N/A time=00:14:42.13 bitrate=N/A speed=23.9x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e147.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e148.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e149.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e150.ts' for writing
+frame=21767 fps=582 q=-1.0 size=N/A time=00:15:06.97 bitrate=N/A speed=24.2x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e151.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e152.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e153.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e154.ts' for writing
+frame=22344 fps=588 q=-1.0 size=N/A time=00:15:30.97 bitrate=N/A speed=24.5x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e155.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e156.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e157.ts' for writing
+frame=22800 fps=592 q=-1.0 size=N/A time=00:15:49.96 bitrate=N/A speed=24.7x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e158.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e159.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e160.ts' for writing
+frame=23306 fps=598 q=-1.0 size=N/A time=00:16:11.01 bitrate=N/A speed=24.9x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e161.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e162.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e163.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e164.ts' for writing
+frame=23820 fps=603 q=-1.0 size=N/A time=00:16:32.44 bitrate=N/A speed=25.1x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e165.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e166.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e167.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e168.ts' for writing
+frame=24337 fps=608 q=-1.0 size=N/A time=00:16:54.01 bitrate=N/A speed=25.3x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e169.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e170.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e171.ts' for writing
+frame=24803 fps=612 q=-1.0 size=N/A time=00:17:13.50 bitrate=N/A speed=25.5x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e172.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e173.ts' for writing
+frame=25141 fps=613 q=-1.0 size=N/A time=00:17:27.49 bitrate=N/A speed=25.5x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e174.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e175.ts' for writing
+frame=25480 fps=614 q=-1.0 size=N/A time=00:17:41.63 bitrate=N/A speed=25.6x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e176.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e177.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e178.ts' for writing
+frame=25777 fps=612 q=-1.0 size=N/A time=00:17:54.01 bitrate=N/A speed=25.5x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e179.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e180.ts' for writing
+frame=26155 fps=613 q=-1.0 size=N/A time=00:18:09.81 bitrate=N/A speed=25.6x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e181.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e182.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e183.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e184.ts' for writing
+frame=26755 fps=620 q=-1.0 size=N/A time=00:18:34.79 bitrate=N/A speed=25.8x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e185.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e186.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e187.ts' for writing
+frame=27216 fps=623 q=-1.0 size=N/A time=00:18:53.97 bitrate=N/A speed=  26x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e188.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e189.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e190.ts' for writing
+frame=27572 fps=624 q=-1.0 size=N/A time=00:19:08.75 bitrate=N/A speed=  26x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e191.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e192.ts' for writing
+frame=27820 fps=623 q=-1.0 size=N/A time=00:19:19.14 bitrate=N/A speed=25.9x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e193.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e194.ts' for writing
+frame=28172 fps=623 q=-1.0 size=N/A time=00:19:33.78 bitrate=N/A speed=  26x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e195.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e196.ts' for writing
+frame=28375 fps=621 q=-1.0 size=N/A time=00:19:42.25 bitrate=N/A speed=25.9x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e197.ts' for writing
+frame=28525 fps=617 q=-1.0 size=N/A time=00:19:48.59 bitrate=N/A speed=25.7x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e198.ts' for writing
+frame=28753 fps=615 q=-1.0 size=N/A time=00:19:58.00 bitrate=N/A speed=25.6x    
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e199.ts' for writing
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e200.ts' for writing
+frame=28954 fps=611 q=-1.0 size=N/A time=00:20:06.40 bitrate=N/A speed=25.4x    
+
+[q] command received. Exiting.
+
+[hls @ 0x55718f431bc0] Opening '/config/data/transcodes/737e4849ff0acc0e72d60272eab6981e201.ts' for writing
+frame=29017 fps=607 q=-1.0 Lsize=N/A time=00:20:08.97 bitrate=N/A speed=25.3x    
+video:588875kB audio:18891kB subtitle:0kB other streams:0kB global headers:1kB muxing overhead: unknown

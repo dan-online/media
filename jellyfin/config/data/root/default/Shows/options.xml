@@ -13,7 +13,7 @@
   <EnableAutomaticSeriesGrouping>false</EnableAutomaticSeriesGrouping>
   <EnableEmbeddedTitles>false</EnableEmbeddedTitles>
   <EnableEmbeddedEpisodeInfos>false</EnableEmbeddedEpisodeInfos>
-  <AutomaticRefreshIntervalDays>0</AutomaticRefreshIntervalDays>
+  <AutomaticRefreshIntervalDays>30</AutomaticRefreshIntervalDays>
   <PreferredMetadataLanguage />
   <MetadataCountryCode />
   <SeasonZeroDisplayName>Specials</SeasonZeroDisplayName>
@@ -39,17 +39,29 @@
     <TypeOptions>
       <Type>Series</Type>
       <MetadataFetchers>
+        <string>AniSearch</string>
+        <string>AniList</string>
+        <string>AniDB</string>
         <string>TheMovieDb</string>
         <string>The Open Movie Database</string>
       </MetadataFetchers>
       <MetadataFetcherOrder>
+        <string>AniSearch</string>
+        <string>AniList</string>
+        <string>AniDB</string>
         <string>TheMovieDb</string>
         <string>The Open Movie Database</string>
       </MetadataFetcherOrder>
       <ImageFetchers>
+        <string>AniDB</string>
+        <string>AniList</string>
+        <string>AniSearch</string>
         <string>TheMovieDb</string>
       </ImageFetchers>
       <ImageFetcherOrder>
+        <string>AniDB</string>
+        <string>AniList</string>
+        <string>AniSearch</string>
         <string>TheMovieDb</string>
       </ImageFetcherOrder>
       <ImageOptions />
@@ -57,26 +69,92 @@
     <TypeOptions>
       <Type>Season</Type>
       <MetadataFetchers>
+        <string>AniDB</string>
         <string>TheMovieDb</string>
       </MetadataFetchers>
       <MetadataFetcherOrder>
+        <string>AniDB</string>
         <string>TheMovieDb</string>
       </MetadataFetcherOrder>
       <ImageFetchers>
+        <string>AniDB</string>
+        <string>AniList</string>
+        <string>AniSearch</string>
         <string>TheMovieDb</string>
       </ImageFetchers>
       <ImageFetcherOrder>
+        <string>AniDB</string>
+        <string>AniList</string>
+        <string>AniSearch</string>
         <string>TheMovieDb</string>
       </ImageFetcherOrder>
-      <ImageOptions />
+      <ImageOptions>
+        <ImageOption>
+          <Type>Primary</Type>
+          <Limit>1</Limit>
+          <MinWidth>0</MinWidth>
+        </ImageOption>
+        <ImageOption>
+          <Type>Art</Type>
+          <Limit>0</Limit>
+          <MinWidth>0</MinWidth>
+        </ImageOption>
+        <ImageOption>
+          <Type>BoxRear</Type>
+          <Limit>0</Limit>
+          <MinWidth>0</MinWidth>
+        </ImageOption>
+        <ImageOption>
+          <Type>Banner</Type>
+          <Limit>0</Limit>
+          <MinWidth>0</MinWidth>
+        </ImageOption>
+        <ImageOption>
+          <Type>Box</Type>
+          <Limit>0</Limit>
+          <MinWidth>0</MinWidth>
+        </ImageOption>
+        <ImageOption>
+          <Type>Disc</Type>
+          <Limit>0</Limit>
+          <MinWidth>0</MinWidth>
+        </ImageOption>
+        <ImageOption>
+          <Type>Logo</Type>
+          <Limit>0</Limit>
+          <MinWidth>0</MinWidth>
+        </ImageOption>
+        <ImageOption>
+          <Type>Menu</Type>
+          <Limit>0</Limit>
+          <MinWidth>0</MinWidth>
+        </ImageOption>
+        <ImageOption>
+          <Type>Thumb</Type>
+          <Limit>0</Limit>
+          <MinWidth>0</MinWidth>
+        </ImageOption>
+        <ImageOption>
+          <Type>Backdrop</Type>
+          <Limit>0</Limit>
+          <MinWidth>1280</MinWidth>
+        </ImageOption>
+        <ImageOption>
+          <Type>Screenshot</Type>
+          <Limit>0</Limit>
+          <MinWidth>0</MinWidth>
+        </ImageOption>
+      </ImageOptions>
     </TypeOptions>
     <TypeOptions>
       <Type>Episode</Type>
       <MetadataFetchers>
+        <string>AniDB</string>
         <string>TheMovieDb</string>
         <string>The Open Movie Database</string>
       </MetadataFetchers>
       <MetadataFetcherOrder>
+        <string>AniDB</string>
         <string>TheMovieDb</string>
         <string>The Open Movie Database</string>
       </MetadataFetcherOrder>

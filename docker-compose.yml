@@ -121,53 +121,56 @@ services:
   #     - downloads:/downloads
   #   restart: "unless-stopped"
 
-  radarr:
-    container_name: radarr
-    image: linuxserver/radarr:4.6.4
-    networks:
-      - internal_network
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=UTC
-    ports:
-      - 7878:7878
-    volumes:
-      - ./radarr/config:/config
-      - downloads:/downloads
-    restart: "unless-stopped"
+  #radarr:
+  #  container_name: radarr
+  #  image: linuxserver/radarr:4.6.4
+  #  networks:
+  #    - internal_network
+  #  environment:
+  #    - PUID=1000
+  #    - PGID=1000
+  #    - TZ=UTC
+  #    - CHOWN_ON_START=false
+  #  ports:
+  #    - 7878:7878
+  #  volumes:
+  #    - ./radarr/config:/config
+  #    - downloads:/downloads
+  #  restart: "unless-stopped"
 
-  sonarr:
-    image: linuxserver/sonarr:4.0.0-develop
-    container_name: sonarr
-    networks:
-      - internal_network
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=UTC
-    volumes:
-      - ./sonarr/config:/config
-      - downloads:/downloads
-    ports:
-      - 8989:8989
-    restart: unless-stopped
+  #sonarr:
+  #  image: linuxserver/sonarr:4.0.0-develop
+  #  container_name: sonarr
+  #  networks:
+  #    - internal_network
+  #  environment:
+  #    - PUID=1000
+  #    - PGID=1000
+  #    - TZ=UTC
+  #    - CHOWN_ON_START=false
+  #  volumes:
+  #    - ./sonarr/config:/config
+  #    - downloads:/downloads
+  #  ports:
+  #    - 8989:8989
+  #  restart: unless-stopped
 
-  jackett:
-    container_name: jackett
-    image: linuxserver/jackett:0.21.424
-    networks:
-      - internal_network
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=UTC
-    volumes:
-      - ./jackett/config:/config
-      - ./jackett/blackhole:/downloads
-    ports:
-      - 9117:9117
-    restart: unless-stopped
+  #jackett:
+  #  container_name: jackett
+  #  image: linuxserver/jackett:0.21.424
+  #  networks:
+  #    - internal_network
+  #  environment:
+  #    - PUID=1000
+  #    - PGID=1000
+  #    - TZ=UTC
+  #    - CHOWN_ON_START=false
+  #  volumes:
+  #    - ./jackett/config:/config
+  #    - ./jackett/blackhole:/downloads
+  #  ports:
+  #    - 9117:9117
+  #  restart: unless-stopped
   # prowlarr:
   #   container_name: prowlarr
   #   image: linuxserver/prowlarr:1.4.1-develop
@@ -210,12 +213,13 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=UTC
+      - CHOWN_ON_START=false
       - JELLYFIN_PublishedServerUrl=media.dancodes.online
     volumes:
       - ./jellyfin/config:/config
       - ./jellyfin_web_intro_skip:/usr/share/jellyfin/web:ro
       - ./jellyfin/transcodes:/temp
-      - downloads_cache:/data
+      - downloads:/data
     ports:
       - 8096:8096
       - 7359:7359/udp
@@ -235,39 +239,39 @@ services:
 #      - downloads:/library
 #      - ./unmanic/cache:/tmp/unmanic
 
-  tdarr:
-    container_name: tdarr
-    image: ghcr.io/haveagitgat/tdarr:latest
-    restart: unless-stopped
-    networks:
-      - internal_network
-    #deploy:
-    #  resources:
-    #    limits:
-    #      cpus: '3.5'
-    ports:
-      - 8265:8265 # webUI port
-      - 8266:8266 # server port
-      # - 8267:8267 # Internal node port
-    environment:
-      - TZ=Europe/London
-      - PUID=1000
-      - PGID=1000
-      - UMASK_SET=002
-      - CHOWN_ON_START=false
-      - serverIP=0.0.0.0
-      - serverPort=8266
-      - webUIPort=8265
-      - internalNode=true
-      - inContainer=true
-      - nodeName='DANCODES-01'
-      - THREADS_WORKER_INIT_TIMEOUT=200000
-    volumes:
-      - ./tdarr/server:/app/server
-      - ./tdarr/configs:/app/configs
-      - ./tdarr/logs:/app/logs
-      - downloads:/media
-      - ./tdarr/transcode_cache:/temp
+  #tdarr:
+  #  container_name: tdarr
+  #  image: ghcr.io/haveagitgat/tdarr:latest
+  #  restart: unless-stopped
+  #  networks:
+  #    - internal_network
+  #  #deploy:
+  #  #  resources:
+  #  #    limits:
+  #  #      cpus: '3.5'
+  #  ports:
+  #    - 8265:8265 # webUI port
+  #    - 8266:8266 # server port
+  #    # - 8267:8267 # Internal node port
+  #  environment:
+  #    - TZ=Europe/London
+  #    - PUID=1000
+  #    - PGID=1000
+  #    - UMASK_SET=002
+  #    - CHOWN_ON_START=false
+  #    - serverIP=0.0.0.0
+  #    - serverPort=8266
+  #    - webUIPort=8265
+  #    - internalNode=true
+  #    - inContainer=true
+  #    - nodeName='DANCODES-01'
+  #    - THREADS_WORKER_INIT_TIMEOUT=200000
+  #  volumes:
+  #    - ./tdarr/server:/app/server
+  #    - ./tdarr/configs:/app/configs
+  #    - ./tdarr/logs:/app/logs
+  #    - downloads:/media
+  #    - ./tdarr/transcode_cache:/temp
 
   heimdall:
     image: lscr.io/linuxserver/heimdall:latest
@@ -298,19 +302,19 @@ services:
 volumes:
   tx-config:
   tx-watch:
-  downloads_cache:
-    driver: rclone
-    driver_opts:
-      remote: 'Seedbox01:downloads'
-      allow_other: 'true'
-      vfs_cache_max_size: '16G'
-      #buffer_size: '256M'
-      #drive_chunk_size: '32M'
-      #fast_list: 'true'
-      vfs_read_chunk_size: '128M'
-      vfs_read_chunk_size_limit: 'off'
-      vfs_cache_mode: full
-      poll_interval: 0
+  #downloads_cache:
+  #  driver: rclone
+  #  driver_opts:
+  #    remote: 'Seedbox01:downloads'
+  #    allow_other: 'true'
+  #    vfs_cache_max_size: '16G'
+  #    #buffer_size: '256M'
+  #    #drive_chunk_size: '32M'
+  #    #fast_list: 'true'
+  #    vfs_read_chunk_size: '128M'
+  #    vfs_read_chunk_size_limit: 'off'
+  #    vfs_cache_mode: full
+  #    poll_interval: 0
   downloads:
     driver: rclone
     driver_opts:
