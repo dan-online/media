@@ -205,7 +205,7 @@ services:
   #  restart: unless-stopped
 
   jellyfin:
-    image: linuxserver/jellyfin:10.8.10
+    image: linuxserver/jellyfin:10.8.13
     container_name: jellyfin
     networks:
       - internal_network
